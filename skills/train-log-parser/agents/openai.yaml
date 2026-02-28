@@ -1,0 +1,4 @@
+interface:
+  display_name: "Train Log Parser"
+  short_description: "Parse workout chat into validated log JSON"
+  default_prompt: "Use $train-log-parser to parse this workout message into train log JSON."

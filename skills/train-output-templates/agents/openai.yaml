@@ -1,0 +1,4 @@
+interface:
+  display_name: "Train Output Templates"
+  short_description: "Format workout and progression responses consistently"
+  default_prompt: "Use $train-output-templates to format this Train response using the preferred templates."
