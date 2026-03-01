@@ -1,205 +1,186 @@
-# Train — Product Requirements Document (Reduced V0)
+# Train — V0 PRD (Replanned)
 
-## Goal
+## 1) Product Goal
 
-Ship the smallest working chat-first workout tracker via NanoClaw.
+Ship a usable chat-first training tracker in NanoClaw for one user.
 
-V0 should do three things reliably:
+V0 should feel simple and reliable for daily use:
 
-1. Return today's workout from a Markdown plan file.
-2. Log completed workouts from chat into SQLite at set-level detail.
-3. Answer basic history/progression questions from SQLite.
+1. Show today's workout from Markdown plans.
+2. Log completed sets from chat into Supabase.
+3. Answer basic history/progression questions from stored data.
 
-## V0 Success Criteria
+## 2) V0 User Outcomes
 
-V0 is live when all of these are true:
+A single user can do these in chat without manual database work:
 
-1. In NanoClaw chat, `what's today's workout?` returns the workout from `plans/<week>.md`.
-2. In NanoClaw chat, messages like `logged squat 102.5kg 5x5 rpe 8` are stored as set rows.
-3. Reprocessing the same message ID does not create duplicate logs.
-4. In NanoClaw chat, `show bench history` and `show bench trend` return database-backed answers.
-5. Core CLI commands return stable `--json` output.
+1. `what's today's workout?`
+2. `logged squat 102.5kg 5x5 rpe 8`
+3. `show bench history`
+4. `show bench trend`
 
-## Scope (V0)
+If those work consistently, v0 is successful.
 
-### In scope
+## 3) Scope
+
+## In scope
 
 - NanoClaw chat interface
-- `train-log-parser` skill for workout-log parsing
-- Thin CLI kernel for validation, persistence, and queries
-- Markdown plan files (`plans/*.md`) as plan source of truth
-- SQLite logging database (`data/train.db`)
+- Markdown workout plans (`plans/*.md`)
+- Set-level workout logging
+- Supabase persistence (`public` schema)
+- Basic history + progression queries
+- One-time TrainHeroic migration tooling
 
-### Out of scope
+## Out of scope
 
-- Auto plan parsing from WhatsApp/PDF/spreadsheets
+- Multi-user auth and permissions
+- RLS and policy hardening
+- Plan versioning / planned-vs-actual modeling
 - Exercise alias/fuzzy matching
-- Plan vs actual comparisons
-- Advanced analytics and recommendations
-- Web UI/charts
-- Multi-user support
+- Advanced analytics/recommendations/charts
+- Web app UI
 
-## Simplest Architecture
+## 4) V0 Operating Decisions
+
+These are intentional v0 simplifications:
+
+1. Single-tenant usage (one operator).
+2. No auth enforcement in app flow yet.
+3. No RLS for now (speed of iteration > security hardening for v0).
+4. `public` schema tables are used directly.
+5. Plans remain in Markdown; execution logs are in DB.
+
+## 5) Architecture (Minimal)
 
 ```text
-User in chat
-   -> NanoClaw
-      -> train-log-parser skill (only for logging intent)
-         -> train log import --json
-            -> SQLite (workouts, sets)
-
-User in chat
-   -> NanoClaw
-      -> train plan today --json
+User (NanoClaw chat)
+   -> Intent routing in AGENTS.md
+      -> plan intent: train plan today --json
          -> plans/*.md
 
-User in chat
-   -> NanoClaw
-      -> train history --json / train stats <exercise> --json
-         -> SQLite
+      -> log intent: $train-log-parser
+         -> train log import --json
+            -> Supabase public tables
+
+      -> query intent: train history / train stats --json
+         -> Supabase public tables
 ```
 
-## Responsibilities: Skill vs Code
+## 6) Skill vs Code Boundary
 
-### Skill (`train-log-parser`)
+## AGENTS.md (day-to-day behavior)
 
-- Detect logging intent from natural language.
-- Parse freeform log text to structured set-level payload.
-- Ask one concise clarification question when ambiguous.
+- Intent routing for plan/log/history/stats
+- Command selection
+- Response style rules
 
-### Code (CLI)
+## Skills
 
-- Validate payload schema before writes.
-- Normalize units (`lb|kg|bw`) and compute `weight_kg`.
-- Enforce idempotency using `source_message_id`.
-- Persist/query SQLite.
-- Return deterministic JSON responses.
+1. `train-log-parser`
+- Parse natural language workout logs into strict JSON payloads
+- Ask concise clarification only when required
 
-## Data Model (Minimal)
+2. `train-output-templates`
+- Optional display formatting for chat responses
 
-Use only two tables in V0.
+3. `trainheroic-migration-prep`
+- One-time conversion of TrainHeroic export into import-ready files
 
-```sql
-CREATE TABLE workouts (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  session_date TEXT NOT NULL,                 -- ISO date, local context
-  source_message_id TEXT NOT NULL UNIQUE,     -- idempotency key from chat layer
-  notes TEXT,
-  created_at TEXT DEFAULT (datetime('now'))
-);
+## CLI/Application code
 
-CREATE TABLE sets (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  workout_id INTEGER NOT NULL REFERENCES workouts(id),
-  exercise_name TEXT NOT NULL,
-  set_number INTEGER NOT NULL,
-  reps INTEGER,
-  weight_value REAL,
-  weight_unit TEXT NOT NULL,                  -- lb | kg | bw
-  weight_kg REAL,
-  duration_seconds INTEGER,
-  rpe REAL,
-  notes TEXT,
-  created_at TEXT DEFAULT (datetime('now'))
-);
+- Validate payloads
+- Normalize units (`lb`, `kg`, `bw`)
+- Write/read DB rows
+- Return deterministic JSON envelopes
 
-CREATE INDEX idx_sets_exercise_name ON sets(exercise_name);
-CREATE INDEX idx_workouts_session_date ON workouts(session_date);
+## 7) Data Model (V0)
+
+Use four tables in `public`:
+
+1. `public.exercises`
+2. `public.workouts`
+3. `public.workout_exercises`
+4. `public.exercise_sets`
+
+Conceptual model:
+
+```text
+workouts 1---N workout_exercises 1---N exercise_sets
+                \ 
+                 N---1 exercises
 ```
 
-## Plan Files (Markdown)
+Set-level fields retained for progression:
 
-Plans are manually maintained Markdown files in `plans/`.
+- `reps`
+- `duration_seconds`
+- `weight_value`
+- `weight_unit`
+- generated `weight_kg`
+- `rpe` (optional)
 
-Example:
+## 8) CLI Surface (V0)
 
-```markdown
-# Week 2026-W09
-
-## Monday
-- Bench Press: 4x5 @ 185 lb
-- OHP: 3x8 @ 115 lb
-
-## Wednesday
-- Deadlift: 3x3 @ 365 lb
-
-## Friday
-- Squat: 5x5 @ 225 lb
-```
-
-`train plan today --json` resolves current weekday section and returns items.
-
-## CLI Surface (Minimal)
+Core commands we depend on:
 
 ```bash
 train plan today --json
-train log import --json           # payload from skill (stdin or arg)
+train log import --json
 train history --last 7d --json
 train stats <exercise> --json
+train query e1rm <exercise> --json
+train query best-set <exercise> --reps <n> --json
 ```
 
-### `train log import --json` contract
+Migration/ops commands:
 
-Input: parser output (`parse_result`) from `train-log-parser`.
-
-Behavior:
-
-1. Validate schema.
-2. Reject with structured error if invalid.
-3. Upsert/ignore by `source_message_id` for idempotency.
-4. Write one workout row + N set rows transactionally.
-5. Return summary JSON (exercise count, set count, total volume).
-
-## Query Requirements (V0)
-
-```sql
--- history: last 7 days
-SELECT w.session_date, s.exercise_name, s.set_number, s.reps,
-       s.weight_value, s.weight_unit, s.rpe
-FROM sets s
-JOIN workouts w ON w.id = s.workout_id
-WHERE w.session_date >= date('now', '-7 days')
-ORDER BY w.session_date, s.exercise_name, s.set_number;
-
--- progression: per-day top set for one exercise
-SELECT w.session_date, MAX(s.weight_kg) AS top_weight_kg, SUM(s.reps) AS total_reps
-FROM sets s
-JOIN workouts w ON w.id = s.workout_id
-WHERE lower(s.exercise_name) = lower(?)
-GROUP BY w.session_date
-ORDER BY w.session_date;
+```bash
+train supabase import-csv --dir <path> --db-url <url> --truncate --json
+train supabase verify --db-url <url> --json
 ```
 
-## NanoClaw Integration (V0)
+Note: keep command output JSON-only for stable agent behavior.
 
-Agent behavior:
+## 9) V0 Success Criteria (Acceptance)
 
-1. For `what's today's workout?` -> run `train plan today --json`.
-2. For workout logging intent -> invoke `train-log-parser`, then run `train log import --json`.
-3. For history queries -> run `train history --json`.
-4. For progression queries -> run `train stats <exercise> --json`.
-5. Always use `--json` in tool calls; format concise chat responses for the user.
+V0 is done when all are true:
 
-## V0 Implementation Plan
+1. `what's today's workout?` returns plan entries from Markdown.
+2. Typical log message writes expected set rows to Supabase.
+3. `history` query returns recent rows by exercise/date.
+4. `stats <exercise>` returns usable trend/PR summary.
+5. Historical TrainHeroic data is imported and queryable.
 
-1. **Kernel setup**: TypeScript CLI, SQLite init/migration, JSON response envelope.
-2. **Logging path**: implement `train log import --json` + transaction + dedupe.
-3. **Plan path**: implement `train plan today --json` Markdown reader.
-4. **Query path**: implement `train history` and `train stats <exercise>`.
-5. **NanoClaw wiring**: route log messages through `train-log-parser` skill.
-6. **Acceptance run**: execute end-to-end chat scenarios and confirm success criteria.
+## 10) Implementation Sequence
 
-## Acceptance Test Scenarios
+1. Confirm DB schema exists in Supabase (`public` tables).
+2. Finalize CLI DB adapter paths (no mixed SQLite/Supabase behavior for v0 runtime path).
+3. Keep `train-log-parser` as primary parser for logging intents.
+4. Wire NanoClaw routing in AGENTS.md to the four core commands.
+5. Import historical CSV bundle.
+6. Verify counts + spot-check query results.
+7. Run 5 end-to-end chat acceptance scenarios.
 
-1. `@Andy what's today's workout?` returns entries from current day in plan Markdown.
-2. `@Andy logged squat 102.5kg 5x5 rpe 8` writes 1 workout + 5 set rows.
-3. Replay same message ID: no new rows written.
-4. `@Andy show bench history` returns recent bench sets.
-5. `@Andy show bench trend` returns per-day top set trend.
+## 11) Risks and Mitigations (V0)
 
-## Post-V0 (Next)
+1. Duplicate logs
+- Mitigation: accept for v0; operationally clean if needed.
 
-- Plan import from coach messages/files
-- Exercise normalization/aliases
-- Richer stats and PR timelines
-- Visualization layer
+2. Parser ambiguity
+- Mitigation: one clarification question max, then log.
+
+3. Schema drift vs CLI expectations
+- Mitigation: keep this PRD and migration script aligned; update both together.
+
+4. Security is intentionally relaxed
+- Mitigation: plan v1 hardening (RLS/auth) as first post-v0 milestone.
+
+## 12) Post-V0 Hardening
+
+After v0 proves daily usability:
+
+1. Reintroduce auth with user JWTs.
+2. Re-enable RLS with `auth.uid()` ownership policies.
+3. Add idempotency key strategy for duplicate-message protection.
+4. Add backup/restore and basic audit trail.
