@@ -5,6 +5,7 @@ import { ok, err, type JsonEnvelope } from "../json-envelope.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PLANS_DIR = path.join(__dirname, "..", "..", "plans");
+const WEEKLY_PLANS_DIR = path.join(PLANS_DIR, "weekly-plans");
 
 interface PlanItem {
   exercise: string;
@@ -60,19 +61,19 @@ export function planToday(): JsonEnvelope<TodayPlan> {
   const week = getISOWeek(now);
   const dayName = DAYS[now.getDay()];
 
-  // Look for current week's plan file
-  if (!fs.existsSync(PLANS_DIR)) {
-    return err(`Plans directory not found: ${PLANS_DIR}`);
+  // Look for current week's plan file in plans/weekly-plans
+  if (!fs.existsSync(WEEKLY_PLANS_DIR)) {
+    return err(`Weekly plans directory not found: ${WEEKLY_PLANS_DIR}`);
   }
 
-  const files = fs.readdirSync(PLANS_DIR).filter((f) => f.endsWith(".md"));
+  const files = fs.readdirSync(WEEKLY_PLANS_DIR).filter((f) => f.endsWith(".md"));
 
   // Try exact week match first, then fall back to any file containing the week
   let planFile: string | null = null;
   let planContent: string | null = null;
 
   for (const file of files) {
-    const content = fs.readFileSync(path.join(PLANS_DIR, file), "utf-8");
+    const content = fs.readFileSync(path.join(WEEKLY_PLANS_DIR, file), "utf-8");
     if (content.includes(week) || file.includes(week)) {
       planFile = file;
       planContent = content;
