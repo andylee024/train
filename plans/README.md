@@ -8,6 +8,7 @@ This directory stores planning artifacts only.
 - `templates/weekly-template.md`: weekly execution template.
 - `blocks/`: active/historical 12-week blocks.
 - `weekly-plans/`: week-by-week executable plans used by `train plan today`.
+- `active/`: cloud-friendly snapshot of current week + current block context.
 - `reviews/`: weekly review notes and plan-adjustment decisions.
 
 ## Source of truth
@@ -20,3 +21,12 @@ This directory stores planning artifacts only.
 1. Do not edit completed sessions in old weekly plan files.
 2. Put plan changes in the current/future weekly file and note why in `reviews/`.
 3. Keep exercise names consistent with logged names to avoid duplicates.
+
+## Weekly file naming
+
+Use human-readable weekly plan names:
+
+1. `YYYY-Mon-week-N.md` (example: `2026-Mar-week-1.md`)
+
+Keep the ISO week token in file content header (example: `# Week 2026-W10`) so
+`train plan today --json` can still resolve the correct file.
