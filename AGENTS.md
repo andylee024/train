@@ -16,8 +16,16 @@ All coding tasks for `train` must follow the canonical Farm orchestration policy
 Recommended defaults:
 
 - `FARM_CONFIG=/Users/andylee/Projects/farm/config.yaml`
-- `FARM_REGISTRY=/Users/andylee/Projects/farm/data/registry.json`
 - `REPO_KEY=train`
+
+Farm runtime commands (coding tasks):
+
+```bash
+farm run --config "$FARM_CONFIG" --repo "$REPO_KEY" --issue "<child-issue-id>"
+farm update --config "$FARM_CONFIG" --repo "$REPO_KEY" --issue "<child-issue-id>" --phase running --summary "Current step"
+farm finish --config "$FARM_CONFIG" --repo "$REPO_KEY" --issue "<child-issue-id>" --outcome completed --summary "Complete" --pr-url "<optional-pr-url>"
+farm status --config "$FARM_CONFIG" --repo "$REPO_KEY" --issue "<child-issue-id>"
+```
 
 ## Non-Coding Requests
 
