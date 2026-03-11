@@ -12,7 +12,7 @@ interface PlanItem {
   prescription: string; // raw text like "4x5 @ 185 lb"
 }
 
-interface TodayPlan {
+export interface TodayPlan {
   week: string;
   day: string;
   file: string;
@@ -56,10 +56,9 @@ function parsePlanMarkdown(content: string): Map<string, PlanItem[]> {
   return days;
 }
 
-export function planToday(): JsonEnvelope<TodayPlan> {
-  const now = new Date();
-  const week = getISOWeek(now);
-  const dayName = DAYS[now.getDay()];
+export function planForDate(date: Date): JsonEnvelope<TodayPlan> {
+  const week = getISOWeek(date);
+  const dayName = DAYS[date.getDay()];
 
   // Look for current week's plan file in plans/weekly-plans
   if (!fs.existsSync(WEEKLY_PLANS_DIR)) {
@@ -98,4 +97,8 @@ export function planToday(): JsonEnvelope<TodayPlan> {
   }
 
   return ok({ week, day: dayName, file: planFile, exercises });
+}
+
+export function planToday(): JsonEnvelope<TodayPlan> {
+  return planForDate(new Date());
 }
