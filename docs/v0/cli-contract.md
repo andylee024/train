@@ -66,9 +66,25 @@ Output:
 
 - `rows[]` of sets with session date/time, reps, duration, load, and RPE.
 
+### 5) Edit current week plan
+
+```bash
+train plan edit --json
+```
+
+Input: JSON on stdin from `$train-plan-editor` (`kind=parse_result`).
+
+Output:
+
+- `week`
+- `file`
+- `applied_edits[]` with summaries
+- `preview[]` of updated day sections
+
 ## Routing guidance
 
 - Logging intent -> `train log import --json`
+- Plan edit intent -> `train plan edit --json`
 - 1RM intent -> `train query e1rm <exercise> --json`
 - Best set by reps intent -> `train query best-set <exercise> --reps <n> --json`
 - Recent history intent -> `train history --last <period> --json`
