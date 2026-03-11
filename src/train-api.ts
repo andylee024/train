@@ -1,4 +1,12 @@
 import { err, ok, type JsonEnvelope } from "./json-envelope.js";
+import { planForDate } from "./commands/plan.js";
+import {
+  buildSessionState,
+  type LoggedExercise,
+  type SessionStateResult,
+} from "./session-state.js";
+
+export type { SessionExercise, SessionStateResult } from "./session-state.js";
 
 const KG_PER_LB = 0.45359237;
 
@@ -399,7 +407,10 @@ async function resolveExerciseExact(
 
 async function resolveExerciseForQuery(
   ctx: SupabaseContext,
-  requested: string
+  requested: string,
+  opts?: {
+    preferredExerciseIds?: Set<string>;
+  }
 ): Promise<JsonEnvelope<ExerciseRow>> {
   const trimmed = requested.trim();
   if (!trimmed) {
@@ -437,6 +448,13 @@ async function resolveExerciseForQuery(
 
   if (parsed.length === 0) {
     return err(`No exercise found for '${requested}'.`);
+  }
+
+  if (opts?.preferredExerciseIds && opts.preferredExerciseIds.size > 0) {
+    const preferred = parsed.filter((exercise) => opts.preferredExerciseIds?.has(exercise.id));
+    if (preferred.length === 1) {
+      return ok(preferred[0]);
+    }
   }
 
   return err(
@@ -603,6 +621,65 @@ function isValidDateInput(value: string): boolean {
   if (!/^\d{4}-\d{2}-\d{2}/.test(value)) return false;
   const t = Date.parse(value);
   return !Number.isNaN(t);
+}
+
+function formatLocalDate(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function parseStrictIsoDate(value: string): JsonEnvelope<Date> {
+  const match = value.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) {
+    return err("Invalid date. Expected YYYY-MM-DD.");
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const parsed = new Date(year, month - 1, day);
+
+  if (
+    parsed.getFullYear() !== year ||
+    parsed.getMonth() !== month - 1 ||
+    parsed.getDate() !== day
+  ) {
+    return err("Invalid date. Expected YYYY-MM-DD.");
+  }
+
+  return ok(parsed);
+}
+
+function getUtcDayBounds(sessionDate: string): JsonEnvelope<{ startMs: number; endMs: number }> {
+  const match = sessionDate.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) {
+    return err("Invalid date. Expected YYYY-MM-DD.");
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const startMs = Date.UTC(year, month - 1, day);
+  const endMs = startMs + 24 * 60 * 60 * 1000;
+  return ok({ startMs, endMs });
+}
+
+function resolveSessionDateArg(date?: string): JsonEnvelope<{ sessionDate: string; planDate: Date }> {
+  if (!date) {
+    const now = new Date();
+    return ok({ sessionDate: formatLocalDate(now), planDate: now });
+  }
+
+  const trimmed = date.trim();
+  if (!trimmed) {
+    return err("Date cannot be empty. Expected YYYY-MM-DD.");
+  }
+
+  const parsedDate = parseStrictIsoDate(trimmed);
+  if (!parsedDate.ok) return parsedDate;
+  return ok({ sessionDate: trimmed, planDate: parsedDate.data });
 }
 
 function normalizeSet(
@@ -779,6 +856,45 @@ async function listWorkoutsSince(
   return ok(rows);
 }
 
+async function listWorkoutsOnDate(
+  ctx: SupabaseContext,
+  sessionDate: string
+): Promise<JsonEnvelope<WorkoutRow[]>> {
+  const bounds = getUtcDayBounds(sessionDate);
+  if (!bounds.ok) return bounds;
+
+  const { startMs, endMs } = bounds.data;
+  const startIso = new Date(startMs).toISOString();
+
+  const resp = await requestRest<Array<Record<string, unknown>>>(ctx, "GET", "workouts", {
+    select: "id,performed_at,notes",
+    ...userFilter(ctx),
+    performed_at: `gte.${startIso}`,
+    order: "performed_at.asc",
+    limit: 5000,
+  });
+
+  if (!resp.ok) {
+    return err(apiErrorToMessage("Failed to query workouts", resp.error, resp.status));
+  }
+
+  const rows = (Array.isArray(resp.data) ? resp.data : [])
+    .map((row) => {
+      const id = asString(row.id);
+      const performedAt = asString(row.performed_at);
+      const notes = typeof row.notes === "string" ? row.notes : null;
+      if (!id || !performedAt) return null;
+      return { id, performed_at: performedAt, notes };
+    })
+    .filter((row): row is WorkoutRow => row !== null)
+    .filter((row) => {
+      const performedAtMs = Date.parse(row.performed_at);
+      return !Number.isNaN(performedAtMs) && performedAtMs >= startMs && performedAtMs < endMs;
+    });
+
+  return ok(rows);
+}
+
 async function listWorkoutExercisesByWorkoutIds(
   ctx: SupabaseContext,
   workoutIds: string[],
@@ -899,6 +1015,49 @@ async function listExercisesByIds(
   }
 
   return ok(rows);
+}
+
+async function listLoggedExercisesOnDate(
+  ctx: SupabaseContext,
+  sessionDate: string
+): Promise<JsonEnvelope<LoggedExercise[]>> {
+  const workoutsResult = await listWorkoutsOnDate(ctx, sessionDate);
+  if (!workoutsResult.ok) return workoutsResult;
+  if (workoutsResult.data.length === 0) return ok([]);
+
+  const workoutById = new Map(workoutsResult.data.map((workout) => [workout.id, workout]));
+  const workoutIds = workoutsResult.data.map((workout) => workout.id);
+
+  const workoutExercisesResult = await listWorkoutExercisesByWorkoutIds(ctx, workoutIds);
+  if (!workoutExercisesResult.ok) return workoutExercisesResult;
+  if (workoutExercisesResult.data.length === 0) return ok([]);
+
+  const exerciseIds = [...new Set(workoutExercisesResult.data.map((row) => row.exercise_id))];
+  const exercisesResult = await listExercisesByIds(ctx, exerciseIds);
+  if (!exercisesResult.ok) return exercisesResult;
+
+  const exerciseNameById = new Map(exercisesResult.data.map((row) => [row.id, row.name]));
+
+  const orderedWorkoutExercises = [...workoutExercisesResult.data].sort((left, right) => {
+    const leftWorkout = workoutById.get(left.workout_id);
+    const rightWorkout = workoutById.get(right.workout_id);
+    const leftTime = leftWorkout ? Date.parse(leftWorkout.performed_at) : 0;
+    const rightTime = rightWorkout ? Date.parse(rightWorkout.performed_at) : 0;
+    if (leftTime !== rightTime) return leftTime - rightTime;
+    return left.order_index - right.order_index;
+  });
+
+  const logged: LoggedExercise[] = [];
+  const seenExerciseIds = new Set<string>();
+
+  for (const workoutExercise of orderedWorkoutExercises) {
+    const exerciseName = exerciseNameById.get(workoutExercise.exercise_id);
+    if (!exerciseName || seenExerciseIds.has(workoutExercise.exercise_id)) continue;
+    seenExerciseIds.add(workoutExercise.exercise_id);
+    logged.push({ id: workoutExercise.exercise_id, name: exerciseName });
+  }
+
+  return ok(logged);
 }
 
 async function fetchJoinedSets(
@@ -1032,6 +1191,52 @@ export async function logWorkoutFromJson(jsonInput: string): Promise<
     set_count: totalSets,
     total_volume_kg: round(totalVolumeKg, 2),
   });
+}
+
+function isNoPlanAvailableError(message: string): boolean {
+  return message.startsWith("No plan found for week ");
+}
+
+export async function getSessionState(date?: string): Promise<JsonEnvelope<SessionStateResult>> {
+  const dateArg = resolveSessionDateArg(date);
+  if (!dateArg.ok) return err(dateArg.error);
+
+  const ctxResult = await initContext();
+  if (!ctxResult.ok) return err(ctxResult.error);
+  const ctx = ctxResult.data;
+
+  const loggedResult = await listLoggedExercisesOnDate(ctx, dateArg.data.sessionDate);
+  if (!loggedResult.ok) return err(loggedResult.error);
+
+  const planResult = planForDate(dateArg.data.planDate);
+  if (!planResult.ok && !isNoPlanAvailableError(planResult.error)) {
+    return err(planResult.error);
+  }
+
+  const plannedExercises =
+    planResult.ok ? planResult.data.exercises.map((exercise) => ({ name: exercise.exercise })) : [];
+
+  const resolvedExerciseCache = new Map<string, string | null>();
+
+  const sessionState = await buildSessionState({
+    plannedExercises,
+    loggedExercises: loggedResult.data,
+    resolvePlannedExerciseId: async (plannedExerciseName, loggedExerciseIds) => {
+      const cacheKey = plannedExerciseName.trim().toLowerCase();
+      if (resolvedExerciseCache.has(cacheKey)) {
+        return resolvedExerciseCache.get(cacheKey) ?? null;
+      }
+
+      const resolved = await resolveExerciseForQuery(ctx, plannedExerciseName, {
+        preferredExerciseIds: loggedExerciseIds,
+      });
+      const resolvedId = resolved.ok ? resolved.data.id : null;
+      resolvedExerciseCache.set(cacheKey, resolvedId);
+      return resolvedId;
+    },
+  });
+
+  return ok(sessionState);
 }
 
 export async function queryHistory(opts: {
