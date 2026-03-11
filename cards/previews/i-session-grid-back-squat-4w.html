@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Card I Preview - Back Squat (4w)</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        box-sizing: border-box;
+        background: radial-gradient(circle at 15% 15%, #dff3ff 0%, #f7fbff 45%, #edf4ff 100%);
+      }
+    </style>
+  </head>
+  <body>
+<article class="session-grid-card">
+  <style>
+    .session-grid-card { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; color: #13243a; background: linear-gradient(160deg, #f4fbff 0%, #ffffff 55%, #eef7ff 100%); border: 1px solid #d6e5f5; border-radius: 18px; padding: 18px; width: min(760px, 100%); box-sizing: border-box; }
+    .sg-header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+    .sg-title { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: 0.2px; }
+    .sg-subtitle { margin: 4px 0 0; color: #4f6b84; font-size: 13px; }
+    .sg-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+    .sg-stat { background: #ffffffcc; border: 1px solid #dce9f7; border-radius: 10px; padding: 8px; }
+    .sg-stat-label { display: block; color: #4f6b84; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .sg-stat-value { display: block; margin-top: 2px; font-size: 20px; font-weight: 700; color: #0d2a47; }
+    .sg-grid-wrap { margin-top: 16px; background: #ffffffc9; border: 1px solid #dce9f7; border-radius: 12px; padding: 10px; }
+    .sg-grid-header { display: grid; grid-template-columns: 42px repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: 8px; }
+    .sg-grid-header .sg-week-label { color: #5d7690; font-size: 11px; text-align: center; }
+    .sg-row { display: grid; grid-template-columns: 42px 1fr; gap: 6px; align-items: center; margin-bottom: 6px; }
+    .sg-row:last-child { margin-bottom: 0; }
+    .sg-day { color: #3f5e7a; font-size: 12px; font-weight: 600; }
+    .sg-row-cells { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+    .sg-cell { aspect-ratio: 1 / 1; border-radius: 6px; border: 1px solid transparent; }
+    .sg-hit.sg-light { background: #b9e3fa; border-color: #8ecde8; }
+    .sg-hit.sg-moderate { background: #ffe2a8; border-color: #f5c15a; }
+    .sg-hit.sg-heavy { background: #ffb8af; border-color: #ee7768; }
+    .sg-missed { background: #ffffff; border: 1px dashed #95a8bb; }
+    .sg-upcoming { background: #f6f9fc; border: 1px solid #e1eaf2; }
+    .sg-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 12px; color: #4f6b84; }
+    .sg-legend-item { display: inline-flex; align-items: center; gap: 5px; }
+    .sg-legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+    .sg-sparkline-wrap { margin-top: 14px; background: #ffffffc9; border: 1px solid #dce9f7; border-radius: 12px; padding: 10px; }
+    .sg-sparkline-title { margin: 0 0 8px; font-size: 12px; color: #4f6b84; letter-spacing: 0.4px; text-transform: uppercase; }
+    .sg-sparkline { width: 100%; height: 72px; display: block; }
+    .sg-sparkline-line { fill: none; stroke: #1980d0; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .sg-sparkline-empty { font-size: 12px; color: #7188a0; }
+    @media (max-width: 720px) {
+      .session-grid-card { padding: 14px; }
+      .sg-stats { grid-template-columns: 1fr; }
+      .sg-grid-header { grid-template-columns: 34px repeat(4, minmax(0, 1fr)); }
+      .sg-row { grid-template-columns: 34px 1fr; }
+      .sg-day { font-size: 11px; }
+      .sg-grid-header .sg-week-label { font-size: 10px; }
+    }
+  </style>
+  <header class="sg-header">
+    <div>
+      <h2 class="sg-title">Session Grid</h2>
+      <p class="sg-subtitle">Back Squat · 4 weeks</p>
+    </div>
+  </header>
+
+  <section class="sg-stats">
+    <div class="sg-stat"><span class="sg-stat-label">Sessions</span><span class="sg-stat-value">3</span></div>
+    <div class="sg-stat"><span class="sg-stat-label">Freq / week</span><span class="sg-stat-value">0.75</span></div>
+    <div class="sg-stat"><span class="sg-stat-label">Consistency</span><span class="sg-stat-value">25.0%</span></div>
+  </section>
+
+  <section class="sg-grid-wrap">
+    <div class="sg-grid-header"><span></span><span class="sg-week-label">Feb 16</span><span class="sg-week-label">Feb 23</span><span class="sg-week-label">Mar 2</span><span class="sg-week-label">Mar 9</span></div>
+    <div class="sg-row">
+    <span class="sg-day">Mon</span>
+    <div class="sg-row-cells"><div class="sg-cell sg-missed" title="2026-02-16 missed planned session"></div><div class="sg-cell sg-missed" title="2026-02-23 missed planned session"></div><div class="sg-cell sg-missed" title="2026-03-02 missed planned session"></div><div class="sg-cell sg-hit sg-light" title="2026-03-09 light | avg RPE n/a | volume 2540.1kg"></div></div>
+  </div><div class="sg-row">
+    <span class="sg-day">Tue</span>
+    <div class="sg-row-cells"><div class="sg-cell sg-missed" title="2026-02-17 missed planned session"></div><div class="sg-cell sg-missed" title="2026-02-24 missed planned session"></div><div class="sg-cell sg-hit sg-light" title="2026-03-03 light | avg RPE n/a | volume 2404kg"></div><div class="sg-cell sg-missed" title="2026-03-10 missed planned session"></div></div>
+  </div>
+    <div class="sg-legend">
+      <span class="sg-legend-item"><span class="sg-legend-dot sg-hit sg-light"></span>Light (&lt;7 RPE)</span>
+      <span class="sg-legend-item"><span class="sg-legend-dot sg-hit sg-moderate"></span>Moderate (7-8 RPE)</span>
+      <span class="sg-legend-item"><span class="sg-legend-dot sg-hit sg-heavy"></span>Heavy (&gt;=8 RPE)</span>
+      <span class="sg-legend-item"><span class="sg-legend-dot sg-missed"></span>Missed planned</span>
+    </div>
+  </section>
+
+  <section class="sg-sparkline-wrap">
+    <h3 class="sg-sparkline-title">Weekly Volume (kg x reps)</h3>
+    <svg class="sg-sparkline" viewBox="0 0 400 64" role="img" aria-label="Weekly volume trend">
+    <polyline class="sg-sparkline-line" points="6,6 135.33,58 264.67,11.13 394,8.48" />
+  </svg>
+  </section>
+</article>
+  </body>
+</html>

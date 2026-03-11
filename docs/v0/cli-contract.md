@@ -13,6 +13,7 @@ NanoClaw Chat
         -> public.workout_exercises
         -> public.exercise_sets
         -> public.exercises
+        -> public.goals
 ```
 
 ## Commands
@@ -66,12 +67,51 @@ Output:
 
 - `rows[]` of sets with session date/time, reps, duration, load, and RPE.
 
+### 5) Set a goal
+
+```bash
+train goal set "<exercise>" "<target>" --json
+```
+
+Examples:
+
+- `train goal set "Back Squat" 140kg --json`
+- `train goal set "Bench Press" "5x100kg" --json`
+
+Output:
+
+- created `goal` row with target metadata and current progress.
+
+### 6) List goals
+
+```bash
+train goal list --json
+```
+
+Output:
+
+- `active_goals[]` with progress.
+- `active_count` and `achieved_count`.
+
+### 7) Check goals
+
+```bash
+train goal check --json
+```
+
+Output:
+
+- `newly_achieved[]` milestone events.
+- active goal progress snapshot after evaluation.
+
 ## Routing guidance
 
 - Logging intent -> `train log import --json`
 - 1RM intent -> `train query e1rm <exercise> --json`
 - Best set by reps intent -> `train query best-set <exercise> --reps <n> --json`
 - Recent history intent -> `train history --last <period> --json`
+- Goal set intent -> `train goal set <exercise> <target> --json`
+- Goal progress check intent -> `train goal list --json` / `train goal check --json`
 
 ## Notes
 

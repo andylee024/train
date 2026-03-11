@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Milestone Road Card</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --canvas: #f4f6f8;
+      --ink: #17202c;
+      --muted: #516073;
+      --card-shadow: 0 18px 40px rgba(19, 28, 41, 0.12);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 8% 12%, rgba(203, 75, 45, 0.16), transparent 38%),
+        radial-gradient(circle at 92% 78%, rgba(47, 125, 225, 0.14), transparent 42%),
+        var(--canvas);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px;
+    }
+
+    .mr-shell {
+      width: min(1080px, 100%);
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid #dde3ea;
+      padding: 22px;
+    }
+
+    .mr-header {
+      margin: 0 0 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e4e9f0;
+    }
+
+    .mr-header h1 {
+      margin: 0;
+      font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+      letter-spacing: 0.01em;
+    }
+
+    .mr-header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .mr-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .mr-goal {
+      border-radius: var(--radius);
+      border: 1px solid var(--mr-border);
+      background: linear-gradient(180deg, #ffffff 0%, var(--mr-track) 100%);
+      padding: 14px;
+      min-height: 290px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .mr-goal-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .mr-goal-head h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.25;
+    }
+
+    .mr-goal-head p {
+      margin: 2px 0 0;
+      color: var(--mr-accent-dark);
+      font-size: 0.83rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .mr-goal-percent {
+      border-radius: 999px;
+      background: var(--mr-accent-soft);
+      color: var(--mr-accent-dark);
+      font-size: 0.83rem;
+      font-weight: 700;
+      padding: 5px 10px;
+      white-space: nowrap;
+    }
+
+    .mr-road {
+      position: relative;
+      height: 132px;
+      margin-top: 2px;
+      padding-top: 12px;
+    }
+
+    .mr-road-track {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 72px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #f2f4f8 0%, #e8edf4 100%);
+      border: 1px solid #d5dde7;
+    }
+
+    .mr-marker {
+      position: absolute;
+      transform: translateX(-50%);
+      display: grid;
+      justify-items: center;
+      width: 86px;
+      text-align: center;
+      gap: 5px;
+    }
+
+    .mr-marker .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 3px solid #c3ccda;
+      background: #ffffff;
+      z-index: 1;
+    }
+
+    .mr-marker .label {
+      display: block;
+      font-size: 0.71rem;
+      line-height: 1.25;
+      color: #546073;
+      font-weight: 600;
+    }
+
+    .mr-marker .label em {
+      display: block;
+      font-style: normal;
+      font-size: 0.68rem;
+      opacity: 0.82;
+      color: #728096;
+    }
+
+    .mr-marker-start {
+      top: 28px;
+    }
+
+    .mr-marker-checkpoint {
+      top: 54px;
+      width: 68px;
+    }
+
+    .mr-marker-checkpoint .dot {
+      width: 10px;
+      height: 10px;
+      border-width: 2px;
+      border-color: #b9c2d2;
+      background: #fdfefe;
+    }
+
+    .mr-marker-checkpoint .label {
+      font-size: 0.63rem;
+      color: #728096;
+    }
+
+    .mr-marker-goal {
+      top: 18px;
+    }
+
+    .mr-marker-goal .dot {
+      border-color: var(--mr-accent);
+      background: #fff;
+    }
+
+    .mr-achieved .mr-marker-goal .dot,
+    .mr-exceeded .mr-marker-goal .dot {
+      border-color: #219661;
+      background: #d6f5e6;
+      box-shadow: 0 0 0 4px rgba(33, 150, 97, 0.18);
+    }
+
+    .mr-marker-current {
+      top: 84px;
+    }
+
+    .mr-marker-current .dot {
+      width: 16px;
+      height: 16px;
+      border-width: 3px;
+      border-color: var(--mr-accent-dark);
+      background: var(--mr-accent);
+    }
+
+    .mr-marker-current .label {
+      color: #293649;
+    }
+
+    .mr-progress-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: #4a586a;
+      font-size: 0.79rem;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .mr-progress-meta strong {
+      color: #1f2a38;
+      font-size: 0.86rem;
+    }
+
+    .mr-progress-track {
+      position: relative;
+      height: 10px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      border: 1px solid #d3dce8;
+      overflow: hidden;
+    }
+
+    .mr-progress-fill {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--mr-accent) 0%, var(--mr-accent-dark) 100%);
+      transition: width 220ms ease;
+    }
+
+    .mr-callout {
+      margin: 4px 0 0;
+      padding: 9px 11px;
+      border-radius: 12px;
+      background: var(--mr-accent-soft);
+      color: var(--mr-accent-dark);
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.32;
+      border: 1px solid var(--mr-border);
+    }
+
+    @media (max-width: 680px) {
+      body {
+        padding: 16px 10px;
+      }
+
+      .mr-shell {
+        border-radius: 20px;
+        padding: 14px;
+      }
+
+      .mr-goal {
+        min-height: 278px;
+      }
+
+      .mr-road {
+        height: 124px;
+      }
+
+      .mr-road-track {
+        top: 68px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="mr-shell" aria-label="Milestone Road Card">
+    <header class="mr-header">
+      <h1>Milestone Road</h1>
+      <p>Progress from your starting point to your next performance targets.</p>
+    </header>
+    <section class="mr-grid">
+      <section class="mr-goal mr-in_progress" style="--mr-accent:#cb4b2d;--mr-accent-soft:#f8ddd6;--mr-accent-dark:#7a2a18;--mr-track:#fff2ed;--mr-border:#efb7a8;">
+  <header class="mr-goal-head">
+    <div>
+      <h2>Back Squat</h2>
+      <p>In Progress</p>
+    </div>
+    <span class="mr-goal-percent">82%</span>
+  </header>
+
+  <div class="mr-road">
+    <div class="mr-road-track"></div>
+    <div class="mr-marker mr-marker-start" style="left:4.55%;"><span class="dot"></span><span class="label">Start · 112.5kg</span></div>
+    <div class="mr-marker mr-marker-checkpoint" style="left:27.27%;"><span class="dot"></span><span class="label">M1 · 119.4kg</span></div>
+<div class="mr-marker mr-marker-checkpoint" style="left:50.00%;"><span class="dot"></span><span class="label">M2 · 126.3kg</span></div>
+<div class="mr-marker mr-marker-checkpoint" style="left:72.73%;"><span class="dot"></span><span class="label">M3 · 133.1kg</span></div>
+    <div class="mr-marker mr-marker-goal" style="left:95.45%;"><span class="dot"></span><span class="label">3 plates · 140kg</span></div>
+    <div class="mr-marker mr-marker-current" style="left:78.93%;"><span class="dot"></span><span class="label">Now · 135kg<em>5kg to go</em></span></div>
+  </div>
+
+  <div class="mr-progress-meta">
+    <span>Current <strong>135kg</strong></span>
+    <span>Target <strong>140kg</strong></span>
+  </div>
+  <div class="mr-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+    <span class="mr-progress-fill" style="width:81.82%"></span>
+  </div>
+
+  <p class="mr-callout">5kg to 3 plates. Stay steady and close the gap.</p>
+</section>
+<section class="mr-goal mr-achieved" style="--mr-accent:#2f7de1;--mr-accent-soft:#d9e9ff;--mr-accent-dark:#1f4d84;--mr-track:#edf5ff;--mr-border:#b8d3fb;">
+  <header class="mr-goal-head">
+    <div>
+      <h2>Bench Press</h2>
+      <p>Goal Achieved</p>
+    </div>
+    <span class="mr-goal-percent">100%</span>
+  </header>
+
+  <div class="mr-road">
+    <div class="mr-road-track"></div>
+    <div class="mr-marker mr-marker-start" style="left:5.13%;"><span class="dot"></span><span class="label">Start · 82.5kg</span></div>
+    <div class="mr-marker mr-marker-checkpoint" style="left:27.56%;"><span class="dot"></span><span class="label">M1 · 86.9kg</span></div>
+<div class="mr-marker mr-marker-checkpoint" style="left:50.00%;"><span class="dot"></span><span class="label">M2 · 91.3kg</span></div>
+<div class="mr-marker mr-marker-checkpoint" style="left:72.44%;"><span class="dot"></span><span class="label">M3 · 95.6kg</span></div>
+    <div class="mr-marker mr-marker-goal is-complete" style="left:94.87%;"><span class="dot"></span><span class="label">100kg · 100kg</span></div>
+    <div class="mr-marker mr-marker-current" style="left:94.87%;"><span class="dot"></span><span class="label">Now · 100kg<em>Goal hit</em></span></div>
+  </div>
+
+  <div class="mr-progress-meta">
+    <span>Current <strong>100kg</strong></span>
+    <span>Target <strong>100kg</strong></span>
+  </div>
+  <div class="mr-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+    <span class="mr-progress-fill" style="width:100.00%"></span>
+  </div>
+
+  <p class="mr-callout">Hit 100kg on Mar 5. Celebrate this win and set 102.5kg next.</p>
+</section>
+<section class="mr-goal mr-exceeded" style="--mr-accent:#d08b1b;--mr-accent-soft:#fce8c5;--mr-accent-dark:#7c4d09;--mr-track:#fff7e9;--mr-border:#efcc8f;">
+  <header class="mr-goal-head">
+    <div>
+      <h2>Deadlift</h2>
+      <p>Goal Exceeded</p>
+    </div>
+    <span class="mr-goal-percent">112%</span>
+  </header>
+
+  <div class="mr-road">
+    <div class="mr-road-track"></div>
+    <div class="mr-marker mr-marker-start" style="left:4.55%;"><span class="dot"></span><span class="label">Start · 155kg</span></div>
+    <div class="mr-marker mr-marker-checkpoint" style="left:24.84%;"><span class="dot"></span><span class="label">M1 · 161.3kg</span></div>
+<div class="mr-marker mr-marker-checkpoint" style="left:45.13%;"><span class="dot"></span><span class="label">M2 · 167.5kg</span></div>
+<div class="mr-marker mr-marker-checkpoint" style="left:65.42%;"><span class="dot"></span><span class="label">M3 · 173.8kg</span></div>
+    <div class="mr-marker mr-marker-goal is-complete" style="left:85.71%;"><span class="dot"></span><span class="label">4 plates · 180kg</span></div>
+    <div class="mr-marker mr-marker-current is-surpassed" style="left:95.45%;"><span class="dot"></span><span class="label">Now · 183kg<em>+3kg</em></span></div>
+  </div>
+
+  <div class="mr-progress-meta">
+    <span>Current <strong>183kg</strong></span>
+    <span>Target <strong>180kg</strong></span>
+  </div>
+  <div class="mr-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+    <span class="mr-progress-fill" style="width:100.00%"></span>
+  </div>
+
+  <p class="mr-callout">3kg past your goal (hit on Mar 3). Next target: 185kg.</p>
+</section>
+    </section>
+  </main>
+</body>
+</html>
