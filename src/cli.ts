@@ -4,7 +4,7 @@ import { logImport } from "./commands/log.js";
 import { planToday } from "./commands/plan.js";
 import { history } from "./commands/history.js";
 import { stats } from "./commands/stats.js";
-import { queryBestSet, queryE1rm } from "./commands/query.js";
+import { queryBestSet, queryE1rm, querySessionGridCard } from "./commands/query.js";
 import { goalCheck, goalList, goalSet } from "./commands/goal.js";
 import { supabaseImportCsv, supabaseVerify } from "./commands/supabase.js";
 
@@ -112,6 +112,22 @@ query
       exercise,
       reps,
       days: Number.isFinite(days) ? days : 365,
+    });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+query
+  .command("session-grid")
+  .description("Render Session Grid card HTML from real history data")
+  .argument("<exercise>", "Exercise name")
+  .option("--weeks <weeks>", "Lookback window in weeks (for example: 4 or 12)", "4")
+  .option("--json", "JSON output (default)")
+  .action(async (exercise, opts) => {
+    const weeks = Number(opts.weeks);
+    const result = await querySessionGridCard({
+      exercise,
+      period_weeks: Number.isInteger(weeks) && weeks > 0 ? weeks : 4,
     });
     console.log(JSON.stringify(result, null, 2));
     if (!result.ok) process.exit(1);
