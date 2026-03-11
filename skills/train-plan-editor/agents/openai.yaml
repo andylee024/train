@@ -1,0 +1,4 @@
+interface:
+  display_name: "Train Plan Editor"
+  short_description: "Parse plan-edit chat into validated plan edit JSON"
+  default_prompt: "Use $train-plan-editor to parse this plan change request into train plan edit JSON."
