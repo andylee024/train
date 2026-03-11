@@ -100,6 +100,8 @@ journalctl -u nanoclaw -n 100 --no-pager
 ## CLI Commands (Train)
 
 ```bash
+node dist/cli.js plan today --json
+echo '{"edits":[{"type":"swap_days","day_a":2,"day_b":4}]}' | node dist/cli.js plan edit --json
 node dist/cli.js history --last 7d
 node dist/cli.js query e1rm "Back Squat" --days 365
 node dist/cli.js query best-set "Back Squat" --reps 8 --days 365

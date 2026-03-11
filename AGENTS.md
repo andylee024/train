@@ -41,6 +41,7 @@ That document is the canonical schema contract. If code or migrations conflict w
 
 Use this for common interactions:
 - Getting today's workout
+- Editing this week's plan
 - Logging completed sets
 - Querying recent history
 - Querying simple progression
@@ -81,6 +82,12 @@ Specialized presentation logic (output style/templates) belongs in dedicated ski
 6. If user asks for best set at a target rep count:
 - Run: `train query best-set <exercise> --reps <n> --json`
 - Return top loaded set plus date/context.
+
+7. If user asks to edit this week's plan in natural language:
+- Invoke `$train-plan-editor` skill.
+- If skill returns `needs_clarification`, ask exactly one concise question.
+- If skill returns `parse_result`, run: `train plan edit --json` with the payload.
+- Confirm applied edits and affected day(s) concisely.
 
 ## Guardrails
 

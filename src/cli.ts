@@ -1,6 +1,7 @@
 #!/usr/bin/env npx tsx
 import { Command } from "commander";
 import { logImport } from "./commands/log.js";
+import { planEdit } from "./commands/plan-edit.js";
 import { planSendToday, planSendWeekly, planToday } from "./commands/plan.js";
 import { history } from "./commands/history.js";
 import { stats } from "./commands/stats.js";
@@ -75,6 +76,35 @@ plan
   .option("--json", "JSON output (default)")
   .action(async (opts) => {
     const result = planSendToday({ date: opts.date });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+plan
+  .command("edit")
+  .description("Apply structured edits to the current week plan from JSON")
+  .option("--data <json>", "JSON payload (alternative to stdin)")
+  .option("--dry-run", "Preview edits without writing to disk")
+  .option("--json", "JSON output (default)")
+  .action(async (opts) => {
+    let input: string;
+
+    if (opts.data) {
+      input = opts.data;
+    } else {
+      const chunks: Buffer[] = [];
+      for await (const chunk of process.stdin) {
+        chunks.push(chunk);
+      }
+      input = Buffer.concat(chunks).toString("utf-8").trim();
+    }
+
+    if (!input) {
+      console.log(JSON.stringify({ ok: false, error: "No input provided" }));
+      process.exit(1);
+    }
+
+    const result = planEdit(input, { dryRun: Boolean(opts.dryRun) });
     console.log(JSON.stringify(result, null, 2));
     if (!result.ok) process.exit(1);
   });
