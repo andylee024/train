@@ -85,6 +85,28 @@ Workout planning stays in Markdown files under `plans/` and is not represented i
 +------------------------------+
 ```
 
+```text
++----------------------+
+|      train.goals     |
+|----------------------|
+| id (PK)              |
+| user_id (FK)         |
+| exercise_id (FK)     |
+| target_type          |
+| target_kg            |
+| target_reps (nullable) |
+| created_at           |
+| achieved_at (nullable) |
++----------+-----------+
+           ^
+           |
+           | N : 1
+           |
++----------+-----------+
+|   train.exercises    |
++----------------------+
+```
+
 ## Table Details
 
 ## `train.exercises`
@@ -129,6 +151,21 @@ Atomic training record. Every set is one row.
 - `rpe`: optional effort score.
 - `UNIQUE(workout_exercise_id, set_index)`: no duplicate set number.
 
+## `train.goals`
+
+Milestone targets per exercise.
+
+- `id`: UUID primary key.
+- `user_id`: owner.
+- `exercise_id`: exercise reference.
+- `target_type`: `e1rm`, `weight`, or `reps_at_weight`.
+- `target_kg`: normalized kg target value.
+- `target_reps`: required reps for `reps_at_weight`; null for other goal types.
+- `created_at`: goal creation timestamp.
+- `achieved_at`: nullable timestamp set once goal is achieved.
+
+Multiple goals per exercise are allowed. Achieved goals are preserved for history.
+
 ## Required Invariants
 
 These are mandatory behavior constraints for code and agents:
@@ -137,6 +174,8 @@ These are mandatory behavior constraints for code and agents:
 2. If `weight_unit` is `kg` or `lb`, `weight_value` must be present.
 3. If `weight_unit` is `bw`, `weight_value` must be null.
 4. `order_index` and `set_index` are positive integers.
+5. In goals, `target_kg` must be positive.
+6. In goals, `target_reps` is required only when `target_type = reps_at_weight`.
 
 ## Why This Schema
 
@@ -158,4 +197,3 @@ Before changing schema:
 1. Update this file first.
 2. Ensure changes preserve set-level progression queries.
 3. Confirm whether new fields are truly required for v0 logging.
-

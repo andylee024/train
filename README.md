@@ -103,6 +103,9 @@ journalctl -u nanoclaw -n 100 --no-pager
 node dist/cli.js history --last 7d
 node dist/cli.js query e1rm "Back Squat" --days 365
 node dist/cli.js query best-set "Back Squat" --reps 8 --days 365
+node dist/cli.js goal set "Back Squat" 180kg
+node dist/cli.js goal list
+node dist/cli.js goal check
 ```
 
 ## Related Docs

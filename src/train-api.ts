@@ -192,6 +192,85 @@ interface StatsResult {
   e1rm_kg_365d: number | null;
 }
 
+type GoalTargetType = "e1rm" | "weight" | "reps_at_weight";
+type GoalMetricUnit = "kg" | "reps";
+
+interface GoalRow {
+  id: string;
+  exercise_id: string;
+  target_type: GoalTargetType;
+  target_kg: number;
+  target_reps: number | null;
+  created_at: string;
+  achieved_at: string | null;
+}
+
+interface GoalWithExercise extends GoalRow {
+  exercise: string;
+}
+
+interface ParsedGoalTarget {
+  target_type: GoalTargetType;
+  target_kg: number;
+  target_reps: number | null;
+  input: string;
+}
+
+interface GoalProgressRow {
+  id: string;
+  exercise: string;
+  target_type: GoalTargetType;
+  target_kg: number;
+  target_reps: number | null;
+  target: string;
+  created_at: string;
+  achieved_at: string | null;
+  achieved: boolean;
+  current_value: number | null;
+  progress_pct: number;
+  metric: GoalMetricUnit;
+}
+
+interface GoalJourney {
+  start_value: number;
+  end_value: number;
+  weeks: number;
+  metric: GoalMetricUnit;
+}
+
+interface GoalAchievement {
+  goal: {
+    id: string;
+    exercise: string;
+    target_type: GoalTargetType;
+    target_kg: number;
+    target_reps: number | null;
+    target: string;
+    created_at: string;
+  };
+  achieved: true;
+  achieved_at: string;
+  journey: GoalJourney;
+}
+
+interface GoalSetResult {
+  goal: GoalProgressRow;
+}
+
+interface GoalListResult {
+  active_goals: GoalProgressRow[];
+  active_count: number;
+  achieved_count: number;
+}
+
+interface GoalCheckResult {
+  checked_at: string;
+  goals_checked: number;
+  goals_achieved: number;
+  newly_achieved: GoalAchievement[];
+  goals: GoalProgressRow[];
+}
+
 function parseApiError(text: string): ApiError | string | null {
   const trimmed = text.trim();
   if (!trimmed) return null;
@@ -263,7 +342,7 @@ function parseDuration(last: string): number {
 
 async function requestRest<T>(
   ctx: { baseUrl: string; apiKey: string },
-  method: "GET" | "POST" | "DELETE",
+  method: "GET" | "POST" | "PATCH" | "DELETE",
   path: string,
   query: Record<string, string | number | undefined> = {},
   payload?: unknown,
@@ -749,6 +828,105 @@ function computeVolumeKg(set: NormalizedSet): number {
   return weightKg * set.reps;
 }
 
+function parseLoadToKg(value: number, unit: "kg" | "lb"): number {
+  return unit === "lb" ? value * KG_PER_LB : value;
+}
+
+function parseGoalTarget(input: string): JsonEnvelope<ParsedGoalTarget> {
+  const raw = input.trim();
+  if (!raw) return err("Goal target is required. Example: 140kg, 5x100kg, or e1rm:140kg.");
+
+  const repsAtWeight = raw.match(/^(\d+)\s*x\s*(\d+(?:\.\d+)?)\s*(kg|lb)$/i);
+  if (repsAtWeight) {
+    const reps = Number(repsAtWeight[1]);
+    const weight = Number(repsAtWeight[2]);
+    const unit = repsAtWeight[3].toLowerCase() as "kg" | "lb";
+    if (!Number.isFinite(weight) || weight <= 0 || reps <= 0) {
+      return err("Invalid reps-at-weight target. Use format like 5x100kg.");
+    }
+    return ok({
+      target_type: "reps_at_weight",
+      target_kg: round(parseLoadToKg(weight, unit), 3),
+      target_reps: reps,
+      input: raw,
+    });
+  }
+
+  const typed = raw.match(/^(e1rm|weight)\s*[:=]\s*(\d+(?:\.\d+)?)\s*(kg|lb)?$/i);
+  if (typed) {
+    const kind = typed[1].toLowerCase() as "e1rm" | "weight";
+    const value = Number(typed[2]);
+    const unit = (typed[3]?.toLowerCase() as "kg" | "lb" | undefined) ?? "kg";
+    if (!Number.isFinite(value) || value <= 0) {
+      return err("Goal target must be a positive load.");
+    }
+    return ok({
+      target_type: kind,
+      target_kg: round(parseLoadToKg(value, unit), 3),
+      target_reps: null,
+      input: raw,
+    });
+  }
+
+  const plainWeight = raw.match(/^(\d+(?:\.\d+)?)\s*(kg|lb)?$/i);
+  if (plainWeight) {
+    const value = Number(plainWeight[1]);
+    const unit = (plainWeight[2]?.toLowerCase() as "kg" | "lb" | undefined) ?? "kg";
+    if (!Number.isFinite(value) || value <= 0) {
+      return err("Goal target must be a positive load.");
+    }
+    return ok({
+      target_type: "weight",
+      target_kg: round(parseLoadToKg(value, unit), 3),
+      target_reps: null,
+      input: raw,
+    });
+  }
+
+  return err(
+    "Unsupported goal target. Use <weight>kg/lb, <reps>x<weight>kg/lb, or e1rm:<weight>kg/lb."
+  );
+}
+
+function formatGoalTarget(goal: Pick<GoalRow, "target_type" | "target_kg" | "target_reps">): string {
+  if (goal.target_type === "reps_at_weight") {
+    return `${goal.target_reps ?? 0}x${round(goal.target_kg, 3)}kg`;
+  }
+  if (goal.target_type === "e1rm") {
+    return `e1rm:${round(goal.target_kg, 3)}kg`;
+  }
+  return `${round(goal.target_kg, 3)}kg`;
+}
+
+function goalMetricUnit(goal: Pick<GoalRow, "target_type">): GoalMetricUnit {
+  return goal.target_type === "reps_at_weight" ? "reps" : "kg";
+}
+
+function goalTargetValue(goal: Pick<GoalRow, "target_type" | "target_kg" | "target_reps">): number {
+  if (goal.target_type === "reps_at_weight") {
+    return goal.target_reps ?? 0;
+  }
+  return goal.target_kg;
+}
+
+function isGoalAchieved(
+  goal: Pick<GoalRow, "target_type" | "target_kg" | "target_reps">,
+  value: number | null
+): boolean {
+  if (value == null) return false;
+  return value >= goalTargetValue(goal);
+}
+
+function calculateGoalProgress(
+  goal: Pick<GoalRow, "target_type" | "target_kg" | "target_reps">,
+  value: number | null
+): number {
+  if (value == null) return 0;
+  const target = goalTargetValue(goal);
+  if (target <= 0) return 0;
+  return round((value / target) * 100, 2);
+}
+
 async function listWorkoutsSince(
   ctx: SupabaseContext,
   days: number
@@ -965,6 +1143,373 @@ async function fetchJoinedSets(
   return ok(joined);
 }
 
+function parseGoalTargetType(value: unknown): GoalTargetType | null {
+  if (value === "e1rm" || value === "weight" || value === "reps_at_weight") {
+    return value;
+  }
+  return null;
+}
+
+function parseGoalRow(row: Record<string, unknown>): GoalRow | null {
+  const id = asString(row.id);
+  const exerciseId = asString(row.exercise_id);
+  const targetType = parseGoalTargetType(row.target_type);
+  const targetKg = asNumber(row.target_kg);
+  const targetReps = asInt(row.target_reps);
+  const createdAt = asString(row.created_at);
+  const achievedAt = row.achieved_at == null ? null : asString(row.achieved_at);
+
+  if (!id || !exerciseId || !targetType || targetKg == null || !createdAt) return null;
+
+  return {
+    id,
+    exercise_id: exerciseId,
+    target_type: targetType,
+    target_kg: round(targetKg, 3),
+    target_reps: targetReps,
+    created_at: createdAt,
+    achieved_at: achievedAt,
+  };
+}
+
+async function insertGoal(
+  ctx: SupabaseContext,
+  goal: Pick<GoalRow, "exercise_id" | "target_type" | "target_kg" | "target_reps">
+): Promise<JsonEnvelope<GoalRow>> {
+  const resp = await requestRest<Array<Record<string, unknown>>>(
+    ctx,
+    "POST",
+    "goals",
+    {},
+    [
+      withUserScope(ctx, {
+        exercise_id: goal.exercise_id,
+        target_type: goal.target_type,
+        target_kg: goal.target_kg,
+        target_reps: goal.target_reps,
+      }),
+    ],
+    { Prefer: "return=representation" }
+  );
+
+  if (!resp.ok) {
+    return err(apiErrorToMessage("Failed to create goal", resp.error, resp.status));
+  }
+
+  const row = Array.isArray(resp.data) && resp.data.length ? parseGoalRow(resp.data[0]) : null;
+  if (!row) return err("Goal create returned an invalid row.");
+  return ok(row);
+}
+
+async function listGoalRows(
+  ctx: SupabaseContext,
+  opts: { activeOnly?: boolean } = {}
+): Promise<JsonEnvelope<GoalRow[]>> {
+  const resp = await requestRest<Array<Record<string, unknown>>>(ctx, "GET", "goals", {
+    select: "id,exercise_id,target_type,target_kg,target_reps,created_at,achieved_at",
+    ...userFilter(ctx),
+    ...(opts.activeOnly ? { achieved_at: "is.null" } : {}),
+    order: "created_at.asc",
+    limit: 5000,
+  });
+
+  if (!resp.ok) {
+    return err(apiErrorToMessage("Failed to query goals", resp.error, resp.status));
+  }
+
+  const rows = (Array.isArray(resp.data) ? resp.data : [])
+    .map((row) => parseGoalRow(row))
+    .filter((row): row is GoalRow => row !== null);
+
+  return ok(rows);
+}
+
+async function markGoalAchieved(
+  ctx: SupabaseContext,
+  goalId: string,
+  achievedAt: string
+): Promise<JsonEnvelope<boolean>> {
+  const resp = await requestRest<Array<Record<string, unknown>>>(
+    ctx,
+    "PATCH",
+    "goals",
+    {
+      id: `eq.${goalId}`,
+      ...userFilter(ctx),
+      achieved_at: "is.null",
+    },
+    { achieved_at: achievedAt },
+    { Prefer: "return=representation" }
+  );
+
+  if (!resp.ok) {
+    return err(apiErrorToMessage("Failed to mark goal as achieved", resp.error, resp.status));
+  }
+
+  const count = Array.isArray(resp.data) ? resp.data.length : 0;
+  return ok(count > 0);
+}
+
+async function goalsWithExerciseName(
+  ctx: SupabaseContext,
+  goals: GoalRow[]
+): Promise<JsonEnvelope<GoalWithExercise[]>> {
+  if (goals.length === 0) return ok([]);
+
+  const exerciseIds = [...new Set(goals.map((goal) => goal.exercise_id))];
+  const exercisesResult = await listExercisesByIds(ctx, exerciseIds);
+  if (!exercisesResult.ok) return err(exercisesResult.error);
+
+  const nameById = new Map(exercisesResult.data.map((row) => [row.id, row.name]));
+  const mapped = goals
+    .map((goal) => {
+      const exerciseName = nameById.get(goal.exercise_id);
+      if (!exerciseName) return null;
+      return { ...goal, exercise: exerciseName };
+    })
+    .filter((goal): goal is GoalWithExercise => goal !== null);
+
+  return ok(mapped);
+}
+
+function computeGoalMetricValue(
+  goal: GoalWithExercise,
+  sets: JoinedSetRow[],
+  opts: { beforeOrAt?: number } = {}
+): number | null {
+  let best: number | null = null;
+
+  for (const setRow of sets) {
+    const performedAt = Date.parse(setRow.performed_at);
+    if (opts.beforeOrAt != null && Number.isFinite(opts.beforeOrAt) && performedAt > opts.beforeOrAt) {
+      continue;
+    }
+
+    let candidate: number | null = null;
+    if (goal.target_type === "weight") {
+      candidate = setRow.weight_kg;
+    } else if (goal.target_type === "e1rm") {
+      if (setRow.weight_kg != null && setRow.reps != null && setRow.reps > 0) {
+        candidate = setRow.weight_kg * (1 + setRow.reps / 30);
+      }
+    } else {
+      if (
+        setRow.weight_kg != null &&
+        setRow.reps != null &&
+        setRow.reps > 0 &&
+        setRow.weight_kg >= goal.target_kg
+      ) {
+        candidate = setRow.reps;
+      }
+    }
+
+    if (candidate == null) continue;
+    if (best == null || candidate > best) best = candidate;
+  }
+
+  if (best == null) return null;
+  return goalMetricUnit(goal) === "kg" ? round(best, 3) : Math.round(best);
+}
+
+function toGoalProgressRow(goal: GoalWithExercise, currentValue: number | null): GoalProgressRow {
+  return {
+    id: goal.id,
+    exercise: goal.exercise,
+    target_type: goal.target_type,
+    target_kg: goal.target_kg,
+    target_reps: goal.target_reps,
+    target: formatGoalTarget(goal),
+    created_at: goal.created_at,
+    achieved_at: goal.achieved_at,
+    achieved: goal.achieved_at != null,
+    current_value: currentValue,
+    progress_pct: calculateGoalProgress(goal, currentValue),
+    metric: goalMetricUnit(goal),
+  };
+}
+
+function buildGoalJourney(
+  goal: GoalWithExercise,
+  sets: JoinedSetRow[],
+  achievedAt: string,
+  endValue: number
+): GoalJourney {
+  const createdAtMs = Date.parse(goal.created_at);
+  const achievedAtMs = Date.parse(achievedAt);
+  const baseline = Number.isNaN(createdAtMs)
+    ? null
+    : computeGoalMetricValue(goal, sets, { beforeOrAt: createdAtMs });
+  const startValue = baseline ?? 0;
+  const weeks = Number.isNaN(createdAtMs) || Number.isNaN(achievedAtMs)
+    ? 0
+    : round((achievedAtMs - createdAtMs) / (1000 * 60 * 60 * 24 * 7), 2);
+
+  return {
+    start_value: startValue,
+    end_value: endValue,
+    weeks: Math.max(weeks, 0),
+    metric: goalMetricUnit(goal),
+  };
+}
+
+async function evaluateGoals(
+  ctx: SupabaseContext,
+  goals: GoalWithExercise[],
+  opts: { markAchieved: boolean }
+): Promise<JsonEnvelope<GoalCheckResult>> {
+  const checkedAt = new Date().toISOString();
+
+  if (goals.length === 0) {
+    return ok({
+      checked_at: checkedAt,
+      goals_checked: 0,
+      goals_achieved: 0,
+      newly_achieved: [],
+      goals: [],
+    });
+  }
+
+  const joinedSetsByExerciseId = new Map<string, JoinedSetRow[]>();
+  for (const exerciseId of [...new Set(goals.map((goal) => goal.exercise_id))]) {
+    const setsResult = await fetchJoinedSets(ctx, {
+      days: 3650,
+      exerciseId,
+    });
+    if (!setsResult.ok) return err(setsResult.error);
+    joinedSetsByExerciseId.set(exerciseId, setsResult.data);
+  }
+
+  const rows: GoalProgressRow[] = [];
+  const newlyAchieved: GoalAchievement[] = [];
+
+  for (const goal of goals) {
+    const sets = joinedSetsByExerciseId.get(goal.exercise_id) ?? [];
+    const currentValue = computeGoalMetricValue(goal, sets);
+    const reachedNow = isGoalAchieved(goal, currentValue);
+    const wasAchieved = goal.achieved_at != null;
+
+    if (!wasAchieved && reachedNow && opts.markAchieved) {
+      const marked = await markGoalAchieved(ctx, goal.id, checkedAt);
+      if (!marked.ok) return err(marked.error);
+      if (marked.data) {
+        goal.achieved_at = checkedAt;
+      }
+    }
+
+    const progressRow = toGoalProgressRow(goal, currentValue);
+    rows.push(progressRow);
+
+    if (!wasAchieved && progressRow.achieved && currentValue != null) {
+      newlyAchieved.push({
+        goal: {
+          id: goal.id,
+          exercise: goal.exercise,
+          target_type: goal.target_type,
+          target_kg: goal.target_kg,
+          target_reps: goal.target_reps,
+          target: formatGoalTarget(goal),
+          created_at: goal.created_at,
+        },
+        achieved: true,
+        achieved_at: goal.achieved_at!,
+        journey: buildGoalJourney(goal, sets, goal.achieved_at!, currentValue),
+      });
+    }
+  }
+
+  return ok({
+    checked_at: checkedAt,
+    goals_checked: rows.length,
+    goals_achieved: rows.filter((row) => row.achieved).length,
+    newly_achieved: newlyAchieved,
+    goals: rows,
+  });
+}
+
+async function checkGoalsWithContext(
+  ctx: SupabaseContext,
+  opts: { markAchieved: boolean }
+): Promise<JsonEnvelope<GoalCheckResult>> {
+  const activeGoalsResult = await listGoalRows(ctx, { activeOnly: true });
+  if (!activeGoalsResult.ok) return err(activeGoalsResult.error);
+
+  const goalsNamedResult = await goalsWithExerciseName(ctx, activeGoalsResult.data);
+  if (!goalsNamedResult.ok) return err(goalsNamedResult.error);
+
+  return evaluateGoals(ctx, goalsNamedResult.data, opts);
+}
+
+export async function setGoal(exercise: string, targetInput: string): Promise<JsonEnvelope<GoalSetResult>> {
+  const exerciseName = exercise.trim();
+  if (!exerciseName) {
+    return err("Exercise is required. Usage: train goal set <exercise> <target>.");
+  }
+
+  const parsedTarget = parseGoalTarget(targetInput);
+  if (!parsedTarget.ok) return err(parsedTarget.error);
+
+  const ctxResult = await initContext();
+  if (!ctxResult.ok) return err(ctxResult.error);
+  const ctx = ctxResult.data;
+
+  const exerciseIdResult = await getOrCreateExerciseId(ctx, exerciseName);
+  if (!exerciseIdResult.ok) return err(exerciseIdResult.error);
+
+  const createdGoalResult = await insertGoal(ctx, {
+    exercise_id: exerciseIdResult.data,
+    target_type: parsedTarget.data.target_type,
+    target_kg: parsedTarget.data.target_kg,
+    target_reps: parsedTarget.data.target_reps,
+  });
+  if (!createdGoalResult.ok) return err(createdGoalResult.error);
+
+  const namedGoalsResult = await goalsWithExerciseName(ctx, [createdGoalResult.data]);
+  if (!namedGoalsResult.ok) return err(namedGoalsResult.error);
+  const createdGoal = namedGoalsResult.data[0];
+  if (!createdGoal) return err("Goal created but could not resolve exercise.");
+
+  const setsResult = await fetchJoinedSets(ctx, { days: 3650, exerciseId: createdGoal.exercise_id });
+  if (!setsResult.ok) return err(setsResult.error);
+
+  const currentValue = computeGoalMetricValue(createdGoal, setsResult.data);
+  return ok({
+    goal: toGoalProgressRow(createdGoal, currentValue),
+  });
+}
+
+export async function listGoals(): Promise<JsonEnvelope<GoalListResult>> {
+  const ctxResult = await initContext();
+  if (!ctxResult.ok) return err(ctxResult.error);
+  const ctx = ctxResult.data;
+
+  const activeGoalsResult = await listGoalRows(ctx, { activeOnly: true });
+  if (!activeGoalsResult.ok) return err(activeGoalsResult.error);
+
+  const allGoalsResult = await listGoalRows(ctx, { activeOnly: false });
+  if (!allGoalsResult.ok) return err(allGoalsResult.error);
+
+  const activeNamedGoalsResult = await goalsWithExerciseName(ctx, activeGoalsResult.data);
+  if (!activeNamedGoalsResult.ok) return err(activeNamedGoalsResult.error);
+
+  const evaluatedResult = await evaluateGoals(ctx, activeNamedGoalsResult.data, { markAchieved: false });
+  if (!evaluatedResult.ok) return err(evaluatedResult.error);
+
+  const achievedCount = allGoalsResult.data.filter((goal) => goal.achieved_at != null).length;
+  return ok({
+    active_goals: evaluatedResult.data.goals,
+    active_count: evaluatedResult.data.goals.length,
+    achieved_count: achievedCount,
+  });
+}
+
+export async function checkGoals(): Promise<JsonEnvelope<GoalCheckResult>> {
+  const ctxResult = await initContext();
+  if (!ctxResult.ok) return err(ctxResult.error);
+  const ctx = ctxResult.data;
+
+  return checkGoalsWithContext(ctx, { markAchieved: true });
+}
+
 export async function logWorkoutFromJson(jsonInput: string): Promise<
   JsonEnvelope<{
     workout_id: string;
@@ -972,6 +1517,8 @@ export async function logWorkoutFromJson(jsonInput: string): Promise<
     exercise_count: number;
     set_count: number;
     total_volume_kg: number;
+    newly_achieved_goals: GoalAchievement[];
+    goal_check_error: string | null;
   }>
 > {
   let parsed: unknown;
@@ -1025,12 +1572,23 @@ export async function logWorkoutFromJson(jsonInput: string): Promise<
     return err(`Failed to log workout: ${message}`);
   }
 
+  let newlyAchievedGoals: GoalAchievement[] = [];
+  let goalCheckError: string | null = null;
+  const goalCheckResult = await checkGoalsWithContext(ctx, { markAchieved: true });
+  if (goalCheckResult.ok) {
+    newlyAchievedGoals = goalCheckResult.data.newly_achieved;
+  } else {
+    goalCheckError = goalCheckResult.error;
+  }
+
   return ok({
     workout_id: workout.id,
     performed_at: workout.performed_at,
     exercise_count: payload.entries.length,
     set_count: totalSets,
     total_volume_kg: round(totalVolumeKg, 2),
+    newly_achieved_goals: newlyAchievedGoals,
+    goal_check_error: goalCheckError,
   });
 }
 

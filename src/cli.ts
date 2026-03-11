@@ -5,6 +5,7 @@ import { planToday } from "./commands/plan.js";
 import { history } from "./commands/history.js";
 import { stats } from "./commands/stats.js";
 import { queryBestSet, queryE1rm } from "./commands/query.js";
+import { goalCheck, goalList, goalSet } from "./commands/goal.js";
 import { supabaseImportCsv, supabaseVerify } from "./commands/supabase.js";
 
 const program = new Command();
@@ -112,6 +113,41 @@ query
       reps,
       days: Number.isFinite(days) ? days : 365,
     });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+// --- goal ---
+const goal = program.command("goal").description("Goal and milestone tracking");
+
+goal
+  .command("set")
+  .description("Set a goal target for an exercise")
+  .argument("<exercise>", "Exercise name")
+  .argument("<target>", "Goal target (e.g. 140kg, 5x100kg, e1rm:180kg)")
+  .option("--json", "JSON output (default)")
+  .action(async (exercise, target) => {
+    const result = await goalSet(exercise, target);
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+goal
+  .command("list")
+  .description("List active goals with progress")
+  .option("--json", "JSON output (default)")
+  .action(async () => {
+    const result = await goalList();
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+goal
+  .command("check")
+  .description("Check all active goals and mark newly achieved goals")
+  .option("--json", "JSON output (default)")
+  .action(async () => {
+    const result = await goalCheck();
     console.log(JSON.stringify(result, null, 2));
     if (!result.ok) process.exit(1);
   });
