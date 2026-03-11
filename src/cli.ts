@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 import { Command } from "commander";
 import { logImport } from "./commands/log.js";
-import { planToday } from "./commands/plan.js";
+import { planSendToday, planSendWeekly, planToday } from "./commands/plan.js";
 import { history } from "./commands/history.js";
 import { stats } from "./commands/stats.js";
 import { queryBestSet, queryE1rm } from "./commands/query.js";
@@ -49,9 +49,32 @@ const plan = program.command("plan");
 plan
   .command("today")
   .description("Show today's planned workout")
+  .option("--date <yyyy-mm-dd>", "Reference date for deterministic output")
   .option("--json", "JSON output (default)")
-  .action(async () => {
-    const result = planToday();
+  .action(async (opts) => {
+    const result = planToday({ date: opts.date });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+plan
+  .command("send-weekly")
+  .description("Generate weekly WhatsApp delivery payload")
+  .option("--date <yyyy-mm-dd>", "Reference date for deterministic output")
+  .option("--json", "JSON output (default)")
+  .action(async (opts) => {
+    const result = planSendWeekly({ date: opts.date });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+  });
+
+plan
+  .command("send-today")
+  .description("Generate daily WhatsApp delivery payload")
+  .option("--date <yyyy-mm-dd>", "Reference date for deterministic output")
+  .option("--json", "JSON output (default)")
+  .action(async (opts) => {
+    const result = planSendToday({ date: opts.date });
     console.log(JSON.stringify(result, null, 2));
     if (!result.ok) process.exit(1);
   });
