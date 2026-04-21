@@ -1,6 +1,6 @@
 # Mapping Rules: TrainHeroic -> Train Schema
 
-Target schema is defined in `docs/database-schema.md`.
+Target schema is defined in `docs/schema.md`.
 
 ## Scope
 

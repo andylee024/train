@@ -35,7 +35,7 @@ This Farm-first rule is for coding task orchestration. Normal Train chat/CLI usa
 
 Before any DB-related implementation or changes, read:
 
-- `docs/database-schema.md`
+- `docs/schema.md`
 
 That document is the canonical schema contract. If code or migrations conflict with it, align to the document first.
 
@@ -86,7 +86,7 @@ Specialized presentation logic (output style/templates) belongs in dedicated ski
 
 - Always use CLI commands with `--json`.
 - Never write to DB without schema-validated payload.
-- Keep DB changes minimal and consistent with `docs/database-schema.md`.
+- Keep DB changes minimal and consistent with `docs/schema.md`.
 - Never infer missing critical logging fields silently; ask for clarification.
 - Prefer exact exercise names from stored data; avoid fuzzy reinterpretation in this layer.
 - Keep responses concise unless user asks for more detail.

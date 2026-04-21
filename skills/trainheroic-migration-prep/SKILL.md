@@ -5,7 +5,7 @@ description: Prepare TrainHeroic export data for importing into Train's simplifi
 
 # TrainHeroic Migration Prep
 
-Use this skill to transform TrainHeroic export files into deterministic, import-ready files for the Train schema in `docs/database-schema.md`.
+Use this skill to transform TrainHeroic export files into deterministic, import-ready files for the Train schema in `docs/schema.md`.
 
 ## When To Use
 
@@ -18,7 +18,7 @@ Use this skill when a user asks to:
 ## Workflow
 
 1. Read schema contract first.
-- Load `docs/database-schema.md` from the Train repo.
+- Load `docs/schema.md` from the Train repo.
 - Confirm target entities are only: `exercises`, `workouts`, `workout_exercises`, `exercise_sets`.
 
 2. Inspect input export structure.

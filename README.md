@@ -107,7 +107,6 @@ node dist/cli.js query best-set "Back Squat" --reps 8 --days 365
 
 ## Related Docs
 
-- `docs/database-schema.md`
-- `docs/v0/plan.md`
-- `docs/v1/plan.md`
-- `docs/supabase-cli-workflow.md`
+- `docs/prd.md` — product requirements (v0)
+- `docs/schema.md` — Supabase schema contract
+- `docs/roadmap.md` — direction past v0

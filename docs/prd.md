@@ -28,7 +28,7 @@ If those work consistently, v0 is successful.
 - NanoClaw chat interface
 - Markdown workout plans (`plans/*.md`)
 - Set-level workout logging
-- Supabase persistence (`public` schema)
+- Supabase persistence (`train` schema)
 - Basic history + progression queries
 - One-time TrainHeroic migration tooling
 
@@ -48,7 +48,7 @@ These are intentional v0 simplifications:
 1. Single-tenant usage (one operator).
 2. No auth enforcement in app flow yet.
 3. No RLS for now (speed of iteration > security hardening for v0).
-4. `public` schema tables are used directly.
+4. `train` schema tables are used directly.
 5. Plans remain in Markdown; execution logs are in DB.
 
 ## 5) Architecture (Minimal)
@@ -61,10 +61,10 @@ User (NanoClaw chat)
 
       -> log intent: $train-log-parser
          -> train log import --json
-            -> Supabase public tables
+            -> Supabase train tables
 
       -> query intent: train history / train stats --json
-         -> Supabase public tables
+         -> Supabase train tables
 ```
 
 ## 6) Skill vs Code Boundary
@@ -96,12 +96,12 @@ User (NanoClaw chat)
 
 ## 7) Data Model (V0)
 
-Use four tables in `public`:
+Use four tables in `train`:
 
-1. `public.exercises`
-2. `public.workouts`
-3. `public.workout_exercises`
-4. `public.exercise_sets`
+1. `train.exercises`
+2. `train.workouts`
+3. `train.workout_exercises`
+4. `train.exercise_sets`
 
 Conceptual model:
 
@@ -154,7 +154,7 @@ V0 is done when all are true:
 
 ## 10) Implementation Sequence
 
-1. Confirm DB schema exists in Supabase (`public` tables).
+1. Confirm DB schema exists in Supabase (`train` tables).
 2. Finalize CLI DB adapter paths (no mixed SQLite/Supabase behavior for v0 runtime path).
 3. Keep `train-log-parser` as primary parser for logging intents.
 4. Wire NanoClaw routing in AGENTS.md to the four core commands.
