@@ -30,24 +30,77 @@ function getISOWeek(date: Date): string {
 
 const DAYS = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
+/**
+ * Default day-number → weekday mapping.
+ * Day 1 = Monday, Day 5 = Friday. Override per plan if needed.
+ */
+const DEFAULT_DAY_MAP: Record<number, string> = {
+  1: "monday",
+  2: "tuesday",
+  3: "wednesday",
+  4: "thursday",
+  5: "friday",
+  6: "saturday",
+  7: "sunday",
+};
+
+/**
+ * Parse weekly plan markdown into a map of weekday → exercises.
+ *
+ * Supports two formats:
+ *   Format A (actual plans): `## Day N - Name` headers + `N. Exercise: prescription`
+ *   Format B (legacy/simple): `## DayName` headers + `- Exercise: prescription`
+ *
+ * Session Note lines are skipped.
+ */
 function parsePlanMarkdown(content: string): Map<string, PlanItem[]> {
   const days = new Map<string, PlanItem[]>();
   let currentDay: string | null = null;
 
   for (const line of content.split("\n")) {
-    const dayMatch = line.match(/^##\s+(\w+)/);
-    if (dayMatch) {
-      currentDay = dayMatch[1].toLowerCase();
+    // Format A: ## Day 1 - Lower A
+    const dayNumMatch = line.match(/^##\s+Day\s+(\d+)\s*[-–—]\s*(.+)/i);
+    if (dayNumMatch) {
+      const dayNum = parseInt(dayNumMatch[1], 10);
+      currentDay = DEFAULT_DAY_MAP[dayNum] ?? null;
+      if (currentDay) days.set(currentDay, []);
+      continue;
+    }
+
+    // Format B: ## Monday  (or ## Wednesday etc)
+    const dayNameMatch = line.match(/^##\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\s*$/i);
+    if (dayNameMatch) {
+      currentDay = dayNameMatch[1].toLowerCase();
       days.set(currentDay, []);
       continue;
     }
 
+    // Skip non-exercise headers (## Week Header, ## Weekly Goals, etc)
+    if (line.match(/^##\s+/)) {
+      currentDay = null;
+      continue;
+    }
+
     if (currentDay) {
-      const itemMatch = line.match(/^[-*]\s+(.+?):\s+(.+)$/);
-      if (itemMatch) {
+      // Skip session note lines
+      if (line.match(/^\d+\.\s+Session\s+Note:/i)) continue;
+
+      // Format A: `1. Exercise: prescription`
+      const numberedMatch = line.match(/^\d+\.\s+(.+?):\s+(.+)$/);
+      if (numberedMatch) {
         days.get(currentDay)!.push({
-          exercise: itemMatch[1].trim(),
-          prescription: itemMatch[2].trim(),
+          exercise: numberedMatch[1].trim(),
+          prescription: numberedMatch[2].trim(),
+        });
+        continue;
+      }
+
+      // Format B: `- Exercise: prescription` or `* Exercise: prescription`
+      const bulletMatch = line.match(/^[-*]\s+(.+?):\s+(.+)$/);
+      if (bulletMatch) {
+        days.get(currentDay)!.push({
+          exercise: bulletMatch[1].trim(),
+          prescription: bulletMatch[2].trim(),
         });
       }
     }
@@ -56,46 +109,63 @@ function parsePlanMarkdown(content: string): Map<string, PlanItem[]> {
   return days;
 }
 
+/**
+ * Resolve the current week's plan file.
+ * Search order:
+ *   1. plans/active/current-week.md (if it exists and is current)
+ *   2. plans/weekly-plans/ files matching ISO week in content or filename
+ *   3. plans/weekly-plans/ — most recently modified .md file as fallback
+ */
+function findCurrentPlan(week: string): { file: string; content: string } | null {
+  // 1. Check plans/active/current-week.md
+  const activeWeek = path.join(PLANS_DIR, "active", "current-week.md");
+  if (fs.existsSync(activeWeek)) {
+    const content = fs.readFileSync(activeWeek, "utf-8");
+    if (content.includes(week)) {
+      return { file: "active/current-week.md", content };
+    }
+  }
+
+  // 2. Search weekly-plans/ for matching week
+  if (!fs.existsSync(WEEKLY_PLANS_DIR)) return null;
+
+  const files = fs.readdirSync(WEEKLY_PLANS_DIR)
+    .filter((f) => f.endsWith(".md"))
+    .sort()
+    .reverse(); // newest first by filename
+
+  for (const file of files) {
+    const content = fs.readFileSync(path.join(WEEKLY_PLANS_DIR, file), "utf-8");
+    if (content.includes(week) || file.includes(week)) {
+      return { file, content };
+    }
+  }
+
+  // 3. Fallback: most recently modified plan file
+  if (files.length > 0) {
+    const sorted = files
+      .map((f) => ({ f, mtime: fs.statSync(path.join(WEEKLY_PLANS_DIR, f)).mtimeMs }))
+      .sort((a, b) => b.mtime - a.mtime);
+    const latest = sorted[0].f;
+    return { file: latest, content: fs.readFileSync(path.join(WEEKLY_PLANS_DIR, latest), "utf-8") };
+  }
+
+  return null;
+}
+
 export function planToday(): JsonEnvelope<TodayPlan> {
   const now = new Date();
   const week = getISOWeek(now);
   const dayName = DAYS[now.getDay()];
 
-  // Look for current week's plan file in plans/weekly-plans
-  if (!fs.existsSync(WEEKLY_PLANS_DIR)) {
-    return err(`Weekly plans directory not found: ${WEEKLY_PLANS_DIR}`);
-  }
+  const plan = findCurrentPlan(week);
 
-  const files = fs.readdirSync(WEEKLY_PLANS_DIR).filter((f) => f.endsWith(".md"));
-
-  // Try exact week match first, then fall back to any file containing the week
-  let planFile: string | null = null;
-  let planContent: string | null = null;
-
-  for (const file of files) {
-    const content = fs.readFileSync(path.join(WEEKLY_PLANS_DIR, file), "utf-8");
-    if (content.includes(week) || file.includes(week)) {
-      planFile = file;
-      planContent = content;
-      break;
-    }
-  }
-
-  if (!planFile || !planContent) {
+  if (!plan) {
     return err(`No plan found for week ${week}`);
   }
 
-  const days = parsePlanMarkdown(planContent);
+  const days = parsePlanMarkdown(plan.content);
   const exercises = days.get(dayName) ?? [];
 
-  if (exercises.length === 0) {
-    return ok({
-      week,
-      day: dayName,
-      file: planFile,
-      exercises: [],
-    });
-  }
-
-  return ok({ week, day: dayName, file: planFile, exercises });
+  return ok({ week, day: dayName, file: plan.file, exercises });
 }

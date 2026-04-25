@@ -1,4 +1,0 @@
-interface:
-  display_name: "TrainHeroic Migration Prep"
-  short_description: "Prepare TrainHeroic export files for Train DB import"
-  default_prompt: "Use $trainheroic-migration-prep to transform this TrainHeroic export into import-ready files for Train."

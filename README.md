@@ -1,112 +1,46 @@
 # Train
 
-Train is a chat-first workout logging/querying layer used by NanoClaw.
+Train gives every athlete a world-class training team — powered by AI, coordinated by a head coach, designed for any person at any life stage.
 
-This repo is focused on:
-- Logging workouts/sets to Supabase
-- Querying history and lift stats from chat/CLI
-- Keeping workout plans in markdown (`plans/`)
+The system replaces the four roles an athlete currently does themselves — coach, nutritionist, chief of staff, analyst — so their only job is to show up, do the work, and report what happened.
 
-## Cloud Setup (DigitalOcean, after bootstrap)
+## Documentation
 
-If you already ran:
-- `scripts/bootstrap-droplet.sh`
+- [`docs/system-architecture.md`](docs/system-architecture.md) — the canonical architecture (6 core concepts: Layers, Roles, The Plan, The Athlete, Logging, Feedback Loop)
+- [`docs/product-roadmap.md`](docs/product-roadmap.md) — milestones M0–M6, from foundation to operator services
+- [`docs/schema.md`](docs/schema.md) — database schema reference (for when we move to Supabase)
+- Implementation tracked in [Linear → train project](https://linear.app/a24-personal/project/train-5bf68de4e2d4)
 
-Use this checklist to finish setup.
+## Core Architecture
 
-### 1) Put secrets in place
-
-On droplet:
-
-```bash
-cat >/etc/train/secrets.env <<'EOF'
-SUPABASE_URL=...
-SUPABASE_ANON_KEY=...
-SUPABASE_KEY=...
-TRAIN_USER_ID=...
-EOF
-
-cat >/etc/nanoclaw/secrets.env <<'EOF'
-OPENAI_API_KEY=...
-ANTHROPIC_API_KEY=...
-CLAUDE_CODE_OAUTH_TOKEN=...
-EOF
+```
+Layers (when) × Roles (who) → The Plan (what) → The Athlete (for whom) → Logging (how they report) → Feedback Loop (how it stays alive)
 ```
 
-### 2) Sync Train env into app directory
+**Roles** are AI agents, each with domain expertise and an objective function:
+- **Head Coach** (orchestrator) — synthesizes specialist programming into one coherent plan
+- **Specialists** (strength, sport, Olympic lifting, mobility, nutrition) — each produces their own programming, negotiates with the head coach
+- **Chief of Staff** (operator) — handles logistics so the athlete never thinks about them
 
-```bash
-cp /etc/train/secrets.env /opt/train/.env
-chown app:app /opt/train/.env
-chmod 600 /opt/train/.env
+**Layers** set the planning cadence: Arc (3-12mo) → Block (3-6wk) → Week (7 days) → Day (right now). Planning cascades down. Data flows up. Exceptions propagate by severity.
+
+## Repo Structure
+
+```
+docs/                    — architecture, roadmap, schema
+plans/
+  blocks/*.md            — 12 periodization blocks (Mar 2026 – Feb 2027)
+  weekly-plans/*.md      — weekly workout prescriptions
+  active/                — current week + block pointers
+  templates/*.md         — plan generation templates
+src/                     — CLI source (TypeScript)
+supabase/                — applied migration (core schema)
 ```
 
-### 3) Authenticate NanoClaw to WhatsApp
+## Design Principles
 
-Run as `app` user and scan QR from your phone:
-
-```bash
-sudo -u app -H bash -lc 'cd /opt/nanoclaw && npm run auth'
-```
-
-Notes:
-- In WhatsApp: `Linked devices` -> `Link a device`
-- After successful auth, session state is saved under `/opt/nanoclaw/store/auth/`
-
-### 4) Start/restart service
-
-```bash
-systemctl restart nanoclaw
-systemctl status nanoclaw --no-pager
-journalctl -u nanoclaw -n 100 --no-pager
-```
-
-### 5) Verify Train can query Supabase
-
-```bash
-sudo -u app -H bash -lc 'cd /opt/train && set -a && source .env && set +a && node dist/cli.js history --last 14d'
-sudo -u app -H bash -lc 'cd /opt/train && set -a && source .env && set +a && node dist/cli.js query e1rm "Back Squat" --days 365'
-```
-
-### 6) Confirm NanoClaw can access Train mount
-
-Bootstrap/deploy scripts set the main group mount to:
-- Host: `/opt/train`
-- Container path: `train`
-
-If needed, rerun deploy script:
-
-```bash
-cd /opt/train
-TRAIN_BRANCH=main NANOCLAW_BRANCH=main bash scripts/deploy-droplet.sh
-```
-
-## Daily Operations
-
-Update both repos and restart:
-
-```bash
-cd /opt/train
-TRAIN_BRANCH=main NANOCLAW_BRANCH=main bash scripts/deploy-droplet.sh
-```
-
-Check service health:
-
-```bash
-systemctl status nanoclaw --no-pager
-journalctl -u nanoclaw -n 100 --no-pager
-```
-
-## CLI Commands (Train)
-
-```bash
-node dist/cli.js history --last 7d
-node dist/cli.js query e1rm "Back Squat" --days 365
-node dist/cli.js query best-set "Back Squat" --reps 8 --days 365
-```
-
-## Related Docs
-
-- `docs/prd.md` — product requirements (v0)
-- `docs/schema.md` — Supabase schema contract
-- `docs/roadmap.md` — direction past v0
+- **Informed but unburdened.** The athlete can always see the rationale. They never have to make the decision.
+- **Numbers to chase.** PRs to beat on every set. Gap-to-goal metrics. Trend lines. Non-negotiable.
+- **Propose, don't dictate.** When the plan changes, the system proposes and explains. The athlete approves.
+- **Push over pull.** The morning text IS the product. The webapp is for the weekly ritual and on-demand context.
+- **Consistency is the product.** Train's job isn't the perfect program — it's making a good program so easy to follow that the athlete never falls off.
