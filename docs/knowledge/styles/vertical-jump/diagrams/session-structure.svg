@@ -1,0 +1,109 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Optimal Session Structure for Jump Training</title>
+  <desc>Shows the correct ordering of exercise types within a single training session, from highest neural demand to lowest.</desc>
+
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .block-title { font-size: 12px; font-weight: 700; fill: white; }
+    .block-detail { font-size: 9px; fill: rgba(255,255,255,0.9); }
+    .section-label { font-size: 10px; fill: #333; font-weight: 600; }
+    .exercise-text { font-size: 9px; fill: #444; }
+    .arrow-text { font-size: 9px; fill: #888; font-style: italic; }
+    .rule { font-size: 10px; fill: #1a1a1a; }
+    .rule-bold { font-size: 10px; fill: #1a1a1a; font-weight: 700; }
+  </style>
+
+  <!-- Title -->
+  <text x="30" y="28" class="title">Session Structure: Exercise Ordering</text>
+  <text x="30" y="44" class="subtitle">Most neurally demanding → least demanding. Both THP and VJB agree: do the fast stuff first while fresh.</text>
+
+  <!-- Neural demand gradient bar -->
+  <defs>
+    <linearGradient id="neural" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="60" width="700" height="8" rx="4" fill="url(#neural)"/>
+  <text x="60" y="82" font-size="9" fill="#dc2626" font-weight="600">HIGH NEURAL DEMAND</text>
+  <text x="680" y="82" font-size="9" fill="#059669" font-weight="600" text-anchor="end">LOW NEURAL DEMAND</text>
+
+  <!-- Block A: Plyos/Speed -->
+  <rect x="60" y="95" width="150" height="120" rx="8" fill="#dc2626"/>
+  <text x="135" y="118" class="block-title" text-anchor="middle">A: SPEED / PLYO</text>
+  <text x="135" y="135" class="block-detail" text-anchor="middle">Fastest movements first</text>
+  <text x="135" y="148" class="block-detail" text-anchor="middle">Max intent, low fatigue</text>
+  <line x1="80" y1="158" x2="190" y2="158" stroke="rgba(255,255,255,0.3)"/>
+  <text x="135" y="174" class="block-detail" text-anchor="middle">Depth jumps 2-4 × 5</text>
+  <text x="135" y="187" class="block-detail" text-anchor="middle">Tuck jumps 4 × 8</text>
+  <text x="135" y="200" class="block-detail" text-anchor="middle">Approach jumps × 10</text>
+
+  <!-- Arrow -->
+  <text x="225" y="155" class="arrow-text">→</text>
+
+  <!-- Block B: Power/Ballistic -->
+  <rect x="240" y="95" width="150" height="120" rx="8" fill="#7c3aed"/>
+  <text x="315" y="118" class="block-title" text-anchor="middle">B: POWER / BALLISTIC</text>
+  <text x="315" y="135" class="block-detail" text-anchor="middle">Loaded explosive movements</text>
+  <text x="315" y="148" class="block-detail" text-anchor="middle">Moderate load, high speed</text>
+  <line x1="260" y1="158" x2="370" y2="158" stroke="rgba(255,255,255,0.3)"/>
+  <text x="315" y="174" class="block-detail" text-anchor="middle">Jump Squats 4 × 5 @ 15-20%</text>
+  <text x="315" y="187" class="block-detail" text-anchor="middle">Hang Cleans 3-5 × 3</text>
+  <text x="315" y="200" class="block-detail" text-anchor="middle">Hang Snatches 3 × 3</text>
+
+  <!-- Arrow -->
+  <text x="405" y="155" class="arrow-text">→</text>
+
+  <!-- Block C: Strength -->
+  <rect x="420" y="95" width="150" height="120" rx="8" fill="#1e40af"/>
+  <text x="495" y="118" class="block-title" text-anchor="middle">C: STRENGTH</text>
+  <text x="495" y="135" class="block-detail" text-anchor="middle">Heavy compound lifts</text>
+  <text x="495" y="148" class="block-detail" text-anchor="middle">High force, controlled tempo</text>
+  <line x1="440" y1="158" x2="550" y2="158" stroke="rgba(255,255,255,0.3)"/>
+  <text x="495" y="174" class="block-detail" text-anchor="middle">Back Squat 3-5 × 3-5</text>
+  <text x="495" y="187" class="block-detail" text-anchor="middle">RDL / Hip Thrust 3 × 6-8</text>
+  <text x="495" y="200" class="block-detail" text-anchor="middle">Calf Raise 2 × 20</text>
+
+  <!-- Arrow -->
+  <text x="585" y="155" class="arrow-text">→</text>
+
+  <!-- Block D: Accessories -->
+  <rect x="600" y="95" width="150" height="120" rx="8" fill="#059669" opacity="0.7"/>
+  <text x="675" y="118" class="block-title" text-anchor="middle">D: ACCESSORIES</text>
+  <text x="675" y="135" class="block-detail" text-anchor="middle">Isolation + mobility</text>
+  <text x="675" y="148" class="block-detail" text-anchor="middle">Prehab, flexibility</text>
+  <line x1="620" y1="158" x2="730" y2="158" stroke="rgba(255,255,255,0.3)"/>
+  <text x="675" y="174" class="block-detail" text-anchor="middle">Split squats 2 × 6-8/side</text>
+  <text x="675" y="187" class="block-detail" text-anchor="middle">Core work</text>
+  <text x="675" y="200" class="block-detail" text-anchor="middle">Mobility / stretching</text>
+
+  <!-- Rest guidance -->
+  <rect x="60" y="230" width="690" height="40" rx="6" fill="#f8fafc" stroke="#ddd"/>
+  <text x="80" y="248" class="rule-bold">Rest intervals:</text>
+  <text x="195" y="248" class="rule">Plyos: 1-2 min between sets | Power: 3-4 min | Strength: 4-5 min | Accessories: 1-2 min</text>
+  <text x="80" y="262" class="rule-bold">Volume cap:</text>
+  <text x="185" y="262" class="rule">THP recommends ~20 working sets per session. VJB recommends finish plyos feeling fresh, not fatigued.</text>
+
+  <!-- Key principles -->
+  <text x="60" y="295" class="section-label">WHY THIS ORDER MATTERS</text>
+
+  <rect x="60" y="305" width="220" height="75" rx="5" fill="#fff7ed" stroke="#f97316"/>
+  <text x="170" y="323" class="rule-bold" text-anchor="middle" fill="#c2410c">Neural freshness</text>
+  <text x="170" y="338" class="exercise-text" text-anchor="middle">Plyos and power moves require</text>
+  <text x="170" y="351" class="exercise-text" text-anchor="middle">maximal neural output. Fatigue</text>
+  <text x="170" y="364" class="exercise-text" text-anchor="middle">from squats would reduce quality.</text>
+
+  <rect x="295" y="305" width="220" height="75" rx="5" fill="#fff7ed" stroke="#f97316"/>
+  <text x="405" y="323" class="rule-bold" text-anchor="middle" fill="#c2410c">Post-activation potentiation</text>
+  <text x="405" y="338" class="exercise-text" text-anchor="middle">Heavy strength work potentiates</text>
+  <text x="405" y="351" class="exercise-text" text-anchor="middle">subsequent explosive work in future</text>
+  <text x="405" y="364" class="exercise-text" text-anchor="middle">sessions (VJB stimulation method).</text>
+
+  <rect x="530" y="305" width="220" height="75" rx="5" fill="#fff7ed" stroke="#f97316"/>
+  <text x="640" y="323" class="rule-bold" text-anchor="middle" fill="#c2410c">Fatigue specificity</text>
+  <text x="640" y="338" class="exercise-text" text-anchor="middle">Different exercise types create</text>
+  <text x="640" y="351" class="exercise-text" text-anchor="middle">different fatigue traces (THP).</text>
+  <text x="640" y="364" class="exercise-text" text-anchor="middle">Sequencing avoids superimposition.</text>
+</svg>

@@ -4,10 +4,10 @@
   "description": "Chat-first workout tracker CLI",
   "type": "module",
   "bin": {
-    "train": "./src/cli.ts"
+    "train": "./app/cli/cli.ts"
   },
   "scripts": {
-    "train": "npx tsx src/cli.ts"
+    "train": "npx tsx app/cli/cli.ts"
   },
   "dependencies": {
     "commander": "^13.1.0"

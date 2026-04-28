@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <title>The Explosive Strength Deficit</title>
+  <desc>Illustrates the gap between maximum force capacity (squat) and force actually expressed in a fast movement (vertical jump). Training aims to close this gap.</desc>
+
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .bar-label { font-size: 11px; font-weight: 700; fill: #1a1a1a; }
+    .bar-value { font-size: 10px; fill: #555; }
+    .deficit-label { font-size: 11px; fill: #dc2626; font-weight: 700; }
+    .deficit-text { font-size: 9px; fill: #dc2626; }
+    .annotation { font-size: 9px; fill: #666; font-style: italic; }
+    .rule-title { font-size: 11px; fill: #1a1a1a; font-weight: 700; }
+    .rule-text { font-size: 9px; fill: #555; }
+  </style>
+
+  <text x="30" y="28" class="title">The Explosive Strength Deficit</text>
+  <text x="30" y="44" class="subtitle">The gap between max force (squat) and force expressed in a fast movement (jump). ~50% for most athletes (Zatsiorsky).</text>
+
+  <!-- Athlete A: Big deficit -->
+  <text x="120" y="80" class="bar-label" text-anchor="middle">Athlete A: Untrained</text>
+
+  <!-- Max force bar -->
+  <rect x="60" y="95" width="120" height="30" rx="4" fill="#1e40af"/>
+  <text x="120" y="115" font-size="10" fill="white" text-anchor="middle" font-weight="600">Max Force (Squat)</text>
+  <rect x="60" y="95" width="120" height="130" rx="0" fill="#1e40af" opacity="0.15"/>
+
+  <!-- Jump force bar -->
+  <rect x="60" y="175" width="120" height="30" rx="4" fill="#059669"/>
+  <text x="120" y="195" font-size="10" fill="white" text-anchor="middle" font-weight="600">Jump Force</text>
+
+  <!-- Deficit bracket -->
+  <line x1="195" y1="125" x2="195" y2="175" stroke="#dc2626" stroke-width="2"/>
+  <line x1="188" y1="125" x2="195" y2="125" stroke="#dc2626" stroke-width="2"/>
+  <line x1="188" y1="175" x2="195" y2="175" stroke="#dc2626" stroke-width="2"/>
+  <text x="205" y="145" class="deficit-label">60%</text>
+  <text x="205" y="158" class="deficit-text">deficit</text>
+
+  <text x="120" y="225" class="bar-value" text-anchor="middle">Squat: 1.2× BW</text>
+  <text x="120" y="238" class="annotation" text-anchor="middle">Weak + inefficient</text>
+
+  <!-- Athlete B: Moderate deficit -->
+  <text x="370" y="80" class="bar-label" text-anchor="middle">Athlete B: Intermediate</text>
+
+  <rect x="310" y="95" width="120" height="30" rx="4" fill="#1e40af"/>
+  <text x="370" y="115" font-size="10" fill="white" text-anchor="middle" font-weight="600">Max Force (Squat)</text>
+  <rect x="310" y="95" width="120" height="100" rx="0" fill="#1e40af" opacity="0.15"/>
+
+  <rect x="310" y="155" width="120" height="30" rx="4" fill="#059669"/>
+  <text x="370" y="175" font-size="10" fill="white" text-anchor="middle" font-weight="600">Jump Force</text>
+
+  <line x1="445" y1="125" x2="445" y2="155" stroke="#dc2626" stroke-width="2"/>
+  <line x1="438" y1="125" x2="445" y2="125" stroke="#dc2626" stroke-width="2"/>
+  <line x1="438" y1="155" x2="445" y2="155" stroke="#dc2626" stroke-width="2"/>
+  <text x="455" y="138" class="deficit-label">50%</text>
+  <text x="455" y="151" class="deficit-text">deficit</text>
+
+  <text x="370" y="205" class="bar-value" text-anchor="middle">Squat: 1.8× BW</text>
+  <text x="370" y="218" class="annotation" text-anchor="middle">Strong, learning to express</text>
+
+  <!-- Athlete C: Small deficit -->
+  <text x="620" y="80" class="bar-label" text-anchor="middle">Athlete C: Advanced</text>
+
+  <rect x="560" y="95" width="120" height="30" rx="4" fill="#1e40af"/>
+  <text x="620" y="115" font-size="10" fill="white" text-anchor="middle" font-weight="600">Max Force (Squat)</text>
+  <rect x="560" y="95" width="120" height="55" rx="0" fill="#1e40af" opacity="0.15"/>
+
+  <rect x="560" y="125" width="120" height="30" rx="4" fill="#059669"/>
+  <text x="620" y="145" font-size="10" fill="white" text-anchor="middle" font-weight="600">Jump Force</text>
+
+  <line x1="695" y1="120" x2="695" y2="135" stroke="#dc2626" stroke-width="2"/>
+  <line x1="688" y1="120" x2="695" y2="120" stroke="#dc2626" stroke-width="2"/>
+  <line x1="688" y1="135" x2="695" y2="135" stroke="#dc2626" stroke-width="2"/>
+  <text x="705" y="130" class="deficit-label">30%</text>
+
+  <text x="620" y="175" class="bar-value" text-anchor="middle">Squat: 2.2× BW</text>
+  <text x="620" y="188" class="annotation" text-anchor="middle">Strong + expresses well</text>
+
+  <!-- Bottom section: how to close the gap -->
+  <line x1="30" y1="260" x2="770" y2="260" stroke="#ddd"/>
+  <text x="30" y="285" class="rule-title">How to Close the Deficit</text>
+
+  <rect x="30" y="295" width="230" height="65" rx="5" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="145" y="315" class="rule-title" text-anchor="middle" fill="#1e40af">Increase max force</text>
+  <text x="145" y="330" class="rule-text" text-anchor="middle">Heavy squats, progressive overload</text>
+  <text x="145" y="343" class="rule-text" text-anchor="middle">Raises the ceiling for all power output</text>
+
+  <rect x="280" y="295" width="230" height="65" rx="5" fill="#faf5ff" stroke="#c4b5fd"/>
+  <text x="395" y="315" class="rule-title" text-anchor="middle" fill="#7c3aed">Improve RFD</text>
+  <text x="395" y="330" class="rule-text" text-anchor="middle">Jump squats, O-lifts, speed squats</text>
+  <text x="395" y="343" class="rule-text" text-anchor="middle">Train the nervous system to fire faster</text>
+
+  <rect x="530" y="295" width="230" height="65" rx="5" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="645" y="315" class="rule-title" text-anchor="middle" fill="#059669">Train reactivity (SSC)</text>
+  <text x="645" y="330" class="rule-text" text-anchor="middle">Depth jumps, bounds, approach work</text>
+  <text x="645" y="343" class="rule-text" text-anchor="middle">Overload the stretch-shortening cycle</text>
+</svg>
