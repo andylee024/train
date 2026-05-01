@@ -1,32 +1,38 @@
-# Plans Directory
+# Andy — Athlete Directory
 
-This directory stores planning artifacts only.
+Andy Lee's athlete directory. Contents are scoped per-arc: each arc gets its own self-contained bundle that holds the plan, profile snapshot, and everything the text agent needs.
 
 ## Structure
 
-- `templates/block-template.md`: 12-week block template.
-- `templates/weekly-template.md`: weekly execution template.
-- `blocks/`: active/historical 12-week blocks.
-- `weekly-plans/`: week-by-week executable plans used by `train plan today`.
-- `active/`: cloud-friendly snapshot of current week + current block context.
-- `reviews/`: weekly review notes and plan-adjustment decisions.
+```
+andy/
+├── README.md                       ← this file
+├── nutrition.md                    ← cross-arc nutrition operating system
+├── arc-2026-summer-dunk/           ← ACTIVE arc bundle (start README.md inside)
+└── logs/                           ← historical exercise CSVs (cross-arc)
+```
 
-## Source of truth
+## Active arc
 
-- Planned work: markdown files in this directory.
-- Executed work: Supabase tables (`workouts`, `workout_exercises`, `exercise_sets`, `exercises`).
+[`arc-2026-summer-dunk/`](arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
 
-## Hygiene rules
+The bundle is **self-contained**. Open the bundle's [`README.md`](arc-2026-summer-dunk/README.md) for pull instructions (how the cloud agent ingests the bundle) and contents map.
 
-1. Do not edit completed sessions in old weekly plan files.
-2. Put plan changes in the current/future weekly file and note why in `reviews/`.
-3. Keep exercise names consistent with logged names to avoid duplicates.
+## Source of truth (storage boundary)
 
-## Weekly file naming
+- **Planned work:** markdown inside the active arc bundle.
+- **Executed work:** Supabase (`workouts`, `workout_exercises`, `exercise_sets`).
+- **Athlete-facing spreadsheet:** generated artifact at `arc-2026-summer-dunk/outputs/`.
 
-Use human-readable weekly plan names:
+See [`docs/product/database-schema.md`](../../product/database-schema.md) and [`docs/product/live-renderer.md`](../../product/live-renderer.md) for the full data architecture.
 
-1. `YYYY-Mon-week-N.md` (example: `2026-Mar-week-1.md`)
+## When the active arc ends
 
-Keep the ISO week token in file content header (example: `# Week 2026-W10`) so
-`train plan today --json` can still resolve the correct file.
+When the 2026 summer dunk arc completes (Sep 5, 2026):
+
+1. The bundle stays in place as a historical record (rename if you want, e.g., `arc-2026-summer-dunk-completed/`)
+2. A new arc bundle is created (e.g., `arc-2026-fall-mma/`)
+3. The new bundle gets its own profile snapshot, arc.md, blocks, weeks, vendored styles
+4. The agent's pull target switches to the new bundle
+
+Athlete-level data that persists across arcs (logs, nutrition, identity) stays at this level.

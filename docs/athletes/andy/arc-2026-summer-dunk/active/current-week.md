@@ -1,0 +1,114 @@
+# Week 2026-Arc-W01
+
+## Week Header
+
+- Block: athletes/andy/blocks/2026-05-block-01-power-conversion.md
+- Block Display: POWER CONVERSION + UPPER BUILD
+- Arc Week: 1 of 18
+- Block Week: 1 of 6
+- Date Range: Sun May 03 – Sat May 09, 2026
+- Week Type: build
+- Primary Focus: Establish baselines + groove patterns. Conservative loads.
+
+## Block Goals (Why This Week Exists)
+
+1. **G1**: Standing CMJ +1 inch from baseline AND barbell jump 4×4 @ 33% squat (120 lb) clean (Serves: Arc G1)
+2. **G2**: Bench 3RM ≥ 245 lb (from 230) AND weighted pull-up +25 lb × 5 reps clean both sessions (Serves: Arc G2)
+3. **G3**: Side split distance reduced ≥ 3 cm from baseline (1 deep day/wk = conservative) (Serves: Arc G3)
+
+## 7-Day Overview
+
+1. Sun May 03 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior
+2. Mon May 04 (MONDAY): Upper Horizontal — Bench + Row
+3. Tue May 05 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
+4. Wed May 06 (WEDNESDAY): Recovery + Deep Flex (Optional) + Pull-Up Volume
+5. Thu May 07 (THURSDAY): Speed-Strength A — Olympic Power + Speed Squat
+6. Fri May 08 (FRIDAY): Upper Vertical — Pull-Up + Dips
+7. Sat May 09 (SATURDAY): JUMP LAB — Sprint + Approach + Depth + Loaded Power
+
+## Sun May 03 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior
+
+1. Back Squat (light maintenance): 1×5 + 2×5 @ 75% (280 lb)
+2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 185 lb
+3. Hand-Supported Bulgarian SS: 3×8/leg @ 30 lb DB
+4. Glute-Ham Raise: 3×8 @ BW
+5. Pigeon Stretch: 2×60s/side @ —
+
+## Mon May 04 (MONDAY) — Upper Horizontal — Bench + Row
+
+1. Bench Press: 4×6 → 4×5 @ 72% (165 lb)
+2. Barbell Row: 4×6 @ 155 lb
+3. DB Incline Bench (neutral): 3×6-8 @ 50 lb
+4. T-Bar Chest-Supported Row: 3×6-8 @ Mod
+5. Cable Fly: 3×8-12 @ Mod
+6. DB Lateral Raise: 3×10 @ 15 lb
+
+## Tue May 05 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
+
+1. Hang Power Snatch: 5×3 @ 55% (105 lb)
+2. DB Push Press (neutral): 4×4 @ 40 lb DB
+3. Single-Leg Pogos: 3×8/leg @ BW
+4. Sprints (finisher): 3×20yd, 1×40yd @ 90% effort
+5. Copenhagen Lift: 3×15s/side @ BW
+
+## Wed May 06 (WEDNESDAY) — Recovery + Deep Flex (Optional) + Pull-Up Volume
+
+1. Weighted Pull-Up (volume): 3×8 @ +5 lb
+2. Face Pull: 3×15 @ Light
+3. Weighted Side Split Hold: 3×60s @ 10 lb
+4. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
+5. Pigeon Stretch: 2×60s/side @ —
+6. Cossack Squat: 3×8/side @ BW
+
+## Thu May 07 (THURSDAY) — Speed-Strength A — Olympic Power + Speed Squat
+
+1. Power Clean: 5×3 @ 70% (135 lb)
+2. Speed Squat: 5×2 @ 55% (205 lb)
+3. Jump Squat: 4×4 @ 25% (90 lb)
+4. RDL: 4×5,5,4,3 @ 185 lb
+5. Pendulum Squat: 3×8-10 @ Mod
+
+## Fri May 08 (FRIDAY) — Upper Vertical — Pull-Up + Dips
+
+1. Weighted Pull-Up: 4×5 @ +10 lb
+2. Weighted Dips: 3×8 @ +10 lb
+3. Chest-Supported Row: 4×6-8 @ Mod
+4. Landmine Press: 3×10 @ Mod
+5. Incline DB Curl: 3×8-10 @ Mod
+6. Tricep Pushdown: 3×8-10 @ Mod
+
+## Sat May 09 (SATURDAY) — JUMP LAB — Sprint + Approach + Depth + Loaded Power
+
+1. Sprints: 3×20yd, 2×30yd @ 95% effort
+2. Approach Jumps: 5×2 @ max intent
+3. Low-Box Depth Jump: 2×5 @ 18 in
+4. Barbell Jump: 4×4 @ 30% (110 lb)
+5. Hang Power Clean: 4×3 @ 65% (125 lb)
+
+## Daily Flexibility (15-20 min post-training)
+
+1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
+2. Wed deep work: weighted side-split holds, PNF contract-relax, pancake good morning.
+3. **Never load splits before Sat jump day** (loaded stretch saps adductor force 24-48h).
+
+## Recovery + Nutrition Targets
+
+1. Sleep: 7.5-9.0 hours/night.
+2. Protein: ≥190 g/day.
+3. Hydration: 3.0-4.0 L/day.
+4. Bodyweight: ~300 cal deficit, target -1 lb/wk. Pause cut if squat top set drops >5%.
+
+## Logging Checklist
+
+1. All working sets logged with load, reps, RPE, and notes.
+2. Top set logged for primary lifts (squat, bench, pull-up, power clean).
+3. Sat jump day: log sprint times, best jump height, dunk attempt count + makes.
+4. Daily bodyweight + Sun side-split measurement (cm hip-to-floor).
+5. Shoulder + wrist pain rating (1-10) after Mon and Fri sessions.
+
+## End-of-Week Review (filled Sun)
+
+1. Wins: <what progressed>
+2. Misses: <what was not completed or not clean>
+3. Metric Changes: <actual vs target>
+4. Adjustment For Next Week: <load/volume/recovery changes>
