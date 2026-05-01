@@ -24,7 +24,7 @@ Before generating, you need:
 4. **Training style(s)** — which knowledge/styles/ guides to consult for exercise selection
 5. **Known maxes** — for percentage-based load prescription
 
-If any of these are missing, check `docs/athletes/{name}/profile.md` and `docs/athletes/{name}/arc.md` first. If those don't exist, ask the user.
+If any of these are missing, check `athletes/{name}/profile.md` and `athletes/{name}/arc.md` first. If those don't exist, ask the user.
 
 ## Spreadsheet Structure
 

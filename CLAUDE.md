@@ -7,7 +7,7 @@ Orientation for Claude working in this repo. Read [`README.md`](README.md) first
 - `docs/product/` — what we're building (architecture, schemas, roadmap)
 - `docs/knowledge/` — what coaches know (styles, exercises, frameworks)
 - `docs/team/` — AI coaching team roles + decision logic
-- `docs/athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
+- `athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
 - `app/` — runtime code (CLI, Supabase, scripts)
 - `prototypes/` — UI experiments
 - `.claude/skills/training-plan/` — the plan generator (Python)
@@ -30,7 +30,7 @@ An **arc bundle** is a self-contained directory with everything an athlete's tex
 
 Layout:
 ```
-docs/athletes/{name}/{arc-slug}/
+athletes/{name}/{arc-slug}/
 ├── README.md         ← pull instructions for the cloud agent
 ├── CLAUDE.md         ← bundle-scoped agent operating instructions
 ├── arc.md            ← arc context (purpose, goals, blocks, tests)
@@ -42,15 +42,15 @@ docs/athletes/{name}/{arc-slug}/
 └── outputs/          ← athlete-facing .xlsx
 ```
 
-Athlete-level data that persists across arcs (logs, nutrition.md) stays at `docs/athletes/{name}/`, not inside any bundle.
+Athlete-level data that persists across arcs (logs, nutrition.md) stays at `athletes/{name}/`, not inside any bundle.
 
 ## Active athlete + active arc
 
 **Andy Lee** is the v0 athlete and the project builder.
 
-**Active arc:** [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
+**Active arc:** [`athletes/andy/arc-2026-summer-dunk/`](athletes/andy/arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
 
-For everything about the active arc — programming, profile, constraints, weekly structure, style guide references — read the bundle's [`README.md`](docs/athletes/andy/arc-2026-summer-dunk/README.md) and [`CLAUDE.md`](docs/athletes/andy/arc-2026-summer-dunk/CLAUDE.md).
+For everything about the active arc — programming, profile, constraints, weekly structure, style guide references — read the bundle's [`README.md`](athletes/andy/arc-2026-summer-dunk/README.md) and [`CLAUDE.md`](athletes/andy/arc-2026-summer-dunk/CLAUDE.md).
 
 **Key facts** (in the bundle's profile.md, surfaced here for orientation):
 - Strength-dominant, reactivity-deficient (per VJ §3 dx). Many strength blocks already done.

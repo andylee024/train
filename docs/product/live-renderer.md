@@ -25,10 +25,10 @@ There are three renderers, one source of truth per data type.
 **Inputs:** Python data structures (block specs, exercise dictionaries, progression schedules)
 
 **Outputs:**
-- `docs/athletes/{name}/outputs/{plan-name}.xlsx` — design-time spreadsheet (prescriptions only)
-- `docs/athletes/{name}/blocks/{NN-name}.md` — one per block
-- `docs/athletes/{name}/weeks/{week-id}.md` — one per week
-- `docs/athletes/{name}/active/current-block.md` + `current-week.md` — snapshots
+- `athletes/{name}/outputs/{plan-name}.xlsx` — design-time spreadsheet (prescriptions only)
+- `athletes/{name}/blocks/{NN-name}.md` — one per block
+- `athletes/{name}/weeks/{week-id}.md` — one per week
+- `athletes/{name}/active/current-block.md` + `current-week.md` — snapshots
 - (future) Supabase seed of `weekly_schedule` rows for prescribed sessions
 
 **When it runs:** at arc creation, and whenever the plan is edited.
@@ -61,7 +61,7 @@ There are three renderers, one source of truth per data type.
 - All `exercise_sets` rows in Supabase since the start of the current arc (or week)
 
 **Outputs:**
-- `docs/athletes/{name}/outputs/{plan-name}-live.xlsx` — the "live" spreadsheet that shows:
+- `athletes/{name}/outputs/{plan-name}-live.xlsx` — the "live" spreadsheet that shows:
   - Prescribed columns (Wk 1 prescribed: 165 lb 4×6)
   - Actual columns (Wk 1 actual: 165×6, 165×6, 165×5, 165×5 @ RPE 8)
   - PR markers (asterisk if this is a new e1RM)
@@ -171,7 +171,7 @@ Mutation creates state we can't reproduce. Regeneration means the .xlsx is alway
 
 The current setup is single-athlete (Andy). To productize:
 
-1. The plan renderer takes athlete name as a parameter; outputs go to `docs/athletes/{name}/...`.
+1. The plan renderer takes athlete name as a parameter; outputs go to `athletes/{name}/...`.
 2. Supabase queries filter by `user_id` (column already exists; not yet enforced via RLS).
 3. The live renderer accepts `(athlete_name, arc_id)` and outputs `{athlete-name}-{arc-id}-live.xlsx`.
 4. Each athlete's WhatsApp number maps to a `user_id` via a registration table.

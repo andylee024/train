@@ -47,9 +47,9 @@ Pulls only this bundle from the train repo, not the rest. The agent's repo only 
 git clone --filter=blob:none --no-checkout https://github.com/andylee024/train.git _train
 cd _train
 git sparse-checkout init --cone
-git sparse-checkout set docs/athletes/andy/arc-2026-summer-dunk
-git checkout main
-# Bundle is now at: _train/docs/athletes/andy/arc-2026-summer-dunk/
+git sparse-checkout set athletes/andy/arc-2026-summer-dunk
+git checkout rebuild-train-v2  # or the active branch
+# Bundle is now at: _train/athletes/andy/arc-2026-summer-dunk/
 ```
 
 To refresh later:
@@ -61,7 +61,7 @@ cd _train && git pull
 
 ```bash
 rsync -av --delete \
-  /local/path/to/train/docs/athletes/andy/arc-2026-summer-dunk/ \
+  /local/path/to/train/athletes/andy/arc-2026-summer-dunk/ \
   /cloud/agent/path/athlete-bundle/
 ```
 
@@ -71,7 +71,7 @@ When you're ready to extract this as a standalone repo (e.g., for multi-tenant p
 
 ```bash
 # In the train repo
-git subtree split --prefix docs/athletes/andy/arc-2026-summer-dunk -b extracted-arc
+git subtree split --prefix athletes/andy/arc-2026-summer-dunk -b extracted-arc
 git push <new-arc-repo-url> extracted-arc:main
 
 # Then in the agent repo
