@@ -18,14 +18,13 @@ team/
 │                            #   Each negotiates with the head coach. Composable —
 │                            #   the athlete's goals determine the team.
 │
-├── operator/                # Chief of staff
-│                            #   Doesn't plan — reduces friction between plan and
-│                            #   execution. Handles scheduling, grocery lists, meal
-│                            #   ordering, appointments, calendar coordination.
-│
-└── skills/                  # Concrete Claude skills
-    └── generate-plan/       # The onboarding conversation skill
+└── operator/                # Chief of staff
+                             #   Doesn't plan — reduces friction between plan and
+                             #   execution. Handles scheduling, grocery lists, meal
+                             #   ordering, appointments, calendar coordination.
 ```
+
+User-invocable Claude Code skills (e.g., `/training-plan`, `/create-training-style`) live at the repo root under `.claude/skills/`, not here. This folder is for the *role definitions* the agents embody when they run.
 
 ## How team relates to knowledge
 
@@ -39,11 +38,11 @@ If two specialists end up writing the same domain knowledge in two role definiti
 
 ## Adding a new role
 
-For now (M1), the only concrete artifact in `team/` is the `generate-plan` skill. Role definitions for head-coach, specialists, and operator will land here as the multi-agent architecture is built out (M1 → M2 in the roadmap).
+The role folders here (`head-coach/`, `specialists/`, `operator/`) are placeholders today — they will be filled in as the multi-agent architecture is built out (M1 → M2 in the roadmap).
 
 When adding a role:
 
 1. Create the role folder (`team/specialists/<name>/` or similar).
 2. Write the role's `README.md`: identity, objective function, what knowledge it reads, what it produces.
-3. If it ships as a Claude skill, add the skill under `team/skills/`.
-4. Reference any methodology it uses from `knowledge/styles/<style>/` — don't duplicate.
+3. Reference any methodology it uses from `knowledge/styles/<style>/` — don't duplicate.
+4. If the role ships as a user-invocable Claude Code skill, add it under `.claude/skills/<name>/` at the repo root.
