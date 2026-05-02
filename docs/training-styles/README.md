@@ -1,11 +1,11 @@
-# Knowledge
+# Training Styles
 
 The methodology library that powers program generation. Read by planning agents (head coach + specialists) when they need to design a block in a particular style. Lives separately from any specific athlete — these are the *timeless* references that any athlete's plan can draw on.
 
 ## Structure
 
 ```
-knowledge/
+training-styles/
 ├── README.md                  # This file — explains the directory and conventions
 ├── exercises.md               # Master exercise library (master catalog)
 ├── diagrams/                  # Cross-style diagrams (e.g., exercise-categorization-model)
@@ -17,17 +17,17 @@ knowledge/
 │   ├── assessment.md          # Classify athlete, identify gaps
 │   └── plan-templates/        # block-template + weekly-template
 │
-└── styles/                    # Per-style methodologies (the sentences)
-    ├── _template/             # Canonical scaffold to copy for any new style
-    └── vertical-jump/         # First worked example
+├── _template/                 # Canonical scaffold to copy for any new style
+├── vertical-jump/             # Worked example — VJ Bible methodology
+└── dylan-shannon/             # Worked example — POWERJACKED methodology
 ```
 
-The athlete-wide exercise catalog lives at `knowledge/exercises.md`. Per-style `exercise-selection.md` files filter and annotate that catalog for the style's needs.
+Per-style methodologies (the sentences) sit directly under `training-styles/` — one folder per style. The athlete-wide exercise catalog lives at `training-styles/exercises.md`. Per-style `exercise-selection.md` files filter and annotate that catalog for the style's needs.
 
 ## Program generation flow
 
 1. **Assess** — `concepts/assessment.md` + the athlete profile classify the athlete.
-2. **Load style** — read `styles/<style>/guide.md` + `exercise-selection.md` for the chosen methodology.
+2. **Load style** — read `<style>/guide.md` + `exercise-selection.md` for the chosen methodology.
 3. **Build arc** — `concepts/arc-decomposition.md` + `concepts/periodization.md` shape the block sequence.
 4. **Fill days** — `concepts/session-design.md` + `exercises.md` populate sessions.
 5. **Deliver** — daily prescription rendered to dashboard or chat.
@@ -35,7 +35,7 @@ The athlete-wide exercise catalog lives at `knowledge/exercises.md`. Per-style `
 ## Adding a new training style
 
 ```bash
-cd knowledge/styles/
+cd docs/training-styles/
 cp -r _template/ <style-slug>/
 ```
 
@@ -43,17 +43,17 @@ Then:
 
 1. Drop source PDFs / transcripts into `<style-slug>/sources/` (delete `.gitkeep`).
 2. Open `<style-slug>/guide.md` and fill in every `{{placeholder}}`. Delete sections marked OPTIONAL that don't apply.
-3. Open `<style-slug>/exercise-selection.md` and replace the example rows with the style-relevant subset of `knowledge/exercises.md`.
+3. Open `<style-slug>/exercise-selection.md` and replace the example rows with the style-relevant subset of `training-styles/exercises.md`.
 4. Add diagrams to `<style-slug>/diagrams/` as the guide references them (delete `.gitkeep`).
 5. Delete `<style-slug>/README.md` — that file only belongs in `_template/`.
 
-`_template/guide.md` is the canonical structure every style guide must follow — it has prompts and skeletons for each of the 15 sections, with REQUIRED vs OPTIONAL clearly marked. For a fully filled-in worked example, see [`styles/vertical-jump/`](styles/vertical-jump/).
+`_template/guide.md` is the canonical structure every style guide must follow — it has prompts and skeletons for each of the 15 sections, with REQUIRED vs OPTIONAL clearly marked. For a fully filled-in worked example, see [`vertical-jump/`](vertical-jump/).
 
 The `concepts/` layer is style-agnostic. If something would apply to every style, it goes there, not in a style folder.
 
-## What goes in `concepts/` vs `styles/<style>/`
+## What goes in `concepts/` vs `<style>/`
 
-The boundary: **`concepts/` is the vocabulary, frameworks, and slots that every style uses to describe itself. `styles/<style>/` is the specific choices that style makes within those slots.**
+The boundary: **`concepts/` is the vocabulary, frameworks, and slots that every style uses to describe itself. `<style>/` is the specific choices that style makes within those slots.**
 
 A useful test for any piece of content:
 
@@ -64,7 +64,7 @@ A useful test for any piece of content:
 
 Or, said as a one-liner: **concepts are the dictionary, styles are the sentences.**
 
-| Lives in `concepts/` | Lives in `styles/<style>/` |
+| Lives in `concepts/` | Lives in `<style>/` |
 |---|---|
 | The 4-layer plan structure (arc / block / week / day) | This style's specific block lengths and phase mix |
 | The 4 periodization model definitions | Which model this style picks and its phase parameters |
@@ -79,7 +79,7 @@ If you find yourself writing the same content in two style guides, lift it to `c
 
 ## Guide schema (the 15 sections)
 
-Every `styles/<style>/guide.md` follows the same structure so a planning agent reads any style the same way:
+Every `<style>/guide.md` follows the same structure so a planning agent reads any style the same way:
 
 | #  | Section | Required? | Group |
 |----|---|---|---|

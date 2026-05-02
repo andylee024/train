@@ -69,7 +69,7 @@ Look for:
 
 Output shape: primaries table + accessories list + substitution map + disallowed table.
 
-Cross-reference: the master library at `docs/knowledge/exercises.md`. Flag exercises mentioned in sources but missing from the library.
+Cross-reference: the master library at `docs/training-styles/exercises.md`. Flag exercises mentioned in sources but missing from the library.
 
 ---
 
@@ -118,7 +118,7 @@ Output shape: subsections per technical component with cues + common errors + dr
 
 ## §9 — Recovery & nutrition
 
-Look for **style-specific demands only** (universal floors live in `docs/knowledge/concepts/recovery.md`):
+Look for **style-specific demands only** (universal floors live in `docs/training-styles/concepts/recovery.md`):
 - CNS recovery requirements ("48h between high-CNS sessions")
 - Tendon recovery ("patellar / Achilles need 48–72h")
 - Style-specific nutritional priorities (high protein, glycogen timing, etc.)

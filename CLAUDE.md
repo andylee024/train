@@ -5,7 +5,7 @@ Orientation for Claude working in this repo. Read [`README.md`](README.md) first
 ## Repo layout (one-line each)
 
 - `docs/product/` — what we're building (architecture, schemas, roadmap)
-- `docs/knowledge/` — what coaches know (styles, exercises, frameworks)
+- `docs/training-styles/` — what coaches know (styles, exercises, frameworks)
 - `docs/team/` — AI coaching team roles + decision logic
 - `athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
 - `app/` — runtime code (CLI, Supabase, scripts)

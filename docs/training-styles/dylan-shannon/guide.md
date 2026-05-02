@@ -498,7 +498,7 @@ Sprints + plyos compressed into the lifts (jumps as part of warmup, sprints as a
 | File | Purpose | When to consult |
 |---|---|---|
 | `guide.md` | This file — the canonical 15-section style guide | Start here. |
-| `exercise-selection.md` | Filtered subset of `knowledge/exercises.md` for this style with style-specific notes | When picking specific lifts for a session. |
+| `exercise-selection.md` | Filtered subset of `training-styles/exercises.md` for this style with style-specific notes | When picking specific lifts for a session. |
 | `sources/dylan-7-day-template-raw.txt` | Dylan's verbatim 6-day weekly template | When in doubt about exact sets/reps in a sample session. |
 | `sources/dylan-7-things-for-powerful-legs.md` | Dylan's 7-point legs philosophy | When defending a programming choice ("are we hitting all four pillars?"). |
 | `sources/dylan-sample-sessions.txt` | Multiple individual session logs (density, EMOM, advanced) | When designing the advanced-tier template or density-set blocks. |

@@ -3,7 +3,7 @@
 > **Purpose of this guide.** This document is intended to help coaches — human or AI — design programs using this training style. It should contain all relevant information about the methodology, including text, graphics, and diagrams, so a coach reading it can design programs as effectively as possible. Use whatever formats serve clarity: tables, code blocks, embedded diagrams (`![](diagrams/name.svg)`), worked examples, even hand-drawn images. The bar is "another coach can pick this up and run a program from it."
 
 > **Template instructions** (delete this block in your copy):
-> 1. Copy this file to `knowledge/styles/<style-slug>/guide.md`.
+> 1. Copy this file to `training-styles/<style-slug>/guide.md`.
 > 2. Replace every `{{placeholder}}` with real content.
 > 3. Each section has a `> Prompt:` line. Delete it after filling in.
 > 4. Sections marked OPTIONAL apply only to certain style types — delete them if they don't fit.
@@ -103,7 +103,7 @@
 ## 5. Exercise selection (REQUIRED)
 
 > Prompt: which exercises this style uses, why, and what to do when something is unavailable or contraindicated.
-> Common slot: master library at `knowledge/exercises.md`. This section filters and annotates that library for this style.
+> Common slot: master library at `training-styles/exercises.md`. This section filters and annotates that library for this style.
 
 **Primary lifts:**
 

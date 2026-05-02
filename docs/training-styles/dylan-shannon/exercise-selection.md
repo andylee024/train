@@ -1,7 +1,7 @@
 # Dylan Shannon (POWERJACKED) — Exercise Selection
 
 > **~75 exercises** filtered for the Dylan Shannon style.
-> Source: `knowledge/exercises.md` + style-specific annotations from sources/.
+> Source: `training-styles/exercises.md` + style-specific annotations from sources/.
 
 This style spans the full force-velocity curve plus high-volume bodybuilding accessories. Unlike pure vertical-jump (which trims aggressively), POWERJACKED is *additive* — it keeps a wide accessory pool because the "look jacked" half of the philosophy demands hypertrophy variety.
 
@@ -69,7 +69,7 @@ Each exercise has:
 | Power Clean + Hang Power Clean (complex) | olympic | high | ✓ | Combo set — Olympic technical density. |
 | Barbell Jump | speed_strength | high | ✓ | `3x4 @ 30–35% squat 1RM`. Loaded velocity — the bridge between OL and pure plyo. |
 
-> TODO: confirm `Barbell Jump`, `Block Power Clean`, `Hang Power Clean`, `Power Clean + Hang Power Clean` are in `knowledge/exercises.md`.
+> TODO: confirm `Barbell Jump`, `Block Power Clean`, `Hang Power Clean`, `Power Clean + Hang Power Clean` are in `training-styles/exercises.md`.
 
 ---
 
@@ -231,4 +231,4 @@ The "look jacked" half. Cutting these and you've cut the style.
 | medium | ~17 |
 | low | ~17 |
 
-> TODO: cross-reference every exercise above against `knowledge/exercises.md`. Specifically flag the following for addition if missing: `Block Power Clean`, `Hang Power Clean`, `Barbell Jump`, `Pendulum Squat`, `Hand-Supported Bulgarian SS`, `Westwood Calf Raise`, `Cable French Press`, `Rope Hammer Curl`, `Single Switches / Double Switches / Triple Switches`, `Power Skip`, `Straight Leg Bound`, `Alternating Bound`, `Sprint (10/20/30/40/60 yd)`, `Seated Hurdle Jump`, `GHD Reverse Crunch`.
+> TODO: cross-reference every exercise above against `training-styles/exercises.md`. Specifically flag the following for addition if missing: `Block Power Clean`, `Hang Power Clean`, `Barbell Jump`, `Pendulum Squat`, `Hand-Supported Bulgarian SS`, `Westwood Calf Raise`, `Cable French Press`, `Rope Hammer Curl`, `Single Switches / Double Switches / Triple Switches`, `Power Skip`, `Straight Leg Bound`, `Alternating Bound`, `Sprint (10/20/30/40/60 yd)`, `Seated Hurdle Jump`, `GHD Reverse Crunch`.

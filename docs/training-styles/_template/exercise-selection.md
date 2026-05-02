@@ -2,14 +2,14 @@
 
 > **Template instructions** (delete in your copy):
 > 1. Replace `{{Style Name}}` and the count below with real values.
-> 2. Filter the master library at `knowledge/exercises.md` for exercises that belong in this style.
+> 2. Filter the master library at `training-styles/exercises.md` for exercises that belong in this style.
 > 3. Annotate each exercise with style-specific notes (typical loading, why included, when to use).
 > 4. Group by training quality first, then by muscle group within. Keep the schema consistent with the master library.
 > 5. If this style needs a column the master library doesn't have (e.g., "ground contact time" for plyometrics), add it.
 > 6. End with a "Distribution Summary" so the agent can sanity-check the catalog at a glance.
 
 > **{{N}} exercises** filtered for {{style name}}.
-> Source: `knowledge/exercises.md` + style-specific annotations.
+> Source: `training-styles/exercises.md` + style-specific annotations.
 
 ## Schema
 

@@ -26,15 +26,15 @@ team/
 
 User-invocable Claude Code skills (e.g., `/training-plan`, `/create-training-style`) live at the repo root under `.claude/skills/`, not here. This folder is for the *role definitions* the agents embody when they run.
 
-## How team relates to knowledge
+## How team relates to training-styles
 
-`team/` is the **agents**. `knowledge/` is what they read.
+`team/` is the **agents**. `training-styles/` is what they read.
 
-- A specialist's role definition lives here. The methodology that specialist applies (e.g., vertical-jump training principles) lives in `knowledge/styles/<style>/`.
+- A specialist's role definition lives here. The methodology that specialist applies (e.g., vertical-jump training principles) lives in `training-styles/<style>/`.
 - The head coach reads multiple style guides + the athlete profile + active plan to synthesize a block.
 - The operator reads the athlete's calendar + plan + nutrition prescription to handle logistics.
 
-If two specialists end up writing the same domain knowledge in two role definitions, that knowledge belongs in `knowledge/`, not in either role.
+If two specialists end up writing the same domain knowledge in two role definitions, that knowledge belongs in `training-styles/`, not in either role.
 
 ## Adding a new role
 
@@ -44,5 +44,5 @@ When adding a role:
 
 1. Create the role folder (`team/specialists/<name>/` or similar).
 2. Write the role's `README.md`: identity, objective function, what knowledge it reads, what it produces.
-3. Reference any methodology it uses from `knowledge/styles/<style>/` — don't duplicate.
+3. Reference any methodology it uses from `training-styles/<style>/` — don't duplicate.
 4. If the role ships as a user-invocable Claude Code skill, add it under `.claude/skills/<name>/` at the repo root.

@@ -1,15 +1,15 @@
 ---
 name: create-training-style
-description: Synthesize a structured training-style guide from raw source materials (links, transcripts, articles, pasted text) into the canonical 15-section template at docs/knowledge/styles/. Use when the user provides source materials about a training methodology and wants a complete style guide built from them, or says things like "build a training style for X from these links", "synthesize a methodology from these sources", "translate this into our training-style format", or "create a style guide from this content".
+description: Synthesize a structured training-style guide from raw source materials (links, transcripts, articles, pasted text) into the canonical 15-section template at docs/training-styles/. Use when the user provides source materials about a training methodology and wants a complete style guide built from them, or says things like "build a training style for X from these links", "synthesize a methodology from these sources", "translate this into our training-style format", or "create a style guide from this content".
 argument-hint: [style-slug]
 allowed-tools: Read Write Edit Glob Grep Bash WebFetch
 ---
 
 # Create Training Style
 
-Walk the user through a structured process that turns raw source materials about a training methodology into a complete style folder under `docs/knowledge/styles/<slug>/`, conforming to the canonical 15-section template.
+Walk the user through a structured process that turns raw source materials about a training methodology into a complete style folder under `docs/training-styles/<slug>/`, conforming to the canonical 15-section template.
 
-The output mirrors the worked example at [`docs/knowledge/styles/vertical-jump/`](../../../docs/knowledge/styles/vertical-jump/), built from [`docs/knowledge/styles/_template/`](../../../docs/knowledge/styles/_template/).
+The output mirrors the worked example at [`docs/training-styles/vertical-jump/`](../../../docs/training-styles/vertical-jump/), built from [`docs/training-styles/_template/`](../../../docs/training-styles/_template/).
 
 The conversation has 5 phases. Each phase ends with a checkpoint where the user confirms before moving on. Never skip a checkpoint. Never invent content not supported by the sources.
 
@@ -17,11 +17,11 @@ The conversation has 5 phases. Each phase ends with a checkpoint where the user 
 
 Read the canonical scaffold and the worked example so you know exactly what you're producing:
 
-1. [`docs/knowledge/styles/_template/guide.md`](../../../docs/knowledge/styles/_template/guide.md) — the 15-section template with prompts and skeletons
-2. [`docs/knowledge/styles/_template/exercise-selection.md`](../../../docs/knowledge/styles/_template/exercise-selection.md) — the exercise catalog template
-3. [`docs/knowledge/styles/_template/README.md`](../../../docs/knowledge/styles/_template/README.md) — what files belong in a style folder
-4. [`docs/knowledge/styles/vertical-jump/guide.md`](../../../docs/knowledge/styles/vertical-jump/guide.md) — a fully filled-in example
-5. [`docs/knowledge/README.md`](../../../docs/knowledge/README.md) — the boundary between `concepts/` (shared frameworks) and `styles/<x>/` (style-specific instantiation)
+1. [`docs/training-styles/_template/guide.md`](../../../docs/training-styles/_template/guide.md) — the 15-section template with prompts and skeletons
+2. [`docs/training-styles/_template/exercise-selection.md`](../../../docs/training-styles/_template/exercise-selection.md) — the exercise catalog template
+3. [`docs/training-styles/_template/README.md`](../../../docs/training-styles/_template/README.md) — what files belong in a style folder
+4. [`docs/training-styles/vertical-jump/guide.md`](../../../docs/training-styles/vertical-jump/guide.md) — a fully filled-in example
+5. [`docs/training-styles/README.md`](../../../docs/training-styles/README.md) — the boundary between `concepts/` (shared frameworks) and `styles/<x>/` (style-specific instantiation)
 
 Also load `references/section-extraction.md` for what to look for in the source material when filling each of the 15 sections.
 
@@ -49,7 +49,7 @@ Then confirm with the user:
 
 **Checkpoint:** Show the user the source manifest, the proposed slug, and the identity sentence. Get confirmation before fetching anything.
 
-If a `docs/knowledge/styles/<slug>/` folder already exists, ask explicitly whether to overwrite or add to it. Adding to it = read existing files, integrate new sources, update.
+If a `docs/training-styles/<slug>/` folder already exists, ask explicitly whether to overwrite or add to it. Adding to it = read existing files, integrate new sources, update.
 
 ---
 
@@ -70,7 +70,7 @@ For each source from Phase 1:
 
 For URLs that succeed via WebFetch, summarize the content back to the user briefly so they know what was retrieved.
 
-**Storage:** As content arrives, prepare it for the final `docs/knowledge/styles/<slug>/sources/` directory. One file per source. Use stable, kebab-case filenames derived from the source label or URL slug. Suffix with the format type:
+**Storage:** As content arrives, prepare it for the final `docs/training-styles/<slug>/sources/` directory. One file per source. Use stable, kebab-case filenames derived from the source label or URL slug. Suffix with the format type:
 - `vertical-jump-bible-v2-raw.txt` for raw transcripts/text
 - `THP-jump-training.md` for cleaned-up source material
 
@@ -84,7 +84,7 @@ Don't write to disk yet — wait until Phase 4. Just hold the content in working
 
 **Purpose:** Read everything, identify the operational logic, and map content to each of the 15 sections.
 
-Work through the canonical template structure (see [`_template/guide.md`](../../../docs/knowledge/styles/_template/guide.md)) section by section. For each section, consult `references/section-extraction.md` for what cues to look for.
+Work through the canonical template structure (see [`_template/guide.md`](../../../docs/training-styles/_template/guide.md)) section by section. For each section, consult `references/section-extraction.md` for what cues to look for.
 
 For each section, classify your draft as one of:
 - **CONFIDENT** — multiple sources support this; quote-able evidence in the source material
@@ -123,7 +123,7 @@ Steps in order:
 
 1. **Create the folder structure.** Mirror `_template/`:
    ```
-   docs/knowledge/styles/<slug>/
+   docs/training-styles/<slug>/
    ├── guide.md
    ├── exercise-selection.md
    ├── diagrams/         (with .gitkeep — only delete if you have actual diagrams to drop in)
@@ -142,7 +142,7 @@ Steps in order:
 
    For sections marked INFERRED, add a `> NOTE: inferred from {{source}}; verify before publishing.` line at the top of the section.
 
-4. **Write `exercise-selection.md`.** Filter the master library at [`docs/knowledge/exercises.md`](../../../docs/knowledge/exercises.md) for exercises this style uses. Use the schema from `_template/exercise-selection.md`. Annotate each exercise with style-specific notes pulled from the sources (typical loading, when to use, when to skip).
+4. **Write `exercise-selection.md`.** Filter the master library at [`docs/training-styles/exercises.md`](../../../docs/training-styles/exercises.md) for exercises this style uses. Use the schema from `_template/exercise-selection.md`. Annotate each exercise with style-specific notes pulled from the sources (typical loading, when to use, when to skip).
 
    If the master library doesn't contain exercises mentioned in the sources, add them with a `> TODO: add to master library` flag and surface this to the user at the end.
 
@@ -176,7 +176,7 @@ Iterate on specific sections as the user requests. When the user is satisfied, t
 ## Constraints
 
 - **Never invent content not supported by the sources.** If you don't know, mark it MISSING.
-- **Never delete the user's existing source material.** If `docs/knowledge/styles/<slug>/sources/` already has files, integrate alongside them — don't overwrite.
+- **Never delete the user's existing source material.** If `docs/training-styles/<slug>/sources/` already has files, integrate alongside them — don't overwrite.
 - **Never skip the checkpoint at the end of each phase.** The user needs to see and approve each step.
 - **Don't write the final `guide.md` until Phase 4.** Hold the synthesis in working memory through Phase 3 so you can iterate on the section map without churning files.
 - **Preserve provenance.** Every section's content should be traceable to a specific source listed in §14.

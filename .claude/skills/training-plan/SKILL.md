@@ -21,7 +21,7 @@ Before generating, you need:
 1. **Athlete profile** — name, stats, injuries, schedule, preferences
 2. **Arc definition** — purpose, 2-3 yes/no measurable goals, timeline
 3. **Block structure** — how many blocks, what each block emphasizes
-4. **Training style(s)** — which knowledge/styles/ guides to consult for exercise selection
+4. **Training style(s)** — which training-styles/ guides to consult for exercise selection
 5. **Known maxes** — for percentage-based load prescription
 
 If any of these are missing, check `athletes/{name}/profile.md` and `athletes/{name}/arc.md` first. If those don't exist, ask the user.
@@ -120,7 +120,7 @@ Power and Olympic work is NEVER superset. Everything else should be superset whe
 
 ## Style Integration
 
-When building a plan, consult the relevant style guide(s) in `docs/knowledge/styles/`:
+When building a plan, consult the relevant style guide(s) in `docs/training-styles/`:
 
 - Read the guide's **exercise selection**, **session structure**, **periodization** sections
 - Pull exercises from the style's exercise catalog, not generic choices
@@ -140,7 +140,7 @@ When building a plan, consult the relevant style guide(s) in `docs/knowledge/sty
 ## What This Spreadsheet Is NOT
 
 - Not a daily workout log — the text agent handles that
-- Not an exercise library — that lives in `docs/knowledge/exercises.md`
+- Not an exercise library — that lives in `docs/training-styles/exercises.md`
 - Not a nutrition plan — that's a separate document
 - Not a weekly planner — weeks and days are delivered conversationally
 
