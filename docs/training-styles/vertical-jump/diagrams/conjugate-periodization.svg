@@ -1,0 +1,137 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+  <title>Conjugate Sequence Periodization for Vertical Jump</title>
+  <desc>Shows how training emphasis shifts across 4 phases while maintaining all qualities. Each phase has a primary focus while other qualities are maintained at lower volume.</desc>
+
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .phase-title { font-size: 12px; font-weight: 700; fill: #1a1a1a; }
+    .phase-weeks { font-size: 9px; fill: #888; }
+    .bar-label { font-size: 9px; fill: white; font-weight: 600; }
+    .row-label { font-size: 10px; fill: #333; font-weight: 600; }
+    .detail { font-size: 9px; fill: #555; }
+    .rule-title { font-size: 10px; fill: #1a1a1a; font-weight: 700; }
+    .rule-text { font-size: 9px; fill: #555; }
+    .insight { font-size: 10px; fill: #1e40af; font-weight: 600; }
+  </style>
+
+  <!-- Title -->
+  <text x="30" y="28" class="title">Conjugate Sequence Periodization</text>
+  <text x="30" y="44" class="subtitle">All qualities trained simultaneously — emphasis shifts per phase. Recommended by both THP and VJB for intermediate+ athletes.</text>
+
+  <!-- Legend -->
+  <rect x="560" y="18" width="10" height="10" rx="2" fill="#1e40af"/>
+  <text x="574" y="27" class="detail">Strength</text>
+  <rect x="630" y="18" width="10" height="10" rx="2" fill="#7c3aed"/>
+  <text x="644" y="27" class="detail">Power/RFD</text>
+  <rect x="710" y="18" width="10" height="10" rx="2" fill="#059669"/>
+  <text x="724" y="27" class="detail">Reactive</text>
+
+  <!-- Phase headers -->
+  <text x="220" y="74" class="phase-title" text-anchor="middle">Phase I</text>
+  <text x="220" y="87" class="phase-weeks" text-anchor="middle">3-4 weeks · Strength Focus</text>
+
+  <text x="370" y="74" class="phase-title" text-anchor="middle">Phase II</text>
+  <text x="370" y="87" class="phase-weeks" text-anchor="middle">3 weeks · Power Focus</text>
+
+  <text x="520" y="74" class="phase-title" text-anchor="middle">Phase III</text>
+  <text x="520" y="87" class="phase-weeks" text-anchor="middle">2-3 weeks · Reactive Focus</text>
+
+  <text x="670" y="74" class="phase-title" text-anchor="middle">Phase IV</text>
+  <text x="670" y="87" class="phase-weeks" text-anchor="middle">1-2 weeks · Peak/Test</text>
+
+  <!-- Row labels -->
+  <text x="110" y="115" class="row-label" text-anchor="end">Strength</text>
+  <text x="110" y="150" class="row-label" text-anchor="end">Power/RFD</text>
+  <text x="110" y="185" class="row-label" text-anchor="end">Reactive</text>
+
+  <!-- Phase I bars -->
+  <rect x="150" y="103" width="130" height="18" rx="3" fill="#1e40af" opacity="0.9"/>
+  <text x="215" y="116" class="bar-label" text-anchor="middle">5×5 Squat, 5×6 (HIGH)</text>
+  <rect x="150" y="138" width="50" height="18" rx="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="175" y="151" class="bar-label" text-anchor="middle">LOW</text>
+  <rect x="150" y="173" width="50" height="18" rx="3" fill="#059669" opacity="0.5"/>
+  <text x="175" y="186" class="bar-label" text-anchor="middle">LOW</text>
+
+  <!-- Phase II bars -->
+  <rect x="300" y="103" width="80" height="18" rx="3" fill="#1e40af" opacity="0.7"/>
+  <text x="340" y="116" class="bar-label" text-anchor="middle">MAINTAIN</text>
+  <rect x="300" y="138" width="120" height="18" rx="3" fill="#7c3aed" opacity="0.9"/>
+  <text x="360" y="151" class="bar-label" text-anchor="middle">Jump Squats 6×5 (HIGH)</text>
+  <rect x="300" y="173" width="65" height="18" rx="3" fill="#059669" opacity="0.6"/>
+  <text x="332" y="186" class="bar-label" text-anchor="middle">MEDIUM</text>
+
+  <!-- Phase III bars -->
+  <rect x="450" y="103" width="55" height="18" rx="3" fill="#1e40af" opacity="0.5"/>
+  <text x="477" y="116" class="bar-label" text-anchor="middle">LOW</text>
+  <rect x="450" y="138" width="60" height="18" rx="3" fill="#7c3aed" opacity="0.6"/>
+  <text x="480" y="151" class="bar-label" text-anchor="middle">MAINT</text>
+  <rect x="450" y="173" width="120" height="18" rx="3" fill="#059669" opacity="0.9"/>
+  <text x="510" y="186" class="bar-label" text-anchor="middle">Depth Jumps 4×5 (HIGH)</text>
+
+  <!-- Phase IV bars -->
+  <rect x="610" y="103" width="40" height="18" rx="3" fill="#1e40af" opacity="0.4"/>
+  <text x="630" y="116" class="bar-label" text-anchor="middle">MIN</text>
+  <rect x="610" y="138" width="45" height="18" rx="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="632" y="151" class="bar-label" text-anchor="middle">LOW</text>
+  <rect x="610" y="173" width="45" height="18" rx="3" fill="#059669" opacity="0.5"/>
+  <text x="632" y="186" class="bar-label" text-anchor="middle">LOW</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="210" x2="770" y2="210" stroke="#ddd" stroke-width="1"/>
+
+  <!-- What each phase does -->
+  <text x="30" y="235" class="phase-title">What Each Phase Accomplishes</text>
+
+  <rect x="150" y="248" width="130" height="55" rx="5" fill="#f8fafc" stroke="#ddd"/>
+  <text x="215" y="265" class="rule-title" text-anchor="middle">Build raw force</text>
+  <text x="215" y="278" class="detail" text-anchor="middle">Squat progression</text>
+  <text x="215" y="291" class="detail" text-anchor="middle">Low plyo to maintain skill</text>
+
+  <rect x="300" y="248" width="130" height="55" rx="5" fill="#f8fafc" stroke="#ddd"/>
+  <text x="365" y="265" class="rule-title" text-anchor="middle">Express force fast</text>
+  <text x="365" y="278" class="detail" text-anchor="middle">Close explosive deficit</text>
+  <text x="365" y="291" class="detail" text-anchor="middle">O-lifts, jump squats</text>
+
+  <rect x="450" y="248" width="130" height="55" rx="5" fill="#f8fafc" stroke="#ddd"/>
+  <text x="515" y="265" class="rule-title" text-anchor="middle">Train the SSC</text>
+  <text x="515" y="278" class="detail" text-anchor="middle">High box depth jumps</text>
+  <text x="515" y="291" class="detail" text-anchor="middle">Approach jump practice</text>
+
+  <rect x="610" y="248" width="130" height="55" rx="5" fill="#f8fafc" stroke="#ddd"/>
+  <text x="675" y="265" class="rule-title" text-anchor="middle">Realize all gains</text>
+  <text x="675" y="278" class="detail" text-anchor="middle">Delayed transformation</text>
+  <text x="675" y="291" class="detail" text-anchor="middle">Test max vert</text>
+
+  <!-- Arrow showing delayed transformation -->
+  <path d="M 520 310 C 560 340, 600 340, 660 310" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <text x="590" y="348" font-size="9" fill="#ef4444" text-anchor="middle">Delayed transformation</text>
+  <text x="590" y="360" font-size="8" fill="#ef4444" text-anchor="middle">Phase III gains manifest in Phase IV</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- Key rules at bottom -->
+  <line x1="30" y1="378" x2="770" y2="378" stroke="#ddd" stroke-width="1"/>
+
+  <text x="30" y="400" class="phase-title">Key Periodization Rules</text>
+
+  <rect x="30" y="410" width="235" height="55" rx="5" fill="#f0f7ff" stroke="#3b82f6"/>
+  <text x="147" y="428" class="rule-title" text-anchor="middle" fill="#1e40af">1-2 targets per block</text>
+  <text x="147" y="441" class="detail" text-anchor="middle">70-80% of work serves the</text>
+  <text x="147" y="454" class="detail" text-anchor="middle">emphasized quality (THP)</text>
+
+  <rect x="280" y="410" width="235" height="55" rx="5" fill="#f0f7ff" stroke="#3b82f6"/>
+  <text x="397" y="428" class="rule-title" text-anchor="middle" fill="#1e40af">Maintain with 1/3 volume</text>
+  <text x="397" y="441" class="detail" text-anchor="middle">A quality can be maintained with</text>
+  <text x="397" y="454" class="detail" text-anchor="middle">~33% of building volume (VJB)</text>
+
+  <rect x="530" y="410" width="235" height="55" rx="5" fill="#f0f7ff" stroke="#3b82f6"/>
+  <text x="647" y="428" class="rule-title" text-anchor="middle" fill="#1e40af">Strength phases &gt; speed phases</text>
+  <text x="647" y="441" class="detail" text-anchor="middle">Strength takes longer to build.</text>
+  <text x="647" y="454" class="detail" text-anchor="middle">Speed phases = 50-66% of strength (VJB)</text>
+</svg>

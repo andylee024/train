@@ -8,3 +8,5 @@ data/
 .DS_Store
 __pycache__/
 *.pyc
+# LibreOffice / Excel temp lock files
+.~lock.*

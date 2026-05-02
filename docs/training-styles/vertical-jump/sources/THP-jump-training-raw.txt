@@ -1,0 +1,2485 @@
+                     THP Jump Training Ebook
+
+
+Want To Have All This + More Applied To YOUR Training? Sign Up
+                For Our FREE 6 Week Challenge
+                                   Click HERE To Get Started
+
+ Welcome to the THP jump training ebook. I wrote this to help you jump higher. It compiles
+ everything I know about the science behind what I consider the five pillars of jumping training:
+
+    1.   Strength training
+    2.   Plyometrics
+    3.   Periodization
+    4.   Managing tendon pain
+    5.   Jump technique
+
+ If you can implement those five concepts into your training, you WILL jump higher. But not just
+ that. You’ll be able to continue making progress year after year while staying healthy. This is the
+ formula to crack through any vertical jump plateau.
+
+ At THP we are concerned with one thing. Reaching your genetic potential when it comes to the
+ vertical jump. Depending on genetics, everyone has a different ceiling in terms of jumping ability.
+ However, there is only one way to find out what that ceiling is. Training extremely hard,
+ extremely smart, for years.
+
+ Training smart means knowing what to do, in what way to do it, and when to do it.
+
+ And the principles that I go over in the next few pages are at the foundation of training smart.
+ The version of you that understands these principles will improve more than the version that
+ doesn’t. Even if those two versions of you were to do the exact same training plan.
+
+ Why is that?
+
+ Because understanding the science helps you train correctly.
+
+ For example, if you know about the principle of progressive overload, you know that training
+ must get harder week to week. So you will keep increasing intensity week to week. And if you
+ know about periodization you will understand that it’s normal for your vertical to go down when
+ training hard. And you will also know to back off when you’re supposed to in order to achieve
+ supercompensation.
+
+ I hope that you can get value out of this guide. Enjoy!
+
+
+
+                                                                                    THPSTRENGTH.COM
+TABLE OF CONTENTS
+Page 3: Laws Of Adaptation
+
+Page 4: Fitness/Fatigue Model & Supercompensation
+
+Page 5: Strength & Force
+
+Page 11: Plyometrics
+
+Page 14: Planning Plyometrics For Your Training
+
+Page 19: Periodization
+
+Page 30: Two Foot Technique
+
+Page 52: One Foot Technique
+
+Page 66: How To Manage Tendon Pain
+
+
+
+
+                                                    THPSTRENGTH.COM
+                The Fundamentals Of Strength Training
+   Goal: Understand what strength is, why it is important when it comes to jumping higher, and
+                      how we choose exercises in a training program.
+
+
+Five biomotor capacities
+   1.   Strength
+   2.   Speed
+   3.   Flexibility
+   4.   Endurance
+   5.   Coordination
+
+
+
+What is adaptation?
+   ●    Adjustment of an organism in response to its environment
+   ●    If environment changes, organism changes to survive
+   ●    Exercise/physical activity is a powerful stimulus for adaptation
+   ●    The goal of exercise is to induce adaptation
+
+The four features of adaptation
+   1. Overload aka stimulus magnitude
+   2. Accommodation
+   3. Specificity
+   4. Individualization
+
+Overload
+   ● Adaptation only occurs if training load is above habitual level
+   ● Two ways to overload
+         ○ Increase training load through intensity or volume
+         ○ Variety: Changing the exercise
+   ● Three types of training loads
+         ○ Stimulating: Adaptation
+         ○ Retraining: Maintenance
+         ○ Detraining: Performance decrease
+   ● The more elite the athlete, the easier it is to detrain, thus a higher training load is needed
+
+Accommodation
+   ● The response of a biological object to a constant stimulus decreases over time
+   ● The principle of diminishing returns
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+    Specificity
+       ● Training adaptations are highly specific
+       ● The more similar a training stimulus is to the activity you are trying to improve, the more
+            transfer the stimulus will have
+
+    Individualization
+        ● All people are different
+
+
+
+    Supercompensation & fitness/fatigue model
+     Terms to understand:
+●          Preparedness
+               ○ How well equipped an athlete is to handle a training session or competition
+               ○ Affected by training fatigue, psychological overstress, illness
+       ● Fitness
+               ○ An organism’s ability to survive its environment, which in our case is training!
+               ○ Think of it as long term preparedness
+       ● Fatigue
+               ○ Decrease in physical performance due to exercise
+               ○ Affects your preparedness
+       ● Fitness-fatigue model determines supercompensation curve
+       ● Each biomotor capacity has its own supercompensation curve
+
+
+
+
+    Effects of training
+        ● Changes that occur within the body as a result of training
+                 ○ Acute effects: Happen during exercise
+
+
+
+
+                                                                                     THPSTRENGTH.COM
+           ○   Immediate effects: Manifested soon after working out
+           ○   Cumulative effects: Occur as a result of continued training sessions
+           ○   Delayed effects: Manifest over a given time interval after exercise
+           ○   Partial effects: Changes produced by a single exercise
+           ○   Residual effects: Retention of changes after cessation of training during which
+               adaptation can take place
+
+
+
+
+What is strength?
+Strength
+    ● The ability to generate maximum external force
+
+Force
+   ● Instantaneous measure of the interaction between two objects
+   ● Characterized by
+         ○ Magnitude
+         ○ Direction
+         ○ Point of application
+   ● Human body
+         ○ External: Athlete’s body vs. environment
+         ○ Internal: bone on bone, tendon to bone, etc.
+         ○ Muscle exerts forces on bone while
+                ■ Shortening
+                ■ Lengthening
+                ■ Remaining the same length
+
+Why is strength training important for increasing your vertical jump?
+  ● Strength training improves your ability to generate force
+  ● Your bodyweight provides high resistance
+
+PS. If you want my team to program a training cycle specific to your needs based on these
+principles sign up for our FREE 6 week challenge HERE
+
+
+The role of resistance and extrinsic factors
+   ●   Different types of resistance
+           ○ Inertia
+                   ■ Law of inertia: An object at rest stays at rest unless acted upon by an
+                       outside force
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+                ■    F=ma
+                ■    In jumping, your body’s mass is the parameter. So the force you apply on
+                     it determines how fast you can accelerate it upwards, which determines
+                     how high you jump
+        ○   Elasticity
+               ■ F=kD
+               ■ Force, coefficient of stiffness, displacement through deformation
+               ■ Bands, springs, stretch cords
+        ○   Hydrodynamic resistance
+               ■ Swimming, rowing, kayaking
+        ○   Compound resistance
+               ■ This is when there a multiple forms of resistance
+               ■ Bands + weights
+                          ● Overcome barbell weight, barbell inertia which is proportional to
+                             acceleration of barbell, and elastic force
+
+
+
+Force Constraints
+ ●   Time available for force development
+        ○ Time to peak force varies with each person and with different motions
+        ○ Typically when measured isometrically, time to peak force is 0.3 to 0.4 s
+        ○ Here is how long some track and field movements take:
+
+
+
+
+ ●   In jumping and sprinting, the time available to complete the movement is less than than
+     the time needed to get to the maximal possible force in ideal conditions
+ ●   As resistance decreases, you’re able to move faster, so the difference between peak
+     force and peak possible force in the most ideal conditions increases. This difference is
+     called the explosive-strength deficit
+          ○ The explosive strength deficit shows the percentage of an athlete’s strength
+             potential that was not used in a given attempt
+
+
+
+
+                                                                              THPSTRENGTH.COM
+         ○   Explosive strength is the ability to exert maximal forces over a minimal time
+         ○   There are two ways to increase explosive strength
+                ■ Increase max force capabilities (typically most effective for novices)
+                ■ Decrease explosive strength deficit by improving rate of force
+                    development
+                ■ When an athlete improves jump technique, they’re able to put themselves
+                    in a position where they can apply more force and they’re also able to
+                    complete the jump in less time. This means that RFD plays a bigger role
+                    as the athlete becomes more advanced
+
+
+
+
+The force velocity curve
+  ●   Is the interplay between force and velocity with time as a constraint in muscle actions
+  ●   In concentric muscle actions, motion velocity decreases as external resistance increases
+
+
+
+
+  ●   Consequences of the force velocity equation in sports
+         ○ It is impossible to exert high force in very fast movements
+                ■ In a power clean, the position where a lifter is strongest in a pull is around
+                    knee height. If there is too much initial velocity there will be less force able
+                    to be generated when the bar reaches knee height, so you essentially
+                    miss your golden opportunity to accelerate the bar upwards.
+         ○ Forces applied in the intermediate ranges of the curve are very dependent on an
+            athletes max strength
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+                  ■  This means that an athlete’s maximal strength determines the force that
+                     can be exerted dynamically, which is what we care about in jumping
+                     (more reasons why getting stronger is so important for jumping!)
+                  ■ Now the slower the speed of the movement, the more related
+                     performance will be to max strength
+                  ■ In extreme areas of the curve, this correlation falls off
+           ○   Maximal power is achieved in the intermediate range of force and velocity
+                  ■ Generally this is around ⅓ of max velocity and ½ of max force, with it
+                     varying based on the movement
+
+
+   ●   Eccentric muscle contractions
+          ○ Forces in the yielding phases of motion during stretch shortening cycles can
+               easily exceed the maximal isometric strength of an athlete
+          ○ Eccentric forces substantially increases with initial increase in movement velocity
+               and the velocity of muscle lengthening
+   ●   We will go over stretch shortening cycles more in depth in the plyometrics section of the
+       jump training course
+
+
+
+The role of torque in jumping
+   ●   How much force you can apply is also related to your body posture in a lift/jump and limb
+       lengths
+   ●   The farther away the point of force application is from the axis of rotation, the more
+       torque is required to apply force to a resistance ie. deep squatting vs quarter squatting
+   ●   Longer limbed athletes also have to generate more torque in order to apply the same
+       force as a shorter limbed athlete
+   ●   The more torque you can apply, the higher you’ll be able to jump!
+
+
+
+Peripheral and neural factors in force application
+Peripheral factors
+   ● Capabilities of individual muscles
+   ● Capabilities of the muscle are largely influenced by your muscle dimensions
+           ○ Muscles with larger cross sectional area generally produce higher forces
+           ○ Cross sectional area increases with proper training and nutrition
+           ○ Muscle size growth occurs from hypertrophy and NOT hyperplasia
+           ○ The way we grow muscles is through resistance training. Heavy resistance
+               training breaks down muscle proteins, creating conditions for synthesis of
+               contractile proteins during rest periods
+
+
+
+
+                                                                                THPSTRENGTH.COM
+           ○  Generally athletes with greater body weight have greater levels of absolute
+              strength, and athletes with lower body weights have greater levels of relative
+              strength
+                  ■ Because of this, managing weight loss correctly can sometimes increase
+                      your relative strength
+                  ■ Relative strength is what is important for jumping higher!!
+   ●   Neural aka central factors
+          ○ This is coordination of the muscles by the CNS
+          ○ Intramuscular coordination
+                  ■ How individual muscle fibers are innervated
+          ○ Motor units
+                  ■ Motor units are motor neurons connected to muscle fibers
+                  ■ Slow motor units are used in activities with slow velocity and vice versa
+                      for fast motor units
+          ○ How do motor units coordinate muscles?
+                  ■ Recruitment of motor units (how many)
+                  ■ Rate coding (how quickly)
+                  ■ Synchronization of motor units
+                  ■ Motor units are recruited through the size principle(small first)
+          ○ Intermuscular coordination
+                  ■ How different muscle groups coordinate with each other
+                  ■ The complexity of intermuscular coordination is why compound
+                      movements have better transfer to jumping higher… jumping is complex!!
+
+   ●   Elite athletes have better intra and intermuscular coordination
+
+
+
+Types of muscular strength
+Static strength
+    ● Isometric and slow concentric actions
+Dynamic strength
+    ● Fast concentric actions
+Yielding strength
+    ● Eccentric actions
+
+Explosive strength and SSC’s are independent components of motor function that rely more
+heavily on tendons
+
+*These are not all inclusive, and in real life there are hybrids and smooth transitions between all
+of these types of strengths
+
+
+
+
+                                                                                   THPSTRENGTH.COM
+Methods of strength training
+How exactly do we put all this information together to make a training program that is going to
+make you jump higher?
+  ● We choose the exercises and put them together in a training plan in a way that causes
+      long term adaptation, and continues to spur on adaptation year after year!
+
+Variables that we manipulate:
+
+   ●   Training Intensity
+           ○ Single vs multi joining
+           ○ Velocity of movement
+           ○ Total load
+           ○ How close to failure
+           ○ Intent
+
+
+   ●   Volume
+           ○ How much work you are doing
+           ○ Sets/reps*load
+           ○ Distance
+
+
+How we manipulate these variables in order to have an athlete peak in performance at certain
+times of the year and continue making long term progress is called periodization
+    ● Sets/reps
+    ● Deload weeks
+    ● Exercise selection
+    ● Defining different types of training cycles
+
+How we periodize the training based on these variables will be covered in the periodization
+section of the jump training course
+
+
+
+Types of exercises
+We break exercises down by:
+
+   1. Muscle groups
+         ● Posterior chain
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+          ● Knee extensors
+          ● Lower leg
+          ● Core
+          ● Upper body
+                ○ Pulling
+                ○ Pushing
+                ○ Shoulders
+   2. Where they fall on the force velocity curve
+        a. We want to surf the force velocity curve from right to left in eccentric muscle
+            actions
+
+
+
+Injury Prevention
+Load management considerations
+   ● Type of injury
+   ● Severity of injury
+   ● Sports
+   ● Goals
+
+
+    Plyometrics and the stretch shortening cycle
+Forces in the yielding phases of motion under conditions of imposed muscle lengthening are
+called eccentric or plyometric muscle actions
+    ● These can easily exceed the maximal isometric strength of an athlete
+
+
+
+
+                                                                               THPSTRENGTH.COM
+      The stretch shortening cycle aka reversible
+                    muscle actions
+Stretch shortening cycle
+    ● Movements that consist of an eccentric(stretching) phase and a concentric(shortening)
+       phase
+
+When a muscle shortens immediately after a stretch:
+  ● Force and power output increases
+  ● Energy expenditure decreases
+
+
+
+
+    How the SSC augments force production and
+           decrease energy expenditure
+
+   1. At the transition from eccentric to concentric, force is developed in an isometric
+      condition. Because of this, the influence of high velocity is avoided and you can tap into
+      your maximum possible force (refer to the force velocity curve when velocity is at zero)
+   2. Since force begins to rise in an isometric phase, the time available for force development
+      is greater (ie. paused squat jumps has no isometric phase vs. countermovement jumps
+      gives more time to apply force through the isometric phase)
+   3. Muscle and tendon elasticity
+          a. When a tendon and muscle is stretched, elastic energy is stored
+          b. This deformation energy is recoiled and used to enhance motor output in the
+              concentric phase of the SSC
+          c. Magnitude of stored energy is proportional to applied force and induced
+              deformation
+          d. Muscles and tendons are arranged in series, so they are subjected to the same
+              force and the distribution of stored energy between them is only a function of
+              their deformation
+          e. The deformation is a function of muscle and tendon stiffness or it’s inverse value,
+              compliance
+
+
+
+
+                                                                               THPSTRENGTH.COM
+       f. The stiffness of a tendon is constant, while the stiffness of a muscle is variable
+          and depends on the forces exerted
+       g. A passive muscle is compliant aka it can be easily stretched and an active
+          muscle is stiff
+       h. It takes great force to stretch a stiff muscle
+       i. Superior athletes can develop high forces and the stiffness of their muscles while
+          active can exceed the stiffness of their tendons. What is the implication of this? A
+          sh*t ton of elastic energy is now stored in the tendon because they are extremely
+          hard to stretch!
+       j. This is why elastic energy in elite athletes is stored primarily in the tendons rather
+          than in the muscles
+
+
+
+
+4. Neural mechanisms
+      a. During stretching phases of the SSC, there is a rapid change in both muscle
+          length and the forces developed. Muscles are forcibly stretched and at the same
+          time muscle tension rises sharply. These changes are controlled and partially
+          counterbalanced by two motor reflexes
+      b. Myostatic or stretch reflex
+              i.  keeps muscles close to preset length
+             ii.  Muscle spindles are arranged parallel to the muscle fibers. When muscle
+                  is stretched by external force the muscle spindles are also stretched. This
+                  stretching induces a discharge of alpha-motorneurons that causes a
+                  reflex contraction of the stretched muscle
+      c. Golgi tendon reflex
+              i.  prevents unusually high and potentially damaging muscular tension
+             ii.  Golgi tendon organs are arranged in series with muscle fibers. The
+                  receptors are sensitive to forces developed in the muscle rather than
+                  length changes. If muscle tension increases sharply, the golgi tendon
+                  reflex inhibits muscle action. The ensuing drop in muscle tension prevents
+                  the muscle and tendon from incurring damage
+            iii.  If an athlete(even experienced ones) is not accustomed to a plyometric
+                  exercise, the activity of the extensor muscles are inhibited by the golgi
+                  tendon reflex
+
+
+
+
+                                                                              THPSTRENGTH.COM
+                         1. Specific training can result in inhibition of the golgi tendon reflex
+                            and the athlete would be able to sustain very high landing forces
+                            without a decrease in exerted muscular force
+                         2. This is also why HELLA jump reps are so crucial!!!
+                         3. This is also why experienced jumpers would mop the floor with
+                            even the most elite powerlifters in depth jump exercises
+                         4. In beginners, just weight training can improve the SSC. But as an
+                            athlete becomes more experienced, very specific plyometric
+                            exercises are needed to see progress
+
+
+       How do plyometrics increase your vertical?
+   ●   An environment conducive to creating adaptation is created by overloading eccentric
+       muscle actions through exercises such as drop jumps, repeat jumps, and overspeed
+       approaches. The adaptation is being able to generate more force in all parts of the SSC
+    ● Plyometrics also self intensify, so as you get better at doing plyos you continually
+       overload your body and keep spurring on adaptation
+           ○ This is why someone can do no weight training and only jump for years and
+                make progress, assuming they can stay healthy. You essentially bypass the law
+                of accommodation, until you start reaching elite levels of jumping
+    ● Makes your muscles and tendons able to store more elastic energy
+    ● Improves the stretch reflex of muscles
+    ● It inhibits the golgi tendon organ response
+By the way! We have built over 250 unique weeks of training each with their own plyometric
+progression. To apply the one that best fits your specific needs sign up for our FREE 6
+week challenge HERE
+
+
+
+
+          Planning Plyometrics For Your Training
+
+
+Progressive Overload
+
+   ●   Progressive overload is used to induce adaptations
+   ●   In plyometrics the goal is to improve power development
+           ○ Progressive overload is achieved through exploiting the equation for power
+           ○ Side note: Jump height is directly 1 to 1 related to impulse (a change in
+              momentum). However there is a correlation to power, and it is easy to plan
+              plyometrics when looking at the equation to power
+   ●   Power = Fxd/t
+   ●   Where F=force, d=distance, and t=time
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+   ●  With this in mind, here is how we can overload plyometrics within each variable of the
+      power equation
+   1. Resistive overload
+         a. Gravitational
+                  i.  Falling from a height
+         b. Inclination
+         c. External
+   2. Spatial overload
+         a. Range of motion
+                  i.  Move limbs through much wider or much shorter ROM’s
+                 ii.  Start from a standstill instead of an approach
+         b. Sagittal, transverse, and frontal planes of motion
+                  i.  Split lunge
+   3. Temporal overload
+         a. Operating rate
+                  i.  Executing movements with more intent and more speed
+         b. Impulse
+
+
+Specificity
+
+   ●   Exercise creates specific neuromuscular and metabolic adaptations to overload
+   ●   Transfer to your sport depends on how similar the plyometric is to the activity you’re
+       trying to improve
+
+
+
+Evaluating exercise objectives
+
+   ●   SSC appears everywhere
+          ○ Warm up, weight room, speed portion, agility portion
+   ●   Sometimes SSC will be used specifically, and other times generally
+
+Time lapse for the SSC
+   ● Minimizing the time lapse between the eccentric and concentric contraction is extremely
+       important
+   ● Two periods of delay exist
+          ○ Between signal from brain for muscle contraction and onset of muscle activity
+          ○ Between appearance of muscle electrical activity and development of tension in
+               the muscle
+                   ■ This delay is shorter in eccentric contractions which supports concept of
+                      producing the greatest force in the least amount of time
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+                  ■   SSC enhances force production from the series elastic component (SEC)
+                      during stretching AKA eccentric efficiency is improved using the stored
+                      elastic energy of the SEC
+
+SSC factors that determine timing, volumes, and intensities of plyometrics
+  ● Rate of eccentric action aka amortization phase aka the stretch
+  ● Rate of concentric action aka the recoil aka the summation phase aka shortening
+  ● Delay time between cessation of eccentric and onset of concentric muscle action aka
+      coupling time
+  ● Amount of external load involved
+
+
+Different types of SSC movements
+    ● Intensive elastic and reactive method
+    ● Speed strength (loaded and not as elastic or reactive)
+    ● Shock methodology
+            ○ If coupling time is longer than 0.15 seconds during high impact/intensity/RFD
+                drills than it’s NOT classical shock-method plyometrics
+    ● These can more simplistically be defined as short vs long SSC’s
+            ○ Short: < 250 ms
+            ○ Long > 250 ms
+
+Which plyometrics should you do?
+   ● Plyometrics fall along a large continuum of exercise and load factors
+   ● Evaluate specific goals for each training phase, and this goal will tell you where on the
+      continuum you should choose plyometrics from
+
+Volume and dosage
+    ● Number of repetitions are usually 8-12
+    ● Eastern Europe scientists suggest 6-10 sets
+    ● Russian sport scientists suggest 3 to 6 sets
+Single and multi response drills
+    ● Two categories for SSC drills
+           ○ Single response
+                   ■ Single intense effort
+           ○ Multi response
+                   ■ Several efforts in succession
+                   ■ More emphasis on elasticity, speed, and coordination
+                   ■ One huge goal of plyometric training is accomplishing high-impulse
+                      landings and takeoffs in succession
+           ○ There’s also a third type
+                   ■ Multi response with pauses
+    ● Both responses should be used to properly progress through the plyometric training
+       continuum
+
+
+
+
+                                                                                THPSTRENGTH.COM
+   ●   Objective of drills
+          ○ Improve nerve-muscle reactions, explosiveness, quickness, and ability to
+              generate forces in certain directions
+          ○ An athlete will only benefit from the number of repetitions that are done well, this
+              includes intent and proper execution!
+
+Intensity
+    ● Described in two ways in regards to SSC
+          ○ Force at impact
+          ○ Intent or level of effort
+                 ■ Quickness of execution is essential for optimal training effects
+                 ■ Rate of muscle stretch is more important than the magnitude of stretch
+                 ■ Greater reflex response occurs when you load the muscle rapidly which is
+                     done by using maximum effort
+
+Maximize force and minimize time
+  ● Both force and velocity are important
+  ● In many cases the critical concern is the speed at which you can perform a particular
+      action
+          ○ Example: shot put
+                 ■ The quicker you execute the action sequence, the greater the force you
+                     will generate and the longer distance you will achieve
+  ● Impulse of the movement is key
+          ○ Movements must have high impulse for plyometric training to be effective
+
+Guidelines for workouts and microcycles
+   ● Rest periods
+           ○ 1-2 minutes is usually enough rest for the neuromuscular systems stressed by
+               SSC exercises to recuperate
+           ○ Low impact and low intensity plyos may require minimal rest of 30-60 seconds
+           ○ At the shock end of the plyo stress scale exercises may require 2-3 minutes of
+               rest for systems to be able to handle and produce forces necessary for optimal
+               execution
+   ● Frequency of loading
+           ○ 2-3 days per week usually gives optimal results
+                   ■ Consider total training load, type of activity, and inverse relationship
+                        between frequency and intensity
+   ● Order of exercises
+           ○ Dynamic and more intense first
+
+Complex training
+  ● Pairing strength exercises with plyos that have similar movement patterns
+
+
+
+
+                                                                                THPSTRENGTH.COM
+Types of jumps
+
+   -    Jumping
+            - Landing on both legs
+   -    Squat jumps
+            - From static position
+   -    Counter movement jump
+            - Using a pre stretch by flexing at ankle, knee and hip and then extending
+   -    Depth (drop) jump
+            - Jump after dropping from height
+   -    Bounds
+            - Takeoff leg to leg
+            - Can also be double leg to double leg
+            - Usually Emphasis on max horizontal distance
+   -    Hopping
+            - Same leg to same leg
+            - Either for distance or height
+   -    Leaps
+            - Single effort exercise emphasizing max horizontal or vertical distance
+   -    Skips
+            - Alternating step hop
+            - Left-left to right-right to left-left to etc.
+            - Emphasis on max height or distance
+   -    Ricochet
+            - Emphasis is purely on fast leg and foot movement
+
+
+Choosing depth jump height
+   1.   Test your standing vertical
+   2.   Perform depth jumps starting with a low box
+   3.   Increase height progressively until you test a lower vertical than your standing jump
+   4.   Perform depth jumps at the the height where the depth jump matches your standing
+        jump height
+
+
+PS. Plyos are one of the hardest parts of training to get right. They’re perfect for some
+athletes… or they could make other athletes jump lower! That’s why coaching is so important. At
+THP you’ll always know you are doing the right training for YOU. Sign up for our FREE 6 week
+challenge HERE
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+                           PERIODIZATION
+The deliberate manipulation of training variables to enhance sport performance at specific
+times. The main obstacle is timing the training correctly while dealing with an athlete’s schedule
+
+
+                   Structural units of training and definitions
+   ●   Training session
+   ●   Training day
+           ○ Can consist of multiple training sessions that are spaced by more than 30
+               minutes of rest
+   ●   Microcycle
+           ○ Grouping of several training days
+           ○ Usually one week
+   ●   Mesocycle
+           ○ System of several microcycles
+           ○ Usually 4 weeks
+           ○ Range of 2-6 weeks
+           ○ Types of mesocycles
+                  ■ Accumulative: Enhance athlete’s potential
+                  ■ Transmutative: Increase non specific fitness into specific athlete
+                      preparedness
+                  ■ Realizational: Planned to put on best sport performance attainable within
+                      given range of fitness
+   ●   Macrocycle
+           ○ One entire competition season
+           ○ Includes preseason, in season, and post season periods
+                  ■ Aka preparation, competition, and transition periods
+           ○ Usually lasts one year for winter sports, and half a year for track(and dunking!)
+           ○ Olympic macrocycle is four years in length
+   ●   Short term planning
+           ○ Planning workouts, training days, microcycles, and mesocycles
+   ●   Medium term planning
+           ○ Planning macrocycles
+   ●   Long term planning
+           ○ Deals with training intervals of many years
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+                            Short term planning
+
+
+Principle of fatigue specificity
+  ●   The main influencing factor in short term planning is fatigue
+         ○ Fatigue effects from different types of muscular work are specific. One's ability
+            to execute drills of another type is restored more quickly than one’s ability
+            to repeat the same routine
+         ○ If athlete is too tired to repeat the same exercise in an acceptable manner, they
+            may still be able to perform another exercise to satisfaction
+         ○ Sequencing drills appropriately makes it possible to assign more work and
+            increase training volume
+         ○ The same applies for exercises of different directions like sprints vs. strength
+            work
+         ○ If two similar training workouts are executed in a row, the traces of fatigue
+            from the two sessions are superposed (see image)
+
+
+
+
+                                                                             THPSTRENGTH.COM
+Optimal number of motor abilities to focus on?
+
+   ●   Fitness gain decreases if several motor abilities are trained simultaneously during one
+       workout, microcycle, or mesocycle
+           ○ It is not a good idea to have more than 2-3 main targets in a microcycle or
+               mesocycle
+           ○ Ie. no reason to train in one microcycle train max strength, explosive strength,
+               aerobic capacity, anaerobic lactacid and alactacid capacities, max speed, and
+               sport technique
+                  ■ Organism cannot adapt to so many different requirements at the same
+                       time
+                  ■ Gains in all these motor abilities would be insignificant compared with
+                       gain from development of only one physical quality
+   ●   When training targets are distributed over several mesocycles in sequence, fitness
+       gains increase
+   ●   To enhance performance, decrease number of targets micro- and mesocycles
+   ●   BUT to avoid superimposition of fatigue traces from individual workouts and the
+       hazard of staleness, increase the number of targets in micro- and mesocycles
+
+What is optimal?
+  ● Number of motor abilities or targets to focus on in one mesocycle
+           ○ 1-2
+           ○ And one essential feature of sport technique (in our case jumping higher or your
+              sport)
+           ○ 70-80% of the total work in a mesocycle should be addressed to the development
+              of targeted motor abilities (35-40% per target)
+
+
+
+What is the goal in planning strength training sessions?
+   ●   Do as much work as possible while having the athlete be as fresh as possible
+   ●   Three facets to timing the workouts
+          ○ Rest-exercise alteration
+                  ■ Elite weightlifters do 32-45 sets per day (Most intense THP workouts are
+                      around 20)
+                  ■ Rest 4-5 minutes when working with large weights
+          ○ Exercise sequence
+                  ■ Objective is to perform most valuable exercises requiring fine motor
+                      coordination and maximal neural output in a rested state
+                  ■ Main sport exercises before assistance exercises
+                  ■ Dynamic-power exercises before slower exercises
+                  ■ Large muscle groups before smaller ones
+          ○ Intensity variation
+
+
+
+
+                                                                               THPSTRENGTH.COM
+                  ■   Highest intensity exercises should be performed at the beginning of the
+                      workout
+
+
+
+Microcycles and Mesocycles
+
+
+Two main goals
+   ●   Allow adequate recovery between exercise periods
+   ●   Find proper balance between steadiness of a training stimulus to call forth an adaptation
+       and its variability to avoid premature accommodation and staleness
+
+
+
+Adequate recovery
+   ●   In microcycle
+           ○ Rest-exercise alteration and proper exercise sequencing alleviate fatigue
+           ○ Greatest training adaptation occurs when muscles are recovered from previous
+               training periods and best prepared to tolerate the greatest overload
+           ○ Elite athletes train 5-6 times per week(like in THP), in these cases proper rotation
+               of exercises in sequential sessions is essential(back to back sessions should not
+               involve the same muscle groups and repeat the same patterns of muscle
+               coordination)
+           ○ Recovery time for heavy resistance training varies with muscle size, the smaller
+               the muscles the more frequently you can train them
+           ○ To increase muscular strength you want to do heavy resistance training at least
+               three times per week
+           ○ To retain strength gains, at least 2 training sessions per week should be
+               scheduled (that last about 30 minutes)
+
+
+
+Variability
+   ●   Variability in training programs within a micro- and mesocycle is realized through
+       changes in training load and NOT exercise complexes
+   ●   One stable complex of exercises should be performed in a mesocycle to elicit an
+       adaptation
+           ○ Complexes usually consist of ten exercises that are distributed among the
+               training days and workouts of one microcycle
+           ○ Each exercise is usually performed at least twice per week
+   ●   To avoid premature accommodation
+           ○ Training loads should vary day to day and microcycle to microcycle
+           ○ Rule of 60%
+
+
+
+
+                                                                                THPSTRENGTH.COM
+                  ■   Training volume of a day with minimal loading in a microcycle should be
+                      60% of the loading of a maximal day in a microcycle
+
+
+  Medium Term Planning (Periodization)
+
+The issues of periodization
+   ●   One of the most complex problems in athlete training is finding the proper balance
+       between opposing demands which is difficult to achieve due to so many factors involved
+
+Four issues
+   1. Delayed transformation of training loads into fitness
+   2. Delayed transmutation of nonspecific fitness to specific fitness
+   3. Training residuals
+   4. The superposition of training effects
+
+
+
+Delayed transformation
+   ●   It takes time to adapt to training stimulus
+   ●   Hard training induces fatigue that accumulates over time
+   ●   Period of relatively easy exercise is needed to realize the effect of the previous hard
+       training session aka period of delayed transformation
+   ●   Adaptation occurs when retaining or detraining load is used after a stimulating load
+   ●   Time of delayed transformation lengthens as the total training load and accumulated
+       training fatigue increases
+
+
+
+Delayed transmutation
+   ●   “Transmuting” the effects of accumulation mesocycles (where you improve your ability in
+       assistance exercises and thus increase your non specific fitness) into specific fitness
+   ●   The number of transmutation mesocycles depends on the number and duration of
+       accumulation cycles
+   ●   Transmutation and realization mesocycles when considered together as one unit is
+       called tapering
+   ●   To properly program these mesocycles at the right times, training residuals must be
+       taken into account
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+Training Residuals
+
+   ●    The reduction or cessation of training brings about substantial losses in adaptation
+        effects BUT athletes can sustain acquired training benefits for a specific period of
+        time without extensively training them continually. The longer you spent training to
+        induce the adaptation, the longer it’ll take to detrain that quality
+
+
+Four factors that determine time to detraining
+   1.   Duration of the immediately preceding period of training (period of accumulation)
+   2.   Training experience of athlete
+   3.   Targeted motor abilities
+   4.   Amount of specific training loads during detraining (or retaining) mesocycles
+
+
+
+Superposition of training effects
+   ●    Training effects are specialized
+            ○ Methods that induce beneficial adaptation in one motor ability or physiological
+                system may produce negative effects on another ability or system
+            ○ Transfer of either positive or negative effects between two types of training is not
+                necessarily symmetrical ie. max strength helps power, but power doesn’t help
+                max strength
+
+Periodization as a trade off
+   ● A good periodization plan is a subtle tradeoff between conflicting demands. The greatest
+       gains in any one direction occur when an athlete focuses on a specific type of training for
+       1 or 2 mesocycles
+   ● Attribute analogy!!!
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+                   Strength training in macrocycles
+
+
+Variables that are most important in macrocycles
+(same ones as mesocycles with the addition of)
+   1. Demand for variability in training stimuli
+   2. Delayed transformation of a training load
+   3. Delayed transmutation of nonspecific fitness into specific fitness
+   4. Training residuals
+
+
+
+Variability of training stimuli (mesocycle to mesocycle)
+   ●   Variability demands are met by changing training loads and exercises
+   ●   Training load variability by itself has limits due to staleness and time constraints, so
+       changing exercises is preferable in long term planning
+   ●   When exercises are changed, there is initial period of decreased performance followed
+       by improvement after period of adaptation to new load
+
+
+
+
+Delayed Transformation (within a mesocycle)
+   ●   Because of the time delay between an increase in training load and improvement in
+       performance, a period of delayed transformation is needed before important
+       competitions(or in our case, when you want to jump high)
+   ●   The length of time of delayed transformation is positively correlated with the amount of
+       training load
+   ●   This period of time has decreased sessions per week, number of exercises, and number
+       of sets
+
+
+
+
+                                                                                THPSTRENGTH.COM
+Delayed Transmutation (mesocycle to mesocycle)
+  ●    As time to important competition decreases, exercises become more and more specific
+  ●    This is the delayed transmutation of nonspecific fitness into specific fitness
+
+
+
+Training residuals and retaining loads
+  ●    Levels of strength can be maintained in season with retaining loads
+  ●    Retaining loads
+          ○ Two 30-40 min heavy resistance workouts per week is usually enough
+          ○ The more elite the athlete, the higher the retaining loads
+
+
+
+Strength training methods in macrocycles
+  ●    Submaximal effort
+           ○ Lifting non maximal loads to an intermediate number of times (NOT to failure)
+  ●    Repeated effort
+           ○ Maximal number of repetitions in a set
+  ●    Maximal effort
+           ○ Max strength and absolute strength
+           ○ Maximal loading with minimal number of repetitions
+  ●    In a macrocycle, training generally progress from submaximal effort focused mesocycles
+       to maximal effort focused mesocycles
+           ○ This is to initially prepare the musculoskeletal system and then improve neural
+              coordination
+
+
+                            Types of periodization
+
+
+Four main groups of periodization methods
+  1.   Sequential
+  2.   Concurrent
+  3.   Conjugate Sequence
+  4.   Combination of all of these
+
+
+
+
+                                                                             THPSTRENGTH.COM
+Important definitions to understand for the types of periodization
+   ●   Long
+           ○ Changes in training goals microcycle to microcycle
+   ●   Short
+           ○ Changes in training goals session to session within a microcycle
+   ●   Linear
+           ○ Starts with high volume/low intensity and ends with low volume and high intensity
+   ●   Undulating
+           ○ Same sequence as linear, but uses waves of inverse volume/intensity within a
+              cycle(workout to workout in short or week to week in long)
+
+Sequential
+   ●   Focus on just one training goal at a time in sequence cycle to cycle
+
+
+Types of sequential periodization
+   ●   Long linear
+
+
+
+
+   ●   Short linear
+
+
+
+
+   ●   Long undulating
+
+
+
+
+                                                                              THPSTRENGTH.COM
+   ●   Short undulating
+
+
+
+
+Concurrent periodization
+   ●   Focuses on all training goals at the same time, with the same amount of emphasis
+       on each goal
+
+
+
+Types of concurrent periodization
+
+   ●   Ordinary concurrent method
+
+
+
+
+   ●   Emphasized concurrent method
+
+
+
+
+                                                                        THPSTRENGTH.COM
+Conjugate Sequence System
+   ●   Focuses on all training goals at the same time, with increased emphasis on 1 training
+       goal and decreased emphasis on all other training goals
+
+
+
+
+Periodization is at the heart of every good program. At THP we build periodization into every
+cycle. You will literally never do the same week of training twice. This guarantees that you are
+always adapting and pushing to get better. Sign up for our FREE 6 week challenge HERE
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+                                 TWO FOOT AND ONE FOOT
+
+                                 JUMP TECHNIQUE GUIDE
+
+
+
+
+        One of the most important elements to consider in regards to jumping higher is your
+
+jump technique.
+
+        This article will serve to address the main components of an approach vertical jump off of
+
+one and two feet. We will discuss the key parts of the approach, their purpose, and how you can
+
+optimize them. It is important to understand these terms as it will help you maximize your gains
+
+on the court, field, or track.
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+                                        General concepts
+
+
+
+
+       Regardless of if you jump off of one foot or two feet, there are some basic concepts that
+
+generally apply to both styles. The two most important variables that dictate the potential to
+
+jump high are how low you are and how fast you are.
+
+       How low you are is defined as the position of your center of mass at touchdown of your
+
+plant foot. In other words, how much are you bending at the knee and hip leading into the jump.
+
+
+
+
+       Again, this happens in both styles of approach jumps. The reason this is so important is
+
+that it gives you the potential to generate a large change in momentum. As an illustration,
+
+imagine trying to throw a baseball with a short wind up, like a catcher, versus a center fielder
+
+launching a ball to home plate. Obviously the center fielder would require a much larger wind up
+
+in order to throw the ball over 100 yards. This relates back to impulse which is defined as the
+
+
+                                                                                  THPSTRENGTH.COM
+force you generate over a given time interval. Ultimately, to accelerate your center of mass
+
+upwards in jumping, you need to generate a lot of force over a given time interval. The more you
+
+lower, the greater the time interval to generate force. However, if you lower too much you could
+
+risk your leg buckling or being in a detrimental position to generate high intramuscular forces.
+
+This is because muscles have an ideal length at which they produce force, as well as your body
+
+being in a poorly leveraged position. In other words, your legs could give out.
+
+       It is also important to take into account when you lower, as this will determine the
+
+negative vertical velocity of your center of mass at touchdown of the plant foot. A high negative
+
+vertical velocity is detrimental because it will cause you to have a lower jump. For example, in a
+
+one foot jump, if I try to lower myself too late my body will be plummeting towards earth right
+
+at the instant I am trying to propel myself upwards. In contrast, if I lower early in the run up and
+
+have a very fast rhythm, I can minimize this negative consequence. To sum things up, you want
+
+to be low to the ground 2-3 steps prior to takeoff.
+
+
+
+
+       How fast you are is defined as the velocity of your center of mass at touchdown of the
+
+plant foot. This is achieved through the run up and penultimate step, which we will discuss in
+
+
+                                                                                    THPSTRENGTH.COM
+greater detail later in this article. Through coaching athletes over the last 15 years, I’ve added a
+
+second definition, which is characterized by how fast the stride frequency is during the approach
+
+and takeoff sequence. If you have ever observed athletes who tend to have large braking steps
+
+during one foot jumps, it is because they are low and have a lot of momentum (speed), but lack a
+
+fast rhythm (also speed). It is important to not only be moving fast, but also to have a very fast
+
+rhythm leading into the jump, especially with one foot jumps.
+
+        The reason speed is so important is because it allows the athlete to take advantage of the
+
+stretch shortening cycle of the musculotendinous unit. Speed can also be used to maximize the
+
+deflection of the athletes leg off the ground, but only if they are strong enough to convert the
+
+horizontal momentum vertically. If they are not, then their leg will buckle.
+
+       All of that being said, being low and fast gives you the potential to jump high, but it
+
+doesn’t mean that you will jump high, as the underlying physiology must be able to handle the
+
+increased loading on the muscles.
+
+
+
+
+                                         Two foot jumping
+
+
+
+
+       In this section, we will discuss in detail the specific portions of good two foot jumping so
+
+that you can better understand how to optimize your technique. This model will not encompass
+
+every athlete who jumps high, but will shed light on the model I feel is optimal for athletes
+
+learning to jump off of two feet for the first time. The key parts of a good two foot jump include
+
+but are not limited to: the approach, the penultimate step, the arm swing, the plant foot, the
+
+
+                                                                                    THPSTRENGTH.COM
+block foot, and thee takeoff. Again, this is not an exhaustive list, but will serve to cover the key
+
+elements we feel lead to a good two foot takeoff.
+
+                                      Mastering the approach
+
+
+
+
+       The purpose of the approach or run up is to develop as much horizontal speed as
+
+possible and lower the center of gravity leading into the jump. In two foot jumping, there are
+
+many ways that an athlete can do this; some prefer to be rather slow and bouncy, while others
+
+like to sprint into the takeoff. Both of these styles can work, however athletes who are more
+
+elastic will be able to handle more approach speed. Keep in mind, these steps do not include the
+
+penultimate step. The most common error we observe during a two foot approach is the athlete
+
+not lowering themselves enough during these crucial lead up steps. As a result, they will almost
+
+always end up being very vertical leading into their penultimate step and unable to reposition
+
+themselves to maximize their takeoff. The athlete should feel like they are in an athletic position,
+
+moving smoothly from one step to the next. Again, lowering means bending the hips and knees.
+
+This should feel similar to an offensive player driving to the basket to finish at the rim. Lastly, it
+
+is crucial that the athlete maintain or even accelerate during this portion of the approach. The
+
+worst thing an athlete can do is slow down mid-approach. This will almost always detail the
+
+jump before it even starts.
+
+        It is also important to make sure that your rhythm starts relatively slow and builds
+
+progressively. The number of steps that the athlete should take varies depending on the
+
+circumstances. Volleyball players will have shorter approaches, while professional dunkers will
+
+
+                                                                                     THPSTRENGTH.COM
+have longer approaches. For perspective, on Isaiah Rivera’s 50.5” approach jump, he had five
+
+total foot contacts, including the penultimate step, plant, and block foot. This means the first two
+
+steps were solely focused on generating an initial velocity and lowering him prior to the contact
+
+of his penultimate step. In regards to the distance the athlete should start from the takeoff, the
+
+more speed and steps, the further away the athlete should be.
+
+       The last important variable to consider when approaching a jump is how much you plan
+
+to curve. This takes advantage of the lateral and rotational aspects of the jump as well as lowers
+
+the athlete more than they otherwise would have without the curve. The majority of the time this
+
+slight curve will help athletes immediately and it is recommended that athletes incorporate a
+
+slight curve into their approach.
+
+
+
+
+                                    Perfecting the penultimate step
+
+
+
+
+       If your goal is to have incredible jump technique, bookmark this section and re-read it
+
+several times. The penultimate step will largely determine the success of a two foot jump. I
+
+                                                                                     THPSTRENGTH.COM
+have seen some of the most explosive athletes on the planet jump half as high as their weaker
+
+counterparts due to a poor penultimate step. Personally, it wasn’t until I mastered this portion of
+
+the approach that I was able to actualize much of the progress that I’d made in the weight room.
+
+        Penultimate stands for second to last, and is arguably the most important part of the
+
+approach. It is where the athlete will lower their center of mass the most, and achieve their
+
+highest horizontal velocities into the jump. As previously mentioned, how low you are and how
+
+fast you are largely determine the potential you have to jump high. This is because the lower
+
+you are and the faster you are, the more you can load the stretch-shortening cycle in the legs,
+
+which ultimately explains how athletes are able to jump far higher than they could without an
+
+approach.
+
+        To execute a good penultimate step, you will want to contact the ground with your foot
+
+slightly in front of your hips.
+
+
+
+
+This will inevitably lead to some braking forces, however it will allow you to balance
+
+appropriately in a low position. If you contact too far underneath the hips, you may begin falling
+
+
+
+                                                                                   THPSTRENGTH.COM
+forward or find it difficult to reposition your limbs in an optimal position to jump high. If you
+
+contact too far in front of the hips, you will have excess braking forces and end up decelerating
+
+into the jump.
+
+Once the foot makes contact with the ground, the knee should begin to roll forward and down.
+
+
+
+
+This will allow the athlete to maintain a low position into their plant foot. If you rush this
+
+portion of the penultimate step, you will likely “short” the stride and end up with a somewhat
+
+jerky movement pattern.
+
+
+
+
+                                                                                   THPSTRENGTH.COM
+Some athletes benefit from this, as they are better able to time the jump, but I much prefer a long
+
+fluid stride. Another cue that some athletes tell themselves to maximize the step is to actively
+
+push backwards on this stride. Personally, I have found that by doing this I generate a lot of
+
+speed and am very low, but have a tendency to shorten my push on the ground.
+
+        Another variable to consider when performing the penultimate step is the movement of
+
+the plant foot. Because the penultimate step happens in conjunction with the plant foot moving in
+
+front of the body, it is important to briefly touch on how the leg should move in front of the body.
+
+Ideally the plant foot is rotated somewhat outwards and swings through similar to a running
+
+stride. As the penultimate foot leaves the ground, the athlete should attempt to kick this leg out
+
+relatively straight.
+
+
+
+
+This will allow them to convert their horizontal momentum vertically by generating high
+
+horizontal braking forces. These horizontal braking forces are also responsible for loading the
+
+
+
+
+                                                                                   THPSTRENGTH.COM
+quadriceps during the jump, which, if the athlete is sufficiently strong, will result in a higher
+
+jump.
+
+        One commonly discussed element of the penultimate step is the distance of this stride.
+
+Because some athletes jump high with a short penultimate stride while others jump high with a
+
+long penultimate stride, there has been a lot of confusion around the topic. That being said, as
+
+long as the athlete is low and fast, the length of the penultimate stride should not be
+
+overemphasized. Further, the distance of the stride is determined by how far the penultimate
+
+foot moves behind the body, how low the athlete is, and how far the plant leg kicks out. If an
+
+athlete is very high and doesn’t kick their plant leg out very far, their movement strategy will
+
+likely resemble a jump stop. In contrast, if they are very low, leave their penultimate step far
+
+behind them, and aggressively kick out their plant foot, their movement strategy will
+
+resemble Ja Morant or Isaiah (Rivera).
+
+
+
+
+PS. The penultimate is the most important part of the approach but also the hardest to master! At
+
+THP we can analyze your technique and give you cues, tips, and drills to learn this skill. If you
+
+want us to help you with your technique sign up for our FREE 6 week challenge HERE
+
+
+
+
+                                    Maximizing the arm swing
+
+
+
+
+                                                                                     THPSTRENGTH.COM
+       One of the most underrated aspects of a good two foot approach jump is the contribution
+
+of an aggressive, well timed arm swing. The arm swing benefits two foot jumping by increasing
+
+the position of the center of mass at takeoff and by increasing the ground reaction forces.
+
+Because every action has an equal and opposite reaction, thrusting the arms upward results in a
+
+downward reaction force. This has the potential to add valuable inches to your vertical jump, but
+
+only if timed correctly. With that in mind, it is important that the arms begin moving forward
+
+and upwards as the block foot begins moving forward. As the hands move just in front of the
+
+hips, the block foot should contact the ground.
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+       In the scenario where the athlete has a ball in their hand, he or she will want to thrust the
+
+ball upwards right as the block foot touches the ground.
+
+
+
+
+       If you do not do this correctly, you will not be able to convert horizontal momentum
+
+vertically correctly, and will have a very slow, disjointed takeoff. Another cue that I like to use
+
+to help athletes understand the timing is to imagine swinging your arms aggressively in a circle.
+
+
+
+                                                                                   THPSTRENGTH.COM
+THPSTRENGTH.COM
+When you feel blood rush to the tips of your fingers most intensely is when the block foot should
+
+strike the ground.
+
+
+
+
+       When timed well, forces are optimally summated to maximize peak forces for a correctly
+
+sequenced takeoff.
+
+       One aspect not frequently discussed is the varying types of arm swings involved in an
+
+approach two foot jump. There are two commonly adopted styles of preparing for an effective
+
+arm swing; one is known as a circular arm swing while the other is known as the pendulum
+
+arm swing. In a pendulum arm swing, the hands move in front of the penultimate step in a
+
+clapping configuration.
+
+
+
+
+                                                                                THPSTRENGTH.COM
+        This happens right before the penultimate step touches down and is followed by a
+
+synchronized backwards movement of shoulders, arms, and hands. This also perfectly syncs up
+
+with the movement of the penultimate step moving backwards. An illustration that we like to use
+
+to help athlete’s understand this concept is imagining the hands and penultimate step being
+
+attached by a string. As the block foot (previously the penultimate step) begins moving forward,
+
+so do the hands. If you study the block foot and arm movement of elite two foot jumpers, you
+
+will always observe this movement sequencing. One potential downside to adopting this style is
+
+that while maximizing the aggression and contribution to vertical lift in the jump, it can also
+
+interrupt the maintenance of horizontal momentum.
+
+       As previously mentioned, the second commonly adopted arm swing technique is known
+
+as the circular arm swing. This arm swing is typically used by athletes who run very fast and
+
+tend not to think about their arm swing at all. It is merely the result of practicing hundreds and
+
+                                                                                   THPSTRENGTH.COM
+hundreds of jumps at a high velocity. To do this correctly, imagine the movement of the arms in a
+running action. If you can picture this, you know that the opposite hand and opposite knee move
+
+in unison. The circular arm swing functions in a similar fashion, and explains why many athletes
+
+are able to carry a massive amount of horizontal momentum into the jump by using this type of
+
+arm swing. As the plant foot moves forward, the opposite arm moves forward. Similarly, as the
+
+penultimate step moves backwards, the opposite arm moves backwards. How much the athlete
+
+splits their legs during their penultimate step stride should be mirrored by the arm swing to
+
+ensure there is correct sequencing. As the athlete touches down their plant foot, the hand in front
+
+of the body moves upwards and backwards until it is in line with the other arm. At this point, the
+
+block foot and arms should be “on a string” and perfectly timed to maximize the jump. Again,
+
+the block foot should strike the ground right as the arms begin to feel the heaviest.
+
+
+
+
+                                                                                   THPSTRENGTH.COM
+                                         Handling the plant foot
+
+
+       The takeoff sequence in a two foot jump can be somewhat confusing due to the
+
+nomenclature adopted by many coaches and athletes, but the second to last foot contact is
+
+known as the plant foot.
+
+
+
+
+Because penultimate means “second to last” it can be easy to misunderstand which is the plant
+
+foot and which is the penultimate step. That said, I like to view the plant foot and block foot as
+
+part of the takeoff sequence. With this nomenclature (or naming), it makes sense to continue
+
+calling the penultimate step as such.
+
+       The plant foot is the beginning of the takeoff sequence and is oftentimes an internal focus
+
+for new athletes trying to learn correct two foot technique. As previously mentioned, the plant
+
+foot is the aggressive outward kick that functions to brake the horizontal momentum generated in
+
+
+
+                                                                                   THPSTRENGTH.COM
+the approach. Ideally, athletes should attempt to achieve a long split or a large distance between
+
+the toe off of their penultimate step and the touchdown of their plant foot. This oftentimes is
+
+associated with an aggressive push off of the penultimate step and high maintenance of
+
+horizontal momentum. It is also associated with a low center of mass position at a critical portion
+
+of the jump. If the athlete does not kick this leg out aggressively, it will feel like a small step. If
+
+they do kick this leg out correctly it will feel like a long fluid stride. If you have always taken a
+
+short penultimate stride, it may feel uncomfortable to lengthen this step, but I would encourage
+
+athletes to at least try to adjust their technique. If it does not lead to an improvement within a
+
+month or two, I would suggest going back to their previous technique.
+
+        It is also important to pay attention to the position of the athlete’s torso during the flight
+
+phase of the penultimate step. At this point the athlete should have a very high horizontal
+
+momentum and as such will likely benefit from a vertical torso position.
+
+
+
+
+This is not always the case, but very high level two foot jumpers do so to stop themselves from
+
+                                                                                       THPSTRENGTH.COM
+rotating forwards in the air. As an illustration, imagine running as fast as you can and jumping
+
+onto a trampoline with your shoulders too far forward; this would obviously result in you
+
+flipping forwards. Similarly, great two foot jumpers who have a torso that is angulated too far
+
+forward will inevitably rotate, or flip, that direction. This changes their highest touch point,
+
+making some dunks more difficult.
+
+       One interesting observation we’ve made from watching athletes perform approach jumps
+
+on force plates, is that the more acute the angle of the plant foot to the ground, the greater the
+
+horizontal braking forces. This means athletes are able to handle more horizontal momentum
+
+when they lift their knee and kick their foot upwards and outwards. This will likely feel like the
+
+athlete is throwing themselves into their plant foot.
+
+
+
+
+       One subtly that many athletes notice when watching elite two foot jumpers is the slight
+
+external rotation and inwards movement of their plant leg. This functions to further involve the
+
+                                                                                    THPSTRENGTH.COM
+lateral hip musculature leading to a whip and flail mechanism. Because the plant leg should be
+
+relatively straight when contacting the ground, the pelvis is rotated backwards and upwards. This
+
+in turn rotates the opposite leg (the block foot) aggressively into the floor. Another benefit is that
+
+many athletes are much stronger in this configuration compared to having both of their feet
+
+facing forwards.
+
+
+
+
+       After the plant foot contacts the ground, the athlete should begin bending their knee in
+
+preparation for the contact of the block foot. At this point, the center of mass should continue to
+
+move forward and downwards. Stronger athlete’s may have a tendency to flex their knees
+
+slightly more, but this is not always the case. The reason for this is that the muscles and tendons
+
+have differing properties that vary from person to person, such as fiber type, pennation angle,
+
+cross sectional area, and tendon stiffness.
+
+
+
+
+                                          Punching the block foot
+
+
+
+                                                                                    THPSTRENGTH.COM
+       The final foot contact prior to takeoff that functions to convert the remaining horizontal
+
+momentum vertically is known as the block foot. This foot should act like a whip, moving in
+
+unison with the arms, forward and downwards into the ground. The faster you run, the farther the
+
+foot should contact in front of the body. This is because, again, a more acute shin angle will lead
+
+to greater braking forces. Further, this foot should turn towards the midline.
+
+
+
+
+       This allows the athlete to further take advantage of the lateral hip muscles to effectively
+
+convert the horizontal momentum vertically. As an illustration, think about how much easier it is
+
+to walk down a very steep hill with the feet facing somewhat sideways as opposed to straight
+
+ahead. As the foot contacts the ground, the hands should be slightly in front of the body, and the
+
+athlete should be either volitionally or reactively working to push themselves upwards. The
+
+hands should drive upwards as aggressively as possible.
+
+
+
+
+                                                                                   THPSTRENGTH.COM
+        It is also important that this foot stay relatively low to the ground and whip forward in
+
+front of the body.
+
+
+
+
+        If done correctly the athlete’s block side pelvis will rotate forward. This is inline with the
+
+previously discussed whip and flail mechanism. If this does not happen, the athlete is either not
+
+planting far enough across their body, or is running too slow to result in a true whip and flail
+
+mechanism. It is also possible that the athlete is bending their plant leg prematurely to offset the
+
+jarring sensation at touch down. If done correctly the block foot should slide into the ground as
+
+opposed to being set on the ground. As an illustration imagine aggressively sliding your foot into
+
+a flip flop. This will assist in getting the foot to move in front of the body at the correct angle.
+
+
+
+
+                                                                                     THPSTRENGTH.COM
+                                    Completing the jump: the takeoff
+
+
+
+
+       At this point in the approach two foot jump, most everything has already been
+
+determined. If the athlete is low, fast, and in the right position, he or she will have a good chance
+
+of jumping high. Early on, many athletes will benefit from focusing on actively extending the
+
+hip, knee, and ankle. This ensures that they are pushing through the entire portion of their jump,
+
+and as a result, maximizes impulse (and thus jump height). The other focus should be on driving
+
+the arms as high as possible to ensure the athlete is achieving the highest position of their center
+
+of mass at takeoff. It is also possible that this allows the athlete to generate additional reaction
+
+forces through the upwards movement of the rib cage and shoulder axis.
+
+
+
+
+                                                                                     THPSTRENGTH.COM
+       After you leave the ground, the trajectory of the center of mass is set, and there is nothing
+
+you can do to change its position in flight. Kicking the legs backwards, cycling the arms, or any
+
+other movement in the air will only result in a reactionary rotation elsewhere. As an example,
+
+long jumpers do this to stop themselves from rotating too far forward, but this is not a common
+
+problem that great two foot jumpers must overcome.
+
+       PS. At THP you can have your jump technique analyzed 24/7. You will get put in a group
+
+chat with our team of coaches where you can send them videos of your jumps. From there they
+
+will give you personalized tips and cues to instantly improve your technique (and as a result your
+
+vertical will go up instantly). Sign up for our FREE 6 week challenge HERE
+
+
+
+                     ONE FOOT JUMP TECHNIQUE GUIDE
+
+
+
+
+The purpose of this guide is to discuss the specific jump strategies for one foot jumpers for the
+
+purpose of creating vertical lift. In most cases, this applies to dunking and the track and field
+
+event, high jump.
+
+                                                                                    THPSTRENGTH.COM
+                                           General concepts
+
+        When jumping off of one foot, your ability to propel yourself off the ground is largely
+
+related to your dynamic leg strength. In research we classify this as the specific strength
+
+required by the takeoff leg to generate force over very short ranges of motion during a stretch
+
+shortening cycle. One caveat to this, is that one foot jumping is a very coordinated activity, and
+
+therefore should not be viewed in isolation, similar to repeat hopping on one foot. It is important
+
+to utilize the free arm and free leg at the correct time interval to effectively generate vertical lift.
+
+        How well you can take advantage of your takeoff legs dynamic leg strength is determined
+
+by two major variables: how low your center of mass is and how fast your center of mass is
+
+moving at touchdown of the takeoff leg.
+
+
+
+
+                                                                                       THPSTRENGTH.COM
+If you are not low into the takeoff and you do not have a lot of speed, you will not be able to
+
+utilize the full capacity of your takeoff leg. One variable that will further complicate this is your
+
+nervous system’s ability to turn muscles off and on at the correct time, at the right amounts, and
+
+in the right order. In research, we call this synchronization, and it largely dictates how well the
+
+muscle and tendon will be able to generate force in the takeoff.
+
+
+
+
+                                         One foot jumping
+
+
+
+
+       To master one foot jumping, it is important to understand the different focal points of a
+
+sound takeoff. Specifically, the athlete must master the approach, the arm swing, the leg
+
+swing, the penultimate step, and the takeoff action.
+
+
+
+
+                                      Mastering the approach
+
+
+
+
+       The purpose of the approach or run up is to develop as much horizontal speed as
+
+possible and lower the center of gravity leading into the jump. In one foot jumping, you will see
+
+athletes do this a few different ways. For high jump, athletes will run a curved approach. Similar
+
+to the way that a sports bike leans inwards to generate centripetal force so as to keep their tires
+
+connected to the road, athletes lean inwards to lower their center of mass without disrupting their
+
+running position prior to takeoff.
+
+
+
+                                                                                     THPSTRENGTH.COM
+The second purpose of the curved run up is to allow for the generation of lateral somersault at
+
+takeoff, which we are not concerned with when looking at the one foot takeoff during dunking.
+
+Although dunkers do not want to generate somersault during their takeoff, they will want to
+
+focus on being as low as possible into the jump, in which case it can be useful to adopt a slightly
+
+curved approach into the jump. The second way in which athletes lower their center of mass is
+
+by bending their hip, knee, and ankle slightly during the final steps of the approach.
+
+
+
+
+                                                                                   THPSTRENGTH.COM
+In high jump this typically happens during the curve and ensures that the athlete does not
+
+generate too much negative vertical velocity prior to touchdown of the takeoff leg. The more
+
+negative vertical velocity an athlete has, the more energy the athlete will have to spend on
+
+stopping the downward travel of their center of mass (a negative outcome when the goal is to
+
+produce positive vertical velocity). Because of this, it is important that the athlete lower
+
+themselves during the lead in steps and maintain this low position until the takeoff leg strikes the
+
+ground. The lower the athlete, the greater potential to load the takeoff leg at takeoff. The
+
+penultimate step, or second to last step will be discussed in the following section, but functions
+
+as a continuation of this process. Technically speaking, the penultimate step is also part of the
+
+approach, but we will discuss it in more detail as it is of greater importance than the approach.
+
+       While it is important to be low, the athlete will not be able to take advantage of the
+
+stretch shortening cycle without having a great deal of momentum into the jump. This brings me
+
+to the second objective of a good approach; the generation of horizontal velocity. The more
+
+horizontal velocity the athlete has, the greater the potential to load the takeoff leg at touchdown.
+
+In high jump, most athletes take a longer approach to generate a great deal of momentum during
+
+the straight portion of their approach, and then focus on the rhythm and setting up a proper
+
+takeoff during the final 3-5 steps. In dunking, most athletes will be limited to roughly 3 to 5 steps
+
+total. This means that to dunk, the athlete must generate most of their momentum in far less
+
+time. Further, dunkers have a markedly slower approach velocity than high jumpers. This
+
+distinction also explains why oftentimes athletes who can high jump well, struggle to dunk, as
+
+they don’t have enough time, space, or energy to load their very stiff takeoff leg. Dunkers,
+                                                                                    THPSTRENGTH.COM
+however, only need a few steps to set up a proper takeoff. The velocity of the approach in
+
+dunking should build relatively quickly, and the focus should be placed on spacing, taking the
+
+correct number of steps, and the rhythm. If spacing and the number of steps is correct, the focus
+
+should be placed on the rhythm building all the way through the takeoff. If the athlete focuses on
+
+speed too much, they will default to sprint mechanics and not maintain a low position into the
+
+jump.
+
+        In regards to rhythm, the cadence of the jump should accelerate all the way from the first
+
+step through the takeoff. In dunking, the greater the acceleration to and through the takeoff, the
+
+higher likelihood the athlete will jump high. The reason for this is that the stride frequency and
+
+not stride length will be recognized as the “rhythm” of the approach, and by having a very high
+
+stride frequency, the athlete will minimize flight times between each step, meaning they are
+
+maintaining a very low position. In many ways, the rhythm of the approach can be the greatest
+
+determinant of whether a jump will be successful or not. This is somewhat intuitive and must be
+
+learned through spending countless hours practicing good jumping technique.
+
+
+
+
+                                 Perfecting the penultimate step
+
+
+        Arguably the most important step of the entire approach is the second to last stride, or
+
+penultimate step. The reason this stride is so important is that the energy generated in the
+
+previous steps can either be preserved and improved upon to maximize the jump height, or
+
+entirely dissipated, making every step prior to this one essentially useless. This stride can be
+
+performed a number of ways but major things must be preserved in order to perform a successful
+
+
+                                                                                   THPSTRENGTH.COM
+penultimate step: 1. The athlete must maintain a low position into the takeoff. 2. The athlete must
+
+maintain as much velocity as possible from the previous stride. To the first point, it is better to
+
+maintain a low position or push slightly upwards into the plant leg than to continue to lower
+
+during this stride. If the athlete continues to lower, they will likely have a very high negative
+
+vertical velocity prior to touchdown of the plant foot. Secondly the athlete must minimize
+
+braking forces during this stride.
+
+       To achieve these big picture goals, the athlete should aim to perform a rolling foot action
+
+with the shin relatively vertical at touchdown.
+
+
+
+
+       The more the athlete plants in front of the body, the more deceleration will take place.
+
+This interferes with the second goal of a good penultimate step, maintaining horizontal velocity.
+
+As the athlete moves through this step, their knee should move downwards and roll towards the
+
+                                                                                     THPSTRENGTH.COM
+ground.
+
+
+
+
+          From mid support to toe off, if possible it is better to push the penultimate step through
+
+the ground, moving the hips forward and shoulders back. Contrary to popular belief it is during
+
+this stride that the athlete determines whether he or she will be in proper position at touchdown
+
+of the takeoff leg. By rolling through the penultimate step correctly, the athlete will end up with
+
+their glute relatively contracted during the final push off, thus pushing the pelvis forward and
+
+allowing for optimal braking and thus transfer of horizontal to vertical momentum.
+
+
+
+
+                                                                                     THPSTRENGTH.COM
+       As far as lowering, the athlete should stride to keep the shoulders tall or even back and
+
+perform a rolling step while in a semi squatted position. If done right it will likely feel like a low
+
+walking lunge. As the athlete performs this step the takeoff leg should move in front of the body,
+
+sweeping through low to the ground in preparation of takeoff. The arms should move from a
+
+clapping position in front of the penultimate step to thrust behind the body. Some speed jumpers
+
+will perform a running arm action. It is important to note that the athlete should not jump into the
+
+penultimate step, nor disrupt the progressively faster rhythm of the run up during this stride. As
+
+easy as it may sound, maintaining how low you are, how fast you are, and ensuring that your
+
+rhythm is progressively increasing is very difficult, as the position of the athlete will change a
+
+great deal during this step.
+
+                                    Maximizing the arm swing
+
+
+
+
+       The arm swing that an athlete chooses for a one foot jump will likely coincide with the
+
+arm action that he or she selects. Because the athlete must generate peak forces in unison or in a
+
+synchronized manner, he or she will want to mirror the leg action with the arm action. If an
+
+athlete uses a very short running arm action with a very long and slow leg drive, he or she will
+
+come off as discoordinated. Similarly, if an athlete uses a very large arm swing with a very short
+
+leg swing, he or she will also jump lower than the scenario where the arm drive and leg swing
+
+were of similar amplitude and velocity.
+
+       The two major arm swings that an athlete will default to when it comes to one foot
+
+jumping is a running arm action or a pendulum arm swing. In a running arm action, the arms
+
+                                                                                     THPSTRENGTH.COM
+move in opposition to the legs, similar to running (hence the name). For example, if the right
+
+knee is the drive knee, then this knee will be moving upwards while the left arm is moving
+upwards. During the penultimate step in a left leg jump, the athlete should strive to have their
+
+opposite arm in front of their penultimate step. As they roll through that stride, and the takeoff
+
+leg moves forward, as does the opposite arm. This will almost feel like a twisting motion if done
+
+correctly. As the left leg hits the ground, the right hand should be in front (and across) the body.
+
+The left arm should be behind your left hip. As the left leg hits the ground, the right will drive
+
+laterally and downwards as the right knee punches upwards. The left hand will punch upwards
+
+and across the body in unison. This will create a very fast takeoff. If your goal is to attempt to
+
+speed jump, I would encourage you to try this arm action, as it will shorten the ground contact
+
+time.
+
+        The second way to perform the penultimate step is to utilize a pendulum arm swing.
+
+During this arm action, the hands are moved in front and over the penultimate step in a clapping
+
+action. As the athlete rolls through their penultimate step, the hands move backwards and
+
+downwards. The takeoff leg moves forward as the penultimate step moves behind the body. At
+
+the same time, the athlete should have his or her arms as far behind them as possible. This arm
+
+swing is much slower, but is considered to be the strongest arm swing as it pertains to generating
+
+vertical lift. For this reason it is the most effective, however, if the athlete is better at generating
+
+force over shorter periods of time, he or she may want to consider a running arm action. Most
+
+power jumpers utilize this takeoff. One downside to this style of arm swing is that it disrupts the
+
+maintenance of horizontal momentum during the penultimate step and can lead to braking and
+
+thus less potential to jump high during the takeoff action. As the athlete plants the takeoff leg, he
+
+or she should swing the arms in unison with the swing leg. If done correctly, as the athlete
+                                                                                       THPSTRENGTH.COM
+reaches the deepest knee flexion of their jump, the knees should be stacked and the hands should
+
+be just in front of the drive knee.
+                            The drive knee (Speed jumping vs. power jumping)
+
+
+       Contrary to common knowledge, power jumping and speed jumping has very little to do
+
+with the run up speed. Power jumpers can have a higher takeoff velocity than speed jumpers and
+
+vice versa. What determines whether an athlete is a power jumper or speed jumper is what
+
+happens during the knee drive. As an athlete toes off of the penultimate step, the foot can either
+
+stay low to the ground and swing through with a very large moment of inertia, or the foot can
+
+move upwards and begin to recover in a running action towards the butt with a very small
+
+moment of inertia. When it comes to the strength of the leg drive, the large moment of inertia is
+
+considered to be stronger and thus better for generating vertical lift. Despite this, many athletes
+
+stride to have a short moment of inertia as it is better for high jump, coincides with shorter
+
+ground contact times, and allows for a faster conversion of horizontal to vertical momentum. It is
+
+important to note that both strategies are effective for producing vertical lift. Oftentimes
+
+athletes with a soccer background will adopt a speed jumping free leg, whereas basketball
+
+players will adopt a power jumping free leg. The reason for this, in my opinion, lies in the fact
+
+that soccer players are able to swing their free leg through in a similar manner to speed jumping
+
+whilst striking a ball, whereas basketball players are forced to respond to defenders and control a
+
+ball during a jump. The latter requires the athlete to slow the takeoff down, resulting in a slower
+
+takeoff strategy. If you’re reading this and have been jumping for some period of time, which
+
+jump strategy you select is likely already predetermined. I would not suggest trying to force
+
+yourself into either category, however if you would like to attempt to learn speed jumping, I
+
+
+                                                                                   THPSTRENGTH.COM
+THPSTRENGTH.COM
+would encourage you to practice it with your other leg, so as to not disrupt the natural
+
+coordinative tendencies of your dominant takeoff leg.
+
+        In regards to the actual leg swing, the athlete should strive to drive the knee in unison
+
+with the arms, mimicking the speed and timing of the arm drive. The height of the knee drive
+
+should not be overemphasized as this can disrupt the coordination of the takeoff. It is more
+
+important that the leg drive match the arm drive as well to optimize force summation during
+
+amortization of the takeoff leg. If done correctly, the takeoff will feel like a swift kick in the ass
+
+that throws you into the air.
+
+
+
+
+                                                The takeoff leg
+
+
+
+
+        Now that we have covered the approach, the penultimate step, and the arm and leg drive,
+
+we can discuss the ever important takeoff. If each of the previous steps has been completed
+
+correctly, it is almost impossible to have an unsuccessful takeoff. This is because the athletes
+
+velocity and center of mass should already be predetermined from the previous steps. If the
+
+athlete toes off the penultimate step with the torso upright, the hips forward, and the arms back,
+
+all the athlete must do is plant their takeoff leg in front of their body. The further the foot is
+
+placed in front, the more braking forces will take place. It is encouraged that the athlete plant
+
+their foot across their body, slightly towards the midline, whilst leaning slightly inwards and
+
+backwards. The athlete will want to plant their foot on the side of their foot or on the outside of
+
+their heel. If you observe high jumpers, some will plant on the side while others will plant on the
+
+
+                                                                                       THPSTRENGTH.COM
+back and side of their heel. This is somewhat of a preference.
+
+       Depending on what type of jumper you are, power (toe dragger) vs speed (butt kicker),
+
+you will want to focus on a slightly different type of sensation. Speed jumpers typically like to
+
+focus on having the fastest and punchiest takeoff possible, while power jumpers will want to
+
+focus on having a smooth long draw on the ground. If you are a high jumper, you likely will
+
+want to default to the former, even if you are a power jumper. The more velocity you have, the
+
+shorter and faster the takeoff should feel. The slower you are, the longer the takeoff should feel. I
+
+like to use the analogy of throwing different types of punches to help illustrate this point. A
+
+faster jumper will feel like they are throwing a jab into a heavy bag, whereas a slower jumper
+
+will feel as though they are winding up to throw a haymaker. Through trial and error and using
+
+your jump height as a guide, you will innate begin to feel which cue works best for your
+
+individual jump style.
+
+       The athlete should not focus on how much to bend their knee as this will slow the
+
+takeoff down, regardless of what style of jumper you are as well as disrupt the natural
+
+coordination of the takeoff. It will impact precontraction, rate coding, synchronization, and the
+
+fluidity of the movement pattern. The athlete’s knee will bend according to their dynamic leg
+
+strength, tendon properties, and their technical proficiency.
+
+
+
+
+                                           Torso and hip position
+
+
+       One very important aspect of a successful one foot takeoff is the position of the takeoff
+
+leg and torso during touchdown of the takeoff leg. Many coaches will not consider a takeoff
+
+                                                                                    THPSTRENGTH.COM
+successful if the athlete does not have correct alignment of the takeoff leg through the same side
+
+shoulder during touchdown of the takeoff leg. If done correctly, when viewed from the side, you
+
+should be able to draw a straight line from the athlete's heel all the way through their same side
+
+shoulder. This is one of the most difficult things to achieve, but likely comes through practicing
+
+max effort takeoffs where peak jump height is the emphasis. As someone who has spent 17 years
+
+perfecting their one foot takeoff, I have found that focusing on this typically leads to errors and
+
+disruptions in rhythm, acceleration, and aggression of the takeoff, however, is often achieved
+
+through having a fast rolling penultimate step where my penultimate step achieves peak
+
+extension at the hip. Because the pelvis is connected, this will move the takeoff leg hip forward,
+
+and if the shoulders stay tall or even slightly backwards, will result in perfect alignment at
+
+touchdown of the takeoff leg.
+
+       The torso position of a one foot jumper will also greatly impact the success of the jump.
+
+The athlete should strive to stay tall during the takeoff. It is okay, and even advised, that the
+
+shoulders stay forward in acceleration positions during the lead in steps (of a dunk particularly),
+
+but as the athlete contacts and rolls through the penultimate step, it is imperative that the
+
+shoulders move behind the hips. If done correctly it will feel as though the athlete is leaning
+
+backwards at the shoulders as their hips move forward into the plant. I would encourage you to
+
+practice walking through this motion if you cannot conceptualize what this feels like.
+
+
+
+
+       We hope this technique guide helped you jump higher! If you want MORE help with your
+
+jump technique sign up for our FREE 6 week challenge HERE
+
+
+
+                                                                                    THPSTRENGTH.COM
+       The Science Behind Tendon Pain
+          (And How To Get Rid Of It)
+PS. If you want to skip the science and go straight into the sets and reps you can skip to the end
+(not recommended, as understanding the science helps you do the workouts correctly).
+
+If you want to watch the video version of this guide (where give away even more secrets and go
+more in depth on the programming) click here: https://youtu.be/Vpy3zuT5yQo
+
+
+What Are Tendons
+   ●   Tendons connect muscle to bone
+   ●   Think of them like biological “springs”
+   ●   Their job is to transfer energy from muscles into movement (jumping, sprinting)
+   ●   They do this quickly by storing and releasing elastic energy
+   ●   HEALTHY TENDONS DO NOT TEAR
+          ○ They are incredibly strong and built to handle massive amounts of load
+
+
+
+How Tendons Function
+   ●   They stretch to store energy
+   ●   They recoil to release energy (just like a spring)
+   ●   The reason this is so valuable for running and sprinting is because they can do it
+       extremely quickly. For example, in sprinting, the Achilles stores and releases energy in
+       as little as 80 milliseconds of ground contact time.
+   ●   Viscoelasticity: Tendons can be both compliant (stretchy) or stiff depending on how
+       much load is going through it and how quickly it’s being applied
+           ○ This is governed by Hooke’s Law: Force = kx where k is the stiffness of the
+                 spring and x is how far the tendon stretches
+           ○ The stiffer the tendon and the farther you stretch it, the more force you apply
+                 when this energy is released.
+
+
+
+What Determines Tendon Load?
+   1. Reps: How many times the tendon stores and releases energy
+   2. Speed: How quickly the tendon is is storing and releasing this energy
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+   3. Joint Angle: The more the tendon is stretching under the load the higher the stress on
+      that tendon
+
+Higher load = HIGHER RISK (this is why more explosive athletes experience more tendon
+issues)
+
+
+The Tendon Pain Continuum
+   ●   Based on Jill Cook’s research
+
+   1. Normal Tendon: Strong and healthy. Good at bearing load.
+   2. Reactive Tendinopathy: Short term reaction to getting overloaded. Pain usually happens
+      when you spike intensity or volume over a short period of time.
+   3. Tendon Disrepair: This is when structural changes start to occur in the tendon, but not
+      enough that it's not reversible.
+   4. Degenerative Tendon: Permanent cell death. Not as bad as it sounds because you can
+      still build strong, healthy tendons around the degenerated cells.
+
+KEY POINT: Structure does not equal pain! I REPEAT. STRUCTURE DOES NOT EQUAL
+PAIN. Some athletes have extremely degenerated tendons with no pain, and others feel
+pain with barely any degeneration in the tendon.
+
+
+
+
+Why Jumpers & Sprinters Are Vulnerable
+   ●   Your tendon undergoes massive amounts of load when you jump and sprint.
+   ●   During sprinting you can experience up to 6x your body weight on a single leg.
+   ●   During one-foot jumping it can be up to 14x body weight.
+   ●   Dunkers are especially at risk because you're undergoing deep joint angles, insane
+       amounts of force, happening very quickly, and you're doing it over and over again. Jump
+       sessions can last upwards of two to three hours. Which is a recipe for inducing tendon
+       pain.
+
+
+
+What Does NOT Work
+   ●   Stretching the tendon adds more load to an already stressed tendon.
+   ●   Ibuprofen or anti-inflammatories. Most tendon issues are not inflammatory.
+   ●   Random eccentric exercises. This often just overloads a tendon beyond its capacity and
+       induces pain.
+   ●   Icing the tendon. Again.. Tendinopathy is not an inflammatory issue.
+
+
+
+
+                                                                               THPSTRENGTH.COM
+These are just band aids and NOT the solution!
+
+
+
+What Actually Works
+   ●   Load management is the only proven long-term approach.
+
+Good load management is:
+   1. Reduce pain first
+   2. Progressively reintroduce load to increase the tendons capacity.
+   3. Then reintroduce sprinting and jumping safely and slowly.
+
+This is NOT about fixing structure. It’s about improving function (what you can do without feeling
+pain).
+
+Here is what our load management protocols look like (the secret sauce).
+
+
+
+Phase 1: Isometric Loading
+   ●   An isometric is any time a muscle is undergoing load without changing its length.
+   ●   Prescription: 5 sets of 45 seconds at 70% of your maximum voluntary contraction.
+       Repeat three times per day. Repeat every 6 hours.
+   ●   Science
+           ○ Isometrics have an analgesic effect, meaning that pain decreases. I like to think
+              of them like ibuprofen. Doing isometrics can reduce pain for up to 90 minutes
+              after the 5 sets.
+           ○ Isometrics also restore normal muscle activation patterns that were inhibited by
+              tendon pain before.
+           ○ It's also a way for us to load the tendon in a controlled way (while avoiding the
+              two things that are most provocative: speed and length)
+
+
+
+Phase 2: Slow Heavy Strength Loading
+   ●   What is it: Going slow tempo on the eccentric AND concentric part of a strength exercise
+   ●   Prescription: 3-4 sets of 6-8 reps. 4 seconds down, 4 seconds up. Every other day
+   ●   Science
+           ○ Increases tendon stiffness.
+           ○ Increases strength in the muscle.
+           ○ Going slow reduces stress on the tendon while making it adapt to become
+              stronger.
+
+
+
+
+                                                                                  THPSTRENGTH.COM
+           ○   Progressively overloading by adding 5-20 pounds to the exercise per session
+               allows the tendon to tolerate the load without feeling pain. AKA Capacity goes up.
+
+
+
+
+ Phase 3: Energy Storage
+    ●   What is it: Depth lendings progressing from low heights to higher heights over time.
+    ●   Prescription: 4 sets of 6-8 drops.
+    ●   Science
+            ○ Trains the tendon to absorb forces that develop more rapidly than what you see
+               in strength exercises.
+            ○ Prepares athletes for being able to release that energy in a later phase.
+            ○ Here the tenant starts to develop enough capacity to play sports.
+
+
+
+ Phase 4: Energy Storage AND Release
+    ●   What is it:
+           ○ Standing jumps
+           ○ Approach box jumps
+           ○ Short approach jumps
+           ○ Long approach jumps
+    ●   Prescription: Sessions should be about 20 jumps and increase in intensity over time.
+        Once you can handle max intensity, you can then start increasing the length of the
+        sessions over time.
+
+
+
+  Too Much Information To Process? Let Us Take The
+          Guesswork Out Of Your Training
+       Periodization is at the heart of every good program. At THP we build
+    periodization into every cycle. You will literally never do the same week of
+training twice. This guarantees that you are always adapting and pushing to get
+              better. Sign up for our FREE 6 week challenge HERE
+
+
+
+
+                                                                                 THPSTRENGTH.COM
+

@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>Force-Velocity Curve for Vertical Jump Training</title>
+  <desc>Shows the inverse relationship between force and velocity, with training zones mapped to exercise types. The vertical jump sits in the power zone where force × velocity is maximized.</desc>
+
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .axis-label { font-size: 11px; fill: #333; font-weight: 600; }
+    .zone-label { font-size: 10px; fill: white; font-weight: 700; }
+    .zone-detail { font-size: 9px; fill: white; }
+    .exercise { font-size: 9px; fill: #444; }
+    .annotation { font-size: 10px; fill: #666; font-style: italic; }
+    .metric { font-size: 10px; fill: #1a1a1a; font-weight: 600; }
+  </style>
+
+  <!-- Title -->
+  <text x="30" y="30" class="title">The Force-Velocity Curve</text>
+  <text x="30" y="46" class="subtitle">Jump height = Force × Velocity. Different exercises train different points on this curve.</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="400" x2="100" y2="80" stroke="#333" stroke-width="2"/>
+  <text x="400" y="440" class="axis-label" text-anchor="middle">VELOCITY →</text>
+  <text x="50" y="240" class="axis-label" text-anchor="middle" transform="rotate(-90, 50, 240)">FORCE →</text>
+
+  <!-- The curve -->
+  <path d="M 130 100 C 200 110, 280 160, 350 230 S 500 350, 680 380"
+        stroke="#1a1a1a" stroke-width="3" fill="none"/>
+
+  <!-- Power curve (dotted) -->
+  <path d="M 130 380 C 200 280, 320 200, 400 180 S 550 220, 680 370"
+        stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <text x="420" y="170" font-size="10" fill="#ef4444" font-weight="600">POWER (F×V)</text>
+  <text x="420" y="183" font-size="9" fill="#ef4444">← VJ lives here at the peak</text>
+
+  <!-- Zone 1: Max Strength -->
+  <rect x="120" y="90" width="130" height="60" rx="6" fill="#1e40af" opacity="0.85"/>
+  <text x="185" y="112" class="zone-label" text-anchor="middle">MAX STRENGTH</text>
+  <text x="185" y="126" class="zone-detail" text-anchor="middle">High force, low velocity</text>
+  <text x="185" y="140" class="zone-detail" text-anchor="middle">&gt;80% 1RM</text>
+
+  <!-- Zone 1 exercises -->
+  <text x="185" y="170" class="exercise" text-anchor="middle">Back Squat 3-5RM</text>
+  <text x="185" y="183" class="exercise" text-anchor="middle">Front Squat, Deadlift</text>
+
+  <!-- Zone 2: Strength-Speed -->
+  <rect x="260" y="170" width="130" height="60" rx="6" fill="#7c3aed" opacity="0.85"/>
+  <text x="325" y="192" class="zone-label" text-anchor="middle">STRENGTH-SPEED</text>
+  <text x="325" y="206" class="zone-detail" text-anchor="middle">Moderate force + speed</text>
+  <text x="325" y="220" class="zone-detail" text-anchor="middle">50-80% 1RM</text>
+
+  <!-- Zone 2 exercises -->
+  <text x="325" y="250" class="exercise" text-anchor="middle">Power Cleans, Snatches</text>
+  <text x="325" y="263" class="exercise" text-anchor="middle">Speed Squats 60-70%</text>
+
+  <!-- Zone 3: Speed-Strength -->
+  <rect x="420" y="260" width="130" height="60" rx="6" fill="#dc2626" opacity="0.85"/>
+  <text x="485" y="282" class="zone-label" text-anchor="middle">SPEED-STRENGTH</text>
+  <text x="485" y="296" class="zone-detail" text-anchor="middle">High velocity + force</text>
+  <text x="485" y="310" class="zone-detail" text-anchor="middle">15-50% 1RM</text>
+
+  <!-- Zone 3 exercises -->
+  <text x="485" y="340" class="exercise" text-anchor="middle">Jump Squats 15-30%</text>
+  <text x="485" y="353" class="exercise" text-anchor="middle">Weighted Jumps</text>
+
+  <!-- Zone 4: Max Velocity -->
+  <rect x="570" y="330" width="130" height="60" rx="6" fill="#059669" opacity="0.85"/>
+  <text x="635" y="352" class="zone-label" text-anchor="middle">MAX VELOCITY</text>
+  <text x="635" y="366" class="zone-detail" text-anchor="middle">Max speed, bodyweight</text>
+  <text x="635" y="380" class="zone-detail" text-anchor="middle">0-15% load</text>
+
+  <!-- Zone 4 exercises -->
+  <text x="635" y="405" class="exercise" text-anchor="middle">Depth Jumps, Bounds</text>
+  <text x="635" y="418" class="exercise" text-anchor="middle">Sprints, Approach Jumps</text>
+
+  <!-- Key insight box -->
+  <rect x="100" y="455" width="600" height="35" rx="6" fill="#f0f7ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="400" y="472" class="metric" text-anchor="middle" fill="#1e40af">Training principle: Build the left side first (strength), then teach the body to express it on the right (speed).</text>
+  <text x="400" y="485" class="annotation" text-anchor="middle">Both THP and VJB agree: squat ≥1.5× BW before emphasizing plyometrics.</text>
+</svg>

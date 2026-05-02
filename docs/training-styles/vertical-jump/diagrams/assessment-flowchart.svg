@@ -1,0 +1,99 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>Athlete Assessment Flowchart</title>
+  <desc>Decision tree for determining an athlete's training focus based on strength levels and reactive deficit testing.</desc>
+
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .subtitle { font-size: 11px; fill: #666; }
+    .decision { font-size: 11px; font-weight: 700; fill: white; }
+    .decision-detail { font-size: 9px; fill: rgba(255,255,255,0.9); }
+    .outcome-title { font-size: 11px; font-weight: 700; fill: #1a1a1a; }
+    .outcome-text { font-size: 9px; fill: #555; }
+    .yes { font-size: 10px; fill: #059669; font-weight: 700; }
+    .no { font-size: 10px; fill: #dc2626; font-weight: 700; }
+    .connector { stroke: #999; stroke-width: 1.5; fill: none; }
+    .threshold { font-size: 10px; fill: #1e40af; font-weight: 700; }
+  </style>
+
+  <!-- Title -->
+  <text x="30" y="28" class="title">Athlete Assessment: Where Should You Focus?</text>
+  <text x="30" y="44" class="subtitle">Decision tree from VJB and THP for determining training emphasis. Start at the top.</text>
+
+  <!-- Decision 1: Strength check -->
+  <rect x="250" y="65" width="300" height="55" rx="8" fill="#1e40af"/>
+  <text x="400" y="88" class="decision" text-anchor="middle">Can you squat ≥1.5× bodyweight?</text>
+  <text x="400" y="103" class="decision-detail" text-anchor="middle">This is the minimum strength threshold (VJB + THP)</text>
+
+  <!-- NO branch -->
+  <line x1="320" y1="120" x2="320" y2="150" class="connector" marker-end="url(#arrow)"/>
+  <text x="310" y="140" class="no">NO</text>
+
+  <rect x="180" y="150" width="280" height="85" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="320" y="172" class="outcome-title" text-anchor="middle">FOCUS: Build Strength First</text>
+  <text x="320" y="188" class="outcome-text" text-anchor="middle">Novice template: Squat 3×5, progress 10 lb/session</text>
+  <text x="320" y="201" class="outcome-text" text-anchor="middle">Low-level plyos for coordination only (tuck jumps, ankle jumps)</text>
+  <text x="320" y="214" class="outcome-text" text-anchor="middle">Jump squats at light weight for RFD exposure</text>
+  <text x="320" y="227" class="outcome-text" text-anchor="middle">Expect rapid VJ gains: 6+ inches in first 1-2 months</text>
+
+  <!-- YES branch -->
+  <line x1="480" y1="120" x2="480" y2="150" class="connector" marker-end="url(#arrow)"/>
+  <text x="490" y="140" class="yes">YES</text>
+
+  <!-- Decision 2: Reactive deficit test -->
+  <rect x="350" y="150" width="300" height="55" rx="8" fill="#7c3aed"/>
+  <text x="500" y="173" class="decision" text-anchor="middle">Depth jump test: Bounce from 18" box</text>
+  <text x="500" y="188" class="decision-detail" text-anchor="middle">Compare standing VJ to bounce VJ off box</text>
+
+  <!-- Branch: Standing > Bounce -->
+  <line x1="430" y1="205" x2="430" y2="250" class="connector" marker-end="url(#arrow)"/>
+  <text x="370" y="235" class="outcome-text">Standing VJ ≥ Bounce</text>
+
+  <rect x="250" y="250" width="280" height="100" rx="8" fill="#faf5ff" stroke="#7c3aed"/>
+  <text x="390" y="272" class="outcome-title" text-anchor="middle">TYPE: Strength Dominant</text>
+  <text x="390" y="290" class="outcome-text" text-anchor="middle">You express strength well but lack reactive ability</text>
+  <text x="390" y="305" class="outcome-text" text-anchor="middle">Focus: Emphasize explosive work (plyos, jump squats)</text>
+  <text x="390" y="320" class="outcome-text" text-anchor="middle">Template: Explosive-focused or balanced program</text>
+  <text x="390" y="335" class="outcome-text" text-anchor="middle">After 2 months explosive work → shift to balanced protocol</text>
+
+  <!-- Branch: Bounce > Standing -->
+  <line x1="570" y1="205" x2="570" y2="250" class="connector" marker-end="url(#arrow)"/>
+  <text x="590" y="235" class="outcome-text">Bounce > Standing</text>
+
+  <rect x="470" y="250" width="280" height="100" rx="8" fill="#f0fdf4" stroke="#059669"/>
+  <text x="610" y="272" class="outcome-title" text-anchor="middle">TYPE: Speed/Plyo Dominant</text>
+  <text x="610" y="290" class="outcome-text" text-anchor="middle">You express strength efficiently, need more raw force</text>
+  <text x="610" y="305" class="outcome-text" text-anchor="middle">Focus: Drive squat higher, maintain plyo efficiency</text>
+  <text x="610" y="320" class="outcome-text" text-anchor="middle">Template: Strength-focused program</text>
+  <text x="610" y="335" class="outcome-text" text-anchor="middle">May benefit from hypertrophy if relatively thin</text>
+
+  <!-- Squat thresholds at bottom -->
+  <line x1="30" y1="380" x2="770" y2="380" stroke="#ddd"/>
+  <text x="30" y="405" class="outcome-title">Squat-to-Bodyweight Ratio Guide</text>
+
+  <rect x="30" y="415" width="170" height="60" rx="5" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="115" y="435" class="threshold" text-anchor="middle">&lt;1.5× BW</text>
+  <text x="115" y="450" class="outcome-text" text-anchor="middle">Beginner: strength only</text>
+  <text x="115" y="463" class="outcome-text" text-anchor="middle">Novice template, linear prog.</text>
+
+  <rect x="215" y="415" width="170" height="60" rx="5" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="300" y="435" class="threshold" text-anchor="middle">1.5-2.0× BW</text>
+  <text x="300" y="450" class="outcome-text" text-anchor="middle">Intermediate: balanced</text>
+  <text x="300" y="463" class="outcome-text" text-anchor="middle">Conjugate periodization</text>
+
+  <rect x="400" y="415" width="170" height="60" rx="5" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="485" y="435" class="threshold" text-anchor="middle">2.0-2.5× BW</text>
+  <text x="485" y="450" class="outcome-text" text-anchor="middle">Advanced: shift to power</text>
+  <text x="485" y="463" class="outcome-text" text-anchor="middle">Explosive emphasis phases</text>
+
+  <rect x="585" y="415" width="170" height="60" rx="5" fill="#faf5ff" stroke="#c4b5fd"/>
+  <text x="670" y="435" class="threshold" text-anchor="middle">&gt;2.5× BW</text>
+  <text x="670" y="450" class="outcome-text" text-anchor="middle">Elite: diminishing returns</text>
+  <text x="670" y="463" class="outcome-text" text-anchor="middle">Focus on RFD + reactivity</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6 Z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>
