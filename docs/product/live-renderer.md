@@ -20,7 +20,7 @@ There are three renderers, one source of truth per data type.
 
 ### 1. Plan renderer (build)
 
-**Source code:** `.claude/skills/training-plan/build_v6.py` (per-arc; future arcs get their own script or a generalized version)
+**Source code:** `.claude/skills/plan-training-arc/build_training_arc.py` (per-arc; future arcs get their own script or a generalized version)
 
 **Inputs:** Python data structures (block specs, exercise dictionaries, progression schedules)
 
@@ -91,7 +91,7 @@ For each prescribed exercise on day D in week W:
 
 ```
                  ┌─────────────────────────┐
-                 │  build_v6.py            │
+                 │  build_training_arc.py            │
                  │  (plan source)          │
                  └───────────┬─────────────┘
                              │
@@ -129,7 +129,7 @@ For each prescribed exercise on day D in week W:
 
 | Component | Status | Notes |
 |---|---|---|
-| Plan renderer (xlsx) | ✓ Built | `build_v6.py` writes `hybrid-athletic-plan-v6.xlsx` |
+| Plan renderer (xlsx) | ✓ Built | `build_training_arc.py` writes `hybrid-athletic-plan-v6.xlsx` |
 | Plan renderer (md blocks) | ✓ Built | Writes 3 block files |
 | Plan renderer (md weeks) | ✓ Built | Writes 18 week files |
 | Plan renderer (active snapshots) | ✓ Built | Writes `active/current-block.md` + `current-week.md` |
