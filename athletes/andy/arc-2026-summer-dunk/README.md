@@ -24,6 +24,7 @@ Programmed with **Vertical Jump Bible** (primary, jump methodology) and **Dylan 
 | `CLAUDE.md` | AI agent operating instructions. | Read on every session start. |
 | `arc.md` | Arc-level context: purpose, goals, block sequence, testing schedule, constraints. | When asked "what's the big goal?" or "how does this block fit in?" |
 | `profile.md` | Athlete profile snapshot taken at arc start: stats, injuries, preferences, history. | When making any programming or substitution decision. |
+| `nutrition.md` | Per-arc nutrition phase: kcal phase per block, bw curve, exception rules. Inherits cross-arc OS at `athletes/andy/nutrition.md`. | When the athlete asks about cut/maintenance phase, bw target, or "is my squat drop a nutrition signal?" |
 | `active/current-week.md` | **HOT PATH** — currently-active week's daily prescriptions. | Every morning. The agent reads this to answer "what's today's workout?" |
 | `active/current-block.md` | Currently-active block's full programming + strategy. | When the athlete asks "why this rep scheme?" or "what's the focus this block?" |
 | `blocks/*.md` | All 3 blocks for this arc, full week-by-week programming. | When asked about future blocks or to compare. |
@@ -82,10 +83,10 @@ git submodule add <new-arc-repo-url> athlete-bundle/
 
 ## Refresh cadence
 
-The bundle is **regenerated** by `.claude/skills/training-plan/build_v6.py` in the train repo. When the plan changes:
+The bundle is **regenerated** by `.claude/skills/plan-training-arc/build_training_arc.py` in the train repo. When the plan changes:
 
-1. Edit `build_v6.py` (the data structures — never edit generated files directly)
-2. Run `python3 .claude/skills/training-plan/build_v6.py` — overwrites this bundle
+1. Edit `build_training_arc.py` (the data structures — never edit generated files directly)
+2. Run `python3 .claude/skills/plan-training-arc/build_training_arc.py` — overwrites this bundle
 3. Commit + push the bundle changes
 4. Cloud agent repo pulls (whichever mode above)
 
