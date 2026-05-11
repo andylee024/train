@@ -12,7 +12,7 @@ Continue the cut while the dunk window opens. Bw drop multiplies vert as reactiv
 ## Goals
 - Bw at end of block: ~185 lb (down from 188)
 - Kcal target: ~2400 kcal/day
-- Protein floor: ≥190g/day
+- Protein target: 190g/day (acceptable range 170-200g)
 - Adherence target: 80% on-plan
 - Calibration: re-check the kcal target at Wk 8 (post-deload) — adaptive thermogenesis can shift maintenance ~100 kcal lower over the long cut
 
@@ -69,4 +69,4 @@ B2's pattern unlocks more recipes — orchestrator picks from these 7:
 - `nutrition/arc.md` for cross-block strategy
 - `athletes/andy/menu.md` for full meal vocabulary
 - `training/blocks/2026-06-block-02-reactive-dunk-window.md` for the training side
-- Wk-by-week orchestrator output: `nutrition/weeks/2026-Nut-W{07..12}.md`
+- Wk-by-week orchestrator output: `nutrition/weeks/2026-nutrition-W{07..12}.md`

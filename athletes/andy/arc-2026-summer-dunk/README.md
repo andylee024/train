@@ -28,7 +28,8 @@ Programmed with **Vertical Jump Bible** (primary, jump methodology) and **Dylan 
 | `active/current-week.md` | **HOT PATH** — currently-active week's daily prescriptions. | Every morning. The agent reads this to answer "what's today's workout?" |
 | `active/current-block.md` | Currently-active block's full programming + strategy. | When the athlete asks "why this rep scheme?" or "what's the focus this block?" |
 | `blocks/*.md` | All 3 blocks for this arc, full week-by-week programming. | When asked about future blocks or to compare. |
-| `weeks/2026-Arc-W{01..18}.md` | All 18 weeks pre-rendered. | When asked "what's coming up in 3 weeks?" or "what did I do last Saturday?" |
+| `training/weeks/2026-training-W{01..18}.md` | All 18 weeks pre-rendered. | When asked "what's coming up in 3 weeks?" or "what did I do last Saturday?" |
+| `nutrition/weeks/2026-nutrition-W{NN}.md` | Generated weekly by `plan-weekly-meals` skill (just-in-time, not pre-rendered). | Saturday surface — meal plan + grocery list for the upcoming week. |
 | `styles/vertical-jump-guide.md` | Vendored copy of the VJ training style guide. | When asked "why depth jumps now?" or "what's the conjugate sequence?" |
 | `styles/dylan-shannon-guide.md` | Vendored copy of the Dylan Shannon style guide. | When asked about upper body programming logic or 4-pillar framework. |
 | `outputs/hybrid-athletic-plan-v6.xlsx` | Athlete-facing spreadsheet snapshot. | When the athlete asks "send me my plan" or wants the full visual. |

@@ -12,7 +12,7 @@ Peak. The lighter, stronger body built in B1+B2 realizes the dunk against a 10' 
 ## Goals
 - Bw at end of block: **184–186 lb (HELD, not dropping)** — defend the cut, don't push it further
 - Kcal target: ~2700 kcal/day (recalibrated maintenance)
-- Protein floor: ≥190g/day (still non-negotiable)
+- Protein target: 190g/day (acceptable range 170-200g) — still the discipline anchor; bump to top of range during peak performance days if appetite allows
 - Adherence target: 80%+ on-plan (sat dunk attempts every week → fueling matters)
 - Nutrition test: bench 1RM 260 lb + pull-up +80 × 8 + the dunk itself
 
@@ -74,5 +74,5 @@ B3 unlocks the full menu — orchestrator picks from these 10+:
 - `nutrition/arc.md` for cross-block strategy
 - `athletes/andy/menu.md` for full meal vocabulary
 - `training/blocks/2026-07-block-03-peak-realize-test.md` for the training side
-- Wk-by-week orchestrator output: `nutrition/weeks/2026-Nut-W{13..18}.md`
+- Wk-by-week orchestrator output: `nutrition/weeks/2026-nutrition-W{13..18}.md`
 - Source: VJ §9 (peak ≠ deficit — cutting compromises force during realization)
