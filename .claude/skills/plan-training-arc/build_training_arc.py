@@ -810,7 +810,7 @@ def render_block_md(spec):
 def render_week_md(arc_week, spec, week_idx):
     week_start = ARC_START + timedelta(weeks=arc_week - 1)
     week_end = week_start + timedelta(days=6)
-    week_id = f'2026-Arc-W{arc_week:02d}'
+    week_id = f'2026-training-W{arc_week:02d}'
     week_type, primary_focus = WEEK_META[arc_week]
     L = []
     L.append(f'# Week {week_id}')
@@ -883,7 +883,7 @@ for arc_week in range(1, 19):
     week_idx = (arc_week - 1) % 6
     spec = BLOCK_SPECS[block_num - 1]
     md = render_week_md(arc_week, spec, week_idx)
-    week_id = f'2026-Arc-W{arc_week:02d}'
+    week_id = f'2026-training-W{arc_week:02d}'
     path = f'{WEEKS_DIR}/{week_id}.md'
     with open(path, 'w') as f:
         f.write(md)

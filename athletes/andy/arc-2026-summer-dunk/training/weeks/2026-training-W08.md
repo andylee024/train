@@ -1,14 +1,14 @@
-# Week 2026-Arc-W09
+# Week 2026-training-W08
 
 ## Week Header
 
 - Block: training/blocks/2026-06-block-02-reactive-dunk-window.md
 - Block Display: REACTIVE + DUNK WINDOW
-- Arc Week: 9 of 18
-- Block Week: 3 of 6
-- Date Range: Sun Jun 28 – Sat Jul 04, 2026
-- Week Type: intensify
-- Primary Focus: DUNK ATTEMPTS BEGIN (Sat). High-box depth jumps (30 in).
+- Arc Week: 8 of 18
+- Block Week: 2 of 6
+- Date Range: Sun Jun 21 – Sat Jun 27, 2026
+- Week Type: build
+- Primary Focus: Bench density Wk 1 of 3. Depth jumps continue.
 
 ## Block Goals (Why This Week Exists)
 
@@ -18,40 +18,40 @@
 
 ## 7-Day Overview
 
-1. Sun Jun 28 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior Chain
-2. Mon Jun 29 (MONDAY): Upper Horizontal — Bench Density + Row
-3. Tue Jun 30 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed Jul 01 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
-5. Thu Jul 02 (THURSDAY): Speed-Strength A — Olympic Power + Loaded Velocity
-6. Fri Jul 03 (FRIDAY): Upper Vertical — Pull-Up Heavy + Dips
-7. Sat Jul 04 (SATURDAY): JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
+1. Sun Jun 21 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior Chain
+2. Mon Jun 22 (MONDAY): Upper Horizontal — Bench Density + Row
+3. Tue Jun 23 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
+4. Wed Jun 24 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
+5. Thu Jun 25 (THURSDAY): Speed-Strength A — Olympic Power + Loaded Velocity
+6. Fri Jun 26 (FRIDAY): Upper Vertical — Pull-Up Heavy + Dips
+7. Sat Jun 27 (SATURDAY): JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
 
-## Sun Jun 28 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior Chain
+## Sun Jun 21 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior Chain
 
-1. Back Squat (light maintenance): 3×3 @ 80% (295 lb)
-2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 255
+1. Back Squat (light maintenance): 3×3 @ 78% (290 lb)
+2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 245
 3. Hand-Supported Bulgarian SS: 3×8/leg @ 50
-4. Glute-Ham Raise: 3×8 @ BW+15
+4. Glute-Ham Raise: 3×8 @ BW+10
 5. Pigeon Stretch: 2×60s/side @ —
 
-## Mon Jun 29 (MONDAY) — Upper Horizontal — Bench Density + Row
+## Mon Jun 22 (MONDAY) — Upper Horizontal — Bench Density + Row
 
-1. Bench Press: Wk7-8: 5×5 / Wk9-11: 14-min density / Wk12: test @ 14-min @ 185
-2. Barbell Row: 4×6 @ 195
+1. Bench Press: Wk7-8: 5×5 / Wk9-11: 14-min density / Wk12: test @ 195 5×5
+2. Barbell Row: 4×6 @ 190
 3. DB Incline Bench (neutral): 3×6-8 @ 65
 4. T-Bar Chest-Supported Row: 3×6-8 @ Heavy
 5. Cable Fly: 3×8-12 @ Mod-Hvy
-6. DB Lateral Raise: 3×10 @ 22.5
+6. DB Lateral Raise: 3×10 @ 20
 
-## Tue Jun 30 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
+## Tue Jun 23 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
 
-1. Hang Power Snatch: 5×3 @ 65% (125)
+1. Hang Power Snatch: 5×3 @ 62% (120)
 2. DB Push Press (neutral): 4×4 @ 55
 3. Single-Leg Bounds: 3×6/leg @ Med dist
 4. Sprints (finisher): 4×20yd, 1×40yd @ 90% effort
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Jul 01 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed Jun 24 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
 
 1. Weighted Pull-Up (volume): 3×8 @ +20
 2. Face Pull: 3×15 @ Light
@@ -60,30 +60,30 @@
 5. Pancake Good Morning: 3×8 @ Mod
 6. Cossack Squat (loaded): 3×8/side @ +15 lb
 
-## Thu Jul 02 (THURSDAY) — Speed-Strength A — Olympic Power + Loaded Velocity
+## Thu Jun 25 (THURSDAY) — Speed-Strength A — Olympic Power + Loaded Velocity
 
-1. Power Clean: 5×3 @ 80% (155 lb)
-2. Speed Squat: 5×2 @ 70% (260 lb)
-3. Jump Squat: 4×4 @ 33% (120 lb)
-4. RDL: 4×5,5,4,3 @ 255
+1. Power Clean: 5×3 @ 78% (150 lb)
+2. Speed Squat: 5×2 @ 68% (250 lb)
+3. Jump Squat: 4×4 @ 30% (110 lb)
+4. RDL: 4×5,5,4,3 @ 245
 5. Pendulum Squat: 3×8-10 @ Heavy
 
-## Fri Jul 03 (FRIDAY) — Upper Vertical — Pull-Up Heavy + Dips
+## Fri Jun 26 (FRIDAY) — Upper Vertical — Pull-Up Heavy + Dips
 
-1. Weighted Pull-Up: 5×3 @ +40
+1. Weighted Pull-Up: 5×3 @ +35
 2. Weighted Dips: 4×5 @ +30
 3. Chest-Supported Row: 4×6-8 @ Heavy
 4. Landmine Press: 3×10 @ Mod-Hvy
 5. Incline DB Curl: 3×8-10 @ Mod-Hvy
 6. Tricep Pushdown: 3×8-10 @ Mod-Hvy
 
-## Sat Jul 04 (SATURDAY) — JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
+## Sat Jun 27 (SATURDAY) — JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
 
 1. Sprints: 4×20yd, 2×30yd @ 95%
 2. Approach Jumps: 5×2 @ max intent
-3. Depth Jump (mid/high box): 3×5 @ 30 in
+3. Depth Jump (mid/high box): 3×5 @ 24 in
 4. Hang Power Clean: 4×3 @ 75% (145 lb)
-5. Dunk Attempts (Wk 9+): 5-10 attempts @ BEGIN: 5 max
+5. Dunk Attempts (Wk 9+): 5-10 attempts @ —
 
 ## Daily Flexibility (15-20 min post-training)
 

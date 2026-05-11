@@ -1,14 +1,14 @@
-# Week 2026-Arc-W16
+# Week 2026-training-W17
 
 ## Week Header
 
 - Block: training/blocks/2026-07-block-03-peak-realize-test.md
 - Block Display: PEAK + REALIZE + TEST
-- Arc Week: 16 of 18
-- Block Week: 4 of 6
-- Date Range: Sun Aug 16 – Sat Aug 22, 2026
-- Week Type: intensify
-- Primary Focus: Final peak. Watch for fatigue accumulation.
+- Arc Week: 17 of 18
+- Block Week: 5 of 6
+- Date Range: Sun Aug 23 – Sat Aug 29, 2026
+- Week Type: deload
+- Primary Focus: Taper week — 50% volume, 90% intensity. Protect Sat test.
 
 ## Block Goals (Why This Week Exists)
 
@@ -18,72 +18,72 @@
 
 ## 7-Day Overview
 
-1. Sun Aug 16 (SUNDAY): Active Recovery + Posterior Maintenance (very light)
-2. Mon Aug 17 (MONDAY): Upper Horizontal — Bench Peak
-3. Tue Aug 18 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint PRs
-4. Wed Aug 19 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
-5. Thu Aug 20 (THURSDAY): Speed-Strength A — Olympic Taper + Speed Work
-6. Fri Aug 21 (FRIDAY): Upper Vertical — Pull-Up Peak + Dips
-7. Sat Aug 22 (SATURDAY): JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
+1. Sun Aug 23 (SUNDAY): Active Recovery + Posterior Maintenance (very light)
+2. Mon Aug 24 (MONDAY): Upper Horizontal — Bench Peak
+3. Tue Aug 25 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint PRs
+4. Wed Aug 26 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
+5. Thu Aug 27 (THURSDAY): Speed-Strength A — Olympic Taper + Speed Work
+6. Fri Aug 28 (FRIDAY): Upper Vertical — Pull-Up Peak + Dips
+7. Sat Aug 29 (SATURDAY): JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
-## Sun Aug 16 (SUNDAY) — Active Recovery + Posterior Maintenance (very light)
+## Sun Aug 23 (SUNDAY) — Active Recovery + Posterior Maintenance (very light)
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 215
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 35
+1. Stiff-Legged Deadlift (light): 3×5 @ 195
+2. Hand-Supported Bulgarian SS: 2×8/leg @ 30
 3. Glute-Ham Raise: 2×8 @ BW
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-## Mon Aug 17 (MONDAY) — Upper Horizontal — Bench Peak
+## Mon Aug 24 (MONDAY) — Upper Horizontal — Bench Peak
 
-1. Bench Press: wave to test @ 3×2 @ 220
-2. Barbell Row: 4×5 @ 215
-3. DB Incline Bench (neutral): 3×5 @ 75
+1. Bench Press: wave to test @ 3×1 @ 235 (90%)
+2. Barbell Row: 4×5 @ 195
+3. DB Incline Bench (neutral): 3×5 @ 65
 4. Chest-Supported Row: 3×6 @ Heavy
 5. Cable Fly: 2×10 @ Mod
 6. DB Lateral Raise: 2×10 @ 25 lb
 
-## Tue Aug 18 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint PRs
+## Tue Aug 25 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint PRs
 
-1. Hang Power Snatch: 4×2 @ 72% (140)
-2. DB Push Press (neutral): 4×3 @ 60
+1. Hang Power Snatch: 4×2 @ 68% (130)
+2. DB Push Press (neutral): 4×3 @ 55
 3. Continuous Broad Jumps: 3×3 @ Max dist
-4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
+4. Sprints (PR chase): 3×20yd, 1×40yd @ 90%
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Aug 19 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed Aug 26 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
 
-1. Weighted Pull-Up (volume): 3×8 @ +25
+1. Weighted Pull-Up (volume): 3×8 @ +20
 2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 35
+3. Weighted Side Split Hold: 3×90s @ 30
 4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
 5. Pancake Good Morning: 3×8 @ Mod
 6. Cossack Squat (loaded): 3×6/side @ +20 lb
 
-## Thu Aug 20 (THURSDAY) — Speed-Strength A — Olympic Taper + Speed Work
+## Thu Aug 27 (THURSDAY) — Speed-Strength A — Olympic Taper + Speed Work
 
-1. Power Clean: 4×2 @ 82% (160 lb)
-2. Speed Squat: 4×2 @ 75% (280 lb)
+1. Power Clean: 4×2 @ 80% (155 lb)
+2. Speed Squat: 4×2 @ 70% (260 lb)
 3. Jump Squat: 3×3 @ 30% (110 lb)
-4. RDL: 3×5 @ 265
+4. RDL: 3×5 @ 245
 5. Pendulum Squat: 2×8 @ Mod-Hvy
 
-## Fri Aug 21 (FRIDAY) — Upper Vertical — Pull-Up Peak + Dips
+## Fri Aug 28 (FRIDAY) — Upper Vertical — Pull-Up Peak + Dips
 
-1. Weighted Pull-Up: wave to test @ 4×3 @ +70
-2. Weighted Dips: 3×5 @ +40
+1. Weighted Pull-Up: wave to test @ 3×2 @ +75
+2. Weighted Dips: 3×5 @ +35
 3. Chest-Supported Row: 3×6 @ Heavy
 4. Landmine Press: 2×10 @ Mod-Hvy
 5. Incline DB Curl: 2×10 @ Mod
 6. Tricep Pushdown: 2×10 @ Mod
 
-## Sat Aug 22 (SATURDAY) — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
+## Sat Aug 29 (SATURDAY) — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
-1. Sprints: 3×20yd @ 100% PR
+1. Sprints: 3×20yd @ 90%
 2. Approach Jumps: 5-8×1 @ max intent
-3. Depth Jump: 2×3 / taper @ 30 in 2×3
+3. Depth Jump: 2×3 / taper @ 18 in 2×5
 4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (light): 3×2 @ 70% (135 lb)
+5. Hang Power Clean (light): 3×2 @ 65% (125 lb)
 
 ## Daily Flexibility (15-20 min post-training)
 
