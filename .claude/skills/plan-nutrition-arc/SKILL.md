@@ -13,7 +13,7 @@ Produces the **per-arc nutrition cascade** for an athlete:
 |---|---|---|
 | `athletes/<name>/<arc-slug>/nutrition/arc.md` | once per arc | this skill writes it (you review + edit) |
 | `athletes/<name>/<arc-slug>/nutrition/blocks/{N}-{block-name}.md` × 3 | once per arc | this skill writes them (you review + edit) |
-| `athletes/<name>/<arc-slug>/nutrition/weeks/2026-Nut-W{NN}.md` | weekly | NOT this skill — `plan-weekly-meals` writes these |
+| `athletes/<name>/<arc-slug>/nutrition/weeks/2026-nutrition-W{NN}.md` | weekly | NOT this skill — `plan-weekly-meals` writes these |
 | `athletes/<name>/<arc-slug>/nutrition/active/*.md` | weekly rollover | NOT this skill — copies refreshed by `plan-weekly-meals` |
 
 The output mirrors the worked example at [`athletes/andy/arc-2026-summer-dunk/nutrition/`](../../../athletes/andy/arc-2026-summer-dunk/nutrition/).

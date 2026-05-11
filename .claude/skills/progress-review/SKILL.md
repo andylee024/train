@@ -195,7 +195,7 @@ Week 04 review — DECISION: HOLD
 
 Recommended for Wk 05: repeat plan as written. No changes.
 
-Full review: athletes/andy/arc-2026-summer-dunk/reviews/weekly/2026-Arc-W04-review.md
+Full review: athletes/andy/arc-2026-summer-dunk/reviews/weekly/2026-training-W04-review.md
 ```
 
 ### Phase 6: Optional — propose plan changes

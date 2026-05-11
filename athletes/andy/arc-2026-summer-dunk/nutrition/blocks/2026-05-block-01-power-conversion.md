@@ -12,7 +12,7 @@ Establish the cut while reactive base is being built. Drop bw without compromisi
 ## Goals
 - Bw at end of block: ~188 lb (down from 192)
 - Kcal target: ~2400 kcal/day
-- Protein floor: ≥190g/day
+- Protein target: 190g/day (acceptable range 170-200g)
 - Adherence target: 80% on-plan
 - Calibration: validate the 2400 kcal hypothesis at Wk 2 (per arc.md Testing/Calibration)
 
@@ -58,4 +58,4 @@ The orchestrator will pick from these 5 meals in B1, given the cooking pattern:
 - `nutrition/arc.md` for cross-block strategy
 - `athletes/andy/menu.md` for full meal vocabulary (45 meals)
 - `training/blocks/2026-05-block-01-power-conversion.md` for the training side
-- Wk-by-week orchestrator output: `nutrition/weeks/2026-Nut-W{01..06}.md`
+- Wk-by-week orchestrator output: `nutrition/weeks/2026-nutrition-W{01..06}.md`

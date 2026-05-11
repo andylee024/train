@@ -30,7 +30,7 @@ Three principles. The numbers in **Block Sequence** are downstream of these.
 
 **1. Cut B1+B2, maintain B3.** A −300 kcal/day deficit through Blocks 1 and 2 drops bw while reactive gains land. Block 3 is peak — per VJ §9, cutting during peak compromises force production, so we eat at maintenance for 6 weeks and let the peak realize against a lighter, stronger body. Maintenance is recalibrated to **2700 kcal** based on Andy's felt experience (formula TDEE of 3000 overshoots actual maintenance — common for athletes with low NEAT outside training).
 
-**2. Protein floor protects strength.** **190g/day, non-negotiable.** ~1.0g per lb bodyweight — lower end of the muscle-preservation range during a cut (research range: 1.0–1.2g/lb per Helms et al.). Layer-1 supplements (Fairlife + Greek yogurt + whey) plus Sunday-prepped protein guarantee it without daily cooking effort. If everything else slips, the protein floor must hold. Only bump above 190g if a real signal demands it (squat/bench drop > 5% at 2-week check).
+**2. Protein floor protects strength.** **190g/day target. Acceptable range: 170-200g/day.** ~1.0g per lb bodyweight, with ±10% headroom. Lower end of the muscle-preservation research range (1.0-1.2g/lb per Helms et al.). The range gives flexibility — overshooting modestly is fine if kcal target holds; undershooting to 170g on a busy day is still protective. Don't engineer to overshoot 200g (no marginal muscle benefit; eats into carb/fat budget). Layer-1 supplements (Fairlife + Greek yogurt + whey) plus Sunday-prepped protein make hitting the range trivial.
 
 **3. Cooking ramp matches the failure mode.** Andy's documented failure mode is "falling off for 2-3 weeks when things get complicated." So the cooking pattern starts minimal in B1 (one Sunday batch + leftovers) and ramps positively across blocks. The Recipe of the Week lane (athlete-chosen, separate from the standing menu) builds cooking reps without overwhelming the daily default.
 
@@ -55,9 +55,9 @@ Three principles. The numbers in **Block Sequence** are downstream of these.
 | Wk 12 (end B2) | ~185 lb | 7-day morning avg |
 | Wk 18 (end B3) | 184–186 lb (held) | 7-day morning avg |
 
-### Macro split at 2400 kcal cut
+### Macro split at 2400 kcal cut + 190g protein
 
-190g protein (32%) + ~75g fat (28%) + ~240g carbs (40%) — athlete-friendly distribution that protects strength and fuels training.
+190g protein (32%) + ~75g fat (28%) + ~240g carbs (40%) — athlete-friendly distribution that protects strength and fuels training. Protein range tolerance: 170-200g/day (±10% of 190g target). Don't engineer to overshoot 200g — protein synthesis caps at ~50g/meal so excess protein doesn't add muscle, and that kcal budget is better spent on carbs to fuel training quality.
 
 ---
 
@@ -66,7 +66,7 @@ Three principles. The numbers in **Block Sequence** are downstream of these.
 The system is **passive in-week, active at supply touchpoints.** Two recurring touches; nothing else.
 
 ### Saturday morning — Costco order surface
-The `plan-weekly-meals` skill pulls the upcoming week's calendar (home/travel/social meal slots), reads the active block's cooking pattern + Recipe of the Week, computes the order delta, and writes the week file to `nutrition/weeks/2026-Nut-W{NN}.md`. Athlete approves, edits, or places.
+The `plan-weekly-meals` skill pulls the upcoming week's calendar (home/travel/social meal slots), reads the active block's cooking pattern + Recipe of the Week, computes the order delta, and writes the week file to `nutrition/weeks/2026-nutrition-W{NN}.md`. Athlete approves, edits, or places.
 
 ### Post-workout — bodyweight log
 Training days only. After the last reported set, agent asks **"bw?"** — captures the number and writes to Supabase `daily_metrics.bodyweight_lb` for today's date. No badgering if missed; log next time. Rest days = silent.

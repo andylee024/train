@@ -1,14 +1,14 @@
-# Week 2026-Arc-W03
+# Week 2026-training-W02
 
 ## Week Header
 
 - Block: training/blocks/2026-05-block-01-power-conversion.md
 - Block Display: POWER CONVERSION + UPPER BUILD
-- Arc Week: 3 of 18
-- Block Week: 3 of 6
-- Date Range: Sun May 17 – Sat May 23, 2026
+- Arc Week: 2 of 18
+- Block Week: 2 of 6
+- Date Range: Sun May 10 – Sat May 16, 2026
 - Week Type: build
-- Primary Focus: RPE creeps to 7-8. First feel of real load.
+- Primary Focus: Small intensity bump. Push bar speed on speed squat + jump squat.
 
 ## Block Goals (Why This Week Exists)
 
@@ -18,72 +18,72 @@
 
 ## 7-Day Overview
 
-1. Sun May 17 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior
-2. Mon May 18 (MONDAY): Upper Horizontal — Bench + Row
-3. Tue May 19 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed May 20 (WEDNESDAY): Recovery + Deep Flex (Optional) + Pull-Up Volume
-5. Thu May 21 (THURSDAY): Speed-Strength A — Olympic Power + Speed Squat
-6. Fri May 22 (FRIDAY): Upper Vertical — Pull-Up + Dips
-7. Sat May 23 (SATURDAY): JUMP LAB — Sprint + Approach + Depth + Loaded Power
+1. Sun May 10 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior
+2. Mon May 11 (MONDAY): Upper Horizontal — Bench + Row
+3. Tue May 12 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
+4. Wed May 13 (WEDNESDAY): Recovery + Deep Flex (Optional) + Pull-Up Volume
+5. Thu May 14 (THURSDAY): Speed-Strength A — Olympic Power + Speed Squat
+6. Fri May 15 (FRIDAY): Upper Vertical — Pull-Up + Dips
+7. Sat May 16 (SATURDAY): JUMP LAB — Sprint + Approach + Depth + Loaded Power
 
-## Sun May 17 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior
+## Sun May 10 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior
 
-1. Back Squat (light maintenance): 1×5 + 2×5 @ 78% (290 lb)
-2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 205
+1. Back Squat (light maintenance): 1×5 + 2×5 @ 75% (280 lb)
+2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 195
 3. Hand-Supported Bulgarian SS: 3×8/leg @ 35
-4. Glute-Ham Raise: 3×8 @ BW+5
+4. Glute-Ham Raise: 3×8 @ BW
 5. Pigeon Stretch: 2×60s/side @ —
 
-## Mon May 18 (MONDAY) — Upper Horizontal — Bench + Row
+## Mon May 11 (MONDAY) — Upper Horizontal — Bench + Row
 
-1. Bench Press: 4×6 → 4×5 @ 77% (175 lb)
-2. Barbell Row: 4×6 @ 170
+1. Bench Press: 4×6 → 4×5 @ 74% (170 lb)
+2. Barbell Row: 4×6 @ 165
 3. DB Incline Bench (neutral): 3×6-8 @ 55
-4. T-Bar Chest-Supported Row: 3×6-8 @ Mod-Hvy
+4. T-Bar Chest-Supported Row: 3×6-8 @ Mod
 5. Cable Fly: 3×8-12 @ Mod
-6. DB Lateral Raise: 3×10 @ 17.5
+6. DB Lateral Raise: 3×10 @ 15
 
-## Tue May 19 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
+## Tue May 12 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
 
-1. Hang Power Snatch: 5×3 @ 60% (115)
+1. Hang Power Snatch: 5×3 @ 58% (110)
 2. DB Push Press (neutral): 4×4 @ 45
 3. Single-Leg Pogos: 3×8/leg @ BW
 4. Sprints (finisher): 3×20yd, 1×40yd @ 90%
 5. Copenhagen Lift: 3×15s/side @ BW
 
-## Wed May 20 (WEDNESDAY) — Recovery + Deep Flex (Optional) + Pull-Up Volume
+## Wed May 13 (WEDNESDAY) — Recovery + Deep Flex (Optional) + Pull-Up Volume
 
-1. Weighted Pull-Up (volume): 3×8 @ +10
+1. Weighted Pull-Up (volume): 3×8 @ +5
 2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×60s @ 15
+3. Weighted Side Split Hold: 3×60s @ 10
 4. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
 5. Pigeon Stretch: 2×60s/side @ —
 6. Cossack Squat: 3×8/side @ BW
 
-## Thu May 21 (THURSDAY) — Speed-Strength A — Olympic Power + Speed Squat
+## Thu May 14 (THURSDAY) — Speed-Strength A — Olympic Power + Speed Squat
 
-1. Power Clean: 5×3 @ 75% (145 lb)
-2. Speed Squat: 5×2 @ 60% (220 lb)
-3. Jump Squat: 4×4 @ 28% (105 lb)
-4. RDL: 4×5,5,4,3 @ 205
-5. Pendulum Squat: 3×8-10 @ Mod-Hvy
+1. Power Clean: 5×3 @ 72% (140 lb)
+2. Speed Squat: 5×2 @ 58% (215 lb)
+3. Jump Squat: 4×4 @ 25% (90 lb)
+4. RDL: 4×5,5,4,3 @ 195
+5. Pendulum Squat: 3×8-10 @ Mod
 
-## Fri May 22 (FRIDAY) — Upper Vertical — Pull-Up + Dips
+## Fri May 15 (FRIDAY) — Upper Vertical — Pull-Up + Dips
 
-1. Weighted Pull-Up: 4×5 @ +20
+1. Weighted Pull-Up: 4×5 @ +15
 2. Weighted Dips: 3×8 @ +15
-3. Chest-Supported Row: 4×6-8 @ Mod-Hvy
+3. Chest-Supported Row: 4×6-8 @ Mod
 4. Landmine Press: 3×10 @ Mod
 5. Incline DB Curl: 3×8-10 @ Mod
 6. Tricep Pushdown: 3×8-10 @ Mod
 
-## Sat May 23 (SATURDAY) — JUMP LAB — Sprint + Approach + Depth + Loaded Power
+## Sat May 16 (SATURDAY) — JUMP LAB — Sprint + Approach + Depth + Loaded Power
 
 1. Sprints: 3×20yd, 2×30yd @ 95%
 2. Approach Jumps: 5×2 @ max
 3. Low-Box Depth Jump: 2×5 @ 18 in
 4. Barbell Jump: 4×4 @ 30% (110 lb)
-5. Hang Power Clean: 4×3 @ 70% (135 lb)
+5. Hang Power Clean: 4×3 @ 68% (135 lb)
 
 ## Daily Flexibility (15-20 min post-training)
 

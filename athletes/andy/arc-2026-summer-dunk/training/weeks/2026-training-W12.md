@@ -1,4 +1,4 @@
-# Week 2026-Arc-W12
+# Week 2026-training-W12
 
 ## Week Header
 

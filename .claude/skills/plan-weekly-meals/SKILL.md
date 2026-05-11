@@ -1,6 +1,6 @@
 ---
 name: plan-weekly-meals
-description: "Generate the weekly meal plan + grocery list for an athlete's active arc. Writes a markdown file at `<arc>/nutrition/weeks/2026-Nut-W{NN}.md` and refreshes `<arc>/nutrition/active/current-week.md`. Section headers aligned to the training week file format. Trigger when: it's Saturday morning, athlete asks 'what should I eat this week?', athlete asks for the weekly meal plan or grocery list, or athlete asks how they're doing on the cut."
+description: "Generate the weekly meal plan + grocery list for an athlete's active arc. Writes a markdown file at `<arc>/nutrition/weeks/2026-nutrition-W{NN}.md` and refreshes `<arc>/nutrition/active/current-week.md`. Section headers aligned to the training week file format. Trigger when: it's Saturday morning, athlete asks 'what should I eat this week?', athlete asks for the weekly meal plan or grocery list, or athlete asks how they're doing on the cut."
 ---
 
 # plan-weekly-meals — Skill Guide
@@ -23,7 +23,7 @@ description: "Generate the weekly meal plan + grocery list for an athlete's acti
 | Active arc bundle | default `athletes/andy/arc-2026-summer-dunk/` |
 | Per-arc nutrition plan | `<arc>/nutrition/arc.md` |
 | Active block file | `<arc>/nutrition/blocks/{matching block}.md` |
-| Training week (upcoming) | `<arc>/training/weeks/2026-Arc-W{NN}.md` |
+| Training week (upcoming) | `<arc>/training/weeks/2026-training-W{NN}.md` |
 | Menu library | `athletes/andy/menu.md` |
 | Cross-arc OS doc | `athletes/andy/nutrition.md` |
 | Bw 7-day rolling avg | Supabase `daily_metrics` (project `vtruwlvekfnmfgaundhp`) |
@@ -31,11 +31,11 @@ description: "Generate the weekly meal plan + grocery list for an athlete's acti
 
 ## Output (the artifact — aligned to training week file shape)
 
-Write to: `<arc>/nutrition/weeks/2026-Nut-W{NN}.md`
+Write to: `<arc>/nutrition/weeks/2026-nutrition-W{NN}.md`
 Then copy to: `<arc>/nutrition/active/current-week.md`
 
 ```markdown
-# Week 2026-Nut-W{NN}
+# Week 2026-nutrition-W{NN}
 
 ## Week Header
 - Block: `nutrition/blocks/{matching block file}`
@@ -111,7 +111,7 @@ Then copy to: `<arc>/nutrition/active/current-week.md`
 
 - `<arc>/nutrition/arc.md` → cross-block strategy
 - `<arc>/nutrition/blocks/{matching block}.md` → cooking pattern, standing recipes, calibration moments for THIS block
-- `<arc>/training/weeks/2026-Arc-W{NN}.md` → identify training day shapes (heavy power = Thu, jump = Sat, rest = Wed, etc.)
+- `<arc>/training/weeks/2026-training-W{NN}.md` → identify training day shapes (heavy power = Thu, jump = Sat, rest = Wed, etc.)
 - `athletes/andy/menu.md` → all meals with attributes
 - `athletes/andy/nutrition.md` → Layer 1 baseline + always-stocked items
 - Calendar via Google Calendar MCP for upcoming Sun–Sat
@@ -176,7 +176,7 @@ Leave Wins / Misses / Adjustments blank for athlete to fill in Sunday.
 
 ### Step 11 — Write the file + refresh active
 
-Write the artifact to `<arc>/nutrition/weeks/2026-Nut-W{NN}.md`. Then copy the same content to `<arc>/nutrition/active/current-week.md` (the agent's hot path).
+Write the artifact to `<arc>/nutrition/weeks/2026-nutrition-W{NN}.md`. Then copy the same content to `<arc>/nutrition/active/current-week.md` (the agent's hot path).
 
 If a new block has started this week (e.g., transitioning W6→W7 means B1→B2), also copy the new block file to `<arc>/nutrition/active/current-block.md`.
 
@@ -204,7 +204,7 @@ When a second athlete onboards, parameterize by athlete dir + arc dir.
 
 ## Side effects
 
-- Writes `<arc>/nutrition/weeks/2026-Nut-W{NN}.md`
+- Writes `<arc>/nutrition/weeks/2026-nutrition-W{NN}.md`
 - Writes (overwrites) `<arc>/nutrition/active/current-week.md`
 - Writes (overwrites) `<arc>/nutrition/active/current-block.md` if block boundary crossed
 - No DB writes in v0 (in v1+: write `weekly_orders` Supabase row for history)
