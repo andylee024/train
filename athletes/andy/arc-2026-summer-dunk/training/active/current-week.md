@@ -10,6 +10,7 @@
 - Week Type: build
 - Primary Focus: First week of DNT 2-wk OLY specialization. Coach's lifts replace arc OLY at heavier intensity; body-part split + jump day preserved.
 - Integration methodology: `styles/dnt-integration-methodology.md`
+- **Daily warm-up:** "The Daily 8" — `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
 
 ## Block Goals (Why This Week Exists)
 

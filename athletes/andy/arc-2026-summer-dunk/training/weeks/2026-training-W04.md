@@ -11,6 +11,7 @@
 - Primary Focus: Second/final week of DNT 2-wk OLY block. Front squat ramps to prescribed 75-80%. Arc accessory loads progress as planned.
 - Source program: `styles/dnt-program-source.md`
 - Integration methodology: `styles/dnt-integration-methodology.md`
+- **Daily warm-up:** "The Daily 8" — `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
 
 ## Block Goals (Why This Week Exists)
 
