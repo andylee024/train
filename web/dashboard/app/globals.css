@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Dark-by-default athletic OS palette. */
+:root {
+  /* Surface */
+  --bg: #0a0c10;
+  --bg-elev-1: #11141a;
+  --bg-elev-2: #181c24;
+  --bg-elev-3: #232834;
+
+  /* Ink */
+  --ink: #ecedef;
+  --ink-dim: #9aa0aa;
+  --ink-muted: #5b616c;
+
+  /* Accent (grease-pencil orange — matches landing page) */
+  --accent: #ff7a3d;
+  --accent-ink: #0a0c10;
+  --accent-soft: rgba(255, 122, 61, 0.12);
+  --accent-line: rgba(255, 122, 61, 0.3);
+
+  /* Status */
+  --good: #4ade80;
+  --warn: #facc15;
+  --bad: #ef4444;
+  --info: #60a5fa;
+
+  /* Lines */
+  --line: #232834;
+  --line-soft: #1a1e26;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-1: var(--bg-elev-1);
+  --color-bg-2: var(--bg-elev-2);
+  --color-bg-3: var(--bg-elev-3);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-good: var(--good);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+  --color-info: var(--info);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--bg-elev-3);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--ink-muted); }
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* Mono helper */
+.tabular { font-variant-numeric: tabular-nums; }
+.font-mono { font-family: var(--font-geist-mono), ui-monospace, monospace; }
+
+/* Subtle dot grid for the sidebar */
+.dot-bg {
+  background-image: radial-gradient(circle, var(--bg-elev-2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
