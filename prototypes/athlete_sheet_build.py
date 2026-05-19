@@ -650,9 +650,13 @@ def build_progress(ws):
 # ══════════════════════════════════════════════════════════════════════════
 #                                  MAIN
 # ══════════════════════════════════════════════════════════════════════════
-def main():
+def build(output_path: Path) -> Path:
+    """Render the athlete sheet to output_path. Returns the path written.
+
+    For v0, data is still hardcoded to Andy's Block 1 Wk 2 (May 2026).
+    The (bundle_dir → real per-athlete data) refactor is M7.
+    """
     wb = Workbook()
-    # Rename + create tabs in order
     home = wb.active
     home.title = "Home"
     this_week = wb.create_sheet("This Week")
@@ -666,12 +670,15 @@ def main():
     build_log(log)
     build_progress(progress)
 
-    # Make Home the landing tab
     wb.active = 0
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(output_path)
+    return output_path
 
-    wb.save(OUT)
-    print(f"✓ wrote {OUT}")
-    print(f"  tabs: {wb.sheetnames}")
+
+def main():
+    out = build(OUT)
+    print(f"✓ wrote {out}")
 
 
 if __name__ == "__main__":

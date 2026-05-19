@@ -1,0 +1,18 @@
+[project]
+name = "train"
+version = "0.1.0"
+description = "Train — text-based AI coach for self-coached athletes"
+requires-python = ">=3.11"
+dependencies = [
+    "modal>=1.4.0",
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "claude-agent-sdk>=0.1.0",
+    "openpyxl>=3.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

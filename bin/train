@@ -1,0 +1,413 @@
+#!/usr/bin/env python3
+"""Train admin CLI — pull/push/approve/list against the live Modal app.
+
+Subcommands:
+  train list                           pending + active users
+  train pull <phone>                   download user dir to athletes/_pending/{phone}/
+  train push-bundle <phone> <dir>      upload <dir> as active/{phone}/bundle/
+  train approve <phone>                POST /admin/approve (welcome SMS fires)
+  train notes <phone>                  open intake.md in $EDITOR after a pull
+
+Env required (loaded from ./.env if present):
+  TRAIN_ADMIN_SECRET  — for /admin/approve auth
+  TRAIN_WEB_URL       — default: https://andylee024--train-web.modal.run
+
+Volume name + container path are fixed (train-user-state, /workspace/user).
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+import subprocess
+import sys
+import urllib.error
+import urllib.request
+import json
+from pathlib import Path
+
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+VOLUME = "train-user-state"
+DEFAULT_WEB_URL = "https://andylee024--train-web.modal.run"
+LOCAL_REVIEW_DIR = REPO_ROOT / "athletes" / "_pending"
+
+
+def _load_dotenv() -> None:
+    """Tiny .env loader — no python-dotenv dep for the CLI."""
+    env_path = REPO_ROOT / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        os.environ.setdefault(key, value)
+
+
+def _normalize_phone(phone: str) -> str:
+    """Match app.api.normalize_phone — strip non-digits."""
+    digits = "".join(ch for ch in phone if ch.isdigit())
+    return digits or "anon"
+
+
+def _run_modal(*args: str, capture: bool = False) -> subprocess.CompletedProcess:
+    cmd = ["modal", *args]
+    return subprocess.run(
+        cmd,
+        check=False,
+        capture_output=capture,
+        text=True,
+    )
+
+
+def _modal_ls(path: str) -> list[str]:
+    """List entries under `path` on the volume. Returns empty on missing."""
+    result = _run_modal("volume", "ls", VOLUME, path, capture=True)
+    if result.returncode != 0:
+        return []
+    out: list[str] = []
+    for line in (result.stdout or "").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        out.append(line)
+    return out
+
+
+# ----- Commands ---------------------------------------------------------------
+
+
+def cmd_list(_args: argparse.Namespace) -> int:
+    pending = _modal_ls("/pending")
+    active = _modal_ls("/active")
+    print(f"PENDING ({len(pending)}):")
+    for p in pending:
+        # strip the leading "pending/" prefix Modal returns
+        leaf = p.split("/", 1)[-1] if p.startswith("pending/") else p
+        print(f"  +{leaf}")
+    print()
+    print(f"ACTIVE  ({len(active)}):")
+    for p in active:
+        leaf = p.split("/", 1)[-1] if p.startswith("active/") else p
+        print(f"  +{leaf}")
+    return 0
+
+
+def cmd_pull(args: argparse.Namespace) -> int:
+    user_id = _normalize_phone(args.phone)
+    if user_id == "anon":
+        print("error: phone must contain digits", file=sys.stderr)
+        return 2
+
+    LOCAL_REVIEW_DIR.mkdir(parents=True, exist_ok=True)
+    dest = LOCAL_REVIEW_DIR / user_id
+    if dest.exists():
+        print(f"removing existing {dest}/")
+        subprocess.run(["rm", "-rf", str(dest)], check=True)
+
+    # `modal volume get` requires LOCAL_DESTINATION to be an existing
+    # parent dir (with trailing slash); it puts the remote dir's leaf
+    # name inside that parent. Pull into the parent, then check the
+    # expected child.
+    for sub in ("pending", "active"):
+        result = _run_modal(
+            "volume", "get", VOLUME, f"/{sub}/{user_id}", f"{LOCAL_REVIEW_DIR}/",
+            capture=True,
+        )
+        if result.returncode == 0 and dest.exists():
+            print(f"✓ pulled {sub}/{user_id} → {dest.relative_to(REPO_ROOT)}/")
+            intake = dest / "intake.md"
+            if intake.exists():
+                print(f"\n--- {intake.relative_to(REPO_ROOT)} ---")
+                print(intake.read_text())
+            else:
+                print("(no intake.md yet — conversation incomplete)")
+            return 0
+    print(f"error: no pending/ or active/ dir for {user_id}", file=sys.stderr)
+    return 1
+
+
+def cmd_push_bundle(args: argparse.Namespace) -> int:
+    user_id = _normalize_phone(args.phone)
+    if user_id == "anon":
+        print("error: phone must contain digits", file=sys.stderr)
+        return 2
+    local_dir = Path(args.dir).resolve()
+    if not local_dir.is_dir():
+        print(f"error: {local_dir} is not a directory", file=sys.stderr)
+        return 2
+
+    # Push to wherever the user currently lives so a later approve does an
+    # atomic pending→active rename without splitting bundle from session.
+    pending_exists = _modal_ls(f"/pending/{user_id}") != []
+    active_exists = _modal_ls(f"/active/{user_id}") != []
+    if active_exists:
+        sub = "active"
+    elif pending_exists:
+        sub = "pending"
+    else:
+        print(
+            f"error: no pending/ or active/ dir for {user_id}. Have they "
+            f"completed intake (or has /approve run)?",
+            file=sys.stderr,
+        )
+        return 1
+
+    remote_path = f"/{sub}/{user_id}/bundle"
+    print(f"uploading {local_dir} → volume:{remote_path} ...")
+    _run_modal("volume", "rm", "-r", VOLUME, remote_path, capture=True)
+    result = _run_modal("volume", "put", VOLUME, str(local_dir), remote_path)
+    if result.returncode != 0:
+        return result.returncode
+    print(f"✓ bundle uploaded for +{user_id} (in {sub}/)")
+    if sub == "pending":
+        print(f"  next: bin/train approve +{user_id}")
+    return 0
+
+
+def cmd_approve(args: argparse.Namespace) -> int:
+    secret = os.environ.get("TRAIN_ADMIN_SECRET", "")
+    if not secret:
+        print("error: TRAIN_ADMIN_SECRET not in environment (or .env)", file=sys.stderr)
+        return 2
+    web_url = os.environ.get("TRAIN_WEB_URL", DEFAULT_WEB_URL).rstrip("/")
+    phone = args.phone if args.phone.startswith("+") else f"+{_normalize_phone(args.phone)}"
+
+    # Shell out to curl — sidesteps python.org's missing CA bundle on macOS.
+    body = json.dumps({"phone_e164": phone})
+    result = subprocess.run(
+        [
+            "curl", "-sS", "-X", "POST", f"{web_url}/admin/approve",
+            "-H", f"X-Train-Admin-Secret: {secret}",
+            "-H", "Content-Type: application/json",
+            "-d", body,
+            "-w", "\nHTTP %{http_code}\n",
+            "--max-time", "120",
+        ],
+        capture_output=True, text=True,
+    )
+    print(result.stdout)
+    if result.stderr:
+        print(result.stderr, file=sys.stderr)
+    # Status is last line "HTTP <code>"
+    last = (result.stdout or "").strip().splitlines()[-1]
+    return 0 if last.startswith("HTTP 200") else 1
+
+
+TEMPLATE_BUNDLE = REPO_ROOT / "athletes" / "andy" / "arc-2026-summer-dunk"
+
+
+def cmd_init(args: argparse.Namespace) -> int:
+    """Scaffold a new athlete bundle from the template + open key files."""
+    user_id = _normalize_phone(args.phone)
+    if user_id == "anon":
+        print("error: phone must contain digits", file=sys.stderr)
+        return 2
+    if not TEMPLATE_BUNDLE.is_dir():
+        print(f"error: template missing at {TEMPLATE_BUNDLE}", file=sys.stderr)
+        return 1
+
+    LOCAL_REVIEW_DIR.mkdir(parents=True, exist_ok=True)
+    dest = LOCAL_REVIEW_DIR / user_id / "bundle"
+    if dest.exists():
+        print(f"bundle already at {dest.relative_to(REPO_ROOT)} — not overwriting")
+    else:
+        # Cheap recursive copy — shutil.copytree is the clean call.
+        import shutil
+
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copytree(TEMPLATE_BUNDLE, dest, symlinks=False)
+        # Strip Andy-specific build artifacts; Andy will regenerate.
+        for relpath in ["outputs"]:
+            stale = dest / relpath
+            if stale.exists():
+                shutil.rmtree(stale)
+        print(f"✓ scaffolded {dest.relative_to(REPO_ROOT)}/  (template: {TEMPLATE_BUNDLE.name})")
+
+    # Print what to customize
+    print()
+    print("Next steps:")
+    print(f"  1. Read the intake:  athletes/_pending/{user_id}/intake.md")
+    print(f"  2. Edit the bundle:  {dest.relative_to(REPO_ROOT)}/")
+    print(f"       profile.md     — athlete identity / stats / injuries")
+    print(f"       arc.md         — purpose, goals, block sequence")
+    print(f"       training/      — block + week markdown")
+    print(f"  3. bin/train push-bundle +{user_id} {dest.relative_to(REPO_ROOT)}")
+    print(f"  4. bin/train approve +{user_id}")
+
+    # Open the highest-leverage files in $EDITOR if interactive
+    editor = os.environ.get("EDITOR", "")
+    if editor and sys.stdin.isatty():
+        files = [dest / "profile.md", dest / "arc.md"]
+        existing = [str(f) for f in files if f.exists()]
+        if existing:
+            print(f"\nopening {len(existing)} files in {editor}...")
+            subprocess.run([editor, *existing])
+    return 0
+
+
+def cmd_build_sheet(args: argparse.Namespace) -> int:
+    """Generate the athlete-facing xlsx for hand-delivery to Drive."""
+    user_id = _normalize_phone(args.phone)
+    if user_id == "anon":
+        print("error: phone must contain digits", file=sys.stderr)
+        return 2
+
+    out_dir = LOCAL_REVIEW_DIR / user_id
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / "athlete-sheet.xlsx"
+
+    # Lazy import — openpyxl isn't needed for other subcommands
+    sys.path.insert(0, str(REPO_ROOT / "prototypes"))
+    try:
+        from athlete_sheet_build import build  # type: ignore
+    except ImportError as e:
+        print(f"error: {e}", file=sys.stderr)
+        print("hint: pip install openpyxl", file=sys.stderr)
+        return 1
+
+    written = build(out_path)
+    print(f"✓ wrote {written.relative_to(REPO_ROOT)}")
+    print()
+    print("⚠ v0 NOTE: sheet content is still hardcoded to Andy's block. Customize")
+    print("  by opening the xlsx and editing the data cells. Per-athlete generation")
+    print("  from the bundle is M7.")
+    print()
+    print("Hand-delivery:")
+    print(f"  1. Upload {written.relative_to(REPO_ROOT)} to a Google Drive folder")
+    print(f"  2. Get the shareable link")
+    print(f"  3. Text the athlete the link from the Train number")
+    return 0
+
+
+def cmd_notes(args: argparse.Namespace) -> int:
+    user_id = _normalize_phone(args.phone)
+    intake = LOCAL_REVIEW_DIR / user_id / "intake.md"
+    if not intake.exists():
+        print(f"no local copy at {intake.relative_to(REPO_ROOT)}", file=sys.stderr)
+        print(f"  run: bin/train pull +{user_id}", file=sys.stderr)
+        return 1
+    editor = os.environ.get("EDITOR", "vi")
+    return subprocess.run([editor, str(intake)]).returncode
+
+
+def _upsert_env_key(env_path: Path, key: str, value: str) -> None:
+    """Set KEY=VALUE in .env, replacing the existing line or appending."""
+    import re
+
+    content = env_path.read_text() if env_path.exists() else ""
+    pat = rf"^{re.escape(key)}=.*$"
+    if re.search(pat, content, flags=re.MULTILINE):
+        content = re.sub(pat, f"{key}={value}", content, count=1, flags=re.MULTILINE)
+    else:
+        if content and not content.endswith("\n"):
+            content += "\n"
+        content += f"{key}={value}\n"
+    env_path.write_text(content)
+
+
+def cmd_init_env(_args: argparse.Namespace) -> int:
+    """Bootstrap .env from .env.example, ferrying any /tmp admin secret."""
+    env_path = REPO_ROOT / ".env"
+    example_path = REPO_ROOT / ".env.example"
+    if not example_path.exists():
+        print("error: .env.example missing", file=sys.stderr)
+        return 1
+    if env_path.exists():
+        print(f".env already exists at {env_path}. Leaving it alone.")
+    else:
+        env_path.write_text(example_path.read_text())
+        print(f"✓ created .env from .env.example")
+
+    # If an admin secret was generated during onboarding, pull it in.
+    secret_file = Path("/tmp/train_admin_secret.txt")
+    if secret_file.exists():
+        for line in secret_file.read_text().splitlines():
+            if line.startswith("TRAIN_ADMIN_SECRET=") and "=" in line:
+                secret = line.split("=", 1)[1].strip()
+                if secret:
+                    _upsert_env_key(env_path, "TRAIN_ADMIN_SECRET", secret)
+                    print(f"✓ wrote TRAIN_ADMIN_SECRET from {secret_file}")
+                break
+
+    # Pull lobs-ai .env values for the Linq fields if available (Andy's dev setup).
+    lobs_env = Path.home() / "Projects" / "lobs-ai" / ".env"
+    if lobs_env.exists():
+        lobs_values: dict[str, str] = {}
+        for line in lobs_env.read_text().splitlines():
+            if "=" in line and not line.strip().startswith("#"):
+                k, _, v = line.partition("=")
+                lobs_values[k.strip()] = v.strip().strip('"').strip("'")
+        wanted = ["LINQ_API_KEY", "LINQ_FROM_NUMBER", "ANTHROPIC_API_KEY"]
+        ferried = []
+        for key in wanted:
+            val = lobs_values.get(key, "")
+            if not val:
+                continue
+            # Skip if .env already has a real value (not blank, not "+1" stub)
+            import re
+
+            content = env_path.read_text() if env_path.exists() else ""
+            m = re.search(rf"^{re.escape(key)}=(.*)$", content, flags=re.MULTILINE)
+            if m and m.group(1).strip() and m.group(1).strip() != "+1":
+                continue
+            _upsert_env_key(env_path, key, val)
+            ferried.append(key)
+        if ferried:
+            print(f"✓ ferried {', '.join(ferried)} from {lobs_env}")
+
+    print()
+    print("Inspect .env and fill TRAIN_ANDY_PHONE (your E.164 number) if blank.")
+    return 0
+
+
+# ----- Entry -----------------------------------------------------------------
+
+
+def main() -> int:
+    _load_dotenv()
+
+    parser = argparse.ArgumentParser(prog="train", description=__doc__.splitlines()[0])
+    sub = parser.add_subparsers(dest="cmd", required=True)
+
+    sub.add_parser("list", help="list pending + active users").set_defaults(fn=cmd_list)
+
+    p_pull = sub.add_parser("pull", help="download a user's dir + print intake.md")
+    p_pull.add_argument("phone", help="phone (E.164 or digits)")
+    p_pull.set_defaults(fn=cmd_pull)
+
+    p_push = sub.add_parser("push-bundle", help="upload a bundle to active/{phone}/bundle/")
+    p_push.add_argument("phone")
+    p_push.add_argument("dir", help="local bundle directory")
+    p_push.set_defaults(fn=cmd_push_bundle)
+
+    p_app = sub.add_parser("approve", help="trigger /admin/approve (welcome SMS fires)")
+    p_app.add_argument("phone")
+    p_app.set_defaults(fn=cmd_approve)
+
+    p_init = sub.add_parser("init", help="scaffold a bundle from the template")
+    p_init.add_argument("phone")
+    p_init.set_defaults(fn=cmd_init)
+
+    p_sheet = sub.add_parser("build-sheet", help="generate athlete xlsx for Drive hand-delivery")
+    p_sheet.add_argument("phone")
+    p_sheet.set_defaults(fn=cmd_build_sheet)
+
+    p_notes = sub.add_parser("notes", help="open the pulled intake.md in $EDITOR")
+    p_notes.add_argument("phone")
+    p_notes.set_defaults(fn=cmd_notes)
+
+    sub.add_parser(
+        "init-env", help="bootstrap .env from .env.example + /tmp admin secret"
+    ).set_defaults(fn=cmd_init_env)
+
+    args = parser.parse_args()
+    return args.fn(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

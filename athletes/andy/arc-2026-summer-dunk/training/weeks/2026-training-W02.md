@@ -8,23 +8,25 @@
 - Block Week: 2 of 6
 - Date Range: Sun May 10 – Sat May 16, 2026
 - Week Type: build
-- Primary Focus: Small intensity bump. Push bar speed on speed squat + jump squat.
+- Primary Focus: Small intensity bump. Push bar speed on speed squat + jump squat. **Wed restructured: Hip IR + Kick Day (replaces Recovery + Deep Flex).**
+- **Daily warm-up:** "The Daily 8" — see `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
+- **Mobility catalog:** `athletes/andy/logs/mobility-exercises.csv` (Flexibility Maestro framework — IR-relevant exercises tagged in Notes column)
 
 ## Block Goals (Why This Week Exists)
 
 1. **G1**: Standing CMJ +1 inch from baseline AND barbell jump 4×4 @ 33% squat (120 lb) clean (Serves: Arc G1)
 2. **G2**: Bench 3RM ≥ 245 lb (from 230) AND weighted pull-up +25 lb × 5 reps clean both sessions (Serves: Arc G2)
-3. **G3**: Side split distance reduced ≥ 3 cm from baseline (1 deep day/wk = conservative) (Serves: Arc G3)
+3. **G3**: Side split distance reduced ≥ 3 cm from baseline (1 deep day/wk = conservative) (Serves: Arc G3) — *note: this week tests whether Wed shifts to IR-target; G3 may rewrite next arc revision*
 
 ## 7-Day Overview
 
 1. Sun May 10 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior
 2. Mon May 11 (MONDAY): Upper Horizontal — Bench + Row
 3. Tue May 12 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed May 13 (WEDNESDAY): Recovery + Deep Flex (Optional) + Pull-Up Volume
-5. Thu May 14 (THURSDAY): Speed-Strength A — Olympic Power + Speed Squat
-6. Fri May 15 (FRIDAY): Upper Vertical — Pull-Up + Dips
-7. Sat May 16 (SATURDAY): JUMP LAB — Sprint + Approach + Depth + Loaded Power
+4. Wed May 13 (WEDNESDAY): **Hip IR + Kick Day** (Warm-up → Strength → PNF → Kicks → Stretch)
+5. Thu May 14 (THURSDAY): Speed-Strength A — Olympic Power + Speed Squat + IR Harvest cool-down
+6. Fri May 15 (FRIDAY): Upper Vertical — Pull-Up + Dips + Shoulder cool-down
+7. Sat May 16 (SATURDAY): JUMP LAB — Sprint + Approach + Depth + Loaded Power + Gentle cool-down
 
 ## Sun May 10 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior
 
@@ -51,14 +53,51 @@
 4. Sprints (finisher): 3×20yd, 1×40yd @ 90%
 5. Copenhagen Lift: 3×15s/side @ BW
 
-## Wed May 13 (WEDNESDAY) — Recovery + Deep Flex (Optional) + Pull-Up Volume
+### Cool-down (4 min) — Light IR prep (pre-Wed)
 
-1. Weighted Pull-Up (volume): 3×8 @ +5
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×60s @ 10
-4. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
-5. Pigeon Stretch: 2×60s/side @ —
-6. Cossack Squat: 3×8/side @ BW
+6. Internal Rotation in 90-Sit: 2×10/side (active, no PNF — saving load for Wed)
+7. 90/90 Forward Reach: 2×5/side
+
+## Wed May 13 (WEDNESDAY) — Hip IR + Kick Day
+
+**Framework (Flexibility Maestro):** Warm-up → 🦍 Strength → 🏋🏻 PNF → 🥷🏻 Skill (Kicks) → 🧘🏻 Stretch
+**Target position:** Seated 90/90 with deep forward reach over front leg (measure end-stretch depth — chest-to-floor inches)
+**Total:** ~50 min
+**Reference catalog:** `athletes/andy/logs/mobility-exercises.csv` (Sample Split — Hip IR + Kick Day)
+
+### Warm-up (8 min)
+
+1. Hip CARs (quadruped, slow max-end-range): 2×3/dir/leg
+2. 90-90 Switches: 2×8 transitions
+3. Lying Hip Circles: 2×5/dir/leg
+
+### 🦍 Strength (12 min) — strength through length
+
+4. Cossack Squat: 3×15/side @ BW
+5. Horse Stance (5-step, knees-in for IR bias): 3×20s hold @ BW
+
+### 🏋🏻 Isometrics + PNF (10 min) — active end-range
+
+6. Frog Pose PNF: 3 rounds × (10s contract, 5s relax, deepen)
+7. Internal Rotation in 90-Sit (PAIL/RAIL): 3 rounds/side × (10s ER-contract, 10s active IR pull deeper)
+
+### 🥷🏻 Skill — Kicks (15 min) — access range under speed
+
+8. Kneeling Windshield Wipers: 2×10/side
+9. Kneeling Round Kick: 2×15/side
+10. Chamber Tucks: 2×15/side
+11. Standing Chamber Pulses: 2×15/side
+12. Slow Mawashi-geri (roundhouse, full pivot, technique-only): 2×10/side
+13. Slow Ushiro-geri (back kick, technique-only): 2×8/side
+
+### 🧘🏻 Stretch (5 min) — light only (deep stretch lands Thu–Sat)
+
+14. Butterfly: 2×30s
+15. Frog (passive): 60s
+
+### Down-regulation (3 min)
+
+16. Box breathing (4-4-4-4), supine: 10 rounds
 
 ## Thu May 14 (THURSDAY) — Speed-Strength A — Olympic Power + Speed Squat
 
@@ -67,6 +106,12 @@
 3. Jump Squat: 4×4 @ 25% (90 lb)
 4. RDL: 4×5,5,4,3 @ 195
 5. Pendulum Squat: 3×8-10 @ Mod
+
+### Cool-down (8 min) — IR Harvest (Wed load → passive payoff)
+
+6. Internal Rotation in 90-Sit (passive hold): 3×30s/side
+7. Frog (passive): 2×30s
+8. Glute Stretches: 2×30s/side
 
 ## Fri May 15 (FRIDAY) — Upper Vertical — Pull-Up + Dips
 
@@ -77,6 +122,13 @@
 5. Incline DB Curl: 3×8-10 @ Mod
 6. Tricep Pushdown: 3×8-10 @ Mod
 
+### Cool-down (8 min) — Shoulder + light hip (hips on light day)
+
+7. Butterfly: 2×30s
+8. Couch Stretch: 2×30s/side
+9. Pec/shoulder pass-through (band): 2×30s
+10. Thread-the-needle (T-spine): 60s/side
+
 ## Sat May 16 (SATURDAY) — JUMP LAB — Sprint + Approach + Depth + Loaded Power
 
 1. Sprints: 3×20yd, 2×30yd @ 95%
@@ -85,11 +137,30 @@
 4. Barbell Jump: 4×4 @ 30% (110 lb)
 5. Hang Power Clean: 4×3 @ 68% (135 lb)
 
-## Daily Flexibility (15-20 min post-training)
+### Cool-down (8 min) — Gentle only (NO end-range IR load — post-plyo)
 
-1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. Wed deep work: weighted side-split holds, PNF contract-relax, pancake good morning.
-3. **Never load splits before Sat jump day** (loaded stretch saps adductor force 24-48h).
+6. Pigeon (passive): 60s/side
+7. Hamstring Stretch: 2×30s/side
+8. Couch Stretch: 60s/side
+
+## Cool-Down Strategy (Week-Level Summary)
+
+This week shifts from "side-split-focused mobility" to **Hip IR + Kick Day** structure. Wed is the load; Thu–Sat cool-downs harvest it with passive stretching across multiple days (connective tissue remodeling needs the multi-day passive window, not single-session load).
+
+| Day | Cool-down focus | Time |
+|---|---|---|
+| Sun | None (Daily 8 covers prep, pigeon stretch in main work) | — |
+| Mon | None | — |
+| Tue | Light IR prep (pre-Wed) | 4 min |
+| Wed | Session IS the cool-down — finishes with box breathing | — |
+| Thu | **IR harvest** (deep passive in 90-sit + frog) | 8 min |
+| Fri | Shoulder + light hip (hips rest on light day) | 8 min |
+| Sat | Gentle only — **NO end-range IR load** post-plyo | 8 min |
+
+**Hard constraints (unchanged):**
+- Never load splits before Sat jump day (loaded stretch saps adductor force 24-48h)
+- Wed kicks are SLOW TECHNIQUE only — not bag work, not sparring, not plyo-equivalent
+- No end-range IR load within 48h of jump day (Wed → Sat is 72h gap, safe)
 
 ## Logging Checklist
 
@@ -98,6 +169,8 @@
 3. Sat jump day: log sprint times, best jump height, dunk attempt count + makes.
 4. Daily bodyweight + Sun side-split measurement (cm hip-to-floor).
 5. Shoulder + wrist pain rating (1-10) after Mon and Fri sessions.
+6. **NEW — Wed 90/90 forward reach: log chest-to-floor inches both sides (target position depth).**
+7. **NEW — Daily 8 done? Y/N (binary).**
 
 ## End-of-Week Review (filled Sun)
 
@@ -105,3 +178,4 @@
 2. Misses: <what was not completed or not clean>
 3. Metric Changes: <actual vs target>
 4. Adjustment For Next Week: <load/volume/recovery changes>
+5. **Wed Hip IR + Kick Day — first-touch review:** Did the 50-min session land? Should the structure change for W03 onwards?
