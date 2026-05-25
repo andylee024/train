@@ -19,11 +19,11 @@
 ## 7-Day Overview
 
 1. Sun Aug 30 (SUNDAY): Active Recovery + Posterior Maintenance (very light)
-2. Mon Aug 31 (MONDAY): Upper Horizontal — Bench Peak
+2. Mon Aug 31 (MONDAY): **Upper Horizontal + Side Split Maintenance (final taper) — Bench 1RM TEST**
 3. Tue Sep 01 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint PRs
-4. Wed Sep 02 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
+4. Wed Sep 02 (WEDNESDAY): **🛌 REST DAY**
 5. Thu Sep 03 (THURSDAY): Speed-Strength A — Olympic Taper + Speed Work
-6. Fri Sep 04 (FRIDAY): Upper Vertical — Pull-Up Peak + Dips
+6. Fri Sep 04 (FRIDAY): **Upper Vertical + Side Split Maintenance (final taper) — Pull-Up TEST**
 7. Sat Sep 05 (SATURDAY): JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 ## Sun Aug 30 (SUNDAY) — Active Recovery + Posterior Maintenance (very light)
@@ -34,14 +34,21 @@
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-## Mon Aug 31 (MONDAY) — Upper Horizontal — Bench Peak
+## Mon Aug 31 (MONDAY) — Upper Horizontal + Side Split Maintenance (final taper) — Bench 1RM TEST
 
-1. Bench Press: wave to test @ TEST 1RM (260)
-2. Barbell Row: 4×5 @ 175
-3. DB Incline Bench (neutral): 3×5 @ 50
-4. Chest-Supported Row: 3×6 @ Mod
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 15
+**Bench 1RM Test today.** Flex minimal — just enough to keep pathways active. Bench is the priority.
+
+### Part A — Minimal flex (~8 min)
+
+1. **[FLEX]** Taylor's Pose PIR: 2×5 reps × (5s+5s)
+2. **[FLEX]** Supported Side Split: 1×5 × 3s hold
+
+### Part B — Upper Horizontal — TEST DAY (~30 min)
+
+3. **[ARC]** Bench Press: **TEST 1RM** (target 260)
+4. **[ARC]** Barbell Row: 3×5 @ 175
+5. **[ARC]** DB Incline Bench (neutral): 3×5 @ 50
+6. **[ARC]** DB Lateral Raise: 2×10 @ 15
 
 ## Tue Sep 01 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint PRs
 
@@ -51,14 +58,9 @@
 4. Sprints (PR chase): 3×20yd, 1×40yd @ 2×20yd
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Sep 02 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed Sep 02 (WEDNESDAY) — 🛌 REST DAY
 
-1. Weighted Pull-Up (volume): 3×8 @ +15
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 25
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ BW
+Full rest. Final arc week. Take side-split angle measurement on Sun Sep 06 (post-arc) to compare against W04 baseline of 128°.
 
 ## Thu Sep 03 (THURSDAY) — Speed-Strength A — Olympic Taper + Speed Work
 
@@ -68,14 +70,22 @@
 4. RDL: 3×5 @ 215
 5. Pendulum Squat: 2×8 @ Mod
 
-## Fri Sep 04 (FRIDAY) — Upper Vertical — Pull-Up Peak + Dips
+## Fri Sep 04 (FRIDAY) — Upper Vertical + Side Split Maintenance (final taper) — Pull-Up TEST
 
-1. Weighted Pull-Up: wave to test @ TEST +80×8
-2. Weighted Dips: 3×5 @ +25
-3. Chest-Supported Row: 3×6 @ Mod
-4. Landmine Press: 2×10 @ Light
-5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
+**Pull-Up Test today (target +80 × 8 reps — G2 KPI).** Flex minimal — Sat jump test tomorrow.
+
+### Part A — Minimal flex (~8 min)
+
+1. **[FLEX]** Taylor's Pose PIR: 2×5 reps × (5s+5s)
+2. **[FLEX]** Supported Side Split: 1×5 × 3s hold
+
+### Part B — Upper Vertical — TEST DAY (~30 min)
+
+3. **[ARC]** Weighted Pull-Up: **TEST +80 × 8** — G2 KPI
+4. **[ARC]** Weighted Dips: 3×5 @ +25
+5. **[ARC]** Chest-Supported Row: 3×6 @ Mod
+6. **[ARC]** Landmine Press: 2×10 @ Light
+7. **[ARC]** Incline DB Curl: 2×10 @ Mod
 
 ## Sat Sep 05 (SATURDAY) — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 

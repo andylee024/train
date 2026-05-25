@@ -19,11 +19,11 @@
 ## 7-Day Overview
 
 1. Sun Jun 14 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior Chain
-2. Mon Jun 15 (MONDAY): Upper Horizontal — Bench Density + Row
+2. Mon Jun 15 (MONDAY): **Upper Horizontal + Side Split Phase 0**
 3. Tue Jun 16 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed Jun 17 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
+4. Wed Jun 17 (WEDNESDAY): **🛌 REST DAY**
 5. Thu Jun 18 (THURSDAY): Speed-Strength A — Olympic Power + Loaded Velocity
-6. Fri Jun 19 (FRIDAY): Upper Vertical — Pull-Up Heavy + Dips
+6. Fri Jun 19 (FRIDAY): **Upper Vertical + Side Split Phase 0 (compressed)**
 7. Sat Jun 20 (SATURDAY): JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
 
 ## Sun Jun 14 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior Chain
@@ -34,14 +34,24 @@
 4. Glute-Ham Raise: 3×8 @ BW+10
 5. Pigeon Stretch: 2×60s/side @ —
 
-## Mon Jun 15 (MONDAY) — Upper Horizontal — Bench Density + Row
+## Mon Jun 15 (MONDAY) — Upper Horizontal + Side Split Phase 0 (Foundation Wk 4)
 
-1. Bench Press: Wk7-8: 5×5 / Wk9-11: 14-min density / Wk12: test @ 185 lb 5×5
-2. Barbell Row: 4×6 @ 185 lb
-3. DB Incline Bench (neutral): 3×6-8 @ 60 lb
-4. T-Bar Chest-Supported Row: 3×6-8 @ Heavy
-5. Cable Fly: 3×8-12 @ Mod-Hvy
-6. DB Lateral Raise: 3×10 @ 20 lb
+**Phase 0** — passive foundation flex, no loading. Block 2 starts this week.
+
+### Part A — Side Split Phase 0 (~25 min)
+
+1. **[FLEX]** Supported Frog Hold: 3×60s
+2. **[FLEX]** Taylor's Pose PIR: 3×6 reps × (5s+5s)
+3. **[FLEX]** Sciatic Nerve Floss: 2×10/side
+4. **[FLEX]** Bent-Knee Pancake: 3×6 × 3s hold
+5. **[FLEX]** Supported Side Split: 3×6 × 3s hold
+
+### Part B — Upper Horizontal compressed (~30 min)
+
+6. **[ARC]** Bench Press: 5×5 @ 185 lb
+7. **[ARC]** Barbell Row: 3×6 @ 185 lb
+8. **[ARC]** DB Incline Bench (neutral): 3×6-8 @ 60 lb
+9. **[ARC]** DB Lateral Raise: 2×10 @ 20 lb
 
 ## Tue Jun 16 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
 
@@ -51,14 +61,9 @@
 4. Sprints (finisher): 4×20yd, 1×40yd @ 90% effort
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Jun 17 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed Jun 17 (WEDNESDAY) — 🛌 REST DAY
 
-1. Weighted Pull-Up (volume): 3×8 @ +15 lb
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×60s @ 20 lb
-4. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×8/side @ +15 lb
+Full rest.
 
 ## Thu Jun 18 (THURSDAY) — Speed-Strength A — Olympic Power + Loaded Velocity
 
@@ -68,14 +73,23 @@
 4. RDL: 4×5,5,4,3 @ 235 lb
 5. Pendulum Squat: 3×8-10 @ Heavy
 
-## Fri Jun 19 (FRIDAY) — Upper Vertical — Pull-Up Heavy + Dips
+## Fri Jun 19 (FRIDAY) — Upper Vertical + Side Split Phase 0 (compressed)
 
-1. Weighted Pull-Up: 5×3 @ +30 lb
-2. Weighted Dips: 4×5 @ +25 lb
-3. Chest-Supported Row: 4×6-8 @ Heavy
-4. Landmine Press: 3×10 @ Mod-Hvy
-5. Incline DB Curl: 3×8-10 @ Mod-Hvy
-6. Tricep Pushdown: 3×8-10 @ Mod-Hvy
+### Part A — Side Split Phase 0 compressed (~20 min)
+
+1. **[FLEX]** Supported Frog Hold: 2×60s
+2. **[FLEX]** Taylor's Pose PIR: 3×5 reps × (5s+5s)
+3. **[FLEX]** Sciatic Nerve Floss: 2×10/side
+4. **[FLEX]** Bent-Knee Pancake: 2×6 × 3s hold
+5. **[FLEX]** Supported Side Split: 2×6 × 3s hold
+
+### Part B — Upper Vertical compressed (~30 min)
+
+6. **[ARC]** Weighted Pull-Up: 5×3 @ +30 lb
+7. **[ARC]** Weighted Dips: 4×5 @ +25 lb
+8. **[ARC]** Chest-Supported Row: 3×6-8 @ Heavy
+9. **[ARC]** Landmine Press: 3×10 @ Mod-Hvy
+10. **[ARC]** Incline DB Curl: 3×8-10 @ Mod-Hvy
 
 ## Sat Jun 20 (SATURDAY) — JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
 
