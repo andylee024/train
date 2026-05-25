@@ -19,11 +19,11 @@
 ## 7-Day Overview
 
 1. Sun Jun 07 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior
-2. Mon Jun 08 (MONDAY): Upper Horizontal — Bench + Row
+2. Mon Jun 08 (MONDAY): **Upper Horizontal + Side Split Phase 0 (deload)**
 3. Tue Jun 09 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed Jun 10 (WEDNESDAY): Recovery + Deep Flex (Optional) + Pull-Up Volume
+4. Wed Jun 10 (WEDNESDAY): **🛌 REST DAY**
 5. Thu Jun 11 (THURSDAY): Speed-Strength A — Olympic Power + Speed Squat
-6. Fri Jun 12 (FRIDAY): Upper Vertical — Pull-Up + Dips
+6. Fri Jun 12 (FRIDAY): **Upper Vertical + Side Split Phase 0 (compressed)**
 7. Sat Jun 13 (SATURDAY): JUMP LAB — Sprint + Approach + Depth + Loaded Power
 
 ## Sun Jun 07 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior
@@ -34,14 +34,24 @@
 4. Glute-Ham Raise: 3×8 @ BW
 5. Pigeon Stretch: 2×60s/side @ —
 
-## Mon Jun 08 (MONDAY) — Upper Horizontal — Bench + Row
+## Mon Jun 08 (MONDAY) — Upper Horizontal + Side Split Phase 0 (deload)
 
-1. Bench Press: 4×6 → 4×5 @ 70% (160 lb)
-2. Barbell Row: 4×6 @ 145
-3. DB Incline Bench (neutral): 3×6-8 @ 45
-4. T-Bar Chest-Supported Row: 3×6-8 @ Mod
-5. Cable Fly: 3×8-12 @ Light
-6. DB Lateral Raise: 3×10 @ 12.5
+**Phase 0 (Wk 3) — Arc deload week.** Phase 0 flex volume stays the same (it's already low). Upper Horizontal at deload loads.
+
+### Part A — Side Split Phase 0 (~25 min)
+
+1. **[FLEX]** Supported Frog Hold: 3×60s
+2. **[FLEX]** Taylor's Pose PIR: 3×6 reps × (5s+5s)
+3. **[FLEX]** Sciatic Nerve Floss: 2×10/side
+4. **[FLEX]** Bent-Knee Pancake: 3×6 × 3s hold
+5. **[FLEX]** Supported Side Split: 3×6 × 3s hold
+
+### Part B — Upper Horizontal compressed (~25 min, deload)
+
+6. **[ARC]** Bench Press: 4×6 → 4×5 @ 70% (160 lb)
+7. **[ARC]** Barbell Row: 3×6 @ 145
+8. **[ARC]** DB Incline Bench (neutral): 3×6-8 @ 45
+9. **[ARC]** DB Lateral Raise: 2×10 @ 12.5
 
 ## Tue Jun 09 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
 
@@ -51,14 +61,9 @@
 4. Sprints (finisher): 3×20yd, 1×40yd @ 2×20yd
 5. Copenhagen Lift: 3×15s/side @ BW
 
-## Wed Jun 10 (WEDNESDAY) — Recovery + Deep Flex (Optional) + Pull-Up Volume
+## Wed Jun 10 (WEDNESDAY) — 🛌 REST DAY
 
-1. Weighted Pull-Up (volume): 3×8 @ +5
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×60s @ 10
-4. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
-5. Pigeon Stretch: 2×60s/side @ —
-6. Cossack Squat: 3×8/side @ BW
+Full rest. Flex moved to Mon + Fri.
 
 ## Thu Jun 11 (THURSDAY) — Speed-Strength A — Olympic Power + Speed Squat
 
@@ -68,14 +73,23 @@
 4. RDL: 4×5,5,4,3 @ 175
 5. Pendulum Squat: 3×8-10 @ Mod
 
-## Fri Jun 12 (FRIDAY) — Upper Vertical — Pull-Up + Dips
+## Fri Jun 12 (FRIDAY) — Upper Vertical + Side Split Phase 0 (compressed, deload)
 
-1. Weighted Pull-Up: 4×5 @ +10
-2. Weighted Dips: 3×8 @ +10
-3. Chest-Supported Row: 4×6-8 @ Mod
-4. Landmine Press: 3×10 @ Light
-5. Incline DB Curl: 3×8-10 @ Light
-6. Tricep Pushdown: 3×8-10 @ Light
+### Part A — Side Split Phase 0 compressed (~20 min)
+
+1. **[FLEX]** Supported Frog Hold: 2×60s
+2. **[FLEX]** Taylor's Pose PIR: 3×5 reps × (5s+5s)
+3. **[FLEX]** Sciatic Nerve Floss: 2×10/side
+4. **[FLEX]** Bent-Knee Pancake: 2×6 × 3s hold
+5. **[FLEX]** Supported Side Split: 2×6 × 3s hold
+
+### Part B — Upper Vertical compressed (~25 min, deload)
+
+6. **[ARC]** Weighted Pull-Up: 4×5 @ +10
+7. **[ARC]** Weighted Dips: 3×8 @ +10
+8. **[ARC]** Chest-Supported Row: 3×6-8 @ Mod
+9. **[ARC]** Landmine Press: 3×10 @ Light
+10. **[ARC]** Incline DB Curl: 3×8-10 @ Light
 
 ## Sat Jun 13 (SATURDAY) — JUMP LAB — Sprint + Approach + Depth + Loaded Power
 

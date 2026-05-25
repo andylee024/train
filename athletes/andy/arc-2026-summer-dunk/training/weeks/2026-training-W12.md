@@ -19,11 +19,11 @@
 ## 7-Day Overview
 
 1. Sun Jul 19 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior Chain
-2. Mon Jul 20 (MONDAY): Upper Horizontal — Bench Density + Row
+2. Mon Jul 20 (MONDAY): **Upper Horizontal + Side Split Session B (bench 1RM test — flex reduced)**
 3. Tue Jul 21 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed Jul 22 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
+4. Wed Jul 22 (WEDNESDAY): **🛌 REST DAY**
 5. Thu Jul 23 (THURSDAY): Speed-Strength A — Olympic Power + Loaded Velocity
-6. Fri Jul 24 (FRIDAY): Upper Vertical — Pull-Up Heavy + Dips
+6. Fri Jul 24 (FRIDAY): **Upper Vertical + Side Split Session A (assisted, final Phase 1 week)**
 7. Sat Jul 25 (SATURDAY): JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
 
 ## Sun Jul 19 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior Chain
@@ -34,14 +34,25 @@
 4. Glute-Ham Raise: 3×8 @ BW+10
 5. Pigeon Stretch: 2×60s/side @ —
 
-## Mon Jul 20 (MONDAY) — Upper Horizontal — Bench Density + Row
+## Mon Jul 20 (MONDAY) — Upper Horizontal + Side Split Session B (Phase 1 Wk 4 — bench 1RM test)
 
-1. Bench Press: Wk7-8: 5×5 / Wk9-11: 14-min density / Wk12: test @ Test 1RM
-2. Barbell Row: 4×6 @ 170
-3. DB Incline Bench (neutral): 3×6-8 @ 50
-4. T-Bar Chest-Supported Row: 3×6-8 @ Mod
-5. Cable Fly: 3×8-12 @ Light
-6. DB Lateral Raise: 3×10 @ 15
+**Phase 1 Wk 4 — final loading week + bench test.** Bench tests 1RM today (G2 KPI). Flex reduced to protect bench freshness — Session B at half volume.
+
+### Part A — Side Split Session B reduced (~15 min)
+
+1. **[FLEX-B1]** Horse Stance: 2×6 × 3s hold @ BW
+2. **[FLEX-B2]** Loaded Taylor's Pose: 2×8 @ 10 kg/knee (reduced from 3 sets)
+3. **[FLEX-B3]** Side-Lying Leg Raise: 2/side × 10
+4. **[FLEX-B4]** Triangle Side Split Active Push: 2×5 × 3s active hold
+
+### Part B — Upper Horizontal (~25 min, test day)
+
+5. **[ARC]** Bench Press: **Test 1RM** — G2 KPI
+6. **[ARC]** Barbell Row: 3×6 @ 170
+7. **[ARC]** DB Incline Bench (neutral): 3×6-8 @ 50
+8. **[ARC]** DB Lateral Raise: 2×10 @ 15
+
+**End-of-W12 re-assessment Sun Jul 26** — Block 3 (jump peak) starts W13. Flex transitions to maintenance regardless of progress.
 
 ## Tue Jul 21 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
 
@@ -51,14 +62,9 @@
 4. Sprints (finisher): 4×20yd, 1×40yd @ 2×20yd
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Jul 22 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed Jul 22 (WEDNESDAY) — 🛌 REST DAY
 
-1. Weighted Pull-Up (volume): 3×8 @ +15
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×60s @ 20
-4. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Light
-6. Cossack Squat (loaded): 3×8/side @ BW
+Full rest.
 
 ## Thu Jul 23 (THURSDAY) — Speed-Strength A — Olympic Power + Loaded Velocity
 
@@ -68,14 +74,22 @@
 4. RDL: 4×5,5,4,3 @ 215
 5. Pendulum Squat: 3×8-10 @ Mod
 
-## Fri Jul 24 (FRIDAY) — Upper Vertical — Pull-Up Heavy + Dips
+## Fri Jul 24 (FRIDAY) — Upper Vertical + Side Split Session A (assisted, final Phase 1)
 
-1. Weighted Pull-Up: 5×3 @ +25
-2. Weighted Dips: 4×5 @ +20
-3. Chest-Supported Row: 4×6-8 @ Mod
-4. Landmine Press: 3×10 @ Light
-5. Incline DB Curl: 3×8-10 @ Light
-6. Tricep Pushdown: 3×8-10 @ Light
+### Part A — Side Split Session A (~25 min)
+
+1. **[FLEX-A1]** Taylor's Pose PIR: 3×6 reps × (5s+5s)
+2. **[FLEX-A2]** Pancake: 3×6 × 3s hold
+3. **[FLEX-A3]** Cossack Squat Hold: 3/side × 5 × 3s @ BW
+4. **[FLEX-A4]** Triangle Side Split CR-ACR: 3×4 reps × (5s+5s)
+
+### Part B — Upper Vertical compressed (~25 min, deload week)
+
+5. **[ARC]** Weighted Pull-Up: 5×3 @ +25
+6. **[ARC]** Weighted Dips: 4×5 @ +20
+7. **[ARC]** Chest-Supported Row: 3×6-8 @ Mod
+8. **[ARC]** Landmine Press: 3×10 @ Light
+9. **[ARC]** Incline DB Curl: 3×8-10 @ Light
 
 ## Sat Jul 25 (SATURDAY) — JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
 

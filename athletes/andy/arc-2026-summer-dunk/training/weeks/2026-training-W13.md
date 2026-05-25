@@ -19,11 +19,11 @@
 ## 7-Day Overview
 
 1. Sun Jul 26 (SUNDAY): Active Recovery + Posterior Maintenance (very light)
-2. Mon Jul 27 (MONDAY): Upper Horizontal — Bench Peak
+2. Mon Jul 27 (MONDAY): **Upper Horizontal + Side Split Maintenance**
 3. Tue Jul 28 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint PRs
-4. Wed Jul 29 (WEDNESDAY): Recovery + Deep Flex + Pull-Up Volume
+4. Wed Jul 29 (WEDNESDAY): **🛌 REST DAY**
 5. Thu Jul 30 (THURSDAY): Speed-Strength A — Olympic Taper + Speed Work
-6. Fri Jul 31 (FRIDAY): Upper Vertical — Pull-Up Peak + Dips
+6. Fri Jul 31 (FRIDAY): **Upper Vertical + Side Split Maintenance**
 7. Sat Aug 01 (SATURDAY): JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 ## Sun Jul 26 (SUNDAY) — Active Recovery + Posterior Maintenance (very light)
@@ -34,14 +34,22 @@
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-## Mon Jul 27 (MONDAY) — Upper Horizontal — Bench Peak
+## Mon Jul 27 (MONDAY) — Upper Horizontal + Side Split Maintenance (Block 3 — peak)
 
-1. Bench Press: wave to test @ 3×3 @ 200
-2. Barbell Row: 4×5 @ 205 lb
-3. DB Incline Bench (neutral): 3×5 @ 70 lb
-4. Chest-Supported Row: 3×6 @ Heavy
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 25 lb
+**Maintenance phase — Block 3 jump peak begins.** No more loaded flex. Brain adaptations from Phase 1 persist; light passive work maintains them.
+
+### Part A — Maintenance flex (~15 min)
+
+1. **[FLEX]** Taylor's Pose PIR: 3×5 reps × (5s+5s)
+2. **[FLEX]** Bent-Knee Pancake: 2×6 × 3s hold
+3. **[FLEX]** Supported Side Split: 2×5 × 3s hold (no active push, no loading)
+
+### Part B — Upper Horizontal (~30 min)
+
+4. **[ARC]** Bench Press: wave to test @ 3×3 @ 200
+5. **[ARC]** Barbell Row: 3×5 @ 205 lb
+6. **[ARC]** DB Incline Bench (neutral): 3×5 @ 70 lb
+7. **[ARC]** DB Lateral Raise: 2×10 @ 25 lb
 
 ## Tue Jul 28 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint PRs
 
@@ -51,14 +59,9 @@
 4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Jul 29 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed Jul 29 (WEDNESDAY) — 🛌 REST DAY
 
-1. Weighted Pull-Up (volume): 3×8 @ +30 lb
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 30 lb
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ +20 lb
+Full rest. Block 3 peak — recovery is the priority.
 
 ## Thu Jul 30 (THURSDAY) — Speed-Strength A — Olympic Taper + Speed Work
 
@@ -68,14 +71,21 @@
 4. RDL: 3×5 @ 265 lb
 5. Pendulum Squat: 2×8 @ Mod-Hvy
 
-## Fri Jul 31 (FRIDAY) — Upper Vertical — Pull-Up Peak + Dips
+## Fri Jul 31 (FRIDAY) — Upper Vertical + Side Split Maintenance
 
-1. Weighted Pull-Up: wave to test @ 5×3 @ +55
-2. Weighted Dips: 3×5 @ +35 lb
-3. Chest-Supported Row: 3×6 @ Heavy
-4. Landmine Press: 2×10 @ Mod-Hvy
-5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
+### Part A — Maintenance flex (~15 min)
+
+1. **[FLEX]** Taylor's Pose PIR: 2×5 reps × (5s+5s)
+2. **[FLEX]** Bent-Knee Pancake: 2×6 × 3s hold
+3. **[FLEX]** Supported Side Split: 2×5 × 3s hold (no loading)
+
+### Part B — Upper Vertical (~30 min)
+
+4. **[ARC]** Weighted Pull-Up: wave to test @ 5×3 @ +55
+5. **[ARC]** Weighted Dips: 3×5 @ +35 lb
+6. **[ARC]** Chest-Supported Row: 3×6 @ Heavy
+7. **[ARC]** Landmine Press: 2×10 @ Mod-Hvy
+8. **[ARC]** Incline DB Curl: 2×10 @ Mod
 
 ## Sat Aug 01 (SATURDAY) — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
