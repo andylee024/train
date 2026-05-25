@@ -22,11 +22,11 @@
 ## 7-Day Overview
 
 1. Sun May 24 (SUNDAY): DNT Day 1 (Snatch + OHS) + Lower Posterior accessories
-2. Mon May 25 (MONDAY): Upper Horizontal + DNT triceps/side bends
+2. Mon May 25 (MONDAY): **Upper Horizontal + Side Split Phase 0 (foundation flex)** + DNT triceps/side bends
 3. Tue May 26 (TUESDAY): DNT Day 5 (Power Snatch + Snatch DL) + sprint finisher
-4. Wed May 27 (WEDNESDAY): Recovery + Deep Flex (Optional) + Pull-Up Volume
+4. Wed May 27 (WEDNESDAY): **🛌 REST DAY** (flex moved to Mon + Fri)
 5. Thu May 28 (THURSDAY): DNT Day 2 (Clean+Push Press + Front Squat) + Lower accessories + back ext
-6. Fri May 29 (FRIDAY): Upper Vertical + DNT wrist work
+6. Fri May 29 (FRIDAY): **Upper Vertical + Side Split Phase 0 (foundation flex, compressed)** + DNT wrist work
 7. Sat May 30 (SATURDAY): JUMP LAB + DNT hang power clean finisher
 
 ## Sun May 24 (SUNDAY) — DNT Day 1 + Lower Posterior
@@ -38,14 +38,28 @@
 5. **[ARC]** Hand-Supported Bulgarian SS: 3×8/leg @ 65 lb DB
 6. **[ARC]** Pigeon Stretch: 2×60s/side
 
-## Mon May 25 (MONDAY) — Upper Horizontal + DNT accessories
+## Mon May 25 (MONDAY) — Upper Horizontal + Side Split Phase 0 (foundation)
 
-1. **[ARC]** Bench Press: 4×6 → 4×5 @ 80% (185 lb) — arc progression
-2. **[ARC]** Barbell Row: 4×6 @ 175 lb
-3. **[ARC]** DB Incline Bench (neutral): 3×6-8 @ 60 lb
-4. **[ARC]** T-Bar Chest-Supported Row: 3×6-8 @ Heavy
-5. **[DNT]** Triceps Extension: 4×10 @ Mod (overhead or pushdown, 10–12RM)
-6. **[DNT]** Side Bends: 4×10 @ 25 lb DB (or +5 if easy)
+**Framework:** New 6-day structure — Mon and Fri are now the two upper+flex days. Wed is full rest. Mon flex is the heavier of the two (Mon → Sat jump = 5 days, jump-safe).
+**Phase 0** — passive/foundation flex, ZERO loading (per Andy's baseline: Taylor's 25cm off floor, side split 128°).
+**Total:** ~75 min (incl. Daily 8)
+
+### Part A — Side Split Phase 0 (~25 min, CNS-fresh)
+
+1. **[FLEX]** Supported Frog Hold: 3×60s (hips elevated)
+2. **[FLEX]** Taylor's Pose PIR: 3×6 reps × (5s knee-pull-up contract / 5s deeper relax)
+3. **[FLEX]** Sciatic Nerve Floss: 2×10 slow/side
+4. **[FLEX]** Bent-Knee Pancake: 3×6 × 3s hold
+5. **[FLEX]** Supported Side Split: 3×6 × 3s hold (hands at chest height)
+
+### Part B — Upper Horizontal compressed (~30 min)
+
+6. **[ARC]** Bench Press: 4×6 → 4×5 @ 80% (185 lb) *(G2 driver — full)*
+7. **[ARC]** Barbell Row: **3×6** @ 175 lb *(reduced from 4×6)*
+8. **[ARC]** DB Incline Bench (neutral): 3×6-8 @ 60 lb
+9. **[DNT]** Triceps Extension: 3×10 @ Mod *(reduced from 4 sets)*
+
+**Cuts vs. original Mon:** T-Bar Chest-Supported Row dropped (redundant with Row + Fri Chest-Supported Row). Side Bends dropped (DNT accessory, low priority for arc goals).
 
 ## Tue May 26 (TUESDAY) — DNT Day 5 + Sprint Finisher
 
@@ -55,14 +69,13 @@
 4. **[ARC]** Sprints (finisher): 3×20yd, 1×40yd @ 90% effort
 5. **[ARC]** Copenhagen Lift: 3×15s/side @ BW
 
-## Wed May 27 (WEDNESDAY) — Recovery + Deep Flex + Pull-Up Volume
+## Wed May 27 (WEDNESDAY) — 🛌 REST DAY
 
-1. **[ARC]** Weighted Pull-Up (volume): 3×8 @ +10 lb
-2. **[ARC]** Face Pull: 3×15 @ Light
-3. **[ARC]** Weighted Side Split Hold: 3×60s @ 15 lb
-4. **[ARC]** PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
-5. **[ARC]** Pigeon Stretch: 2×60s/side
-6. **[ARC]** Cossack Squat: 3×8/side @ BW
+**Wed is now a full rest day.** Flex work moved to Mon + Fri. Pull-up volume dropped from Wed; Fri's heavy pull-up sets + new structure carry the G2 pull-up goal.
+
+**What to do:** Nothing structured. Walk, light mobility if desired, sleep. This is recovery, not training.
+
+**If feeling stiff:** 5-10 min of cool-down stretches from Daily Flexibility (pigeon, frog, couch stretch). Not loaded, not pushing range. Just movement.
 
 ## Thu May 28 (THURSDAY) — DNT Day 2 + Lower Reactive + Back Ext
 
@@ -75,14 +88,31 @@
 
 *Wk 1 was the wrist-tolerance test at 65%. Wk 2 ramps to coach's prescribed 75-80% if no wrist flare.*
 
-## Fri May 29 (FRIDAY) — Upper Vertical + DNT Wrist Work
+## Fri May 29 (FRIDAY) — Upper Vertical + Side Split Phase 0 (foundation, compressed)
 
-1. **[ARC]** Weighted Pull-Up: 4×5 @ +25 lb (arc progression)
-2. **[ARC]** Weighted Dips: 3×8 @ +20 lb *(= DNT Day 4 bar dip)*
-3. **[ARC]** Chest-Supported Row: 4×6-8 @ Heavy
-4. **[ARC]** Landmine Press: 3×10 @ Mod-Hvy *(= shoulder-safe substitute for DNT strict press)*
-5. **[ARC]** Tricep Pushdown: 3×8-10 @ Mod
-6. **[DNT]** Wrist Exercise: 4×10 @ Light
+**Framework:** Second flex session of the week (paired with Mon). Slightly compressed because Sat is jump day — even Phase 0 passive work is dialed back on Fri to keep jump performance fresh.
+**Phase 0** — passive only, no loading.
+**Total:** ~75 min (incl. Daily 8)
+
+### Part A — Side Split Phase 0 compressed (~20 min)
+
+1. **[FLEX]** Supported Frog Hold: 2×60s (hips elevated)
+2. **[FLEX]** Taylor's Pose PIR: 3×5 reps × (5s contract / 5s relax)
+3. **[FLEX]** Sciatic Nerve Floss: 2×10 slow/side
+4. **[FLEX]** Bent-Knee Pancake: 2×6 × 3s hold
+5. **[FLEX]** Supported Side Split: 2×6 × 3s hold (hands at chest height)
+
+### Part B — Upper Vertical compressed (~30 min)
+
+6. **[ARC]** Weighted Pull-Up: 4×5 @ +25 lb *(G2 driver)*
+7. **[ARC]** Weighted Dips: 3×8 @ +20 lb
+8. **[ARC]** Chest-Supported Row: **3×6-8** @ Heavy *(reduced from 4 sets)*
+9. **[ARC]** Landmine Press: 3×10 @ Mod-Hvy
+10. **[DNT]** Wrist Exercise: 4×10 @ Light
+
+**Cuts vs. original Fri:** Tricep Pushdown dropped (Mon Triceps Extension covers).
+
+**Pre-jump note:** Phase 0 Fri flex is passive only — no end-range loaded stretching, no eccentric work. Jump performance should be unaffected. If Sat jump quality drops vs W03 baseline, dial Fri flex back to maintenance protocol (just A1 + A5) or drop entirely.
 
 ## Sat May 30 (SATURDAY) — JUMP LAB + DNT Hang Power Clean Finisher
 
@@ -95,8 +125,9 @@
 ## Daily Flexibility (15-20 min post-training)
 
 1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. Wed deep work: weighted side-split holds, PNF contract-relax, pancake good morning.
-3. **Never load splits before Sat jump day**.
+2. **Mon + Fri deep work (Phase 0 — W04-W08):** Matt Smith Phase 0 — passive foundation work, no loading. See Mon + Fri sections + `docs/training-styles/matt-smith-flexibility/guide.md`.
+3. **Wed = full rest day.** No flex programming.
+4. **Transition to Phase 1 starts W09 (Jun 28).** Mon = Session B (loaded). Fri = Session A (assisted).
 
 ## Logging Checklist
 
@@ -113,6 +144,7 @@
 - **Approach touch / CMJ on Sat May 30** — primary KPI for the DNT block as a whole. Compare vs. Sat May 16 (pre-DNT) and Sat May 23 (DNT Wk 1).
 - **Snatch top set** — should be stable across both weeks at 80%. If it drops Wk 2, DNT intensity is too high for the volume.
 - **Bench top set (Mon May 25)** at 185 lb — should still hit clean. Bench arc untouched, so this is the canary for global CNS load.
+- **End-of-W08 re-assessment scheduled (Sun Jun 28):** Taylor's pose knees-to-floor (cm), bent-knee pancake fingertips-to-toes (cm), supported side split angle (°). Numbers decide Phase 1 entry.
 
 ## End-of-DNT-Block Review (filled Sun May 31)
 
