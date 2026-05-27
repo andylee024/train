@@ -26,11 +26,20 @@ import { cn } from "@/lib/cn";
 export function PlanPreview({
   selectedCoachIds,
   goals = [],
+  plan: providedPlan,
+  synthesized,
+  fallbackReason,
   onBack,
   onActivate,
 }: {
   selectedCoachIds: string[];
   goals?: GoalKey[];
+  /** When provided, this plan is rendered instead of the local mocked build. */
+  plan?: SamplePlan;
+  /** True if the API returned a real Claude synthesis; false when fallback fired. */
+  synthesized?: boolean;
+  /** Optional fallback reason — shown in the banner when synthesized === false. */
+  fallbackReason?: string;
   onBack: () => void;
   onActivate: () => void;
 }) {
@@ -38,10 +47,13 @@ export function PlanPreview({
     .map((id) => getCoach(id))
     .filter((c): c is Coach => !!c);
   const coachNames = coaches.map((c) => c.name).join(" · ");
-  const plan = buildSamplePlan(coaches, goals);
+  const plan = providedPlan ?? buildSamplePlan(coaches, goals);
   const [blockIdx, setBlockIdx] = useState<number>(
-    Math.min(plan.defaultBlockIdx, plan.sampleWeeks.length - 1)
+    Math.min(plan.defaultBlockIdx ?? 0, Math.max(plan.sampleWeeks.length - 1, 0))
   );
+  // Show the legacy "example structure" note only when we don't have real
+  // synthesis (no providedPlan OR synthesized === false).
+  const showFallbackBanner = synthesized === false || providedPlan == null;
 
   function handleDownload() {
     // A24-286: real xlsx export ships with A24-294. Stub until then.
@@ -55,18 +67,20 @@ export function PlanPreview({
 
   return (
     <div className="max-w-5xl mx-auto py-4">
-      {/* A24-285: example-structure banner — preview is mocked until A24-294 */}
-      <div
-        className="mb-4 flex items-start gap-2 rounded-md border border-[var(--accent-line)] bg-[var(--accent-soft)] p-3 text-[11px] leading-relaxed text-[var(--ink-dim)]"
-        role="note"
-      >
-        <Info size={12} className="mt-0.5 shrink-0 text-[var(--accent)]" />
-        <div>
-          <span className="font-medium text-[var(--ink)]">Example structure.</span>{" "}
-          This preview varies by your coach mix but the exercises are illustrative —
-          your generated plan will be personalized once we wire synthesis.
+      {showFallbackBanner && (
+        <div
+          className="mb-4 flex items-start gap-2 rounded-md border border-[var(--accent-line)] bg-[var(--accent-soft)] p-3 text-[11px] leading-relaxed text-[var(--ink-dim)]"
+          role="note"
+        >
+          <Info size={12} className="mt-0.5 shrink-0 text-[var(--accent)]" />
+          <div>
+            <span className="font-medium text-[var(--ink)]">
+              AI synthesis unavailable — showing example structure.
+            </span>{" "}
+            {fallbackReason ?? "Set ANTHROPIC_API_KEY to enable real synthesis."}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Hero */}
       <div className="flex items-baseline gap-2 mb-1">
