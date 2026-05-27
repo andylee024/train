@@ -4,10 +4,14 @@
  * Intake state — goals + days/wk + constraints chips picked during onboarding.
  * Persisted to localStorage so it survives navigation. Used by the marketplace
  * to rank coaches and by the synthesis step to inform the plan generator.
+ *
+ * Also exports useReviewNotes (same persistence pattern) for the textarea on
+ * the review-blend step (A24-291).
  */
 import { useCallback, useEffect, useState } from "react";
 
 const KEY = "plan.intake.v1";
+const NOTES_KEY = "plan.reviewNotes.v1";
 
 export type GoalKey =
   | "stronger"
@@ -142,4 +146,48 @@ export function useIntake() {
     toggleConstraint,
     clear,
   };
+}
+
+// ─── Review notes — A24-291 ───────────────────────────────────────────────
+
+function readNotes(): string {
+  if (typeof window === "undefined") return "";
+  try {
+    return window.localStorage.getItem(NOTES_KEY) ?? "";
+  } catch {
+    return "";
+  }
+}
+
+function writeNotes(value: string) {
+  if (typeof window === "undefined") return;
+  if (value) window.localStorage.setItem(NOTES_KEY, value);
+  else window.localStorage.removeItem(NOTES_KEY);
+}
+
+export function useReviewNotes() {
+  const [notes, setNotesState] = useState("");
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setNotesState(readNotes());
+    setHydrated(true);
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === NOTES_KEY) setNotesState(readNotes());
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
+  }, []);
+
+  const setNotes = useCallback((value: string) => {
+    setNotesState(value);
+    writeNotes(value);
+  }, []);
+
+  const clear = useCallback(() => {
+    setNotesState("");
+    writeNotes("");
+  }, []);
+
+  return { notes, hydrated, setNotes, clear };
 }

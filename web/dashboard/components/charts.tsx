@@ -74,7 +74,7 @@ export function LineChartCard({
             }}
             labelStyle={{ color: COLORS.ink, fontSize: 11 }}
             itemStyle={{ color: COLORS.ink }}
-            formatter={(v: number) => [`${v}${unit ?? ""}`, label]}
+            formatter={(v) => [`${Number(v)}${unit ?? ""}`, label]}
           />
           <Line
             type="monotone"

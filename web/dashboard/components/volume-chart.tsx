@@ -57,7 +57,7 @@ export function VolumeChart({ weeks }: { weeks: TonnageWeek[] }) {
                 color: "#eef1f5",
                 padding: "4px 6px",
               }}
-              formatter={(v: number) => [`${v.toLocaleString()} lb`, "tonnage"]}
+              formatter={(v) => [`${Number(v).toLocaleString()} lb`, "tonnage"]}
             />
             <Bar dataKey="lb" fill={ACCENT} radius={[1, 1, 0, 0]} />
           </BarChart>

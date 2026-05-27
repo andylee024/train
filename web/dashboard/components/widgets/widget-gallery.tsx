@@ -170,7 +170,7 @@ function KPIForm({ ctx, onSubmit }: { ctx: RenderContext; onSubmit: (props: Widg
 
 function LiftTrajectoryForm({ ctx, onSubmit }: { ctx: RenderContext; onSubmit: (props: WidgetSpec["props"]) => void }) {
   // Available lifts = those with any session count
-  const liftOptions = ctx.keyLifts
+  const liftOptions = (ctx.keyLifts ?? [])
     .filter((k) => k.sessionCount > 0)
     .map((k) => ({ value: k.name, label: `${k.name} (${k.sessionCount} sessions)` }));
   const fallback = liftOptions[0]?.value ?? "";
@@ -218,7 +218,7 @@ function PRLogForm({ onSubmit }: { onSubmit: (props: WidgetSpec["props"]) => voi
 }
 
 function LiftChangeForm({ ctx, onSubmit }: { ctx: RenderContext; onSubmit: (props: WidgetSpec["props"]) => void }) {
-  const keyOptions = ctx.keyLifts.map((k) => k.name);
+  const keyOptions = (ctx.keyLifts ?? []).map((k) => k.name);
   return (
     <FormShell
       onSubmit={() => onSubmit({ keyNames: keyOptions })}
