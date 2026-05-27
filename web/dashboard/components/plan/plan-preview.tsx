@@ -37,7 +37,7 @@ export function PlanPreview({
           synthesized
         </span>
       </div>
-      <h1 className="text-[24px] font-semibold tracking-tight leading-none mb-2">
+      <h1 className="text-[20px] sm:text-[24px] font-semibold tracking-tight leading-none mb-2">
         {plan.meta.title}
       </h1>
       <div className="text-[12px] text-[var(--ink-dim)] mb-1">
@@ -82,11 +82,13 @@ export function PlanPreview({
         </div>
       </Section>
 
-      {/* Sample week */}
+      {/* Sample week — horizontal scroll on mobile, 7-col grid on >=sm */}
       <Section label="Sample week" meta={plan.sampleWeek.label}>
-        <div className="grid grid-cols-7 gap-1.5">
+        <div className="-mx-1 px-1 flex gap-1.5 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-7 sm:overflow-visible sm:snap-none sm:mx-0 sm:px-0">
           {plan.sampleWeek.days.map((day, i) => (
-            <DayColumn key={i} day={day} />
+            <div key={i} className="shrink-0 w-[140px] snap-start sm:w-auto">
+              <DayColumn day={day} />
+            </div>
           ))}
         </div>
       </Section>
@@ -120,14 +122,14 @@ export function PlanPreview({
       </Section>
 
       {/* Actions */}
-      <div className="mt-8 flex items-center justify-between">
+      <div className="mt-8 flex items-center justify-between flex-wrap gap-3">
         <button
           onClick={onBack}
           className="text-[11px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink)] transition-colors flex items-center gap-1"
         >
           <ChevronLeft size={11} /> change my picks
         </button>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <button className="text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm border border-[var(--line)] text-[var(--ink-muted)] hover:text-[var(--ink)] flex items-center gap-1.5">
             <Download size={11} /> Download .xlsx
           </button>
