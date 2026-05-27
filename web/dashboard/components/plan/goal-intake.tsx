@@ -24,7 +24,13 @@ const CONSTRAINTS: { key: ConstraintKey; label: string }[] = [
   { key: "travel-often",       label: "Travel often" },
 ];
 
-export function GoalIntake({ onComplete }: { onComplete: () => void }) {
+export function GoalIntake({
+  onComplete,
+  onSkip,
+}: {
+  onComplete: () => void;
+  onSkip?: () => void;
+}) {
   const {
     intake,
     isComplete,
@@ -91,18 +97,29 @@ export function GoalIntake({ onComplete }: { onComplete: () => void }) {
             ? `${intake.goals.length} goal${intake.goals.length === 1 ? "" : "s"} · ${intake.daysPerWeek} d/wk${intake.constraints.length ? ` · ${intake.constraints.length} constraint${intake.constraints.length === 1 ? "" : "s"}` : ""}`
             : "Pick at least one goal and your days/week to continue."}
         </span>
-        <button
-          onClick={onComplete}
-          disabled={!isComplete}
-          className={cn(
-            "text-[11px] font-mono uppercase tracking-wider px-4 py-2 rounded-sm transition-opacity",
-            isComplete
-              ? "bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
-              : "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] cursor-not-allowed"
+        <div className="flex flex-col items-end gap-2">
+          <button
+            onClick={onComplete}
+            disabled={!isComplete}
+            className={cn(
+              "text-[11px] font-mono uppercase tracking-wider px-4 py-2 rounded-sm transition-opacity",
+              isComplete
+                ? "bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
+                : "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] cursor-not-allowed"
+            )}
+          >
+            Find my team →
+          </button>
+          {onSkip && (
+            <button
+              type="button"
+              onClick={onSkip}
+              className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink-dim)] transition-colors"
+            >
+              Show me everything →
+            </button>
           )}
-        >
-          Find my team →
-        </button>
+        </div>
       </div>
     </div>
   );

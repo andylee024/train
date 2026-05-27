@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ChevronLeft, CheckCircle2, Pencil } from "lucide-react";
+import { ChevronLeft, CheckCircle2, Pencil, X, RotateCcw } from "lucide-react";
 import { PageHeader } from "@/components/ui";
 import { CoachCard } from "@/components/plan/coach-card";
 import { FilterBar, type Filters } from "@/components/plan/filter-bar";
@@ -14,8 +14,8 @@ import { ReviewBlend } from "@/components/plan/review-blend";
 import { PlanPreview } from "@/components/plan/plan-preview";
 import { COACHES, allGoals, LEVELS, getCoach } from "@/lib/coaches";
 import { useSelection } from "@/lib/use-selection";
-import { useIntake } from "@/lib/use-intake";
-import { scoreCoach, topMatches, GOAL_LABEL } from "@/lib/matching";
+import { useIntake, type GoalKey } from "@/lib/use-intake";
+import { scoreCoach, topMatches, GOAL_LABEL, matchingGoals } from "@/lib/matching";
 
 type Phase = "intake" | "marketplace" | "review" | "synthesizing" | "preview" | "activated";
 
@@ -23,8 +23,9 @@ export default function NewArcPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { selected, toggle, remove, clear } = useSelection();
-  const { intake, hydrated, isComplete, setDays } = useIntake();
+  const { intake, hydrated, isComplete, setDays, removeGoal, clearIntake } = useIntake();
   const [reviewNotes, setReviewNotes] = useState("");
+  const [justCompletedIntake, setJustCompletedIntake] = useState(false);
 
   const [filters, setFilters] = useState<Filters>({
     search: "",
@@ -78,7 +79,7 @@ export default function NewArcPage() {
         (a, b) => scoreCoach(b, intake.goals) - scoreCoach(a, intake.goals)
       );
     }
-    return matches;
+    return [...matches].sort((a, b) => a.name.localeCompare(b.name));
   }, [filters, intake.goals]);
 
   // Marketplace "Build plan" goes to review first
@@ -96,6 +97,17 @@ export default function NewArcPage() {
     setPhase("activated");
   }
 
+  function handleStartOver() {
+    if (typeof window !== "undefined") {
+      const ok = window.confirm("Clear your intake and team picks?");
+      if (!ok) return;
+    }
+    clearIntake();
+    clear();
+    setJustCompletedIntake(false);
+    setPhase("intake");
+  }
+
   // While hydrating, render nothing to avoid flash
   if (!hydrated) {
     return <div className="max-w-7xl pb-24" />;
@@ -103,15 +115,36 @@ export default function NewArcPage() {
 
   return (
     <div className="max-w-7xl pb-24">
-      <Link
-        href="/plan"
-        className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink-dim)] mb-2 transition-colors"
-      >
-        <ChevronLeft size={11} /> Back to Plan
-      </Link>
+      <div className="flex items-center justify-between mb-2">
+        <Link
+          href="/plan"
+          className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink-dim)] transition-colors"
+        >
+          <ChevronLeft size={11} /> Back to Plan
+        </Link>
+        {phase !== "activated" && (
+          <button
+            type="button"
+            onClick={handleStartOver}
+            className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink-dim)] transition-colors"
+          >
+            <RotateCcw size={11} /> Start over
+          </button>
+        )}
+      </div>
 
       {phase === "intake" && (
-        <GoalIntake onComplete={() => setPhase("marketplace")} />
+        <GoalIntake
+          onComplete={() => {
+            setJustCompletedIntake(true);
+            setPhase("marketplace");
+          }}
+          onSkip={() => {
+            clearIntake();
+            setJustCompletedIntake(false);
+            setPhase("marketplace");
+          }}
+        />
       )}
 
       {phase === "marketplace" && (
@@ -123,11 +156,14 @@ export default function NewArcPage() {
           intakeGoals={intake.goals}
           daysPerWeek={intake.daysPerWeek}
           onEditIntake={() => setPhase("intake")}
+          onRemoveGoal={removeGoal}
           selected={selected}
           toggle={toggle}
           remove={remove}
           clear={clear}
           onBuild={handleGoToReview}
+          animateRecommended={justCompletedIntake}
+          onAnimationConsumed={() => setJustCompletedIntake(false)}
         />
       )}
 
@@ -169,35 +205,44 @@ function MarketplacePhase({
   intakeGoals,
   daysPerWeek,
   onEditIntake,
+  onRemoveGoal,
   selected,
   toggle,
   remove,
   clear,
   onBuild,
+  animateRecommended,
+  onAnimationConsumed,
 }: {
   filters: Filters;
   setFilters: (p: Partial<Filters>) => void;
   filtered: typeof COACHES;
   recommendedIds: string[];
-  intakeGoals: string[];
+  intakeGoals: GoalKey[];
   daysPerWeek: number | null;
   onEditIntake: () => void;
+  onRemoveGoal: (g: GoalKey) => void;
   selected: string[];
   toggle: (id: string) => void;
   remove: (id: string) => void;
   clear: () => void;
   onBuild: () => void;
+  animateRecommended: boolean;
+  onAnimationConsumed: () => void;
 }) {
   const router = useRouter();
-  const recommendedSet = new Set(recommendedIds);
   const recommendedCoaches = recommendedIds
     .map((id) => COACHES.find((c) => c.id === id))
     .filter((c): c is (typeof COACHES)[number] => !!c);
 
-  // Goal labels for the "Matched for" line
-  const goalLabels = intakeGoals
-    .map((g) => GOAL_LABEL[g as keyof typeof GOAL_LABEL] || g)
-    .join(" · ");
+  const hasGoals = intakeGoals.length > 0;
+
+  useEffect(() => {
+    if (animateRecommended) {
+      const t = window.setTimeout(onAnimationConsumed, 2000);
+      return () => window.clearTimeout(t);
+    }
+  }, [animateRecommended, onAnimationConsumed]);
 
   return (
     <>
@@ -210,31 +255,63 @@ function MarketplacePhase({
           <p className="text-[13px] text-[var(--ink-dim)] leading-relaxed">
             Pick the coaches you trust — we'll synthesize their programming.
           </p>
-          {intakeGoals.length > 0 && (
-            <div className="flex items-center gap-2 text-[11px] font-mono text-[var(--ink-muted)] tabular">
+          {hasGoals ? (
+            <div className="flex items-center flex-wrap gap-1.5 text-[11px] font-mono text-[var(--ink-muted)] tabular">
               <span className="uppercase tracking-wider text-[10px]">matched for:</span>
-              <span className="text-[var(--ink-dim)]">
-                {goalLabels}{daysPerWeek ? ` · ${daysPerWeek} d/wk` : ""}
-              </span>
+              {intakeGoals.map((g) => (
+                <span
+                  key={g}
+                  className="inline-flex items-center gap-1 pl-2 pr-1 py-0.5 rounded-full bg-[var(--accent-soft)] border border-[var(--accent-line)] text-[var(--accent)]"
+                >
+                  <span className="normal-case tracking-normal">{GOAL_LABEL[g] || g}</span>
+                  <button
+                    type="button"
+                    onClick={() => onRemoveGoal(g)}
+                    className="w-4 h-4 grid place-items-center rounded-full hover:bg-[var(--accent-line)] transition-colors"
+                    aria-label={`Remove ${GOAL_LABEL[g] || g}`}
+                    title="Remove goal"
+                  >
+                    <X size={9} />
+                  </button>
+                </span>
+              ))}
+              {daysPerWeek && (
+                <span className="text-[var(--ink-dim)] normal-case tracking-normal">
+                  · {daysPerWeek} d/wk
+                </span>
+              )}
               <button
                 onClick={onEditIntake}
-                className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[var(--ink-muted)] hover:text-[var(--accent)] border border-[var(--line)] rounded-sm hover:border-[var(--accent-line)] transition-colors"
+                className="inline-flex items-center gap-1 px-1.5 py-0.5 ml-1 text-[var(--ink-muted)] hover:text-[var(--accent)] border border-[var(--line)] rounded-sm hover:border-[var(--accent-line)] transition-colors"
                 title="Edit goals"
               >
                 <Pencil size={9} /> edit
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 text-[11px] font-mono text-[var(--ink-muted)] tabular">
+              <span className="uppercase tracking-wider text-[10px]">browse all coaches</span>
+              <button
+                onClick={onEditIntake}
+                className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[var(--ink-muted)] hover:text-[var(--accent)] border border-[var(--line)] rounded-sm hover:border-[var(--accent-line)] transition-colors normal-case tracking-normal"
+                title="Set goals to personalize"
+              >
+                Set goals to personalize
               </button>
             </div>
           )}
         </div>
       </div>
 
-      {/* Recommended for you band */}
-      {recommendedCoaches.length > 0 && (
+      {/* Recommended for you band — only when intake has goals */}
+      {hasGoals && recommendedCoaches.length > 0 && (
         <RecommendedBand
           coaches={recommendedCoaches}
           selected={selected}
           toggle={toggle}
           onOpen={(id) => router.push(`/plan/coaches/${id}`)}
+          goals={intakeGoals}
+          animate={animateRecommended}
         />
       )}
 
@@ -269,7 +346,7 @@ function MarketplacePhase({
               key={coach.id}
               coach={coach}
               selected={selected.includes(coach.id)}
-              matchesGoals={recommendedSet.has(coach.id)}
+              matchingGoals={hasGoals ? matchingGoals(coach, intakeGoals) : []}
               onToggle={() => toggle(coach.id)}
               onOpen={() => router.push(`/plan/coaches/${coach.id}`)}
             />

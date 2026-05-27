@@ -2,21 +2,30 @@
 
 import { Check, Plus, Star } from "lucide-react";
 import { CATEGORIES, initials, type Coach } from "@/lib/coaches";
+import { GOAL_LABEL } from "@/lib/matching";
+import type { GoalKey } from "@/lib/use-intake";
 import { cn } from "@/lib/cn";
 
 export function CoachCard({
   coach,
   selected,
+  matchingGoals,
   onToggle,
   onOpen,
 }: {
   coach: Coach;
   selected: boolean;
+  matchingGoals?: GoalKey[];
   onToggle: () => void;
   onOpen?: () => void;
 }) {
   const accent = CATEGORIES[coach.category].accent;
   const catLabel = CATEGORIES[coach.category].label;
+  const hasMatches = !!matchingGoals && matchingGoals.length > 0;
+  const primaryGoal = hasMatches ? GOAL_LABEL[matchingGoals[0]] : null;
+  const matchTitle = hasMatches
+    ? matchingGoals!.map((g) => GOAL_LABEL[g]).join(" · ")
+    : undefined;
 
   return (
     <div
@@ -34,19 +43,20 @@ export function CoachCard({
           e.stopPropagation();
           onToggle();
         }}
+        title={selected ? "Remove" : "Add to your team"}
         className={cn(
-          "absolute top-3 right-3 w-7 h-7 rounded-full flex items-center justify-center border transition-colors z-10",
+          "group/add absolute top-2 right-2 w-9 h-9 rounded-full flex items-center justify-center border transition-all z-10",
           selected
-            ? "bg-[var(--accent)] text-[var(--accent-ink)] border-[var(--accent)]"
-            : "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border-[var(--line)] hover:border-[var(--accent-line)] hover:text-[var(--accent)]"
+            ? "bg-[var(--accent)] text-[var(--accent-ink)] border-[var(--accent)] hover:opacity-90"
+            : "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border-[var(--line)] hover:bg-[var(--bg-elev-2)] hover:border-[var(--accent-line)] hover:text-[var(--accent)] hover:scale-105"
         )}
-        aria-label={selected ? "Remove" : "Add to plan"}
+        aria-label={selected ? "Remove from your team" : "Add to your team"}
       >
-        {selected ? <Check size={13} /> : <Plus size={13} />}
+        {selected ? <Check size={14} /> : <Plus size={14} />}
       </button>
 
       {/* Header: avatar + name + handle + category */}
-      <div className="flex items-start gap-3 mb-3 pr-9">
+      <div className="flex items-start gap-3 mb-3 pr-11">
         <div
           className="shrink-0 w-10 h-10 rounded-full grid place-items-center text-[12px] font-semibold text-white tabular"
           style={{ background: accent }}
@@ -70,19 +80,45 @@ export function CoachCard({
         </div>
       </div>
 
+      {/* Match badge */}
+      {hasMatches && (
+        <div
+          title={matchTitle}
+          className="inline-flex items-center gap-1 mb-2 px-1.5 py-0.5 rounded-sm bg-[var(--accent-soft)] border border-[var(--accent-line)] text-[10px] font-mono uppercase tracking-wider text-[var(--accent)]"
+        >
+          <span>matches:</span>
+          <span className="normal-case tracking-normal">{primaryGoal}</span>
+          {matchingGoals!.length > 1 && (
+            <span className="text-[var(--ink-muted)]">+{matchingGoals!.length - 1}</span>
+          )}
+        </div>
+      )}
+
       {/* Tagline */}
       <p className="text-[12px] text-[var(--ink-dim)] leading-snug mb-3 line-clamp-3">
         {coach.tagline}
       </p>
 
-      {/* Stats */}
-      <div className="flex items-center gap-3 text-[10px] font-mono text-[var(--ink-muted)] tabular">
-        <span className="flex items-center gap-1">
-          <Star size={9} className="fill-[var(--ink-muted)]" />
-          {coach.stats.rating}
-        </span>
-        <span>{coach.stats.followers}</span>
-        <span>{coach.stats.programs} programs</span>
+      {/* Stats + Read profile link */}
+      <div className="flex items-center justify-between gap-3 text-[10px] font-mono text-[var(--ink-muted)] tabular">
+        <div className="flex items-center gap-3">
+          <span className="flex items-center gap-1">
+            <Star size={9} className="fill-[var(--ink-muted)]" />
+            {coach.stats.rating}
+          </span>
+          <span>{coach.stats.followers}</span>
+          <span>{coach.stats.programs} programs</span>
+        </div>
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onOpen?.();
+          }}
+          className="text-[11px] text-[var(--ink-dim)] hover:text-[var(--accent)] hover:underline normal-case tracking-normal"
+        >
+          Read profile →
+        </button>
       </div>
     </div>
   );

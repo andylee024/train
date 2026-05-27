@@ -111,6 +111,14 @@ export function useIntake() {
     });
   }, []);
 
+  const removeGoal = useCallback((g: GoalKey) => {
+    setIntake((prev) => {
+      const next = { ...prev, goals: prev.goals.filter((x) => x !== g) };
+      write(next);
+      return next;
+    });
+  }, []);
+
   const toggleConstraint = useCallback((c: ConstraintKey) => {
     setIntake((prev) => {
       const next = {
@@ -140,6 +148,8 @@ export function useIntake() {
     setConstraints,
     toggleGoal,
     toggleConstraint,
+    removeGoal,
     clear,
+    clearIntake: clear,
   };
 }
