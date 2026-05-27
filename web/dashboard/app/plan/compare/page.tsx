@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ChevronLeft, Check, Plus } from "lucide-react";
@@ -9,6 +10,14 @@ import { useSelection } from "@/lib/use-selection";
 import { cn } from "@/lib/cn";
 
 export default function ComparePage() {
+  return (
+    <Suspense fallback={<div className="max-w-5xl pb-24" />}>
+      <ComparePageInner />
+    </Suspense>
+  );
+}
+
+function ComparePageInner() {
   const params = useSearchParams();
   const idsParam = params.get("ids") ?? "";
   const ids = idsParam
