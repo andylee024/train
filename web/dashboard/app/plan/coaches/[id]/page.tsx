@@ -3,11 +3,13 @@
 import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, Check, Plus, Play, Star } from "lucide-react";
+import { ChevronLeft, Check, Plus, Play, Star, Quote } from "lucide-react";
 import { CATEGORIES, getCoach, initials } from "@/lib/coaches";
 import { getProfile } from "@/lib/coach-profiles";
+import { getExtras } from "@/lib/coach-extras";
 import { useSelection } from "@/lib/use-selection";
 import { SelectionBar } from "@/components/plan/selection-bar";
+import { PairsCarousel } from "@/components/plan/pairs-carousel";
 import { cn } from "@/lib/cn";
 
 export default function CoachProfilePage({
@@ -18,7 +20,8 @@ export default function CoachProfilePage({
   const { id } = use(params);
   const coach = getCoach(id);
   const profile = getProfile(id);
-  const { selected, toggle, remove, clear } = useSelection();
+  const extras = getExtras(id);
+  const { selected, toggle, remove, clear, addMany } = useSelection();
 
   if (!coach) notFound();
 
@@ -36,17 +39,17 @@ export default function CoachProfilePage({
       </Link>
 
       {/* Hero */}
-      <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-6">
-        <div className="flex items-start gap-4">
+      <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row items-start gap-4">
           <div
-            className="shrink-0 w-16 h-16 rounded-full grid place-items-center text-[18px] font-semibold text-white tabular"
+            className="shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full grid place-items-center text-[14px] sm:text-[18px] font-semibold text-white tabular"
             style={{ background: accent }}
           >
             {initials(coach.name)}
           </div>
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 w-full">
             <div className="flex items-baseline gap-2 flex-wrap">
-              <h1 className="text-[22px] font-semibold tracking-tight leading-none">
+              <h1 className="text-[18px] sm:text-[22px] font-semibold tracking-tight leading-none">
                 {coach.name}
               </h1>
               <span className="text-[11px] font-mono text-[var(--ink-muted)] tabular">
@@ -75,7 +78,7 @@ export default function CoachProfilePage({
           <button
             onClick={() => toggle(coach.id)}
             className={cn(
-              "shrink-0 text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm transition-colors flex items-center gap-1.5",
+              "shrink-0 self-stretch sm:self-auto text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm transition-colors flex items-center justify-center gap-1.5",
               isSelected
                 ? "bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--accent-line)]"
                 : "bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
@@ -93,6 +96,26 @@ export default function CoachProfilePage({
           {coach.philosophy}
         </p>
       </Section>
+
+      {/* What you'll gain */}
+      {extras?.whatYoullGain && (
+        <Section label={`What you'll gain by following ${coach.name.split(" ")[0]}`}>
+          <ul className="space-y-2">
+            {extras.whatYoullGain.map((g, i) => (
+              <li
+                key={i}
+                className="flex gap-2.5 text-[13px] text-[var(--ink-dim)] leading-relaxed"
+              >
+                <span
+                  className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full"
+                  style={{ background: accent }}
+                />
+                <span>{g}</span>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       {/* Tags grid */}
       <Section label="At a glance">
@@ -128,7 +151,7 @@ export default function CoachProfilePage({
       {/* Week structure */}
       {profile?.weekStructure && (
         <Section label="Sample week">
-          <div className="grid grid-cols-7 gap-2 text-[11px]">
+          <div className="-mx-1 px-1 flex gap-2 overflow-x-auto snap-x snap-mandatory text-[11px] sm:grid sm:grid-cols-7 sm:overflow-visible sm:snap-none sm:mx-0 sm:px-0">
             {profile.weekStructure.map((day, i) => {
               const dayLabel = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][i];
               const isRest = /rest/i.test(day);
@@ -136,7 +159,7 @@ export default function CoachProfilePage({
                 <div
                   key={i}
                   className={cn(
-                    "p-2 rounded-sm border text-center",
+                    "shrink-0 w-[90px] snap-start sm:w-auto p-2 rounded-sm border text-center",
                     isRest
                       ? "bg-[var(--bg-elev-2)] border-[var(--line-soft)] text-[var(--ink-muted)]"
                       : "bg-[var(--bg-elev-1)] border-[var(--line)] text-[var(--ink)]"
@@ -177,6 +200,28 @@ export default function CoachProfilePage({
         </Section>
       )}
 
+      {/* Testimonials */}
+      {extras?.testimonials && extras.testimonials.length > 0 && (
+        <Section label="From athletes who follow this program">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {extras.testimonials.map((t, i) => (
+              <figure
+                key={i}
+                className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-4"
+              >
+                <Quote size={12} className="mb-2" style={{ color: accent }} />
+                <blockquote className="text-[13px] text-[var(--ink)] leading-relaxed">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-3 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
+                  {t.author} · {t.context}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </Section>
+      )}
+
       {/* Best for / Not for */}
       <Section label="Fit">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -209,31 +254,15 @@ export default function CoachProfilePage({
         </div>
       </Section>
 
-      {/* Pairs with */}
+      {/* Pairs well with — mini-card carousel */}
       {coach.pairsWith.length > 0 && (
         <Section label="Pairs well with">
-          <div className="flex flex-wrap gap-2">
-            {coach.pairsWith.map((pid) => {
-              const c = getCoach(pid);
-              if (!c) return null;
-              const a = CATEGORIES[c.category].accent;
-              return (
-                <Link
-                  key={pid}
-                  href={`/plan/coaches/${pid}`}
-                  className="inline-flex items-center gap-2 px-2 py-1.5 rounded-sm bg-[var(--bg-elev-1)] border border-[var(--line)] text-[11px] hover:border-[var(--accent-line)] transition-colors"
-                >
-                  <span
-                    className="w-5 h-5 rounded-full grid place-items-center text-[9px] font-semibold text-white tabular"
-                    style={{ background: a }}
-                  >
-                    {initials(c.name)}
-                  </span>
-                  <span className="text-[var(--ink)]">{c.name}</span>
-                </Link>
-              );
-            })}
-          </div>
+          <PairsCarousel
+            pairIds={coach.pairsWith}
+            selected={selected}
+            onToggle={toggle}
+            onAddAll={() => addMany([coach.id, ...coach.pairsWith])}
+          />
         </Section>
       )}
 

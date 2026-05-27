@@ -50,7 +50,7 @@ export function ReviewBlend({
 
   return (
     <div className="max-w-3xl mx-auto py-4">
-      <h1 className="text-[24px] font-semibold tracking-tight leading-none mb-2">
+      <h1 className="text-[20px] sm:text-[24px] font-semibold tracking-tight leading-none mb-2">
         Here's your blend
       </h1>
       <p className="text-[12px] text-[var(--ink-dim)]">
@@ -96,7 +96,7 @@ export function ReviewBlend({
             {goalLine ? `${goalLine} · ` : ""}{daysPerWeek} d/wk
           </span>
         </div>
-        <div className="grid grid-cols-7 gap-2 text-[11px]">
+        <div className="-mx-1 px-1 flex gap-2 overflow-x-auto snap-x snap-mandatory text-[11px] sm:grid sm:grid-cols-7 sm:overflow-visible sm:snap-none sm:mx-0 sm:px-0">
           {blend.map((day, i) => {
             const isRest = day.coach === null;
             const accent = day.coach ? CATEGORIES[day.coach.category].accent : null;
@@ -104,7 +104,7 @@ export function ReviewBlend({
               <div
                 key={i}
                 className={cn(
-                  "p-2 rounded-sm border min-h-[64px]",
+                  "shrink-0 w-[110px] snap-start sm:w-auto p-2 rounded-sm border min-h-[64px]",
                   isRest
                     ? "bg-[var(--bg-elev-2)] border-[var(--line-soft)]"
                     : "bg-[var(--bg-elev-1)] border-[var(--line)]"
