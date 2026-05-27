@@ -58,3 +58,11 @@ export function topMatches(coaches: Coach[], goals: GoalKey[], n = 3): Coach[] {
     .slice(0, n)
     .map((x) => x.c);
 }
+
+export function matchingGoals(coach: Coach, goals: GoalKey[]): GoalKey[] {
+  if (goals.length === 0) return [];
+  const coachTags = new Set(coach.tags.goals);
+  return goals.filter((g) =>
+    (GOAL_TO_COACH_TAGS[g] ?? []).some((tag) => coachTags.has(tag))
+  );
+}

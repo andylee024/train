@@ -286,6 +286,17 @@ export const COACHES: Coach[] = [
   },
 ];
 
+const COACH_ID_SET = new Set(COACHES.map((c) => c.id));
+for (const c of COACHES) {
+  for (const pid of c.pairsWith) {
+    if (!COACH_ID_SET.has(pid)) {
+      console.warn(
+        `[coaches] unknown coach ID in pairsWith: "${pid}" referenced by "${c.id}"`
+      );
+    }
+  }
+}
+
 export function getCoach(id: string): Coach | undefined {
   return COACHES.find((c) => c.id === id);
 }
