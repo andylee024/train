@@ -6,6 +6,73 @@ Newest entries on top.
 
 ---
 
+## 2026-05-27 · Custom style ingestion = ephemeral for V1
+
+**Decided:** When a user adds a "Custom" coach via URL / description / upload, the entry is **ephemeral** to that athlete's session — stored against `athlete_id` in a `custom_coaches` table, not promoted to the global library. No moderation, no popularity promotion.
+
+**Why:** Train V1 is a single-athlete product (Andy) so the question is hypothetical for now. When we open to F&F users, the global library is curated trust: 12 named coaches whose programs we vetted. Letting any user-added coach into the global pool turns the marketplace into Reddit. Better to keep custom coaches as personal extensions of one athlete's library; if 50 athletes add the same coach, that's a curation signal we can act on later.
+
+**Alternatives considered:**
+- Persist + auto-promote at N=10 users → premature; we don't know what "good" looks like yet
+- Persist + manual review queue → real moderation cost before there's revenue
+- Block custom entirely → cuts off a valid power-user path
+
+**Implementation sketch:**
+- `custom_coaches` table: `id, athlete_id, name, source_url?, description, principles, created_at`
+- Visible only to creator (filter by `athlete_id`)
+- Surface in marketplace with a `user-added` badge so visual hierarchy still pushes curated coaches forward
+
+**Resolves:** A24-317 (closed as decided)
+
+---
+
+## 2026-05-27 · Synthesis transparency = terse default with expand-on-demand
+
+**Decided:** Plan preview defaults to a **terse** presentation (block name / weeks / focus / source coach). Each block has a small "show reasoning ▾" disclosure that reveals 1-2 sentences of AI rationale when clicked. The rationale is generated as part of synthesis, stored in the `SamplePlan` shape (`block.rationale?: string`), and surfaced only if the athlete asks.
+
+**Why:** Two failure modes to avoid: (a) wall of AI-generated text that buries the actual plan (bad onboarding), (b) trust-me-bro black-box (bad credibility). The hybrid moves the explanation off the critical visual path while keeping it one tap away. Athletes who want to interrogate the plan can; athletes who just want to start training don't have to read prose.
+
+**Alternatives considered:**
+- Always verbose → wall of text, cognitive load up front
+- Always terse → trust gap; athlete can't disagree with reasoning they can't see
+- Per-block popover → too small for full rationale; mobile-hostile
+
+**Implementation:**
+- `SamplePlan.blocks[].rationale?: string` — populated by synthesis prompt (asks Claude to add 1-2 sentences per block)
+- `<BlockCard>` renders rationale behind a `<details><summary>` element so no JS state needed
+- Synthesis prompt instructs: "For each block, include `rationale` explaining why this phase fits *these* coaches and *this* athlete's goals/constraints in 1-2 sentences."
+
+**Resolves:** A24-318 (closed as decided)
+
+---
+
+## 2026-05-27 · Lifecycle edge cases — mid-week start + post-arc steady state
+
+**Decided:** Two related lifecycle decisions:
+
+1. **"Skip the first session" on activation** = **shift the start date forward** to the next session's natural day. Activating on Wednesday with a Mon/Wed/Fri plan → day 1 lands on Friday. Activating on Saturday with a Mon-Sat plan → day 1 lands on Monday (next session). The bundle isn't rewritten; we just stamp `arc.start_date` to the chosen first-session date, and dashboards/cron read from there.
+
+2. **Returning user with a completed arc** on `/plan` = **hybrid retro + CTA**. When the active arc's `end_date < today`, `/plan` shows: (a) retro summary card (compliance %, top PRs, KPI gap to target, 1-bullet AI verdict), (b) primary CTA "Plan your next arc →", (c) collapsible "Past arcs" history list below.
+
+**Why:**
+- Skip-the-first-session: rebuilding the bundle on the fly is fragile; shifting `start_date` is a one-field write. Going to "next Monday" feels wasteful when an athlete is ready *now*; picking up at the next scheduled session preserves the rhythm.
+- Post-arc state: athletes don't want to lose their accomplishment. A retro acknowledges the work; the CTA prevents the dashboard from feeling abandoned. Past arcs hidden by default so the surface stays focused on the present.
+
+**Alternatives considered:**
+- (Skip) Delete day 1 from bundle → mutates content, breaks `weeks/W01.md` numbering
+- (Skip) Re-do day 1 next Monday → wasteful; loses momentum
+- (Post-arc) Auto-prompt next arc on day 0 → presumptuous; user may want to rest
+- (Post-arc) Pure history view → no forward CTA, feels like the product is over
+
+**Implementation:**
+- Add `arc.start_date` to bundle `arc.md` frontmatter; activation route sets it based on intake "skip" choice
+- `/plan/page.tsx` branches on `arc.end_date < today`: render `<ArcRetroCard>` + `<PrimaryCTA>` + `<PastArcsList>`
+- Retro data computed server-side from Supabase aggregates over the arc's date range
+
+**Resolves:** A24-320 (closed as decided)
+
+---
+
 ## 2026-05-26 · 5-phase plan-creation flow
 
 **Decided:** The plan-creation experience runs through five distinct phases (intake → marketplace → review → synthesis → preview → activate), with the review step inserted between marketplace and synthesis so the athlete confirms their picks before triggering AI generation.
