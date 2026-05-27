@@ -81,6 +81,76 @@ def web():
     return fastapi_app
 
 
+# ----- Cron jobs (V1 backend automation) -------------------------------------
+#
+# All crons share the same image + secrets as `web` so they can read the
+# vendored bundle markdown and reach Linq + Supabase + Anthropic.
+#
+# Times below are in UTC. PT is UTC-7 (PDT) or UTC-8 (PST). For V1 we
+# schedule against PDT since the active arc runs May→Sep. A daylight-saving
+# correction can come later.
+
+
+@app.function(
+    image=image,
+    volumes={USER_VOLUME_PATH: user_state},
+    secrets=[
+        modal.Secret.from_name("train-agent-secrets"),
+        modal.Secret.from_name("train-text-secrets"),
+    ],
+    schedule=modal.Cron("30 13 * * *"),   # 6:30 AM PT daily (PDT)
+    timeout=180,
+)
+def cron_daily_sender() -> dict:
+    import asyncio
+    import sys
+
+    sys.path.insert(0, "/root")
+    from app.cron.daily_sender import run_daily_send
+
+    return asyncio.run(run_daily_send())
+
+
+@app.function(
+    image=image,
+    volumes={USER_VOLUME_PATH: user_state},
+    secrets=[
+        modal.Secret.from_name("train-agent-secrets"),
+        modal.Secret.from_name("train-text-secrets"),
+    ],
+    schedule=modal.Cron("0 14 * * 0"),    # Sunday 7:00 AM PT (PDT)
+    timeout=300,
+)
+def cron_sunday_digest() -> dict:
+    import asyncio
+    import sys
+
+    sys.path.insert(0, "/root")
+    from app.cron.sunday_digest import run_sunday_digest
+
+    return asyncio.run(run_sunday_digest())
+
+
+@app.function(
+    image=image,
+    volumes={USER_VOLUME_PATH: user_state},
+    secrets=[
+        modal.Secret.from_name("train-agent-secrets"),
+        modal.Secret.from_name("train-text-secrets"),
+    ],
+    schedule=modal.Cron("0 14 * * *"),    # 7:00 AM PT daily (no-op unless EOB)
+    timeout=300,
+)
+def cron_block_retro() -> dict:
+    import asyncio
+    import sys
+
+    sys.path.insert(0, "/root")
+    from app.cron.block_retro import run_block_retro
+
+    return asyncio.run(run_block_retro())
+
+
 # ----- Smokes ----------------------------------------------------------------
 
 

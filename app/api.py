@@ -27,6 +27,12 @@ load_dotenv()
 from app.agent import run_turn, user_workdir  # noqa: E402
 from app.config import CONFIG  # noqa: E402
 from app.linq import send_sms  # noqa: E402
+from app.sms_inbox import (  # noqa: E402
+    classify_intent,
+    is_authorized_sender,
+    persist_inbound,
+)
+from app.sms_parser import handle_inbound as parser_handle_inbound  # noqa: E402
 from app.webhook import SeenMessageIds, parse_inbound  # noqa: E402
 
 logging.basicConfig(level=CONFIG.log_level)
@@ -183,6 +189,67 @@ async def messages_webhook(request: Request) -> JSONResponse:
     await maybe_notify_andy(user_id, sender_phone)
     await _commit_volume()
     return JSONResponse({"ok": True, "accepted": mid})
+
+
+@app.post("/sms/inbound")
+async def sms_inbound(request: Request) -> JSONResponse:
+    """V1 athlete SMS log loop — A24-300/301/302/303.
+
+    Distinct from /messages/webhook (intake-agent loop). This route is
+    Andy-only: it parses workout logs / bodyweight pings and writes them
+    to Supabase (sms_inbox + exercise_sets / daily_metrics).
+
+    We persist to sms_inbox BEFORE running the parser so a parser blow-up
+    never loses data.
+    """
+    try:
+        body = await request.json()
+    except Exception:
+        return JSONResponse({"ok": True, "ignored": "invalid_json"})
+    if not isinstance(body, dict):
+        return JSONResponse({"ok": True, "ignored": "non_object"})
+
+    parsed = parse_inbound(body)
+    if parsed["kind"] != "received":
+        return JSONResponse({"ok": True, "ignored": parsed.get("event") or "unknown"})
+
+    mid = parsed["external_message_id"]
+    if mid in _seen:
+        return JSONResponse({"ok": True, "deduped": True})
+    _seen.add(mid)
+
+    sender_phone = parsed["sender_phone"]
+    text = parsed["text"]
+
+    if not is_authorized_sender(sender_phone):
+        log.info("sms_inbound rejected sender suffix=%s", _suffix(sender_phone))
+        await reply_sms(
+            to_phone=sender_phone,
+            text="Sorry, this number is not configured for logging.",
+            kind="reject",
+        )
+        return JSONResponse({"ok": True, "rejected": "unauthorized_sender"})
+
+    intent = classify_intent(text)
+    log.info(
+        "sms_inbound message_id=%s intent=%s chars=%d",
+        mid, intent, len(text),
+    )
+
+    # Persist BEFORE parsing so we never lose data.
+    inbox_row = await persist_inbound(
+        from_number=sender_phone, body=text, intent=intent,
+    )
+
+    # Hand off to the parser (it sends the reply internally).
+    try:
+        await parser_handle_inbound(inbox_row)
+    except Exception as exc:  # noqa: BLE001
+        log.exception("sms_inbound parser failed: %s", exc)
+        # Don't fail the webhook — the row is in sms_inbox for retry.
+        return JSONResponse({"ok": True, "accepted": mid, "parser_error": str(exc)[:200]})
+
+    return JSONResponse({"ok": True, "accepted": mid, "intent": intent})
 
 
 def _admin_ok(provided: str | None) -> bool:
