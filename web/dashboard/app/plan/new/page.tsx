@@ -16,6 +16,8 @@ import { COACHES, allGoals, LEVELS, getCoach } from "@/lib/coaches";
 import { useSelection } from "@/lib/use-selection";
 import { useIntake, useReviewNotes } from "@/lib/use-intake";
 import { scoreCoach, topMatches, GOAL_LABEL } from "@/lib/matching";
+import { buildSamplePlan, type SamplePlan } from "@/lib/sample-plan";
+import type { GoalKey } from "@/lib/use-intake";
 
 type Phase = "intake" | "marketplace" | "review" | "synthesizing" | "preview" | "activated";
 
@@ -41,6 +43,19 @@ function NewArcPageInner() {
     level: "all",
   });
   const [phase, setPhase] = useState<Phase>("intake");
+  const [synthesizedPlan, setSynthesizedPlan] = useState<SamplePlan | null>(null);
+  const [synthesisInfo, setSynthesisInfo] = useState<{
+    synthesized: boolean;
+    reason?: string;
+  } | null>(null);
+  const [progressSteps, setProgressSteps] = useState<string[]>([]);
+  const [activationResult, setActivationResult] = useState<{
+    slug?: string;
+    paths?: { bundle?: string; arc?: string; currentWeek?: string; xlsx?: string };
+    wrote?: boolean;
+    archived?: string | null;
+    reason?: string;
+  } | null>(null);
 
   // On first hydration, jump straight to marketplace if intake was previously
   // completed (returning user). Otherwise stay on intake until they click
@@ -94,14 +109,125 @@ function NewArcPageInner() {
     setPhase("review");
   }
 
-  // Review "Build plan" triggers synthesis
-  function handleSynthesize() {
+  // Review "Build plan" triggers synthesis — POSTs to /api/synthesize and
+  // streams progress events. Falls back to the local mocked plan if the API
+  // returns synthesized=false (no key) or any error occurs.
+  async function handleSynthesize() {
     setPhase("synthesizing");
-    setTimeout(() => setPhase("preview"), 3000);
+    setProgressSteps([]);
+    setSynthesizedPlan(null);
+    setSynthesisInfo(null);
+
+    const coaches = selected
+      .map((id) => getCoach(id))
+      .filter((c): c is NonNullable<ReturnType<typeof getCoach>> => !!c);
+    const fallbackPlan = buildSamplePlan(coaches, intake.goals as GoalKey[]);
+
+    try {
+      const res = await fetch("/api/synthesize", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          coachIds: selected,
+          intake,
+          notes: reviewNotes,
+        }),
+      });
+
+      const ct = res.headers.get("content-type") ?? "";
+      if (ct.includes("application/json")) {
+        // No-key fallback path: JSON response.
+        const data = (await res.json()) as {
+          plan: SamplePlan;
+          synthesized: boolean;
+          reason?: string;
+        };
+        setSynthesizedPlan(data.plan);
+        setSynthesisInfo({ synthesized: data.synthesized, reason: data.reason });
+        setPhase("preview");
+        return;
+      }
+
+      if (!res.body) throw new Error("no response body");
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let finalPlan: SamplePlan | null = null;
+      let info: { synthesized: boolean; reason?: string } = { synthesized: true };
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        // SSE messages are separated by blank lines.
+        const chunks = buffer.split("\n\n");
+        buffer = chunks.pop() ?? "";
+        for (const chunk of chunks) {
+          const lines = chunk.split("\n");
+          let event = "message";
+          let data = "";
+          for (const line of lines) {
+            if (line.startsWith("event: ")) event = line.slice(7).trim();
+            else if (line.startsWith("data: ")) data += line.slice(6);
+          }
+          if (!data) continue;
+          try {
+            const parsed = JSON.parse(data) as Record<string, unknown>;
+            if (event === "progress" && typeof parsed.label === "string") {
+              setProgressSteps((prev) => [...prev, parsed.label as string]);
+            } else if (event === "done") {
+              finalPlan = (parsed.plan as SamplePlan) ?? null;
+              info = {
+                synthesized: parsed.synthesized !== false,
+                reason: typeof parsed.reason === "string" ? parsed.reason : undefined,
+              };
+            }
+          } catch {
+            // Ignore malformed chunk.
+          }
+        }
+      }
+
+      if (finalPlan) {
+        setSynthesizedPlan(finalPlan);
+        setSynthesisInfo(info);
+      } else {
+        setSynthesizedPlan(fallbackPlan);
+        setSynthesisInfo({ synthesized: false, reason: "stream ended without plan" });
+      }
+      setPhase("preview");
+    } catch (err) {
+      setSynthesizedPlan(fallbackPlan);
+      setSynthesisInfo({
+        synthesized: false,
+        reason: err instanceof Error ? err.message : "synthesis request failed",
+      });
+      setPhase("preview");
+    }
   }
 
-  function handleActivate() {
+  async function handleActivate() {
     setPhase("activated");
+    setActivationResult(null);
+    if (!synthesizedPlan) return;
+    try {
+      const res = await fetch("/api/activate", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          plan: synthesizedPlan,
+          coachIds: selected,
+          intake,
+          notes: reviewNotes,
+        }),
+      });
+      const data = await res.json();
+      setActivationResult(data);
+    } catch (err) {
+      setActivationResult({
+        reason: err instanceof Error ? err.message : "activation request failed",
+      });
+    }
   }
 
   // While hydrating, render nothing to avoid flash
@@ -152,12 +278,17 @@ function NewArcPageInner() {
         />
       )}
 
-      {phase === "synthesizing" && <SynthesizingPhase selected={selected} />}
+      {phase === "synthesizing" && (
+        <SynthesizingPhase selected={selected} steps={progressSteps} />
+      )}
 
       {phase === "preview" && (
         <PlanPreview
           selectedCoachIds={selected}
           goals={intake.goals}
+          plan={synthesizedPlan ?? undefined}
+          synthesized={synthesisInfo?.synthesized}
+          fallbackReason={synthesisInfo?.reason}
           onActivate={handleActivate}
           onBack={() => setPhase("review")}
         />
@@ -165,6 +296,8 @@ function NewArcPageInner() {
 
       {phase === "activated" && (
         <ActivatedPhase
+          plan={synthesizedPlan}
+          result={activationResult}
           onClearSelection={() => {
             clear();
             clearReviewNotes();
@@ -306,29 +439,39 @@ function MarketplacePhase({
 
 // ─── Phase: synthesizing ───────────────────────────────────────────────────
 
-function SynthesizingPhase({ selected }: { selected: string[] }) {
+function SynthesizingPhase({
+  selected,
+  steps,
+}: {
+  selected: string[];
+  steps: string[];
+}) {
   const names = selected
     .map((id) => getCoach(id)?.name)
     .filter(Boolean)
     .join(" · ");
+  // Show streamed steps as `done`, plus an `active` placeholder line.
+  const lines = steps.length > 0
+    ? steps
+    : ["Loading coach principles", "Reading your context", "Designing arc structure"];
   return (
     <div className="max-w-2xl mx-auto py-16">
       <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-8">
         <div className="text-[14px] text-[var(--ink)] mb-1">Composing your plan…</div>
         <div className="text-[11px] font-mono uppercase tracking-wider text-[var(--ink-muted)] mb-1">
-          ~ 45 seconds
+          ~ 30–60 seconds
         </div>
         <div className="text-[11px] text-[var(--ink-muted)] mb-6 truncate">
           synthesizing from: {names}
         </div>
         <div className="space-y-2 text-[12px]">
-          <ProgressStep label="Loading coach principles" status="done" />
-          <ProgressStep label="Reading your context" status="done" />
-          <ProgressStep label="Designing arc structure" status="active" />
-          <ProgressStep label="Block 1 · Foundation" status="pending" />
-          <ProgressStep label="Block 2 · Power Development" status="pending" />
-          <ProgressStep label="Block 3 · Plyometric Ladder" status="pending" />
-          <ProgressStep label="Block 4 · Peak" status="pending" />
+          {lines.map((label, i) => (
+            <ProgressStep
+              key={`${i}-${label}`}
+              label={label}
+              status={i === lines.length - 1 ? "active" : "done"}
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -362,11 +505,29 @@ function ProgressStep({
 
 // ─── Phase: activated ──────────────────────────────────────────────────────
 
-function ActivatedPhase({ onClearSelection }: { onClearSelection: () => void }) {
+function ActivatedPhase({
+  plan,
+  result,
+  onClearSelection,
+}: {
+  plan: SamplePlan | null;
+  result: {
+    slug?: string;
+    paths?: { bundle?: string; arc?: string; currentWeek?: string; xlsx?: string };
+    wrote?: boolean;
+    archived?: string | null;
+    reason?: string;
+  } | null;
+  onClearSelection: () => void;
+}) {
   // Clear the selection cart since the plan is now "live"
   useEffect(() => {
     onClearSelection();
   }, [onClearSelection]);
+
+  const title = plan?.meta.title ?? "Your new arc";
+  const horizon = plan?.meta.horizon ?? "16 weeks";
+  const dpw = plan?.meta.daysPerWeek ?? 5;
 
   return (
     <div className="max-w-2xl mx-auto py-16">
@@ -376,12 +537,32 @@ function ActivatedPhase({ onClearSelection }: { onClearSelection: () => void }) 
           <span className="text-[16px] text-[var(--ink)]">Your plan is live.</span>
         </div>
         <div className="text-[12px] text-[var(--ink-dim)] mb-2 tabular">
-          2026 Fall Vertical Cycle · 16 weeks · 5 days/week
+          {title} · {horizon} · {dpw} days/week
         </div>
         <div className="text-[12px] text-[var(--ink-dim)] mb-6">
           Tomorrow at 6:30 AM you'll get your first session via SMS. Text back
           what you did and the dashboard updates in real time.
         </div>
+
+        {result?.paths && (
+          <div className="mb-6 rounded-sm border border-[var(--line)] bg-[var(--bg-elev-2)] p-3 text-[10px] font-mono leading-relaxed text-[var(--ink-dim)] tabular">
+            <div className="text-[var(--ink-muted)] uppercase tracking-wider mb-1">
+              bundle{result.wrote ? "" : " (dry run)"}
+            </div>
+            {result.slug && <div>slug: {result.slug}</div>}
+            {result.paths.bundle && <div>{result.paths.bundle}/</div>}
+            {result.paths.arc && <div>  {result.paths.arc.replace(`${result.paths.bundle ?? ""}/`, "")}</div>}
+            {result.paths.currentWeek && (
+              <div>  {result.paths.currentWeek.replace(`${result.paths.bundle ?? ""}/`, "")}</div>
+            )}
+            {result.archived && (
+              <div className="mt-1">archived: {result.archived}</div>
+            )}
+            {result.reason && (
+              <div className="mt-1 text-[var(--ink-muted)]">{result.reason}</div>
+            )}
+          </div>
+        )}
 
         <div className="space-y-2">
           <Link
@@ -396,10 +577,6 @@ function ActivatedPhase({ onClearSelection }: { onClearSelection: () => void }) 
           <button className="block w-full text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm border border-[var(--line)] text-[var(--ink-muted)] hover:text-[var(--ink)]">
             Skip the first session
           </button>
-        </div>
-
-        <div className="mt-6 pt-4 border-t border-[var(--line-soft)] text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
-          mocked flow · nothing was actually generated
         </div>
       </div>
     </div>

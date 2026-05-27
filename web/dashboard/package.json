@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.99.0",
     "@supabase/supabase-js": "^2.106.0",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
