@@ -814,3 +814,187 @@ export async function resolveExerciseSlug(slug: string): Promise<string | null> 
   }
   return null;
 }
+
+// ----- ROM tests (movement pillar) ------------------------------------------
+
+export type ROMTestType = {
+  id: string;
+  name: string;
+  unit: "cm" | "deg";
+  better_direction: "increase" | "decrease";
+};
+
+export type ROMTestRow = {
+  id: string;
+  test_type_id: string;
+  test_type_name: string;
+  unit: "cm" | "deg";
+  better_direction: "increase" | "decrease";
+  measured_at: string;
+  value: number;
+  side: "L" | "R" | null;
+  notes: string | null;
+};
+
+export type ROMSeries = {
+  type: ROMTestType;
+  rows: ROMTestRow[];        // chronological asc
+  current: number | null;    // most recent value
+  previous: number | null;   // value ≥ 30 days before `current`
+  delta30: number | null;    // current − previous (signed, raw units)
+  pctDelta30: number | null; // % delta over the last ~30 days
+};
+
+/**
+ * Fetch the catalog + all measurements for the movement dashboard.
+ *
+ * Always returns one entry per test type in the catalog (even when empty), so
+ * the dashboard can render skeleton states without crashing. Failures fall
+ * through to an empty array.
+ */
+export async function getROMTests(lookbackDays = 365): Promise<ROMSeries[]> {
+  try {
+    const since = new Date();
+    since.setDate(since.getDate() - lookbackDays);
+
+    const [{ data: typeData, error: typeErr }, { data: rowData, error: rowErr }] =
+      await Promise.all([
+        supabase()
+          .from("rom_test_types")
+          .select("id, name, unit, better_direction")
+          .order("name"),
+        supabase()
+          .from("rom_tests")
+          .select(
+            "id, test_type_id, measured_at, value, side, notes, " +
+              "rom_test_types ( name, unit, better_direction )"
+          )
+          .gte("measured_at", since.toISOString())
+          .order("measured_at", { ascending: true }),
+      ]);
+
+    if (typeErr) {
+      console.warn("getROMTests: types fetch failed:", typeErr.message);
+      return [];
+    }
+    if (rowErr) {
+      console.warn("getROMTests: rows fetch failed:", rowErr.message);
+    }
+
+    const types = (typeData ?? []) as unknown as ROMTestType[];
+    const rows = (rowData ?? []) as unknown as Array<{
+      id: string;
+      test_type_id: string;
+      measured_at: string;
+      value: number | string;
+      side: "L" | "R" | null;
+      notes: string | null;
+      rom_test_types:
+        | {
+            name: string;
+            unit: "cm" | "deg";
+            better_direction: "increase" | "decrease";
+          }
+        | Array<{
+            name: string;
+            unit: "cm" | "deg";
+            better_direction: "increase" | "decrease";
+          }>
+        | null;
+    }>;
+
+    const byType = new Map<string, ROMTestRow[]>();
+    for (const r of rows) {
+      const metaRaw = r.rom_test_types;
+      const meta = Array.isArray(metaRaw) ? metaRaw[0] : metaRaw;
+      if (!meta) continue;
+      const flat: ROMTestRow = {
+        id: r.id,
+        test_type_id: r.test_type_id,
+        test_type_name: meta.name,
+        unit: meta.unit,
+        better_direction: meta.better_direction,
+        measured_at: r.measured_at,
+        value: typeof r.value === "string" ? parseFloat(r.value) : r.value,
+        side: r.side,
+        notes: r.notes,
+      };
+      const bucket = byType.get(r.test_type_id) ?? [];
+      bucket.push(flat);
+      byType.set(r.test_type_id, bucket);
+    }
+
+    const now = new Date();
+    const thirtyDaysAgo = new Date(now);
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
+    return types.map((t) => {
+      const rs = byType.get(t.id) ?? [];
+      const current = rs.length > 0 ? rs[rs.length - 1].value : null;
+      // pick the row whose measured_at is the most-recent before thirtyDaysAgo,
+      // falling back to the earliest row if nothing predates the window.
+      let previous: number | null = null;
+      for (let i = rs.length - 1; i >= 0; i--) {
+        if (new Date(rs[i].measured_at) <= thirtyDaysAgo) {
+          previous = rs[i].value;
+          break;
+        }
+      }
+      if (previous == null && rs.length >= 2) {
+        previous = rs[0].value;
+      }
+      const delta30 = current != null && previous != null ? +(current - previous).toFixed(2) : null;
+      const pctDelta30 =
+        current != null && previous != null && previous !== 0
+          ? +(((current - previous) / Math.abs(previous)) * 100).toFixed(1)
+          : null;
+
+      return { type: t, rows: rs, current, previous, delta30, pctDelta30 };
+    });
+  } catch (e) {
+    console.warn("getROMTests failed:", (e as Error).message);
+    return [];
+  }
+}
+
+export type ROMHeadline = {
+  name: string;
+  unit: "cm" | "deg";
+  current: number | null;
+  delta30: number | null;
+  pctDelta30: number | null;
+  trend: "up" | "down" | "flat" | null;
+  betterDirection: "increase" | "decrease";
+};
+
+/**
+ * Headline summary — one row per test type, suitable for KPI cards + the
+ * change list. Derives the trend direction from better_direction so the same
+ * KPI card colour-codes "good" vs "bad" correctly.
+ */
+export async function getROMHeadlines(): Promise<ROMHeadline[]> {
+  const series = await getROMTests();
+  return series.map((s) => {
+    const trend: ROMHeadline["trend"] =
+      s.delta30 == null
+        ? null
+        : Math.abs(s.delta30) < 0.05
+          ? "flat"
+          : s.delta30 > 0
+            ? s.type.better_direction === "increase"
+              ? "up"
+              : "down"
+            : s.type.better_direction === "increase"
+              ? "down"
+              : "up";
+    return {
+      name: s.type.name,
+      unit: s.type.unit,
+      current: s.current,
+      delta30: s.delta30,
+      pctDelta30: s.pctDelta30,
+      trend,
+      betterDirection: s.type.better_direction,
+    };
+  });
+}

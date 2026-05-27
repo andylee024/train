@@ -47,6 +47,24 @@ const ENTRIES: GalleryEntry[] = [
     description: "Diverging-bar list of every lift with filter chips + search.",
     defaultW: 12,
   },
+  {
+    kind: "bw-trend",
+    label: "Bodyweight Trend",
+    description: "Line chart of bodyweight vs target curve.",
+    defaultW: 12,
+  },
+  {
+    kind: "rom-trajectory",
+    label: "ROM Trajectory",
+    description: "Line chart of one range-of-motion test over time.",
+    defaultW: 6,
+  },
+  {
+    kind: "rom-change-list",
+    label: "ROM 30-day Change",
+    description: "Diverging-bar list of % change over the last 30 days.",
+    defaultW: 12,
+  },
 ];
 
 export function WidgetGallery({
@@ -140,6 +158,12 @@ function ConfigForm({
       return <PRLogForm onSubmit={onSubmit} />;
     case "lift-change":
       return <LiftChangeForm onSubmit={onSubmit} ctx={ctx} />;
+    case "bw-trend":
+      return <BWTrendForm onSubmit={onSubmit} />;
+    case "rom-trajectory":
+      return <ROMTrajectoryForm onSubmit={onSubmit} ctx={ctx} />;
+    case "rom-change-list":
+      return <ROMChangeListForm onSubmit={onSubmit} />;
   }
 }
 
@@ -226,6 +250,68 @@ function LiftChangeForm({ ctx, onSubmit }: { ctx: RenderContext; onSubmit: (prop
     >
       <div className="text-[11px] text-[var(--ink-muted)]">
         Uses default key lifts for the active tab. Filter chips (All / Core / Growing / Declining / Stalled) are built in.
+      </div>
+    </FormShell>
+  );
+}
+
+function BWTrendForm({ onSubmit }: { onSubmit: (props: WidgetSpec["props"]) => void }) {
+  const [lookbackDays, setLookbackDays] = useState(60);
+  return (
+    <FormShell
+      onSubmit={() => onSubmit({ lookbackDays, title: "Bodyweight" })}
+      submitLabel="Add Trend"
+    >
+      <Label>Lookback (days)</Label>
+      <Select
+        value={lookbackDays}
+        onChange={setLookbackDays}
+        options={[30, 60, 90, 180].map((d) => ({ value: d, label: `Last ${d} days` }))}
+      />
+    </FormShell>
+  );
+}
+
+function ROMTrajectoryForm({
+  ctx,
+  onSubmit,
+}: {
+  ctx: RenderContext;
+  onSubmit: (props: WidgetSpec["props"]) => void;
+}) {
+  const options =
+    (ctx.romSeries ?? []).map((s) => ({
+      value: s.type.name,
+      label: `${s.type.name} (${s.rows.length} logs)`,
+    }));
+  const fallback = options[0]?.value ?? "";
+  const [testName, setTestName] = useState(fallback);
+  return (
+    <FormShell
+      onSubmit={() => onSubmit({ testName })}
+      submitLabel="Add Trajectory"
+      disabled={!testName}
+    >
+      <Label>ROM test</Label>
+      {options.length > 0 ? (
+        <Select value={testName} onChange={setTestName} options={options} />
+      ) : (
+        <div className="text-[11px] text-[var(--ink-muted)]">
+          No ROM test types loaded.
+        </div>
+      )}
+    </FormShell>
+  );
+}
+
+function ROMChangeListForm({ onSubmit }: { onSubmit: (props: WidgetSpec["props"]) => void }) {
+  return (
+    <FormShell
+      onSubmit={() => onSubmit({})}
+      submitLabel="Add Change List"
+    >
+      <div className="text-[11px] text-[var(--ink-muted)]">
+        Shows % change over the last 30 days for every ROM test with data.
       </div>
     </FormShell>
   );

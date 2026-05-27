@@ -19,12 +19,21 @@ import type {
   DashboardConfig,
   WidgetSpec,
 } from "@/lib/widgets/types";
-import type { LiftChange, KeyLiftCard, ExerciseSummary, TabHeadlines } from "@/lib/queries";
+import type {
+  LiftChange,
+  KeyLiftCard,
+  ExerciseSummary,
+  TabHeadlines,
+  ROMSeries,
+  ROMHeadline,
+} from "@/lib/queries";
 import { KPIWidget } from "./kpi-widget";
 import { LiftTrajectoryWidget } from "./lift-trajectory-widget";
 import { PRLogWidget } from "./pr-log-widget";
 import { LiftChangeWidget } from "./lift-change-widget";
 import { BWTrendWidget } from "./bw-trend-widget";
+import { ROMTrajectoryWidget } from "./rom-trajectory-widget";
+import { ROMChangeListWidget } from "./rom-change-list-widget";
 import { useEditMode } from "./edit-context";
 import { WidgetGallery } from "./widget-gallery";
 import { cn } from "@/lib/cn";
@@ -44,6 +53,9 @@ export type RenderContext = {
   inTab?: (name: string) => boolean;
   // Nutrition fields
   bwSeries?: { date: string; bw: number | null; target: number }[];
+  // Movement fields
+  romSeries?: ROMSeries[];
+  romHeadlines?: ROMHeadline[];
 };
 
 const COL_SPAN: Record<ColumnSpan, string> = {
@@ -211,6 +223,25 @@ function renderWidget(spec: WidgetSpec, ctx: RenderContext): ReactNode {
           title={spec.props.title}
           lookbackDays={spec.props.lookbackDays}
           series={ctx.bwSeries ?? []}
+        />
+      );
+
+    case "rom-trajectory": {
+      const series =
+        ctx.romSeries?.find((s) => s.type.name === spec.props.testName) ?? null;
+      return wrap(
+        <ROMTrajectoryWidget
+          series={series}
+          title={spec.props.title ?? spec.props.testName}
+        />
+      );
+    }
+
+    case "rom-change-list":
+      return wrap(
+        <ROMChangeListWidget
+          headlines={ctx.romHeadlines ?? []}
+          filterNames={spec.props.testNames}
         />
       );
   }

@@ -7,6 +7,7 @@ import {
   Gauge,
   Target,
   Utensils,
+  Activity,
   Settings,
 } from "lucide-react";
 import { cn } from "@/lib/cn";
@@ -15,6 +16,7 @@ const NAV = [
   { href: "/plan", label: "Plan", icon: Target, shortcut: "P" },
   { href: "/strength", label: "Performance", icon: Gauge, shortcut: "S" },
   { href: "/nutrition", label: "Nutrition", icon: Utensils, shortcut: "N" },
+  { href: "/movement", label: "Movement", icon: Activity, shortcut: "M" },
 ];
 
 export function Sidebar() {

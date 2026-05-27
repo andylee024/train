@@ -43,6 +43,17 @@ export type BwTrendWidgetSpecProps = {
   lookbackDays?: number;
 };
 
+export type RomTrajectoryWidgetSpecProps = {
+  /** Canonical name from `rom_test_types.name` (e.g. "Hip IR L"). */
+  testName: string;
+  title?: string;
+};
+
+export type RomChangeListWidgetSpecProps = {
+  /** Subset filter — when omitted, all ROM tests in ctx are shown. */
+  testNames?: string[];
+};
+
 // ----- Discriminated union ---------------------------------------------------
 
 export type WidgetSpec =
@@ -50,7 +61,9 @@ export type WidgetSpec =
   | { kind: "lift-trajectory"; w: ColumnSpan; props: LiftTrajectoryWidgetSpecProps }
   | { kind: "pr-log";          w: ColumnSpan; props: PrLogWidgetSpecProps }
   | { kind: "lift-change";     w: ColumnSpan; props: LiftChangeWidgetSpecProps }
-  | { kind: "bw-trend";        w: ColumnSpan; props: BwTrendWidgetSpecProps };
+  | { kind: "bw-trend";        w: ColumnSpan; props: BwTrendWidgetSpecProps }
+  | { kind: "rom-trajectory";  w: ColumnSpan; props: RomTrajectoryWidgetSpecProps }
+  | { kind: "rom-change-list"; w: ColumnSpan; props: RomChangeListWidgetSpecProps };
 
 export type DashboardSection = {
   label?: string;
