@@ -93,10 +93,11 @@ export function LineChartViz({
               padding: "4px 6px",
             }}
             labelStyle={{ color: MUTED, fontSize: 10 }}
-            formatter={(v: number | null, name: string) => {
-              if (v == null) return ["—", name];
-              const formatted = valueFormatter ? valueFormatter(v) : `${v}${unit}`;
-              return [formatted, name];
+            formatter={(v, name) => {
+              if (v == null) return ["—", String(name)];
+              const n = Number(v);
+              const formatted = valueFormatter ? valueFormatter(n) : `${n}${unit}`;
+              return [formatted, String(name)];
             }}
           />
           {hasOverlay && (

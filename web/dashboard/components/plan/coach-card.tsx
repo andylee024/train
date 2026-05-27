@@ -9,11 +9,13 @@ export function CoachCard({
   selected,
   onToggle,
   onOpen,
+  matchesGoals: _matchesGoals,
 }: {
   coach: Coach;
   selected: boolean;
   onToggle: () => void;
   onOpen?: () => void;
+  matchesGoals?: boolean;
 }) {
   const accent = CATEGORIES[coach.category].accent;
   const catLabel = CATEGORIES[coach.category].label;

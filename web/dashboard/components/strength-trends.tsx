@@ -77,7 +77,7 @@ function TrendRow({ card }: { card: KeyLiftCard }) {
                 padding: "4px 6px",
               }}
               labelStyle={{ color: MUTED, fontSize: 10 }}
-              formatter={(v: number) => [`${v} lb`, ""]}
+              formatter={(v) => [`${Number(v)} lb`, ""]}
               separator=""
             />
             <Line

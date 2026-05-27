@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ChevronLeft, CheckCircle2, Pencil } from "lucide-react";
@@ -14,17 +14,25 @@ import { ReviewBlend } from "@/components/plan/review-blend";
 import { PlanPreview } from "@/components/plan/plan-preview";
 import { COACHES, allGoals, LEVELS, getCoach } from "@/lib/coaches";
 import { useSelection } from "@/lib/use-selection";
-import { useIntake } from "@/lib/use-intake";
+import { useIntake, useReviewNotes } from "@/lib/use-intake";
 import { scoreCoach, topMatches, GOAL_LABEL } from "@/lib/matching";
 
 type Phase = "intake" | "marketplace" | "review" | "synthesizing" | "preview" | "activated";
 
 export default function NewArcPage() {
+  return (
+    <Suspense fallback={<div className="max-w-7xl pb-24" />}>
+      <NewArcPageInner />
+    </Suspense>
+  );
+}
+
+function NewArcPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { selected, toggle, remove, clear } = useSelection();
   const { intake, hydrated, isComplete, setDays } = useIntake();
-  const [reviewNotes, setReviewNotes] = useState("");
+  const { notes: reviewNotes, setNotes: setReviewNotes, clear: clearReviewNotes } = useReviewNotes();
 
   const [filters, setFilters] = useState<Filters>({
     search: "",
@@ -149,12 +157,20 @@ export default function NewArcPage() {
       {phase === "preview" && (
         <PlanPreview
           selectedCoachIds={selected}
+          goals={intake.goals}
           onActivate={handleActivate}
           onBack={() => setPhase("review")}
         />
       )}
 
-      {phase === "activated" && <ActivatedPhase onClearSelection={clear} />}
+      {phase === "activated" && (
+        <ActivatedPhase
+          onClearSelection={() => {
+            clear();
+            clearReviewNotes();
+          }}
+        />
+      )}
     </div>
   );
 }

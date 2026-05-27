@@ -103,7 +103,7 @@ export function CompositeChart({
             data={chartData}
             margin={{ top: 8, right: 8, bottom: 0, left: 0 }}
             onClick={(e) => {
-              if (e && e.activeTooltipIndex != null) setSelectedIdx(e.activeTooltipIndex);
+              if (e && e.activeTooltipIndex != null) setSelectedIdx(Number(e.activeTooltipIndex));
             }}
           >
             <XAxis
@@ -132,7 +132,11 @@ export function CompositeChart({
                 padding: "4px 6px",
               }}
               labelStyle={{ color: MUTED, fontSize: 10 }}
-              formatter={(v: number | null) => v == null ? ["—", ""] : [v.toFixed(1), "index"]}
+              formatter={(v) => {
+                if (v == null) return ["—", ""];
+                const n = Number(v);
+                return [Number.isFinite(n) ? n.toFixed(1) : "—", "index"];
+              }}
               separator=""
             />
             <Line
