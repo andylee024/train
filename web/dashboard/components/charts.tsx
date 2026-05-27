@@ -10,13 +10,17 @@ import {
   ResponsiveContainer,
   BarChart,
   Bar,
+  Area,
+  AreaChart,
 } from "recharts";
 
 const COLORS = {
-  accent: "#ff7a3d",
-  ink: "#ecedef",
-  muted: "#5b616c",
-  line: "#232834",
+  accent: "#5b9eff",
+  ink: "#eef1f5",
+  muted: "#4a5160",
+  line: "#1f2530",
+  tooltipBg: "#11151c",
+  tooltipBorder: "#1f2530",
 };
 
 export function LineChartCard({
@@ -62,10 +66,11 @@ export function LineChartCard({
           <Tooltip
             cursor={{ stroke: color, strokeWidth: 1, strokeDasharray: "3 3" }}
             contentStyle={{
-              backgroundColor: "#11141a",
-              border: "1px solid #232834",
-              borderRadius: 8,
-              fontSize: 12,
+              backgroundColor: COLORS.tooltipBg,
+              border: `1px solid ${COLORS.tooltipBorder}`,
+              borderRadius: 4,
+              fontSize: 11,
+              color: COLORS.ink,
             }}
             labelStyle={{ color: COLORS.ink, fontSize: 11 }}
             itemStyle={{ color: COLORS.ink }}
@@ -80,6 +85,48 @@ export function LineChartCard({
             activeDot={{ r: 5 }}
           />
         </LineChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+export function Sparkline({
+  data,
+  yKey,
+  color = COLORS.accent,
+  height = 32,
+}: {
+  data: Record<string, unknown>[];
+  yKey: string;
+  color?: string;
+  height?: number;
+}) {
+  if (data.length === 0) {
+    return (
+      <div style={{ height }} className="flex items-center text-[var(--ink-muted)] font-mono text-xs">
+        ───
+      </div>
+    );
+  }
+  return (
+    <div style={{ height }} className="w-full">
+      <ResponsiveContainer width="100%" height="100%">
+        <AreaChart data={data} margin={{ top: 2, right: 2, bottom: 2, left: 2 }}>
+          <defs>
+            <linearGradient id={`spark-${yKey}-${color}`} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={color} stopOpacity={0.3} />
+              <stop offset="100%" stopColor={color} stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <Area
+            type="monotone"
+            dataKey={yKey}
+            stroke={color}
+            strokeWidth={1.5}
+            fill={`url(#spark-${yKey}-${color})`}
+            isAnimationActive={false}
+          />
+        </AreaChart>
       </ResponsiveContainer>
     </div>
   );
@@ -118,10 +165,11 @@ export function VolumeBars({
           <Tooltip
             cursor={{ fill: "rgba(255,122,61,0.06)" }}
             contentStyle={{
-              backgroundColor: "#11141a",
-              border: "1px solid #232834",
-              borderRadius: 8,
-              fontSize: 12,
+              backgroundColor: COLORS.tooltipBg,
+              border: `1px solid ${COLORS.tooltipBorder}`,
+              borderRadius: 4,
+              fontSize: 11,
+              color: COLORS.ink,
             }}
             labelStyle={{ color: COLORS.ink }}
             itemStyle={{ color: COLORS.ink }}

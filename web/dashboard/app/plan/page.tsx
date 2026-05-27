@@ -1,142 +1,76 @@
+import Link from "next/link";
+import { Plus } from "lucide-react";
 import { getArcSummary } from "@/lib/bundle";
-import { Card, CardBody, CardHeader, CardTitle, PageHeader, Badge } from "@/components/ui";
-import { format } from "@/lib/format";
-import { Target, ChevronRight } from "lucide-react";
+import { getDailyActivity } from "@/lib/queries";
+import { ArcTimeline } from "@/components/arc-timeline";
+import { ConsistencyHeatmap } from "@/components/consistency-heatmap";
+import { GoalsList } from "@/components/goals-list";
+import { PageHeader, Section } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
+async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
+  try {
+    return await fn();
+  } catch (e) {
+    console.warn("[plan] query failed:", (e as Error).message);
+    return fallback;
+  }
+}
+
 export default async function PlanPage() {
   const arc = await getArcSummary();
+  const days = await safe(() => getDailyActivity(112), []);
 
   if (!arc) {
     return (
-      <div className="max-w-6xl">
+      <div className="max-w-5xl">
         <PageHeader title="Plan" />
-        <Card>
-          <CardBody>
-            <div className="text-sm text-[var(--ink-muted)] py-3">
-              No active arc found. Add one at{" "}
-              <code className="font-mono text-[var(--ink-dim)]">
-                athletes/andy/arc-2026-summer-dunk/
-              </code>
-            </div>
-          </CardBody>
-        </Card>
+        <div className="text-[12px] text-[var(--ink-muted)] mt-6">
+          No active arc found.
+        </div>
       </div>
     );
   }
 
+  const daysRemaining = arc.end
+    ? Math.max(0, Math.ceil((new Date(arc.end).getTime() - Date.now()) / 86400000))
+    : 0;
+  const loggedDays = days.filter((d) => d.sets > 0).length;
+
   return (
-    <div className="max-w-6xl">
-      <PageHeader
-        title={arc.name}
-        subtitle={
-          <div className="flex items-center gap-3">
-            <span className="tabular">
-              {format.shortDate(arc.start)} → {format.shortDate(arc.end)}
-            </span>
-            <span className="text-[var(--ink-muted)]">·</span>
-            <span>{arc.totalWeeks} weeks</span>
-            <span className="text-[var(--ink-muted)]">·</span>
-            <Badge tone="accent">Week {arc.currentWeek} / {arc.totalWeeks}</Badge>
-          </div>
-        }
-      />
+    <div className="max-w-5xl">
+      <div className="flex items-baseline justify-between">
+        <PageHeader
+          title={arc.name}
+          subtitle={`Wk ${arc.currentWeek} of ${arc.totalWeeks}  ·  ${daysRemaining} days remaining`}
+        />
+        <Link
+          href="/plan/new"
+          className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--accent)] flex items-center gap-1 px-2 py-1 rounded-sm border border-[var(--line)] hover:border-[var(--accent-line)] transition-colors"
+        >
+          <Plus size={11} /> New Arc
+        </Link>
+      </div>
 
-      {/* Purpose */}
-      {arc.purpose && (
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle>Purpose</CardTitle>
-          </CardHeader>
-          <CardBody className="pt-1">
-            <p className="text-sm leading-relaxed text-[var(--ink-dim)]">
-              {arc.purpose}
-            </p>
-          </CardBody>
-        </Card>
-      )}
+      <Section label="Arc">
+        <ArcTimeline
+          blocks={arc.blocks}
+          totalWeeks={arc.totalWeeks}
+          currentWeek={arc.currentWeek}
+        />
+      </Section>
 
-      {/* Goals */}
-      {arc.goals.length > 0 && (
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle>Goals</CardTitle>
-            <Target size={14} className="text-[var(--ink-muted)]" />
-          </CardHeader>
-          <CardBody className="pt-1">
-            <div className="space-y-3">
-              {arc.goals.map((g, i) => (
-                <div
-                  key={i}
-                  className="grid grid-cols-[40px_1fr_auto] gap-3 py-2 border-b border-[var(--line-soft)] last:border-0"
-                >
-                  <div className="text-xs font-mono text-[var(--accent)] tracking-wider">
-                    G{i + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm leading-snug">{g.name}</div>
-                    {g.metric && (
-                      <div className="text-xs text-[var(--ink-muted)] mt-0.5">
-                        Test: {g.metric}
-                      </div>
-                    )}
-                  </div>
-                  {g.target && <Badge tone="muted">{g.target}</Badge>}
-                </div>
-              ))}
-            </div>
-          </CardBody>
-        </Card>
-      )}
+      <Section
+        label="Consistency"
+        meta={`${loggedDays} sessions · last ${Math.round(days.length / 7)} weeks`}
+      >
+        <ConsistencyHeatmap days={days} />
+      </Section>
 
-      {/* Block sequence */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Block sequence</CardTitle>
-          <div className="text-[10px] font-mono text-[var(--ink-muted)] tracking-wider">
-            {arc.blocks.filter((b) => b.status === "completed").length} done ·{" "}
-            {arc.blocks.filter((b) => b.status === "active").length} active ·{" "}
-            {arc.blocks.filter((b) => b.status === "planned").length} planned
-          </div>
-        </CardHeader>
-        <CardBody className="pt-2">
-          <div className="space-y-2">
-            {arc.blocks.map((b, i) => {
-              const tone =
-                b.status === "active"
-                  ? "accent"
-                  : b.status === "completed"
-                    ? "good"
-                    : "muted";
-              return (
-                <div
-                  key={i}
-                  className={`grid grid-cols-[80px_1fr_auto_24px] items-center gap-4 px-4 py-3 rounded-lg border ${
-                    b.status === "active"
-                      ? "bg-[var(--accent-soft)] border-[var(--accent-line)]"
-                      : "bg-[var(--bg-elev-2)] border-[var(--line)]"
-                  }`}
-                >
-                  <div className="text-xs font-mono text-[var(--ink-muted)] tabular">
-                    Wk {b.weeks}
-                  </div>
-                  <div>
-                    <div className="text-sm font-medium">{b.name}</div>
-                    {b.serves.length > 0 && (
-                      <div className="text-[11px] text-[var(--ink-muted)] mt-0.5">
-                        Serves: {b.serves.join(", ")}
-                      </div>
-                    )}
-                  </div>
-                  <Badge tone={tone}>{b.status}</Badge>
-                  <ChevronRight size={14} className="text-[var(--ink-muted)]" />
-                </div>
-              );
-            })}
-          </div>
-        </CardBody>
-      </Card>
+      <Section label="Goals">
+        <GoalsList goals={arc.goals} />
+      </Section>
     </div>
   );
 }

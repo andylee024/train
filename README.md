@@ -4,6 +4,8 @@ A training operating system — a single system that manages the full loop of pl
 
 The system replaces the four roles an athlete currently does themselves — coach, nutritionist, chief of staff, analyst — so their only job is to show up, do the work, and report what happened.
 
+For product scope and the V1 plan, see [`PRD.md`](PRD.md). For technical architecture, see [`SPEC.md`](SPEC.md).
+
 ## Live product
 
 | Surface | URL / location |

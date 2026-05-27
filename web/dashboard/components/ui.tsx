@@ -1,8 +1,13 @@
-/** Minimal shadcn-style primitives — Card, Badge, Stat, etc. */
+/**
+ * Kindle-tight primitives.
+ *
+ * No card backgrounds, no shadows. Sections separated by hairline rules + tracked
+ * mono section labels. Single accent color, otherwise grayscale ink.
+ */
 import { cn } from "@/lib/cn";
 import type { ReactNode } from "react";
 
-// ----- Card -------------------------------------------------------------------
+// ----- Card --- structural only, no visible chrome ---------------------------
 
 export function Card({
   children,
@@ -10,13 +15,7 @@ export function Card({
   ...props
 }: { children: ReactNode; className?: string } & React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      className={cn(
-        "rounded-xl bg-[var(--bg-elev-1)] border border-[var(--line)] overflow-hidden",
-        className
-      )}
-      {...props}
-    >
+    <div className={cn(className)} {...props}>
       {children}
     </div>
   );
@@ -24,7 +23,7 @@ export function Card({
 
 export function CardHeader({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <div className={cn("px-5 pt-4 pb-3 flex items-center justify-between", className)}>
+    <div className={cn("pb-2 flex items-center justify-between", className)}>
       {children}
     </div>
   );
@@ -32,28 +31,53 @@ export function CardHeader({ children, className }: { children: ReactNode; class
 
 export function CardTitle({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <div className={cn("text-[11px] font-mono uppercase tracking-[0.12em] text-[var(--ink-muted)]", className)}>
+    <div className={cn("section-label", className)}>
       {children}
     </div>
   );
 }
 
 export function CardBody({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={cn("px-5 pb-5", className)}>{children}</div>;
+  return <div className={cn(className)}>{children}</div>;
 }
 
-// ----- Badge ------------------------------------------------------------------
+// ----- Section --- the canonical Kindle pattern -----------------------------
+// Hairline rule + tracked mono label + body. Use this in place of Card.
+
+export function Section({
+  label,
+  meta,
+  children,
+  className,
+}: {
+  label: string;
+  meta?: ReactNode;
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <section className={cn("pt-5", className)}>
+      <div className="hairline pt-2 pb-3 flex items-baseline justify-between">
+        <span className="section-label">{label}</span>
+        {meta && <span className="text-[10px] font-mono text-[var(--ink-muted)] tabular">{meta}</span>}
+      </div>
+      {children}
+    </section>
+  );
+}
+
+// ----- Badge --- minimal, neutral by default --------------------------------
 
 type Tone = "default" | "accent" | "good" | "warn" | "bad" | "info" | "muted";
 
 const TONE_CLASS: Record<Tone, string> = {
-  default: "bg-[var(--bg-elev-3)] text-[var(--ink-dim)] border-[var(--line)]",
-  accent: "bg-[var(--accent-soft)] text-[var(--accent)] border-[var(--accent-line)]",
-  good: "bg-[rgba(74,222,128,0.12)] text-[var(--good)] border-[rgba(74,222,128,0.25)]",
-  warn: "bg-[rgba(250,204,21,0.12)] text-[var(--warn)] border-[rgba(250,204,21,0.25)]",
-  bad: "bg-[rgba(239,68,68,0.12)] text-[var(--bad)] border-[rgba(239,68,68,0.25)]",
-  info: "bg-[rgba(96,165,250,0.12)] text-[var(--info)] border-[rgba(96,165,250,0.25)]",
-  muted: "bg-transparent text-[var(--ink-muted)] border-[var(--line-soft)]",
+  default: "text-[var(--ink-dim)] border-[var(--line)]",
+  accent:  "text-[var(--accent)] border-[var(--accent-line)]",
+  good:    "text-[var(--good)] border-[var(--line)]",
+  warn:    "text-[var(--warn)] border-[var(--line)]",
+  bad:     "text-[var(--bad)] border-[var(--line)]",
+  info:    "text-[var(--info)] border-[var(--line)]",
+  muted:   "text-[var(--ink-muted)] border-[var(--line-soft)]",
 };
 
 export function Badge({
@@ -68,7 +92,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium border tabular",
+        "inline-flex items-center gap-1 px-1.5 py-0 rounded text-[10px] font-mono uppercase tracking-wider tabular border",
         TONE_CLASS[tone],
         className
       )}
@@ -78,7 +102,37 @@ export function Badge({
   );
 }
 
-// ----- Stat -------------------------------------------------------------------
+// ----- Headline --- the canonical "one number per pillar" primitive ----------
+
+export function Headline({
+  value,
+  unit,
+  caption,
+  delta,
+  deltaTone = "default",
+}: {
+  value: ReactNode;
+  unit?: string;
+  caption?: ReactNode;
+  delta?: ReactNode;
+  deltaTone?: Tone;
+}) {
+  const deltaToneClass =
+    deltaTone === "good" ? "text-[var(--good)]" :
+    deltaTone === "bad" ? "text-[var(--bad)]" :
+    deltaTone === "warn" ? "text-[var(--warn)]" :
+    "text-[var(--ink-dim)]";
+  return (
+    <div className="flex items-baseline gap-2">
+      <span className="text-[32px] font-semibold tabular leading-none">{value}</span>
+      {unit && <span className="text-sm text-[var(--ink-muted)] tabular">{unit}</span>}
+      {delta && <span className={cn("text-xs tabular", deltaToneClass)}>{delta}</span>}
+      {caption && <span className="text-[11px] text-[var(--ink-muted)] ml-2">{caption}</span>}
+    </div>
+  );
+}
+
+// ----- Stat --- legacy, kept for back-compat ---------------------------------
 
 export function Stat({
   label,
@@ -93,15 +147,11 @@ export function Stat({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <div className="text-[11px] font-mono uppercase tracking-[0.12em] text-[var(--ink-muted)]">
-        {label}
-      </div>
+      <div className="section-label">{label}</div>
       <div className="flex items-baseline gap-2">
         <div className="text-2xl font-semibold tracking-tight tabular">{value}</div>
         {trend && (
-          <Badge tone={trend.tone ?? "default"} className="!text-[10px] !py-0">
-            {trend.value}
-          </Badge>
+          <Badge tone={trend.tone ?? "default"}>{trend.value}</Badge>
         )}
       </div>
       {sub && <div className="text-xs text-[var(--ink-muted)]">{sub}</div>}
@@ -109,13 +159,13 @@ export function Stat({
   );
 }
 
-// ----- Divider ----------------------------------------------------------------
+// ----- Divider --------------------------------------------------------------
 
 export function Divider({ className }: { className?: string }) {
   return <div className={cn("h-px bg-[var(--line)]", className)} />;
 }
 
-// ----- Page header ------------------------------------------------------------
+// ----- PageHeader -----------------------------------------------------------
 
 export function PageHeader({
   title,
@@ -127,11 +177,13 @@ export function PageHeader({
   actions?: ReactNode;
 }) {
   return (
-    <div className="flex items-end justify-between mb-8">
+    <div className="flex items-end justify-between mb-2">
       <div>
-        <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
+        <h1 className="text-[28px] font-semibold tracking-tight leading-none">{title}</h1>
         {subtitle && (
-          <div className="mt-1.5 text-sm text-[var(--ink-dim)]">{subtitle}</div>
+          <div className="mt-1.5 text-[11px] text-[var(--ink-muted)] font-mono uppercase tracking-wider">
+            {subtitle}
+          </div>
         )}
       </div>
       {actions}

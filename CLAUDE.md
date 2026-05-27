@@ -2,13 +2,24 @@
 
 Orientation for Claude working in this repo. Read [`README.md`](README.md) first for the project overview; this file adds operational context.
 
+## Canonical product docs
+
+- [`PRD.md`](PRD.md) — product vision, JTBD, scope, success criteria. Start here.
+- [`SPEC.md`](SPEC.md) — technical spec (architecture, surfaces, data layer, decisions).
+- [`docs/product/decisions.md`](docs/product/decisions.md) — append-only decisions log.
+- [`docs/specs/plan-creation-shipped.md`](docs/specs/plan-creation-shipped.md) — what's actually wired today for the plan flow.
+- Linear `train` project — backlog (bugs, polish, features, open questions) as `A24-xxx` issues.
+
 ## Repo layout (one-line each)
 
-- `docs/product/` — what we're building (architecture, schemas, roadmap)
+- `docs/product/` — what we're building (architecture, schemas, roadmap, decisions)
+- `docs/specs/` — per-feature specs (shipped + draft)
 - `docs/training-styles/` — what coaches know (styles, exercises, frameworks)
 - `docs/team/` — AI coaching team roles + decision logic
 - `athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
-- `app/` — runtime code (CLI, Supabase, scripts)
+- `app/` — runtime code (CLI, Supabase, scripts, Modal app)
+- `web/dashboard/` — Next.js dashboard (`/plan`, `/strength`, `/nutrition`, plan-creation flow)
+- `web/landing/` — landing page (Vercel)
 - `prototypes/` — UI experiments
 - `.claude/skills/plan-training-arc/` — the training plan generator (Python)
 

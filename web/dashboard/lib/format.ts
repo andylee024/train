@@ -50,4 +50,38 @@ export const format = {
     const sign = d > 0 ? "+" : "";
     return `${sign}${Math.round(d * 10) / 10}`;
   },
+
+  /** Page orientation string — "Wk 4 of 18 · 87 days to Aug 15 · Block 1 of 3" */
+  orientation: (arc: {
+    currentWeek?: number;
+    totalWeeks?: number;
+    end?: string;
+    currentBlock?: { name: string } | null;
+    blocks?: { name: string }[];
+  }): string => {
+    const parts: string[] = [];
+    if (arc.currentWeek && arc.totalWeeks) {
+      parts.push(`Wk ${arc.currentWeek} of ${arc.totalWeeks}`);
+    }
+    if (arc.end) {
+      const days = Math.max(
+        0,
+        Math.ceil(
+          (new Date(arc.end).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
+        )
+      );
+      const endStr = new Date(arc.end).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+      });
+      parts.push(`${days} days to ${endStr}`);
+    }
+    if (arc.currentBlock && arc.blocks?.length) {
+      const idx = arc.blocks.findIndex((b) => b.name === arc.currentBlock!.name);
+      if (idx >= 0) {
+        parts.push(`Block ${idx + 1} of ${arc.blocks.length}`);
+      }
+    }
+    return parts.join("  ·  ");
+  },
 };

@@ -11,7 +11,7 @@
 - Primary Focus: First week of DNT 2-wk OLY specialization. Coach's lifts replace arc OLY at heavier intensity; body-part split + jump day preserved. **Wed restructured: Hip IR + Kick Day (replaces Recovery + Deep Flex + Pull-Up Volume).**
 - Source program: `styles/dnt-program-source.md`
 - Integration methodology: `styles/dnt-integration-methodology.md`
-- **Daily warm-up:** "The Daily 8" — `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
+- **Daily warm-up:** "The Daily 7" — `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
 - **Mobility catalog:** `athletes/andy/logs/mobility-exercises.csv` (Flexibility Maestro framework — IR-relevant exercises tagged in Notes column)
 
 ## Block Goals (Why This Week Exists)
@@ -176,7 +176,7 @@ This week shifts from "side-split-focused mobility" to **Hip IR + Kick Day** str
 
 | Day | Cool-down focus | Time |
 |---|---|---|
-| Sun | None (Daily 8 covers prep, pigeon stretch in main work) | — |
+| Sun | None (Daily 7 covers prep, pigeon stretch in main work) | — |
 | Mon | None | — |
 | Tue | Light IR prep (pre-Wed) | 4 min |
 | Wed | Session IS the cool-down — finishes with box breathing | — |
@@ -198,7 +198,7 @@ This week shifts from "side-split-focused mobility" to **Hip IR + Kick Day** str
 5. **Wrist pain (1-10) after every DNT session** — especially Sun (OHS), Thu (front squat), Sat (HPC).
 6. Shoulder pain rating (1-10) after Mon and Fri sessions.
 7. **NEW — Wed 90/90 forward reach: log chest-to-floor inches both sides (target position depth).**
-8. **NEW — Daily 8 done? Y/N (binary).**
+8. **NEW — Daily 7 done? Y/N (binary).**
 9. **NEW — Fri pull-up top set** — flag if drops (sign Wed pull-up volume removal hurt G2).
 
 ## Watch list (DNT Wk 1)

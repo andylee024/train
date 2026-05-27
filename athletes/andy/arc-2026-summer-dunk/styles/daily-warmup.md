@@ -1,15 +1,15 @@
-# Andy's Daily Warm-Up — "The Daily 8"
+# Andy's Daily Warm-Up — "The Daily 7"
 
-Consistent pre-session mobility routine. Same 8 movements, same order, every training day. Built around Andy's two weakest links: hip mobility (primary) and shoulder mobility (secondary). Designed habit-first — variety is the enemy of compliance.
+Consistent pre-session mobility routine. Same 7 movements, same order, every training day. Built around Andy's two weakest links: hip mobility (primary) and shoulder mobility (secondary). Designed habit-first — variety is the enemy of compliance.
 
-**Total time:** ~20-24 min
+**Total time:** ~18-22 min
 **Frequency:** every training day (Sun, Mon, Tue, Thu, Fri, Sat — skip Wed if not lifting)
 **When:** first thing when you arrive at the rack/space, before any lifts
-**Logging:** binary — "Daily 8 done? Y/N" — don't overcomplicate it
+**Logging:** binary — "Daily 7 done? Y/N" — don't overcomplicate it
 
 ---
 
-## The Daily 8
+## The Daily 7
 
 | # | Movement | Sets × Reps | Notes |
 |---|---|---|---|
@@ -19,8 +19,7 @@ Consistent pre-session mobility routine. Same 8 movements, same order, every tra
 | 4 | **90/90 + Forward Reach** | 2 × 5 transitions / side | Hip IR/ER + load front hip — also serves Goal G3 |
 | 5 | **Cossack Squat** | 2 × 5 / side | Adductor opening + side-split work (Goal G3) |
 | 6 | **Deep Squat Hold + Overhead Reach** | 2 × (60s hold + 5 reaches / side) | Bottom hip + T-spine + shoulder combined |
-| 7 | **Lying Shoulder CARs** | 2 × 5 each direction / arm | Pure shoulder isolation, R-shoulder-safe |
-| 8 | **Wall Slides** | 2 × 10 reps | Scapular control + shoulder ER |
+| 7 | **Shoulder Pass-Through** (wooden stick/dowel, wide grip) | 2 × 10 reps | Full shoulder flex→ext ROM + pec/lat opening + T-spine; replaces lying CARs + wall slides |
 
 ---
 
@@ -38,17 +37,15 @@ Consistent pre-session mobility routine. Same 8 movements, same order, every tra
 
 **6. Deep Squat Hold + Overhead Reach** — Sit at the bottom of a deep squat (feet flat, knees out, chest up). Hold for 60 seconds. During the hold, reach one arm straight up to the ceiling and rotate your T-spine to follow it — 5 reaches per side. The hold + the reach combine to drive hip end-range + shoulder + T-spine simultaneously.
 
-**7. Lying Shoulder CARs** — Lie on back, knees bent, low back FLAT to floor. One arm draws the biggest possible circle with the fingertips — out to the side, up overhead (palm flips to face away), around to the hip, back up. ~8 seconds per rep. Slow. Low back stays glued to floor (this is the locking that makes lying CARs > standing). 5 each direction, then switch arm.
-
-**8. Wall Slides** — Stand with back, butt, head against wall. Arms in goalpost position, backs of hands and forearms touching wall. Slide arms overhead while keeping ALL contact points on the wall (this is hard — most people lose pinky contact). Return to start. 10 reps. If you can't keep contact, your range is the cue — work within it.
+**7. Shoulder Pass-Through (stick/dowel, wide grip)** — Stand upright holding a wooden stick (broomstick, PVC, dowel) in front of you with both hands, palms down, **wide grip** (wider than shoulder-width — start wider if shoulders feel tight, narrow over time). Arms straight throughout. Slowly raise the stick overhead and continue rotating it behind your back until it touches your butt. Pause briefly. Reverse the motion smoothly back to the front-thigh start position. That's 1 rep. 10 reps total. Keep elbows locked straight (no bending), keep ribs down (no flaring), keep shoulders away from ears. If anything pinches or feels sharp — widen the grip until it doesn't. Range is the cue, not depth.
 
 ---
 
 ## What this routine drives
 
 - **Hip mobility** (your primary weakness): Hip CARs (joint capsule), 90/90 (rotational), Cossack (adductor), Deep Squat (end-range) — 4 dedicated slots
-- **Shoulder mobility** (secondary): Deep Squat overhead reach, Lying Shoulder CARs, Wall Slides — 3 dedicated slots
-- **T-spine bonus**: World's Greatest, Deep Squat reach — supports both bench (G2) and overhead positions
+- **Shoulder mobility** (secondary): Deep Squat overhead reach + Shoulder Pass-Through — 2 dedicated slots (consolidated from 3; pass-through covers full flex→ext ROM + pec/lat opening in one movement)
+- **T-spine bonus**: World's Greatest, Deep Squat reach, Pass-Through — supports both bench (G2) and overhead positions
 - **Side split (Goal G3)**: 90/90 and Cossack directly serve this — you get arc credit toward G3 as a warm-up byproduct
 
 ---
@@ -56,25 +53,25 @@ Consistent pre-session mobility routine. Same 8 movements, same order, every tra
 ## Constraint compatibility
 
 - **L wrist (De Quervain's)**: only Cat-Cow loads the hand, and at neutral wrist position. No front rack, no weight-bearing reach.
-- **R shoulder**: no barbell, no heavy press, no aggressive end-range loading. Lying CARs are gravity-assisted; Wall Slides train the pattern without load.
+- **R shoulder**: no barbell, no heavy press, no aggressive end-range loading. Pass-Through is unloaded (stick only); grip width self-regulates pain — go wider if anything pinches.
 
 ---
 
 ## Jump day addition (Sat only)
 
-After the Daily 8, before sprints:
+After the Daily 7, before sprints:
 
 - Alternating leg swings — 2 × 10 each leg
 - Pogo bounces — 2 × 5 reps
 
-This primes the nervous system for max-intent jumping. Sun–Fri the Daily 8 stands alone.
+This primes the nervous system for max-intent jumping. Sun–Fri the Daily 7 stands alone.
 
 ---
 
 ## What this routine deliberately excludes
 
 - **Static stretching > 30s** before lifting — saps power. Save deep static for post-session or Wed deep day.
-- **Foam rolling as ritual** — fine as a tool for an angry spot, but not part of the habit. Habit is the 8 movements, nothing else.
+- **Foam rolling as ritual** — fine as a tool for an angry spot, but not part of the habit. Habit is the 7 movements, nothing else.
 - **PNF / loaded stretches** — Wed deep flex day covers that. Don't double-load the adductors before a jump or squat day.
 
 ---

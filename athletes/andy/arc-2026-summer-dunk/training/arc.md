@@ -94,7 +94,7 @@ This is what the 3-block structure below reflects.
 
 - **Primary:** Vertical Jump Bible + THP — see `styles/vertical-jump-guide.md`
 - **Secondary:** Dylan Shannon (POWERJACKED) — see `styles/dylan-shannon-guide.md`
-- **Daily warm-up:** "The Daily 8" — see `styles/daily-warmup.md`. Same 8 movements every training day (Cat-Cow, World's Greatest Stretch, Hip CARs, 90/90 + Reach, Cossack, Deep Squat Hold + Reach, Lying Shoulder CARs, Wall Slides). Hits hip mobility (4 slots) + shoulder mobility (3 slots) — Andy's two weakest links. ~20 min, 2 sets each, habit-first design (no progression for 8 wks).
+- **Daily warm-up:** "The Daily 7" — see `styles/daily-warmup.md`. Same 8 movements every training day (Cat-Cow, World's Greatest Stretch, Hip CARs, 90/90 + Reach, Cossack, Deep Squat Hold + Reach, Lying Shoulder CARs, Wall Slides). Hits hip mobility (4 slots) + shoulder mobility (3 slots) — Andy's two weakest links. ~20 min, 2 sets each, habit-first design (no progression for 8 wks).
 - **External coach blocks:** when the coach issues a new program, integrate via `styles/dnt-integration-methodology.md`. Current example: DNT 2-wk block running W3-W4, source in `styles/dnt-program-source.md`.
 
 When the athlete asks "why this rep scheme?" — cite the relevant guide section.

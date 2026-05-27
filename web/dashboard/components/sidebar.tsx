@@ -3,21 +3,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Activity,
-  Calendar,
   Dumbbell,
+  Gauge,
   Target,
-  TrendingUp,
   Utensils,
   Settings,
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 const NAV = [
-  { href: "/today", label: "Today", icon: Activity, shortcut: "T" },
-  { href: "/week", label: "This Week", icon: Calendar, shortcut: "W" },
   { href: "/plan", label: "Plan", icon: Target, shortcut: "P" },
-  { href: "/progress", label: "Progress", icon: TrendingUp, shortcut: "R" },
+  { href: "/strength", label: "Performance", icon: Gauge, shortcut: "S" },
   { href: "/nutrition", label: "Nutrition", icon: Utensils, shortcut: "N" },
 ];
 

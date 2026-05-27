@@ -9,7 +9,7 @@
 - Date Range: Sun May 10 – Sat May 16, 2026
 - Week Type: build
 - Primary Focus: Small intensity bump. Push bar speed on speed squat + jump squat. **Wed restructured: Hip IR + Kick Day (replaces Recovery + Deep Flex).**
-- **Daily warm-up:** "The Daily 8" — see `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
+- **Daily warm-up:** "The Daily 7" — see `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
 - **Mobility catalog:** `athletes/andy/logs/mobility-exercises.csv` (Flexibility Maestro framework — IR-relevant exercises tagged in Notes column)
 
 ## Block Goals (Why This Week Exists)
@@ -149,7 +149,7 @@ This week shifts from "side-split-focused mobility" to **Hip IR + Kick Day** str
 
 | Day | Cool-down focus | Time |
 |---|---|---|
-| Sun | None (Daily 8 covers prep, pigeon stretch in main work) | — |
+| Sun | None (Daily 7 covers prep, pigeon stretch in main work) | — |
 | Mon | None | — |
 | Tue | Light IR prep (pre-Wed) | 4 min |
 | Wed | Session IS the cool-down — finishes with box breathing | — |
@@ -170,7 +170,7 @@ This week shifts from "side-split-focused mobility" to **Hip IR + Kick Day** str
 4. Daily bodyweight + Sun side-split measurement (cm hip-to-floor).
 5. Shoulder + wrist pain rating (1-10) after Mon and Fri sessions.
 6. **NEW — Wed 90/90 forward reach: log chest-to-floor inches both sides (target position depth).**
-7. **NEW — Daily 8 done? Y/N (binary).**
+7. **NEW — Daily 7 done? Y/N (binary).**
 
 ## End-of-Week Review (filled Sun)
 

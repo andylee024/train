@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
-/* Dark-by-default athletic OS palette. */
+/* North — cool slate dark, warm-white ink, single electric blue accent. */
 :root {
-  /* Surface */
-  --bg: #0a0c10;
-  --bg-elev-1: #11141a;
-  --bg-elev-2: #181c24;
-  --bg-elev-3: #232834;
+  /* Surface — cool near-black */
+  --bg: #0a0d12;
+  --bg-elev-1: #11151c;
+  --bg-elev-2: #1a1f29;
+  --bg-elev-3: #232a37;
 
-  /* Ink */
-  --ink: #ecedef;
-  --ink-dim: #9aa0aa;
-  --ink-muted: #5b616c;
+  /* Ink — warm-white against cool bg */
+  --ink: #eef1f5;
+  --ink-dim: #8b91a0;
+  --ink-muted: #4a5160;
 
-  /* Accent (grease-pencil orange — matches landing page) */
-  --accent: #ff7a3d;
-  --accent-ink: #0a0c10;
-  --accent-soft: rgba(255, 122, 61, 0.12);
-  --accent-line: rgba(255, 122, 61, 0.3);
+  /* Accent — electric blue */
+  --accent: #5b9eff;
+  --accent-ink: #0a0d12;
+  --accent-soft: rgba(91, 158, 255, 0.12);
+  --accent-line: rgba(91, 158, 255, 0.32);
 
-  /* Status */
-  --good: #4ade80;
-  --warn: #facc15;
-  --bad: #ef4444;
-  --info: #60a5fa;
+  /* Status — muted, against dark */
+  --good: #5ec99c;
+  --warn: #d4a050;
+  --bad: #e07a7a;
+  --info: #7aa3d4;
 
-  /* Lines */
-  --line: #232834;
-  --line-soft: #1a1e26;
+  /* Lines — cool hairlines */
+  --line: #1f2530;
+  --line-soft: #161b25;
 }
 
 @theme inline {
@@ -58,10 +58,7 @@ html, body {
 }
 
 /* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
+::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
   background: var(--bg-elev-3);
@@ -70,18 +67,21 @@ html, body {
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--ink-muted); }
 
-/* Selection */
-::selection {
-  background: var(--accent);
-  color: var(--accent-ink);
-}
+::selection { background: var(--accent); color: var(--accent-ink); }
 
-/* Mono helper */
 .tabular { font-variant-numeric: tabular-nums; }
 .font-mono { font-family: var(--font-geist-mono), ui-monospace, monospace; }
 
-/* Subtle dot grid for the sidebar */
-.dot-bg {
-  background-image: radial-gradient(circle, var(--bg-elev-2) 1px, transparent 1px);
-  background-size: 24px 24px;
+/* Section label primitive — tracked mono uppercase. */
+.section-label {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-muted);
+}
+
+/* Hairline divider primitive. */
+.hairline {
+  border-top: 1px solid var(--line);
 }
