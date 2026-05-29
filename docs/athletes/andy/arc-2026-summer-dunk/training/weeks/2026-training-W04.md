@@ -125,7 +125,7 @@
 ## Daily Flexibility (15-20 min post-training)
 
 1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. **Mon + Fri deep work (Phase 0 — W04-W08):** Matt Smith Phase 0 — passive foundation work, no loading. See Mon + Fri sections + `docs/training-styles/matt-smith-flexibility/guide.md`.
+2. **Mon + Fri deep work (Phase 0 — W04-W08):** Matt Smith Phase 0 — passive foundation work, no loading. See Mon + Fri sections + `docs/content/training-styles/matt-smith-flexibility/guide.md`.
 3. **Wed = full rest day.** No flex programming.
 4. **Transition to Phase 1 starts W09 (Jun 28).** Mon = Session B (loaded). Fri = Session A (assisted).
 

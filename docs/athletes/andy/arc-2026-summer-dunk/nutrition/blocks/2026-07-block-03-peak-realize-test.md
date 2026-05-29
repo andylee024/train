@@ -72,7 +72,7 @@ B3 unlocks the full menu — orchestrator picks from these 10+:
 
 ## See also
 - `nutrition/arc.md` for cross-block strategy
-- `athletes/andy/menu.md` for full meal vocabulary
+- `docs/athletes/andy/menu.md` for full meal vocabulary
 - `training/blocks/2026-07-block-03-peak-realize-test.md` for the training side
 - Wk-by-week orchestrator output: `nutrition/weeks/2026-nutrition-W{13..18}.md`
 - Source: VJ §9 (peak ≠ deficit — cutting compromises force during realization)

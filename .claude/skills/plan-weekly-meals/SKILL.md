@@ -20,12 +20,12 @@ description: "Generate the weekly meal plan + grocery list for an athlete's acti
 | Input | Source |
 |---|---|
 | Today's date | system clock |
-| Active arc bundle | default `athletes/andy/arc-2026-summer-dunk/` |
+| Active arc bundle | default `docs/athletes/andy/arc-2026-summer-dunk/` |
 | Per-arc nutrition plan | `<arc>/nutrition/arc.md` |
 | Active block file | `<arc>/nutrition/blocks/{matching block}.md` |
 | Training week (upcoming) | `<arc>/training/weeks/2026-training-W{NN}.md` |
-| Menu library | `athletes/andy/menu.md` |
-| Cross-arc OS doc | `athletes/andy/nutrition.md` |
+| Menu library | `docs/athletes/andy/menu.md` |
+| Cross-arc OS doc | `docs/athletes/andy/nutrition.md` |
 | Bw 7-day rolling avg | Supabase `daily_metrics` (project `vtruwlvekfnmfgaundhp`) |
 | Optional: Recipe of the Week URL | athlete-supplied in chat |
 
@@ -112,8 +112,8 @@ Then copy to: `<arc>/nutrition/active/current-week.md`
 - `<arc>/nutrition/arc.md` → cross-block strategy
 - `<arc>/nutrition/blocks/{matching block}.md` → cooking pattern, standing recipes, calibration moments for THIS block
 - `<arc>/training/weeks/2026-training-W{NN}.md` → identify training day shapes (heavy power = Thu, jump = Sat, rest = Wed, etc.)
-- `athletes/andy/menu.md` → all meals with attributes
-- `athletes/andy/nutrition.md` → Layer 1 baseline + always-stocked items
+- `docs/athletes/andy/menu.md` → all meals with attributes
+- `docs/athletes/andy/nutrition.md` → Layer 1 baseline + always-stocked items
 - Calendar via Google Calendar MCP for upcoming Sun–Sat
 - Supabase: `select avg(bodyweight_lb) as rolling_avg, count(*) as n from daily_metrics where date >= current_date - interval '7 days' and bodyweight_lb is not null;`
 
@@ -186,7 +186,7 @@ Render the artifact to chat too so the athlete can approve / edit / place the or
 
 | Variable | Value (for active arc) |
 |---|---|
-| `<arc>` path | `athletes/andy/arc-2026-summer-dunk/` |
+| `<arc>` path | `docs/athletes/andy/arc-2026-summer-dunk/` |
 | Athlete | Andy Lee |
 | Supabase project_id | `vtruwlvekfnmfgaundhp` |
 | Calendar account | (default Google Calendar via MCP) |
@@ -213,6 +213,6 @@ When a second athlete onboards, parameterize by athlete dir + arc dir.
 
 - `<arc>/nutrition/arc.md` — strategy + targets
 - `<arc>/nutrition/blocks/{block}.md` — block-specific cooking pattern + recipes
-- `athletes/andy/menu.md` — meal vocabulary
-- `athletes/andy/nutrition.md` — Layer 1 + standing list
+- `docs/athletes/andy/menu.md` — meal vocabulary
+- `docs/athletes/andy/nutrition.md` — Layer 1 + standing list
 - `<arc>/training/weeks/` — training shape input

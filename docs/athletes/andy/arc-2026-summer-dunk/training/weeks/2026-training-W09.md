@@ -37,7 +37,7 @@
 ## Mon Jun 29 (MONDAY) — Upper Horizontal + Side Split Session B (Phase 1 — loaded entry)
 
 **Phase 1 entry — first week of loading.** Mon = Session B (loaded resisted) because Mon→Sat jump = 5 days, safe for adductor force depletion. Conditional on Phase 0 re-assessment (Sun Jun 28). If Taylor's pose >15cm off floor still, REPEAT Phase 0 for 2 more weeks before loading.
-**Reference:** `docs/training-styles/matt-smith-flexibility/guide.md` §5.
+**Reference:** `docs/content/training-styles/matt-smith-flexibility/guide.md` §5.
 **Phase 1 target by end of W12 (Jul 25):** side split angle 140-145°, Taylor's pose ≤10cm, pancake fingertips on floor.
 
 ### Part A — Side Split Session B loaded (~28 min, CNS-fresh)

@@ -1,6 +1,6 @@
 # Nutrition Styles
 
-The nutrition-side methodology library, parallel to `docs/training-styles/`. Each subdirectory holds one nutrition style — a coherent approach to fueling, meal architecture, and food choices — that planning agents (the nutritionist specialist) can draw on when designing an athlete's nutrition plan.
+The nutrition-side methodology library, parallel to `docs/content/training-styles/`. Each subdirectory holds one nutrition style — a coherent approach to fueling, meal architecture, and food choices — that planning agents (the nutritionist specialist) can draw on when designing an athlete's nutrition plan.
 
 ## Structure
 
@@ -18,7 +18,7 @@ nutrition-styles/
 - **`<style>/sources/`** — raw source material (PDFs, OCR'd text, transcripts). Authoritative reference, not the synthesis.
 - **`<style>/guide.md`** — synthesized style summary (TODO for both styles below — sources are in place; the guide is the next deliverable).
 
-The pattern mirrors `docs/training-styles/<style>/`: sources live in their own folder, the `guide.md` is the planner-facing synthesis.
+The pattern mirrors `docs/content/training-styles/<style>/`: sources live in their own folder, the `guide.md` is the planner-facing synthesis.
 
 ## Current styles
 
@@ -36,4 +36,4 @@ The pattern mirrors `docs/training-styles/<style>/`: sources live in their own f
 
 ## Next step
 
-When ready to use these styles, synthesize a `guide.md` for each — same pattern as `docs/training-styles/_template/guide.md`. The `create-training-style` skill is the closest existing scaffold; a nutrition-style equivalent may be worth building.
+When ready to use these styles, synthesize a `guide.md` for each — same pattern as `docs/content/training-styles/_template/guide.md`. The `create-training-style` skill is the closest existing scaffold; a nutrition-style equivalent may be worth building.

@@ -18,7 +18,7 @@ import type {
 const REPO_ROOT = resolve(process.cwd(), "..", "..");
 const BUNDLE_DIR = resolve(
   REPO_ROOT,
-  "athletes/andy/arc-2026-summer-dunk"
+  "docs/athletes/andy/arc-2026-summer-dunk"
 );
 
 const PATHS = {

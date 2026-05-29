@@ -56,6 +56,6 @@ The orchestrator will pick from these 5 meals in B1, given the cooking pattern:
 
 ## See also
 - `nutrition/arc.md` for cross-block strategy
-- `athletes/andy/menu.md` for full meal vocabulary (45 meals)
+- `docs/athletes/andy/menu.md` for full meal vocabulary (45 meals)
 - `training/blocks/2026-05-block-01-power-conversion.md` for the training side
 - Wk-by-week orchestrator output: `nutrition/weeks/2026-nutrition-W{01..06}.md`

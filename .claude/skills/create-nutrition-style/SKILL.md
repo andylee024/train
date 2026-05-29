@@ -1,15 +1,15 @@
 ---
 name: create-nutrition-style
-description: Synthesize a structured nutrition-style guide from raw source materials (cookbooks, diet books, articles, videos, transcripts) into the canonical 15-section template at docs/nutrition-styles/. Use when the user provides source materials about a nutrition methodology and wants a complete style guide built from them, or says things like "build a nutrition style for X from these sources", "synthesize a diet methodology", "create a nutrition style guide", or "translate this cookbook into our nutrition-style format".
+description: Synthesize a structured nutrition-style guide from raw source materials (cookbooks, diet books, articles, videos, transcripts) into the canonical 15-section template at docs/content/nutrition-styles/. Use when the user provides source materials about a nutrition methodology and wants a complete style guide built from them, or says things like "build a nutrition style for X from these sources", "synthesize a diet methodology", "create a nutrition style guide", or "translate this cookbook into our nutrition-style format".
 argument-hint: [style-slug]
 allowed-tools: Read Write Edit Glob Grep Bash WebFetch
 ---
 
 # Create Nutrition Style
 
-Walk the user through a structured process that turns raw source materials about a nutrition methodology into a complete style folder under `docs/nutrition-styles/<slug>/`, conforming to the canonical 15-section nutrition template.
+Walk the user through a structured process that turns raw source materials about a nutrition methodology into a complete style folder under `docs/content/nutrition-styles/<slug>/`, conforming to the canonical 15-section nutrition template.
 
-The output mirrors the worked example at [`docs/nutrition-styles/renaissance-diet/`](../../../docs/nutrition-styles/renaissance-diet/), built from the same 15-section pattern as `docs/training-styles/_template/` but adapted for nutrition (see "Section adaptations" below).
+The output mirrors the worked example at [`docs/content/nutrition-styles/renaissance-diet/`](../../../docs/content/nutrition-styles/renaissance-diet/), built from the same 15-section pattern as `docs/content/training-styles/_template/` but adapted for nutrition (see "Section adaptations" below).
 
 The conversation has 5 phases. Each phase ends with a checkpoint where the user confirms before moving on. Never skip a checkpoint. Never invent content not supported by the sources.
 
@@ -17,9 +17,9 @@ The conversation has 5 phases. Each phase ends with a checkpoint where the user 
 
 Read these to understand the target shape:
 
-1. [`docs/nutrition-styles/README.md`](../../../docs/nutrition-styles/README.md) — directory conventions
-2. [`docs/nutrition-styles/renaissance-diet/guide.md`](../../../docs/nutrition-styles/renaissance-diet/guide.md) — worked example, fully filled in
-3. [`docs/training-styles/_template/guide.md`](../../../docs/training-styles/_template/guide.md) — the parent 15-section structure (skip §8 Technique; adapt §4, §5, §9 per below)
+1. [`docs/content/nutrition-styles/README.md`](../../../docs/content/nutrition-styles/README.md) — directory conventions
+2. [`docs/content/nutrition-styles/renaissance-diet/guide.md`](../../../docs/content/nutrition-styles/renaissance-diet/guide.md) — worked example, fully filled in
+3. [`docs/content/training-styles/_template/guide.md`](../../../docs/content/training-styles/_template/guide.md) — the parent 15-section structure (skip §8 Technique; adapt §4, §5, §9 per below)
 
 If the user already mentioned a target slug as an argument (`$ARGUMENTS`), use it. Otherwise propose one in Phase 1.
 
@@ -67,7 +67,7 @@ Then confirm:
 
 **Checkpoint:** Show the source manifest, proposed slug, and identity sentence. Get confirmation before fetching anything.
 
-If a `docs/nutrition-styles/<slug>/` folder already exists with sources/, ask whether to overwrite or integrate.
+If a `docs/content/nutrition-styles/<slug>/` folder already exists with sources/, ask whether to overwrite or integrate.
 
 ---
 
@@ -135,7 +135,7 @@ Steps in order:
 
 1. **Create folder structure:**
    ```
-   docs/nutrition-styles/<slug>/
+   docs/content/nutrition-styles/<slug>/
    ├── guide.md
    └── sources/
    ```
@@ -175,7 +175,7 @@ Iterate as requested. When the user is satisfied, the skill is done.
 ## Constraints
 
 - **Never invent content not supported by the sources.** Mark MISSING if unclear.
-- **Never delete existing source material.** If `docs/nutrition-styles/<slug>/sources/` has files, integrate alongside.
+- **Never delete existing source material.** If `docs/content/nutrition-styles/<slug>/sources/` has files, integrate alongside.
 - **Never skip checkpoints.** User must approve each phase.
 - **Don't write `guide.md` until Phase 4.** Hold synthesis in working memory through Phase 3.
 - **Preserve provenance.** Every section's content traceable to a source in §14.

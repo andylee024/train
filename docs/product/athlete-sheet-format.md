@@ -198,7 +198,7 @@ Trends + PRs + weekly volume. All derived from Tab 4 Log + `daily_metrics`.
 
 # Worked example — Andy, Block 1, Wk 2 (today is Fri May 15, 2026)
 
-What Andy's Sheet looks like rendered right now. All prescriptions pulled from `athletes/andy/arc-2026-summer-dunk/training/weeks/2026-training-W02.md`. Logged values are illustrative (Supabase doesn't have his actual logs yet).
+What Andy's Sheet looks like rendered right now. All prescriptions pulled from `docs/athletes/andy/arc-2026-summer-dunk/training/weeks/2026-training-W02.md`. Logged values are illustrative (Supabase doesn't have his actual logs yet).
 
 ## Tab 1 — Home
 

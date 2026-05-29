@@ -35,7 +35,7 @@ Per-style methodologies (the sentences) sit directly under `training-styles/` â€
 ## Adding a new training style
 
 ```bash
-cd docs/training-styles/
+cd docs/content/training-styles/
 cp -r _template/ <style-slug>/
 ```
 

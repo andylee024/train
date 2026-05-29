@@ -67,6 +67,6 @@ B2's pattern unlocks more recipes — orchestrator picks from these 7:
 
 ## See also
 - `nutrition/arc.md` for cross-block strategy
-- `athletes/andy/menu.md` for full meal vocabulary
+- `docs/athletes/andy/menu.md` for full meal vocabulary
 - `training/blocks/2026-06-block-02-reactive-dunk-window.md` for the training side
 - Wk-by-week orchestrator output: `nutrition/weeks/2026-nutrition-W{07..12}.md`

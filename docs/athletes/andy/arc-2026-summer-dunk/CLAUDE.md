@@ -70,11 +70,11 @@ Nutrition lives in its own cascade at `nutrition/`. When the athlete asks a nutr
 | "What's the cook ceiling for this block?" | `nutrition/arc.md` §4.4 |
 | "Why am I cutting in B1 / maintaining in B3?" | `nutrition/arc.md` §3.1 + §2 The Mission |
 | "How does the agent work day-to-day?" | `nutrition/arc.md` §5 How We Work |
-| "What can I eat from supply tonight?" | `athletes/andy/nutrition.md` (cross-arc OS) Menu section |
-| "What's the recipe of the week?" | `athletes/andy/nutrition.md` Recipe of the Week section + (future) `nutrition/active/current-week-supply.md` |
+| "What can I eat from supply tonight?" | `docs/athletes/andy/nutrition.md` (cross-arc OS) Menu section |
+| "What's the recipe of the week?" | `docs/athletes/andy/nutrition.md` Recipe of the Week section + (future) `nutrition/active/current-week-supply.md` |
 | "How is my cut going?" | Supabase `daily_metrics` (bw 7-day rolling) compared to `nutrition/arc.md` §4.2 curve |
 
-`nutrition/arc.md` is hand-written (the source of truth for this arc's nutrition plan). The cross-arc OS at `athletes/andy/nutrition.md` is also hand-written. Neither is generated.
+`nutrition/arc.md` is hand-written (the source of truth for this arc's nutrition plan). The cross-arc OS at `docs/athletes/andy/nutrition.md` is also hand-written. Neither is generated.
 
 ---
 
@@ -152,7 +152,7 @@ The **supply IS the system.** Be silent on nutrition during the week. Two touch 
 
 **Where to read:**
 - `nutrition.md` (this bundle) — per-arc kcal phase + bw curve + exception rules
-- `athletes/andy/nutrition.md` (cross-arc, parent dir) — menu, Costco standing list, prep template, fallbacks
+- `docs/athletes/andy/nutrition.md` (cross-arc, parent dir) — menu, Costco standing list, prep template, fallbacks
 - Supabase `daily_metrics.bodyweight_lb` — bw history
 
 **Block 3 = no cut.** When Wk 13 starts, switch the per-arc nutrition phase from −300 to maintenance. The constraint is already in the Hard Constraints section above; the per-arc `nutrition.md` is the source of truth for the phase value.

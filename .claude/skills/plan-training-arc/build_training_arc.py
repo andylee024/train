@@ -675,7 +675,7 @@ import os
 from datetime import date, timedelta
 
 ARC_START = date(2026, 5, 3)  # Sunday
-BUNDLE_DIR = '/Users/andylee/Projects/train/athletes/andy/arc-2026-summer-dunk'
+BUNDLE_DIR = '/Users/andylee/Projects/train/docs/athletes/andy/arc-2026-summer-dunk'
 TRAINING_DIR = f'{BUNDLE_DIR}/training'
 BLOCKS_DIR = f'{TRAINING_DIR}/blocks'
 WEEKS_DIR = f'{TRAINING_DIR}/weeks'

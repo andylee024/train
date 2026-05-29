@@ -9,7 +9,7 @@ allowed-tools: Read Write Edit Glob Grep Bash SlashCommand
 
 Produces a complete `athletes/<name>/<arc-slug>/` bundle — the self-contained directory a cloud agent pulls and operates against.
 
-The output mirrors the worked example at [`athletes/andy/arc-2026-summer-dunk/`](../../../athletes/andy/arc-2026-summer-dunk/).
+The output mirrors the worked example at [`docs/athletes/andy/arc-2026-summer-dunk/`](../../../docs/athletes/andy/arc-2026-summer-dunk/).
 
 ## When to use
 
@@ -37,10 +37,10 @@ If any are missing, ask the user before proceeding. Don't fabricate.
 4. **Training style choices:**
    - Primary style (e.g., `vertical-jump`)
    - Secondary style (optional, e.g., `dylan-shannon`)
-   - Both must exist as `docs/training-styles/<style>/guide.md`
+   - Both must exist as `docs/content/training-styles/<style>/guide.md`
 5. **Nutrition style choice:**
    - Default: `renaissance-diet`
-   - Must exist as `docs/nutrition-styles/<style>/guide.md`
+   - Must exist as `docs/content/nutrition-styles/<style>/guide.md`
 6. **Cross-arc nutrition OS** at `athletes/<name>/nutrition.md` — must exist (defines menu + supply)
 7. **Hard constraints** — injuries, cut/no-cut blocks, equipment limits
 
@@ -74,9 +74,9 @@ athletes/<name>/<arc-slug>/
 Check existence of:
 - `athletes/<name>/profile.md`
 - `athletes/<name>/nutrition.md` (cross-arc OS)
-- `docs/training-styles/<primary-style>/guide.md`
-- `docs/training-styles/<secondary-style>/guide.md` (if specified)
-- `docs/nutrition-styles/<nutrition-style>/guide.md`
+- `docs/content/training-styles/<primary-style>/guide.md`
+- `docs/content/training-styles/<secondary-style>/guide.md` (if specified)
+- `docs/content/nutrition-styles/<nutrition-style>/guide.md`
 
 If any missing, ask the user. Don't proceed.
 
@@ -121,8 +121,8 @@ Invoke the `plan-nutrition-arc` skill with:
 
 Copy each style guide:
 ```bash
-cp docs/training-styles/<primary-style>/guide.md athletes/<name>/<arc-slug>/styles/<primary-style>-guide.md
-cp docs/training-styles/<secondary-style>/guide.md athletes/<name>/<arc-slug>/styles/<secondary-style>-guide.md  # if applicable
+cp docs/content/training-styles/<primary-style>/guide.md athletes/<name>/<arc-slug>/styles/<primary-style>-guide.md
+cp docs/content/training-styles/<secondary-style>/guide.md athletes/<name>/<arc-slug>/styles/<secondary-style>-guide.md  # if applicable
 ```
 
 The bundle is self-contained — agents read only from within the bundle. Updates to upstream style guides require a re-vendoring (manual or via a refresh skill).

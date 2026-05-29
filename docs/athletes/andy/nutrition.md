@@ -142,12 +142,12 @@ This lane exists to:
 - **One recipe maximum per week** — this is a ceiling, not a floor. Skip is fine.
 - **Athlete-friendly preference** — single-protein-forward dishes (salmon tray bakes, steak + roast veg, chicken + rice). Pasta-heavy / dessert-heavy recipes count against the kcal phase; flag and decide.
 - **No macro accounting** in v0 — the recipe adds variety + ingredients; the standing menu's protein floor + Layer 1 still hits 190g/day. Trust the system.
-- **No curated recipe library** in v0 — Andy picks fresh each Saturday. If he wants to track keepers later, that's an `athletes/andy/recipes-made.md` log (out of scope for now).
+- **No curated recipe library** in v0 — Andy picks fresh each Saturday. If he wants to track keepers later, that's an `docs/athletes/andy/recipes-made.md` log (out of scope for now).
 
 ### Trusted sources
 
 - [Mob (mob.co.uk)](https://www.mob.co.uk/) — fast, single-protein-forward, athlete-friendly
-- **Jalal Sameja (Jalalsamfit)** — high-protein meal-prep recipes; cookbook PDFs in [`docs/nutrition-styles/jalal-samfit/sources/`](../../docs/nutrition-styles/jalal-samfit/sources/)
+- **Jalal Sameja (Jalalsamfit)** — high-protein meal-prep recipes; cookbook PDFs in [`docs/content/nutrition-styles/jalal-samfit/sources/`](../../docs/content/nutrition-styles/jalal-samfit/sources/)
 - Add others as Andy finds them
 
 ---

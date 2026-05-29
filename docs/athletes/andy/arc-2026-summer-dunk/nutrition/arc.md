@@ -2,7 +2,7 @@
 
 **Window:** 2026-05-03 → 2026-09-05 (18 weeks, 3 blocks × 6 weeks)
 **Companion to:** `training/arc.md` (the training plan this nutrition plan serves)
-**OS reference:** [`athletes/andy/nutrition.md`](../../nutrition.md) — cross-arc menu, prep template, supply doctrine
+**OS reference:** [`docs/athletes/andy/nutrition.md`](../../nutrition.md) — cross-arc menu, prep template, supply doctrine
 **Athlete snapshot:** see [`profile.md`](../profile.md) for body comp, training pattern, history, failure modes
 
 ---
@@ -140,8 +140,8 @@ Standing-list defaults to last week's order; the ritual just confirms, it doesn'
 
 ## References
 
-- **Cross-arc OS:** [`athletes/andy/nutrition.md`](../../nutrition.md) — menu, Costco standing list, Sunday prep template, fallback restaurants, Recipe of the Week
-- **Cross-arc menu:** [`athletes/andy/menu.md`](../../menu.md) — 45-meal vocabulary with macros, caps, Costco staples
+- **Cross-arc OS:** [`docs/athletes/andy/nutrition.md`](../../nutrition.md) — menu, Costco standing list, Sunday prep template, fallback restaurants, Recipe of the Week
+- **Cross-arc menu:** [`docs/athletes/andy/menu.md`](../../menu.md) — 45-meal vocabulary with macros, caps, Costco staples
 - **Athlete profile:** [`profile.md`](../profile.md) — body, lifts, injuries, history, failure modes
 - **Training plan this serves:** [`training/arc.md`](../training/arc.md), [`training/blocks/`](../training/blocks/), [`training/active/current-week.md`](../training/active/current-week.md)
 - **Block-specific nutrition:** [`blocks/`](blocks/) — per-block kcal target, cooking pattern, standing recipes, calibration moments

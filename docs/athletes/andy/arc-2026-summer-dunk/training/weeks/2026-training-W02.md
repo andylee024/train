@@ -10,7 +10,7 @@
 - Week Type: build
 - Primary Focus: Small intensity bump. Push bar speed on speed squat + jump squat. **Wed restructured: Hip IR + Kick Day (replaces Recovery + Deep Flex).**
 - **Daily warm-up:** "The Daily 7" — see `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
-- **Mobility catalog:** `athletes/andy/logs/mobility-exercises.csv` (Flexibility Maestro framework — IR-relevant exercises tagged in Notes column)
+- **Mobility catalog:** `docs/athletes/andy/logs/mobility-exercises.csv` (Flexibility Maestro framework — IR-relevant exercises tagged in Notes column)
 
 ## Block Goals (Why This Week Exists)
 
@@ -63,7 +63,7 @@
 **Framework (Flexibility Maestro):** Warm-up → 🦍 Strength → 🏋🏻 PNF → 🥷🏻 Skill (Kicks) → 🧘🏻 Stretch
 **Target position:** Seated 90/90 with deep forward reach over front leg (measure end-stretch depth — chest-to-floor inches)
 **Total:** ~50 min
-**Reference catalog:** `athletes/andy/logs/mobility-exercises.csv` (Sample Split — Hip IR + Kick Day)
+**Reference catalog:** `docs/athletes/andy/logs/mobility-exercises.csv` (Sample Split — Hip IR + Kick Day)
 
 ### Warm-up (8 min)
 
