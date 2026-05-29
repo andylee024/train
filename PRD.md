@@ -100,7 +100,7 @@ Four operational concerns at four cadences. Each has a clear UI surface and a cl
 - ✅ Stratus → North aesthetic, single-builder-mode polish
 - ⬜ Real AI synthesis (replaces 3-second mock)
 - ⬜ Real xlsx export from synthesized plan
-- ⬜ Activation generates a real arc bundle in `athletes/{name}/{arc-slug}/`
+- ⬜ Activation generates a real arc bundle in `docs/athletes/{name}/{arc-slug}/`
 - ⬜ SMS daily-prompt cron reads bundle, sends today's session
 - ⬜ SMS inbound webhook parses logs into `exercise_sets`
 - ⬜ Confirmation SMS reply
@@ -171,9 +171,8 @@ Anything that makes Andy open a terminal, write SQL, or hand-edit markdown as pa
 | For | Look at |
 |---|---|
 | Technical architecture | [`SPEC.md`](SPEC.md) |
-| Per-feature design specs | [`docs/specs/`](docs/specs/) |
+| How features get built | [`docs/software-factory-workflow.md`](docs/software-factory-workflow.md) |
 | Decisions made + rationale | [`docs/product/decisions.md`](docs/product/decisions.md) |
-| What's shipped vs not | [`docs/specs/plan-creation-shipped.md`](docs/specs/plan-creation-shipped.md) |
-| Backlog / known issues | Linear `train` project (`A24-xxx` issues) |
+| Backlog / shipped state | Linear `train` project (`TR-xxx` issues) — Features + Tasks |
 | Athlete data layout | [`docs/product/database-schema.md`](docs/product/database-schema.md) |
-| Active arc | [`athletes/andy/arc-2026-summer-dunk/`](athletes/andy/arc-2026-summer-dunk/) |
+| Active arc | [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/) |

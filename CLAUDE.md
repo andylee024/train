@@ -6,22 +6,32 @@ Orientation for Claude working in this repo. Read [`README.md`](README.md) first
 
 - [`PRD.md`](PRD.md) — product vision, JTBD, scope, success criteria. Start here.
 - [`SPEC.md`](SPEC.md) — technical spec (architecture, surfaces, data layer, decisions).
+- [`AGENTS.md`](AGENTS.md) — agent entry point.
+- [`docs/software-factory-workflow.md`](docs/software-factory-workflow.md) — how features get built (Feature/Task model, 4 personas, status contracts).
 - [`docs/product/decisions.md`](docs/product/decisions.md) — append-only decisions log.
-- [`docs/specs/plan-creation-shipped.md`](docs/specs/plan-creation-shipped.md) — what's actually wired today for the plan flow.
-- Linear `train` project — backlog (bugs, polish, features, open questions) as `A24-xxx` issues.
+- Linear `train` project — Features + Tasks as `TR-xxx` issues.
 
 ## Repo layout (one-line each)
 
-- `docs/product/` — what we're building (architecture, schemas, roadmap, decisions)
-- `docs/specs/` — per-feature specs (shipped + draft)
-- `docs/training-styles/` — what coaches know (styles, exercises, frameworks)
-- `docs/team/` — AI coaching team roles + decision logic
-- `athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
-- `app/` — runtime code (CLI, Supabase, scripts, Modal app)
+Top-level rule: **code at the root, markdown under `docs/`**. Inside `docs/`, three pillars — `product/` (engineering reference), `content/` (cross-athlete library), `athletes/` (practice).
+
+Code:
+- `app/` — Supabase migrations + TS CLI (`app/cli/`) + seed scripts
 - `web/dashboard/` — Next.js dashboard (`/plan`, `/strength`, `/nutrition`, plan-creation flow)
-- `web/landing/` — landing page (Vercel)
 - `prototypes/` — UI experiments
+
+Docs:
+- `docs/software-factory-workflow.md` — engineering workflow contract
+- `docs/product/` — technical references (schemas, formats, renderer, decisions)
+- `docs/content/training-styles/` — coach methodology library
+- `docs/content/nutrition-styles/` — nutrition methodology library
+- `docs/content/coaching-team/` — AI coaches *for the athlete* (roles + decision logic)
+- `docs/athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
+
+Skills:
 - `.claude/skills/plan-training-arc/` — the training plan generator (Python)
+- `.claude/skills/spec-feature/`, `decompose-to-tasks/` — software factory entry points (see workflow doc)
+- `.claude/agents/` — factory personas (PM, tech-lead, coder, code-reviewer)
 
 ## Storage boundary (memorize this)
 
@@ -41,7 +51,7 @@ An **arc bundle** is a self-contained directory with everything an athlete's tex
 
 Layout:
 ```
-athletes/{name}/{arc-slug}/
+docs/athletes/{name}/{arc-slug}/
 ├── README.md         ← pull instructions for the cloud agent
 ├── CLAUDE.md         ← bundle-scoped agent operating instructions
 ├── arc.md            ← arc context (purpose, goals, blocks, tests)
@@ -53,15 +63,15 @@ athletes/{name}/{arc-slug}/
 └── outputs/          ← athlete-facing .xlsx
 ```
 
-Athlete-level data that persists across arcs (logs, nutrition.md) stays at `athletes/{name}/`, not inside any bundle.
+Athlete-level data that persists across arcs (logs, nutrition.md) stays at `docs/athletes/{name}/`, not inside any bundle.
 
 ## Active athlete + active arc
 
 **Andy Lee** is the v0 athlete and the project builder.
 
-**Active arc:** [`athletes/andy/arc-2026-summer-dunk/`](athletes/andy/arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
+**Active arc:** [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
 
-For everything about the active arc — programming, profile, constraints, weekly structure, style guide references — read the bundle's [`README.md`](athletes/andy/arc-2026-summer-dunk/README.md) and [`CLAUDE.md`](athletes/andy/arc-2026-summer-dunk/CLAUDE.md).
+For everything about the active arc — programming, profile, constraints, weekly structure, style guide references — read the bundle's [`README.md`](docs/athletes/andy/arc-2026-summer-dunk/README.md) and [`CLAUDE.md`](docs/athletes/andy/arc-2026-summer-dunk/CLAUDE.md).
 
 **Key facts** (in the bundle's profile.md, surfaced here for orientation):
 - Strength-dominant, reactivity-deficient (per VJ §3 dx). Many strength blocks already done.
@@ -128,8 +138,8 @@ These come from VJ guide §13 and Andy's profile. Violating them breaks the prog
 | Component | Status |
 |---|---|
 | Per-arc nutrition plan (onboarding doc — strategy, targets, calibration rules) | ✓ Built — `arc-2026-summer-dunk/nutrition/arc.md` |
-| Cross-arc menu library (45 meals, macros, caps, Costco staples) | ✓ Built — `athletes/andy/menu.md` |
-| Cross-arc OS doc (eating philosophy, prep, fallbacks, Recipe of the Week) | ✓ Built — `athletes/andy/nutrition.md` |
+| Cross-arc menu library (45 meals, macros, caps, Costco staples) | ✓ Built — `docs/athletes/andy/menu.md` |
+| Cross-arc OS doc (eating philosophy, prep, fallbacks, Recipe of the Week) | ✓ Built — `docs/athletes/andy/nutrition.md` |
 | Bundle reorg (training/ + nutrition/ split) | ✓ Built — bundle `CLAUDE.md` updated; README still references old layout |
 | `daily_metrics` table (bw + notes) | ✓ Built — live in Supabase (`vtruwlvekfnmfgaundhp`), verified 2026-05-08 |
 | Skill: `plan-weekly-groceries` (Saturday Costco order surface) | ✗ TODO — manual dry-run scheduled Sat 2026-05-09 before codifying |

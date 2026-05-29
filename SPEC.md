@@ -25,7 +25,7 @@
    ┌─────────────────────────────────────────────────────────────────────┐
    │                          SPEC (the xlsx)                             │
    │                                                                       │
-   │   athletes/{name}/{arc-slug}/outputs/*.xlsx                          │
+   │   docs/athletes/{name}/{arc-slug}/outputs/*.xlsx                     │
    │   + arc.md / blocks/ / weeks/ / current-{week,block}.md              │
    │   + nutrition/ + styles/                                             │
    └─────────────────────────────────────────────────────────────────────┘
@@ -33,12 +33,10 @@
                                        │ consumed by
                                        ▼
    ┌─────────────────────────────────────────────────────────────────────┐
-   │                     RUNTIME (SMS execution loop)                     │
+   │              RUNTIME (manual logging — SMS deferred)                 │
    │                                                                       │
-   │   Modal cron     Twilio inbound      Claude API parser              │
-   │   (daily 6:30AM)  (athlete logs)     (free text → sets)             │
-   │         │              │                    │                         │
-   │         └──────────────┴────────────────────┘                         │
+   │   Athlete logs via dashboard or CLI                                   │
+   │   (SMS daily-send + inbound parser on roadmap — A24-299/300/301)     │
    │                        │                                              │
    │                        ▼                                              │
    │                  Supabase write                                       │
@@ -50,7 +48,7 @@
                               (back to AUTHORING dashboards)
 ```
 
-Three tiers — **AUTHORING** (web), **SPEC** (xlsx + bundle), **RUNTIME** (SMS). The xlsx is the contract between authoring and runtime.
+Three tiers — **AUTHORING** (web), **SPEC** (xlsx + bundle), **RUNTIME** (currently manual; SMS deferred). The xlsx is the contract between authoring and runtime.
 
 ---
 
@@ -64,9 +62,9 @@ Three tiers — **AUTHORING** (web), **SPEC** (xlsx + bundle), **RUNTIME** (SMS)
 | Icons | Lucide React | Single icon family, tree-shakeable |
 | Database | Supabase (Postgres) | Auth-ready, hosted, SQL editor; project `vtruwlvekfnmfgaundhp` |
 | State | localStorage + React hooks | No global store; per-feature hooks (`useSelection`, `useIntake`, `useDashboardConfig`) |
-| Bundle filesystem | `athletes/{name}/{arc-slug}/` | Self-contained per-arc directories |
+| Bundle filesystem | `docs/athletes/{name}/{arc-slug}/` | Self-contained per-arc directories |
 | Plan generator | Python skill: `.claude/skills/plan-training-arc/` | Generates xlsx + markdown cascade |
-| SMS infrastructure | Modal cron + Twilio webhook | F&F SMS product already shipped; needs repurposing for training |
+| SMS infrastructure | Deferred | Not wired; daily-send + inbound parser on roadmap (A24-299/300/301). Modal + Linq scaffold removed; rebuild from scratch when SMS lane activates. |
 | LLM | Anthropic Claude API (Sonnet for parser, Opus for synthesis) | Already used in skills; tool use for structured outputs |
 
 **No new libraries** without a decision logged in [`docs/product/decisions.md`](docs/product/decisions.md).
@@ -87,7 +85,7 @@ What you're doing right now in your current arc. Existing surface; deepened with
 **Data:** `getArcSummary` (reads bundle markdown), `getDailyActivity` (Supabase workouts)
 
 ### `/plan/new` — plan creation flow (5 phases)
-The marketplace + intake + AI synthesis path. Documented fully in [`docs/specs/plan-creation-shipped.md`](docs/specs/plan-creation-shipped.md).
+The marketplace + intake + AI synthesis path. Active feature tracked in Linear (`Feature: Athlete Onboarding — Create a new plan`).
 
 ```
    intake → marketplace → review → synthesizing → preview → activated
@@ -176,7 +174,7 @@ See [`docs/product/database-schema.md`](docs/product/database-schema.md) for the
 ### Filesystem (planned work)
 
 ```
-athletes/{name}/{arc-slug}/
+docs/athletes/{name}/{arc-slug}/
 ├── README.md            # how the cloud agent pulls this bundle
 ├── CLAUDE.md            # bundle-scoped agent operating instructions
 ├── arc.md               # arc context (purpose, goals, blocks, tests)
@@ -217,8 +215,6 @@ athletes/{name}/{arc-slug}/
 | `activated` | `ActivatedPhase` inline | "Activate this plan →" | Confirmation card + next actions |
 
 **Cross-route handoff:** profile pages also expose `[Build plan]` which navigates to `/plan/new?build=true`, jumping straight to the `review` phase.
-
-Full spec: [`docs/specs/plan-creation-shipped.md`](docs/specs/plan-creation-shipped.md).
 
 ---
 
@@ -295,7 +291,7 @@ Full log in [`docs/product/decisions.md`](docs/product/decisions.md). Highlights
 
 ## 10. Known gaps
 
-What's still mocked or missing (full list in Linear `train` project + [`docs/specs/backlog.md`](docs/specs/backlog.md)):
+What's still mocked or missing (full list in Linear `train` project as `TR-xxx` Features + Tasks):
 
 | Concern | Current | Target |
 |---|---|---|
@@ -323,38 +319,33 @@ train/
 ├── CLAUDE.md                       # agent operating instructions
 ├── README.md
 │
-├── docs/
-│   ├── product/                    # durable architecture + design system
-│   │   ├── overview.md
+├── docs/                           # all markdown lives here
+│   ├── software-factory-workflow.md
+│   ├── product/                    # technical references
 │   │   ├── decisions.md            # append-only design decisions log
-│   │   ├── architecture.md
 │   │   ├── database-schema.md
+│   │   ├── plan-schema.md
+│   │   ├── live-renderer.md
 │   │   └── ...
-│   ├── specs/                      # per-feature design specs
-│   │   ├── v1-overview.md
-│   │   ├── plan-shopping.md        # design draft
-│   │   ├── plan-onboarding.md      # design draft
-│   │   └── plan-creation-shipped.md # shipped reference
-│   ├── training-styles/            # vendored methodology library
-│   └── nutrition-styles/
+│   ├── content/                    # cross-athlete library
+│   │   ├── training-styles/        # coach methodologies
+│   │   ├── nutrition-styles/       # nutrition methodologies
+│   │   └── coaching-team/          # AI coaches for the athlete
+│   └── athletes/                   # practice — per-athlete arc bundles
+│       └── andy/
+│           └── arc-2026-summer-dunk/   # active arc bundle
+│               ├── README.md
+│               ├── CLAUDE.md
+│               ├── arc.md
+│               ├── training/
+│               ├── nutrition/
+│               ├── styles/
+│               └── outputs/
 │
-├── athletes/                       # per-athlete arc bundles
-│   └── andy/
-│       └── arc-2026-summer-dunk/   # active arc bundle
-│           ├── README.md
-│           ├── CLAUDE.md
-│           ├── arc.md
-│           ├── training/
-│           ├── nutrition/
-│           ├── styles/
-│           └── outputs/
-│
-├── app/                            # runtime code (CLI + Modal + Supabase)
+├── app/                            # Supabase migrations + TS CLI + scripts
 │   ├── cli/
 │   ├── supabase/
-│   ├── modal_app.py
-│   ├── webhook.py
-│   └── ...
+│   └── scripts/
 │
 ├── web/
 │   └── dashboard/                  # Next.js 16 web app
@@ -412,10 +403,9 @@ Authenticate Supabase via `.env.local` in `web/dashboard/`.
 | For | Look at |
 |---|---|
 | What we're building + why | [`PRD.md`](PRD.md) |
+| How features get built | [`docs/software-factory-workflow.md`](docs/software-factory-workflow.md) |
 | Decision log (append-only) | [`docs/product/decisions.md`](docs/product/decisions.md) |
-| What shipped for plan creation | [`docs/specs/plan-creation-shipped.md`](docs/specs/plan-creation-shipped.md) |
-| Marketplace design draft | [`docs/specs/plan-shopping.md`](docs/specs/plan-shopping.md) |
-| Onboarding flow draft | [`docs/specs/plan-onboarding.md`](docs/specs/plan-onboarding.md) |
-| Active arc bundle | [`athletes/andy/arc-2026-summer-dunk/`](athletes/andy/arc-2026-summer-dunk/) |
+| Active features + tasks | Linear `train` project (`TR-xxx`) |
+| Active arc bundle | [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/) |
 | Memory (auto-persistent) | `~/.claude/projects/-Users-andylee-Projects-train/memory/` |
 | Linear backlog | `train` project on linear.app/a24-personal |
