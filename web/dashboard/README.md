@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Environment variables
+
+The dashboard reads `ANTHROPIC_API_KEY` (and Supabase keys) from EITHER:
+
+1. **Repo-root `train/.env`** — preferred. Shared with the Python skills (`build_training_arc.py`) and the TS CLI (`npx tsx app/cli/cli.ts ...`). `next.config.ts` calls `process.loadEnvFile(rootEnvPath)` so Next picks these up automatically.
+2. **`web/dashboard/.env.local`** — overrides the root file, useful for per-developer scratch values.
+
+If `/api/synthesize` returns `synthesized: false` with `reason: "ANTHROPIC_API_KEY not set"`, you're missing the key in both locations. See `.env.example` for the full list.
+
 ## Getting Started
 
 First, run the development server:
