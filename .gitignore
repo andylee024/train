@@ -15,3 +15,6 @@ __pycache__/
 .vercel
 # bin/train pulled athlete state (transient mirror of Modal volume)
 athletes/_pending/
+
+# Agent worktrees (Claude Code spawns these locally; never commit)
+.claude/worktrees/
