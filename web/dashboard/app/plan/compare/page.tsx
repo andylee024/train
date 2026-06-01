@@ -6,7 +6,9 @@ import { useSearchParams } from "next/navigation";
 import { ChevronLeft, Check, Plus } from "lucide-react";
 import { CATEGORIES, getCoach, initials, type Coach } from "@/lib/coaches";
 import { getExtras } from "@/lib/coach-extras";
+import { getProfile } from "@/lib/coach-profiles";
 import { useSelection } from "@/lib/use-selection";
+import { WeeklySessionsViewer } from "@/components/plan/weekly-sessions-viewer";
 import { cn } from "@/lib/cn";
 
 export default function ComparePage() {
@@ -225,6 +227,38 @@ function ComparePageInner() {
             );
           }}
         </CompareRow>
+      </div>
+
+      {/* Weekly sessions side-by-side */}
+      <div className="mt-8">
+        <div className="hairline pt-2 pb-2 mb-4">
+          <span className="section-label">Weekly sessions</span>
+        </div>
+        <p className="text-[11px] text-[var(--ink-muted)] mb-4">
+          Each coach's week with a sample day's full session — click any day to switch.
+        </p>
+        <div className="space-y-6">
+          {coaches.map((coach) => {
+            const profile = getProfile(coach.id);
+            if (!profile?.weekStructure) return null;
+            const accent = CATEGORIES[coach.category].accent;
+            return (
+              <div key={coach.id} className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-4">
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span
+                    className="inline-block w-1.5 h-1.5 rounded-full self-center"
+                    style={{ background: accent }}
+                  />
+                  <span className="text-[13px] font-medium text-[var(--ink)]">{coach.name}</span>
+                  <span className="text-[10px] font-mono text-[var(--ink-muted)] tabular">
+                    {coach.handle}
+                  </span>
+                </div>
+                <WeeklySessionsViewer weekStructure={profile.weekStructure} accent={accent} />
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* Actions */}

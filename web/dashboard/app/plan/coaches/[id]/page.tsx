@@ -11,6 +11,7 @@ import { useSelection } from "@/lib/use-selection";
 import { SelectionBar } from "@/components/plan/selection-bar";
 import { TeamSidebar } from "@/components/plan/team-sidebar";
 import { PairsCarousel } from "@/components/plan/pairs-carousel";
+import { WeeklySessionsViewer } from "@/components/plan/weekly-sessions-viewer";
 import { cn } from "@/lib/cn";
 
 export default function CoachProfilePage({
@@ -156,31 +157,13 @@ export default function CoachProfilePage({
         </Section>
       )}
 
-      {/* Week structure */}
+      {/* Week structure + sample sessions */}
       {profile?.weekStructure && (
         <Section label="Sample week">
-          <div className="-mx-1 px-1 flex gap-2 overflow-x-auto snap-x snap-mandatory text-[11px] sm:grid sm:grid-cols-7 sm:overflow-visible sm:snap-none sm:mx-0 sm:px-0">
-            {profile.weekStructure.map((day, i) => {
-              const dayLabel = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][i];
-              const isRest = /rest/i.test(day);
-              return (
-                <div
-                  key={i}
-                  className={cn(
-                    "shrink-0 w-[90px] snap-start sm:w-auto p-2 rounded-sm border text-center",
-                    isRest
-                      ? "bg-[var(--bg-elev-2)] border-[var(--line-soft)] text-[var(--ink-muted)]"
-                      : "bg-[var(--bg-elev-1)] border-[var(--line)] text-[var(--ink)]"
-                  )}
-                >
-                  <div className="text-[9px] font-mono uppercase tracking-wider text-[var(--ink-muted)] mb-1">
-                    {dayLabel}
-                  </div>
-                  <div className="text-[10px]">{day}</div>
-                </div>
-              );
-            })}
-          </div>
+          <p className="text-[11px] text-[var(--ink-muted)] mb-3">
+            Click any day to see the full session.
+          </p>
+          <WeeklySessionsViewer weekStructure={profile.weekStructure} accent={accent} />
         </Section>
       )}
 
