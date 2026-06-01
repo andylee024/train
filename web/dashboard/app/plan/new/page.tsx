@@ -12,6 +12,7 @@ import { GoalIntake } from "@/components/plan/goal-intake";
 import { RecommendedBand } from "@/components/plan/recommended-band";
 import { ReviewBlend } from "@/components/plan/review-blend";
 import { PlanPreview } from "@/components/plan/plan-preview";
+import { TeamSidebar } from "@/components/plan/team-sidebar";
 import { COACHES, allGoals, LEVELS, getCoach } from "@/lib/coaches";
 import { useSelection } from "@/lib/use-selection";
 import { useIntake, useReviewNotes, type GoalKey } from "@/lib/use-intake";
@@ -397,6 +398,8 @@ function MarketplacePhase({
 
   return (
     <>
+      <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-6 lg:items-start">
+        <div className="min-w-0">
       {/* Hero with matched-for header */}
       <div className="mb-6">
         <h1 className="text-[22px] sm:text-[28px] font-semibold tracking-tight leading-none">
@@ -492,7 +495,7 @@ function MarketplacePhase({
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
           {filtered.map((coach) => (
             <CoachCard
               key={coach.id}
@@ -506,8 +509,16 @@ function MarketplacePhase({
           ))}
         </div>
       )}
+        </div>
+        <TeamSidebar
+          selected={selected}
+          onRemove={remove}
+          onClear={clear}
+          onBuild={onBuild}
+        />
+      </div>
 
-      {/* Bottom selection bar */}
+      {/* Bottom selection bar — mobile/tablet only; desktop uses TeamSidebar */}
       <SelectionBar
         selected={selected}
         onRemove={remove}

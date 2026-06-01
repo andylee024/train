@@ -127,8 +127,8 @@ export function SelectionBar({
         </div>
       </div>
 
-      {/* DESKTOP / TABLET: original sticky-row layout (>=sm) */}
-      <div className="hidden sm:block fixed bottom-0 left-0 right-0 z-30 px-4 py-3 backdrop-blur-md bg-[rgba(10,13,18,0.85)] border-t border-[var(--line)]">
+      {/* TABLET sticky row (sm to <lg) — desktop uses <TeamSidebar> right rail */}
+      <div className="hidden sm:block lg:hidden fixed bottom-0 left-0 right-0 z-30 px-4 py-3 backdrop-blur-md bg-[rgba(10,13,18,0.85)] border-t border-[var(--line)]">
         <div className="max-w-7xl mx-auto flex items-center gap-4 flex-wrap">
           {/* Pills */}
           <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">

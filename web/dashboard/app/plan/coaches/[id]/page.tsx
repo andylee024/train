@@ -9,6 +9,7 @@ import { getProfile } from "@/lib/coach-profiles";
 import { getExtras } from "@/lib/coach-extras";
 import { useSelection } from "@/lib/use-selection";
 import { SelectionBar } from "@/components/plan/selection-bar";
+import { TeamSidebar } from "@/components/plan/team-sidebar";
 import { PairsCarousel } from "@/components/plan/pairs-carousel";
 import { cn } from "@/lib/cn";
 
@@ -31,7 +32,7 @@ export default function CoachProfilePage({
   const catLabel = CATEGORIES[coach.category].label;
 
   return (
-    <div className="max-w-5xl pb-24">
+    <div className="max-w-7xl pb-24">
       <Link
         href="/plan/new"
         className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink-dim)] mb-4 transition-colors"
@@ -39,6 +40,8 @@ export default function CoachProfilePage({
         <ChevronLeft size={11} /> Back to Marketplace
       </Link>
 
+      <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-6 lg:items-start">
+        <div className="min-w-0">
       {/* Hero */}
       <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-4 sm:p-6">
         <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -270,14 +273,23 @@ export default function CoachProfilePage({
           />
         </Section>
       )}
+        </div>
+        <TeamSidebar
+          selected={selected}
+          onRemove={remove}
+          onClear={clear}
+          onBuild={() => {
+            window.location.href = "/plan/new?build=true";
+          }}
+        />
+      </div>
 
-      {/* Selection bar (persisted via localStorage) */}
+      {/* Mobile/tablet bottom bar (desktop uses TeamSidebar) */}
       <SelectionBar
         selected={selected}
         onRemove={remove}
         onClear={clear}
         onBuild={() => {
-          // Navigate to /plan/new with a flag to trigger synthesis
           window.location.href = "/plan/new?build=true";
         }}
       />
