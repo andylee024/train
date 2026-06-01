@@ -54,13 +54,46 @@ export function PlanPreview({
   // Show the legacy "example structure" note only when we don't have real
   // synthesis (no providedPlan OR synthesized === false).
   const showFallbackBanner = synthesized === false || providedPlan == null;
+  const [downloading, setDownloading] = useState(false);
+  const [downloadError, setDownloadError] = useState<string | null>(null);
 
-  function handleDownload() {
-    // A24-286: real xlsx export ships with A24-294. Stub until then.
-    console.log("[stub] Download .xlsx", {
-      title: plan.meta.title,
-      coaches: coachNames,
-    });
+  async function handleDownload() {
+    if (downloading) return;
+    setDownloading(true);
+    setDownloadError(null);
+    try {
+      // TR-334: POST the currently-rendered plan to /api/xlsx and trigger a
+      // blob-URL download. Athlete name defaults to "Andy Lee" server-side
+      // (v0 is single-athlete).
+      const res = await fetch("/api/xlsx", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ plan, athleteName: "Andy Lee" }),
+      });
+      if (!res.ok) {
+        const msg = await res.text().catch(() => "");
+        throw new Error(msg || `request failed (${res.status})`);
+      }
+      const blob = await res.blob();
+      const disposition = res.headers.get("content-disposition") ?? "";
+      const match = /filename="?([^";]+)"?/i.exec(disposition);
+      const filename = match?.[1] ?? "plan.xlsx";
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      setDownloadError(msg);
+      // Surface for dev triage; user-visible message rendered below button.
+      console.error("[xlsx download] failed", err);
+    } finally {
+      setDownloading(false);
+    }
   }
 
   const sampleWeek = plan.sampleWeeks[blockIdx] ?? plan.sampleWeeks[0];
@@ -168,17 +201,23 @@ export function PlanPreview({
           <ChevronLeft size={11} /> change my picks
         </button>
         <div className="flex items-center gap-2 flex-wrap">
-          <button
-            type="button"
-            onClick={handleDownload}
-            title="Real export ships with A24-294"
-            className="text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm border border-[var(--line)] text-[var(--ink-muted)] hover:text-[var(--ink)] flex items-center gap-1.5"
-          >
-            <Download size={11} /> Download .xlsx
-            <span className="ml-1 px-1 py-px text-[8px] tracking-wider rounded-sm bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border border-[var(--line-soft)]">
-              stub
-            </span>
-          </button>
+          <div className="flex flex-col items-end gap-1">
+            <button
+              type="button"
+              onClick={handleDownload}
+              disabled={downloading}
+              title="Download the synthesized plan as .xlsx"
+              className="text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm border border-[var(--line)] text-[var(--ink-muted)] hover:text-[var(--ink)] flex items-center gap-1.5 disabled:opacity-60 disabled:cursor-progress"
+            >
+              <Download size={11} />
+              {downloading ? "Building…" : "Download .xlsx"}
+            </button>
+            {downloadError && (
+              <span className="text-[10px] font-mono text-red-500 max-w-[260px] text-right">
+                {downloadError}
+              </span>
+            )}
+          </div>
           <button
             onClick={onActivate}
             className="text-[11px] font-mono uppercase tracking-wider px-4 py-2 rounded-sm bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
