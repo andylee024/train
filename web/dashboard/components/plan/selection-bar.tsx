@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronUp, GitCompareArrows, Users, X } from "lucide-react";
 import { CATEGORIES, getCoach, initials } from "@/lib/coaches";
+import { MAX_COACHES } from "@/lib/use-selection";
 import { cn } from "@/lib/cn";
 
 export function SelectionBar({
@@ -36,7 +37,7 @@ export function SelectionBar({
           <div className="backdrop-blur-md bg-[rgba(10,13,18,0.95)] border-t border-[var(--line)] px-4 pt-3 pb-2">
             <div className="flex items-center justify-between mb-2">
               <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
-                {count} on your team
+                {count} of {MAX_COACHES} on your team
               </span>
               <button
                 onClick={() => setMobileOpen(false)}
@@ -162,7 +163,7 @@ export function SelectionBar({
           {/* Count + actions */}
           <div className="flex items-center gap-3 shrink-0">
             <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
-              {count} selected
+              {count} of {MAX_COACHES} selected
             </span>
             {canCompare && (
               <Link

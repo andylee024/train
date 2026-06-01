@@ -12,6 +12,7 @@ export function CoachCard({
   matchingGoals,
   onToggle,
   onOpen,
+  atCap = false,
   matchesGoals: _matchesGoals,
 }: {
   coach: Coach;
@@ -19,6 +20,7 @@ export function CoachCard({
   matchingGoals?: GoalKey[];
   onToggle: () => void;
   onOpen?: () => void;
+  atCap?: boolean;
   matchesGoals?: boolean;
 }) {
   const accent = CATEGORIES[coach.category].accent;
@@ -28,6 +30,7 @@ export function CoachCard({
   const matchTitle = hasMatches
     ? matchingGoals!.map((g) => GOAL_LABEL[g]).join(" · ")
     : undefined;
+  const disabled = atCap && !selected;
 
   return (
     <div
@@ -43,16 +46,32 @@ export function CoachCard({
       <button
         onClick={(e) => {
           e.stopPropagation();
+          if (disabled) return;
           onToggle();
         }}
-        title={selected ? "Remove" : "Add to your team"}
+        disabled={disabled}
+        title={
+          selected
+            ? "Remove"
+            : disabled
+              ? "Max 3 coaches — remove one to add another"
+              : "Add to your team"
+        }
         className={cn(
           "group/add absolute top-2 right-2 w-9 h-9 rounded-full flex items-center justify-center border transition-all z-10",
           selected
             ? "bg-[var(--accent)] text-[var(--accent-ink)] border-[var(--accent)] hover:opacity-90"
-            : "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border-[var(--line)] hover:bg-[var(--bg-elev-2)] hover:border-[var(--accent-line)] hover:text-[var(--accent)] hover:scale-105"
+            : disabled
+              ? "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border-[var(--line)] opacity-40 cursor-not-allowed"
+              : "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border-[var(--line)] hover:bg-[var(--bg-elev-2)] hover:border-[var(--accent-line)] hover:text-[var(--accent)] hover:scale-105"
         )}
-        aria-label={selected ? "Remove from your team" : "Add to your team"}
+        aria-label={
+          selected
+            ? "Remove from your team"
+            : disabled
+              ? "Max 3 coaches reached"
+              : "Add to your team"
+        }
       >
         {selected ? <Check size={14} /> : <Plus size={14} />}
       </button>

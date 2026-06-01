@@ -11,6 +11,8 @@ import { useCallback, useEffect, useState } from "react";
 
 const KEY = "plan.selection.v1";
 
+export const MAX_COACHES = 3;
+
 function read(): string[] {
   if (typeof window === "undefined") return [];
   try {
@@ -43,7 +45,13 @@ export function useSelection() {
 
   const toggle = useCallback((id: string) => {
     setSelected((prev) => {
-      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id];
+      if (prev.includes(id)) {
+        const next = prev.filter((x) => x !== id);
+        write(next);
+        return next;
+      }
+      if (prev.length >= MAX_COACHES) return prev;
+      const next = [...prev, id];
       write(next);
       return next;
     });
@@ -67,11 +75,16 @@ export function useSelection() {
   const addMany = useCallback((ids: string[]) => {
     setSelected((prev) => {
       const next = [...prev];
-      for (const id of ids) if (!next.includes(id)) next.push(id);
+      for (const id of ids) {
+        if (next.length >= MAX_COACHES) break;
+        if (!next.includes(id)) next.push(id);
+      }
       write(next);
       return next;
     });
   }, []);
 
-  return { selected, toggle, remove, clear, has, addMany };
+  const atCap = selected.length >= MAX_COACHES;
+
+  return { selected, toggle, remove, clear, has, addMany, atCap };
 }

@@ -14,6 +14,7 @@ export function RecommendedBand({
   onOpen,
   goals,
   animate = false,
+  atCap = false,
 }: {
   coaches: Coach[];
   selected: string[];
@@ -21,6 +22,7 @@ export function RecommendedBand({
   onOpen: (id: string) => void;
   goals: GoalKey[];
   animate?: boolean;
+  atCap?: boolean;
 }) {
   const [mounted, setMounted] = useState(!animate);
   const [pulse, setPulse] = useState(animate);
@@ -74,6 +76,7 @@ export function RecommendedBand({
             matchingGoals={computeMatchingGoals(coach, goals)}
             onToggle={() => toggle(coach.id)}
             onOpen={() => onOpen(coach.id)}
+            atCap={atCap}
           />
         ))}
       </div>

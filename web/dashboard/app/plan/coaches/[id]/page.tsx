@@ -21,11 +21,12 @@ export default function CoachProfilePage({
   const coach = getCoach(id);
   const profile = getProfile(id);
   const extras = getExtras(id);
-  const { selected, toggle, remove, clear, addMany } = useSelection();
+  const { selected, toggle, remove, clear, addMany, atCap } = useSelection();
 
   if (!coach) notFound();
 
   const isSelected = selected.includes(coach.id);
+  const disabled = atCap && !isSelected;
   const accent = CATEGORIES[coach.category].accent;
   const catLabel = CATEGORIES[coach.category].label;
 
@@ -76,16 +77,20 @@ export default function CoachProfilePage({
             </div>
           </div>
           <button
-            onClick={() => toggle(coach.id)}
+            onClick={() => !disabled && toggle(coach.id)}
+            disabled={disabled}
+            title={disabled ? "Max 3 coaches — remove one to add another" : undefined}
             className={cn(
               "shrink-0 self-stretch sm:self-auto text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm transition-colors flex items-center justify-center gap-1.5",
               isSelected
                 ? "bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--accent-line)]"
-                : "bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
+                : disabled
+                  ? "bg-[var(--bg-elev-2)] text-[var(--ink-muted)] border border-[var(--line)] opacity-50 cursor-not-allowed"
+                  : "bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
             )}
           >
             {isSelected ? <Check size={12} /> : <Plus size={12} />}
-            {isSelected ? "Added" : "Add to plan"}
+            {isSelected ? "Added" : disabled ? "Max reached" : "Add to plan"}
           </button>
         </div>
       </div>

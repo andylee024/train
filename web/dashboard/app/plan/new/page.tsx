@@ -31,7 +31,7 @@ export default function NewArcPage() {
 function NewArcPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { selected, toggle, remove, clear } = useSelection();
+  const { selected, toggle, remove, clear, atCap } = useSelection();
   const { intake, hydrated, isComplete, setDays, removeGoal, clearIntake } = useIntake();
   const { notes: reviewNotes, setNotes: setReviewNotes, clear: clearReviewNotes } = useReviewNotes();
   const [justCompletedIntake, setJustCompletedIntake] = useState(false);
@@ -294,6 +294,7 @@ function NewArcPageInner() {
           toggle={toggle}
           remove={remove}
           clear={clear}
+          atCap={atCap}
           onBuild={handleGoToReview}
           animateRecommended={justCompletedIntake}
           onAnimationConsumed={() => setJustCompletedIntake(false)}
@@ -358,6 +359,7 @@ function MarketplacePhase({
   toggle,
   remove,
   clear,
+  atCap,
   onBuild,
   animateRecommended,
   onAnimationConsumed,
@@ -374,6 +376,7 @@ function MarketplacePhase({
   toggle: (id: string) => void;
   remove: (id: string) => void;
   clear: () => void;
+  atCap: boolean;
   onBuild: () => void;
   animateRecommended: boolean;
   onAnimationConsumed: () => void;
@@ -460,6 +463,7 @@ function MarketplacePhase({
           onOpen={(id) => router.push(`/plan/coaches/${id}`)}
           goals={intakeGoals}
           animate={animateRecommended}
+          atCap={atCap}
         />
       )}
 
@@ -497,6 +501,7 @@ function MarketplacePhase({
               matchingGoals={hasGoals ? matchingGoals(coach, intakeGoals) : []}
               onToggle={() => toggle(coach.id)}
               onOpen={() => router.push(`/plan/coaches/${coach.id}`)}
+              atCap={atCap}
             />
           ))}
         </div>
