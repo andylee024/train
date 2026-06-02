@@ -78,13 +78,115 @@ Per [TR-339 experiment](../../../docs/product/features/coach-ingestion-experimen
 
 **Fallback (not yet wired):** if `chars_per_minute` drops below a floor (suggesting auto-captions dropped speech segments in noisy environments — V4 of the experiment), the writeup recommends a re-fetch via OpenAI's `whisper-1` API. To be added when extraction quality flags need it.
 
-## Stage 3–6 (not yet implemented in this commit)
+## Stage 3: extract
 
-See later commits / Linear tasks:
-- **TR-341** extract: per-video extraction with citation schema
-- **TR-342** synthesize: aggregate extractions into `_template/`-shaped draft
-- **TR-343** review + land: side-by-side diff + `--approve`-gated land
-- **TR-344** first production run: end-to-end Catalyst Athletics ingestion
+```bash
+python3 .claude/skills/ingest-coach/extract.py --coach catalyst-athletics \
+    [--video-ids ID1 ID2 ...] [--force]
+
+# Re-validate cached extractions without API calls:
+python3 .claude/skills/ingest-coach/extract.py --coach catalyst-athletics --validate-only
+```
+
+Calls Claude (model: `claude-opus-4-7`) once per transcript with the
+extraction prompt at `prompts/extract.md`. Output is structured JSON matching
+`schema.json` (v1): `philosophy`, `exercises`, `programming_rules`,
+`sample_sessions`, each item carrying a `{ts, quote}` citation.
+
+**Validation:** every `citation.quote` must be a verbatim substring of the
+source transcript text. Failed quotes are recorded under `_meta.validation_errors`
+but don't block — the synth stage decides what to do.
+
+**Idempotency:** skip if `extractions/<id>.json` exists with current
+`schema_version`. Bump `CURRENT_EXTRACT_SCHEMA` to force re-extract everything.
+
+**Density bypass:** transcripts under 200 chars/min (meet footage, low-signal
+videos) emit an empty extraction with `_meta.skipped_reason` recorded.
+
+## Stage 4: synthesize
+
+```bash
+python3 .claude/skills/ingest-coach/synthesize.py --coach catalyst-athletics
+
+# Iterate on prompts without re-running extract:
+# (edit prompts/synthesize_*.md, then re-run the above)
+
+# Skip Claude calls; rebuild sources.json only:
+python3 .claude/skills/ingest-coach/synthesize.py --coach catalyst-athletics --from-cache
+```
+
+Two Claude calls per run: one builds `draft/guide.md` from all extractions,
+one builds `draft/exercise-selection.md` from just the exercise items.
+Citations appear inline as `[^vid-VIDEOID]` markers. A procedural step then
+walks both markdown docs for those markers and builds `draft/sources.json`
+with the full citation map (video metadata + supporting quotes from each
+cited extraction).
+
+This is the iteration-heavy stage. Prompts at `prompts/synthesize_guide.md`
+and `prompts/synthesize_exercises.md`. Tune them and re-run cheaply.
+
+## Stage 5: review
+
+```bash
+python3 .claude/skills/ingest-coach/review.py --coach catalyst-athletics
+
+# Just summary:
+python3 .claude/skills/ingest-coach/review.py --coach catalyst-athletics --summary
+
+# Per-video citation density (which videos contributed most):
+python3 .claude/skills/ingest-coach/review.py --coach catalyst-athletics --citations
+```
+
+Side-by-side unified diff between `draft/` and `docs/content/training-styles/<coach>/`
+(or full-as-additions on first ingestion). Color-coded if stdout is a tty.
+Includes file-size summary table and (with `--citations`) per-video markers
+across guide.md + exercise-selection.md.
+
+Reviewer reads the diff, then approves via `land.py --approve` or rejects
+by editing prompts and re-running `synthesize.py`.
+
+## Stage 6: land
+
+```bash
+# Dry-run (default — prints what would change):
+python3 .claude/skills/ingest-coach/land.py --coach catalyst-athletics
+
+# Actually commit:
+python3 .claude/skills/ingest-coach/land.py --coach catalyst-athletics --approve
+```
+
+On `--approve`:
+1. Copies `draft/guide.md` → `docs/content/training-styles/<coach>/guide.md`
+2. Copies `draft/exercise-selection.md` → same dir
+3. Copies `draft/sources.json` → `docs/content/training-styles/<coach>/sources/sources.json`
+4. Auto-generates a `README.md` stub at the coach's dir
+5. Writes `ingested.json` (state pin: list of video_ids represented in the committed guide)
+6. Syncs `manifest.json#seen_video_ids` to match `ingested.json`
+
+Manifest sync is the contract that makes incremental re-runs work: after
+land, only videos posted AFTER the most recent landed-on date appear as
+"new" in a future discover run.
+
+## Full one-coach pipeline
+
+```bash
+# First ingestion (~5-15 min with API calls):
+python3 .claude/skills/ingest-coach/discover.py --coach catalyst-athletics \
+    --channel https://www.youtube.com/@catalystathletics/videos --limit 30
+python3 .claude/skills/ingest-coach/fetch.py --coach catalyst-athletics
+python3 .claude/skills/ingest-coach/extract.py --coach catalyst-athletics
+python3 .claude/skills/ingest-coach/synthesize.py --coach catalyst-athletics
+python3 .claude/skills/ingest-coach/review.py --coach catalyst-athletics
+python3 .claude/skills/ingest-coach/land.py --coach catalyst-athletics --approve
+
+# Later refresh (a few new videos posted):
+python3 .claude/skills/ingest-coach/discover.py --coach catalyst-athletics --channel <URL>  # reports N new
+python3 .claude/skills/ingest-coach/fetch.py --coach catalyst-athletics                     # fetches just those
+python3 .claude/skills/ingest-coach/extract.py --coach catalyst-athletics                   # extracts just those
+python3 .claude/skills/ingest-coach/synthesize.py --coach catalyst-athletics                # re-synths everything
+python3 .claude/skills/ingest-coach/review.py --coach catalyst-athletics                    # diff shows just the new content
+python3 .claude/skills/ingest-coach/land.py --coach catalyst-athletics --approve
+```
 
 ## Manifest schema
 
