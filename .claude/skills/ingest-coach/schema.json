@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ingest-coach per-video extraction schema",
+  "description": "Schema version 1. Every claim must carry a citation back to the source transcript.",
+  "type": "object",
+  "required": ["schema_version", "video", "philosophy", "exercises", "programming_rules", "sample_sessions"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "video": {
+      "type": "object",
+      "required": ["video_id", "title"],
+      "additionalProperties": true,
+      "properties": {
+        "video_id": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "duration_seconds": { "type": ["integer", "null"] },
+        "upload_date": { "type": ["string", "null"] }
+      }
+    },
+    "philosophy": {
+      "type": "array",
+      "description": "Coaching-philosophy claims — beliefs about training that apply across athletes.",
+      "items": { "$ref": "#/$defs/citedClaim" }
+    },
+    "exercises": {
+      "type": "array",
+      "description": "Specific exercises the coach uses or discusses, with category + any loading/usage notes.",
+      "items": {
+        "type": "object",
+        "required": ["name", "category", "citation"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Exercise name as the coach uses it (e.g. 'snatch high pull')." },
+          "category": {
+            "type": "string",
+            "enum": ["snatch", "clean", "jerk", "squat", "pull", "press", "accessory", "mobility", "primer", "other"]
+          },
+          "loading_note": { "type": ["string", "null"], "description": "Typical loading / set-rep / when in cycle. Null if unspecified." },
+          "citation": { "$ref": "#/$defs/citation" }
+        }
+      }
+    },
+    "programming_rules": {
+      "type": "array",
+      "description": "Concrete rules about how to structure programs (volume, intensity, sequencing, recovery).",
+      "items": {
+        "type": "object",
+        "required": ["rule", "scope", "citation"],
+        "additionalProperties": false,
+        "properties": {
+          "rule": { "type": "string" },
+          "scope": {
+            "type": "string",
+            "enum": ["macrocycle", "mesocycle", "week", "session", "exercise"]
+          },
+          "citation": { "$ref": "#/$defs/citation" }
+        }
+      }
+    },
+    "sample_sessions": {
+      "type": "array",
+      "description": "Concrete example sessions/days the coach describes (helpful for the synthesis stage to ground programming).",
+      "items": {
+        "type": "object",
+        "required": ["context", "exercises", "citation"],
+        "additionalProperties": false,
+        "properties": {
+          "context": { "type": "string", "description": "When this session is used (e.g. 'Monday early in a mesocycle')." },
+          "exercises": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Ordered list of exercises in the session."
+          },
+          "citation": { "$ref": "#/$defs/citation" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "citedClaim": {
+      "type": "object",
+      "required": ["claim", "citation"],
+      "additionalProperties": false,
+      "properties": {
+        "claim": { "type": "string" },
+        "citation": { "$ref": "#/$defs/citation" }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": ["ts", "quote"],
+      "additionalProperties": false,
+      "properties": {
+        "ts": { "type": ["number", "null"], "description": "Approximate timestamp in seconds. Null if not locatable." },
+        "quote": { "type": "string", "minLength": 8, "description": "Verbatim substring from the source transcript text. Must match exactly (case-insensitive)." }
+      }
+    }
+  }
+}
