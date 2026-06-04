@@ -352,15 +352,15 @@ function MarketplacePhase({
     <>
       {/* Hero with matched-for header */}
       <div className="mb-6">
-        <h1 className="text-[28px] font-semibold tracking-tight leading-none">
+        <h1 className="text-[22px] sm:text-[28px] font-semibold tracking-tight leading-none">
           Find your training team
         </h1>
-        <div className="mt-2 flex items-baseline flex-wrap gap-x-3 gap-y-1">
+        <div className="mt-2 flex flex-col sm:flex-row sm:items-baseline sm:flex-wrap gap-x-3 gap-y-2">
           <p className="text-[13px] text-[var(--ink-dim)] leading-relaxed">
             Pick the coaches you trust — we'll synthesize their programming.
           </p>
           {intakeGoals.length > 0 && (
-            <div className="flex items-center gap-2 text-[11px] font-mono text-[var(--ink-muted)] tabular">
+            <div className="flex items-center gap-2 text-[11px] font-mono text-[var(--ink-muted)] tabular flex-wrap">
               <span className="uppercase tracking-wider text-[10px]">matched for:</span>
               <span className="text-[var(--ink-dim)]">
                 {goalLabels}{daysPerWeek ? ` · ${daysPerWeek} d/wk` : ""}

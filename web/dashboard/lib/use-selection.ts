@@ -64,5 +64,14 @@ export function useSelection() {
 
   const has = useCallback((id: string) => selected.includes(id), [selected]);
 
-  return { selected, toggle, remove, clear, has };
+  const addMany = useCallback((ids: string[]) => {
+    setSelected((prev) => {
+      const next = [...prev];
+      for (const id of ids) if (!next.includes(id)) next.push(id);
+      write(next);
+      return next;
+    });
+  }, []);
+
+  return { selected, toggle, remove, clear, has, addMany };
 }

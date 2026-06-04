@@ -34,8 +34,8 @@ export function GoalIntake({ onComplete }: { onComplete: () => void }) {
   } = useIntake();
 
   return (
-    <div className="max-w-3xl mx-auto py-8">
-      <h1 className="text-[28px] font-semibold tracking-tight leading-none mb-2">
+    <div className="max-w-3xl mx-auto py-6 sm:py-8">
+      <h1 className="text-[22px] sm:text-[28px] font-semibold tracking-tight leading-none mb-2">
         Let's build your training plan.
       </h1>
       <p className="text-[13px] text-[var(--ink-dim)] leading-relaxed mb-8">
@@ -85,7 +85,7 @@ export function GoalIntake({ onComplete }: { onComplete: () => void }) {
       </Section>
 
       {/* CTA */}
-      <div className="mt-10 flex items-center justify-between">
+      <div className="mt-10 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3">
         <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
           {isComplete
             ? `${intake.goals.length} goal${intake.goals.length === 1 ? "" : "s"} · ${intake.daysPerWeek} d/wk${intake.constraints.length ? ` · ${intake.constraints.length} constraint${intake.constraints.length === 1 ? "" : "s"}` : ""}`
