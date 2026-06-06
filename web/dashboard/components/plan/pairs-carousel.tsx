@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Check, Plus, Star, UsersRound } from "lucide-react";
+import { Check, Plus, UsersRound } from "lucide-react";
 import { CATEGORIES, getCoach, initials, type Coach } from "@/lib/coaches";
 import { cn } from "@/lib/cn";
 
@@ -103,13 +103,11 @@ function MiniCoachCard({
         <p className="mt-2 text-[11px] text-[var(--ink-dim)] leading-snug line-clamp-2">
           {coach.tagline}
         </p>
-        <div className="mt-2 flex items-center gap-2 text-[9px] font-mono text-[var(--ink-muted)] tabular">
-          <span className="flex items-center gap-1">
-            <Star size={8} className="fill-[var(--ink-muted)]" />
-            {coach.stats.rating}
-          </span>
-          <span>{coach.stats.followers}</span>
-        </div>
+        {coach.stats.followers !== "—" && (
+          <div className="mt-2 flex items-center gap-2 text-[9px] font-mono text-[var(--ink-muted)] tabular">
+            <span>{coach.stats.followers} followers</span>
+          </div>
+        )}
       </Link>
 
       <button

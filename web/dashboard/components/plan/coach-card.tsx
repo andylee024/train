@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Plus, Star } from "lucide-react";
+import { Check, Plus } from "lucide-react";
 import { CATEGORIES, initials, type Coach } from "@/lib/coaches";
 import { GOAL_LABEL } from "@/lib/matching";
 import type { GoalKey } from "@/lib/use-intake";
@@ -78,12 +78,21 @@ export function CoachCard({
 
       {/* Header: avatar + name + handle + category */}
       <div className="flex items-start gap-3 mb-3 pr-11">
-        <div
-          className="shrink-0 w-10 h-10 rounded-full grid place-items-center text-[12px] font-semibold text-white tabular"
-          style={{ background: accent }}
-        >
-          {initials(coach.name)}
-        </div>
+        {coach.headshot ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={coach.headshot}
+            alt={coach.name}
+            className="shrink-0 w-10 h-10 rounded-full object-cover"
+          />
+        ) : (
+          <div
+            className="shrink-0 w-10 h-10 rounded-full grid place-items-center text-[12px] font-semibold text-white tabular"
+            style={{ background: accent }}
+          >
+            {initials(coach.name)}
+          </div>
+        )}
         <div className="min-w-0 flex-1">
           <div className="text-[13px] font-medium text-[var(--ink)] truncate">
             {coach.name}
@@ -123,12 +132,9 @@ export function CoachCard({
       {/* Stats + Read profile link */}
       <div className="flex items-center justify-between gap-3 text-[10px] font-mono text-[var(--ink-muted)] tabular">
         <div className="flex items-center gap-3">
-          <span className="flex items-center gap-1">
-            <Star size={9} className="fill-[var(--ink-muted)]" />
-            {coach.stats.rating}
-          </span>
-          <span>{coach.stats.followers}</span>
-          <span>{coach.stats.programs} programs</span>
+          {coach.stats.followers !== "—" && (
+            <span>{coach.stats.followers} followers</span>
+          )}
         </div>
         <button
           type="button"

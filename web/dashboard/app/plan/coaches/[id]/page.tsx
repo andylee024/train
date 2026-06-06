@@ -3,7 +3,7 @@
 import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, Check, Plus, Play, Star, Quote } from "lucide-react";
+import { ChevronLeft, Check, Plus, Play } from "lucide-react";
 import { CATEGORIES, getCoach, initials } from "@/lib/coaches";
 import { getProfile } from "@/lib/coach-profiles";
 import { getExtras } from "@/lib/coach-extras";
@@ -46,12 +46,21 @@ export default function CoachProfilePage({
       {/* Hero */}
       <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-4 sm:p-6">
         <div className="flex flex-col sm:flex-row items-start gap-4">
-          <div
-            className="shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full grid place-items-center text-[14px] sm:text-[18px] font-semibold text-white tabular"
-            style={{ background: accent }}
-          >
-            {initials(coach.name)}
-          </div>
+          {coach.headshot ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={coach.headshot}
+              alt={coach.name}
+              className="shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
+            />
+          ) : (
+            <div
+              className="shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full grid place-items-center text-[14px] sm:text-[18px] font-semibold text-white tabular"
+              style={{ background: accent }}
+            >
+              {initials(coach.name)}
+            </div>
+          )}
           <div className="min-w-0 flex-1 w-full">
             <div className="flex items-baseline gap-2 flex-wrap">
               <h1 className="text-[18px] sm:text-[22px] font-semibold tracking-tight leading-none">
@@ -72,12 +81,9 @@ export default function CoachProfilePage({
               {coach.tagline}
             </p>
             <div className="mt-3 flex items-center gap-4 text-[10px] font-mono text-[var(--ink-muted)] tabular">
-              <span className="flex items-center gap-1">
-                <Star size={10} className="fill-[var(--ink-muted)]" />
-                {coach.stats.rating}
-              </span>
-              <span>{coach.stats.followers} followers</span>
-              <span>{coach.stats.programs} programs</span>
+              {coach.stats.followers !== "—" && (
+                <span>{coach.stats.followers} followers</span>
+              )}
             </div>
           </div>
           <button
@@ -186,28 +192,6 @@ export default function CoachProfilePage({
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {/* Testimonials */}
-      {extras?.testimonials && extras.testimonials.length > 0 && (
-        <Section label="From athletes who follow this program">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {extras.testimonials.map((t, i) => (
-              <figure
-                key={i}
-                className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-4"
-              >
-                <Quote size={12} className="mb-2" style={{ color: accent }} />
-                <blockquote className="text-[13px] text-[var(--ink)] leading-relaxed">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="mt-3 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
-                  {t.author} · {t.context}
-                </figcaption>
-              </figure>
             ))}
           </div>
         </Section>
