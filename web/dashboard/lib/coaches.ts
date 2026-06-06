@@ -44,14 +44,15 @@ export type Coach = {
 export const COACHES: Coach[] = [
   // ─── ATHLETIC ─────────────────────────────────────────────────────────────
   // Catalyst Athletics — derived from docs/content/training-styles/catalyst-athletics/guide.md
+  // Headshot + handle + follower count pulled from youtube.com/@CatalystAthletics (2026-06-06)
   {
     id: "catalyst-athletics",
     name: "Catalyst Athletics",
-    handle: "@catalystathletics",
-    headshot: null, // TODO: pull from youtube.com/@catalystathletics channel avatar
+    handle: "@CatalystAthletics",
+    headshot: "/coaches/catalyst-athletics.jpg",
     category: "athletic",
     tagline: "Olympic weightlifting from Greg Everett — technique-driven snatch + clean & jerk programming.",
-    stats: { followers: "—" }, // TODO: scrape YouTube subscriber count
+    stats: { followers: "153K" },
     tags: {
       goals: ["olympic lifting", "power", "vertical jump"],
       levels: ["beginner", "intermediate", "advanced"],
@@ -76,14 +77,15 @@ export const COACHES: Coach[] = [
 
   // ─── HYBRID ───────────────────────────────────────────────────────────────
   // Dylan Shannon (POWERJACKED) — derived from docs/content/training-styles/dylan-shannon/guide.md
+  // Headshot + handle + follower count pulled from youtube.com/@dylan_shannon (2026-06-06)
   {
     id: "dylan-shannon",
     name: "Dylan Shannon",
-    handle: "@powerjacked",
-    headshot: null, // TODO: pull from instagram.com/dylanshannon or YouTube avatar
+    handle: "@dylan_shannon",
+    headshot: "/coaches/dylan-shannon.jpg",
     category: "hybrid",
     tagline: "Look like a bodybuilder, perform like an athlete — 6-day power + physique hybrid.",
-    stats: { followers: "—" }, // TODO: scrape follower count
+    stats: { followers: "78.6K" },
     tags: {
       goals: ["power", "hypertrophy", "vertical jump", "speed"],
       levels: ["intermediate", "advanced"],
