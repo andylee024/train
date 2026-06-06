@@ -84,7 +84,7 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
  │ FEATURE @ In Progress                                                        │
  │   ──────────────────                                                         │
  │   N child Tasks @ Backlog · all parented to this Feature                     │
- │   Feature branch `feat/<slug>` created (Coder will if missing)               │
+ │   Feature branch `feat-<slug>` created (Coder will if missing)               │
  │                                                                              │
  │   ┌────────────────────────────────────────────────────────────────────┐     │
  │   │  TASK 1 @ Backlog    TASK 2 @ Backlog    TASK 3 @ Backlog          │     │
@@ -95,10 +95,10 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
  │   │  ┌──────────────────────────────────────────────────────────┐      │     │
  │   │  │ 🔨 CODER (one per task, runs in worktree)                │      │     │
  │   │  │   reads ticket + parent + PRD/SPEC + AGENTS.md           │      │     │
- │   │  │   branches claude/<task-slug> off feat/<slug>            │      │     │
+ │   │  │   branches claude/<task-slug> off feat-<slug>            │      │     │
  │   │  │   implements per Build steps                             │      │     │
  │   │  │   commits, tests, screenshots                            │      │     │
- │   │  │   opens draft PR → feat/<slug>                           │      │     │
+ │   │  │   opens draft PR → feat-<slug>                           │      │     │
  │   │  │   Andon cord: STOP if spec is wrong                      │      │     │
  │   │  └──────────────────────────────────────────────────────────┘      │     │
  │   │       │                   │                   │                    │     │
@@ -126,7 +126,7 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
  │   │       │                   │                   │                    │     │
  │   │       ▼                   ▼                   ▼                    │     │
  │   │  TASK 1 @ Done         @ Done             @ Done                   │     │
- │   │   (auto-merged to feat/<slug>; task branches deleted)              │     │
+ │   │   (auto-merged to feat-<slug>; task branches deleted)              │     │
  │   └────────────────────────────────────────────────────────────────────┘     │
  │                                                                              │
  │   When the LAST sibling task lands @ Done:                                   │
@@ -135,7 +135,7 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
     │
     │ Last-Task Promotion (same Coder that closed final task):
     │   1. Verify feat/ branch builds clean
-    │   2. gh pr create --base athlete-os --head feat/<slug>
+    │   2. gh pr create --base main --head feat-<slug>
     │      title: "Feature: <name>"
     │      body: cumulative task PRs (test plans, screenshots, file lists)
     │   3. Move Feature → In Review
@@ -145,7 +145,7 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
  ┌──────────────────────────────────────────────────────────────────────────────┐
  │ FEATURE @ In Review                                                          │
  │   ─────────────────                                                          │
- │   feature PR open against athlete-os                                         │
+ │   feature PR open against main                                         │
  │   all children Done · all task branches deleted                              │
  │   Andy gets the notification                                                 │
  └──┬───────────────────────────────────────────────────────────────────────────┘
@@ -154,7 +154,7 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
     │  ┌───────────────────────────────────────────────────────────┐
     │  │ Opens ONE GitHub tab.                                     │
     │  │ Reads test plan (1-2 min)                                 │
-    │  │ Local: git checkout feat/<slug> && npm run dev (5-10 min) │
+    │  │ Local: git checkout feat-<slug> && npm run dev (5-10 min) │
     │  │ Walks golden path                                         │
     │  │ Approves & merges  OR  comments to request changes        │
     │  │                                                           │
@@ -169,12 +169,12 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
  ┌──────────────────────────────────────────────────────────────────────────────┐
  │ FEATURE @ Done                                                               │
  │   ────────────                                                               │
- │   merged to athlete-os · feat/<slug> branch deleted                          │
+ │   merged to main · feat-<slug> branch deleted                          │
  │   all task tickets remain @ Done · all task branches deleted                 │
  │   PRD.md success criterion flipped ⬜ → ✅ if applicable                      │
  │                                                                              │
  │   Andy decides when to deploy:                                               │
- │     - Dashboard → push athlete-os → Vercel auto-deploys                      │
+ │     - Dashboard → push main → Vercel auto-deploys                      │
  │     - Migrations → Supabase MCP apply                                        │
  └──────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -214,8 +214,8 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
 
   BRANCH                                          PR TARGETS
   ──────                                          ──────────
-  athlete-os                  (integration trunk)
-   └─ feat/<feature-slug>     (feature branch)    ←─ task PRs (auto-merged)
+  main                  (integration trunk)
+   └─ feat-<feature-slug>     (feature branch)    ←─ task PRs (auto-merged)
        └─ claude/<task-slug>  (per-task branch)
 
 
@@ -226,7 +226,7 @@ If you're an AI agent picking up work, the diagram below shows where you fit. Th
   ❌ Approve or merge any PR (Andy merges feature PRs; Code Reviewer
      auto-merges task PRs into feat/ branches)
   ❌ Modify Feature spec after Approved
-  ❌ Commit directly to athlete-os or feat/<slug>
+  ❌ Commit directly to main or feat-<slug>
   ❌ Skip the audit trail — every status change gets a Linear comment
 
 
@@ -265,8 +265,8 @@ Feature (no parentId)
   └── children: Task[]
 
 Task (has parentId)
-  ├── title: "Bug:" / "Feature:" / "Improvement: <name>"
-  ├── description: Build + AC + Files + Verifiable + Depends-on
+  ├── title: "Task: <name>"
+  ├── description: Depends-on + Parallel-safe + Build + AC + Files + Verifiable
   ├── status: 6 statuses below
   ├── parentId: <Feature ID>
   └── blockedBy: [Task ID, ...]
@@ -295,7 +295,7 @@ For each Linear status: what it means, what's expected, what gets produced, and 
 
 #### Task
 - **Meaning:** fully specified work, queued, awaiting a Coder.
-- **Expectations:** title prefixed with `Bug:` / `Feature:` / `Improvement:`. Description contains Build steps, machine-verifiable Acceptance criteria, Files, Verifiable check, Depends-on, Parallel-safe. `parentId` set. `blockedBy` set if applicable.
+- **Expectations:** title prefixed with `Task:`. Description contains Depends-on, Parallel-safe, Build steps, machine-verifiable Acceptance criteria, Files, Verifiable check. `parentId` set. `blockedBy` set if applicable.
 - **Deliverables:** none yet.
 - **Instructions (Coder picking up):**
   - Eligible if `blockedBy` is empty AND parent Feature status is `In Progress`.
@@ -324,22 +324,22 @@ Tasks skip Approved entirely. They go Backlog → In Progress directly when a Co
 
 #### Feature
 - **Meaning:** tasks decomposed, Coders executing.
-- **Expectations:** ≥1 child task exists; NOT all children are Done. A `feat/<feature-slug>` branch exists off `athlete-os` (Coder creates if missing).
+- **Expectations:** ≥1 child task exists; NOT all children are Done. A `feat-<feature-slug>` branch exists off `main` (Coder creates if missing).
 - **Deliverables:** per-task PRs landing on the feature branch as children complete.
 - **Instructions (Coder closing the LAST task):**
   - When you're about to close the final child task (verify: all other siblings already `Done`):
     1. Confirm feature branch builds clean (`tsc --noEmit` + `npm run build` for TS; `py_compile` for Python)
-    2. Open feature PR `feat/<slug>` → `athlete-os` with title `Feature: <name>`, body auto-composed from all child task PR bodies
+    2. Open feature PR `feat-<slug>` → `main` with title `Feature: <name>`, body auto-composed from all child task PR bodies
     3. Move Feature ticket `In Progress → In Review`
     4. Comment on Feature: `"feature PR opened: <URL> · awaiting human review"`
   - Until the final task fires, leave the Feature ticket alone.
-- **Andon cord:** if `feat/<slug>` doesn't exist when branching, create it from `athlete-os` HEAD. If you can't, STOP and surface to Andy.
+- **Andon cord:** if `feat-<slug>` doesn't exist when branching, create it from `main` HEAD. If you can't, STOP and surface to Andy.
 
 #### Task
 - **Meaning:** a Coder picked it up and is actively building.
 - **Expectations:** assignee set; `claude/<task-slug>` branch exists off the feature branch; commits land regularly; the owning Coder is responsible until Done or bounce.
 - **Deliverables during this stage:** working code per Build steps; tests where the codebase has them; screenshots in `docs/screenshots/<task-slug>/` for any UI change.
-- **Deliverables to exit:** draft PR against the feature branch (NOT `athlete-os`). PR body contains:
+- **Deliverables to exit:** draft PR against the feature branch (NOT `main`). PR body contains:
   - `Closes <Task Linear ID>`
   - Test plan — verbatim acceptance criteria as checkboxes
   - Screenshots if UI
@@ -359,7 +359,7 @@ Tasks skip Approved entirely. They go Backlog → In Progress directly when a Co
 ### In Review
 
 #### Feature
-- **Meaning:** feature PR open against `athlete-os`; all children Done; awaiting Andy.
+- **Meaning:** feature PR open against `main`; all children Done; awaiting Andy.
 - **Expectations:** feature PR exists (not draft); description complete; CI green.
 - **Deliverables:** already complete (the feature PR itself).
 - **Instructions:**
@@ -393,9 +393,9 @@ Tasks skip Approved entirely. They go Backlog → In Progress directly when a Co
 ### Done
 
 #### Feature
-- **Meaning:** feature PR merged to `athlete-os`. Feature shipped (modulo deploy).
+- **Meaning:** feature PR merged to `main`. Feature shipped (modulo deploy).
 - **Expectations:** all children Done; feature PR merged; feature branch deleted; task branches deleted.
-- **Deliverables:** code on `athlete-os`. Optionally a `docs/product/decisions.md` entry if a non-trivial decision was logged.
+- **Deliverables:** code on `main`. Optionally a `docs/product/decisions.md` entry if a non-trivial decision was logged.
 - **Instructions:**
   - Do not modify the ticket.
   - If a PRD §7 success criterion is tied to this Feature, flip it ⬜ → ✅ in `PRD.md` as part of the feature PR. If missed, open a tiny follow-up task.
@@ -422,10 +422,17 @@ Tasks skip Approved entirely. They go Backlog → In Progress directly when a Co
 
 1. **Read access is broad, write access is scoped.** A Coder writes code, not spec text. The Tech Lead writes Tasks, not Feature spec. Roles don't cross.
 2. **Comments are the audit trail.** Every state transition you initiate gets a one-line Linear comment explaining what you did and why. E.g. `"moved to In Review — all 5 AC verified"`.
-3. **Always work on a branch.** Never commit to a feature branch directly. Never commit to `athlete-os` ever.
+3. **Always work on a branch.** Never commit to a feature branch directly. Never commit to `main` ever.
 4. **No partial work in main.** If you can't ship clean, don't ship. Better a stalled task than a half-merged feature.
 5. **Screenshots are part of the deliverable for UI changes.** Not optional. Live in `docs/screenshots/<task-slug>/`. Referenced inline in the PR body.
 6. **`PRD.md` and `SPEC.md` are the contract.** If your work conflicts with them, the contract wins — STOP, surface the conflict, do not silently work around.
+7. **Linear status tracks reality, not ceremony.** Whether work is done by the autonomous pipeline OR by Andy/agent directly, Linear state must match the code:
+   - Task's code lands on the feature branch → Task → `Done` (don't leave at Backlog/In Progress)
+   - Feature PR opens against `main` → Feature → `In Review`
+   - Feature PR merges → Feature → `Done`
+   - Work is cut/reverted → Task → `Cancelled`
+
+   The diagram above describes the *autonomous* path (Coder picks up → Code Reviewer merges → state advances). Manual work follows the same status transitions. If you implement a task directly without the full Coder/Reviewer cycle, you still update Linear. A ticket left stale at `Backlog` after the code ships is a worse defect than the code itself — it breaks the team's read of "what's actually shipped."
 
 ---
 
