@@ -9,7 +9,13 @@
  */
 
 export type Principle = { title: string; body: string };
-export type SampleVideo = { title: string; duration: string; views: string };
+export type SampleVideo = {
+  id: string; // YouTube video id
+  title: string;
+  duration: string; // "mm:ss" or "h:mm:ss"
+  views: string; // "3.4K" / "1.2M"
+  thumbnail: string;
+};
 
 export type SampleExercise = {
   name: string;
@@ -106,7 +112,16 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       },
       REST,
     ],
-    videos: [],
+    // Videos pulled from youtube.com/@catalystathletics (2026-06-06).
+    // TODO: switch from most-recent to true top-N-by-views once we have a sorted fetch path.
+    videos: [
+      { id: "XpN5dGyHKqY", title: "Exercise Selection & Order — How To Write Olympic Weightlifting Training Programs", duration: "12:59", views: "3.2K", thumbnail: "https://i.ytimg.com/vi/XpN5dGyHKqY/maxresdefault.jpg" },
+      { id: "ra8dYrUKJys", title: "Your Feet Might Be Lying — Snatch & Clean Technique", duration: "3:01", views: "2.8K", thumbnail: "https://i.ytimg.com/vi/ra8dYrUKJys/maxresdefault.jpg" },
+      { id: "XsqLP70vK5Y", title: "How to Use Prilepin's Table for Olympic Weightlifting", duration: "2:59", views: "2.6K", thumbnail: "https://i.ytimg.com/vi/XsqLP70vK5Y/maxresdefault.jpg" },
+      { id: "mzzmZAWxOn4", title: "Laying Out The Training Week Schedule for Olympic Weightlifting", duration: "7:27", views: "2.4K", thumbnail: "https://i.ytimg.com/vi/mzzmZAWxOn4/maxresdefault.jpg" },
+      { id: "5FscVghWSps", title: "The Year Plan for Olympic Weightlifting Training Programs", duration: "10:26", views: "1.8K", thumbnail: "https://i.ytimg.com/vi/5FscVghWSps/maxresdefault.jpg" },
+      { id: "SInXEdJVTA8", title: "How & Why Athletes' Ability for Reps & Intensity Varies", duration: "3:02", views: "1.4K", thumbnail: "https://i.ytimg.com/vi/SInXEdJVTA8/maxresdefault.jpg" },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -195,7 +210,16 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       },
       REST,
     ],
-    videos: [],
+    // Videos pulled from youtube.com/@dylan_shannon (2026-06-06).
+    // TODO: switch from most-recent to true top-N-by-views once we have a sorted fetch path.
+    videos: [
+      { id: "YOyFCTVfPEI", title: "The Power of Small Changes | Heavy Push Day for Strength", duration: "22:55", views: "6.0K", thumbnail: "https://i.ytimg.com/vi/YOyFCTVfPEI/maxresdefault.jpg" },
+      { id: "Ws2b0CUiQRI", title: "Eating 4600 Calories In Miami While Staying Lean and Athletic", duration: "22:53", views: "3.8K", thumbnail: "https://i.ytimg.com/vi/Ws2b0CUiQRI/maxresdefault.jpg" },
+      { id: "-aigVtGcOvg", title: "Build BIG & STRONG Quads with this Workout", duration: "25:26", views: "3.8K", thumbnail: "https://i.ytimg.com/vi/-aigVtGcOvg/maxresdefault.jpg" },
+      { id: "YL5_TW4M1pg", title: "Squatting 545lbs for Reps: Why the First Set is Always the Hardest", duration: "26:00", views: "3.7K", thumbnail: "https://i.ytimg.com/vi/YL5_TW4M1pg/maxresdefault.jpg" },
+      { id: "2fl7gJt2XH8", title: "How I Structure My Pull Day for Maximum Strength & Size", duration: "22:03", views: "3.6K", thumbnail: "https://i.ytimg.com/vi/2fl7gJt2XH8/maxresdefault.jpg" },
+      { id: "x2-sSTG41ao", title: "Build Strong & Jacked Legs: Combining Explosive Power and Hypertrophy", duration: "20:12", views: "3.4K", thumbnail: "https://i.ytimg.com/vi/x2-sSTG41ao/maxresdefault.jpg" },
+    ],
   },
 };
 

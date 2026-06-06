@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ChevronLeft, Check, Plus } from "lucide-react";
 import { CATEGORIES, getCoach, initials, type Coach } from "@/lib/coaches";
-import { getExtras } from "@/lib/coach-extras";
 import { getProfile } from "@/lib/coach-profiles";
 import { useSelection } from "@/lib/use-selection";
 import { WeeklySessionsViewer } from "@/components/plan/weekly-sessions-viewer";
@@ -154,29 +153,6 @@ function ComparePageInner() {
               ))}
             </ul>
           )}
-        </CompareRow>
-
-        <CompareRow label="What you'll gain" coaches={coaches}>
-          {(c) => {
-            const extras = getExtras(c.id);
-            if (!extras?.whatYoullGain) {
-              return (
-                <span className="text-[11px] text-[var(--ink-muted)] italic">
-                  Not yet documented.
-                </span>
-              );
-            }
-            return (
-              <ul className="space-y-1 text-[11px] text-[var(--ink-dim)] leading-snug">
-                {extras.whatYoullGain.slice(0, 3).map((g, i) => (
-                  <li key={i} className="flex gap-1.5">
-                    <span className="text-[var(--accent)] shrink-0">·</span>
-                    <span>{g}</span>
-                  </li>
-                ))}
-              </ul>
-            );
-          }}
         </CompareRow>
 
         <CompareRow label="Pairs well with" coaches={coaches}>

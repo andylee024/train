@@ -26,7 +26,15 @@ export type Coach = {
   /** URL or path to coach headshot. Falls back to colored initials when null. */
   headshot: string | null;
   category: CoachCategory;
+  /** 1-line bio embedded next to handle in hero. e.g. "10-year NFL veteran" */
+  credentials: string;
+  /** Big visceral tagline — page H1 in the coach's voice. */
   tagline: string;
+  /**
+   * 3-sentence narrative paragraph: style intro → programming approach → who it's for.
+   * Spec: docs/design/coach-profile.md §3.2
+   */
+  overview: string;
   stats: { followers: string };
   tags: {
     goals: string[];
@@ -51,7 +59,10 @@ export const COACHES: Coach[] = [
     handle: "@CatalystAthletics",
     headshot: "/coaches/catalyst-athletics.jpg",
     category: "athletic",
-    tagline: "Olympic weightlifting from Greg Everett — technique-driven snatch + clean & jerk programming.",
+    credentials: "Greg Everett · 25+ years coaching Olympic-level weightlifters",
+    tagline: "The competition lifts are the program.",
+    overview:
+      "Catalyst Athletics is Greg Everett's Olympic weightlifting system, built around the snatch and clean & jerk as the primary training tools — with squats, pulls, and pressing as support. The programs scale by skill level: beginners learn the competition lifts with coach-prescribed loads and lots of technique work; advanced athletes layer in higher volume, more variations, and percentage-based loading. Built for athletes pursuing competitive Olympic weightlifting performance, or athletes who need transferable triple-extension power for sport.",
     stats: { followers: "153K" },
     tags: {
       goals: ["olympic lifting", "power", "vertical jump"],
@@ -84,7 +95,10 @@ export const COACHES: Coach[] = [
     handle: "@dylan_shannon",
     headshot: "/coaches/dylan-shannon.jpg",
     category: "hybrid",
-    tagline: "Look like a bodybuilder, perform like an athlete — 6-day power + physique hybrid.",
+    credentials: "Performance + physique hybrid coach · POWERJACKED",
+    tagline: "Look like a bodybuilder, perform like an athlete.",
+    overview:
+      "POWERJACKED is Dylan Shannon's 6-day hybrid system that builds an explosive lower body and a jacked upper body in parallel. Each week stacks sprints, jumps, Olympic lifts, and heavy compounds when the nervous system is fresh, then layers high-volume bodybuilding accessories over the top of every session. Built for field-sport athletes and intermediate-to-advanced lifters who want size and speed at the same time.",
     stats: { followers: "78.6K" },
     tags: {
       goals: ["power", "hypertrophy", "vertical jump", "speed"],
