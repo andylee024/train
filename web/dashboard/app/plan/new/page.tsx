@@ -596,36 +596,6 @@ function ProgressStep({
 
 
 // ─── Phase: activated ──────────────────────────────────────────────────────
-//
-// Two-step flow (TR-335):
-//   step 1 ("form")    — phone-number input + Activate button
-//   step 2 ("sending") — spinner while POSTing to /api/welcome-sms
-//   step 3 ("done")    — confirmation card with masked phone
-//
-// On submit we run /api/activate (bundle build) and /api/welcome-sms in
-// parallel; the SMS is what the athlete actually feels, so its result
-// drives the confirmation copy.
-
-const PHONE_DIGITS = /^\d{10}$/;
-
-function digitsOnly(s: string): string {
-  return s.replace(/\D/g, "");
-}
-
-function formatPhoneInput(s: string): string {
-  // Live-format as (XXX) XXX-XXXX for the 10-digit US case.
-  const d = digitsOnly(s).slice(0, 10);
-  if (d.length <= 3) return d;
-  if (d.length <= 6) return `(${d.slice(0, 3)}) ${d.slice(3)}`;
-  return `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}`;
-}
-
-function maskPhone(digits: string): string {
-  // 10 digits → "***-***-1234"
-  const d = digitsOnly(digits);
-  if (d.length < 4) return "***-***-****";
-  return `***-***-${d.slice(-4)}`;
-}
 
 function ActivatedPhase({
   plan,
@@ -647,135 +617,23 @@ function ActivatedPhase({
     onClearSelection();
   }, [onClearSelection]);
 
-  const [step, setStep] = useState<"form" | "sending" | "done">("form");
-  const [phoneInput, setPhoneInput] = useState("");
-  const [phoneError, setPhoneError] = useState<string | null>(null);
-  const [smsResult, setSmsResult] = useState<{ sent: boolean; reason?: string } | null>(null);
-  const [submittedDigits, setSubmittedDigits] = useState("");
-
   const title = plan?.meta.title ?? "Your new arc";
   const horizon = plan?.meta.horizon ?? "16 weeks";
   const dpw = plan?.meta.daysPerWeek ?? 5;
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    const digits = digitsOnly(phoneInput);
-    if (!PHONE_DIGITS.test(digits)) {
-      setPhoneError("Enter a 10-digit US phone number.");
-      return;
-    }
-    setPhoneError(null);
-    setSubmittedDigits(digits);
-    setStep("sending");
-
-    try {
-      const res = await fetch("/api/welcome-sms", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ phone: digits, planTitle: title }),
-      });
-      const data = (await res.json()) as { sent: boolean; reason?: string };
-      setSmsResult(data);
-    } catch (err) {
-      setSmsResult({
-        sent: false,
-        reason: err instanceof Error ? err.message : "request failed",
-      });
-    }
-    setStep("done");
-  }
-
-  if (step === "form") {
-    return (
-      <div className="max-w-2xl mx-auto py-16">
-        <div className="bg-[var(--bg-elev-1)] border border-[var(--accent-line)] rounded-md p-8">
-          <div className="text-[16px] text-[var(--ink)] mb-1">Activate your plan</div>
-          <div className="text-[12px] text-[var(--ink-dim)] mb-2 tabular">
-            {title} · {horizon} · {dpw} days/week
-          </div>
-          <div className="text-[12px] text-[var(--ink-dim)] mb-6">
-            Enter your phone number — we'll text you a confirmation now and
-            your daily session each morning.
-          </div>
-          <form onSubmit={handleSubmit} noValidate>
-            <label
-              htmlFor="welcome-phone"
-              className="block text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] mb-2"
-            >
-              Phone (US)
-            </label>
-            <input
-              id="welcome-phone"
-              type="tel"
-              inputMode="tel"
-              autoComplete="tel-national"
-              placeholder="(555) 123-4567"
-              value={phoneInput}
-              onChange={(e) => {
-                setPhoneInput(formatPhoneInput(e.target.value));
-                if (phoneError) setPhoneError(null);
-              }}
-              aria-invalid={phoneError ? "true" : "false"}
-              aria-describedby={phoneError ? "welcome-phone-error" : undefined}
-              className="w-full px-3 py-2 rounded-sm bg-[var(--bg-elev-2)] border border-[var(--line)] text-[14px] text-[var(--ink)] tabular focus:outline-none focus:border-[var(--accent-line)]"
-            />
-            {phoneError && (
-              <div
-                id="welcome-phone-error"
-                role="alert"
-                className="mt-2 text-[11px] text-[var(--bad,#c33)]"
-              >
-                {phoneError}
-              </div>
-            )}
-            <button
-              type="submit"
-              className="mt-6 block w-full text-[11px] font-mono uppercase tracking-wider px-3 py-2 rounded-sm bg-[var(--accent)] text-[var(--accent-ink)] hover:opacity-90"
-            >
-              Activate
-            </button>
-          </form>
-        </div>
-      </div>
-    );
-  }
-
-  if (step === "sending") {
-    return (
-      <div className="max-w-2xl mx-auto py-16">
-        <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-8 text-center">
-          <div className="inline-block w-5 h-5 mb-3 border-2 border-[var(--accent)] border-t-transparent rounded-full animate-spin" />
-          <div className="text-[13px] text-[var(--ink)] mb-1">Sending your welcome text…</div>
-          <div className="text-[11px] text-[var(--ink-muted)] font-mono uppercase tracking-wider">
-            usually ~5s
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // step === "done"
-  const sent = smsResult?.sent === true;
-  const masked = maskPhone(submittedDigits);
 
   return (
     <div className="max-w-2xl mx-auto py-16">
       <div className="bg-[var(--bg-elev-1)] border border-[var(--accent-line)] rounded-md p-8">
         <div className="flex items-center gap-2 mb-3">
           <CheckCircle2 size={18} className="text-[var(--accent)]" />
-          <span className="text-[16px] text-[var(--ink)]">
-            {sent
-              ? `✓ Plan activated · text sent to ${masked}`
-              : "Plan activated · text not sent"}
-          </span>
+          <span className="text-[16px] text-[var(--ink)]">Your plan is live.</span>
         </div>
         <div className="text-[12px] text-[var(--ink-dim)] mb-2 tabular">
           {title} · {horizon} · {dpw} days/week
         </div>
         <div className="text-[12px] text-[var(--ink-dim)] mb-6">
-          {sent
-            ? "Tomorrow at 6:30 AM you'll get your first session via SMS. Text back what you did and the dashboard updates in real time."
-            : `We couldn't send your welcome text${smsResult?.reason ? ` (${smsResult.reason})` : ""}. Your plan is still saved — try again later.`}
+          Tomorrow at 6:30 AM you'll get your first session via SMS. Text back
+          what you did and the dashboard updates in real time.
         </div>
 
         {result?.paths && (
