@@ -132,9 +132,10 @@ export function CoachCard({
       {/* Stats + Read profile link */}
       <div className="flex items-center justify-between gap-3 text-[10px] font-mono text-[var(--ink-muted)] tabular">
         <div className="flex items-center gap-3">
-          {coach.stats.followers !== "—" && (
-            <span>{coach.stats.followers} followers</span>
-          )}
+          {(() => {
+            const primary = coach.socials.find((s) => s.followers);
+            return primary?.followers ? <span>{primary.followers} followers</span> : null;
+          })()}
         </div>
         <button
           type="button"

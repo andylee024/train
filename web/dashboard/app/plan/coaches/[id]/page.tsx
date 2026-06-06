@@ -3,13 +3,14 @@
 import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, Check, Plus, Play, Dumbbell } from "lucide-react";
-import { CATEGORIES, getCoach, initials } from "@/lib/coaches";
+import { ChevronLeft, Check, Plus, Play } from "lucide-react";
+import { CATEGORIES, getCoach, initials, type SocialLink } from "@/lib/coaches";
 import { getProfile } from "@/lib/coach-profiles";
 import { useSelection } from "@/lib/use-selection";
 import { SelectionBar } from "@/components/plan/selection-bar";
 import { TeamSidebar } from "@/components/plan/team-sidebar";
 import { PairsCarousel } from "@/components/plan/pairs-carousel";
+import { WeeklySessionsViewer } from "@/components/plan/weekly-sessions-viewer";
 import { cn } from "@/lib/cn";
 
 /**
@@ -68,12 +69,6 @@ export default function CoachProfilePage({
                   <h1 className="text-[20px] sm:text-[24px] font-semibold tracking-tight leading-none">
                     {coach.name}
                   </h1>
-                  <span className="text-[11px] font-mono text-[var(--ink-muted)] tabular">
-                    {coach.handle}
-                  </span>
-                  <span className="text-[11px] font-mono text-[var(--ink-muted)] tabular">
-                    · {coach.stats.followers} followers
-                  </span>
                 </div>
                 <div className="mt-2 flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
                   <span
@@ -85,6 +80,11 @@ export default function CoachProfilePage({
                 <p className="mt-3 text-[12px] text-[var(--ink-dim)] leading-snug">
                   {coach.credentials}
                 </p>
+                <div className="mt-3 flex items-center gap-2 flex-wrap">
+                  {coach.socials.map((s) => (
+                    <SocialChip key={s.platform} link={s} />
+                  ))}
+                </div>
                 <p
                   className="mt-4 text-[17px] sm:text-[19px] font-medium text-[var(--ink)] leading-tight"
                   style={{ fontStyle: "italic" }}
@@ -126,28 +126,32 @@ export default function CoachProfilePage({
 
           {/* ── 3. EQUIPMENT ─────────────────────────────────────────── */}
           <Section label="Equipment">
-            <ul className="space-y-2 text-[13px] text-[var(--ink-dim)]">
+            <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory sm:flex-wrap sm:overflow-visible sm:snap-none">
               {coach.tags.equipment.map((e, i) => (
-                <li key={i} className="flex items-center gap-2.5">
-                  <Dumbbell
-                    size={12}
-                    className="shrink-0"
-                    style={{ color: accent }}
+                <span
+                  key={i}
+                  className="shrink-0 snap-start inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-sm text-[11.5px] text-[var(--ink-dim)] whitespace-nowrap"
+                >
+                  <span
+                    className="inline-block w-1.5 h-1.5 rounded-full"
+                    style={{ background: accent }}
                   />
-                  <span className="leading-snug">{e}</span>
-                </li>
+                  {e}
+                </span>
               ))}
-            </ul>
+            </div>
           </Section>
 
           {/* ── 4. SAMPLE WEEK ───────────────────────────────────────── */}
           {profile?.weekStructure && (
             <Section label="Sample Week">
-              <div className="space-y-3">
-                {profile.weekStructure.map((day, i) => (
-                  <DayCard key={i} dayIdx={i} day={day} accent={accent} />
-                ))}
-              </div>
+              <p className="text-[11px] text-[var(--ink-muted)] mb-3">
+                Click any day to see the full session.
+              </p>
+              <WeeklySessionsViewer
+                weekStructure={profile.weekStructure}
+                accent={accent}
+              />
             </Section>
           )}
 
@@ -318,82 +322,65 @@ function Chip({ children }: { children: React.ReactNode }) {
   );
 }
 
-const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const PLATFORM_LABEL: Record<SocialLink["platform"], string> = {
+  youtube: "YouTube",
+  instagram: "Instagram",
+  tiktok: "TikTok",
+};
 
-function DayCard({
-  dayIdx,
-  day,
-  accent,
-}: {
-  dayIdx: number;
-  day: import("@/lib/coach-profiles").DaySession;
-  accent: string;
-}) {
-  if (day.isRest) {
-    return (
-      <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-3 flex items-center gap-3 opacity-70">
-        <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular w-10">
-          {DAY_NAMES[dayIdx]}
-        </div>
-        <div className="text-[12px] text-[var(--ink-muted)] italic">Rest</div>
-      </div>
-    );
-  }
+function YoutubeIcon({ size = 12 }: { size?: number }) {
   return (
-    <div className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-3.5">
-      <div className="flex items-baseline gap-3 mb-2.5">
-        <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular w-10 shrink-0 mt-0.5">
-          {DAY_NAMES[dayIdx]}
-        </div>
-        <div className="min-w-0 flex-1">
-          <div
-            className="text-[13.5px] font-medium text-[var(--ink)] leading-snug"
-            style={{ color: accent }}
-          >
-            {day.name}
-          </div>
-          {day.duration && (
-            <div className="text-[10px] font-mono text-[var(--ink-muted)] tabular mt-0.5">
-              {day.duration}
-            </div>
-          )}
-        </div>
-      </div>
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8 0 12 0 12s0 4 .5 5.8c.3 1 1 1.8 2 2.1 1.8.6 9.5.6 9.5.6s7.7 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z" />
+    </svg>
+  );
+}
 
-      {day.exercises && day.exercises.length > 0 && (
-        <ol className="space-y-1.5 pl-10">
-          {day.exercises.map((ex, i) => (
-            <li
-              key={i}
-              className="flex items-baseline gap-2 text-[11.5px] text-[var(--ink-dim)] leading-snug"
-            >
-              <span className="font-mono text-[10px] text-[var(--ink-muted)] tabular w-4 shrink-0">
-                {i + 1}.
-              </span>
-              <span className="flex-1">
-                <span className="text-[var(--ink)]">{ex.name}</span>
-                {" — "}
-                <span className="font-mono text-[10.5px] tabular">
-                  {ex.sets}×{ex.reps}
-                </span>
-                {ex.load && (
-                  <>
-                    {" · "}
-                    <span className="font-mono text-[10.5px] tabular text-[var(--ink-muted)]">
-                      {ex.load}
-                    </span>
-                  </>
-                )}
-                {ex.note && (
-                  <span className="ml-1 text-[10.5px] italic text-[var(--ink-muted)]">
-                    ({ex.note})
-                  </span>
-                )}
-              </span>
-            </li>
-          ))}
-        </ol>
-      )}
-    </div>
+function InstagramIcon({ size = 12 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
+
+function SocialChip({ link }: { link: SocialLink }) {
+  const renderIcon = () => {
+    if (link.platform === "youtube") return <YoutubeIcon size={12} />;
+    if (link.platform === "instagram") return <InstagramIcon size={12} />;
+    return <Play size={12} />;
+  };
+
+  return (
+    <a
+      href={link.url}
+      target="_blank"
+      rel="noreferrer"
+      title={`${PLATFORM_LABEL[link.platform]} · @${link.handle ?? ""}`}
+      className="inline-flex items-center gap-1.5 px-2 py-1 rounded-sm bg-[var(--bg-elev-1)] border border-[var(--line)] hover:border-[var(--accent-line)] transition-colors group text-[var(--ink-muted)] hover:text-[var(--accent)]"
+    >
+      {renderIcon()}
+      {link.followers ? (
+        <span className="text-[10.5px] font-mono tabular text-[var(--ink-dim)] group-hover:text-[var(--ink)] transition-colors">
+          {link.followers}
+        </span>
+      ) : link.handle ? (
+        <span className="text-[10.5px] font-mono tabular text-[var(--ink-muted)] group-hover:text-[var(--ink-dim)] transition-colors">
+          @{link.handle}
+        </span>
+      ) : null}
+    </a>
   );
 }

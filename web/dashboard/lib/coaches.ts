@@ -12,11 +12,21 @@
 
 export type CoachCategory = "strength" | "athletic" | "aesthetic" | "hybrid";
 
+export type SocialPlatform = "youtube" | "instagram" | "tiktok";
+export type SocialLink = {
+  platform: SocialPlatform;
+  url: string;
+  /** Display @ handle (without the @). Falls back to URL slug if absent. */
+  handle?: string;
+  /** "153K" / "1.2M" — optional. Display next to icon when present. */
+  followers?: string;
+};
+
 export const CATEGORIES: Record<CoachCategory, { label: string; accent: string }> = {
   strength:  { label: "Strength & Hypertrophy", accent: "#7c8cff" },
   athletic:  { label: "Athletic Performance",   accent: "#f0a868" },
   aesthetic: { label: "Aesthetic & Physique",   accent: "#e878b5" },
-  hybrid:    { label: "Hybrid & Longevity",     accent: "#5ec99c" },
+  hybrid:    { label: "Hybrid Performance",     accent: "#5ec99c" },
 };
 
 export type Coach = {
@@ -35,7 +45,12 @@ export type Coach = {
    * Spec: docs/design/coach-profile.md §3.2
    */
   overview: string;
-  stats: { followers: string };
+  /**
+   * Social presence — icons render in hero, link to profiles, show follower
+   * count where known. Order matters: first entry's followers display next to
+   * the handle in the hero strip.
+   */
+  socials: SocialLink[];
   tags: {
     goals: string[];
     levels: string[];
@@ -63,7 +78,10 @@ export const COACHES: Coach[] = [
     tagline: "The competition lifts are the program.",
     overview:
       "Catalyst Athletics is Greg Everett's Olympic weightlifting system, built around the snatch and clean & jerk as the primary training tools — with squats, pulls, and pressing as support. The programs scale by skill level: beginners learn the competition lifts with coach-prescribed loads and lots of technique work; advanced athletes layer in higher volume, more variations, and percentage-based loading. Built for athletes pursuing competitive Olympic weightlifting performance, or athletes who need transferable triple-extension power for sport.",
-    stats: { followers: "153K" },
+    socials: [
+      { platform: "youtube", url: "https://www.youtube.com/@CatalystAthletics", handle: "CatalystAthletics", followers: "153K" },
+      { platform: "instagram", url: "https://www.instagram.com/catalystathletics/", handle: "catalystathletics" },
+    ],
     tags: {
       goals: ["olympic lifting", "power", "vertical jump"],
       levels: ["beginner", "intermediate", "advanced"],
@@ -99,7 +117,10 @@ export const COACHES: Coach[] = [
     tagline: "Look like a bodybuilder, perform like an athlete.",
     overview:
       "POWERJACKED is Dylan Shannon's 6-day hybrid system that builds an explosive lower body and a jacked upper body in parallel. Each week stacks sprints, jumps, Olympic lifts, and heavy compounds when the nervous system is fresh, then layers high-volume bodybuilding accessories over the top of every session. Built for field-sport athletes and intermediate-to-advanced lifters who want size and speed at the same time.",
-    stats: { followers: "78.6K" },
+    socials: [
+      { platform: "youtube", url: "https://www.youtube.com/@dylan_shannon", handle: "dylan_shannon", followers: "78.6K" },
+      { platform: "instagram", url: "https://www.instagram.com/dylan_shannon/", handle: "dylan_shannon" },
+    ],
     tags: {
       goals: ["power", "hypertrophy", "vertical jump", "speed"],
       levels: ["intermediate", "advanced"],

@@ -103,11 +103,14 @@ function MiniCoachCard({
         <p className="mt-2 text-[11px] text-[var(--ink-dim)] leading-snug line-clamp-2">
           {coach.tagline}
         </p>
-        {coach.stats.followers !== "—" && (
-          <div className="mt-2 flex items-center gap-2 text-[9px] font-mono text-[var(--ink-muted)] tabular">
-            <span>{coach.stats.followers} followers</span>
-          </div>
-        )}
+        {(() => {
+          const primary = coach.socials.find((s) => s.followers);
+          return primary?.followers ? (
+            <div className="mt-2 flex items-center gap-2 text-[9px] font-mono text-[var(--ink-muted)] tabular">
+              <span>{primary.followers} followers</span>
+            </div>
+          ) : null;
+        })()}
       </Link>
 
       <button
