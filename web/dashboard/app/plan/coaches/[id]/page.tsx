@@ -3,8 +3,8 @@
 import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, Check, Plus, Play } from "lucide-react";
-import { CATEGORIES, getCoach, initials, type SocialLink } from "@/lib/coaches";
+import { ChevronLeft, Check, Plus, Play, BookOpen, FileText, Quote } from "lucide-react";
+import { CATEGORIES, getCoach, initials, type Coach, type SocialLink } from "@/lib/coaches";
 import { getProfile } from "@/lib/coach-profiles";
 import { useSelection } from "@/lib/use-selection";
 import { SelectionBar } from "@/components/plan/selection-bar";
@@ -197,85 +197,17 @@ export default function CoachProfilePage({
             </Section>
           )}
 
-          {/* ── 6. METHODOLOGY (collapsed) ───────────────────────────── */}
-          <details className="mt-6 group">
-            <summary className="cursor-pointer flex items-center gap-2 text-[11px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink-dim)] py-2 list-none">
-              <span className="inline-block w-2 transition-transform group-open:rotate-90">
-                ▸
-              </span>
-              Methodology · Philosophy · Principles · Best for / Not for
-            </summary>
+          {/* ── 6. ARC TIMELINE ─────────────────────────────────────── */}
+          <Section label={`Your 18 weeks with ${coach.name}`}>
+            <ArcTimeline coach={coach} accent={accent} />
+          </Section>
 
-            <div className="mt-3 pl-4 border-l border-[var(--line)] space-y-6">
-              <div>
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] mb-2">
-                  Philosophy
-                </div>
-                <p className="text-[12.5px] text-[var(--ink-dim)] leading-relaxed">
-                  {coach.philosophy}
-                </p>
-              </div>
+          {/* ── 7. FAQ ───────────────────────────────────────────────── */}
+          <Section label={`Ask ${coach.name.split(" ")[0]}`}>
+            <CoachFAQ coach={coach} accent={accent} />
+          </Section>
 
-              {profile?.principles && (
-                <div>
-                  <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] mb-2">
-                    Principles
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {profile.principles.map((p, i) => (
-                      <div
-                        key={i}
-                        className="bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md p-3"
-                      >
-                        <div className="text-[11.5px] font-medium text-[var(--ink)] mb-1">
-                          {p.title}
-                        </div>
-                        <div className="text-[11px] text-[var(--ink-dim)] leading-relaxed">
-                          {p.body}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              <div>
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] mb-2">
-                  Fit
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--good)] mb-2">
-                      Best for
-                    </div>
-                    <ul className="space-y-1.5 text-[12px] text-[var(--ink-dim)]">
-                      {coach.bestFor.map((b, i) => (
-                        <li key={i} className="flex gap-2">
-                          <span className="text-[var(--good)] shrink-0">+</span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--bad)] mb-2">
-                      Not for
-                    </div>
-                    <ul className="space-y-1.5 text-[12px] text-[var(--ink-dim)]">
-                      {coach.notFor.map((b, i) => (
-                        <li key={i} className="flex gap-2">
-                          <span className="text-[var(--bad)] shrink-0">−</span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </details>
-
-          {/* Pairs carousel — unchanged from prior design */}
+          {/* ── 8. PAIRS WELL WITH ───────────────────────────────────── */}
           <Section label="Pairs well with">
             <PairsCarousel
               pairIds={coach.pairsWith}
@@ -283,6 +215,11 @@ export default function CoachProfilePage({
               onToggle={toggle}
               onAddAll={() => addMany(coach.pairsWith)}
             />
+          </Section>
+
+          {/* ── 9. SOURCES / HOW THIS GUIDE WAS BUILT ────────────────── */}
+          <Section label="How this guide was built">
+            <SourcesMetrics coach={coach} accent={accent} />
           </Section>
         </div>
 
@@ -353,6 +290,188 @@ function InstagramIcon({ size = 12 }: { size?: number }) {
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
     </svg>
+  );
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// ARC TIMELINE — "Your 18 weeks with [coach]"
+// Universal 4-row layout: phase name · week range · focus · description.
+// ──────────────────────────────────────────────────────────────────────
+function ArcTimeline({ coach, accent }: { coach: Coach; accent: string }) {
+  const phases = coach.arcPhases;
+  if (!phases || phases.length === 0) return null;
+
+  const totalWeeks = 18;
+
+  return (
+    <div>
+      {/* Visual phase strip — proportional widths by week count */}
+      <div className="hidden sm:flex w-full h-6 mb-3 rounded-sm overflow-hidden border border-[var(--line)]">
+        {phases.map((p, i) => {
+          const match = p.weeks.match(/W(\d+)-?(\d+)?/i);
+          const start = match ? parseInt(match[1], 10) : 1;
+          const end = match && match[2] ? parseInt(match[2], 10) : start;
+          const widthPct = ((end - start + 1) / totalWeeks) * 100;
+          return (
+            <div
+              key={i}
+              className="flex items-center justify-center text-[9px] font-mono uppercase tracking-wider text-white tabular"
+              style={{
+                width: `${widthPct}%`,
+                background: accent,
+                opacity: 0.4 + i * 0.15,
+              }}
+              title={`${p.name} · ${p.weeks}`}
+            >
+              {p.focus}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* 4-row breakdown */}
+      <div className="space-y-2">
+        {phases.map((p, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-[80px_70px_1fr] gap-3 items-baseline py-2 border-b border-[var(--line-soft)] last:border-b-0"
+          >
+            <div className="text-[11.5px] font-medium text-[var(--ink)]">{p.name}</div>
+            <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
+              {p.weeks}
+            </div>
+            <div className="text-[12px] text-[var(--ink-dim)] leading-snug">{p.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// COACH FAQ — "Ask [Coach]"
+// Click-to-expand list of 3-5 questions in the coach's voice.
+// ──────────────────────────────────────────────────────────────────────
+function CoachFAQ({ coach, accent }: { coach: Coach; accent: string }) {
+  if (!coach.faqs || coach.faqs.length === 0) return null;
+  return (
+    <div className="space-y-1">
+      {coach.faqs.map((f, i) => (
+        <details
+          key={i}
+          className="group bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md overflow-hidden"
+        >
+          <summary
+            className="cursor-pointer flex items-start gap-2.5 p-3 hover:bg-[var(--bg-elev-2)] transition-colors list-none"
+            style={{ caretColor: "transparent" }}
+          >
+            <span
+              className="shrink-0 mt-0.5 inline-block w-2 transition-transform group-open:rotate-90 text-[var(--ink-muted)]"
+              style={{ color: accent }}
+            >
+              ▸
+            </span>
+            <span className="text-[12.5px] font-medium text-[var(--ink)] leading-snug">
+              {f.q}
+            </span>
+          </summary>
+          <div className="px-3 pb-3 pl-[28px] text-[12px] text-[var(--ink-dim)] leading-relaxed">
+            {f.a}
+          </div>
+        </details>
+      ))}
+    </div>
+  );
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// SOURCES METRICS — "How this guide was built"
+// Trust signals: videos analyzed, source texts, citations, last refreshed.
+// ──────────────────────────────────────────────────────────────────────
+function SourcesMetrics({ coach, accent }: { coach: Coach; accent: string }) {
+  const s = coach.sources;
+  if (!s) return null;
+
+  const guideUrl = `https://github.com/andylee024/train/blob/main/docs/content/training-styles/${coach.id}/guide.md`;
+
+  return (
+    <div className="space-y-2.5 text-[12px] text-[var(--ink-dim)]">
+      {s.videosAnalyzed !== undefined && (
+        <div className="flex items-center gap-2.5">
+          <Play size={11} className="shrink-0" style={{ color: accent }} />
+          <span>
+            <span className="font-mono tabular text-[var(--ink)]">
+              {s.videosAnalyzed}
+            </span>{" "}
+            videos analyzed
+            {s.channelTotal && (
+              <span className="text-[var(--ink-muted)]">
+                {" "}
+                · of{" "}
+                <span className="font-mono tabular">{s.channelTotal.toLocaleString()}</span> on
+                channel
+              </span>
+            )}
+          </span>
+        </div>
+      )}
+
+      {s.texts && s.texts.length > 0 && (
+        <div className="flex items-start gap-2.5">
+          <BookOpen size={11} className="shrink-0 mt-1" style={{ color: accent }} />
+          <div>
+            {s.texts.map((t, i) => (
+              <div key={i}>
+                <span className="text-[var(--ink)]">{t.title}</span>
+                {t.pages && (
+                  <span className="text-[var(--ink-muted)] ml-1 font-mono tabular text-[11px]">
+                    ({t.pages.toLocaleString()} pp)
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {s.articles && s.articles.length > 0 && (
+        <div className="flex items-start gap-2.5">
+          <FileText size={11} className="shrink-0 mt-1" style={{ color: accent }} />
+          <div>
+            <span className="font-mono tabular text-[var(--ink)]">{s.articles.length}</span>{" "}
+            source {s.articles.length === 1 ? "article" : "articles"}:{" "}
+            <span className="text-[var(--ink-muted)]">
+              {s.articles.map((a) => a.title).join(" · ")}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {s.citedClaims !== undefined && (
+        <div className="flex items-center gap-2.5">
+          <Quote size={11} className="shrink-0" style={{ color: accent }} />
+          <span>
+            <span className="font-mono tabular text-[var(--ink)]">{s.citedClaims}</span> cited
+            claims with verbatim quotes
+          </span>
+        </div>
+      )}
+
+      <div className="flex items-center justify-between gap-3 pt-3 mt-3 border-t border-[var(--line-soft)]">
+        <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
+          {s.origin === "auto-ingested" ? "Auto-ingested" : "Hand-curated"} · Last refreshed{" "}
+          {s.lastRefreshed}
+        </span>
+        <a
+          href={guideUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="text-[11px] font-mono uppercase tracking-wider text-[var(--accent)] hover:text-[var(--ink)] transition-colors"
+        >
+          Read full style guide ↗
+        </a>
+      </div>
+    </div>
   );
 }
 
