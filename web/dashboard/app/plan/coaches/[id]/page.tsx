@@ -198,12 +198,12 @@ export default function CoachProfilePage({
           )}
 
           {/* ── 6. ARC TIMELINE ─────────────────────────────────────── */}
-          <Section label={`Your 18 weeks with ${coach.name}`}>
+          <Section label="Your 18 weeks">
             <ArcTimeline coach={coach} accent={accent} />
           </Section>
 
           {/* ── 7. FAQ ───────────────────────────────────────────────── */}
-          <Section label={`Ask ${coach.name.split(" ")[0]}`}>
+          <Section label="FAQs">
             <CoachFAQ coach={coach} accent={accent} />
           </Section>
 
