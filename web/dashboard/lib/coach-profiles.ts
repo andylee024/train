@@ -221,6 +221,187 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       { id: "x2-sSTG41ao", title: "Build Strong & Jacked Legs: Combining Explosive Power and Hypertrophy", duration: "20:12", views: "3.4K", thumbnail: "https://i.ytimg.com/vi/x2-sSTG41ao/maxresdefault.jpg" },
     ],
   },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // JEFF NIPPARD — derived from public PPL program + science-based content.
+  // Sample week: Push / Pull / Legs split, 6-day Upper-Lower variant common too.
+  // ─────────────────────────────────────────────────────────────────────────
+  "nippard": {
+    principles: [
+      {
+        title: "RIR-calibrated progression",
+        body: "Working sets target 1–2 RIR through accumulation; drop to 0–1 RIR in intensification. Effort is the dial, not just weight on the bar.",
+      },
+      {
+        title: "Volume between MEV and MRV",
+        body: "Each muscle has a minimum effective volume and maximum recoverable volume per week. Programming hits the sweet spot, never the ceiling.",
+      },
+      {
+        title: "Exercise selection by mechanism",
+        body: "Picks favor lengthened-position bias, stable resistance profiles, and the highest hypertrophy-per-rep yield based on EMG + stretch-mediated data.",
+      },
+      {
+        title: "Specificity over novelty",
+        body: "The big six (squat, bench, DL, OHP, row, pull-up) anchor every block. Variation is a tool, not a default — swap in for stalls or weak points.",
+      },
+    ],
+    weekStructure: [
+      {
+        name: "Push (heavy)", duration: "~75 min",
+        exercises: [
+          { name: "Smith Machine Bench Press", sets: 3, reps: "6-8", load: "RIR 1-2", rest: "3 min", note: "lengthened bias" },
+          { name: "Standing DB Overhead Press", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "2 min" },
+          { name: "Incline DB Press", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "2 min" },
+          { name: "Cable Tricep Pushdown", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "90s" },
+          { name: "Cable Lateral Raise", sets: 3, reps: "12-15", load: "RIR 0", rest: "60s", note: "drop set on last" },
+        ],
+      },
+      {
+        name: "Pull (heavy)", duration: "~75 min",
+        exercises: [
+          { name: "Weighted Pull-up", sets: 3, reps: "5-7", load: "RIR 1-2", rest: "3 min" },
+          { name: "Chest-Supported Row", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "2 min" },
+          { name: "Lat Pulldown", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "2 min", note: "lengthened bias" },
+          { name: "Incline DB Curl", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "90s" },
+          { name: "Cable Reverse Fly", sets: 3, reps: "15-20", load: "RIR 0", rest: "60s" },
+        ],
+      },
+      {
+        name: "Legs (quad focus)", duration: "~80 min",
+        exercises: [
+          { name: "Back Squat", sets: 3, reps: "5-7", load: "RIR 1-2", rest: "3 min" },
+          { name: "Romanian Deadlift", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "2 min" },
+          { name: "Bulgarian Split Squat", sets: 3, reps: "10-12/leg", load: "RIR 0-1", rest: "90s" },
+          { name: "Lying Leg Curl", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "90s", note: "lengthened bias" },
+          { name: "Standing Calf Raise", sets: 3, reps: "12-15", load: "RIR 0", rest: "60s" },
+        ],
+      },
+      {
+        name: "Push (hypertrophy)", duration: "~75 min",
+        exercises: [
+          { name: "Incline Smith Bench Press", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "3 min" },
+          { name: "Machine Shoulder Press", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "2 min" },
+          { name: "Pec Deck", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "90s", note: "stretch emphasis" },
+          { name: "Overhead Cable Tri Ext", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "90s" },
+          { name: "Cable Lateral Raise", sets: 3, reps: "15-20", load: "RIR 0", rest: "60s" },
+        ],
+      },
+      {
+        name: "Pull (back width)", duration: "~75 min",
+        exercises: [
+          { name: "Pendlay Row", sets: 3, reps: "6-8", load: "RIR 1-2", rest: "3 min" },
+          { name: "Wide-Grip Pulldown", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "2 min" },
+          { name: "Cable Pullover", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "90s", note: "lengthened bias" },
+          { name: "Hammer Curl", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "90s" },
+          { name: "Face Pull", sets: 3, reps: "15-20", load: "RIR 0", rest: "60s" },
+        ],
+      },
+      {
+        name: "Legs (posterior)", duration: "~80 min",
+        exercises: [
+          { name: "Front Squat", sets: 3, reps: "6-8", load: "RIR 1-2", rest: "3 min" },
+          { name: "Hip Thrust", sets: 3, reps: "8-10", load: "RIR 1-2", rest: "2 min" },
+          { name: "Walking Lunge", sets: 3, reps: "10-12/leg", load: "RIR 0-1", rest: "90s" },
+          { name: "Seated Leg Curl", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "90s" },
+          { name: "Seated Calf Raise", sets: 3, reps: "12-15", load: "RIR 0", rest: "60s" },
+        ],
+      },
+      REST,
+    ],
+    videos: [
+      { id: "5K9QhkPww44", title: "What Every Body Fat % Actually Looks Like (50% to 5%)", duration: "34:08", views: "13.9M", thumbnail: "https://i.ytimg.com/vi/5K9QhkPww44/maxresdefault.jpg" },
+      { id: "qpRGnTTcLpo", title: "7 Amazing Exercises No One Does (ALL S TIER)", duration: "16:06", views: "4.9M", thumbnail: "https://i.ytimg.com/vi/qpRGnTTcLpo/maxresdefault.jpg" },
+      { id: "S6rqpxVGKZ4", title: "The Only 25 Exercises You Ever Need", duration: "23:15", views: "3.7M", thumbnail: "https://i.ytimg.com/vi/S6rqpxVGKZ4/maxresdefault.jpg" },
+      { id: "U1zCyaQc91g", title: "I Built The World's Most Scientific Gym", duration: "19:47", views: "3.4M", thumbnail: "https://i.ytimg.com/vi/U1zCyaQc91g/maxresdefault.jpg" },
+      { id: "DzjWEn2BS_k", title: "I Cut The Number Of Sets I Do In Half", duration: "20:10", views: "3.1M", thumbnail: "https://i.ytimg.com/vi/DzjWEn2BS_k/maxresdefault.jpg" },
+      { id: "MT9ZeE5JJsI", title: "How I Blew Up My Shoulders", duration: "14:06", views: "2.9M", thumbnail: "https://i.ytimg.com/vi/MT9ZeE5JJsI/maxresdefault.jpg" },
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // MIKE ISRAETEL (Renaissance Periodization) — derived from RP volume
+  // landmarks framework + public mesocycle templates.
+  // ─────────────────────────────────────────────────────────────────────────
+  "israetel": {
+    principles: [
+      {
+        title: "Mesocycle structure",
+        body: "4–6 week accumulation block where sets-per-muscle climbs week to week, capped by a deload. Repeat with variation.",
+      },
+      {
+        title: "Junk volume is real",
+        body: "Sets that don't hit hard-set count or proximity to failure don't move the needle. Cut them and reinvest the recovery elsewhere.",
+      },
+      {
+        title: "Stimulus-to-fatigue ratio",
+        body: "Every exercise gets evaluated by how much growth it causes vs how much recovery it taxes. Pick high-SFR movements first.",
+      },
+      {
+        title: "Exercise variation by mesocycle",
+        body: "Swap movements between blocks (incline → flat, sumo → conventional). Keep stimulus novel without losing specificity.",
+      },
+    ],
+    weekStructure: [
+      {
+        name: "Chest + Back", duration: "~80 min",
+        exercises: [
+          { name: "Incline DB Press", sets: 3, reps: "8-10", load: "RIR 2-3 W1, RIR 0-1 W4", rest: "2-3 min" },
+          { name: "Pec Deck", sets: 3, reps: "10-12", load: "RIR 1-2", rest: "90s", note: "stretch emphasis" },
+          { name: "Chest-Supported Row", sets: 3, reps: "8-10", load: "RIR 2", rest: "2-3 min" },
+          { name: "Lat Pulldown", sets: 3, reps: "10-12", load: "RIR 1-2", rest: "90s" },
+          { name: "Cable Reverse Fly", sets: 2, reps: "12-15", load: "RIR 0-1", rest: "60s" },
+        ],
+      },
+      {
+        name: "Legs (quad bias)", duration: "~85 min",
+        exercises: [
+          { name: "High-Bar Back Squat", sets: 3, reps: "6-8", load: "RIR 2-3", rest: "3 min" },
+          { name: "Leg Press (narrow stance)", sets: 3, reps: "10-12", load: "RIR 1-2", rest: "2-3 min" },
+          { name: "Hack Squat", sets: 2, reps: "10-12", load: "RIR 0-1", rest: "2 min" },
+          { name: "Lying Leg Curl", sets: 3, reps: "10-12", load: "RIR 1-2", rest: "90s", note: "lengthened bias" },
+          { name: "Standing Calf Raise", sets: 3, reps: "8-10", load: "RIR 0-1", rest: "60s" },
+        ],
+      },
+      {
+        name: "Shoulders + Arms", duration: "~70 min",
+        exercises: [
+          { name: "Seated DB Overhead Press", sets: 3, reps: "8-10", load: "RIR 2", rest: "2-3 min" },
+          { name: "Cable Lateral Raise", sets: 4, reps: "12-15", load: "RIR 0-1", rest: "60s", note: "junk-volume threshold" },
+          { name: "Rear-Delt Fly", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "60s" },
+          { name: "Incline DB Curl", sets: 3, reps: "10-12", load: "RIR 1", rest: "90s" },
+          { name: "Cable Tricep Pushdown", sets: 3, reps: "10-12", load: "RIR 1", rest: "90s" },
+        ],
+      },
+      { name: "Rest / GPP", isRest: true },
+      {
+        name: "Chest + Back (volume)", duration: "~80 min",
+        exercises: [
+          { name: "Flat Barbell Bench", sets: 3, reps: "6-8", load: "RIR 2", rest: "3 min" },
+          { name: "Cable Crossover", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "60s" },
+          { name: "Barbell Row", sets: 3, reps: "8-10", load: "RIR 2", rest: "2-3 min" },
+          { name: "Single-Arm Pulldown", sets: 3, reps: "10-12", load: "RIR 1-2", rest: "90s" },
+          { name: "Rope Face Pull", sets: 3, reps: "15-20", load: "RIR 0", rest: "60s" },
+        ],
+      },
+      {
+        name: "Legs (posterior chain)", duration: "~85 min",
+        exercises: [
+          { name: "Romanian Deadlift", sets: 3, reps: "8-10", load: "RIR 2", rest: "3 min" },
+          { name: "Hip Thrust", sets: 3, reps: "10-12", load: "RIR 1", rest: "2-3 min" },
+          { name: "Walking Lunge", sets: 2, reps: "10/leg", load: "RIR 1", rest: "2 min" },
+          { name: "Seated Leg Curl", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "90s" },
+          { name: "Seated Calf Raise", sets: 3, reps: "10-12", load: "RIR 0-1", rest: "60s" },
+        ],
+      },
+      { name: "Rest / GPP", isRest: true },
+    ],
+    videos: [
+      { id: "0-ohm43FWEA", title: "We Trained With the World's Strongest 165 LB Man", duration: "23:21", views: "244K", thumbnail: "https://i.ytimg.com/vi/0-ohm43FWEA/maxresdefault.jpg" },
+      { id: "r13U7QPY9pg", title: "Exercise Scientist Critiques Vladislava Galagan", duration: "20:36", views: "241K", thumbnail: "https://i.ytimg.com/vi/r13U7QPY9pg/maxresdefault.jpg" },
+      { id: "66VtxKJAlSU", title: "The New Peptide Craze: Is Any of This Safe?", duration: "21:42", views: "166K", thumbnail: "https://i.ytimg.com/vi/66VtxKJAlSU/maxresdefault.jpg" },
+      { id: "mWe60vjvNSQ", title: "Who Knows More About Fitness: Gym Girls or Gym Boys?", duration: "18:42", views: "54K", thumbnail: "https://i.ytimg.com/vi/mWe60vjvNSQ/maxresdefault.jpg" },
+    ],
+  },
 };
 
 export function getProfile(id: string): CoachProfile | undefined {

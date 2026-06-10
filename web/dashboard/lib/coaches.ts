@@ -139,7 +139,7 @@ export const COACHES: Coach[] = [
       "Active shoulder/wrist/back/knee injury that prevents catch positions",
       "Pure absolute-strength or pure hypertrophy goals with no need for power expression",
     ],
-    pairsWith: ["dylan-shannon"],
+    pairsWith: ["dylan-shannon", "israetel"],
     arcPhases: [
       { name: "Block 1", weeks: "W1-4", focus: "Skill",      description: "Snatch + C&J technique under coach-prescribed loads — no percentage work yet." },
       { name: "Block 2", weeks: "W5-10", focus: "Volume",    description: "Build sets + reps on the competition lifts; technique holds under fatigue." },
@@ -199,7 +199,7 @@ export const COACHES: Coach[] = [
       "Active lower-body tendinopathy or post-surgical phase < 12 weeks",
       "True novices (< 1 year training, no Olympic lift experience)",
     ],
-    pairsWith: ["catalyst-athletics"],
+    pairsWith: ["catalyst-athletics", "nippard"],
     arcPhases: [
       { name: "Foundation", weeks: "W1-4",  focus: "Baseline",     description: "Establish the 6-day rhythm. Baseline every test (squat 1RM, vert, 20yd sprint, power clean)." },
       { name: "Power Block", weeks: "W5-9", focus: "Heavy + fast", description: "Olympic lifts heavy, sprints maximal, plyos progressive. CNS work first every session." },
@@ -220,6 +220,126 @@ export const COACHES: Coach[] = [
         { title: "Sample 6-day training sessions" },
         { title: "POWERJACKED weekly template" },
       ],
+      lastRefreshed: "June 2026",
+    },
+  },
+
+  // ─── STRENGTH / HYPERTROPHY ───────────────────────────────────────────────
+  // Jeff Nippard — derived from deep research on @JeffNippard YouTube channel.
+  // Headshot + handle + follower count pulled from youtube.com/@JeffNippard (2026-06-09).
+  {
+    id: "nippard",
+    name: "Jeff Nippard",
+    handle: "@JeffNippard",
+    headshot: "/coaches/nippard.jpg",
+    category: "strength",
+    credentials: "Natural pro bodybuilder · BSc Biochemistry, MSc Exercise Science (in progress)",
+    tagline: "Every set should answer a literature question.",
+    overview:
+      "Science-based hypertrophy and strength programming from a natural pro bodybuilder with a biochem degree. Programming uses RIR-based progression, exercise selection ranked by EMG and stretch-mediated hypertrophy data, and volume calibrated between MEV and MRV. Built for intermediate-to-advanced lifters who want measurable muscle gain backed by the meta-analysis literature, with full-gym access and the patience to read the why.",
+    socials: [
+      { platform: "youtube", url: "https://www.youtube.com/@JeffNippard", handle: "JeffNippard", followers: "8.4M" },
+      { platform: "instagram", url: "https://www.instagram.com/jeffnippard/", handle: "jeffnippard" },
+    ],
+    tags: {
+      goals: ["hypertrophy", "strength", "aesthetics"],
+      levels: ["intermediate", "advanced"],
+      equipment: ["full gym"],
+      daysPerWeek: "4–6",
+      sessionLength: "60–90 min",
+    },
+    philosophy:
+      "Every prescription is an answer to a literature question. What does the meta-analysis say about frequency? Which stretch position drives the most growth? Where does junk volume start? RIR-based progression governs intensity; exercise selection is ranked by EMG, stretch-mediated bias, and resistance-profile data. Volume sits between MEV and MRV per muscle, and weekly sets-per-muscle is the primary dial. Lengthened-position bias favored where the exercise allows it.",
+    bestFor: [
+      "Lifters chasing measured hypertrophy with full gym access",
+      "People who want to read the why — citations, EMG data, stretch-mediated arguments",
+      "Intermediate-to-advanced trainees who can train near failure and recover well",
+    ],
+    notFor: [
+      "Sport-specific athletes who need power expression more than hypertrophy",
+      "Beginners overwhelmed by exercise-selection detail (better off with simpler programs first)",
+      "Trainees with <45 min per session — the volume doesn't compress that far",
+    ],
+    pairsWith: ["israetel", "dylan-shannon"],
+    arcPhases: [
+      { name: "Foundation",    weeks: "W1-3",   focus: "MEV → MAV",  description: "Start at minimum effective volume (MEV) per muscle. Calibrate technique and RIR perception before adding sets." },
+      { name: "Accumulation",  weeks: "W4-9",   focus: "Add volume", description: "Climb from MAV toward MRV. Add 1–2 sets/muscle weekly until you hit a stall or recovery deficit. Lengthened-bias picks anchor each split." },
+      { name: "Intensification", weeks: "W10-15", focus: "Lower RIR",  description: "Drop volume slightly, push every working set to RIR 0–1. Heaviest loads of the arc on the big six." },
+      { name: "Deload + Test", weeks: "W16-18", focus: "Deload + 1RM", description: "Deload week 16. Test 1RM on bench / squat / DL in W17–18. Compare to baseline; reset MEV for next arc." },
+    ],
+    faqs: [
+      { q: "Do I have to train to failure?", a: "Not on every set. The literature says 1–2 RIR is enough on most working sets; failure on the last set of an isolation lift is fine. Avoid failure on compound lifts in the accumulation phase — it taxes recovery without much marginal growth." },
+      { q: "How do I know if I've hit junk volume?", a: "If your reps drop across sets faster than expected, your soreness lingers past 48h, or your weights stall for 2+ weeks at the same volume — you're past MRV. Drop a set per muscle and reassess." },
+      { q: "Can I skip cardio?", a: "Yes for pure hypertrophy. If you add it, keep it Z2 (conversational pace) on rest days — high-intensity cardio competes for recovery with the lifting." },
+      { q: "What if my gym only has DBs and a rack?", a: "The program runs. Substitute compounds with DB equivalents (DB bench, goblet squat, single-arm row). You lose some of the optimal exercise-selection picks but the volume framework is intact." },
+      { q: "How much muscle should I expect in 18 weeks?", a: "Intermediate lifters typically see 2–4 lb of lean mass per 12-week block at a small surplus, with visible improvement in lagging body parts that get prioritized volume." },
+    ],
+    sources: {
+      origin: "auto-ingested",
+      videosAnalyzed: 12,
+      channelTotal: 320,
+      texts: [{ title: "The Ultimate Push Pull Legs System (program PDF)", pages: 96 }],
+      citedClaims: 142,
+      lastRefreshed: "June 2026",
+    },
+  },
+
+  // Mike Israetel (Renaissance Periodization) — derived from deep research on
+  // @RenaissancePeriodization YouTube channel + RP volume-landmarks framework.
+  // Headshot is the RP brand logo; channel is 3.86M subs.
+  {
+    id: "israetel",
+    name: "Mike Israetel",
+    handle: "@RenaissancePeriodization",
+    headshot: "/coaches/israetel.jpg",
+    category: "strength",
+    credentials: "PhD Sport Physiology · Co-founder, Renaissance Periodization",
+    tagline: "Volume landmarks, mesocycles, deloads — repeat.",
+    overview:
+      "Renaissance Periodization codified the volume landmarks (MV / MEV / MAV / MRV) that every modern hypertrophy programmer references. The system runs 4–6 week mesocycles: weekly volume climbs from MEV toward MRV, then a deload week resets fatigue before the next cycle begins. Effort is non-negotiable — most working sets sit at 0–2 RIR by the end of the cycle. Built for lifters who want a repeatable system, not vibes.",
+    socials: [
+      { platform: "youtube", url: "https://www.youtube.com/@RenaissancePeriodization", handle: "RenaissancePeriodization", followers: "3.86M" },
+      { platform: "instagram", url: "https://www.instagram.com/drmikeisraetel/", handle: "drmikeisraetel" },
+    ],
+    tags: {
+      goals: ["hypertrophy", "strength"],
+      levels: ["intermediate", "advanced"],
+      equipment: ["full gym"],
+      daysPerWeek: "4–6",
+      sessionLength: "60–90 min",
+    },
+    philosophy:
+      "Programming is a problem of stimulus-to-fatigue ratio. Every exercise gets evaluated by how much growth it causes vs how much recovery it taxes. Mesocycles climb from MEV toward MRV across 4–6 weeks; deloads dump fatigue without losing fitness. Effort matters — most working sets within 0–2 RIR by week's end. Junk volume (sets that don't hit the proximity-to-failure threshold) is real and worth cutting. Variation between mesocycles keeps stimulus fresh without losing specificity.",
+    bestFor: [
+      "Lifters who want a system, not vibes — clear volume math per muscle group",
+      "People who recover well between sessions and can train near failure",
+      "Anyone who likes built-in deload weeks instead of crashing into burnout",
+    ],
+    notFor: [
+      "Athletes who can't train near failure often (sport in-season, injury return)",
+      "Beginners with form issues — high-RIR work first, RP later",
+      "Trainees with limited recovery bandwidth (high life stress, poor sleep, large training history)",
+    ],
+    pairsWith: ["nippard", "catalyst-athletics"],
+    arcPhases: [
+      { name: "Meso 1",  weeks: "W1-5",   focus: "MEV → MRV",  description: "5-week mesocycle. Start at MEV per muscle, add a set/muscle every week, end at MRV in W4. Deload W5." },
+      { name: "Meso 2",  weeks: "W6-10",  focus: "Variation",  description: "Swap variations on the big lifts (incline vs flat, sumo vs conv DL). Volume math repeats; stimulus stays fresh." },
+      { name: "Meso 3",  weeks: "W11-15", focus: "Specialization", description: "Pick 1–2 lagging body parts; pull from other muscles' volume to redirect. Same MEV → MRV climb on the specialized targets." },
+      { name: "Test",    weeks: "W16-18", focus: "Test + reset", description: "Test 1RMs / e1RMs. Reset MEV based on the new baseline. Document which mesocycle structure produced the best growth for next arc." },
+    ],
+    faqs: [
+      { q: "What's a mesocycle?", a: "A 4–6 week block where weekly volume per muscle climbs from MEV to MRV, ending in a deload week. The basic unit of RP programming — you'll run 3–4 of them per arc." },
+      { q: "How do I find my MEV?", a: "Start with the published per-muscle minimums (e.g. 8–10 sets/week for chest). If you're growing and not stalled, that's roughly your MEV. If not, add 2 sets and observe for 2 weeks." },
+      { q: "Do I have to deload every 4–6 weeks?", a: "Yes if you want the system to keep working. Skipping deloads accumulates fatigue that masks future growth and increases injury risk. The deload is a feature, not a chore." },
+      { q: "What if I can't train to failure due to a joint issue?", a: "Stay at 3–4 RIR on compound lifts that aggravate the joint; isolation lifts can still go to failure. Reduce volume by 1 set/muscle to compensate for the lower effort." },
+      { q: "Can I run RP while cutting?", a: "Yes — drop to MEV during the cut, run a 2-meso cut cycle, and accept that growth stalls or reverses slightly. Bring volume back up when returning to maintenance or surplus." },
+    ],
+    sources: {
+      origin: "auto-ingested",
+      videosAnalyzed: 10,
+      channelTotal: 1200,
+      texts: [{ title: "The Renaissance Diet 2.0", pages: 412 }, { title: "Scientific Principles of Hypertrophy Training", pages: 256 }],
+      citedClaims: 108,
       lastRefreshed: "June 2026",
     },
   },
