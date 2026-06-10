@@ -112,15 +112,14 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       },
       REST,
     ],
-    // Videos pulled from youtube.com/@catalystathletics (2026-06-06).
-    // TODO: switch from most-recent to true top-N-by-views once we have a sorted fetch path.
+    // Foundational picks via LLM classifier (TR-360, 2026-06-10).
+    // Rationales committed to /tmp/coach-research/catalyst-athletics-picks.json.
     videos: [
-      { id: "XpN5dGyHKqY", title: "Exercise Selection & Order — How To Write Olympic Weightlifting Training Programs", duration: "12:59", views: "3.2K", thumbnail: "https://i.ytimg.com/vi/XpN5dGyHKqY/maxresdefault.jpg" },
-      { id: "ra8dYrUKJys", title: "Your Feet Might Be Lying — Snatch & Clean Technique", duration: "3:01", views: "2.8K", thumbnail: "https://i.ytimg.com/vi/ra8dYrUKJys/maxresdefault.jpg" },
-      { id: "XsqLP70vK5Y", title: "How to Use Prilepin's Table for Olympic Weightlifting", duration: "2:59", views: "2.6K", thumbnail: "https://i.ytimg.com/vi/XsqLP70vK5Y/maxresdefault.jpg" },
-      { id: "mzzmZAWxOn4", title: "Laying Out The Training Week Schedule for Olympic Weightlifting", duration: "7:27", views: "2.4K", thumbnail: "https://i.ytimg.com/vi/mzzmZAWxOn4/maxresdefault.jpg" },
-      { id: "5FscVghWSps", title: "The Year Plan for Olympic Weightlifting Training Programs", duration: "10:26", views: "1.8K", thumbnail: "https://i.ytimg.com/vi/5FscVghWSps/maxresdefault.jpg" },
-      { id: "SInXEdJVTA8", title: "How & Why Athletes' Ability for Reps & Intensity Varies", duration: "3:02", views: "1.4K", thumbnail: "https://i.ytimg.com/vi/SInXEdJVTA8/maxresdefault.jpg" },
+      { id: "5FscVghWSps", title: "The Year Plan for Olympic Weightlifting Training Programs", duration: "10:26", views: "2K", thumbnail: "https://i.ytimg.com/vi/5FscVghWSps/maxresdefault.jpg" },
+      { id: "mzzmZAWxOn4", title: "Laying Out The Training Week Schedule for Olympic Weightlifting", duration: "7:27", views: "2K", thumbnail: "https://i.ytimg.com/vi/mzzmZAWxOn4/maxresdefault.jpg" },
+      { id: "tqs6UpgqQDg", title: "RPE or Percentages for Olympic Weightlifting - Training Intensity", duration: "6:11", views: "3K", thumbnail: "https://i.ytimg.com/vi/tqs6UpgqQDg/maxresdefault.jpg" },
+      { id: "_Q0uEiiRWYs", title: "Training & Recovery for Adaptation - Program Design for Olympic Weightlifting", duration: "4:01", views: "2K", thumbnail: "https://i.ytimg.com/vi/_Q0uEiiRWYs/maxresdefault.jpg" },
+      { id: "XsqLP70vK5Y", title: "How to Use Prilepin's Table for Olympic Weightlifting", duration: "2:59", views: "3K", thumbnail: "https://i.ytimg.com/vi/XsqLP70vK5Y/maxresdefault.jpg" },
     ],
   },
 
@@ -210,15 +209,14 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       },
       REST,
     ],
-    // Videos pulled from youtube.com/@dylan_shannon (2026-06-06).
-    // TODO: switch from most-recent to true top-N-by-views once we have a sorted fetch path.
+    // Foundational picks via LLM classifier (TR-360, 2026-06-10).
+    // Rationales committed to /tmp/coach-research/dylan-shannon-picks.json.
     videos: [
-      { id: "YOyFCTVfPEI", title: "The Power of Small Changes | Heavy Push Day for Strength", duration: "22:55", views: "6.0K", thumbnail: "https://i.ytimg.com/vi/YOyFCTVfPEI/maxresdefault.jpg" },
-      { id: "Ws2b0CUiQRI", title: "Eating 4600 Calories In Miami While Staying Lean and Athletic", duration: "22:53", views: "3.8K", thumbnail: "https://i.ytimg.com/vi/Ws2b0CUiQRI/maxresdefault.jpg" },
-      { id: "-aigVtGcOvg", title: "Build BIG & STRONG Quads with this Workout", duration: "25:26", views: "3.8K", thumbnail: "https://i.ytimg.com/vi/-aigVtGcOvg/maxresdefault.jpg" },
-      { id: "YL5_TW4M1pg", title: "Squatting 545lbs for Reps: Why the First Set is Always the Hardest", duration: "26:00", views: "3.7K", thumbnail: "https://i.ytimg.com/vi/YL5_TW4M1pg/maxresdefault.jpg" },
-      { id: "2fl7gJt2XH8", title: "How I Structure My Pull Day for Maximum Strength & Size", duration: "22:03", views: "3.6K", thumbnail: "https://i.ytimg.com/vi/2fl7gJt2XH8/maxresdefault.jpg" },
-      { id: "x2-sSTG41ao", title: "Build Strong & Jacked Legs: Combining Explosive Power and Hypertrophy", duration: "20:12", views: "3.4K", thumbnail: "https://i.ytimg.com/vi/x2-sSTG41ao/maxresdefault.jpg" },
+      { id: "Kb9WfJsL7-8", title: "MY NEW 8 DAY TRAINING SPLIT TO GET JACKED", duration: "21:05", views: "10K", thumbnail: "https://i.ytimg.com/vi/Kb9WfJsL7-8/maxresdefault.jpg" },
+      { id: "MfJ56F4P21Y", title: "How I Combine Sprinting & Lifting for Max Performance", duration: "32:35", views: "5K", thumbnail: "https://i.ytimg.com/vi/MfJ56F4P21Y/maxresdefault.jpg" },
+      { id: "tm3yVtIDWn0", title: "Start Sprinting if you want to get JACKED & ATHLETIC", duration: "20:42", views: "5K", thumbnail: "https://i.ytimg.com/vi/tm3yVtIDWn0/maxresdefault.jpg" },
+      { id: "Kxo52Bs5eNU", title: "Build Strong & Jacked Legs: Combining Explosive Power and Hypertrophy Gains", duration: "21:06", views: "8K", thumbnail: "https://i.ytimg.com/vi/Kxo52Bs5eNU/maxresdefault.jpg" },
+      { id: "8fEQiMKY10g", title: "How I Structure My Push Workouts To Build SIZE", duration: "23:07", views: "5K", thumbnail: "https://i.ytimg.com/vi/8fEQiMKY10g/maxresdefault.jpg" },
     ],
   },
 
@@ -308,13 +306,14 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       },
       REST,
     ],
+    // Foundational picks via LLM classifier (TR-360, 2026-06-10).
+    // Rationales committed to /tmp/coach-research/nippard-picks.json.
     videos: [
-      { id: "5K9QhkPww44", title: "What Every Body Fat % Actually Looks Like (50% to 5%)", duration: "34:08", views: "13.9M", thumbnail: "https://i.ytimg.com/vi/5K9QhkPww44/maxresdefault.jpg" },
-      { id: "qpRGnTTcLpo", title: "7 Amazing Exercises No One Does (ALL S TIER)", duration: "16:06", views: "4.9M", thumbnail: "https://i.ytimg.com/vi/qpRGnTTcLpo/maxresdefault.jpg" },
-      { id: "S6rqpxVGKZ4", title: "The Only 25 Exercises You Ever Need", duration: "23:15", views: "3.7M", thumbnail: "https://i.ytimg.com/vi/S6rqpxVGKZ4/maxresdefault.jpg" },
-      { id: "U1zCyaQc91g", title: "I Built The World's Most Scientific Gym", duration: "19:47", views: "3.4M", thumbnail: "https://i.ytimg.com/vi/U1zCyaQc91g/maxresdefault.jpg" },
-      { id: "DzjWEn2BS_k", title: "I Cut The Number Of Sets I Do In Half", duration: "20:10", views: "3.1M", thumbnail: "https://i.ytimg.com/vi/DzjWEn2BS_k/maxresdefault.jpg" },
-      { id: "MT9ZeE5JJsI", title: "How I Blew Up My Shoulders", duration: "14:06", views: "2.9M", thumbnail: "https://i.ytimg.com/vi/MT9ZeE5JJsI/maxresdefault.jpg" },
+      { id: "qVek72z3F1U", title: "The Smartest Push Pull Legs Routine (Fully Explained)", duration: "19:04", views: "9.8M", thumbnail: "https://i.ytimg.com/vi/qVek72z3F1U/maxresdefault.jpg" },
+      { id: "lu_BObG6dj8", title: "How To Build Muscle (Explained In 5 Levels)", duration: "21:55", views: "9.3M", thumbnail: "https://i.ytimg.com/vi/lu_BObG6dj8/maxresdefault.jpg" },
+      { id: "d8V9ZaSq9Oc", title: "The Smartest Way To Get Lean (Shredding Science Explained)", duration: "18:20", views: "12.0M", thumbnail: "https://i.ytimg.com/vi/d8V9ZaSq9Oc/maxresdefault.jpg" },
+      { id: "deDlhPmT2SY", title: "How To Tell If You're Training Hard Enough (Using Science)", duration: "18:01", views: "4.1M", thumbnail: "https://i.ytimg.com/vi/deDlhPmT2SY/maxresdefault.jpg" },
+      { id: "jLvqKgW-_G8", title: "The Best And Worst Back Exercises (Ranked By Science)", duration: "12:16", views: "10.7M", thumbnail: "https://i.ytimg.com/vi/jLvqKgW-_G8/maxresdefault.jpg" },
     ],
   },
 
@@ -395,11 +394,14 @@ export const COACH_PROFILES: Record<string, CoachProfile> = {
       },
       { name: "Rest / GPP", isRest: true },
     ],
+    // Foundational picks via LLM classifier (TR-360, 2026-06-10).
+    // Rationales committed to /tmp/coach-research/israetel-picks.json.
     videos: [
-      { id: "0-ohm43FWEA", title: "We Trained With the World's Strongest 165 LB Man", duration: "23:21", views: "244K", thumbnail: "https://i.ytimg.com/vi/0-ohm43FWEA/maxresdefault.jpg" },
-      { id: "r13U7QPY9pg", title: "Exercise Scientist Critiques Vladislava Galagan", duration: "20:36", views: "241K", thumbnail: "https://i.ytimg.com/vi/r13U7QPY9pg/maxresdefault.jpg" },
-      { id: "66VtxKJAlSU", title: "The New Peptide Craze: Is Any of This Safe?", duration: "21:42", views: "166K", thumbnail: "https://i.ytimg.com/vi/66VtxKJAlSU/maxresdefault.jpg" },
-      { id: "mWe60vjvNSQ", title: "Who Knows More About Fitness: Gym Girls or Gym Boys?", duration: "18:42", views: "54K", thumbnail: "https://i.ytimg.com/vi/mWe60vjvNSQ/maxresdefault.jpg" },
+      { id: "zhP5gsBbgYY", title: "How to Train for Muscle Growth: Beginner to Advanced Training", duration: "44:38", views: "214K", thumbnail: "https://i.ytimg.com/vi/zhP5gsBbgYY/maxresdefault.jpg" },
+      { id: "tIsE3jLz5zI", title: "How to Build the Most Aesthetic Physique (Full Workout Plan)", duration: "18:28", views: "300K", thumbnail: "https://i.ytimg.com/vi/tIsE3jLz5zI/maxresdefault.jpg" },
+      { id: "PgG_qyZmF5M", title: "11 Signs Your Workouts Aren't Hard Enough to Build Muscle", duration: "20:25", views: "234K", thumbnail: "https://i.ytimg.com/vi/PgG_qyZmF5M/maxresdefault.jpg" },
+      { id: "-N18byHLSF8", title: "Not Growing? You Aren't Training Enough", duration: "24:14", views: "158K", thumbnail: "https://i.ytimg.com/vi/-N18byHLSF8/maxresdefault.jpg" },
+      { id: "jOTVZaSRV0s", title: "Low Reps Aren't Worth It (for Muscle Growth)", duration: "28:28", views: "355K", thumbnail: "https://i.ytimg.com/vi/jOTVZaSRV0s/maxresdefault.jpg" },
     ],
   },
 };
