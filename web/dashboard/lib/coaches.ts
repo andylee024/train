@@ -10,6 +10,8 @@
  * fields (tagline, headshot URL) are hand-curated.
  */
 
+import type { DaySession } from "./coach-profiles";
+
 export type CoachCategory = "strength" | "athletic" | "aesthetic" | "hybrid";
 
 export type SocialPlatform = "youtube" | "instagram" | "tiktok";
@@ -31,6 +33,12 @@ export type ArcPhase = {
   weeks: string;         // "W1-4" · "W5-12"
   focus: string;         // 1-3 words: "Skill" · "Volume"
   description: string;   // one-line for the row
+  /** 1-line "what's the win" — expansion field. */
+  goal: string;
+  /** Representative day from this phase — expansion field. */
+  sampleSession: DaySession;
+  /** 1-2 sentence rationale within the arc — expansion field. */
+  rationale: string;
 };
 
 export type ProgramFAQ = {
@@ -157,10 +165,80 @@ export const COACHES: Coach[] = [
     ],
     pairsWith: ["dylan-shannon", "israetel"],
     arcPhases: [
-      { name: "Block 1", weeks: "W1-4", focus: "Skill",      description: "Snatch + C&J technique under coach-prescribed loads — no percentage work yet." },
-      { name: "Block 2", weeks: "W5-10", focus: "Volume",    description: "Build sets + reps on the competition lifts; technique holds under fatigue." },
-      { name: "Block 3", weeks: "W11-16", focus: "Comp prep", description: "Heavy % work, max-effort singles, competition-style attempts on the platform." },
-      { name: "Test",    weeks: "W17-18", focus: "Maxes",    description: "Snatch + Clean & Jerk 1RM windows. Compare to baseline; recalibrate next arc." },
+      {
+        name: "Block 1",
+        weeks: "W1-4",
+        focus: "Skill",
+        description: "Snatch + C&J technique under coach-prescribed loads — no percentage work yet.",
+        goal: "Build technique competence before chasing percentages.",
+        sampleSession: {
+          name: "Mon — Snatch + Squat",
+          duration: "~75 min",
+          exercises: [
+            { name: "Snatch Skill Work", sets: "—", reps: "15-20 min", load: "Light", rest: "—", note: "positions, pulls under bar, OHS" },
+            { name: "Snatch", sets: 5, reps: "3", load: "Coach-prescribed", rest: "3 min" },
+            { name: "Snatch Pull", sets: 3, reps: "5", load: "~Snatch top", rest: "2 min" },
+            { name: "Back Squat", sets: 3, reps: "8", load: "RPE 7", rest: "3 min" },
+            { name: "Back Extension + Abs", sets: 3, reps: "10-15", load: "BW", rest: "60s" },
+          ],
+        },
+        rationale: "Skill Level 0 protocol means no percentage work for 12 weeks. Without this foundation the volume block has nothing stable to load onto — and bad reps become the first thing automated.",
+      },
+      {
+        name: "Block 2",
+        weeks: "W5-10",
+        focus: "Volume",
+        description: "Build sets + reps on the competition lifts; technique holds under fatigue.",
+        goal: "Bank reps until technique stays clean under accumulated fatigue.",
+        sampleSession: {
+          name: "Wed — Power Snatch + Front Squat",
+          duration: "~90 min",
+          exercises: [
+            { name: "Snatch Skill Work", sets: "—", reps: "10-15 min", load: "Light", rest: "—" },
+            { name: "Power Snatch", sets: 6, reps: "3", load: "RPE 7-8", rest: "2-3 min" },
+            { name: "Snatch Push Press + OHS", sets: 4, reps: "5+1", load: "RPE 8", rest: "2 min" },
+            { name: "Front Squat", sets: 4, reps: "5", load: "RPE 8", rest: "3 min" },
+            { name: "Snatch Pull", sets: 3, reps: "5", load: "~105% Snatch", rest: "2 min" },
+            { name: "Back Extension + Abs", sets: 3, reps: "10-15", load: "BW", rest: "60s" },
+          ],
+        },
+        rationale: "Technique becomes muscle memory under fatigue here. Without this volume the comp-prep block has nowhere to put the percentage work — singles need a foundation of clean triples beneath them.",
+      },
+      {
+        name: "Block 3",
+        weeks: "W11-16",
+        focus: "Comp prep",
+        description: "Heavy % work, max-effort singles, competition-style attempts on the platform.",
+        goal: "Express the strength you built into platform-ready singles.",
+        sampleSession: {
+          name: "Sat — Comp Day Simulation",
+          duration: "~120 min",
+          exercises: [
+            { name: "Snatch (work to opener + 1)", sets: "8-10", reps: "1", load: "Build to 92-95%", rest: "as needed", note: "treat each attempt like the platform — one shot" },
+            { name: "Clean & Jerk (work to opener + 1)", sets: "6-8", reps: "1+1", load: "Build to 92-95%", rest: "as needed" },
+            { name: "Back Squat", sets: 3, reps: "3", load: "85%", rest: "3-4 min" },
+            { name: "Clean Pull", sets: 3, reps: "3", load: "100-105% C&J", rest: "2 min" },
+          ],
+        },
+        rationale: "Speed-strength has its own training curve — the four strength qualities no longer correlate at this level. Heavy singles and comp simulations target the Explosive Strength Deficit directly, separate from raw squat strength.",
+      },
+      {
+        name: "Test",
+        weeks: "W17-18",
+        focus: "Maxes",
+        description: "Snatch + Clean & Jerk 1RM windows. Compare to baseline; recalibrate next arc.",
+        goal: "Lock in a new Snatch + C&J 1RM under fresh, taper conditions.",
+        sampleSession: {
+          name: "Mock Meet — Sat W17",
+          duration: "~150 min",
+          exercises: [
+            { name: "Snatch — 3 attempts", sets: 3, reps: "1", load: "Opener / 2nd / 3rd", rest: "3-5 min", note: "competition timing, judges optional" },
+            { name: "Clean & Jerk — 3 attempts", sets: 3, reps: "1+1", load: "Opener / 2nd / 3rd", rest: "3-5 min" },
+            { name: "Cool-down GPP", sets: "—", reps: "10 min", load: "—", rest: "—" },
+          ],
+        },
+        rationale: "The 1RM windows tell you what to base next arc's percentages on. Without a real test you're guessing — and Catalyst's whole system depends on accurate maxes feeding the volume math.",
+      },
     ],
     faqAnswers: [
       // What kind of training is this?
@@ -251,10 +329,85 @@ export const COACHES: Coach[] = [
     ],
     pairsWith: ["catalyst-athletics", "nippard"],
     arcPhases: [
-      { name: "Foundation", weeks: "W1-4",  focus: "Baseline",     description: "Establish the 6-day rhythm. Baseline every test (squat 1RM, vert, 20yd sprint, power clean)." },
-      { name: "Power Block", weeks: "W5-9", focus: "Heavy + fast", description: "Olympic lifts heavy, sprints maximal, plyos progressive. CNS work first every session." },
-      { name: "Density",    weeks: "W10-14", focus: "Volume + clocks", description: "14-min squat clocks at 80%, EMOM deadlifts, barbell jumps at 30-35%. Strength + hypertrophy fused." },
-      { name: "Test",       weeks: "W15-18", focus: "Maxes + retests", description: "1RM back squat, clean, bench. Re-test vertical, broad jump, 20yd sprint. Compare to baseline." },
+      {
+        name: "Foundation",
+        weeks: "W1-4",
+        focus: "Baseline",
+        description: "Establish the 6-day rhythm. Baseline every test (squat 1RM, vert, 20yd sprint, power clean).",
+        goal: "Get every metric on the board so future blocks have something to beat.",
+        sampleSession: {
+          name: "Mon — Sprint + Lower",
+          duration: "~75 min",
+          exercises: [
+            { name: "Flying 10s", sets: 4, reps: "1", load: "Max effort", rest: "Full" },
+            { name: "Approach Vert (test)", sets: 3, reps: "1", load: "Max", rest: "2 min" },
+            { name: "Hang Power Clean", sets: 4, reps: "3", load: "RPE 7", rest: "2-3 min" },
+            { name: "Back Squat (1RM test)", sets: "—", reps: "build to 1", load: "100%", rest: "as needed" },
+            { name: "Walking Lunge", sets: 3, reps: "10/leg", load: "DB moderate", rest: "90s" },
+            { name: "Standing Calf Raise", sets: 3, reps: "12", load: "Heavy", rest: "60s" },
+          ],
+        },
+        rationale: "POWERJACKED math runs off baseline numbers — squat 1RM, vert, 20yd, power clean. Skipping the baseline means later blocks lose their reference point and the density-block percentages become guesses.",
+      },
+      {
+        name: "Power Block",
+        weeks: "W5-9",
+        focus: "Heavy + fast",
+        description: "Olympic lifts heavy, sprints maximal, plyos progressive. CNS work first every session.",
+        goal: "Push explosive force production — sprint speed, jump height, Olympic-lift bar speed all climb.",
+        sampleSession: {
+          name: "Tue — Power + Upper Pull",
+          duration: "~80 min",
+          exercises: [
+            { name: "Depth Jump", sets: 5, reps: "3", load: "BW, 24in box", rest: "90s", note: "max intent every rep" },
+            { name: "Hang Clean", sets: 5, reps: "2", load: "85%", rest: "2-3 min" },
+            { name: "Trap Bar Deadlift", sets: 4, reps: "3", load: "RPE 8", rest: "3 min" },
+            { name: "Pull-Up", sets: 4, reps: "6-8", load: "Weighted", rest: "2 min" },
+            { name: "Pendlay Row", sets: 3, reps: "8", load: "RPE 8", rest: "90s" },
+            { name: "DB Curl + Hammer Superset", sets: 3, reps: "10+10", load: "Moderate", rest: "60s" },
+          ],
+        },
+        rationale: "Velocity work first preserves quality — sprints and Olympic lifts demand a fresh nervous system. Bodybuilding accessories ride on the residual fatigue at the back end without degrading the high-CNS adaptation.",
+      },
+      {
+        name: "Density",
+        weeks: "W10-14",
+        focus: "Volume + clocks",
+        description: "14-min squat clocks at 80%, EMOM deadlifts, barbell jumps at 30-35%. Strength + hypertrophy fused.",
+        goal: "Compress more total work into less time — strength + hypertrophy fuse under the clock.",
+        sampleSession: {
+          name: "Wed — 14-min Squat Clock + Accessories",
+          duration: "~85 min",
+          exercises: [
+            { name: "Barbell Jump Squat", sets: 5, reps: "3", load: "30-35% 1RM", rest: "90s", note: "violent intent, light bar" },
+            { name: "Back Squat — 14 min clock", sets: "AMRAP rounds", reps: "5", load: "80%", rest: "self-paced", note: "as many rounds of 5 as quality allows" },
+            { name: "Romanian Deadlift", sets: 4, reps: "8", load: "RPE 8", rest: "2 min" },
+            { name: "Leg Curl", sets: 3, reps: "12", load: "Moderate", rest: "60s" },
+            { name: "Standing Calf Raise", sets: 4, reps: "12", load: "Heavy", rest: "60s" },
+            { name: "Hanging Leg Raise", sets: 3, reps: "12", load: "BW", rest: "60s" },
+          ],
+        },
+        rationale: "Density teaches the body to recover between high-output efforts — the bridge between raw strength and field-sport conditioning. EMOMs and clocks also force size to come on without losing the explosive ceiling you built.",
+      },
+      {
+        name: "Test",
+        weeks: "W15-18",
+        focus: "Maxes + retests",
+        description: "1RM back squat, clean, bench. Re-test vertical, broad jump, 20yd sprint. Compare to baseline.",
+        goal: "Retest every baseline metric and prove the four lower-body pillars paid off.",
+        sampleSession: {
+          name: "Fri — Performance Retest",
+          duration: "~90 min",
+          exercises: [
+            { name: "20yd Sprint", sets: 3, reps: "1", load: "Max effort", rest: "Full", note: "compare to Foundation baseline" },
+            { name: "Approach Vert + Broad Jump", sets: 3, reps: "1", load: "Max", rest: "2 min" },
+            { name: "Hang Power Clean (build to 1)", sets: "—", reps: "1", load: "Max", rest: "as needed" },
+            { name: "Back Squat (build to 1)", sets: "—", reps: "1", load: "Max", rest: "as needed" },
+            { name: "Bench Press (build to 1)", sets: "—", reps: "1", load: "Max", rest: "as needed" },
+          ],
+        },
+        rationale: "If you can't beat the Foundation baselines, the program didn't work. Re-test all four pillars: did sprint, jump, move-weight-violently, and squat/hinge each move? That's the audit.",
+      },
     ],
     faqAnswers: [
       // What kind of training is this?
@@ -329,10 +482,82 @@ export const COACHES: Coach[] = [
     ],
     pairsWith: ["israetel", "dylan-shannon"],
     arcPhases: [
-      { name: "Foundation",    weeks: "W1-3",   focus: "MEV → MAV",  description: "Start at minimum effective volume (MEV) per muscle. Calibrate technique and RIR perception before adding sets." },
-      { name: "Accumulation",  weeks: "W4-9",   focus: "Add volume", description: "Climb from MAV toward MRV. Add 1–2 sets/muscle weekly until you hit a stall or recovery deficit. Lengthened-bias picks anchor each split." },
-      { name: "Intensification", weeks: "W10-15", focus: "Lower RIR",  description: "Drop volume slightly, push every working set to RIR 0–1. Heaviest loads of the arc on the big six." },
-      { name: "Deload + Test", weeks: "W16-18", focus: "Deload + 1RM", description: "Deload week 16. Test 1RM on bench / squat / DL in W17–18. Compare to baseline; reset MEV for next arc." },
+      {
+        name: "Foundation",
+        weeks: "W1-3",
+        focus: "MEV → MAV",
+        description: "Start at minimum effective volume (MEV) per muscle. Calibrate technique and RIR perception before adding sets.",
+        goal: "Find your MEV and learn what RIR 2 actually feels like.",
+        sampleSession: {
+          name: "Push A — Chest-focused",
+          duration: "~65 min",
+          exercises: [
+            { name: "Incline DB Press", sets: 3, reps: "8-10", load: "RIR 2", rest: "2-3 min", note: "lengthened bias" },
+            { name: "Flat Machine Press", sets: 2, reps: "10-12", load: "RIR 2", rest: "2 min" },
+            { name: "Overhead Press (DB)", sets: 3, reps: "8-10", load: "RIR 2", rest: "2 min" },
+            { name: "Cable Lateral Raise", sets: 3, reps: "12-15", load: "RIR 1", rest: "60s" },
+            { name: "Triceps Pushdown", sets: 3, reps: "10-12", load: "RIR 1", rest: "60s" },
+            { name: "Overhead Cable Triceps Ext", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "60s", note: "lengthened tricep stretch" },
+          ],
+        },
+        rationale: "MEV is athlete-specific — the published per-muscle minimum is a starting point, not gospel. Spending three weeks calibrating it means the next six weeks of accumulation aren't dumping junk volume onto a wrong baseline.",
+      },
+      {
+        name: "Accumulation",
+        weeks: "W4-9",
+        focus: "Add volume",
+        description: "Climb from MAV toward MRV. Add 1–2 sets/muscle weekly until you hit a stall or recovery deficit. Lengthened-bias picks anchor each split.",
+        goal: "Drive hypertrophy by climbing weekly sets-per-muscle until you near MRV.",
+        sampleSession: {
+          name: "Pull A — Back-focused, mid-block",
+          duration: "~75 min",
+          exercises: [
+            { name: "Weighted Pull-Up", sets: 4, reps: "6-8", load: "RIR 2", rest: "2-3 min" },
+            { name: "Chest-Supported Row", sets: 4, reps: "8-10", load: "RIR 2", rest: "2 min" },
+            { name: "Lat Prayer (cable)", sets: 3, reps: "12-15", load: "RIR 1", rest: "90s", note: "lengthened-bias lat finisher" },
+            { name: "Face Pull", sets: 3, reps: "15-20", load: "RIR 1", rest: "60s" },
+            { name: "Incline DB Curl", sets: 4, reps: "10-12", load: "RIR 1", rest: "75s", note: "long head bias" },
+            { name: "Hammer Curl", sets: 3, reps: "10-12", load: "RIR 1", rest: "60s" },
+          ],
+        },
+        rationale: "Weekly sets-per-muscle is the primary growth dial — the meta-analyses are clear. Climbing from MAV to MRV across six weeks gives every muscle a productive volume range; lengthened-bias picks compound the growth per set.",
+      },
+      {
+        name: "Intensification",
+        weeks: "W10-15",
+        focus: "Lower RIR",
+        description: "Drop volume slightly, push every working set to RIR 0–1. Heaviest loads of the arc on the big six.",
+        goal: "Pull the strength out of the muscle you just built — heaviest weights of the arc.",
+        sampleSession: {
+          name: "Lower A — Squat-focused",
+          duration: "~80 min",
+          exercises: [
+            { name: "Back Squat", sets: 4, reps: "4-6", load: "RIR 1", rest: "3-4 min", note: "heaviest loads of the arc" },
+            { name: "Romanian Deadlift", sets: 3, reps: "6-8", load: "RIR 1", rest: "3 min" },
+            { name: "Hack Squat", sets: 3, reps: "8-10", load: "RIR 0-1", rest: "2-3 min" },
+            { name: "Leg Curl", sets: 3, reps: "10-12", load: "RIR 0", rest: "90s", note: "last set to failure" },
+            { name: "Standing Calf Raise", sets: 4, reps: "8-12", load: "RIR 0-1", rest: "60s" },
+          ],
+        },
+        rationale: "Volume built the muscle; intensification converts it. Dropping a set per muscle but pushing every working set to RIR 0-1 lets you express the new tissue as strength without dumping into MRV again right before the test.",
+      },
+      {
+        name: "Deload + Test",
+        weeks: "W16-18",
+        focus: "Deload + 1RM",
+        description: "Deload week 16. Test 1RM on bench / squat / DL in W17–18. Compare to baseline; reset MEV for next arc.",
+        goal: "Shed fatigue, then prove the strength on the big three.",
+        sampleSession: {
+          name: "Test Day — Squat 1RM (W17)",
+          duration: "~75 min",
+          exercises: [
+            { name: "Back Squat Warm-up Ramp", sets: 5, reps: "5 → 1", load: "40-85%", rest: "2-3 min" },
+            { name: "Back Squat Singles", sets: "3-5", reps: "1", load: "90% / 95% / new 1RM", rest: "as needed", note: "stop at first miss" },
+            { name: "Leg Press (back-off)", sets: 2, reps: "8-10", load: "RIR 2", rest: "2 min", note: "optional, only if quality" },
+          ],
+        },
+        rationale: "Deload week 16 dumps the intensification fatigue so the 1RM test isn't suppressed. The new maxes reset MEV-to-MRV math for the next arc — without a real test you're stacking guesses.",
+      },
     ],
     faqAnswers: [
       // What kind of training is this?
@@ -423,10 +648,83 @@ export const COACHES: Coach[] = [
     ],
     pairsWith: ["nippard", "catalyst-athletics"],
     arcPhases: [
-      { name: "Meso 1",  weeks: "W1-5",   focus: "MEV → MRV",  description: "5-week mesocycle. Start at MEV per muscle, add a set/muscle every week, end at MRV in W4. Deload W5." },
-      { name: "Meso 2",  weeks: "W6-10",  focus: "Variation",  description: "Swap variations on the big lifts (incline vs flat, sumo vs conv DL). Volume math repeats; stimulus stays fresh." },
-      { name: "Meso 3",  weeks: "W11-15", focus: "Specialization", description: "Pick 1–2 lagging body parts; pull from other muscles' volume to redirect. Same MEV → MRV climb on the specialized targets." },
-      { name: "Test",    weeks: "W16-18", focus: "Test + reset", description: "Test 1RMs / e1RMs. Reset MEV based on the new baseline. Document which mesocycle structure produced the best growth for next arc." },
+      {
+        name: "Meso 1",
+        weeks: "W1-5",
+        focus: "MEV → MRV",
+        description: "5-week mesocycle. Start at MEV per muscle, add a set/muscle every week, end at MRV in W4. Deload W5.",
+        goal: "Run a clean MEV → MRV climb to anchor the rest of the arc.",
+        sampleSession: {
+          name: "Upper A (W3 of meso, mid-climb)",
+          duration: "~75 min",
+          exercises: [
+            { name: "Bench Press", sets: 4, reps: "6-8", load: "RIR 2", rest: "2-3 min" },
+            { name: "Chest-Supported Row", sets: 4, reps: "8-10", load: "RIR 2", rest: "2 min" },
+            { name: "Incline DB Press", sets: 3, reps: "10-12", load: "RIR 1", rest: "2 min" },
+            { name: "Lat Pulldown", sets: 3, reps: "10-12", load: "RIR 1", rest: "90s" },
+            { name: "Cable Lateral Raise", sets: 3, reps: "12-15", load: "RIR 0-1", rest: "60s" },
+            { name: "Triceps Pushdown", sets: 3, reps: "10-12", load: "RIR 1", rest: "60s" },
+          ],
+        },
+        rationale: "The mesocycle is the basic unit of RP — fatigue accumulates as volume climbs, then the deload week dumps it without losing fitness. Skip the deload and the next meso starts pre-fatigued, masking real growth.",
+      },
+      {
+        name: "Meso 2",
+        weeks: "W6-10",
+        focus: "Variation",
+        description: "Swap variations on the big lifts (incline vs flat, sumo vs conv DL). Volume math repeats; stimulus stays fresh.",
+        goal: "Refresh the stimulus by swapping variations — same volume math, new exercises.",
+        sampleSession: {
+          name: "Lower A — variation swap",
+          duration: "~80 min",
+          exercises: [
+            { name: "Front Squat (was Back Squat in Meso 1)", sets: 4, reps: "6-8", load: "RIR 2", rest: "3 min" },
+            { name: "Sumo Deadlift (was Conv. in Meso 1)", sets: 3, reps: "5-6", load: "RIR 2", rest: "3 min" },
+            { name: "Bulgarian Split Squat", sets: 3, reps: "8-10/leg", load: "RIR 1", rest: "90s" },
+            { name: "Leg Curl (seated)", sets: 3, reps: "10-12", load: "RIR 1", rest: "75s" },
+            { name: "Standing Calf Raise", sets: 4, reps: "10-12", load: "RIR 0-1", rest: "60s" },
+          ],
+        },
+        rationale: "Stimulus-to-fatigue ratio degrades as your body adapts to a movement — variation between mesocycles keeps the stimulus fresh without losing specificity. Same volume landmarks, different movement pattern, same physiology.",
+      },
+      {
+        name: "Meso 3",
+        weeks: "W11-15",
+        focus: "Specialization",
+        description: "Pick 1–2 lagging body parts; pull from other muscles' volume to redirect. Same MEV → MRV climb on the specialized targets.",
+        goal: "Redirect volume to your weakest 1-2 muscles and grow them disproportionately.",
+        sampleSession: {
+          name: "Arm Specialization Day",
+          duration: "~70 min",
+          exercises: [
+            { name: "Close-Grip Bench Press", sets: 4, reps: "6-8", load: "RIR 2", rest: "2-3 min" },
+            { name: "Incline DB Curl", sets: 4, reps: "10-12", load: "RIR 1", rest: "90s" },
+            { name: "Overhead Cable Triceps Ext", sets: 4, reps: "12-15", load: "RIR 1", rest: "75s", note: "lengthened bias" },
+            { name: "Preacher Curl", sets: 4, reps: "10-12", load: "RIR 0-1", rest: "75s" },
+            { name: "Rope Pushdown", sets: 3, reps: "12-15", load: "RIR 0", rest: "60s", note: "last set to failure" },
+            { name: "Hammer Curl", sets: 3, reps: "12-15", load: "RIR 0", rest: "60s" },
+          ],
+        },
+        rationale: "You can't specialize everything at once — total weekly volume is recovery-capped. Pulling sets from already-developed muscles and redirecting them to lagging ones is how RP fixes asymmetric development without overrunning MRV total.",
+      },
+      {
+        name: "Test",
+        weeks: "W16-18",
+        focus: "Test + reset",
+        description: "Test 1RMs / e1RMs. Reset MEV based on the new baseline. Document which mesocycle structure produced the best growth for next arc.",
+        goal: "Test maxes, document what worked, reset volume landmarks for the next arc.",
+        sampleSession: {
+          name: "Bench 1RM Test + Notes",
+          duration: "~70 min",
+          exercises: [
+            { name: "Bench Press Warm-up Ramp", sets: 5, reps: "5 → 1", load: "40-85%", rest: "2-3 min" },
+            { name: "Bench Press Singles", sets: "3-5", reps: "1", load: "90% / 95% / new 1RM", rest: "as needed" },
+            { name: "DB Row (back-off)", sets: 3, reps: "8-10", load: "RIR 2", rest: "90s" },
+            { name: "Document arc", sets: "—", reps: "—", load: "—", rest: "—", note: "which meso structure grew which muscle most? Reset MEV." },
+          ],
+        },
+        rationale: "RP is iterative — every arc gives you data to tune the next one. New 1RM resets the volume math; the meso-by-meso growth notes tell you whether variation, specialization, or volume changes drove the gains worth replicating.",
+      },
     ],
     faqAnswers: [
       // What kind of training is this?

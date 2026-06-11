@@ -4,7 +4,7 @@ import { use, useState } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronLeft, Check, Plus, Play } from "lucide-react";
-import { CATEGORIES, getCoach, initials, type Coach, type ProgramFAQ, type SocialLink } from "@/lib/coaches";
+import { CATEGORIES, getCoach, initials, type ArcPhase, type Coach, type ProgramFAQ, type SocialLink } from "@/lib/coaches";
 import { UNIVERSAL_FAQ_QUESTIONS } from "@/lib/coach-faq-questions";
 import { getProfile } from "@/lib/coach-profiles";
 import { useSelection } from "@/lib/use-selection";
@@ -308,16 +308,20 @@ function InstagramIcon({ size = 12 }: { size?: number }) {
 // ──────────────────────────────────────────────────────────────────────
 // ARC TIMELINE — "Your 18 weeks with [coach]"
 // Universal 4-row layout: phase name · week range · focus · description.
+// Each row click-expands to show goal / sample session / rationale.
+// Only one phase open at a time.
 // ──────────────────────────────────────────────────────────────────────
 function ArcTimeline({ coach, accent }: { coach: Coach; accent: string }) {
   const phases = coach.arcPhases;
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
+
   if (!phases || phases.length === 0) return null;
 
   const totalWeeks = 18;
 
   return (
     <div>
-      {/* Visual phase strip — proportional widths by week count */}
+      {/* Visual phase strip — proportional widths by week count (unchanged) */}
       <div className="hidden sm:flex w-full h-6 mb-3 rounded-sm overflow-hidden border border-[var(--line)]">
         {phases.map((p, i) => {
           const match = p.weeks.match(/W(\d+)-?(\d+)?/i);
@@ -341,20 +345,125 @@ function ArcTimeline({ coach, accent }: { coach: Coach; accent: string }) {
         })}
       </div>
 
-      {/* 4-row breakdown */}
-      <div className="space-y-2">
-        {phases.map((p, i) => (
-          <div
-            key={i}
-            className="grid grid-cols-[80px_70px_1fr] gap-3 items-baseline py-2 border-b border-[var(--line-soft)] last:border-b-0"
-          >
-            <div className="text-[11.5px] font-medium text-[var(--ink)]">{p.name}</div>
-            <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
-              {p.weeks}
+      {/* 4-row breakdown — click to expand */}
+      <div className="space-y-1">
+        {phases.map((p, i) => {
+          const isOpen = openIdx === i;
+          return (
+            <div key={i} className="border-b border-[var(--line-soft)] last:border-b-0">
+              <button
+                type="button"
+                onClick={() => setOpenIdx(isOpen ? null : i)}
+                aria-expanded={isOpen}
+                aria-controls={`arc-phase-panel-${i}`}
+                className={cn(
+                  "w-full text-left grid grid-cols-[16px_80px_70px_1fr] gap-3 items-baseline py-2.5 px-1 -mx-1 rounded-sm",
+                  "hover:bg-[var(--bg-elev-1)] transition-colors cursor-pointer"
+                )}
+              >
+                <span
+                  className="inline-block transition-transform text-[10px] tabular self-center"
+                  style={{
+                    color: accent,
+                    transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
+                  }}
+                  aria-hidden
+                >
+                  ▸
+                </span>
+                <span className="text-[11.5px] font-medium text-[var(--ink)]">{p.name}</span>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
+                  {p.weeks}
+                </span>
+                <span className="text-[12px] text-[var(--ink-dim)] leading-snug">
+                  {p.description}
+                </span>
+              </button>
+
+              {/* Expansion panel — smooth max-height + opacity transition */}
+              <div
+                id={`arc-phase-panel-${i}`}
+                className={cn(
+                  "overflow-hidden transition-all duration-200 ease-out",
+                  isOpen ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"
+                )}
+                aria-hidden={!isOpen}
+              >
+                <ArcPhasePanel phase={p} accent={accent} />
+              </div>
             </div>
-            <div className="text-[12px] text-[var(--ink-dim)] leading-snug">{p.description}</div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function ArcPhasePanel({ phase, accent }: { phase: ArcPhase; accent: string }) {
+  const session = phase.sampleSession;
+  return (
+    <div className="ml-[28px] mr-1 mb-3 pl-3 pr-3 py-3 border-l-2 bg-[var(--bg-elev-1)] rounded-r-sm" style={{ borderLeftColor: accent }}>
+      {/* Goal */}
+      <div className="grid grid-cols-[68px_1fr] gap-3 items-baseline mb-3">
+        <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+          Goal
+        </div>
+        <div className="text-[12.5px] text-[var(--ink)] leading-snug">{phase.goal}</div>
+      </div>
+
+      {/* Sample session */}
+      <div className="grid grid-cols-[68px_1fr] gap-3 items-baseline mb-3">
+        <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+          Sample
+        </div>
+        <div className="min-w-0">
+          <div className="flex items-baseline gap-2 flex-wrap mb-2">
+            <span className="text-[12px] font-medium text-[var(--ink)] leading-snug">
+              {session.name}
+            </span>
+            {session.duration && (
+              <span className="text-[10px] font-mono tabular text-[var(--ink-muted)]">
+                {session.duration}
+              </span>
+            )}
           </div>
-        ))}
+          {session.exercises && session.exercises.length > 0 && (
+            <ol className="space-y-1">
+              {session.exercises.map((ex, j) => (
+                <li
+                  key={j}
+                  className="grid grid-cols-[16px_1fr_auto] gap-2 sm:gap-3 items-baseline text-[11.5px] py-0.5"
+                >
+                  <span className="text-[9.5px] font-mono text-[var(--ink-muted)] tabular text-right">
+                    {j + 1}
+                  </span>
+                  <div className="min-w-0">
+                    <div className="text-[var(--ink)] leading-snug">{ex.name}</div>
+                    {ex.note && (
+                      <div className="text-[10px] text-[var(--ink-muted)] italic mt-0.5 leading-snug">
+                        {ex.note}
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex items-baseline gap-2 sm:gap-3 text-[10.5px] font-mono text-[var(--ink-dim)] tabular shrink-0">
+                    <span>
+                      {ex.sets}×{ex.reps}
+                    </span>
+                    {ex.load && <span className="text-[var(--ink-muted)] hidden sm:inline">{ex.load}</span>}
+                  </div>
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+      </div>
+
+      {/* Why */}
+      <div className="grid grid-cols-[68px_1fr] gap-3 items-baseline">
+        <div className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+          Why
+        </div>
+        <div className="text-[12px] text-[var(--ink-dim)] leading-relaxed">{phase.rationale}</div>
       </div>
     </div>
   );
