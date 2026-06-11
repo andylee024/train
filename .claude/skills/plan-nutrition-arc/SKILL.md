@@ -16,7 +16,7 @@ Produces the **per-arc nutrition cascade** for an athlete:
 | `athletes/<name>/<arc-slug>/nutrition/weeks/2026-nutrition-W{NN}.md` | weekly | NOT this skill — `plan-weekly-meals` writes these |
 | `athletes/<name>/<arc-slug>/nutrition/active/*.md` | weekly rollover | NOT this skill — copies refreshed by `plan-weekly-meals` |
 
-The output mirrors the worked example at [`athletes/andy/arc-2026-summer-dunk/nutrition/`](../../../athletes/andy/arc-2026-summer-dunk/nutrition/).
+The output mirrors the worked example at [`docs/athletes/andy/arc-2026-summer-dunk/nutrition/`](../../../docs/athletes/andy/arc-2026-summer-dunk/nutrition/).
 
 ## When to use
 
@@ -32,7 +32,7 @@ Resolve from the athlete bundle. If any are missing, ask the user.
 2. **Training arc** — `athletes/<name>/<arc-slug>/training/arc.md`. Need: blocks, durations, peak block, hard constraints (e.g., "no cut in B3").
 3. **Cross-arc nutrition OS** — `athletes/<name>/nutrition.md`. Need: Layer 1 supplement floor, fallback menu, prep ritual.
 4. **Cross-arc menu** — `athletes/<name>/menu.md`. Need: meal vocabulary + cook tier definitions to choose the cooking pattern from.
-5. **Nutrition style guide** — `docs/nutrition-styles/<style>/guide.md`. Default: renaissance-diet (RD). Need: phase model, protein floor recommendation range, refeed cadence, adjustment rules.
+5. **Nutrition style guide** — `docs/content/nutrition-styles/<style>/guide.md`. Default: renaissance-diet (RD). Need: phase model, protein floor recommendation range, refeed cadence, adjustment rules.
 
 ## Workflow
 

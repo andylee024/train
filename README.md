@@ -1,57 +1,94 @@
 # Train
 
-A training operating system — a single system that manages the full loop of plan → execute → track → adapt, across both training and nutrition, delivered through chat (WhatsApp/Telegram via NanoClaw) and a web dashboard.
+A training operating system — a single system that manages the full loop of plan → execute → track → adapt, across both training and nutrition, delivered through a web dashboard (with SMS execution on the roadmap).
 
 The system replaces the four roles an athlete currently does themselves — coach, nutritionist, chief of staff, analyst — so their only job is to show up, do the work, and report what happened.
 
-## Repo structure
+For product scope and the V1 plan, see [`PRD.md`](PRD.md). For technical architecture, see [`SPEC.md`](SPEC.md).
 
-The repo has six concepts, each with a single primary reader. The read-mostly docs live under `docs/`. `athletes/`, `app/`, and `prototypes/` sit at the top level so per-athlete runtime data and runnable code stay independent of documentation.
+## Live product
+
+| Surface | URL / location |
+|---|---|
+| Dashboard (Athlete OS) | `web/dashboard/` — Next.js (`/plan`, `/strength`, `/nutrition`) |
+| CLI (Supabase queries) | `app/cli/cli.ts` — `plan today`, `history`, `query e1rm` |
+
+SMS execution (daily-send, inbound log parsing) is on the roadmap (A24-299/300/301) but not currently wired — Train is web-dashboard-only for now.
+
+## Repo structure
 
 ```
 train/
-├── docs/
-│   ├── product/         ← what we're building (architecture, roadmap, schemas)
-│   ├── training-styles/ ← what coaches know (training styles, exercises, frameworks)
-│   └── team/            ← the AI coaching team (roles, skills, decision logic)
-├── athletes/            ← per-athlete data (profile, arc bundles, logs, outputs)
-├── prototypes/          ← UI / marketing experiments (marketplace, web)
-└── app/                 ← runtime code (CLI, Supabase, scripts)
+├── app/                       ← Supabase migrations + TS CLI + scripts
+├── web/dashboard/             ← Next.js dashboard (Athlete OS)
+├── prototypes/                ← UI / sheet experiments
+└── docs/                      ← all markdown lives here
+    ├── product/               ← technical references (schemas, formats, decisions)
+    ├── content/               ← cross-athlete library
+    │   ├── training-styles/   ← what coaches know
+    │   ├── nutrition-styles/  ← nutrition methodologies
+    │   └── coaching-team/     ← AI coaches *for the athlete*
+    └── athletes/              ← per-athlete data (profile, arc bundles, logs)
 ```
 
 | Directory | Primary reader | What's in it |
 |---|---|---|
-| [`docs/product/`](docs/product/) | Builders / future contributors | [architecture](docs/product/architecture.md), [roadmap](docs/product/roadmap.md), [plan schema](docs/product/plan-schema.md), [database schema](docs/product/database-schema.md), milestones, diagrams |
-| [`docs/training-styles/`](docs/training-styles/) | Planning agents and coaches | [exercises](docs/training-styles/exercises.md), cross-style [concepts](docs/training-styles/concepts/), per-style guides (vertical-jump, dylan-shannon; `_template/` to copy) |
-| [`docs/team/`](docs/team/) | Anyone wiring up agents | role definitions for head-coach, specialists, operator |
-| [`athletes/`](athletes/) | Athlete + their team | per-athlete profile and self-contained arc bundles (plan + agent instructions, ready to be pulled by a runtime agent) |
-| [`prototypes/`](prototypes/) | Designer / PM | [marketplace](prototypes/marketplace/) (TOFU funnel), [web](prototypes/web/) (athlete-facing JSX) |
-| [`app/`](app/) | Engineer | [cli](app/cli/), [supabase](app/supabase/), [scripts](app/scripts/) |
+| [`app/`](app/) | Builder | Supabase migrations + TS CLI (`app/cli/`) + seed scripts |
+| [`web/dashboard/`](web/dashboard/) | Athlete | Next.js Athlete OS: `/plan`, `/strength`, `/nutrition`, plan-creation flow |
+| [`docs/product/`](docs/product/) | Builders / future contributors | plan schema, db schema, renderer, decisions log |
+| [`docs/content/training-styles/`](docs/content/training-styles/) | Planning agents | shared concepts + per-style guides (vertical-jump, catalyst-athletics, etc.) |
+| [`docs/content/coaching-team/`](docs/content/coaching-team/) | Anyone wiring up agents | role definitions for head-coach, specialists, operator |
+| [`docs/athletes/`](docs/athletes/) | Athlete + their team | per-athlete profile + self-contained arc bundles |
+| [`prototypes/`](prototypes/) | Designer / PM | Sheet generator + marketplace mockups |
 
 ## Two key boundaries
 
-1. **Reference vs instance.** `docs/training-styles/` is the methodology library — timeless, multi-athlete. `athletes/<name>/` is the live instance for a specific person. Keep them separate or the library rots.
-2. **Concepts vs styles.** Inside `docs/training-styles/`, `concepts/` holds frameworks every style uses (periodization models, session design, assessment). Each `<style-name>/` folder holds one style's specific instantiation of those frameworks. See [`docs/training-styles/README.md`](docs/training-styles/README.md) for the test that decides where new content goes.
+1. **Reference vs instance.** `docs/content/training-styles/` is the methodology library — timeless, multi-athlete. `docs/athletes/<name>/` is the live instance for a specific person. Keep them separate or the library rots.
+2. **Concepts vs styles.** Inside `docs/content/training-styles/`, `concepts/` holds frameworks every style uses; each `<style-name>/` folder holds one style's specific instantiation. See [`docs/content/training-styles/README.md`](docs/content/training-styles/README.md) for the rule.
 
-## Core architecture
+## Architecture (operational view)
 
 ```
-Layers (when) × Roles (who) → The Plan (what) → The Athlete (for whom) → Logging (how they report) → Feedback Loop (how it stays alive)
+                ┌────────────────────┐
+                │ Athlete (web)      │
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │ web/dashboard/     │
+                │  Next.js           │
+                │  Athlete OS        │
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌──────────────────────┐
+                │  Supabase            │
+                │   exercise_sets,     │
+                │   workouts,          │
+                │   daily_metrics, ... │
+                └──────────────────────┘
 ```
 
-**Roles** are AI agents, each with domain expertise and an objective function:
-- **Head Coach** (orchestrator) — synthesizes specialist programming into one coherent plan
-- **Specialists** (strength, sport, Olympic lifting, mobility, nutrition) — each produces their own programming, negotiates with the head coach
-- **Chief of Staff** (operator) — handles logistics so the athlete never thinks about them
+Plans + content live as markdown in `docs/`; executed work lives in Supabase; the dashboard reads both. Daily SMS execution is on the roadmap but not currently wired.
 
-**Layers** set the planning cadence: Arc (3–12mo) → Block (3–6wk) → Week (7 days) → Day (right now). Planning cascades down. Data flows up. Exceptions propagate by severity.
+Conceptual architecture lives in [`SPEC.md`](SPEC.md). Roadmap in [`PRD.md`](PRD.md) §8. How features get built end-to-end in [`docs/software-factory-workflow.md`](docs/software-factory-workflow.md).
 
-Full architecture in [`docs/product/architecture.md`](docs/product/architecture.md). Roadmap in [`docs/product/roadmap.md`](docs/product/roadmap.md). Implementation tracked in [Linear → train project](https://linear.app/a24-personal/project/train-5bf68de4e2d4).
+## Setup
+
+```bash
+# Python deps (for the arc-bundle generator skill)
+python3 -m pip install --user openpyxl python-dotenv
+
+# Secrets
+cp .env.example .env  # fill in ANTHROPIC_API_KEY
+
+# Dashboard
+cd web/dashboard && npm install && npm run dev
+```
 
 ## CLI
 
 ```bash
-npm install
 npx tsx app/cli/cli.ts plan today
 npx tsx app/cli/cli.ts history --last 7d
 npx tsx app/cli/cli.ts query e1rm "Back Squat"
@@ -64,5 +101,4 @@ Supabase tables in `app/supabase/migrations/`. Seed exercise library: `bash app/
 - **Informed but unburdened.** The athlete can always see the rationale. They never have to make the decision.
 - **Numbers to chase.** PRs to beat on every set. Gap-to-goal metrics. Trend lines. Non-negotiable.
 - **Propose, don't dictate.** When the plan changes, the system proposes and explains. The athlete approves.
-- **Push over pull.** The morning text IS the product. The webapp is for the weekly ritual and on-demand context.
 - **Consistency is the product.** Train's job isn't the perfect program — it's making a good program so easy to follow that the athlete never falls off.

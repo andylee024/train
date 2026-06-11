@@ -1,0 +1,13 @@
+[project]
+name = "train"
+version = "0.1.0"
+description = "Train — AI training operating system for self-coached athletes"
+requires-python = ">=3.11"
+dependencies = [
+    "openpyxl>=3.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

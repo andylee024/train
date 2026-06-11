@@ -120,7 +120,7 @@ function parsePlanMarkdown(content: string): Map<string, PlanItem[]> {
  *   3. plans/weekly-plans/ — most recently modified .md file as fallback
  */
 function findCurrentPlan(week: string): { file: string; content: string } | null {
-  // 1. Check athletes/andy/active/current-week.md
+  // 1. Check docs/athletes/andy/active/current-week.md
   const activeWeek = path.join(ATHLETE_DIR, "active", "current-week.md");
   if (fs.existsSync(activeWeek)) {
     const content = fs.readFileSync(activeWeek, "utf-8");

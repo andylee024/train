@@ -35,7 +35,7 @@ Runs `build_training_arc.py` (the implementation). One invocation produces 24 fi
 
 **Currently hardcoded to Andy's v6 dunk arc.** The data structures (`BLOCK_SPECS`, `WEEK_META`, `SQUAT_1RM`, `BENCH_1RM`, `CLEAN_1RM`) live inline in `build_training_arc.py`.
 
-**When athlete #2 onboards:** split data → athlete bundle (e.g., `athletes/{name}/arc-{slug}/training/arc-data.py`), keep `build_training_arc.py` as the generic renderer. ~3-hour refactor when needed.
+**When athlete #2 onboards:** split data → athlete bundle (e.g., `docs/athletes/{name}/arc-{slug}/training/arc-data.py`), keep `build_training_arc.py` as the generic renderer. ~3-hour refactor when needed.
 
 For now: edit the data structures inside `build_training_arc.py` directly when Andy's plan changes.
 
@@ -45,7 +45,7 @@ For now: edit the data structures inside `build_training_arc.py` directly when A
 python3 .claude/skills/plan-training-arc/build_training_arc.py
 ```
 
-Writes to: `athletes/andy/arc-2026-summer-dunk/{outputs,training/blocks,training/weeks,training/active}/`
+Writes to: `docs/athletes/andy/arc-2026-summer-dunk/{outputs,training/blocks,training/weeks,training/active}/`
 
 ## When to Use
 
@@ -65,7 +65,7 @@ Before generating, you need:
 4. **Training style(s)** — which training-styles/ guides to consult for exercise selection
 5. **Known maxes** — for percentage-based load prescription
 
-If any of these are missing, check `athletes/{name}/profile.md` and `athletes/{name}/arc.md` first. If those don't exist, ask the user.
+If any of these are missing, check `docs/athletes/{name}/profile.md` and `docs/athletes/{name}/arc.md` first. If those don't exist, ask the user.
 
 ## Spreadsheet Structure
 
@@ -161,7 +161,7 @@ Power and Olympic work is NEVER superset. Everything else should be superset whe
 
 ## Style Integration
 
-When building a plan, consult the relevant style guide(s) in `docs/training-styles/`:
+When building a plan, consult the relevant style guide(s) in `docs/content/training-styles/`:
 
 - Read the guide's **exercise selection**, **session structure**, **periodization** sections
 - Pull exercises from the style's exercise catalog, not generic choices
@@ -181,7 +181,7 @@ When building a plan, consult the relevant style guide(s) in `docs/training-styl
 ## What This Spreadsheet Is NOT
 
 - Not a daily workout log — the text agent handles that
-- Not an exercise library — that lives in `docs/training-styles/exercises.md`
+- Not an exercise library — that lives in `docs/content/training-styles/exercises.md`
 - Not a nutrition plan — that's a separate document
 - Not a weekly planner — weeks and days are delivered conversationally
 

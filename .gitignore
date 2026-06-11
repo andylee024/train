@@ -10,3 +10,11 @@ __pycache__/
 *.pyc
 # LibreOffice / Excel temp lock files
 .~lock.*
+# Vercel CLI per-project link state
+.vercel/
+.vercel
+# bin/train pulled athlete state (transient mirror of Modal volume)
+athletes/_pending/
+
+# Agent worktrees (Claude Code spawns these locally; never commit)
+.claude/worktrees/

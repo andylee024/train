@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* North — cool slate dark, warm-white ink, single electric blue accent. */
+:root {
+  /* Surface — cool near-black */
+  --bg: #0a0d12;
+  --bg-elev-1: #11151c;
+  --bg-elev-2: #1a1f29;
+  --bg-elev-3: #232a37;
+
+  /* Ink — warm-white against cool bg */
+  --ink: #eef1f5;
+  --ink-dim: #8b91a0;
+  --ink-muted: #4a5160;
+
+  /* Accent — electric blue */
+  --accent: #5b9eff;
+  --accent-ink: #0a0d12;
+  --accent-soft: rgba(91, 158, 255, 0.12);
+  --accent-line: rgba(91, 158, 255, 0.32);
+
+  /* Status — muted, against dark */
+  --good: #5ec99c;
+  --warn: #d4a050;
+  --bad: #e07a7a;
+  --info: #7aa3d4;
+
+  /* Lines — cool hairlines */
+  --line: #1f2530;
+  --line-soft: #161b25;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-1: var(--bg-elev-1);
+  --color-bg-2: var(--bg-elev-2);
+  --color-bg-3: var(--bg-elev-3);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-good: var(--good);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+  --color-info: var(--info);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--bg-elev-3);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--ink-muted); }
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+.tabular { font-variant-numeric: tabular-nums; }
+.font-mono { font-family: var(--font-geist-mono), ui-monospace, monospace; }
+
+/* Section label primitive — tracked mono uppercase. */
+.section-label {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-muted);
+}
+
+/* Hairline divider primitive. */
+.hairline {
+  border-top: 1px solid var(--line);
+}
