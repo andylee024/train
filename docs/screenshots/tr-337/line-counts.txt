@@ -1,0 +1,10 @@
+      16 .claude/skills/deep-research-on-coach/_constants.py
+     195 .claude/skills/deep-research-on-coach/_search.py
+     177 .claude/skills/deep-research-on-coach/approve.py
+     165 .claude/skills/deep-research-on-coach/discover.py
+     165 .claude/skills/deep-research-on-coach/extract_scribd.py
+     159 .claude/skills/deep-research-on-coach/extract_web.py
+     166 .claude/skills/deep-research-on-coach/extract_yt.py
+     140 .claude/skills/deep-research-on-coach/run.py
+     113 app/supabase/migrations/20260609000000_coach_content.sql
+    1296 total

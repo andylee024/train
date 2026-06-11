@@ -1,0 +1,18 @@
+[run] note: no Supabase client (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY not set) — stages will run in stub mode.
+[discover] no supabase client — skipping (stub mode).
+[approve] no supabase client — skipping (stub mode).
+[extract_yt] no supabase client — skipping (stub mode).
+[extract_scribd] no supabase client — skipping (stub mode).
+[extract_web] no supabase client — skipping (stub mode).
+
+──────────────────────────────────────────────────────────────────────
+  Run summary · slug=test-coach
+──────────────────────────────────────────────────────────────────────
+  ✓ discover            discovered=0
+  ✓ approve             approved=0
+  ✓ extract_yt          extracted=0
+  ✓ extract_scribd      extracted=0
+  ✓ extract_web         extracted=0
+
+  (No Supabase client — counts unavailable.)
+

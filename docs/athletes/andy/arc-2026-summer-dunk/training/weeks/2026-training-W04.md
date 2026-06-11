@@ -11,7 +11,7 @@
 - Primary Focus: Second/final week of DNT 2-wk OLY block. Front squat ramps to prescribed 75-80%. Arc accessory loads progress as planned.
 - Source program: `styles/dnt-program-source.md`
 - Integration methodology: `styles/dnt-integration-methodology.md`
-- **Daily warm-up:** "The Daily 7" — `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
+- **Daily warm-up:** "The Daily 8" — `styles/daily-warmup.md`. Run before EVERY training session. ~20 min, 2 sets each, same 8 movements every day. Not repeated below per-day to stay terse.
 
 ## Block Goals (Why This Week Exists)
 
@@ -42,7 +42,7 @@
 
 **Framework:** New 6-day structure — Mon and Fri are now the two upper+flex days. Wed is full rest. Mon flex is the heavier of the two (Mon → Sat jump = 5 days, jump-safe).
 **Phase 0** — passive/foundation flex, ZERO loading (per Andy's baseline: Taylor's 25cm off floor, side split 128°).
-**Total:** ~75 min (incl. Daily 7)
+**Total:** ~75 min (incl. Daily 8)
 
 ### Part A — Side Split Phase 0 (~25 min, CNS-fresh)
 
@@ -92,7 +92,7 @@
 
 **Framework:** Second flex session of the week (paired with Mon). Slightly compressed because Sat is jump day — even Phase 0 passive work is dialed back on Fri to keep jump performance fresh.
 **Phase 0** — passive only, no loading.
-**Total:** ~75 min (incl. Daily 7)
+**Total:** ~75 min (incl. Daily 8)
 
 ### Part A — Side Split Phase 0 compressed (~20 min)
 
@@ -125,7 +125,7 @@
 ## Daily Flexibility (15-20 min post-training)
 
 1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. **Mon + Fri deep work (Phase 0 — W04-W08):** Matt Smith Phase 0 — passive foundation work, no loading. See Mon + Fri sections + `docs/content/training-styles/matt-smith-flexibility/guide.md`.
+2. **Mon + Fri deep work (Phase 0 — W04-W08):** Matt Smith Phase 0 — passive foundation work, no loading. See Mon + Fri sections + `docs/training-styles/matt-smith-flexibility/guide.md`.
 3. **Wed = full rest day.** No flex programming.
 4. **Transition to Phase 1 starts W09 (Jun 28).** Mon = Session B (loaded). Fri = Session A (assisted).
 
