@@ -21,8 +21,11 @@ Per [`docs/product/database-schema.md`](docs/product/database-schema.md):
 | **Planned work** | Markdown | Inside the active arc bundle |
 | **Executed work** | Supabase | `workouts`, `workout_exercises`, `exercise_sets` tables |
 | **Athlete-facing view** | `.xlsx` | Generated artifact at `{bundle}/outputs/*.xlsx` — never the source |
+| **Researched coach content** | Supabase | `coaches`, `documents` tables + `coach-content` Storage bucket (populated by `.claude/skills/deep-research-on-coach/`) |
 
 The `.xlsx` is always derivable from (plan source + Supabase). Regenerate, don't mutate. See [`docs/product/live-renderer.md`](docs/product/live-renderer.md) for the three-renderer pipeline.
+
+Researched coach content lives in Supabase (not in `docs/content/training-styles/<coach>/`, which is the *synthesized* style guide downstream consumer). The deep-research-on-coach skill writes raw discovered + extracted source material; a separate downstream consumer synthesizes the guide.
 
 ## Arc bundle architecture
 
