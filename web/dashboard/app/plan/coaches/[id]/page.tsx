@@ -3,8 +3,9 @@
 import { use, useState } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, Check, Plus, Play, BookOpen, FileText, Quote } from "lucide-react";
-import { CATEGORIES, getCoach, initials, type ArcPhase, type Coach, type SocialLink } from "@/lib/coaches";
+import { ChevronLeft, Check, Plus, Play } from "lucide-react";
+import { CATEGORIES, getCoach, initials, type ArcPhase, type Coach, type ProgramFAQ, type SocialLink } from "@/lib/coaches";
+import { UNIVERSAL_FAQ_QUESTIONS } from "@/lib/coach-faq-questions";
 import { getProfile } from "@/lib/coach-profiles";
 import { useSelection } from "@/lib/use-selection";
 import { SelectionBar } from "@/components/plan/selection-bar";
@@ -202,9 +203,20 @@ export default function CoachProfilePage({
             <ArcTimeline coach={coach} accent={accent} />
           </Section>
 
-          {/* ── 7. FAQ ───────────────────────────────────────────────── */}
-          <Section label="FAQs">
-            <CoachFAQ coach={coach} accent={accent} />
+          {/* ── 7a. IS THIS FOR YOU? ─────────────────────────────────── */}
+          <Section label="Is this for you?">
+            <FAQList
+              items={UNIVERSAL_FAQ_QUESTIONS.map((q, i) => ({
+                q,
+                a: coach.faqAnswers[i] ?? "",
+              }))}
+              accent={accent}
+            />
+          </Section>
+
+          {/* ── 7b. PROGRAM FAQS ─────────────────────────────────────── */}
+          <Section label="Program FAQs">
+            <FAQList items={coach.programFaqs} accent={accent} />
           </Section>
 
           {/* ── 8. PAIRS WELL WITH ───────────────────────────────────── */}
@@ -217,8 +229,8 @@ export default function CoachProfilePage({
             />
           </Section>
 
-          {/* ── 9. SOURCES / HOW THIS GUIDE WAS BUILT ────────────────── */}
-          <Section label="How this guide was built">
+          {/* ── 9. SOURCES ───────────────────────────────────────────── */}
+          <Section label="Sources">
             <SourcesMetrics coach={coach} accent={accent} />
           </Section>
         </div>
@@ -458,14 +470,20 @@ function ArcPhasePanel({ phase, accent }: { phase: ArcPhase; accent: string }) {
 }
 
 // ──────────────────────────────────────────────────────────────────────
-// COACH FAQ — "Ask [Coach]"
-// Click-to-expand list of 3-5 questions in the coach's voice.
+// FAQ LIST — shared between "Is this for you?" (universal) and "Program FAQs".
+// Click-to-expand list of Q + A pairs in the coach's voice.
 // ──────────────────────────────────────────────────────────────────────
-function CoachFAQ({ coach, accent }: { coach: Coach; accent: string }) {
-  if (!coach.faqs || coach.faqs.length === 0) return null;
+function FAQList({
+  items,
+  accent,
+}: {
+  items: readonly ProgramFAQ[] | ProgramFAQ[];
+  accent: string;
+}) {
+  if (!items || items.length === 0) return null;
   return (
     <div className="space-y-1">
-      {coach.faqs.map((f, i) => (
+      {items.map((f, i) => (
         <details
           key={i}
           className="group bg-[var(--bg-elev-1)] border border-[var(--line)] rounded-md overflow-hidden"
@@ -494,78 +512,150 @@ function CoachFAQ({ coach, accent }: { coach: Coach; accent: string }) {
 }
 
 // ──────────────────────────────────────────────────────────────────────
-// SOURCES METRICS — "How this guide was built"
-// Trust signals: videos analyzed, source texts, citations, last refreshed.
+// SOURCES — Videos + Documents
+// Two-bucket layout. Videos: 5 inline + expand toggle. Documents: title +
+// pages + author, with "Referenced offline" tag when no URL. See TR-364.
 // ──────────────────────────────────────────────────────────────────────
 function SourcesMetrics({ coach, accent }: { coach: Coach; accent: string }) {
   const s = coach.sources;
+  const [videosExpanded, setVideosExpanded] = useState(false);
   if (!s) return null;
 
   const guideUrl = `https://github.com/andylee024/train/blob/main/docs/content/training-styles/${coach.id}/guide.md`;
 
+  const allVideos = s.videos?.analyzed ?? [];
+  const inlineVideos = videosExpanded ? allVideos : allVideos.slice(0, 5);
+  const hiddenCount = Math.max(0, allVideos.length - 5);
+
   return (
-    <div className="space-y-2.5 text-[12px] text-[var(--ink-dim)]">
-      {s.videosAnalyzed !== undefined && (
-        <div className="flex items-center gap-2.5">
-          <Play size={11} className="shrink-0" style={{ color: accent }} />
-          <span>
-            <span className="font-mono tabular text-[var(--ink)]">
-              {s.videosAnalyzed}
-            </span>{" "}
-            videos analyzed
-            {s.channelTotal && (
-              <span className="text-[var(--ink-muted)]">
-                {" "}
-                · of{" "}
-                <span className="font-mono tabular">{s.channelTotal.toLocaleString()}</span> on
-                channel
+    <div className="space-y-5 text-[12px] text-[var(--ink-dim)]">
+      {/* VIDEOS bucket */}
+      <div>
+        {s.videos && s.videos.analyzed.length > 0 ? (
+          <>
+            <div className="flex items-baseline justify-between gap-3 mb-2">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+                Videos
               </span>
-            )}
-          </span>
-        </div>
-      )}
-
-      {s.texts && s.texts.length > 0 && (
-        <div className="flex items-start gap-2.5">
-          <BookOpen size={11} className="shrink-0 mt-1" style={{ color: accent }} />
-          <div>
-            {s.texts.map((t, i) => (
-              <div key={i}>
-                <span className="text-[var(--ink)]">{t.title}</span>
-                {t.pages && (
-                  <span className="text-[var(--ink-muted)] ml-1 font-mono tabular text-[11px]">
-                    ({t.pages.toLocaleString()} pp)
+              {s.videos.channel && (
+                <a
+                  href={s.videos.channel.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[10.5px] font-mono tabular text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <span className="text-[var(--ink-dim)]">
+                    {s.videos.analyzed.length}
                   </span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {s.articles && s.articles.length > 0 && (
-        <div className="flex items-start gap-2.5">
-          <FileText size={11} className="shrink-0 mt-1" style={{ color: accent }} />
-          <div>
-            <span className="font-mono tabular text-[var(--ink)]">{s.articles.length}</span>{" "}
-            source {s.articles.length === 1 ? "article" : "articles"}:{" "}
-            <span className="text-[var(--ink-muted)]">
-              {s.articles.map((a) => a.title).join(" · ")}
+                  {s.videos.channel.total !== undefined && (
+                    <>
+                      {" "}of{" "}
+                      <span className="text-[var(--ink-dim)]">
+                        {s.videos.channel.total.toLocaleString()}
+                      </span>
+                    </>
+                  )}{" "}
+                  on {s.videos.channel.handle} ↗
+                </a>
+              )}
+            </div>
+            <ul className="space-y-1.5">
+              {inlineVideos.map((v) => (
+                <li key={v.id} className="flex items-start gap-2.5">
+                  <span
+                    className="shrink-0 mt-1 text-[10px] leading-none"
+                    style={{ color: accent }}
+                  >
+                    ◯
+                  </span>
+                  <a
+                    href={`https://www.youtube.com/watch?v=${v.id}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[12px] text-[var(--ink-dim)] hover:text-[var(--accent)] transition-colors leading-snug"
+                  >
+                    {v.title} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {hiddenCount > 0 && (
+              <button
+                onClick={() => setVideosExpanded((v) => !v)}
+                className="mt-2 text-[10.5px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--accent)] transition-colors"
+              >
+                {videosExpanded ? "▴ Show less" : `▾ Show ${hiddenCount} more`}
+              </button>
+            )}
+          </>
+        ) : (
+          <div className="flex items-baseline justify-between gap-3">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+              Videos
+            </span>
+            <span className="text-[11.5px] italic text-[var(--ink-muted)]">
+              Hand-curated from published articles
             </span>
           </div>
+        )}
+      </div>
+
+      {/* DOCUMENTS bucket */}
+      {s.documents && s.documents.length > 0 && (
+        <div>
+          <div className="flex items-baseline justify-between gap-3 mb-2">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+              Documents
+            </span>
+            <span className="text-[10.5px] font-mono tabular text-[var(--ink-dim)]">
+              {s.documents.length}
+            </span>
+          </div>
+          <ul className="space-y-2">
+            {s.documents.map((d, i) => (
+              <li key={i} className="flex items-start gap-2.5">
+                <span
+                  className="shrink-0 mt-0.5 text-[11px] leading-none"
+                  style={{ color: accent }}
+                >
+                  ▣
+                </span>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[12px] leading-snug">
+                    {d.url ? (
+                      <a
+                        href={d.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[var(--ink)] hover:text-[var(--accent)] transition-colors"
+                      >
+                        {d.title} ↗
+                      </a>
+                    ) : (
+                      <span className="text-[var(--ink)]">{d.title}</span>
+                    )}
+                    {d.pages !== undefined && (
+                      <span className="text-[var(--ink-muted)] ml-1 font-mono tabular text-[11px]">
+                        ({d.pages.toLocaleString()} pp)
+                      </span>
+                    )}
+                    {d.author && (
+                      <span className="text-[var(--ink-muted)] ml-1">— {d.author}</span>
+                    )}
+                  </div>
+                  {!d.url && (
+                    <div className="mt-0.5 text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)]">
+                      Referenced offline
+                    </div>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 
-      {s.citedClaims !== undefined && (
-        <div className="flex items-center gap-2.5">
-          <Quote size={11} className="shrink-0" style={{ color: accent }} />
-          <span>
-            <span className="font-mono tabular text-[var(--ink)]">{s.citedClaims}</span> cited
-            claims with verbatim quotes
-          </span>
-        </div>
-      )}
-
+      {/* Footer */}
       <div className="flex items-center justify-between gap-3 pt-3 mt-3 border-t border-[var(--line-soft)]">
         <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] tabular">
           {s.origin === "auto-ingested" ? "Auto-ingested" : "Hand-curated"} · Last refreshed{" "}

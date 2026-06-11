@@ -41,23 +41,30 @@ export type ArcPhase = {
   rationale: string;
 };
 
-export type FAQ = {
+export type ProgramFAQ = {
   q: string;
   a: string;
 };
 
 /**
- * Trust metrics for the "How this guide was built" section. Flexible to
- * support both auto-ingested coaches (videos analyzed, citations) and
- * hand-curated guides (articles, manual references).
+ * Sources for the "Sources" section (Videos + Documents). Replaces the older
+ * `videosAnalyzed / texts / articles / citedClaims` shape with a unified
+ * two-bucket model. See TR-364.
  */
 export type Sources = {
   origin: "auto-ingested" | "hand-curated";
-  videosAnalyzed?: number;
-  channelTotal?: number;
-  texts?: { title: string; pages?: number }[];
-  articles?: { title: string }[];
-  citedClaims?: number;
+  videos?: {
+    channel?: { handle: string; url: string; total?: number };
+    /** YouTube watch URL is derivable from `id`. */
+    analyzed: { id: string; title: string }[];
+  };
+  documents?: {
+    title: string;
+    pages?: number;
+    /** Omit to display a "Referenced offline" tag in place of the link. */
+    url?: string;
+    author?: string;
+  }[];
   /** Display string like "June 2026". */
   lastRefreshed: string;
 };
@@ -104,8 +111,17 @@ export type Coach = {
   pairsWith: string[];
   /** 4-phase arc timeline. See docs/design/coach-profile.md. */
   arcPhases: ArcPhase[];
-  /** 3-5 FAQs in the coach's voice. Mix universal + coach-specific. */
-  faqs: FAQ[];
+  /**
+   * Answers to `UNIVERSAL_FAQ_QUESTIONS` in the coach's voice — same questions
+   * across every coach so users can comparison-shop. Length MUST equal
+   * `UNIVERSAL_FAQ_QUESTIONS.length` (4). See TR-361.
+   */
+  faqAnswers: string[];
+  /**
+   * 2-3 coach-specific FAQs that explain signature concepts / jargon (e.g.
+   * "What's a mesocycle?", "What's Prilepin's Table?"). See TR-361.
+   */
+  programFaqs: ProgramFAQ[];
   /** Trust metrics — what the guide was built from. */
   sources: Sources;
 };
@@ -224,19 +240,53 @@ export const COACHES: Coach[] = [
         rationale: "The 1RM windows tell you what to base next arc's percentages on. Without a real test you're guessing — and Catalyst's whole system depends on accurate maxes feeding the volume math.",
       },
     ],
-    faqs: [
-      { q: "What if I've never snatched before?", a: "Skill Level 0 protocol — 12 weeks learning the lifts from scratch, no percentage work. You start where you are; technique gates everything else." },
-      { q: "How much will my squat go up in 18 weeks?", a: "Beginners typically see 30-60 lb on back squat across a full arc. Intermediate gains slow but technique sharpens and snatch ratios climb." },
-      { q: "What if I miss a session?", a: "Resume where you left off. The block timeline flexes — shift the test window by the same number of days, don't double up." },
-      { q: "Do I need an in-person coach?", a: "Programs are designed for self-coaching with video review. Use the cue checklists in §10 of the guide and film every working set." },
-      { q: "Can I add cardio?", a: "Light GPP (sprints, jumps, cross-country) is built in. Avoid heavy distance running during volume blocks — it competes for recovery." },
+    faqAnswers: [
+      // What kind of training is this?
+      "Olympic weightlifting — the snatch and clean & jerk are the program, not accessories to it. Squats, pulls, and pressing exist to support the competition lifts. You'll spend most sessions on the platform with a barbell overhead.",
+      // Who is this for?
+      "Athletes pursuing competitive Olympic weightlifting, or field/court athletes who need transferable triple-extension power. Also anyone whose absolute strength has saturated and now needs speed-strength back — that's the Explosive Strength Deficit at work.",
+      // What will I get out of 12-18 weeks of this?
+      "Beginners typically add 30-60 lb to back squat and learn the competition lifts well enough to compete. Intermediates sharpen technique under fatigue and climb snatch / clean-and-jerk ratios. Either way, you finish with a tested 1RM on snatch + C&J.",
+      // What do I need to commit to?
+      "3-6 sessions per week, 60-120 min each. You need a barbell, bumper plates, a platform, and a squat rack. Safe overhead and front-rack positions are non-negotiable — if mobility blocks the catch, we fix that before adding load.",
+    ],
+    programFaqs: [
+      {
+        q: "What's the difference between coach-prescribed loads and percentages?",
+        a: "Beginners get coach-prescribed loads — the coach picks the weight based on technique that day, not a number from a chart. Percentages enter once you have a real 1RM and consistent technique under load. Skipping straight to percentages teaches you to chase numbers instead of positions.",
+      },
+      {
+        q: "What's the Explosive Strength Deficit and why does Catalyst train it directly?",
+        a: "ESD is the gap between your absolute strength (slow max) and your rate of force development (fast force). At advanced levels the two stop correlating — you can squat more without snatching more. The snatch + C&J, jumps, and speed pulls close that gap; nothing else does.",
+      },
+      {
+        q: "What's Prilepin's Table and how does it guide weight choice?",
+        a: "Prilepin's Table maps intensity zones (70-80%, 80-90%, 90%+) to optimal rep ranges and total reps per session. Stay inside the zone and you get the adaptation without burning the CNS; leave it and you either undershoot or accumulate fatigue you can't recover from. The program prescribes total reps; the table tells you why.",
+      },
     ],
     sources: {
       origin: "auto-ingested",
-      videosAnalyzed: 15,
-      channelTotal: 1873,
-      texts: [{ title: "Olympic Weightlifting: A Complete Guide for Athletes & Coaches", pages: 1267 }],
-      citedClaims: 176,
+      videos: {
+        channel: {
+          handle: "@CatalystAthletics",
+          url: "https://www.youtube.com/@CatalystAthletics",
+          total: 1873,
+        },
+        analyzed: [
+          { id: "5FscVghWSps", title: "The Year Plan for Olympic Weightlifting Training Programs" },
+          { id: "mzzmZAWxOn4", title: "Laying Out The Training Week Schedule for Olympic Weightlifting" },
+          { id: "tqs6UpgqQDg", title: "RPE or Percentages for Olympic Weightlifting - Training Intensity" },
+          { id: "_Q0uEiiRWYs", title: "Training & Recovery for Adaptation - Program Design for Olympic Weightlifting" },
+          { id: "XsqLP70vK5Y", title: "How to Use Prilepin's Table for Olympic Weightlifting" },
+        ],
+      },
+      documents: [
+        {
+          title: "Olympic Weightlifting: A Complete Guide for Athletes & Coaches",
+          pages: 1267,
+          author: "Greg Everett",
+        },
+      ],
       lastRefreshed: "June 2026",
     },
   },
@@ -359,19 +409,36 @@ export const COACHES: Coach[] = [
         rationale: "If you can't beat the Foundation baselines, the program didn't work. Re-test all four pillars: did sprint, jump, move-weight-violently, and squat/hinge each move? That's the audit.",
       },
     ],
-    faqs: [
-      { q: "What if I can't recover from 6 sessions/week?", a: "Use the 4-day variant — sprints day + 2 lifting days + 1 conditioning. Skip density blocks until your recovery improves." },
-      { q: "Do I need to do all 4 lower-body pillars every week?", a: "Yes. Sprint + jump + move-weight-violently + squat/hinge-heavy. Drop one and it's not POWERJACKED — it's another style." },
-      { q: "What if I miss a session?", a: "Don't double up. Resume the next day; reorder the week if needed — lifting sequence matters more than calendar day." },
-      { q: "How much will my squat go up in 18 weeks?", a: "Intermediate lifters typically see 25-50 lb on back squat per 12-week block, plus visible jump + sprint improvement." },
-      { q: "Can I add steady-state cardio?", a: "Sprint days ARE your cardio. Z2 conversational pace on rest days is fine; avoid long runs that interfere with explosive output." },
+    faqAnswers: [
+      // What kind of training is this?
+      "A 6-day hybrid system that runs two adaptation streams in parallel: explosive power (sprints, jumps, Olympic lifts, heavy compounds) when the CNS is fresh, then high-volume bodybuilding accessories layered on top of the same session. Look like a bodybuilder, perform like an athlete.",
+      // Who is this for?
+      "Field-sport athletes (rugby, football, lacrosse, basketball) who need speed and power and size at the same time. Also intermediate-to-advanced lifters plateaued on pure bodybuilding splits who want explosive output back. Not for true novices or anyone who can't recover from 6 sessions a week.",
+      // What will I get out of 12-18 weeks of this?
+      "25-50 lb on back squat per 12-week block at the intermediate level, with measurable vertical, broad jump, and 20-yd sprint improvements alongside visible muscle gain. Every test re-fires at the end of the arc against your Week-1 baseline.",
+      // What do I need to commit to?
+      "6 sessions per week, 75-90 min each. You need a full gym, a sprint surface, and plyo boxes. The schedule is non-negotiable on the four lower-body pillars — sprint, jump, move weight violently, squat/hinge heavy — every single week.",
+    ],
+    programFaqs: [
+      {
+        q: "What are the four lower-body pillars and why do all four need to hit weekly?",
+        a: "Sprint, jump, move weight violently (Olympic lifts / loaded jumps), and squat + hinge heavy. Each one drives a different quality — speed, reactivity, RFD, max force. Drop one and the adaptation it owns regresses inside a couple of weeks. Hit all four and they reinforce each other.",
+      },
+      {
+        q: "What's density work (14-min squat clock, EMOM deadlifts) and what does it produce?",
+        a: "Density is a third intensity zone between max strength and pure hypertrophy: heavy load (75-85%) on a clock, where the constraint is total work in a fixed window. The 14-min squat clock and EMOM deadlifts build strength + hypertrophy + work capacity in one piece. It's how the program gets bodybuilding-grade volume on the big lifts.",
+      },
+      {
+        q: "Why are sprints + plyos + Olympic lifts done before hypertrophy work in the same session?",
+        a: "Velocity work demands a fresh CNS — quality drops fast under fatigue and you stop driving the adaptation you came for. Hypertrophy work tolerates residual fatigue just fine because it runs on metabolic stress and time-under-tension, not peak output. The sequence preserves both streams.",
+      },
     ],
     sources: {
       origin: "hand-curated",
-      articles: [
-        { title: "7 Things to Build Powerful Legs" },
-        { title: "Sample 6-day training sessions" },
-        { title: "POWERJACKED weekly template" },
+      documents: [
+        { title: "7 Things to Build Powerful Legs", author: "Dylan Shannon" },
+        { title: "Sample 6-day training sessions", author: "Dylan Shannon" },
+        { title: "POWERJACKED weekly template", author: "Dylan Shannon" },
       ],
       lastRefreshed: "June 2026",
     },
@@ -492,19 +559,53 @@ export const COACHES: Coach[] = [
         rationale: "Deload week 16 dumps the intensification fatigue so the 1RM test isn't suppressed. The new maxes reset MEV-to-MRV math for the next arc — without a real test you're stacking guesses.",
       },
     ],
-    faqs: [
-      { q: "Do I have to train to failure?", a: "Not on every set. The literature says 1–2 RIR is enough on most working sets; failure on the last set of an isolation lift is fine. Avoid failure on compound lifts in the accumulation phase — it taxes recovery without much marginal growth." },
-      { q: "How do I know if I've hit junk volume?", a: "If your reps drop across sets faster than expected, your soreness lingers past 48h, or your weights stall for 2+ weeks at the same volume — you're past MRV. Drop a set per muscle and reassess." },
-      { q: "Can I skip cardio?", a: "Yes for pure hypertrophy. If you add it, keep it Z2 (conversational pace) on rest days — high-intensity cardio competes for recovery with the lifting." },
-      { q: "What if my gym only has DBs and a rack?", a: "The program runs. Substitute compounds with DB equivalents (DB bench, goblet squat, single-arm row). You lose some of the optimal exercise-selection picks but the volume framework is intact." },
-      { q: "How much muscle should I expect in 18 weeks?", a: "Intermediate lifters typically see 2–4 lb of lean mass per 12-week block at a small surplus, with visible improvement in lagging body parts that get prioritized volume." },
+    faqAnswers: [
+      // What kind of training is this?
+      "Science-based hypertrophy and strength. Every prescription is an answer to a literature question — what the meta-analyses say about frequency, which stretch position drives growth, where junk volume starts. RIR-based progression governs effort; exercise selection is ranked by EMG and stretch-mediated data.",
+      // Who is this for?
+      "Intermediate-to-advanced lifters chasing measured hypertrophy with full gym access who want to read the why behind every choice. Not for sport-specific athletes who need power expression over size, and not for beginners overwhelmed by exercise-selection detail.",
+      // What will I get out of 12-18 weeks of this?
+      "Intermediate lifters typically see 2-4 lb of lean mass at a small surplus, visible improvement in whichever body parts get prioritized volume, and a heavier-loaded 1RM test on bench / squat / DL at the end of the arc.",
+      // What do I need to commit to?
+      "4-6 sessions per week, 60-90 min each, full gym. You need to be willing to train near failure (1-2 RIR), track weekly sets per muscle, and run a deload when the program says so. Sub-45-min sessions don't compress the volume cleanly.",
+    ],
+    programFaqs: [
+      {
+        q: "What are volume landmarks (MEV / MAV / MRV) and how do they govern weekly sets?",
+        a: "MEV is the minimum effective volume — the fewest weekly sets per muscle that still drive growth. MAV is the maximum adaptive volume — the sweet spot. MRV is the maximum recoverable volume — the ceiling before fatigue swamps the stimulus. The accumulation phase climbs from MEV toward MRV adding 1-2 sets per week, then a deload resets the dial.",
+      },
+      {
+        q: "What's RIR-based progression and how do I actually gauge it?",
+        a: "RIR (reps in reserve) is how many reps you could have done before failure. RIR 2 = two more in the tank. You gauge it honestly by occasionally taking a set to failure on isolation work and recalibrating — most people overestimate their RIR until they've tested it a few times. Compound lifts sit at 1-2 RIR most of the arc; isolation can go to failure on the last set.",
+      },
+      {
+        q: "What's lengthened-position bias and why is it preferred in exercise selection?",
+        a: "Lengthened-position bias means the exercise loads the muscle hardest when it's stretched (RDLs > leg curls, incline curls > preacher curls, deficit pushups > regular). The data shows stretch-mediated hypertrophy is a real and large driver of growth. Where the lift allows it, we pick the variation that puts the muscle under tension at its longest length.",
+      },
     ],
     sources: {
       origin: "auto-ingested",
-      videosAnalyzed: 12,
-      channelTotal: 320,
-      texts: [{ title: "The Ultimate Push Pull Legs System (program PDF)", pages: 96 }],
-      citedClaims: 142,
+      videos: {
+        channel: {
+          handle: "@JeffNippard",
+          url: "https://www.youtube.com/@JeffNippard",
+          total: 320,
+        },
+        analyzed: [
+          { id: "qVek72z3F1U", title: "The Smartest Push Pull Legs Routine (Fully Explained)" },
+          { id: "lu_BObG6dj8", title: "How To Build Muscle (Explained In 5 Levels)" },
+          { id: "d8V9ZaSq9Oc", title: "The Smartest Way To Get Lean (Shredding Science Explained)" },
+          { id: "deDlhPmT2SY", title: "How To Tell If You're Training Hard Enough (Using Science)" },
+          { id: "jLvqKgW-_G8", title: "The Best And Worst Back Exercises (Ranked By Science)" },
+        ],
+      },
+      documents: [
+        {
+          title: "The Ultimate Push Pull Legs System",
+          pages: 96,
+          author: "Jeff Nippard",
+        },
+      ],
       lastRefreshed: "June 2026",
     },
   },
@@ -625,19 +726,58 @@ export const COACHES: Coach[] = [
         rationale: "RP is iterative — every arc gives you data to tune the next one. New 1RM resets the volume math; the meso-by-meso growth notes tell you whether variation, specialization, or volume changes drove the gains worth replicating.",
       },
     ],
-    faqs: [
-      { q: "What's a mesocycle?", a: "A 4–6 week block where weekly volume per muscle climbs from MEV to MRV, ending in a deload week. The basic unit of RP programming — you'll run 3–4 of them per arc." },
-      { q: "How do I find my MEV?", a: "Start with the published per-muscle minimums (e.g. 8–10 sets/week for chest). If you're growing and not stalled, that's roughly your MEV. If not, add 2 sets and observe for 2 weeks." },
-      { q: "Do I have to deload every 4–6 weeks?", a: "Yes if you want the system to keep working. Skipping deloads accumulates fatigue that masks future growth and increases injury risk. The deload is a feature, not a chore." },
-      { q: "What if I can't train to failure due to a joint issue?", a: "Stay at 3–4 RIR on compound lifts that aggravate the joint; isolation lifts can still go to failure. Reduce volume by 1 set/muscle to compensate for the lower effort." },
-      { q: "Can I run RP while cutting?", a: "Yes — drop to MEV during the cut, run a 2-meso cut cycle, and accept that growth stalls or reverses slightly. Bring volume back up when returning to maintenance or surplus." },
+    faqAnswers: [
+      // What kind of training is this?
+      "Mesocycle-based hypertrophy. The Renaissance Periodization system codified MV / MEV / MAV / MRV — the volume landmarks every modern hypertrophy programmer references. You run 4-6 week blocks, climb volume from MEV toward MRV, deload, repeat. Programming is a problem of stimulus-to-fatigue ratio.",
+      // Who is this for?
+      "Lifters who want a system instead of vibes — clear volume math per muscle group, scheduled deloads, repeatable structure. You should recover well and be willing to train near failure (0-2 RIR). Not for sport in-season, post-surgical return, or anyone whose recovery bandwidth is shot.",
+      // What will I get out of 12-18 weeks of this?
+      "Three mesocycles inside the arc, each with measurable growth on the targeted muscle groups, plus a re-tested 1RM / e1RM at the end. You'll also walk away with a documented set of volume landmarks personalized to your recovery — the next arc is faster to plan because of it.",
+      // What do I need to commit to?
+      "4-6 sessions per week, 60-90 min each, full gym. You commit to deload weeks even when you feel fine (skipping them is the most common way the system breaks). And you commit to honest RIR — most working sets land at 0-2 RIR by the end of the mesocycle.",
+    ],
+    programFaqs: [
+      {
+        q: "What's a mesocycle and how do I run one?",
+        a: "A mesocycle is a 4-6 week block. Week 1 starts at MEV for each muscle (the published minimum, e.g. 8-10 sets/week for chest). Each week you add 1-2 sets per muscle as long as growth and recovery support it. By the last working week you're at or near MRV. Then a deload week dumps fatigue and you start the next cycle.",
+      },
+      {
+        q: "What's a deload week and when do I trigger it?",
+        a: "A deload is a planned reduction in volume and intensity (typically ~50% of working sets at 60-70% loads) to clear accumulated fatigue without losing fitness. Trigger it at the end of every mesocycle — automatically, not when you 'feel' burned out. By the time you feel it, you've already lost two productive weeks.",
+      },
+      {
+        q: "What's junk volume and how do I cut it?",
+        a: "Junk volume is sets that don't get close enough to failure (>4 RIR) to drive growth but still tax recovery. The fix: every working set should sit at 0-3 RIR; warm-ups and rest-set fillers don't count toward weekly volume math. If your weekly sets-per-muscle number includes anything you barely felt, it's inflated.",
+      },
     ],
     sources: {
       origin: "auto-ingested",
-      videosAnalyzed: 10,
-      channelTotal: 1200,
-      texts: [{ title: "The Renaissance Diet 2.0", pages: 412 }, { title: "Scientific Principles of Hypertrophy Training", pages: 256 }],
-      citedClaims: 108,
+      videos: {
+        channel: {
+          handle: "@RenaissancePeriodization",
+          url: "https://www.youtube.com/@RenaissancePeriodization",
+          total: 1200,
+        },
+        analyzed: [
+          { id: "zhP5gsBbgYY", title: "How to Train for Muscle Growth: Beginner to Advanced Training" },
+          { id: "tIsE3jLz5zI", title: "How to Build the Most Aesthetic Physique (Full Workout Plan)" },
+          { id: "PgG_qyZmF5M", title: "11 Signs Your Workouts Aren't Hard Enough to Build Muscle" },
+          { id: "-N18byHLSF8", title: "Not Growing? You Aren't Training Enough" },
+          { id: "jOTVZaSRV0s", title: "Low Reps Aren't Worth It (for Muscle Growth)" },
+        ],
+      },
+      documents: [
+        {
+          title: "The Renaissance Diet 2.0",
+          pages: 412,
+          author: "Mike Israetel et al.",
+        },
+        {
+          title: "Scientific Principles of Hypertrophy Training",
+          pages: 256,
+          author: "Renaissance Periodization",
+        },
+      ],
       lastRefreshed: "June 2026",
     },
   },
