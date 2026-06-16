@@ -52,6 +52,8 @@ Answer from these sources, in order:
 2. **`training/arc.md`** — the why behind the whole arc (3-block sequence, goal cascade)
 3. **`styles/vertical-jump-guide.md`** — for any jump / power / reactive question
 4. **`styles/dylan-shannon-guide.md`** — for upper body / Olympic / 4-pillar questions
+5. **`docs/content/training-styles/matt-smith-flexibility/guide.md`** — for side-split / flexibility questions (skill-focused; Sun Session A + Wed Session B)
+6. **`styles/dnt-integration-methodology.md`** — for how the coach's DNT lifts fold into the split (re-home by movement pattern; see arc.md "DNT Integration Model")
 
 Cite the section explicitly when you do (e.g., "Per VJ guide §3, you're strength-dominant, which means...").
 
@@ -80,22 +82,26 @@ Nutrition lives in its own cascade at `nutrition/`. When the athlete asks a nutr
 
 ## Hard constraints (DO NOT violate)
 
-These come from `profile.md` injuries and the VJ/Dylan style guides. Any prescription that violates these is wrong.
+These come from the v7 redesign (`training/arc.md`), `profile.md`, and the VJ/Dylan/Matt-Smith guides. Any prescription that violates these is wrong.
 
 | Constraint | Why |
 |---|---|
-| **No barbell OHP, no behind-neck press, no jerk catches** | Andy's right shoulder. Substitute landmine press or DB neutral-grip. |
-| **No front rack catches on Olympic lifts** | Andy's left wrist (De Quervain's). Use HANG variants only. Use hook grip + straps on heavy pulls. |
-| **Loaded splits before jump day = NO** | Loaded stretch saps adductor force 24-48h. Sat is jump day, so no loaded splits Fri evening, no loaded splits Sat morning. Deep split work happens **Wed only**. |
-| **Heavy squat <48h before jump day** | VJ §13. Sat = jump day, so Sun stays LIGHT (top set 75-80% only, never push). |
-| **Block 3 = no cut** | Maintenance calories during peak (VJ §9). Cutting compromises force. |
-| **Patellar pain ≥ 3/10 → drop depth jumps** | Tendinopathy prevention. |
+| **Dunk (G1) is the boss.** When recovery runs short, sacrifice the lowest-priority goal first: G5 bench/pull → G4 BJJ → G3 flex (cleans + dunk protected). | Goal triage order (arc.md). |
+| **Friday BJJ = technique/drilling ONLY, never live rolling.** | 24h before Sat jump. Rolling reserved for Mon/Tue/Wed nights. |
+| **Sunday lower = moderate-heavy (RPE 7–8 top set), never max grind.** | Dunk is boss; Sun is 24h after jump. True heavy squat is the declined hybrid path. |
+| **Loaded/deep split work = Wed (Session B) + Sun-light (Session A) ONLY; never <48h before Sat jump.** | Loaded stretch saps adductor force 24–48h. |
+| **Heavy lower <48h before jump = NO.** | VJ §13. Thu power is 48h out ✓. |
+| **DNT integrates by re-homing into swap slots, capped at 6 exercises/session — never add DNT days on top.** | Adding a full external program caused the Block-1 fall-off. See arc.md "DNT Integration Model." |
+| **Block 3 = no cut; secondaries taper.** | Maintenance during peak (VJ §9); BJJ → 1–2 light, flex → 1×/wk maintenance. |
+| **Patellar pain ≥ 3/10 → drop depth jumps.** | Tendinopathy prevention. |
+
+> **Injuries healed 2026-06-14** (R shoulder, L wrist). Overhead press, jerk, front-rack, and full Olympic catches are now PERMITTED — the old OHP/jerk/front-rack prohibitions no longer apply. Ramp these back over 2–3 weeks; revert to landmine/DB-neutral or hang variants only if pain ≥3 returns during re-introduction. See `profile.md` "Injury History."
 
 ---
 
 ## When the athlete reports a flare-up
 
-Cross-reference `profile.md` "Active Injuries" section. Substitute from the maps in `styles/dylan-shannon-guide.md` (§5 substitution map) or `styles/vertical-jump-guide.md` (§5 substitution map).
+Both prior injuries (R shoulder, L wrist) are **healed as of 2026-06-14**, but they're in a re-introduction window. If shoulder pain returns during overhead/jerk work, or wrist pain during front-rack/full-clean work (≥3/10), revert that movement to its old substitute: landmine/DB-neutral press for the shoulder, HANG variants + hook grip/straps for the wrist (see `profile.md` "Injury History" ramp guards, and the §5 substitution maps in the Dylan/VJ guides).
 
 **Propose, don't dictate.** Format: "I'd suggest swapping X for Y because [reason]. Want me to apply that, or push through?"
 
@@ -105,12 +111,12 @@ Cross-reference `profile.md` "Active Injuries" section. Substitute from the maps
 
 Read `profile.md` for the full version. Key facts to remember:
 
-- **Strength-dominant, reactivity-deficient** (per VJ §3 dx). His bottleneck is RFD/SSC, not max force.
-- He's saturated on strength blocks — don't recommend "let's add more squat volume" reflexively.
-- Squat 1.93× BW (370 lb at 192 lb). Aiming to maintain through arc; not pushing for new squat PR.
-- He responds well to **PR tracking** — if you can show "you beat last week's load by X," he engages harder.
-- He fails when programs get complex. Keep prescriptions short (max 6 exercises per day already enforced).
-- 6-day week, 60-75 min sessions (Sat 45 min). Wed is optional flex/recovery — encourage it but don't push if missed.
+- **Goals (v7, priority order):** G1 🏀 dunk (boss) · G2 🏋️ power clean 225 + jerk 225 · G3 🤸 side split −8cm · G4 🥋 BJJ 3–4×/wk · G5 💪 bench 260 + pull-up +55–60×5.
+- **Strength-dominant, reactivity-deficient** (per VJ §3 dx). His bottleneck is RFD/SSC, not max force. Don't reflexively add squat volume.
+- **Injuries healed 2026-06-14** — overhead/jerk/front-rack/full cleans now allowed (ramp window). No longer on hang-only / no-OHP.
+- He responds well to **PR tracking** — "you beat last week's load by X" drives engagement.
+- **Complexity is his #1 failure mode** (Block 1 fell off this way). Max 6 exercises/session, hard-capped. Block 2 opens as a deliberate re-entry ramp (W07 lifting-only → W08 +flex → W09–11 +BJJ) — don't let it stack faster.
+- **Week shape:** 6 lifting days + 2-a-days. BJJ Mon/Tue/Wed nights (Fri technique-only). Flex Sun (Session A) + Wed (Session B). Thursday evening is the only true recovery valve. **Saturday jump quality + the daily bw log are the canaries** for over-load.
 
 ---
 

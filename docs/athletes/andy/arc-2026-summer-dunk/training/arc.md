@@ -3,33 +3,37 @@
 **Start:** 2026-05-03 (Sunday)
 **End:** 2026-09-05 (Saturday)
 **Duration:** 18 weeks (3 blocks × 6 weeks)
-**Plan version:** v6
+**Plan version:** v7 — redesigned 2026-06-16 from W07 onward (see "Redesign note")
 
 ---
 
 ## Purpose
 
-Close the explosive strength deficit so a strength-dominant athlete can finally express his force as a dunk. Build real upper body strength on the side. Drive the side split as a daily protocol. VJ drives the jump methodology; Dylan Shannon drives the upper days and the 4-pillar lower distribution.
+Close the explosive strength deficit so a strength-dominant athlete can finally express his force as a dunk. The dunk is the boss; everything else integrates in service of it. Around it: drive a power clean toward 225, run the side split as a skill (Matt Smith methodology), train BJJ as a near-daily skill, and hold upper-body strength. The coach's DNT Olympic work folds in by re-homing lifts into the matching day of this split — never by bolting on extra days.
 
 ---
 
 ## Goals (Priority Order)
 
+Priority order = triage order. When recovery runs short in a week, the lowest-priority goal yields first.
+
 | # | Goal | Test | Deadline |
 |---|---|---|---|
-| **G1** | Dunk a women's basketball on a regulation 10' rim | Filmed clean dunk attempt | Wk 18 |
-| **G2** | Bench 1RM 260 lb AND weighted pull-up +80 lb × 8 clean | 1RM bench test + max-reps pull-up | Wk 18 |
-| **G3** | Side split distance reduced ≥ 8 cm from baseline (hip-to-floor) | Tape measure, weekly | Wk 18 |
+| **G1** 🏀 | Dunk a women's basketball on a regulation 10' rim *(the boss)* | Filmed clean dunk | Wk 18 |
+| **G2** 🏋️ | Power clean 225 lb AND jerk 225 lb | Filmed clean lifts | Wk 18 |
+| **G3** 🤸 | Side split distance reduced ≥ 8 cm from baseline | Tape, weekly (Matt Smith milestones) | Wk 18 |
+| **G4** 🥋 | BJJ — light technique 3–4×/week, level up | Attendance + belt/skill progression | ongoing |
+| **G5** 💪 | Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean | 1RM bench + max-reps pull-up | Wk 18 |
+
+*Pull-up target reset from the original +80×8 (unrealistic from the +25×5 baseline) to +55–60×5.*
 
 ---
 
 ## The Diagnosis (Why This Plan Looks the Way It Does)
 
-Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-deficit test). He has 1.93× BW squat (370 lb at 192 lb) and has completed many strength blocks already. His bottleneck for jumping is **rate of force development and reactive ability (SSC)**, not max force.
+Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-deficit test). He has 1.93× BW squat (370 lb at 192 lb) and many strength blocks behind him. His bottleneck for jumping is **rate of force development and reactive ability (SSC)**, not max force.
 
-**Implication:** the textbook "strength block first → power block → peak" sequence does NOT apply. More squat work widens the explosive strength deficit instead of closing it. The right move is power/reactive emphasis from Block 1 with strength on maintenance.
-
-This is what the 3-block structure below reflects.
+**Implication:** the textbook "strength block → power block → peak" does NOT apply. More max squat widens the explosive deficit. The dial stays on power/reactive with strength sub-maximal — even now that secondaries (cleans, BJJ, flexibility) are added, none of them is allowed to convert this back into a strength-emphasis program.
 
 ---
 
@@ -37,83 +41,112 @@ This is what the 3-block structure below reflects.
 
 | Block | Weeks | Name | Purpose | Serves |
 |---|---|---|---|---|
-| **1** | 1–6 | Power Conversion + Upper Build | Close ESD: jump squats + Olympic + reactive intro; squat on maintenance. Bench/pull-up volume base. | G1, G2, G3 |
-| **2** | 7–12 | Reactive + Dunk Window | Depth jumps enter; dunk attempts begin Wk 9. Bench peaks toward 255; pull-up toward +50. | G1, G2, G3 |
-| **3** | 13–18 | Peak + Realize + Test | Volume taper; PAP complexes; dunk attempts every Tue. Test bench 260 + pull-up +80×8 + dunk. | G1, G2, G3 |
+| **1** | 1–6 | Power Conversion + Upper Build | *(complete — see `reviews/blocks/block-1-review.md`)* | — |
+| **2** | 7–12 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
+| **3** | 13–18 | Peak + Realize + Test | Volume strips out; the jump realizes. Dunk every Sat. BJJ + flex taper. Test dunk, clean/jerk 225, bench 260, pull-up. | all |
+
+**Block 1 ended in a fall-off** (W4–6 collapse, see review). Block 2 therefore opens as a **re-entry**, not a continuation — see Redesign note.
 
 ---
 
-## Weekly Structure (6 Days)
+## Weekly Structure (6 lifting days + 2-a-days)
 
-| Day | Focus | Why this slot |
-|---|---|---|
-| **Sun** | Lower Strength (LIGHT maintenance) + posterior | Heaviest squat day, but kept LIGHT (only 24h before Sat jump day). |
-| **Mon** | Upper Horizontal — bench + row | Push focus; 24h pause from squat. |
-| **Tue** | Speed-Strength B — Olympic variety + sprint finisher | 48h post-Sun; Olympic exposure + sprint exposure. |
-| **Wed** | Recovery + Deep Flex (optional) + Pull-Up Volume | True rest day for legs. The ONLY day for loaded splits (no jump day adjacent). |
-| **Thu** | Speed-Strength A — Olympic Power + Speed Squat | 48h post-Tue; the heaviest power day. |
-| **Fri** | Upper Vertical — pull-up + dips | 48h before next Sat. |
-| **Sat** | **JUMP DAY** — sprints + approach jumps + depth jumps + dunk attempts | **The peak performance day.** Where the goal lives. |
+The week is a CNS jigsaw built around **Saturday = jump day**. Lifting is daytime; BJJ + flexibility are the second sessions. DNT lifts re-home into the marked swap slots.
 
-**Quality distribution per VJ §2.1:**
-- Max Strength (>80%): Sun — MAINTENANCE only (1×/wk, light top set)
-- Strength-Speed (50-80%): Thu (Power Clean), Tue (Hang Snatch + Push Press) — HIGH
-- Speed-Strength (15-50%): Sat (Barbell Jump), Thu (Jump Squat) — HIGH
-- Reactive (<15%): Sat (Sprints, Approach Jumps, Depth Jumps) — HIGH
+| Day | Daytime | Evening | Serves | DNT swap home |
+|---|---|---|---|---|
+| **Sun** | Lower Strength (**moderate-heavy**, RPE 7–8) + **Side-Split Session A** (assisted, jump-safe) | rest | G1 ceiling, G3 | squats / heavy lower / pulls |
+| **Mon** | Upper Horizontal — bench + row | **BJJ** (roll OK) | G5, G4 | horizontal press / rows |
+| **Tue** | Speed-Strength B — Olympic snatch + sprint | **BJJ** (roll OK) | G1, G4 | snatch variants |
+| **Wed** | **Side-Split Session B** (loaded/resisted, no barbell) | **BJJ** (light) | G3, G4 | — |
+| **Thu** | Speed-Strength A — **power clean → 225** + speed squat + jump squat | free | **G2**, G1 | clean / jerk / push press |
+| **Fri** | Upper Vertical — pull-up + dips + strict press | **BJJ** (technique only) | G5, G4 | strict press / vertical push |
+| **Sat** | **JUMP DAY** — sprints + approach + depth jumps + dunk attempts + clean finisher | — | **G1**, G2 | olympic finisher |
+
+**Hard schedule rules:**
+- **Friday BJJ = technique/drilling ONLY, never live rolling** (24h before jump — rolling reserved for Mon/Tue/Wed).
+- **Sunday is moderate-heavy, not max** — dunk is boss; true heavy squat is the declined hybrid path.
+- **Deep/loaded split work = Wed (Session B) + Sun light (Session A)** only; both ≥48h from jump (adductor force).
+- **Thursday evening stays free** — it's the only recovery valve; there is otherwise no full rest day (watch the load).
+
+**Quality distribution (VJ §2.1):** Max Strength — Sun (moderate-heavy, sub-max). Strength-Speed — Thu (clean), Tue (snatch + push press). Speed-Strength — Sat (barbell jump), Thu (jump squat). Reactive — Sat (sprints, approach, depth jumps). All HIGH except squat.
+
+---
+
+## DNT Integration Model (coach plans every 2 weeks)
+
+The coach issues a new program ~every 2 weeks. **Integrate by re-homing each exercise into the matching day of THIS split by movement pattern — never copy DNT's day structure, never add DNT days on top.** (This is the mechanism that caused the Block 1 fall-off; see review.)
+
+| DNT exercise | Re-homes to |
+|---|---|
+| Snatch variants *(oly — non-negotiable)* | **Tue** |
+| Clean variants *(oly — non-negotiable)* | **Thu** (feeds G2) |
+| Jerk / push press *(oly — non-negotiable)* | **Thu / Sat** (feeds G2 jerk) |
+| Strict press / vertical push | **Fri** |
+| Horizontal press / rows | **Mon** |
+| Squats / heavy lower / pulls | **Sun** |
+
+**Rules:** Olympic lifts always go in. Accessories fill remaining slots up to **6 exercises/session**. Anything that doesn't fit that week is **dropped, not crammed**. DNT heavy squat lands on Sunday capped at moderate-heavy (dunk is boss). Full methodology: `styles/dnt-integration-methodology.md`; current source: `styles/dnt-program-source.md`.
 
 ---
 
 ## Testing Schedule
 
-| Metric | Baseline | Wk 6 | Wk 12 | Wk 18 | Method | Serves |
-|---|---|---|---|---|---|---|
-| Standing CMJ | TBD | +1 in | +2.5 in | +4 in | Best of 3 | G1 |
-| Bounce Depth Jump (18 in) | TBD | ≥ Standing | > Standing | Reactive deficit closed | Best of 3 | G1 |
-| Approach Touch | Grab rim | Consistent grab | +3 in above rim | DUNK | Film + wall mark | G1 |
-| Back Squat | ~370 lb | ≥ 360 (maintained) | ≥ 360 | ≥ 360 | Top set 3RM | G1 ceiling |
-| Bench Press | 230 lb | 245 (3RM) | 255 (1RM) | 260 (1RM) | 1RM | G2 |
-| Wtd Pull-Up | +25 lb × 5 | +25 × 5 clean | +50 × 5 | +80 × 8 | Max reps @ target | G2 |
-| Side Split | TBD | −3 cm | −6 cm | −8 cm | Tape, weekly | G3 |
-| Bodyweight | ~192 lb | ~188 | ~185 | 183-186 (held) | Daily 7-day avg | G1 multiplier |
+| Metric | Baseline | Wk 12 | Wk 18 | Method | Serves |
+|---|---|---|---|---|---|
+| Dunk attempt | grab rim | +3 in above rim | **DUNK** | Film | G1 |
+| Standing CMJ | **re-baseline W07** | +2.5 in | +4 in | Best of 3 | G1 |
+| Depth jump (reactive) | re-baseline W07 | > standing | deficit closed | Best of 3 | G1 |
+| Power Clean | ~195 (full) | 210 | **225** | Filmed top single | G2 |
+| Jerk | reintroduce (shoulder healed) | 205 | **225** | Filmed top single | G2 |
+| Side split (hip-to-floor) | **re-baseline W07** | −6 cm / Taylor's ≤10cm | **−8 cm** | Tape, weekly | G3 |
+| BJJ | start | 3–4×/wk held | level up | Attendance | G4 |
+| Bench Press | 230 | 255 (1RM) | 260 (1RM) | 1RM | G5 |
+| Wtd Pull-Up | +25×5 | +50×5 | **+55–60×5** | Max reps @ target | G5 |
+| Bodyweight | ~192 | ~185 | 184–186 (held) | 7-day avg | G1 multiplier |
+
+Three baselines are still **uncaptured 7 weeks in** (CMJ, depth jump, side split) — re-baseline in W07 or the goals can't be scored.
 
 ---
 
 ## Constraints (Non-Negotiable)
 
-- **R shoulder:** no barbell OHP — landmine/DB neutral grip only
-- **L wrist (De Quervain's):** no front rack — hang Olympic variants + hook grip + straps on pulls
-- **Cut ~300 cal/day Blocks 1-2 only**; maintenance calories Block 3 (peak)
-- **Loaded side-split work post-session only** on Sun/Tue/Thu (saps jump quality 24-48h)
-- **Deep split work = Wed only** (true rest day for legs)
-- **If squat top set drops > 5% in a week** → halve calorie deficit; if > 8% → pause cut
-- **Patellar pain ≥ 3/10** → drop depth jumps that week; ≥ 5 → 2-wk plyo deload
+- **Injuries healed 2026-06-14** (R shoulder, L wrist). Overhead/jerk/front-rack/full cleans now permitted — **ramp load over 2–3 weeks** before maxes; revert to landmine/hang variants if pain ≥3 returns. (See `profile.md`.)
+- **Friday BJJ = technique only**, never rolling.
+- **Sunday moderate-heavy only** (RPE 7–8), never max grind.
+- **Deep/loaded split work = Wed + Sun-light only**; never within 48h before Saturday jump.
+- **Heavy lower <48h before jump = NO** (VJ §13). Thu power is 48h out ✓.
+- **Cut ~300 cal/day B1–B2; maintenance B3** (peak — VJ §9).
+- **DNT integrates by re-homing, capped at 6/session** (see model above).
+- **Patellar pain ≥3/10** → drop depth jumps that week; ≥5 → 2-wk plyo deload.
+- **If squat/jump quality drops** → pull the optional/lowest-priority load first (Fri BJJ, then a flex session, then BJJ nights), per goal triage order.
 
 ---
 
 ## Style Guides Driving This Arc
 
-- **Primary:** Vertical Jump Bible + THP — see `styles/vertical-jump-guide.md`
-- **Secondary:** Dylan Shannon (POWERJACKED) — see `styles/dylan-shannon-guide.md`
-- **Daily warm-up:** "The Daily 7" — see `styles/daily-warmup.md`. Same 8 movements every training day (Cat-Cow, World's Greatest Stretch, Hip CARs, 90/90 + Reach, Cossack, Deep Squat Hold + Reach, Lying Shoulder CARs, Wall Slides). Hits hip mobility (4 slots) + shoulder mobility (3 slots) — Andy's two weakest links. ~20 min, 2 sets each, habit-first design (no progression for 8 wks).
-- **External coach blocks:** when the coach issues a new program, integrate via `styles/dnt-integration-methodology.md`. Current example: DNT 2-wk block running W3-W4, source in `styles/dnt-program-source.md`.
+- **Primary (jump):** Vertical Jump Bible + THP — `styles/vertical-jump-guide.md`
+- **Upper / Olympic / 4-pillar lower:** Dylan Shannon (POWERJACKED) — `styles/dylan-shannon-guide.md`
+- **Flexibility (G3):** Matt Smith — `docs/content/training-styles/matt-smith-flexibility/guide.md` (skill-focused, isolation→compound, 2×/wk per skill, §13 scheduling)
+- **External coach:** DNT — integrate via `styles/dnt-integration-methodology.md`
+- **Daily warm-up:** "The Daily 7" — `styles/daily-warmup.md`
 
-When the athlete asks "why this rep scheme?" — cite the relevant guide section.
+---
+
+## Redesign note (v7, 2026-06-16)
+
+Block 2 was redesigned mid-flight after a Block-1 fall-off. **W07–W08 = re-entry ramp** — don't stack all 11–12 weekly sessions at once:
+- **W07:** lifting only + restart the daily bodyweight log. Keep ≤6/session. (Re-baseline CMJ/split here.)
+- **W08:** layer in the 2 flex sessions (Sun A + Wed B).
+- **W09–10:** layer in BJJ — 2 nights → then 3–4.
+- Cleans ramp toward full/heavier across these weeks (healed-wrist re-introduction).
+- **B3:** BJJ → 1–2 light nights, flex → 1×/wk maintenance — everything bows to the peak.
 
 ---
 
 ## Failure Mode Guardrails
 
-### "I fell off for a week"
-Resume at current week. RPE 6 for comeback session, then resume prescribed loads. Missing a week costs 1 week, not 4 weeks of spiral.
-
-### "Program is too complex"
-Already capped: max 6 exercises per session. If a session takes > 80 min, cut the last accessory.
-
-### "Shoulder/wrist flares up"
-Pain 3+ → exercise swaps within 24h (substitution maps in style guides). Pain 5+ → reduce load 20%, swap movements. Pain 7+ → rest day + physio.
-
-### "Cut is stalling"
-If 7-day BW average hasn't moved in 2 weeks: increase deficit by 100 cal or add 1 conditioning session. Never crash diet.
-
-### "Flexibility isn't progressing"
-If split distance hasn't improved in 3 weeks: increase loaded hold time to 90s, add a second PNF session per week, check sleep/recovery.
+- **"I fell off for a week":** resume at current week, RPE 6 comeback session, then prescribed loads. Missing a week costs 1 week.
+- **"Too complex / over-subscribed":** the documented #1 risk, and this is a high-volume week. Max 6 exercises/session is hard-capped. If a day runs long, cut the lowest-priority piece (Fri BJJ → flex → BJJ night). Protect the canaries: **Saturday jump quality + daily bodyweight log.**
+- **"Cut stalling":** if 7-day BW avg flat 2 weeks, +100 cal deficit OR +1 conditioning. Never crash diet.
+- **"Flexibility not progressing":** re-assess the ladder (Matt Smith §3) — new lowest rung likely appeared. Technique-check before adding load.

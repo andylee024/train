@@ -1,6 +1,6 @@
 # Matt Smith Flexibility — Exercise Selection
 
-> **10 method categories** (the primary palette) + **8 flexibility skills** (the compound targets). Specific *named* exercises are mostly TODO — the source video catalogs *methods* and *skills* but doesn't enumerate named exercises with sets/reps/intensities. See [`guide.md`](guide.md) §5 for the synthesis logic.
+> **10 method categories** (the primary palette) + **8 flexibility skills** (the compound targets). Named exercises for the **side split** are now catalogued (see "Side Split Drill Library" below, from the purchased Side Split Toolkit); the other seven skills remain method-and-cue only. See [`guide.md`](guide.md) §5 for the synthesis logic. **Loading numbers throughout are derived from method principles** — the course's exact per-drill sets/reps/tempo/load are in its videos/builders and not yet transcribed (`sources/mftk-side-split-toolkit-curriculum.md`).
 >
 > The master library at [`../exercises.md`](../exercises.md) is currently strength-only. A flexibility section needs to be added there before this catalog can fully cross-reference.
 
@@ -176,6 +176,51 @@ Not stretching — teaching the body to express existing range with proper align
 
 ---
 
+## Side Split Drill Library (course-sourced — Side Split Toolkit)
+
+The named side-split drills from Matt's purchased course, mapped to the method palette above and grouped by role in the stretch-stack. **Loading below = the course's actual Phase 1 Program Builder numbers** (transcribed in `sources/mftk-side-split-toolkit-curriculum.md` §6.2), not method-derived guesses, for drills that appear in the builder. **Tempo = 4 digits [lower][pause bottom][lift][pause top]**, `-` = portion not actively performed; contract-relax uses `contract-s/relax-s`. Drill-selection order (A1/B1/C1…) comes from the flowchart in §6.1 of that source.
+
+### Openers / isolation (assisted-biased — run early in the session)
+
+| Drill | Method | Spectrum | Loading (Phase 1 = course; else method-derived) | Notes |
+|---|---|---|---|---|
+| Tailor's Pose — Overview & Positioning | PIR / iso-holds (1/3) | assisted | **8 × 3–4 @ 2310, rest 60–90 s** (start 5–10 kg/side) | Bent-leg adductor + hip-rotator opener; depth & ROM, not load |
+| Tailor's Pose — Progression & Underload | progressive underload | assisted | regress load/assist to hold depth | Fatigued-week / skill-exposure lever |
+| Tailor's Pose — Straight Arm Lifts | active lift (4) | resisted | 3 × 6–10 *(method-derived)* | Strength-in-range bias for the opener |
+| Pancake Good Morning — Round Back | iso-holds / loaded (3) | neutral | **6 × 3–4 @ 3220, rest 60–90 s** (~5–10 kg) | Compound opener; pulls you deeper, intense — don't rest at top |
+| Standing Pancake Hang — Contract Relax | PIR (1) | assisted | **6 cycles (5 s contract/5 s relax) × 2–3, rest 90 s** | Internal pull, no visible lift; rest between sets not in the hang |
+| Hip External Rotation Good Mornings | active / iso (4/3) | resisted | 3 × 8 *(method-derived)* | ER alignment ("feet up" cue) under load |
+| Over-Pancake Isometrics — Feet & Leg Elevated | iso-holds (3) | resisted | 3 × 5 × 3-s *(method-derived)* | Elevated overload variant |
+| Adductor Flyes | active lift ± eccentric (4) | resisted | 3 × 6–10 *(method-derived)* | Adductor strength through range |
+
+### Strength-in-range (resisted — middle of the session)
+
+| Drill | Method | Spectrum | Loading (Phase 1 = course; else method-derived) | Notes |
+|---|---|---|---|---|
+| Horse Stance Squats | iso-holds / loaded (3) | neutral/resisted | **8 × 3–4 @ 2310, rest 60–90 s** | Flagship adductor drill; progress via weight + step width |
+| Drop Stance Squats | active / loaded (4) | resisted | **8/side × 2–3 @ 2310, rest 45 s** | Unilateral — weak side first, rest 15 s, match stronger side = 1 set; start bodyweight |
+| Straight-Leg Get-Ups — Hands Free | active lift (4) | resisted | **6 + 10 s hold last rep × 3–4 @ 2013, rest 60–90 s** | Active strength-in-range, no assist |
+| Straddle-Ups — Hands Assisted | active lift, assisted (4) | assisted | 3 × 5–8 *(method-derived)* | Regressed hands-free version |
+
+### Width / compound target (run last — depth is unlocked by the openers above)
+
+| Drill | Method | Spectrum | Loading (Phase 1 = course; else method-derived) | Notes |
+|---|---|---|---|---|
+| Horse Stance Slides | technique / active slide | neutral | **10C (cluster: 1 rep, rest 10 s, repeat) × 1 @ 51-0, rest 60 s** | Technique opener (A1) — not meant to be hard; practise the position |
+| Slide to Side Split | dynamic / active (5) | resisted | 2–3 × 8–12 *(method-derived)* | Entry into full width |
+| Isometric Side Split | iso hold (3) | neutral | **40–60 s hold × 2–3, rest 60–90 s** | Target-skill hold; width you can *just* hold 40 s → progress width first, then time |
+| Supported Side Split | iso, assisted (2/3) | assisted | 3 × 30–60-s *(method-derived)* | Regressed/supported target hold |
+| Side Split Contract-Relax | PIR (1) | assisted | **3 reps (agonist 5 s/5 s + antagonist 5 s/5 s) × 2–3, rest 90 s** | C-R finisher; drive heels (agonist) then lift feet (antagonist), deeper each relax |
+
+### Technique (low intensity — reinforce alignment, anti-bone-jam)
+
+| Drill | Method | Role | Cue |
+|---|---|---|---|
+| Kneeling Tilt — Measuring & Progression | technique (10) | technique | Anterior pelvic tilt before width; the core hip-tilt mechanic |
+| Kneeling Tilt — Closed Hip | active / technique (10) | technique | Hip-position variant. **Phase 1: 5/side × 2–3 @ 1113, rest 60 s** — unilateral, weaker side first |
+
+---
+
 ## Substitution map
 
 | If unavailable / contraindicated | Substitute | Reason |
@@ -221,7 +266,7 @@ Not stretching — teaching the body to express existing range with proper align
 |---|---|
 | Pike (toe-touch) | TODO |
 | Pancake | Partial (referenced in Dennis side-split example) |
-| Side split | **Worked example complete** — Dennis programming (see `guide.md` §7) |
+| Side split | **Full drill library catalogued** — Side Split Toolkit (see "Side Split Drill Library" above) + Dennis worked example (`guide.md` §7). Per-drill loading still method-derived pending video transcription. |
 | Front split | Partial (cue + drill in §8) |
 | Bridge | Partial (cue + drill in §8) |
 | Shoulder flexion | Partial (assessment in §3, drill row above) |

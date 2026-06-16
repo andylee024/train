@@ -8,101 +8,103 @@
 - Block Week: 5 of 6
 - Date Range: Sun Jul 12 – Sat Jul 18, 2026
 - Week Type: intensify
-- Primary Focus: Peak Block 2. RPE 8-9. Last chance to push loads.
+- Primary Focus: PEAK Block 2. BJJ 3–4 nights. RPE 8–9. Dunk attempts 10. Last chance to push loads.
 
 ## Block Goals (Why This Week Exists)
 
-1. **G1**: Approach touch ≥ 3 inches above rim AND first dunk attempts filmed (Wk 9+) (Serves: Arc G1)
-2. **G2**: Bench 1RM ≥ 255 lb AND weighted pull-up +50 lb × 5 reps clean (Serves: Arc G2)
-3. **G3**: Side split distance reduced ≥ 6 cm cumulative from baseline (Serves: Arc G3)
+1. **G1** 🏀: Dunk (boss). Dunk attempts 10 (Serves: Arc G1)
+2. **G2** 🏋️: Power clean FULL toward 225 — climb @160 (Serves: Arc G2)
+3. **G3** 🤸: Side split −8 cm — Phase 1 loading peaks (Serves: Arc G3)
+4. **G4** 🥋: BJJ 3–4×/wk — **Mon/Tue/Wed roll + Fri technique-only** (Serves: Arc G4)
+5. **G5** 💪: Bench 260 + pull-up +55–60×5 (density @195, pull-up +50) (Serves: Arc G5)
+
+> **PEAK WEEK.** BJJ goes to **3–4 nights: Mon/Tue/Wed roll + Fri technique-only (never rolling, 24h before jump).** Push loads — last chance before the W12 deload + bench test.
 
 ## 7-Day Overview
 
-1. Sun Jul 12 (SUNDAY): Lower Strength (LIGHT maintenance) + Posterior Chain
-2. Mon Jul 13 (MONDAY): **Upper Horizontal + Side Split Session B (loaded — 10kg cap)**
-3. Tue Jul 14 (TUESDAY): Speed-Strength B — Olympic Variety + Sprint Finisher
-4. Wed Jul 15 (WEDNESDAY): **🛌 REST DAY**
-5. Thu Jul 16 (THURSDAY): Speed-Strength A — Olympic Power + Loaded Velocity
-6. Fri Jul 17 (FRIDAY): **Upper Vertical + Side Split Session A (assisted)**
-7. Sat Jul 18 (SATURDAY): JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
+1. Sun Jul 12 (SUNDAY): Lower Strength (moderate-heavy) + **Side-Split Session A (assisted, Phase 1)**
+2. Mon Jul 13 (MONDAY): Upper Horizontal — Bench + Row | **BJJ (roll OK)**
+3. Tue Jul 14 (TUESDAY): Speed-Strength B — Olympic Snatch + Sprint Finisher | **BJJ (roll OK)**
+4. Wed Jul 15 (WEDNESDAY): **Side-Split Session B (loaded — Phase 1, 10kg cap)** | **BJJ (light)**
+5. Thu Jul 16 (THURSDAY): Speed-Strength A — Power Clean (FULL) + Loaded Velocity | evening FREE
+6. Fri Jul 17 (FRIDAY): Upper Vertical — Pull-Up + Dips + Strict Press | **BJJ (technique ONLY)**
+7. Sat Jul 18 (SATURDAY): JUMP DAY — Dunk Attempts (10) + High-Box Depth Jumps (30 in)
 
-## Sun Jul 12 (SUNDAY) — Lower Strength (LIGHT maintenance) + Posterior Chain
+## Sun Jul 12 (SUNDAY) — Lower Strength (moderate-heavy) + Side-Split Session A (assisted, Phase 1)
 
-1. Back Squat (light maintenance): 3×3 @ 80% (295 lb)
-2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 275
-3. Hand-Supported Bulgarian SS: 3×8/leg @ 55
-4. Glute-Ham Raise: 3×8 @ BW+20
-5. Pigeon Stretch: 2×60s/side @ —
+**Moderate-heavy, NOT max (dunk is boss).** Session A first (bodyweight, jump-safe).
 
-## Mon Jul 13 (MONDAY) — Upper Horizontal + Side Split Session B (Phase 1 Wk 3 — 10kg cap)
+### Part A — Side-Split Session A (~22 min)
 
-**Phase 1 Wk 3.** B2 at 10 kg/knee cap (Matt Smith published max for flexibility loading).
+1. **[FLEX-A1]** Taylor's Pose PIR: 3×6 reps × (5s contract / 5s relax)
+2. **[FLEX-A2]** Pancake: 3×6 × 3s hold
+3. **[FLEX-A3]** Cossack Squat Hold: 3/side × 5 × 3s @ BW
+4. **[FLEX-A4]** Triangle Side Split CR-ACR (Theo protocol): 3×4 reps × (5s + 5s)
 
-### Part A — Side Split Session B loaded (~28 min)
+### Part B — Lower Strength (moderate-heavy)
 
-1. **[FLEX-B1]** Horse Stance: 3×6 × 3s hold @ BW
-2. **[FLEX-B2]** Loaded Taylor's Pose: 3×8 @ **10 kg/knee** (cap)
-3. **[FLEX-B3]** Side-Lying Leg Raise: 3/side × 10 @ BW
-4. **[FLEX-B4]** Triangle Side Split Active Push: 3×5 × 3s active hold
+5. Back Squat (moderate-heavy top set): work up to 3RM-ish @ 315, RPE 8, then 3×3 back-off @ 285
+6. Stiff-Legged Deadlift: 4×5,5,4,3 @ 275
+7. Glute-Ham Raise: 3×8 @ BW+20
 
-### Part B — Upper Horizontal compressed (~30 min)
+## Mon Jul 13 (MONDAY) — Upper Horizontal — Bench + Row | BJJ (roll OK)
 
-5. **[ARC]** Bench Press: 14-min density @ 195
-6. **[ARC]** Barbell Row: 3×6 @ 205
-7. **[ARC]** DB Incline Bench (neutral): 3×6-8 @ 70
-8. **[ARC]** DB Lateral Raise: 2×10 @ 25
+1. Bench Press: 14-min density @ 195 *(G5 driver)*
+2. Barbell Row: 4×6 @ 205
+3. DB Incline Bench (neutral): 3×6-8 @ 70
+4. T-Bar Chest-Supported Row: 3×6-8 @ Heavy
+5. DB Lateral Raise: 3×10 @ 25
 
-**Canary:** Tue Power Snatch + Thu Front Squat top sets.
+## Tue Jul 14 (TUESDAY) — Speed-Strength B — Olympic Snatch + Sprint Finisher | BJJ (roll OK)
 
-## Tue Jul 14 (TUESDAY) — Speed-Strength B — Olympic Variety + Sprint Finisher
-
-1. Hang Power Snatch: 5×3 @ 70% (135)
+1. Hang Power Snatch: 5×3 @ 135
 2. DB Push Press (neutral): 4×4 @ 60
 3. Single-Leg Bounds: 3×6/leg @ Med dist
 4. Sprints (finisher): 4×20yd, 1×40yd @ 90% effort
 5. Copenhagen Lift: 3×20s/side @ BW
 
-## Wed Jul 15 (WEDNESDAY) — 🛌 REST DAY
+## Wed Jul 15 (WEDNESDAY) — Side-Split Session B (loaded — Phase 1, 10kg cap) | BJJ (light)
 
-Full rest.
+**Phase 1 Wk 3.** B2 at 10 kg/knee cap (Matt Smith published max for flexibility loading). Wed→Sat = 72h, adductor force safe.
 
-## Thu Jul 16 (THURSDAY) — Speed-Strength A — Olympic Power + Loaded Velocity
+1. **[FLEX-B1]** Horse Stance: 3×6 × 3s hold @ BW
+2. **[FLEX-B2]** Loaded Taylor's Pose (eccentric): 3×8 @ **10 kg/knee** (cap) (1s top, 3s eccentric descent)
+3. **[FLEX-B3]** Side-Lying Leg Raise: 3/side × 10 (1s top, 3s eccentric down)
+4. **[FLEX-B4]** Triangle Side Split Active Push: 3×5 × 3s active hold
 
-1. Power Clean: 5×3 @ 82% (160 lb)
-2. Speed Squat: 5×2 @ 72% (265 lb)
-3. Jump Squat: 4×4 @ 35% (130 lb)
+**Canary:** Tue Power Snatch + Thu Power Clean top sets. If either drops >5% → hold B2 at 7.5 kg.
+
+## Thu Jul 16 (THURSDAY) — Speed-Strength A — Power Clean (FULL) + Loaded Velocity
+
+**Full catch — building toward 225. Peak load.** Thursday evening stays FREE.
+
+1. Power Clean (FULL, full catch): 5×3 @ 160
+2. Speed Squat: 5×2 @ 265
+3. Jump Squat: 4×4 @ 35% (130)
 4. RDL: 4×5,5,4,3 @ 275
-5. Pendulum Squat: 3×8-10 @ Heavy
 
-## Fri Jul 17 (FRIDAY) — Upper Vertical + Side Split Session A (assisted, jump-safe)
+## Fri Jul 17 (FRIDAY) — Upper Vertical — Pull-Up + Dips + Strict Press | BJJ (technique ONLY)
 
-### Part A — Side Split Session A (~25 min)
+**Fri BJJ = technique/drilling ONLY, never live rolling** (24h before Sat jump).
 
-1. **[FLEX-A1]** Taylor's Pose PIR: 3×6 reps × (5s+5s)
-2. **[FLEX-A2]** Pancake: 3×6 × 3s hold
-3. **[FLEX-A3]** Cossack Squat Hold: 3/side × 5 × 3s @ BW
-4. **[FLEX-A4]** Triangle Side Split CR-ACR: 3×4 reps × (5s+5s)
+1. Weighted Pull-Up: 5×3 @ +50
+2. Weighted Dips: 4×5 @ +35
+3. Strict Press: 3×8 @ Mod-Hvy (building)
+4. Chest-Supported Row: 3×6-8 @ Heavy
+5. Incline DB Curl: 3×8-10 @ Mod-Hvy
 
-### Part B — Upper Vertical compressed (~30 min)
-
-5. **[ARC]** Weighted Pull-Up: 5×3 @ +50
-6. **[ARC]** Weighted Dips: 4×5 @ +35
-7. **[ARC]** Chest-Supported Row: 3×6-8 @ Heavy
-8. **[ARC]** Landmine Press: 3×10 @ Mod-Hvy
-9. **[ARC]** Incline DB Curl: 3×8-10 @ Mod-Hvy
-
-## Sat Jul 18 (SATURDAY) — JUMP LAB + Dunk Attempts (Wk 9+) — Depth Jumps
+## Sat Jul 18 (SATURDAY) — JUMP DAY — Dunk Attempts + High-Box Depth Jumps
 
 1. Sprints: 4×20yd, 2×30yd @ 95%
 2. Approach Jumps: 5×2 @ max intent
-3. Depth Jump (mid/high box): 3×5 @ 30 in
-4. Hang Power Clean: 4×3 @ 78% (150 lb)
-5. Dunk Attempts (Wk 9+): 5-10 attempts @ 10 max
+3. Depth Jump (high box): 3×5 @ 30 in
+4. Hang Power Clean: 4×3 @ 150
+5. Dunk Attempts: 10 max-intent attempts, film every one
 
 ## Daily Flexibility (15-20 min post-training)
 
 1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. Wed deep work: weighted side-split holds, PNF contract-relax, pancake good morning.
+2. Wed deep work: Session B loaded holds (10kg cap), eccentric Taylor's, side-lying leg raise.
 3. **Never load splits before Sat jump day** (loaded stretch saps adductor force 24-48h).
 
 ## Logging Checklist
@@ -111,11 +113,11 @@ Full rest.
 2. Top set logged for primary lifts (squat, bench, pull-up, power clean).
 3. Sat jump day: log sprint times, best jump height, dunk attempt count + makes.
 4. Daily bodyweight + Sun side-split measurement (cm hip-to-floor).
-5. Shoulder + wrist pain rating (1-10) after Mon and Fri sessions.
+5. Shoulder + wrist pain rating (1-10) after Mon, Thu, Fri sessions.
 
 ## End-of-Week Review (filled Sun)
 
 1. Wins: <what progressed>
 2. Misses: <what was not completed or not clean>
-3. Metric Changes: <actual vs target>
-4. Adjustment For Next Week: <load/volume/recovery changes>
+3. Metric Changes: <actual vs target — dunk attempt makes, side-split angle, peak loads>
+4. Adjustment For Next Week: <load/volume/recovery — W12 deload + bench 1RM test, BJJ drops to 2 light>

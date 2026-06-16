@@ -13,13 +13,15 @@ I want to be athletic and durable for a long, long time. I invest in nutrition, 
 
 ## Goals (This Arc Only — see arc.md for cascade)
 
-In priority order:
+In priority order (v7, updated 2026-06-16):
 
-1. **Dunk a women's basketball** on a regulation 10' rim
-2. **Bench 1RM 260 lb AND weighted pull-up +80 lb × 8 clean**
+1. **Dunk a women's basketball** on a regulation 10' rim *(the boss)*
+2. **Power clean 225 lb AND jerk 225 lb** (filmed top singles)
 3. **Side split distance reduced ≥ 8 cm from baseline**
+4. **BJJ — light technique 3–4×/week**, level up
+5. **Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean**
 
-Long-term goals deferred during this arc: Olympic lifting (120 kg C&J), back squat 405 lb, MMA, basketball skills sessions. These return in future arcs.
+Priority order = triage order: when recovery runs short, the lowest-priority goal yields first. Olympic lifting (clean + jerk) and BJJ were promoted into this arc after the shoulder/wrist healed (2026-06-14); back squat 405 and dedicated basketball-skills sessions remain deferred to future arcs.
 
 ---
 
@@ -61,25 +63,25 @@ Long-term goals deferred during this arc: Olympic lifting (120 kg C&J), back squ
 
 ---
 
-## Active Injuries
+## Injury History (cleared 2026-06-14)
 
-### Right Shoulder
-- Status: active, manageable
-- Affected movements: overhead pressing (barbell OHP, behind-neck), heavy bench at full ROM, jerk catches
-- **Substitution rules:** No barbell OHP. Use landmine press, DB neutral-grip floor/incline, push press to a SAFE range only.
-- Trajectory: TBD — log pain rating after Mon (bench day) and Fri (dips/landmine day)
+Both prior active injuries are **healed as of 2026-06-14** — overhead pressing, jerks, and front-rack/full Olympic catches are now permitted. Re-introduce load progressively (see ramp guard) rather than testing maxes cold.
 
-### Left Wrist (De Quervain's Tenosynovitis)
-- Status: active
-- Affected movements: front rack position, grip-intensive pulling, wrist extension under load
-- **Substitution rules:** No front rack catches. Use HANG variants of all Olympic lifts. Use hook grip + straps on heavy pulls (RDL, deadlift, weighted pull-up).
-- Trajectory: TBD
+### Right Shoulder — HEALED (monitor)
+- Status: cleared 2026-06-14 (previously: active, no overhead/jerk)
+- Now permitted: barbell OHP, push press/jerk catches, full-ROM bench
+- **Ramp guard:** rebuild overhead + jerk volume over ~2–3 weeks before max efforts. Log shoulder pain (1–10) after press/jerk sessions during re-introduction; if pain ≥3 returns, revert to landmine/DB-neutral subs.
+
+### Left Wrist (De Quervain's) — HEALED (monitor)
+- Status: cleared 2026-06-14 (previously: active, no front rack)
+- Now permitted: front rack catches, full power/squat cleans, grip-intensive pulling
+- **Ramp guard:** reintroduce front-rack/full-clean catches over ~2–3 weeks before heavy loads (e.g., the power clean 225 goal). Log wrist pain after front-rack work during re-introduction; if pain ≥3 returns, revert to HANG variants + hook grip/straps.
 
 ---
 
 ## Schedule + Constraints
 
-- **Training days:** 6 days/week (Sun-Tue, Thu-Sat). Wed = optional flex/recovery.
+- **Training days:** 6 lifting days + 2-a-days (BJJ evenings Mon/Tue/Wed/Fri; flex Sun + Wed). Wed is now a flex (Session B) + BJJ day, not a rest day. Thursday evening is the only true recovery valve.
 - **Session length:** 60-75 min weekday, 45 min Saturday
 - **Max exercises per session:** 6 (hard cap to prevent complexity creep)
 - **Equipment:** Full commercial gym + sprint surface

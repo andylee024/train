@@ -2,46 +2,50 @@
 
 ## Purpose
 
-Peak + realize. Volume strips out so accumulated fatigue dissipates and the nervous system can finally express what Blocks 1-2 built (VJ "delayed transformation"). Dunk attempts every Tue. Test bench 260, pull-up +80×8, dunk women's BB. Calories move to maintenance — no peak with a deficit.
+Peak + realize + test. Volume strips out so accumulated fatigue dissipates and the nervous system can finally express what Blocks 1-2 built (VJ "delayed transformation"). The **dunk is the boss** — every secondary taper serves Saturday freshness. Dunk attempts every Saturday (10+, filmed). All five goals come due: dunk a women's basketball, power clean 225 + jerk 225, side split −8cm, BJJ held light, bench 260, pull-up +55–60×5. Calories move to maintenance — no peak with a deficit (VJ §9).
 
 ## Goals
 
-1. **G1**: DUNK a women's basketball on regulation 10' rim (filmed) (Serves: Arc G1)
-2. **G2**: Bench 1RM 260 lb AND weighted pull-up +80 lb × 8 reps (Serves: Arc G2)
-3. **G3**: Side split distance reduced ≥ 8 cm cumulative from baseline (Serves: Arc G3)
+1. **G1** 🏀: DUNK a women's basketball on regulation 10' rim (filmed) — *the boss* (Serves: Arc G1)
+2. **G2** 🏋️: Power clean 225 lb AND jerk 225 lb (filmed top singles) (Serves: Arc G2)
+3. **G3** 🤸: Side split distance reduced ≥ 8 cm cumulative from baseline (Serves: Arc G3)
+4. **G4** 🥋: BJJ held — taper to 1–2 LIGHT technique nights/week (protect freshness) (Serves: Arc G4)
+5. **G5** 💪: Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean (Serves: Arc G5)
 
 ## Programming Strategy
 
-1. WEEK SHAPE: Sat = TEST DAY (dunk attempts, max jump). Sun = active recovery only — protect Sat performance.
-2. Sun: VERY LIGHT — no squat. Posterior chain hold + pigeon. Body recovers from Sat jump day, prepares for Mon bench.
-3. Bench Mon: Wks 13-14: 3×3 at 200-205. Wks 15-16: heavy doubles/singles 215-220. Wk 17: taper (singles at 90%). Wk 18: TEST 1RM 260.
-4. Pull-Up Fri: heavy triples +55→+65→+70. Tue 3×3 at +50→+60. Wed 3×8 volume at +30. Wk 18: TEST max reps @ +80 lb (target 8).
-5. Squat: NO straight heavy squats. Light Sun is removed entirely. PAP-style heavy squat REMOVED (no day to do it that doesn't conflict with Sat).
-6. Power Clean Thu: 4×2 wave 78→82% (155→165 lb). Drop volume; preserve top intent.
-7. Hang Snatch Tue: 4×2 wave 65→72% (125→140 lb). Variety stays in but volume cut.
-8. Speed Squat Thu: 4×2 wave 70→75%. Jump Squat 3×3 @ 30%.
-9. Depth Jump Sat: Wk 13-14 mid box 3×3. Wk 15-16 high box 2×3. Wk 17 taper (low box 2×5). Wk 18: NO depth jumps before test, just approach.
-10. Dunk attempts Sat: 10+ max-intent attempts every Saturday. Film all. Adjust approach mechanics weekly per VJ §8.
-11. Sprints: Sat 3×20yd (jump day, primary); Tue 3×20yd + 1×40yd. Chase sprint PRs Wks 15-16 then taper.
-12. Upper accessories drop to maintenance: 2-3 sets instead of 3-4. Recovery budget goes to the tests.
-13. Wk 13-14 RPE 7-8. Wk 15-16 RPE 8-9 (peak). Wk 17 TAPER (50% volume, 90% intensity). Wk 18 TEST WEEK.
-14. NUTRITION: maintenance calories from Wk 13. No cut during peak (VJ §9 — aggressive deficits compromise force).
+1. WEEK SHAPE: Sat = JUMP DAY = TEST DAY (dunk attempts every week, max jump). Sun = active recovery only — protect Sat performance. This is the peak; ALL secondaries taper to it.
+2. **BJJ tapers to 1–2 LIGHT technique nights/week** — no hard rolling (protect CNS freshness for the jump). W13–16: Mon + optional Tue/Wed light. W17–18: 1 light night max (or rest). Friday stays technique-only or drops entirely in test weeks.
+3. **Side-split flex tapers to 1×/week maintenance** (Wed only, lighter loads — no barbell). Sunday flex DROPS to light Cossack/pigeon only. Matt Smith §9: drop to maintenance during a peak; hold the gain, don't chase new range while peaking.
+4. **Squat removed / Sunday becomes light active recovery.** In B2 Sunday was moderate-heavy; in B3 peak logic strips lower volume. No straight heavy squats anywhere — they'd compromise Sat. Speed squat (Thu) is the only barbell squat pattern and it tapers W17–18.
+5. **Nutrition → maintenance from W13.** No cut during peak (VJ §9 — aggressive deficits compromise force).
+6. Bench Mon (G5): W13 3×3@200 · W14 3×3@205 · W15 3×2@215 · W16 3×2@220 · W17 3×1@235 (90%) · W18 TEST 1RM (260).
+7. Pull-Up Fri (G5): RESET target to +55–60×5 (the +80×8 target was unrealistic from a +25×5 baseline). Wave: W13 +45 · W14 +50 · W15 +52 · W16 +55 · W17 +57 doubles (taper) · W18 TEST +55–60×5. Strict/landmine press held at maintenance.
+8. Power Clean + Jerk Thu (G2): shoulder healed 2026-06-14 — jerk reintroduced, ramp load 2–3 wks before max. Clean: W13 4×2@160 · W14 @165 · W15 @170 · W16 @~210–215 (heavy double toward test) · W17 taper · W18 TEST full power clean 225. Jerk: build doubles W13 @185 → W16 @205–215 · W17 taper · W18 TEST jerk 225. **Both filmed top single at W18.** Revert to landmine/hang if shoulder or wrist pain ≥3 returns.
+9. Speed Squat Thu: 260→280 wave, taper W17–18. Jump Squat 3×3 @ 30%. RDL light 3×5, tapering.
+10. Hang/Power Snatch Tue (variety): 125→140 wave, taper. Continuous Broad Jumps 3×3 max dist (replaces single-leg bounds in B3).
+11. Depth Jump Sat: W13–14 mid box 3×3 · W15–16 high box 2×3 · W17 low taper 2×5 · W18 NONE (just approach jumps before the dunk test, full freshness).
+12. Dunk attempts Sat: 10+ max-intent attempts EVERY Saturday. Film all. Adjust approach mechanics weekly per VJ §8. **W18 = the dunk test.**
+13. Sprints: Sat 3×20yd (jump day, primary); Tue 3×20yd + 1×40yd. Chase sprint PRs W15–16 then taper.
+14. Upper accessories drop to maintenance (2–3 sets). Recovery budget goes to the tests.
+15. INTENSITY CURVE: W13–14 RPE 7–8 (realize). W15–16 RPE 8–9 (peak). W17 TAPER (50% volume, 90% intensity). W18 TEST WEEK.
+16. DNT swap-slots still apply (Tue snatch, Thu clean/jerk, Sat finisher, etc.) but during taper weeks accept LESS DNT volume — peak freshness wins. Anything that doesn't fit is dropped, not crammed.
 
 ## Split (6 Workouts / Week, Wed Optional)
 
-1. Sun: Active Recovery + Posterior Maintenance (very light)
-2. Mon: Upper Horizontal — Bench Peak (heavy doubles → singles → 1RM)
-3. Tue: Speed-Strength B — Olympic Variety + Sprint PRs
-4. Wed: Recovery + Deep Flex + Pull-Up Volume
-5. Thu: Speed-Strength A — Olympic Taper + Speed Work
-6. Fri: Upper Vertical — Pull-Up Peak + Dips
+1. Sun: Active Recovery + Light Posterior + Light Side-Split Maintenance (very light)
+2. Mon: Upper Horizontal — Bench Peak (heavy doubles → singles → 1RM) | BJJ light (technique)
+3. Tue: Speed-Strength B — Olympic Snatch + Sprint PRs | optional BJJ light
+4. Wed: Side-Split Maintenance (1× lighter, no barbell) | optional BJJ light
+5. Thu: Speed-Strength A — Power Clean/Jerk Taper + Speed Squat + Jump Squat | free
+6. Fri: Upper Vertical — Pull-Up Peak + Dips + Strict Press | BJJ technique only (or rest W17–18)
 7. Sat: JUMP DAY — Max Jump + Dunk Attempts every session (TEST DAY)
 
 ## Week-by-Week Programming
 
-### Week 1
+### Week 1 (W13 — realize, RPE 7–8)
 
-#### SUNDAY — Active Recovery + Posterior Maintenance (very light)
+#### SUNDAY — Active Recovery + Light Posterior + Light Side-Split Maintenance
 
 1. Stiff-Legged Deadlift (light): 3×5 @ 225 lb
 2. Hand-Supported Bulgarian SS: 2×8/leg @ 40 lb
@@ -49,358 +53,328 @@ Peak + realize. Volume strips out so accumulated fatigue dissipates and the nerv
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-#### MONDAY — Upper Horizontal — Bench Peak
+#### MONDAY — Upper Horizontal — Bench Peak (+ BJJ light PM)
 
-1. Bench Press: wave to test @ 3×3 @ 200
+1. Bench Press: 3×3 @ 200 lb *(G5 driver)*
 2. Barbell Row: 4×5 @ 205 lb
 3. DB Incline Bench (neutral): 3×5 @ 70 lb
 4. Chest-Supported Row: 3×6 @ Heavy
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 25 lb
+5. DB Lateral Raise: 2×10 @ 25 lb
 
-#### TUESDAY — Speed-Strength B — Olympic Variety + Sprint PRs
+#### TUESDAY — Speed-Strength B — Olympic Snatch + Sprint PRs
 
-1. Hang Power Snatch: 4×2 @ 65% (125)
+1. Hang Power Snatch: 4×2 @ 65% (125 lb)
 2. DB Push Press (neutral): 4×3 @ 55 lb
 3. Continuous Broad Jumps: 3×3 @ Max dist
 4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
 5. Copenhagen Lift: 3×20s/side @ BW
 
-#### WEDNESDAY — Recovery + Deep Flex + Pull-Up Volume
+#### WEDNESDAY — Side-Split Maintenance (1× lighter, no barbell)
 
-1. Weighted Pull-Up (volume): 3×8 @ +30 lb
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 30 lb
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ +20 lb
+1. Weighted Side Split Hold: 3×60s @ 25 lb
+2. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
+3. Pancake Good Morning: 3×8 @ Light
+4. Cossack Squat (loaded): 3×6/side @ +15 lb
+5. Pigeon Stretch: 2×60s/side @ —
 
-#### THURSDAY — Speed-Strength A — Olympic Taper + Speed Work
+#### THURSDAY — Speed-Strength A — Power Clean/Jerk + Speed Work
 
-1. Power Clean: 4×2 @ 78% (150 lb)
-2. Speed Squat: 4×2 @ 70% (260 lb)
-3. Jump Squat: 3×3 @ 30% (110 lb)
-4. RDL: 3×5 @ 265 lb
-5. Pendulum Squat: 2×8 @ Mod-Hvy
+1. Power Clean: 4×2 @ 160 lb
+2. Jerk (hang/rack, shoulder healed): 4×2 @ 185 lb
+3. Speed Squat: 4×2 @ 70% (260 lb)
+4. Jump Squat: 3×3 @ 30% (110 lb)
+5. RDL (light): 3×5 @ 245 lb
 
-#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips
+#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips (+ BJJ technique PM)
 
-1. Weighted Pull-Up: wave to test @ 5×3 @ +55
+1. Weighted Pull-Up: 4×3 @ +45 lb *(G5 driver, reset target +55–60×5)*
 2. Weighted Dips: 3×5 @ +35 lb
-3. Chest-Supported Row: 3×6 @ Heavy
-4. Landmine Press: 2×10 @ Mod-Hvy
+3. Strict Press (landmine): 3×8 @ Mod-Hvy
+4. Chest-Supported Row: 3×6 @ Heavy
 5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
 
 #### SATURDAY — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 1. Sprints: 3×20yd @ 100% PR
-2. Approach Jumps: 5-8×1 @ max intent
-3. Depth Jump: 2×3 / taper @ 24 in 3×3
+2. Approach Jumps: 5×2 @ max intent
+3. Depth Jump (mid box): 3×3 @ 24 in
 4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (light): 3×2 @ 70% (135 lb)
+5. Hang Power Clean (finisher): 3×2 @ 145 lb
 
-### Week 2
+### Week 2 (W14 — realize, RPE 7–8)
 
-#### SUNDAY — Active Recovery + Posterior Maintenance (very light)
+#### SUNDAY — Active Recovery + Light Posterior + Light Side-Split Maintenance
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 225
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 40
+1. Stiff-Legged Deadlift (light): 3×5 @ 225 lb
+2. Hand-Supported Bulgarian SS: 2×8/leg @ 40 lb
 3. Glute-Ham Raise: 2×8 @ BW
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-#### MONDAY — Upper Horizontal — Bench Peak
+#### MONDAY — Upper Horizontal — Bench Peak (+ BJJ light PM)
 
-1. Bench Press: wave to test @ 3×3 @ 205
-2. Barbell Row: 4×5 @ 210
-3. DB Incline Bench (neutral): 3×5 @ 75
+1. Bench Press: 3×3 @ 205 lb *(G5 driver)*
+2. Barbell Row: 4×5 @ 210 lb
+3. DB Incline Bench (neutral): 3×5 @ 75 lb
 4. Chest-Supported Row: 3×6 @ Heavy
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 25 lb
+5. DB Lateral Raise: 2×10 @ 25 lb
 
-#### TUESDAY — Speed-Strength B — Olympic Variety + Sprint PRs
+#### TUESDAY — Speed-Strength B — Olympic Snatch + Sprint PRs
 
-1. Hang Power Snatch: 4×2 @ 68% (130)
-2. DB Push Press (neutral): 4×3 @ 60
+1. Hang Power Snatch: 4×2 @ 68% (130 lb)
+2. DB Push Press (neutral): 4×3 @ 60 lb
 3. Continuous Broad Jumps: 3×3 @ Max dist
 4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
 5. Copenhagen Lift: 3×20s/side @ BW
 
-#### WEDNESDAY — Recovery + Deep Flex + Pull-Up Volume
+#### WEDNESDAY — Side-Split Maintenance (1× lighter, no barbell)
 
-1. Weighted Pull-Up (volume): 3×8 @ +30
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 35
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ +20 lb
+1. Weighted Side Split Hold: 3×60s @ 30 lb
+2. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
+3. Pancake Good Morning: 3×8 @ Light
+4. Cossack Squat (loaded): 3×6/side @ +15 lb
+5. Pigeon Stretch: 2×60s/side @ —
 
-#### THURSDAY — Speed-Strength A — Olympic Taper + Speed Work
+#### THURSDAY — Speed-Strength A — Power Clean/Jerk + Speed Work
 
-1. Power Clean: 4×2 @ 80% (155 lb)
-2. Speed Squat: 4×2 @ 72% (265 lb)
-3. Jump Squat: 3×3 @ 30% (110 lb)
-4. RDL: 3×5 @ 275
-5. Pendulum Squat: 2×8 @ Mod-Hvy
+1. Power Clean: 4×2 @ 165 lb
+2. Jerk (hang/rack): 4×2 @ 195 lb
+3. Speed Squat: 4×2 @ 72% (265 lb)
+4. Jump Squat: 3×3 @ 30% (110 lb)
+5. RDL (light): 3×5 @ 255 lb
 
-#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips
+#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips (+ BJJ technique PM)
 
-1. Weighted Pull-Up: wave to test @ 5×3 @ +60
-2. Weighted Dips: 3×5 @ +40
-3. Chest-Supported Row: 3×6 @ Heavy
-4. Landmine Press: 2×10 @ Mod-Hvy
+1. Weighted Pull-Up: 4×3 @ +50 lb *(G5 driver)*
+2. Weighted Dips: 3×5 @ +40 lb
+3. Strict Press (landmine): 3×8 @ Mod-Hvy
+4. Chest-Supported Row: 3×6 @ Heavy
 5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
 
 #### SATURDAY — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 1. Sprints: 3×20yd @ 100% PR
-2. Approach Jumps: 5-8×1 @ max intent
-3. Depth Jump: 2×3 / taper @ 24 in 3×3
+2. Approach Jumps: 5×2 @ max intent
+3. Depth Jump (mid box): 3×3 @ 24 in
 4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (light): 3×2 @ 72% (140 lb)
+5. Hang Power Clean (finisher): 3×2 @ 150 lb
 
-### Week 3
+### Week 3 (W15 — peak, RPE 8–9)
 
-#### SUNDAY — Active Recovery + Posterior Maintenance (very light)
+#### SUNDAY — Active Recovery + Light Posterior + Light Side-Split Maintenance
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 225
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 40
+1. Stiff-Legged Deadlift (light): 3×5 @ 225 lb
+2. Hand-Supported Bulgarian SS: 2×8/leg @ 40 lb
 3. Glute-Ham Raise: 2×8 @ BW
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-#### MONDAY — Upper Horizontal — Bench Peak
+#### MONDAY — Upper Horizontal — Bench Peak (+ BJJ light PM)
 
-1. Bench Press: wave to test @ 3×2 @ 215
-2. Barbell Row: 4×5 @ 210
-3. DB Incline Bench (neutral): 3×5 @ 75
+1. Bench Press: 3×2 @ 215 lb *(G5 driver)*
+2. Barbell Row: 4×5 @ 210 lb
+3. DB Incline Bench (neutral): 3×5 @ 75 lb
 4. Chest-Supported Row: 3×6 @ Heavy
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 25 lb
+5. DB Lateral Raise: 2×10 @ 25 lb
 
-#### TUESDAY — Speed-Strength B — Olympic Variety + Sprint PRs
+#### TUESDAY — Speed-Strength B — Olympic Snatch + Sprint PRs
 
-1. Hang Power Snatch: 4×2 @ 70% (135)
-2. DB Push Press (neutral): 4×3 @ 60
+1. Hang Power Snatch: 4×2 @ 70% (135 lb)
+2. DB Push Press (neutral): 4×3 @ 60 lb
 3. Continuous Broad Jumps: 3×3 @ Max dist
 4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
 5. Copenhagen Lift: 3×20s/side @ BW
 
-#### WEDNESDAY — Recovery + Deep Flex + Pull-Up Volume
+#### WEDNESDAY — Side-Split Maintenance (1× lighter, no barbell)
 
-1. Weighted Pull-Up (volume): 3×8 @ +30
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 35
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ +20 lb
+1. Weighted Side Split Hold: 3×60s @ 30 lb
+2. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
+3. Pancake Good Morning: 3×8 @ Light
+4. Cossack Squat (loaded): 3×6/side @ +15 lb
+5. Pigeon Stretch: 2×60s/side @ —
 
-#### THURSDAY — Speed-Strength A — Olympic Taper + Speed Work
+#### THURSDAY — Speed-Strength A — Power Clean/Jerk + Speed Work
 
-1. Power Clean: 4×2 @ 82% (160 lb)
-2. Speed Squat: 4×2 @ 75% (280 lb)
-3. Jump Squat: 3×3 @ 30% (110 lb)
-4. RDL: 3×5 @ 275
-5. Pendulum Squat: 2×8 @ Mod-Hvy
+1. Power Clean: 4×2 @ 170 lb
+2. Jerk (hang/rack): 4×2 @ 205 lb
+3. Speed Squat: 4×2 @ 75% (280 lb)
+4. Jump Squat: 3×3 @ 30% (110 lb)
+5. RDL (light): 3×5 @ 255 lb
 
-#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips
+#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips (+ BJJ technique PM)
 
-1. Weighted Pull-Up: wave to test @ 4×3 @ +65
-2. Weighted Dips: 3×5 @ +40
-3. Chest-Supported Row: 3×6 @ Heavy
-4. Landmine Press: 2×10 @ Mod-Hvy
+1. Weighted Pull-Up: 4×3 @ +52 lb *(G5 driver)*
+2. Weighted Dips: 3×5 @ +40 lb
+3. Strict Press (landmine): 3×8 @ Mod-Hvy
+4. Chest-Supported Row: 3×6 @ Heavy
 5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
 
 #### SATURDAY — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 1. Sprints: 3×20yd @ 100% PR
-2. Approach Jumps: 5-8×1 @ max intent
-3. Depth Jump: 2×3 / taper @ 30 in 2×3
+2. Approach Jumps: 5×2 @ max intent
+3. Depth Jump (high box): 2×3 @ 30 in
 4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (light): 3×2 @ 72% (140 lb)
+5. Hang Power Clean (finisher): 3×2 @ 150 lb
 
-### Week 4
+### Week 4 (W16 — peak, RPE 8–9)
 
-#### SUNDAY — Active Recovery + Posterior Maintenance (very light)
+#### SUNDAY — Active Recovery + Light Posterior + Light Side-Split Maintenance
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 215
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 35
+1. Stiff-Legged Deadlift (light): 3×5 @ 215 lb
+2. Hand-Supported Bulgarian SS: 2×8/leg @ 35 lb
 3. Glute-Ham Raise: 2×8 @ BW
 4. Pigeon Stretch: 3×60s/side @ —
 5. Cossack Squat: 3×8/side @ BW
 
-#### MONDAY — Upper Horizontal — Bench Peak
+#### MONDAY — Upper Horizontal — Bench Peak (+ BJJ light PM)
 
-1. Bench Press: wave to test @ 3×2 @ 220
-2. Barbell Row: 4×5 @ 215
-3. DB Incline Bench (neutral): 3×5 @ 75
+1. Bench Press: 3×2 @ 220 lb *(G5 driver)*
+2. Barbell Row: 4×5 @ 215 lb
+3. DB Incline Bench (neutral): 3×5 @ 75 lb
 4. Chest-Supported Row: 3×6 @ Heavy
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 25 lb
+5. DB Lateral Raise: 2×10 @ 25 lb
 
-#### TUESDAY — Speed-Strength B — Olympic Variety + Sprint PRs
+#### TUESDAY — Speed-Strength B — Olympic Snatch + Sprint PRs
 
-1. Hang Power Snatch: 4×2 @ 72% (140)
-2. DB Push Press (neutral): 4×3 @ 60
+1. Hang Power Snatch: 4×2 @ 72% (140 lb)
+2. DB Push Press (neutral): 4×3 @ 60 lb
 3. Continuous Broad Jumps: 3×3 @ Max dist
 4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
 5. Copenhagen Lift: 3×20s/side @ BW
 
-#### WEDNESDAY — Recovery + Deep Flex + Pull-Up Volume
+#### WEDNESDAY — Side-Split Maintenance (1× lighter, no barbell)
 
-1. Weighted Pull-Up (volume): 3×8 @ +25
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 35
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ +20 lb
+1. Weighted Side Split Hold: 3×60s @ 30 lb
+2. PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
+3. Pancake Good Morning: 3×8 @ Light
+4. Cossack Squat (loaded): 3×6/side @ +15 lb
+5. Pigeon Stretch: 2×60s/side @ —
 
-#### THURSDAY — Speed-Strength A — Olympic Taper + Speed Work
+#### THURSDAY — Speed-Strength A — Power Clean/Jerk + Speed Work
 
-1. Power Clean: 4×2 @ 82% (160 lb)
-2. Speed Squat: 4×2 @ 75% (280 lb)
-3. Jump Squat: 3×3 @ 30% (110 lb)
-4. RDL: 3×5 @ 265
-5. Pendulum Squat: 2×8 @ Mod-Hvy
+1. Power Clean (heavy double toward test): 4×2 @ 210 lb
+2. Jerk (hang/rack): 4×2 @ 215 lb
+3. Speed Squat: 4×2 @ 75% (280 lb)
+4. Jump Squat: 3×3 @ 30% (110 lb)
+5. RDL (light): 3×5 @ 245 lb
 
-#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips
+#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips (+ BJJ technique PM)
 
-1. Weighted Pull-Up: wave to test @ 4×3 @ +70
-2. Weighted Dips: 3×5 @ +40
-3. Chest-Supported Row: 3×6 @ Heavy
-4. Landmine Press: 2×10 @ Mod-Hvy
+1. Weighted Pull-Up: 4×3 @ +55 lb *(G5 driver — test load this week)*
+2. Weighted Dips: 3×5 @ +40 lb
+3. Strict Press (landmine): 3×8 @ Mod-Hvy
+4. Chest-Supported Row: 3×6 @ Heavy
 5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
 
 #### SATURDAY — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 1. Sprints: 3×20yd @ 100% PR
-2. Approach Jumps: 5-8×1 @ max intent
-3. Depth Jump: 2×3 / taper @ 30 in 2×3
+2. Approach Jumps: 5×2 @ max intent
+3. Depth Jump (high box): 2×3 @ 30 in
 4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (light): 3×2 @ 70% (135 lb)
+5. Hang Power Clean (finisher): 3×2 @ 150 lb
 
-### Week 5
+### Week 5 (W17 — TAPER: 50% volume, 90% intensity)
 
-#### SUNDAY — Active Recovery + Posterior Maintenance (very light)
+#### SUNDAY — Active Recovery + Light Posterior + Light Side-Split Maintenance
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 195
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 30
-3. Glute-Ham Raise: 2×8 @ BW
-4. Pigeon Stretch: 3×60s/side @ —
-5. Cossack Squat: 3×8/side @ BW
+1. Stiff-Legged Deadlift (light): 3×5 @ 195 lb
+2. Hand-Supported Bulgarian SS: 2×8/leg @ 30 lb
+3. Pigeon Stretch: 3×60s/side @ —
+4. Cossack Squat: 3×8/side @ BW
 
-#### MONDAY — Upper Horizontal — Bench Peak
+#### MONDAY — Upper Horizontal — Bench Peak (taper) (BJJ light or rest)
 
-1. Bench Press: wave to test @ 3×1 @ 235 (90%)
-2. Barbell Row: 4×5 @ 195
-3. DB Incline Bench (neutral): 3×5 @ 65
-4. Chest-Supported Row: 3×6 @ Heavy
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 25 lb
+1. Bench Press: 3×1 @ 235 lb (90%) *(G5 driver)*
+2. Barbell Row: 3×5 @ 195 lb
+3. DB Incline Bench (neutral): 2×5 @ 65 lb
+4. DB Lateral Raise: 2×10 @ 20 lb
 
-#### TUESDAY — Speed-Strength B — Olympic Variety + Sprint PRs
+#### TUESDAY — Speed-Strength B — Olympic Snatch + Sprint (taper)
 
-1. Hang Power Snatch: 4×2 @ 68% (130)
-2. DB Push Press (neutral): 4×3 @ 55
-3. Continuous Broad Jumps: 3×3 @ Max dist
-4. Sprints (PR chase): 3×20yd, 1×40yd @ 90%
-5. Copenhagen Lift: 3×20s/side @ BW
+1. Hang Power Snatch: 3×2 @ 68% (130 lb)
+2. DB Push Press (neutral): 3×3 @ 55 lb
+3. Continuous Broad Jumps: 2×3 @ Max dist
+4. Sprints: 3×20yd @ 90%
+5. Copenhagen Lift: 2×20s/side @ BW
 
-#### WEDNESDAY — Recovery + Deep Flex + Pull-Up Volume
+#### WEDNESDAY — Side-Split Maintenance (1× light, no barbell)
 
-1. Weighted Pull-Up (volume): 3×8 @ +20
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 30
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ +20 lb
+1. Weighted Side Split Hold: 2×60s @ 25 lb
+2. PNF Contract-Relax Splits: 2 rounds @ 10s on/30s relax
+3. Pigeon Stretch: 2×60s/side @ —
 
-#### THURSDAY — Speed-Strength A — Olympic Taper + Speed Work
+#### THURSDAY — Speed-Strength A — Power Clean/Jerk Taper + Speed Work
 
-1. Power Clean: 4×2 @ 80% (155 lb)
-2. Speed Squat: 4×2 @ 70% (260 lb)
-3. Jump Squat: 3×3 @ 30% (110 lb)
-4. RDL: 3×5 @ 245
-5. Pendulum Squat: 2×8 @ Mod-Hvy
+1. Power Clean (taper, sharp): 3×1 @ 185 lb
+2. Jerk (taper, sharp): 3×1 @ 195 lb
+3. Speed Squat: 3×2 @ 70% (260 lb)
+4. Jump Squat: 2×3 @ 30% (110 lb)
+5. RDL (light): 2×5 @ 225 lb
 
-#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips
+#### FRIDAY — Upper Vertical — Pull-Up Peak Taper (BJJ technique only or rest)
 
-1. Weighted Pull-Up: wave to test @ 3×2 @ +75
-2. Weighted Dips: 3×5 @ +35
-3. Chest-Supported Row: 3×6 @ Heavy
-4. Landmine Press: 2×10 @ Mod-Hvy
-5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
+1. Weighted Pull-Up (taper doubles): 3×2 @ +57 lb *(G5 driver)*
+2. Weighted Dips: 2×5 @ +35 lb
+3. Strict Press (landmine): 2×8 @ Mod
+4. Incline DB Curl: 2×10 @ Mod
 
 #### SATURDAY — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
 
 1. Sprints: 3×20yd @ 90%
-2. Approach Jumps: 5-8×1 @ max intent
-3. Depth Jump: 2×3 / taper @ 18 in 2×5
+2. Approach Jumps: 5×1 @ max intent
+3. Depth Jump (low box, taper): 2×5 @ 18 in
 4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (light): 3×2 @ 65% (125 lb)
+5. Hang Power Clean (finisher, light): 3×2 @ 135 lb
 
-### Week 6 (Deload / Test)
+### Week 6 (W18 — TEST WEEK — the payoff)
 
-#### SUNDAY — Active Recovery + Posterior Maintenance (very light)
+#### SUNDAY — Active Recovery + Light Posterior (very light, primer)
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 175
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 25
-3. Glute-Ham Raise: 2×8 @ BW
-4. Pigeon Stretch: 3×60s/side @ —
-5. Cossack Squat: 3×8/side @ BW
+1. Stiff-Legged Deadlift (light): 2×5 @ 175 lb
+2. Hand-Supported Bulgarian SS: 2×8/leg @ 25 lb
+3. Pigeon Stretch: 3×60s/side @ —
+4. Cossack Squat: 2×8/side @ BW
 
-#### MONDAY — Upper Horizontal — Bench Peak
+#### MONDAY — Upper Horizontal — BENCH TEST (1RM)
 
-1. Bench Press: wave to test @ TEST 1RM (260)
-2. Barbell Row: 4×5 @ 175
-3. DB Incline Bench (neutral): 3×5 @ 50
-4. Chest-Supported Row: 3×6 @ Mod
-5. Cable Fly: 2×10 @ Mod
-6. DB Lateral Raise: 2×10 @ 15
+1. Bench Press: TEST 1RM (target 260 lb) *(G5 — work up in singles, filmed)*
+2. Barbell Row: 3×5 @ 175 lb
+3. DB Incline Bench (neutral): 2×5 @ 50 lb
+4. DB Lateral Raise: 2×10 @ 15 lb
 
-#### TUESDAY — Speed-Strength B — Olympic Variety + Sprint PRs
+#### TUESDAY — Speed-Strength B — Olympic Snatch + Sprint (primer)
 
-1. Hang Power Snatch: 4×2 @ 60% (115)
-2. DB Push Press (neutral): 4×3 @ 45
-3. Continuous Broad Jumps: 3×3 @ Med
-4. Sprints (PR chase): 3×20yd, 1×40yd @ 2×20yd
-5. Copenhagen Lift: 3×20s/side @ BW
+1. Hang Power Snatch: 3×2 @ 60% (115 lb)
+2. DB Push Press (neutral): 3×3 @ 45 lb
+3. Continuous Broad Jumps: 2×3 @ Med
+4. Sprints: 2×20yd @ crisp, not max
+5. Copenhagen Lift: 2×20s/side @ BW
 
-#### WEDNESDAY — Recovery + Deep Flex + Pull-Up Volume
+#### WEDNESDAY — Side-Split Maintenance (1× very light, no barbell)
 
-1. Weighted Pull-Up (volume): 3×8 @ +15
-2. Face Pull: 3×15 @ Light
-3. Weighted Side Split Hold: 3×90s @ 25
-4. PNF Contract-Relax Splits: 4 rounds @ 10s on/30s relax
-5. Pancake Good Morning: 3×8 @ Mod
-6. Cossack Squat (loaded): 3×6/side @ BW
+1. Weighted Side Split Hold: 2×60s @ 20 lb
+2. PNF Contract-Relax Splits: 2 rounds @ 10s on/30s relax
+3. Pigeon Stretch: 2×60s/side @ —
+4. **Side split measurement (cm hip-to-floor) — TEST G3** vs baseline (target −8 cm)
 
-#### THURSDAY — Speed-Strength A — Olympic Taper + Speed Work
+#### THURSDAY — Speed-Strength A — CLEAN + JERK TEST (filmed)
 
-1. Power Clean: 4×2 @ 70% (135 lb)
-2. Speed Squat: 4×2 @ 60% (220 lb)
-3. Jump Squat: 3×3 @ 25% (90 lb)
-4. RDL: 3×5 @ 215
-5. Pendulum Squat: 2×8 @ Mod
+1. Power Clean: TEST full power clean (target 225 lb) *(G2 — filmed top single)*
+2. Jerk: TEST jerk (target 225 lb) *(G2 — filmed top single)*
+3. Speed Squat (primer): 2×2 @ 60% (220 lb)
+4. Jump Squat (primer): 2×3 @ 25% (90 lb)
 
-#### FRIDAY — Upper Vertical — Pull-Up Peak + Dips
+#### FRIDAY — Upper Vertical — PULL-UP TEST (BJJ rest)
 
-1. Weighted Pull-Up: wave to test @ TEST +80×8
-2. Weighted Dips: 3×5 @ +25
-3. Chest-Supported Row: 3×6 @ Mod
-4. Landmine Press: 2×10 @ Light
-5. Incline DB Curl: 2×10 @ Mod
-6. Tricep Pushdown: 2×10 @ Mod
+1. Weighted Pull-Up: TEST max reps @ +55–60 lb (target 5 clean) *(G5)*
+2. Weighted Dips: 2×5 @ +25 lb
+3. Strict Press (landmine): 2×8 @ Light
 
-#### SATURDAY — JUMP DAY — Max Jump + Dunk Attempts (TEST DAY)
+#### SATURDAY — JUMP DAY — THE DUNK TEST (filmed)
 
-1. Sprints: 3×20yd @ 2×20yd
-2. Approach Jumps: 5-8×1 @ 3×1
-3. Depth Jump: 2×3 / taper @ omit
-4. DUNK ATTEMPTS: 10+ attempts @ TEST DAY: dunk women's BB
-5. Hang Power Clean (light): 3×2 @ omit
+1. Sprints: 2×20yd @ crisp primer
+2. Approach Jumps: 3×1 @ max intent (NO depth jumps — full freshness)
+3. **DUNK A WOMEN'S BASKETBALL on regulation 10' rim — filmed** *(G1 — the boss)*
+4. DUNK ATTEMPTS: 10+ max-intent attempts, film all

@@ -1,0 +1,34 @@
+%% Matt Smith — Side Split Toolkit, Phase 1 "Drill Selection" flowchart
+%% Source: Side split program builder.pdf (©Matthewismith), captured 2026-06-14.
+%% Answer each question from your ASSESSMENT RESULTS + MEASURED ANGLES.
+%% Output = the drills to use AND their order code (A1, A2, B1... ; shared letter = supersetted/alternated).
+%% A "swap" (unilateral) version is allowed for any drill if you have a L/R imbalance.
+flowchart TD
+    Q0["LEFT–RIGHT IMBALANCE CHECK:<br/>Drop-stance angle L vs R differ by &gt;10°?"]
+    Q0 -- YES --> CS["Use Left/Right Imbalance case study<br/>(bias unilateral / swap-icon drills)"]
+    Q0 -- NO --> Q1
+
+    Q1["Correct position in the TRIANGLE side split?<br/>hips behind ankle line + arched back/high chest + anterior pelvic tilt"]
+
+    Q1 -- NO --> A1n["A1 = Horse Stance Slides"] --> Q2n["Both calves flat on floor in Tailor's Pose?"]
+    Q2n -- NO --> R1["B1 Tailor's Pose<br/>B2 Horse Stance Squats"]
+    Q2n -- YES --> R2["B1 Horse Stance Squats<br/>C1 Straight-Leg Get-Ups"]
+
+    Q1 -- YES --> Q2y["Both calves flat on floor in Tailor's Pose?"]
+    Q2y -- NO --> R3["A1 Tailor's Pose<br/>A2 Horse Stance Squats  (A1/A2 alternate)"]
+    Q2y -- YES --> R4["A1 Horse Stance Squats<br/>B1 Straight-Leg Get-Ups"]
+
+    R1 --> Q3
+    R2 --> Q3
+    R3 --> Q3
+    R4 --> Q3
+
+    Q3["FINAL COMPOUND DRILL (becomes last B/C/D in your order):<br/>Does your head touch the floor in a PANCAKE?"]
+    Q3 -- NO --> Q3a["Is pancake angle &lt; 45°?"]
+    Q3a -- "NO (&ge;45°)" --> D1["C/D1 Standing Pancake Hang"]
+    Q3a -- "YES (&lt;45°)" --> D2["C/D1 Pancake Good Morning"]
+    Q3 -- YES --> Q3b["Did you hold ALL drills for the stated time? (TENSION)"]
+    Q3b -- NO --> D3["C/D1 Isometric Hold (Isometric Side Split)"]
+    Q3b -- YES --> Q3c["&lt;20° gap between hands-free and hands-supported side split?"]
+    Q3c -- NO --> D4["C/D1 Kneeling Tilt  (OR alternative pathway)"]
+    Q3c -- YES --> D5["C/D1 Contract-Relax (Side Split Contract Relax)"]

@@ -1,6 +1,6 @@
 # Matt Smith Flexibility — Training Style Guide
 
-> **Purpose of this guide.** This document is intended to help coaches — human or AI — design programs using Matt Smith's flexibility methodology. It contains the operational logic, assessments, session templates, decision rules, and common failure modes needed to plan and run a flexibility block for any athlete. Synthesized from a single primary source: **"The Blueprint to Get Flexible Once, Forever"** by Matt Smith (YouTube, Nov 2025, 39 min). Where the video doesn't supply specifics, sections are marked with `> NOTE: inferred` or `> TODO`.
+> **Purpose of this guide.** This document is intended to help coaches — human or AI — design programs using Matt Smith's flexibility methodology. It contains the operational logic, assessments, session templates, decision rules, and common failure modes needed to plan and run a flexibility block for any athlete. Primary sources: (1) **"The Blueprint to Get Flexible Once, Forever"** by Matt Smith (YouTube, Nov 2025, 39 min) — the whole-methodology overview; (2) **MFTK *Side Split Toolkit*** — Matt's purchased course, the productized side-split-specific version of the methodology (curriculum, drill library, phase model, scheduling rules captured in [`sources/mftk-side-split-toolkit-curriculum.md`](sources/mftk-side-split-toolkit-curriculum.md)). The course **confirms** the video's principles (notably the §13 scheduling rule) and **fills in** side-split specifics the video lacked (named drills → §5, phase model → §6, assessment → §3). The course is mostly video/embedded-tool content, so per-drill loading numbers remain **derived from method principles**, not lifted verbatim — those spots stay marked `> NOTE: inferred` or `> TODO` until the videos are transcribed. Other sections still resting on the single video are likewise marked.
 
 A skill-driven flexibility methodology that builds **lasting** mobility by identifying the lowest limiter on each athlete's flexibility ladder, sequencing 3–5 stretches per session to stretch-stack toward a target skill, and scheduling around CNS fatigue so the gains live in the brain — not the warm-up.
 
@@ -19,6 +19,7 @@ A skill-driven flexibility methodology that builds **lasting** mobility by ident
 - Equipment minimum: floor + wall + a resistance band or two; optional: ankle weights for resisted spectrum work; optional: yoga blocks / parallettes
 - Time required: **1–2 sessions/week per skill**, ~20–40 min each (3–5 targeted stretches × isometric-holds-for-reps or PIR sets)
   > NOTE: 20–40 min is inferred; the video states "3–5 stretches" and the methods used but doesn't give an explicit session-duration target.
+- **Dose-finding (course-sourced):** *start low and build up.* Begin at **1 session per 5 days, or 1–2×/week**; find the **minimum effective dose** first, then climb toward the **optimal effective dose**. When at 2×/week, **spread the sessions** (don't stack them on adjacent days). Two skills → start at 1 session each per week. (Source: Side Split Toolkit, "When and How Often to Train.")
 - Compatible co-styles: **strength training, sport practice, vertical-jump, Olympic lifting** — *with* the scheduling constraints in §13. Flexibility creates fatigue and must be sequenced around CNS-demanding work, not stacked the day after.
 
 **Contraindications (do NOT recruit this style if):**
@@ -128,6 +129,12 @@ The assessment goal is to **locate the lowest rung on the athlete's flexibility 
 | Restricted nerve tension reproduces symptoms | Nerve-limited | Add flosses/glides/tensioners; reduce passive-stretch volume until nerve mobility improves |
 | Range collapses at end position (bone jam / wrong alignment) | Technique-limited | Technique drills + cueing first; this can break years-long plateaus by itself |
 
+### Side-split assessment (course-sourced)
+
+The Side Split Toolkit operationalizes the above into a named side-split battery: **1. Side Split Assessment → 2. Side Split Measuring Angles → 3. Phase 1 Program Builder.** The assessment routes the athlete into the right starting phase, and progress is tracked by **angle measured with a phone app** ("How to Measure Angles with an App"), not only by hip-to-floor distance. When programming a side split, prefer logging **both** the skill's distance metric (whatever the arc contract uses) *and* the course's angle metric — angle is what the course's progression triggers (depth before load) key off. The Taylor's-pose and pancake-hip-tilt screens above remain the fast field versions of this battery.
+
+> NOTE: The exact app, angle thresholds, and the Phase 1/Phase 2 builder outputs are in the course videos/embedded tools and not yet transcribed (see `sources/mftk-side-split-toolkit-curriculum.md` §5).
+
 ### In-block monitoring (capture each session)
 
 - Maximum range achieved on the target skill measurement (e.g., depth in side-split, fingertip-to-floor in pike, bridge height/wrist-to-heel distance)
@@ -188,18 +195,48 @@ This style organizes exercises by **method category** rather than by named exerc
 
 ### Named exercises (skill → method → exercise)
 
-> TODO: Source material names *methods* and gives positional cues (e.g., "tilt hip forward for side split," "Taylor's pose for adductor isolation"), but does not provide a catalogued list of named exercises with sets, reps, and intensities. Populate this table either by (a) adding additional sources from Matt's MFTK toolkit, (b) ingesting per-skill content from his Instagram/YouTube library, or (c) building exercise entries from the worked Dennis example in §7 and extrapolating.
+> Status: the **side split is now populated** from the Side Split Toolkit's named drill library (below + `exercise-selection.md` "Side Split Drill Library"). The other seven skills remain method-and-cue only — for them, build entries from the worked examples in §7 + the §5 method palette, or add sources from Matt's broader MFTK library. (Per-drill sets/reps/load for the side split are still derived from method principles; the course's exact numbers live in its videos/builders — see `sources/mftk-side-split-toolkit-curriculum.md`.)
 
 | Skill | Isolation 1 (method) | Isolation 2 (method) | Isolation 3 (method) | Compound (method) |
 |---|---|---|---|---|
 | Pike (toe-touch) | TODO | TODO | TODO | TODO |
 | Pancake | TODO | TODO | TODO | TODO |
-| Side split | Bent-leg adductor (Taylor's pose family) | Pancake hip-tilt | (nerve check if reproduces) | Side-split hold (hip-tilt or external-rotation cue) — see Dennis example §7 |
+| Side split | Tailor's Pose / bent-leg adductor (PIR) | Pancake Good Morning · Adductor Flyes (active lift / iso-holds) | Hip ER Good Mornings · Horse Stance Squats (iso-holds for reps) | Isometric / Supported Side Split + Side Split Contract-Relax; **technique:** Kneeling Tilt (hip-tilt) |
 | Front split | TODO | TODO | TODO | TODO |
 | Bridge | TODO | TODO | TODO | TODO |
 | Shoulder flexion | Pec major isolation (band) | Subscap+teres isolation (band, ER bias) | Lat isolation (rounded low back) | Overhead bridge / wall slide |
 | Shoulder extension | TODO | TODO | TODO | TODO |
 | Squat (deep) | TODO | TODO | TODO | TODO |
+
+**Side Split Drill Library (course-sourced).** Full named list with method/role mapping is in [`exercise-selection.md`](exercise-selection.md) → "Side Split Drill Library" and [`sources/mftk-side-split-toolkit-curriculum.md`](sources/mftk-side-split-toolkit-curriculum.md) §3. Summary by role: **openers/isolation** — Tailor's Pose (overview / progression-underload / straight-arm-lifts), Pancake Good Morning (round back), Adductor Flyes, Standing Pancake Hang (C-R), Hip ER Good Mornings, Over-Pancake Isometrics (elevated); **strength-in-range** — Straight-Leg Get-Ups / Straddle-Ups, Drop Stance Squats, Horse Stance Squats; **width/compound** — Horse Stance Slides, Slide to Side Split, Isometric Side Split, Supported Side Split, Side Split Contract-Relax; **technique** — Kneeling Tilt (measuring/progression + closed-hip).
+
+#### Side-split drill-selection flowchart (how to pick which drills, course-sourced)
+
+The Phase 1 builder picks drills from **assessment results + measured angles** and assigns an **order code** (A1, A2, B1… → the sequence; shared letters = supersetted/alternated). Full flowchart (Mermaid) + the exact branches are in [`sources/mftk-side-split-toolkit-curriculum.md`](sources/mftk-side-split-toolkit-curriculum.md) §6.1. The decision spine:
+
+1. **Left/right imbalance?** Drop-stance angle differs L vs R by >10° → use the imbalance case study (bias unilateral / "swap-icon" drills).
+2. **Correct triangle-side-split position?** (hips behind ankle line + arched back/high chest + anterior pelvic tilt) → **NO** opens with **Horse Stance Slides (A1)**; **YES** skips it.
+3. **Calves flat in Tailor's Pose?** routes the middle drills between **Tailor's Pose / Horse Stance Squats / Straight-Leg Get-Ups** (which one becomes A vs B depends on the two answers above).
+4. **Final compound drill** (becomes the last B/C/D): driven by the **pancake** test → head doesn't touch + angle ≥45° → **Standing Pancake Hang**; head doesn't touch + <45° → **Pancake Good Morning**; head touches but couldn't hold stated times → **Isometric Hold**; holds fine but >20° gap hands-free vs supported → **Kneeling Tilt**; else → **Contract-Relax**.
+
+**Order-of-execution rule:** smaller/technique openers first → loaded isolations → compound last (this *is* the stretch-stack order of §4). Shared-letter drills (A1/A2) are performed **alternately** (superset).
+
+#### Programming parameters (Phase 1 starting numbers — course-sourced)
+
+Real loading from the builder (full per-drill table in `sources/…curriculum.md` §6.2). **Tempo = 4 digits: [lower] [pause bottom] [lift] [pause top]**, `-` = portion not actively performed; contract-relax drills use `contract-s / relax-s`.
+
+| Category | Example drill | Reps | Sets | Tempo | Rest |
+|---|---|---|---|---|---|
+| Technique | Horse Stance Slides | 10C (cluster, 10 s between reps) | 1 | 51-0 | 60 s |
+| Loaded stretching | Tailor's Pose / Horse Stance Squats | 8 | 3–4 | 2310 | 60–90 s |
+| Loaded (unilateral) | Drop Stance Squats | 8/side | 2–3 | 2310 | 45 s |
+| Active | Straight-Leg Get-Ups | 6 + 10 s hold last rep | 3–4 | 2013 | 60–90 s |
+| Active (unilateral) | Kneeling Tilt (closed hip) | 5/side | 2–3 | 1113 | 60 s |
+| Loaded compound | Pancake Good Morning | 6 | 3–4 | 3220 | 60–90 s |
+| Contract-relax | Standing Pancake Hang / Side Split C-R | 6 cycles (5 s/5 s) | 2–3 | 5 s/5 s | 90 s |
+| Isometric | Isometric Side Split | 40–60 s hold | 2–3 | — | 60–90 s |
+
+> This **retires the "loading is method-derived" caveat for the side split** — these are the course's actual Phase 1 prescriptions. The method-derived numbers in `exercise-selection.md` have been updated to match. The other seven skills' loadings remain method-derived.
 
 ### Substitution map
 
@@ -236,6 +273,21 @@ This style organizes exercises by **method category** rather than by named exerc
 | **IV. Maintain** | Indefinite | Hold what was built | Most skills self-maintain through overlap (pike maintains front-split front leg). Only re-enter a Build phase if the range erodes. |
 
 > NOTE: Phase III/IV separation inferred from Matt's statement that he and his students "no longer need to stretch" once they've reached their target levels. He does not name explicit phases.
+
+**Course-sourced side-split phase model.** The Side Split Toolkit operationalizes the generic Assess/Build/Realize/Maintain above into named, tool-backed stages specific to the side split:
+
+| Course stage | Maps to generic phase | What it is |
+|---|---|---|
+| **Assessment** (Side Split Assessment + measuring angles) | I. Assess | Routes the athlete into the correct starting phase by angle + screen results |
+| **Phase 1 Program** (Phase 1 Program Builder) | II. Build (beginner) | First structured side-split block for newcomers |
+| **Phase 2 & Beyond Program** (Phase 2 Builder [BETA]) | II. Build (intermediate+) | Continued build once Phase 1 is outgrown |
+| **Side Split Overload** (Specialist Program) | late Build / Realize | Advanced loaded specialization for athletes pushing the last range |
+
+Two named progression levers the course adds (use *within* a Build phase, not just "add depth"): **Go Deeper, Not Heavier** (bias range over external load — default for already-strong athletes) and **Progressive Underload** (deliberately *reduce* load/assist to keep reps clean on fatigued weeks or skill-exposure days). See `sources/mftk-side-split-toolkit-curriculum.md` §4.
+
+**Frequency is recovery-gated (Phase 1 builder, fully captured).** Start **once every 5 days**; if you recover well and improve each session, progress to **every 4 days → every 3 days**. The rule is *train when the body is recovered* — by recovery quality: **poor → 6–7 days, average → 3–5 days, superior → 2–3 days**. For an athlete also doing heavy strength/jump work (high systemic load = effectively "average" recovery for flex purposes), this lands at **~2×/week max**, which is why the §13 scheduling rule matters. **Stay in Phase 1 until progress stalls (most people 4–6 weeks), then build Phase 2** off the Drill Matrix.
+
+> The Phase 1 Program Builder (drill-selection flowchart + per-drill reps/sets/tempo/rest + example program) is now **fully transcribed** in `sources/mftk-side-split-toolkit-curriculum.md` §6, and the selection logic is summarized in §5 below. The Phase 2 builder and Overload specialist program remain video/embedded-tool-gated.
 
 **Why ≥6 weeks for Build:** body-side adaptations (sarcomerogenesis) reverse within ~6 weeks of disuse. To make the gains stick, the brain side has to be doing the heavy lifting — which requires enough consistent exposure for the supraspinal threshold to shift. The 6-week mark is the floor, not the target.
 
@@ -487,7 +539,10 @@ Technique is **load-bearing** in this methodology. Matt's worked examples includ
 - **NEVER** treat flexibility as "active recovery" and schedule it on off days following heavy work
 - **PREFER** flexibility on **dedicated training days** that are themselves followed by ≥24h before the next CNS-demanding work
 
-### Three-tier scheduling priority (verbatim from source — load-bearing rule)
+### Three-tier scheduling priority (load-bearing rule — now course-confirmed)
+
+> Originally inferred from the free video; the Side Split Toolkit's "When and How Often to Train" lesson states the **same three configurations explicitly** as the options for combining flexibility with interfering sport/strength (AM/PM split · ≥2 days after · same-session with reduced volume). Treat this rule as confirmed, not inferred.
+
 
 | Priority | Configuration | Why it works |
 |---|---|---|
@@ -519,6 +574,24 @@ Technique is **load-bearing** in this methodology. Matt's worked examples includ
 - **General strength** — compatible with the §13 scheduling rule; flexibility complements strength when properly sequenced
 - **Sport practice** — every sport has at least one bottleneck skill (swimming → bridge; calisthenics → pancake; basketball → overhead/hip extension)
 
+### Integrating a side-split build into a concurrent jump/strength arc
+
+A reusable pattern for running this style as a **secondary skill (2×/week)** alongside a primary power/strength/sport arc, without taxing the primary goal. Athlete-agnostic; for a worked instantiation see the athlete bundle that references this section.
+
+**1. Identify the protected day.** Find the arc's single most important performance/peak day (jump day, test day, competition). Loaded adductor/end-range work saps force for **24–48 h**, so the rule is: **no loaded or deep side-split work within 48 h of that day.** This usually rules out the 1–2 days before it.
+
+**2. Place two sessions, spread, both clear of the protected day** (Matt's 2×/week, spaced — see §1, §6):
+- **Deep loaded "Build" session** — the progress driver. Put it on a low-leg/recovery day that sits **≥48–72 h before** the protected day. Run the full stretch-stack (opener → strength-in-range → compound → technique) with the Phase-1 parameters (§5).
+- **Light active/technique session** — placed at the **maximum distance** from the protected day (often the day after it, kept *light* so the day-after-high-CNS rule isn't violated). No external load — pure "go deeper, not heavier" skill exposure + the Kneeling-Tilt technique drill.
+
+**3. Treat high systemic load as reduced recovery.** An athlete doing 4+ high-CNS strength/sport days/week is, for flexibility purposes, in "average" recovery → cap at **~2×/week** (§6 recovery-gated frequency). Don't chase the "superior recovery → every 2–3 days" cadence during a hard concurrent block.
+
+**4. Phase it to protect the primary peak.** Run the flexibility **Build hard during the arc's accumulation blocks**, then drop to **maintenance (1×/week, compound + one opener + technique)** during the primary goal's **peak/competition block**. Brain stretch-tolerance adaptations persist for years and body-side adaptations take ~6 weeks to reverse, so a 4–6 week maintenance window **holds** the range while freeing recovery for the peak (this is the §9 in-season modification applied to a concurrent peak).
+
+**5. Measure in both currencies.** Keep whatever distance metric the arc's goal contract uses, and **add the course's angle measurement** (§3) as the progression trigger — depth-before-load decisions key off angle.
+
+> Why this respects both goals: every loaded touch is ≥48 h from the protected day; the second session is intentionally light and far from it; and the build is front-loaded so the taper/peak block isn't competing for recovery.
+
 ### Incompatible co-styles
 
 - **Daily high-CNS training with no rest days** — there's nowhere to put flexibility without violating the day-after rule
@@ -530,9 +603,11 @@ Technique is **load-bearing** in this methodology. Matt's worked examples includ
 
 - **"The Blueprint to Get Flexible Once, Forever"** — Matt Smith (@matthewismith), YouTube, 2025-11-11, 39 min. https://www.youtube.com/watch?v=3j7oSqCuTHs. The complete methodology in one video: flexibility ladder, assessment, skill-based programming, stretch stacking, assisted↔resisted spectrum, 10 method categories, brain vs body vs viscoelastic adaptations, calcium-calpain fatigue pathway, three-tier scheduling rule. Informs **every section** of this guide. Raw transcript: [`sources/flexibility-blueprint-video-transcript.txt`](sources/flexibility-blueprint-video-transcript.txt); metadata and transcription corrections: [`sources/flexibility-blueprint-video-metadata.md`](sources/flexibility-blueprint-video-metadata.md).
 
-> NOTE: This guide currently rests on a single primary source. Additional sources that would strengthen specific sections:
-> - **Matt Smith's Mobility & Flexibility Toolkit (MFTK)** — the productized version of this methodology; would fill in §5 named-exercise tables, §7 per-tier templates, and per-skill assessment protocols
-> - **Matt Smith's Instagram / YouTube library** — per-skill technique breakdowns referenced but not detailed in the blueprint video
+- **MFTK *Side Split Toolkit*** — Matt Smith's purchased course (matthewismith.com), captured 2026-06-14. The productized, side-split-specific methodology: curriculum, named drill library, phase model (Assessment → Phase 1 → Phase 2 & Beyond → Overload), the "When and How Often to Train" scheduling lesson, and the Progressive-Underload / Go-Deeper-Not-Heavier progression levers. Informs **§1, §3, §5, §6, §13**. Structured capture: [`sources/mftk-side-split-toolkit-curriculum.md`](sources/mftk-side-split-toolkit-curriculum.md). **Mostly video/embedded-tool content** — per-drill loading numbers are not yet transcribed; the guide's loading numbers remain method-derived until they are.
+
+> NOTE: The guide now rests on two sources (free blueprint video + Side Split Toolkit). Sources that would still strengthen it:
+> - **Side Split Toolkit video/builder transcription** — the per-drill sets/reps/tempo/load and the Phase 1/2 + Overload builder outputs (would retire the remaining `> NOTE: inferred` loading numbers). See `sources/mftk-side-split-toolkit-curriculum.md` §5.
+> - **Matt Smith's Instagram / YouTube library** — per-skill technique breakdowns for the *other seven* skills (this course covers the side split only)
 > - **Academic references on stretch tolerance and supraspinal adaptations** (e.g., Magnusson 1996; Weppler & Magnusson 2010) — would underpin §2.2 and §2.3 with primary literature
 > - **Other reputable flexibility methodologists** (Kit Laughlin, FRC/Functional Range Conditioning, Pavel Tsatsouline) — would provide triangulation and contrast points
 
@@ -544,6 +619,8 @@ Technique is **load-bearing** in this methodology. Matt's worked examples includ
 |---|---|---|
 | `guide.md` | This file — the 15-section methodology synthesis | Start here for any planning task |
 | `exercise-selection.md` | Filtered catalog of methods + (TODO) named exercises | When picking specific stretches for a session |
-| `diagrams/` | (empty — `.gitkeep` only) | TODO: flexibility ladder diagram, assisted↔resisted spectrum diagram, three-tier scheduling diagram, calcium-calpain fatigue pathway diagram |
+| `diagrams/side-split-drill-selection-flowchart.mermaid` | The Phase 1 drill-selection decision tree (renderable) | When choosing which side-split drills to program + their order |
+| `diagrams/` (other) | TODO | flexibility ladder, assisted↔resisted spectrum, three-tier scheduling, calcium-calpain fatigue pathway diagrams |
 | `sources/flexibility-blueprint-video-transcript.txt` | Raw cleaned transcript of the source video | When this guide is ambiguous; treat the transcript as authoritative for principles |
 | `sources/flexibility-blueprint-video-metadata.md` | Video metadata + author description + transcription-correction notes | When verifying provenance or interpreting transcript artifacts |
+| `sources/mftk-side-split-toolkit-curriculum.md` | Structured capture of the purchased Side Split Toolkit — curriculum, drill library, phase model, scheduling lesson | When programming a **side split** specifically; authoritative for drill names + phase structure |
