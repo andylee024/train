@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Reactive emphasis: depth jumps enter the program and dunk attempts begin (Wk 9). This block opens as a **re-entry** after a Block-1 fall-off, not a continuation — W07–W08 ramp the weekly session count back up before everything stacks. Cleans go FULL (wrist healed) and build toward 225. The side split runs as a skill (Matt Smith) entering Phase 0 (W08) → Phase 1 (W09+). BJJ layers in W09→W11. Bench and pull-up push toward arc targets — Mon adds density (Dylan-style 14-min clock @ 80% Wks 9-11). Sunday lower is **moderate-heavy (RPE 7–8), not max** — the dunk is boss.
+Reactive emphasis: depth jumps enter the program and dunk attempts begin (Wk 9). This block opened as a **re-entry** after a Block-1 fall-off (W07 lifting-only → W08 added flex). **From W08 the lifting week runs on the DNT-driven Oly structure** (see Split + DNT Integration below): your split stays fixed (Lower/Upper/Lower-Speed/free), and the coach's Olympic lifts re-home onto the matching day by pattern (~2/day); the free Thu absorbs overflow. Cleans are FULL (wrist healed). The side split runs as a skill (Matt Smith) Phase 0 (W08) → Phase 1 (W09+). BJJ runs Mon/Tue/Wed/Thu (all roll-OK). Coach loads — heavy squat included — run as written; the dunk stays the boss via *timing* (no heavy lower <48h before Saturday), not via a Sunday load cap.
 
 ## Goals
 
@@ -13,6 +13,8 @@ Reactive emphasis: depth jumps enter the program and dunk attempts begin (Wk 9).
 5. **G5** 💪: Bench 1RM ≥ 255 lb (W12 test) AND weighted pull-up +50 lb × 3 climbing toward arc target (Serves: Arc G5)
 
 ## Programming Strategy
+
+> ⚠️ **LEGACY (v7) — superseded from W08.** The items below describe the original re-entry plan with its own lift days (Upper Horizontal/Vertical, Speed-Strength, Sunday moderate-heavy cap). **From W08 the lifting days follow the DNT-driven Oly model** (Split + DNT Integration above) and the **Sunday cap is removed**. The jump / depth-jump / dunk-attempt / flex-phase / RPE schedule below still holds; the lift-day exercise lists are replaced by each DNT drop. See the live week files for the current prescription.
 
 1. WEEK SHAPE: Sat = peak performance (jump + dunk attempts). Sun is **moderate-heavy (RPE 7–8 top set), NOT max** — only 24h after Sat jump, and the dunk is boss; true heavy squat is the declined hybrid path (VJ §13).
 2. RE-ENTRY RAMP (Redesign note, arc.md): the athlete just had a fall-off. Do NOT stack all 11–12 weekly sessions at once.
@@ -35,40 +37,46 @@ Reactive emphasis: depth jumps enter the program and dunk attempts begin (Wk 9).
 13. Side-Split skill (Matt Smith): Phase 0 (W08) = bodyweight foundation; Phase 1 (W09+) = add load. **Session A (Sun, assisted/jump-safe):** Taylor's Pose PIR, Pancake, Cossack Squat Hold, Triangle Side-Split CR-ACR. **Session B (Wed, loaded/resisted, no barbell):** Horse Stance, Loaded Taylor's Pose (eccentric), Side-Lying Leg Raise, Triangle Side-Split Active Push. Targets by W12: split 140–145°, Taylor's ≤ 10 cm.
 14. RPE: W07 RPE 6–7 (comeback/re-entry). W08 RPE 7. W09–11 RPE 8–9 (peak). W12 deload (60% volume).
 
-## DNT Integration (swap homes)
+## DNT Integration (re-home coach Oly lifts onto the split by pattern)
 
-The coach issues a new DNT program ~every 2 weeks. Integrate by **re-homing each exercise into the matching day of THIS split by movement pattern** — never copy DNT's day structure, never add DNT days on top (this caused the Block-1 fall-off). Swap-slot homes for this block:
+The coach issues a new DNT program ~every 2 weeks (always 3 days). **Keep your split fixed; the coach's Olympic lifts re-home onto the matching day by movement pattern (~2/day) — never copy DNT's day structure, never add DNT days on top** (bolting an external program *on top* caused the Block-1 fall-off).
 
-| DNT exercise | Re-homes to (swap slot) |
+| Coach lift pattern | Re-homes to |
 |---|---|
-| Snatch variants *(oly — non-negotiable)* | **Tue** |
-| Clean variants *(oly — non-negotiable)* | **Thu** (feeds G2) |
-| Jerk / push press *(oly — non-negotiable)* | **Thu / Sat finisher** (feeds G2 jerk) |
-| Strict press / vertical push | **Fri** |
-| Horizontal press / rows | **Mon** |
-| Squats / heavy lower / pulls | **Sun** (capped moderate-heavy) |
+| Squat | **Lower** (Sun) |
+| Snatch / explosive pull / speed | **Lower/Speed** (Tue) |
+| Clean / clean pull | **Lower** (Sun) or **Lower/Speed** (Tue) |
+| Jerk / push press / overhead | **Upper** (Mon) |
+| *(no matching day)* | closest day, else the reference menu |
 
-**Rules:** Olympic lifts always go in. Accessories fill remaining slots up to **6 exercises/session**. Anything that doesn't fit that week is **dropped, not crammed**. DNT heavy squat lands on Sunday capped at moderate-heavy (dunk is boss). Full methodology: `styles/dnt-integration-methodology.md`; current source: `styles/dnt-program-source.md`.
+**Rules:**
+- **Every coach Olympic lift gets done** that week — **fixed, non-negotiable**, run at the coach's % / loads (**heavy squat included — no cap**).
+- **Target ~2 Oly lifts per lift day.** Overflow (or any lift that won't fit 2/day) goes to the **free Thu**, which exists to absorb it + your own choice.
+- Your **own full workout is the spine** of each day; the coach's **accessories are a reference menu** — sub in for your own if you want.
+- **6 exercises/session cap.** Coach Oly lifts first, then fill from your block and/or coach accessories.
+- **Sync: DNT program runs 2 weeks behind the arc** (DNT wk6 = arc wk8). Reprocess each new drop into the current weeks. Full methodology: `styles/dnt-integration-methodology.md`.
 
 ## Constraints (honor in every week)
 
-- **Friday BJJ = technique/drilling only, never live rolling** (24h before jump). Rolling reserved for Mon/Tue/Wed.
-- **Sunday moderate-heavy only** (RPE 7–8 top set), never max grind.
-- **Deep/loaded split work = Wed (Session B) + Sun-light (Session A)** only; both ≥ 48h from Sat jump (adductor force).
-- **Heavy lower < 48h before jump = NO** (VJ §13). Thu power is 48h out ✓.
+- **BJJ Mon/Tue/Wed/Thu — all roll-OK; no BJJ Fri/Sat** (all 48h+ from the Saturday jump).
+- **Friday = full rest day** into jump day.
+- **Deep/loaded split work = Wed (Session B) + Sun (Session A)** only; both ≥ 48h from Sat jump (adductor force).
+- **No heavy lower in the 48h before jump** (VJ §13). Oly 1–3 sit Sun/Mon/Tue — all clear. *(Old "Sunday moderate-heavy / never max" cap removed.)*
 - **Injuries healed 2026-06-14** (R shoulder, L wrist). Overhead/jerk/front-rack/full cleans now permitted — ramp load over 2–3 weeks; revert to landmine/hang variants if pain ≥ 3 returns.
 - **Cut ~300 cal/day** (B2). Maintenance is B3.
 - **Patellar pain ≥ 3/10** → drop depth jumps that week.
 
-## Split (6 Workouts / Week + 2-a-days)
+## Split (4 lifting days + jump + 2-a-days)
 
-1. Sun: Lower Strength (moderate-heavy, RPE 7–8) + Side-Split Session A (assisted) | evening rest
-2. Mon: Upper Horizontal — Bench + Row | BJJ (roll OK, from W09)
-3. Tue: Speed-Strength B — Olympic snatch + Sprint Finisher | BJJ (roll OK, from W10)
-4. Wed: Side-Split Session B (loaded/resisted, no barbell) | BJJ (light, from W09)
-5. Thu: Speed-Strength A — Power Clean (FULL → 225) + Speed Squat + Jump Squat | evening FREE
-6. Fri: Upper Vertical — Pull-Up + Dips + Strict Press | BJJ (technique only, from W11)
-7. Sat: JUMP DAY — Sprints + Approach + Depth Jumps + Dunk Attempts (Wk 9+) + Clean finisher
+1. Sun: **Lower** (own block) + re-homed coach Oly (squats/clean pulls) + Side-Split Session A | evening rest
+2. Mon: **Upper** (own block) + re-homed coach Oly (jerk/push press/overhead) | BJJ No-Gi (roll OK)
+3. Tue: **Lower/Speed** (own block) + re-homed coach Oly (snatch/explosive pulls) | BJJ Gi (roll OK)
+4. Wed: Side-Split Session B (loaded/resisted, no barbell) | BJJ No-Gi (roll OK)
+5. Thu: **Free Oly** (athlete's choice + coach overflow) | BJJ Gi (roll OK)
+6. Fri: 🛌 REST (pre-jump)
+7. Sat: JUMP DAY — Sprints + Approach + Depth Jumps + Dunk Attempts (Wk 9+)
+
+> **Note:** the per-week detail below (Programming Strategy + Week-by-Week) was the v7 re-entry plan. **From W08 the lifting days follow the DNT-driven Oly model above** — see the live week files (`weeks/`, `active/current-week.md`) for the current prescription. The jump/flex/BJJ scaffolding below still holds; the lift-day exercise lists are superseded by each DNT drop.
 
 ## Week-by-Week Programming
 

@@ -6,13 +6,15 @@ Self-contained 18-week training arc package. **This is what the text agent reads
 
 ## What this is
 
-An 18-week hybrid athletic training arc for **Andy Lee** (May 3 → Sep 5, 2026). Three goals in priority order:
+An 18-week hybrid athletic training arc for **Andy Lee** (May 3 → Sep 5, 2026). Five goals in priority order (triage order — lowest yields first when recovery runs short):
 
-1. **Dunk a women's basketball** on a regulation 10' rim
-2. **Bench 1RM 260 lb AND weighted pull-up +80 lb × 8 reps**
-3. **Side split distance reduced ≥ 8 cm from baseline**
+1. **G1 🏀 Dunk** a women's basketball on a regulation 10' rim *(the boss)*
+2. **G2 🏋️ Power clean 225 + jerk 225**
+3. **G3 🤸 Side split** distance reduced ≥ 8 cm from baseline
+4. **G4 🥋 BJJ** — light technique 3–4×/week, level up
+5. **G5 💪 Bench 1RM 260 AND weighted pull-up +55–60 × 5**
 
-Programmed with **Vertical Jump Bible** (primary, jump methodology) and **Dylan Shannon** (secondary, upper body + 4-pillar lower distribution) as the style guides.
+Programmed with **Vertical Jump Bible** (primary, jump), **Dylan Shannon** (upper/Olympic), **Matt Smith** (side split), and the athlete's **DNT** coach (Olympic-lift engine — see DNT Integration Model in `training/arc.md`).
 
 ---
 
@@ -32,7 +34,7 @@ Programmed with **Vertical Jump Bible** (primary, jump methodology) and **Dylan 
 | `nutrition/weeks/2026-nutrition-W{NN}.md` | Generated weekly by `plan-weekly-meals` skill (just-in-time, not pre-rendered). | Saturday surface — meal plan + grocery list for the upcoming week. |
 | `styles/vertical-jump-guide.md` | Vendored copy of the VJ training style guide. | When asked "why depth jumps now?" or "what's the conjugate sequence?" |
 | `styles/dylan-shannon-guide.md` | Vendored copy of the Dylan Shannon style guide. | When asked about upper body programming logic or 4-pillar framework. |
-| `outputs/hybrid-athletic-plan-v6.xlsx` | Athlete-facing spreadsheet snapshot. | When the athlete asks "send me my plan" or wants the full visual. |
+| *(no spreadsheet)* | The `.xlsx` view is retired (2026-06-21). The markdown week files are the plan. | — |
 
 ---
 
@@ -84,12 +86,13 @@ git submodule add <new-arc-repo-url> athlete-bundle/
 
 ## Refresh cadence
 
-The bundle is **regenerated** by `.claude/skills/plan-training-arc/build_training_arc.py` in the train repo. When the plan changes:
+The plan is **hand-edited markdown** — the files under `training/` (`arc.md`, `blocks/`, `weeks/`, `active/`) are the source of truth. There is no generator (the old `build_training_arc.py` xlsx generator was removed 2026-06-21). When the plan changes:
 
-1. Edit `build_training_arc.py` (the data structures — never edit generated files directly)
-2. Run `python3 .claude/skills/plan-training-arc/build_training_arc.py` — overwrites this bundle
-3. Commit + push the bundle changes
-4. Cloud agent repo pulls (whichever mode above)
+1. Edit the relevant markdown directly (most often `active/current-week.md` + the matching `weeks/` file).
+2. Commit + push the bundle changes.
+3. Cloud agent repo pulls (whichever mode above).
+
+**Coach (DNT) cadence:** a new DNT program drops ~every 2 weeks and runs **2 weeks behind the arc**. On each drop, reprocess it into the current week files per the DNT Integration Model in `training/arc.md`.
 
 The agent should pull at minimum once a week (Sunday) to pick up the new `current-week.md` snapshot. Pulling daily is fine — the bundle is small (~50 .md files, total <500KB).
 
@@ -108,8 +111,6 @@ The agent should pull at minimum once a week (Sunday) to pick up the new `curren
 
 ## Versioning
 
-Bundle generated from train repo commit at: (filled in by build script — TODO).
-
-Plan version: **v6** (Power Conversion + Reactive + Dunk Window + Peak/Realize).
+Plan version: **v8** — DNT-driven Oly structure from W08 (2026-06-21). Hand-edited markdown; no generator.
 
 Active arc start: **2026-05-03** (Sunday). End: **2026-09-05** (Saturday).
