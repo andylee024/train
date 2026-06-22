@@ -15,12 +15,12 @@ Peak + realize + test. Volume strips out so accumulated fatigue dissipates and t
 ## Programming Strategy
 
 1. WEEK SHAPE: Sat = JUMP DAY = TEST DAY (dunk attempts every week, max jump). Sun = active recovery only — protect Sat performance. This is the peak; ALL secondaries taper to it.
-2. **BJJ tapers to 1–2 LIGHT technique nights/week** — no hard rolling (protect CNS freshness for the jump). W13–16: Mon + optional Tue/Wed light. W17–18: 1 light night max (or rest). Friday stays technique-only or drops entirely in test weeks.
+2. **BJJ tapers to 1–2 LIGHT technique nights/week** — no hard rolling (protect CNS freshness for the jump). W13–16: Mon + optional Tue/Wed light. W17: 1 light night max (or rest). W18: rest. **No BJJ Fri/Sat** (Fri is now full rest).
 3. **Side-split flex tapers to 1×/week maintenance** (Wed only, lighter loads — no barbell). Sunday flex DROPS to light Cossack/pigeon only. Matt Smith §9: drop to maintenance during a peak; hold the gain, don't chase new range while peaking.
 4. **Squat removed / Sunday becomes light active recovery.** In B2 Sunday was moderate-heavy; in B3 peak logic strips lower volume. No straight heavy squats anywhere — they'd compromise Sat. Speed squat (Thu) is the only barbell squat pattern and it tapers W17–18.
 5. **Nutrition → maintenance from W13.** No cut during peak (VJ §9 — aggressive deficits compromise force).
 6. Bench Mon (G5): W13 3×3@200 · W14 3×3@205 · W15 3×2@215 · W16 3×2@220 · W17 3×1@235 (90%) · W18 TEST 1RM (260).
-7. Pull-Up Fri (G5): RESET target to +55–60×5 (the +80×8 target was unrealistic from a +25×5 baseline). Wave: W13 +45 · W14 +50 · W15 +52 · W16 +55 · W17 +57 doubles (taper) · W18 TEST +55–60×5. Strict/landmine press held at maintenance.
+7. Pull-Up **Mon** (G5, folded onto the Upper day from the retired Fri vertical day): RESET target to +55–60×5 (the +80×8 target was unrealistic from a +25×5 baseline). Wave: W13 +45 · W14 +50 · W15 +52 · W16 +55 · W17 +57 doubles (taper) · W18 TEST +55–60×5 **(test-week exception: the pull-up test sits on Fri for spacing)**. Strict/landmine press held at maintenance.
 8. Power Clean + Jerk Thu (G2): shoulder healed 2026-06-14 — jerk reintroduced, ramp load 2–3 wks before max. Clean: W13 4×2@160 · W14 @165 · W15 @170 · W16 @~210–215 (heavy double toward test) · W17 taper · W18 TEST full power clean 225. Jerk: build doubles W13 @185 → W16 @205–215 · W17 taper · W18 TEST jerk 225. **Both filmed top single at W18.** Revert to landmine/hang if shoulder or wrist pain ≥3 returns.
 9. Speed Squat Thu: 260→280 wave, taper W17–18. Jump Squat 3×3 @ 30%. RDL light 3×5, tapering.
 10. Hang/Power Snatch Tue (variety): 125→140 wave, taper. Continuous Broad Jumps 3×3 max dist (replaces single-leg bounds in B3).
@@ -29,17 +29,21 @@ Peak + realize + test. Volume strips out so accumulated fatigue dissipates and t
 13. Sprints: Sat 3×20yd (jump day, primary); Tue 3×20yd + 1×40yd. Chase sprint PRs W15–16 then taper.
 14. Upper accessories drop to maintenance (2–3 sets). Recovery budget goes to the tests.
 15. INTENSITY CURVE: W13–14 RPE 7–8 (realize). W15–16 RPE 8–9 (peak). W17 TAPER (50% volume, 90% intensity). W18 TEST WEEK.
-16. DNT swap-slots still apply (Tue snatch, Thu clean/jerk, Sat finisher, etc.) but during taper weeks accept LESS DNT volume — peak freshness wins. Anything that doesn't fit is dropped, not crammed.
+16. **Coach DNT Oly (if still dropping) re-homes by movement pattern** as in Block 2 (squat → Lower, snatch/explosive → Lower-Speed, jerk/overhead → Upper; ~2/day, free Thu absorbs overflow). In this peak/test block the athlete's own lifts are the priority — coach Oly **yields** to the bench/pull-up peak (Mon) and clean/jerk peak (Thu). During taper/test weeks accept LESS coach + BJJ volume — peak freshness wins. Anything that doesn't fit the ≤6/session cap is dropped, not crammed.
 
-## Split (6 Workouts / Week, Wed Optional)
+## Split (5 lift days + Sat jump, Wed flex)
 
-1. Sun: Active Recovery + Light Posterior + Light Side-Split Maintenance (very light)
-2. Mon: Upper Horizontal — Bench Peak (heavy doubles → singles → 1RM) | BJJ light (technique)
-3. Tue: Speed-Strength B — Olympic Snatch + Sprint PRs | optional BJJ light
-4. Wed: Side-Split Maintenance (1× lighter, no barbell) | optional BJJ light
-5. Thu: Speed-Strength A — Power Clean/Jerk Taper + Speed Squat + Jump Squat | free
-6. Fri: Upper Vertical — Pull-Up Peak + Dips + Strict Press | BJJ technique only (or rest W17–18)
+Block 3 inherits the **fixed split** the arc switched to from W08 (Lower · Upper · Lower-Speed · Free-Oly), with peak adjustments: Sunday's Lower drops to active recovery, and **both G5 drivers (bench + pull-up) live on Mon** now that Friday is a rest day. The clean+jerk peak is the athlete's own Free-Oly choice on Thu (driving the G2 test).
+
+1. Sun: **Lower → Active Recovery** + Light Posterior + Light Side-Split Maintenance (very light)
+2. Mon: **Upper — Bench Peak + Weighted Pull-Up** (both G5 drivers; pull-up folded in from the retired Fri vertical day) | BJJ light (technique)
+3. Tue: **Lower/Speed — Olympic Snatch + Sprint PRs** | optional BJJ light
+4. Wed: **Side-Split Maintenance** (1× lighter, no barbell) | optional BJJ light
+5. Thu: **Free Oly — Power Clean/Jerk peak + Speed Squat + Jump Squat** (your choice — peaks the G2 test) | free
+6. Fri: 🛌 **REST** (pre-jump) — no lift, no BJJ. *(Test week W18 is the one exception: the pull-up test gets Fri for max-spacing.)*
 7. Sat: JUMP DAY — Max Jump + Dunk Attempts every session (TEST DAY)
+
+> **The per-week tables below preserve the canonical loads.** Their day *homing* follows the new model: pull-up is on **Mon** (not Fri), and **Fri is rest** except in the W18 test week. The week files (`weeks/2026-training-W13…W18.md`) are the authoritative day-by-day layout.
 
 ## Week-by-Week Programming
 
