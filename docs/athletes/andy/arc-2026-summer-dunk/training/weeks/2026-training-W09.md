@@ -7,26 +7,29 @@
 - Arc Week: 9 of 18
 - Block Week: 3 of 6
 - Date Range: Sun Jun 28 – Sat Jul 04, 2026
-- Week Type: DNT-driven Oly structure (coach drop TBD, pattern re-homed) + flex Phase 1 entry
-- Primary Focus: Flex → **Phase 1 (loaded)** behind the Taylor's-pose gate. **DUNK ATTEMPTS BEGIN** (Sat, 5 max). Depth jumps → 30 in. BJJ Mon–Thu (target ~2 nights this week).
+- Week Type: DNT-driven Oly structure (coach wk7 deload, pattern re-homed) + flex Phase 1 entry
+- Primary Focus: Coach DNT wk7 Oly lifts re-homed onto the split (~2/day). Flex → **Phase 1 (loaded)** behind the Taylor's-pose gate. **DUNK ATTEMPTS BEGIN** (Sat, 5 max). Depth jumps → 30 in. BJJ Mon–Thu (target ~2 nights this week).
 
 ## Source / Sync
 
-- **Coach program:** next DNT drop = **wk7–8** → re-process into W09–W10 when it lands. Until then the 🏋️ Coach Oly slots below are **TBD**.
-- **Sync rule:** the DNT program runs **2 weeks behind the arc**. New coach drop ~every 2 weeks → reprocess into the then-current weeks.
+- **Coach program:** `2andy program7--8.pdf` → using **DNT Week 1 (deload)**. Re-homed below by movement pattern.
+- **Loads are coach percentages** — read off your gym max. Convert to lb once you send 1RMs (back squat, jerk, snatch, clean).
+- **Sync rule:** DNT runs **2 weeks behind the arc** (this drop = wk7–8 → W09–W10). Next drop = wk9–10 → W11–W12.
 
 ## The Model (how the coach's program folds in)
 
 1. **Your split is fixed** — Sun Lower · Mon Upper · Tue Lower/Speed · Thu free.
-2. **Every coach Olympic lift gets done** — they **re-home onto the day whose movement pattern matches** (squat → Lower, snatch/explosive → Lower-Speed, jerk/overhead → Upper), ~2 Oly/day. Overflow → free Thu.
-3. **Your own full workout** is the spine of each day. **Coach accessories** are a reference menu.
-4. **6 exercises/session cap** — coach Oly lifts first, then your workout and/or coach accessories.
+2. **Every coach Olympic lift gets done** — re-homed onto the day whose movement pattern matches (squat → Lower, snatch/explosive → Lower-Speed, jerk/overhead → Upper), ~2 Oly/day. Overflow → free Thu.
+3. **Your own full workout** is the spine; **coach accessories** are a reference menu.
+4. **6 exercises/session cap** — coach Oly first, then your workout and/or coach accessories.
+
+DNT wk7 re-homed: back squat + clean DL → **Sun**, rack jerk + clean&jerk → **Mon**, muscle snatch + snatch high pull → **Tue**. (Coach is deloading this week — light wave on the Oly track; your own jump/flex/bench drivers carry the intensify load.)
 
 ## 7-Day Overview
 
-1. Sun Jun 28 (SUNDAY): **Lower** (coach squat/clean-pull TBD) + **Side-Split Session A** (Phase 1)
-2. Mon Jun 29 (MONDAY): **Upper** (coach jerk/overhead TBD) — Bench + Pull-Up | 🥋 BJJ (roll OK)
-3. Tue Jun 30 (TUESDAY): **Lower/Speed** (coach snatch TBD) | 🥋 BJJ (roll OK)
+1. Sun Jun 28 (SUNDAY): **Lower** (coach back squat + clean DL) + **Side-Split Session A** (Phase 1)
+2. Mon Jun 29 (MONDAY): **Upper** (coach rack jerk + clean&jerk) — Bench + Pull-Up | 🥋 BJJ (roll OK)
+3. Tue Jun 30 (TUESDAY): **Lower/Speed** (coach muscle snatch + snatch HP) | 🥋 BJJ (roll OK)
 4. Wed Jul 01 (WEDNESDAY): **Side-Split Session B** (loaded — Phase 1 entry) | 🥋 BJJ (roll OK)
 5. Thu Jul 02 (THURSDAY): **Free Oly** (your choice) | 🥋 BJJ (roll OK)
 6. Fri Jul 03 (FRIDAY): 🛌 REST (pre-jump)
@@ -34,14 +37,15 @@
 
 ## Sun Jun 28 (SUNDAY) — Lower + Side-Split Session A (Phase 1)
 
-**🏋️ Coach Oly lifts (FIXED — re-homed: squat + clean pull):** TBD (next DNT drop)
+**🏋️ Coach Oly lifts (FIXED — re-homed: squat + clean pull):**
+1. Back Squat: 85% 5×3
+2. Clean Deadlift: 80% 5×4
 
-**💪 Your full workout (Lower):**
-1. Back Squat: top set up to 3RM-ish @ 315, RPE 8, then 3×3 back-off @ 280 *(coach squat replaces this when present)*
-2. Stiff-Legged Deadlift: 4×5,5,4,3 @ 255
-3. Glute-Ham Raise: 3×8 @ BW+15
+**💪 Your full workout (Lower — squat now covered by coach):**
+3. Stiff-Legged Deadlift: 4×5,5,4,3 @ 255
+4. Glute-Ham Raise: 3×8 @ BW+15
 
-**📋 Coach accessories (reference):** TBD (next DNT drop)
+**📋 Coach accessories (reference):** Good Morning 4×8 · Split Squat 4×8
 
 **🤸 Side-Split Session A (Phase 1, assisted — bodyweight, jump-safe):**
 - Taylor's Pose PIR 3×6 ×(5s/5s) · Pancake 3×6 ×3s · Cossack Squat Hold 3/side×5×3s · Triangle Side-Split CR-ACR 3×4 ×(5s+5s)
@@ -49,30 +53,33 @@
 
 ## Mon Jun 29 (MONDAY) — Upper — Bench + Pull-Up | BJJ
 
-**🏋️ Coach Oly lifts (FIXED — re-homed: overhead/jerk):** TBD (next DNT drop)
+**🏋️ Coach Oly lifts (FIXED — re-homed: overhead/jerk):**
+1. Rack Jerk: 75% 6×3
+2. Power Clean & Jerk: 80–85% 5×2
 
 **💪 Your full workout (Upper — both G5 drivers live here now that Fri is rest):**
-1. Bench Press: 14-min density @ 185 *(G5 driver)*
-2. Weighted Pull-Up: 5×3 @ +40 *(G5 driver)*
-3. Barbell Row: 4×6 @ 195
-4. *(trim to cap — rotate: DB Incline @65, Weighted Dips +30, DB Lateral Raise)*
+3. Bench Press: 14-min density @ 185 *(G5 driver)*
+4. Weighted Pull-Up: 5×3 @ +40 *(G5 driver)*
+5. Barbell Row: 4×6 @ 195
+6. *(trim to cap — rotate: DB Incline @65, Weighted Dips +30, DB Lateral Raise)*
 
-**📋 Coach accessories (reference):** TBD (next DNT drop)
+**📋 Coach accessories (reference):** Flyes 4×10 · Sots Press 4×8 · Bar Dip 4×10 · Pull-up 4×10
 
 **Evening:** 🥋 BJJ — roll OK (48h+ from Sat jump).
 
 ## Tue Jun 30 (TUESDAY) — Lower/Speed | BJJ
 
-**🏋️ Coach Oly lifts (FIXED — re-homed: snatch/explosive):** TBD (next DNT drop)
+**🏋️ Coach Oly lifts (FIXED — re-homed: snatch/explosive):**
+1. Muscle Snatch: 80–85% 5×(1+2)
+2. Snatch High Pull: 80% 5×4
 
-**💪 Your full workout (Lower/Speed):**
-1. Hang Power Snatch: 5×3 @ 125 *(coach snatch replaces this when present)*
-2. Speed Squat: 5×2 @ 260
-3. Jump Squat: 4×4 @ 33% (120)
-4. RDL: 4×5,5,4,3 @ 255
-5. Sprints (finisher): 4×20yd, 1×40yd @ 90%
+**💪 Your full workout (Lower/Speed — snatch now covered by coach):**
+3. Speed Squat: 5×2 @ 260
+4. Jump Squat: 4×4 @ 33% (120)
+5. RDL: 4×5,5,4,3 @ 255
+6. Sprints (finisher): 4×20yd, 1×40yd @ 90%
 
-**📋 Coach accessories (reference):** TBD (next DNT drop)
+**📋 Coach accessories (reference):** Overhead Squat 40kg 4×3 · Wrist 4×10
 
 **Evening:** 🥋 BJJ — roll OK.
 
@@ -86,13 +93,13 @@
 3. **[FLEX-B3]** Side-Lying Leg Raise: 3/side × 10 (1s top, 3s eccentric)
 4. **[FLEX-B4]** Triangle Side-Split Active Push: 3×5 × 3s active hold
 
-**Canary:** Tue Power Snatch + (free-Oly) clean top sets. If either drops >5% → pull B2 back to 3 kg next week.
+**Canary:** Tue Muscle Snatch + Mon Power Clean & Jerk top sets. If either drops >5% → pull B2 back to 3 kg next week.
 
 **Evening:** 🥋 BJJ — roll OK.
 
 ## Thu Jul 02 (THURSDAY) — Free Oly | BJJ
 
-**🏋️ Free Oly day — your choice.** Work whatever Olympic lift you want to develop (Power Clean FULL @150 builds toward 225), plus any coach lift that overflowed the ~2/day budget. ≤6 exercises.
+**🏋️ Free Oly day — your choice.** All 6 coach lifts fit Sun/Mon/Tue this week, so nothing overflows. Work whatever Olympic lift you want (Power Clean FULL @150 builds toward 225). ≤6 exercises.
 
 **Evening:** 🥋 BJJ — roll OK (48h from Sat jump).
 
@@ -119,7 +126,7 @@ Full rest into jump day. No lift, no BJJ (protects Saturday's pop).
 ## Logging Checklist
 
 1. All working sets logged with load (or % + actual lb), reps, RPE, notes.
-2. Top set logged for coach Oly lifts + your primaries (bench, pull-up, snatch, speed squat) + whatever you run on free Thu.
+2. Top set logged for coach Oly lifts (back squat, rack jerk, clean&jerk, muscle snatch) + your primaries (bench, pull-up, speed squat) + free Thu.
 3. Note which accessory route you took each day (your block vs. coach's list).
 4. Daily bodyweight + Sun side-split measurement (cm hip-to-floor).
 5. BJJ attendance + Gi/No-Gi.
@@ -128,5 +135,5 @@ Full rest into jump day. No lift, no BJJ (protects Saturday's pop).
 
 1. Wins: <what progressed — first dunk attempts, side-split angle>
 2. Misses: <what was not completed or not clean>
-3. Coach vs. own: <which accessory routes you took, Oly loads>
-4. Adjustment For Next Week: <next DNT drop = wk7–8 → W10; W10 targets ~3 BJJ nights, dunk attempts 8>
+3. Coach vs. own: <which accessory routes you took, Oly loads — and the % → lb conversions once dialed>
+4. Adjustment For Next Week: <W10 = DNT wk8 (heavy wave), ~3 BJJ nights, dunk attempts 8>
