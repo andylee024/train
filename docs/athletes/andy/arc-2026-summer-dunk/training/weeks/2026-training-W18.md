@@ -1,4 +1,4 @@
-# Week 2026-training-W18
+# Week 2026-training-W18  *(new split — v9)*
 
 ## Week Header
 
@@ -7,110 +7,68 @@
 - Arc Week: 18 of 18
 - Block Week: 6 of 6
 - Date Range: Sun Aug 30 – Sat Sep 05, 2026
-- Week Type: test
-- Primary Focus: TEST WEEK — the payoff. Mon bench 1RM 260 · Thu clean 225 + jerk 225 (filmed) · Fri pull-up +55–60×5 · **Sat = DUNK a women's basketball, filmed.** Full freshness; only primers between tests.
+- Week Type: **TEST WEEK** — the payoff
+- Primary Focus: Test the arc's KPIs on the new split's days. **Mon bench 1RM (260) · Thu clean 225 + jerk 225 filmed · Fri pull-up +55–60×5 · Sat DUNK filmed.** Full freshness; only primers between tests.
 
 ## Source / Sync
 
-- **Test week — the tests ARE the program.** Each max is spaced on its own day for full freshness.
-- **⚠️ Structure exception:** the normal "Fri = rest" rule is **deliberately overridden** this week — the pull-up test sits on Fri so each max gets its own day. Pull-up is upper-body and won't compromise Sat's dunk. No coach Oly this week; all freshness goes to the tests.
+- **Coach program:** yields entirely to the tests this week. No coach Oly volume — just the test lifts.
+- Everything else is a primer; nothing added that costs freshness.
+
+## The Split (v9 — test week)
+
+The tests map onto the split's own days: Sun light, Mon = bench test, Thu = clean/jerk test, Fri = pull-up test, Sat = dunk test.
 
 ## 7-Day Overview
 
-1. Sun Aug 30 (SUNDAY): **Active Recovery + Light Posterior** (very light primer)
-2. Mon Aug 31 (MONDAY): **Upper — BENCH TEST 1RM (260)**
-3. Tue Sep 01 (TUESDAY): **Lower/Speed — Snatch + Sprint (primer)**
-4. Wed Sep 02 (WEDNESDAY): **Side-Split Maintenance + SIDE SPLIT MEASUREMENT (TEST G3)**
-5. Thu Sep 03 (THURSDAY): **Free Oly — CLEAN + JERK TEST (filmed, 225/225)**
-6. Fri Sep 04 (FRIDAY): **Upper — PULL-UP TEST (+55–60×5)** *(test-week exception to Fri-rest)* | BJJ rest
-7. Sat Sep 05 (SATURDAY): **JUMP DAY — THE DUNK TEST (women's basketball, filmed)**
+1. Sun Aug 30: **Light primer** — movement + side-split maintenance
+2. Mon Aug 31: 🎯 **BENCH 1RM TEST (260)** | rest
+3. Tue Sep 01: **Light Oly primer** — snatch singles @ 70%
+4. Wed Sep 02: 🛌 **REST**
+5. Thu Sep 03: 🎯 **CLEAN 225 + JERK 225 TEST** (filmed)
+6. Fri Sep 04: 🎯 **PULL-UP TEST (+55–60 × 5)**
+7. Sat Sep 05: 🎯 **DUNK a women's basketball — filmed** (the boss)
 
-## Sun Aug 30 (SUNDAY) — Active Recovery + Light Posterior (very light primer)
+## Sun Aug 30 (SUNDAY) — Light primer
 
-1. Stiff-Legged Deadlift (light): 2×5 @ 175 lb
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 25 lb
-3. Pigeon Stretch: 3×60s/side
-4. Cossack Squat: 2×8/side @ BW
+1. Back Squat: 3×2 @ 75% (crisp, no fatigue)
+2. Full Side Split Stretch: 2×60s (maintenance)
+3. Easy mobility, then rest.
 
-**Note:** Final primer — just move blood, no fatigue. Tests start Monday.
+## Mon Aug 31 (MONDAY) — 🎯 BENCH 1RM TEST
 
-## Mon Aug 31 (MONDAY) — Upper — BENCH TEST (1RM)
+1. Warm-up ramp → **Bench Press: work to 1RM (target 260)** *(G5)*
+2. Optional back-off 1×3 @ 85%.
+Nothing else — protect Thu/Fri/Sat tests.
 
-1. Bench Press: **TEST 1RM (target 260 lb)** — work up in singles, filmed *(G5 test)*
-2. Barbell Row: 3×5 @ 175
-3. DB Incline Bench (neutral): 2×5 @ 50
-4. DB Lateral Raise: 2×10 @ 15
+## Tue Sep 01 (TUESDAY) — Light Oly primer
 
-**Evening:** rest — all freshness to the tests.
+1. Snatch: singles @ 70%, crisp (nervous-system primer, not a workout)
+2. Easy mobility legs.
 
-## Tue Sep 01 (TUESDAY) — Lower/Speed — Snatch + Sprint (primer)
+## Wed Sep 02 (WEDNESDAY) — 🛌 REST
 
-1. Hang Power Snatch: 3×2 @ 60% (115)
-2. DB Push Press (neutral): 3×3 @ 45
-3. Continuous Broad Jumps: 2×3 @ Med
-4. Sprints: 2×20yd @ crisp, not max
-5. Copenhagen Lift: 2×20s/side @ BW
+Full rest before the clean+jerk test.
 
-**Evening:** rest.
+## Thu Sep 03 (THURSDAY) — 🎯 CLEAN + JERK TEST
 
-## Wed Sep 02 (WEDNESDAY) — Side-Split Maintenance + Measurement
+1. Warm-up ramp → **Power/Full Clean: work to top single (target 225)** *(G2, filmed)*
+2. **Jerk: work to top single (target 225)** *(G2, filmed)*
 
-**Very light hold + TEST.** No barbell. Measure today — Wed → Sat is 3 days, safe before jump.
+## Fri Sep 04 (FRIDAY) — 🎯 PULL-UP TEST
 
-1. **[FLEX-B1]** Weighted Side Split Hold: 2×60s @ 20 lb
-2. **[FLEX-B2]** PNF Contract-Relax Splits: 2 rounds @ 10s on/30s relax
-3. **[FLEX-B3]** Pigeon Stretch: 2×60s/side
-4. **SIDE SPLIT MEASUREMENT (cm hip-to-floor) — TEST G3** vs W07 baseline (target −8 cm)
+1. **Weighted Pull-Up: +55–60 lb × max reps (target 5 clean)** *(G5, filmed)*
 
-**Evening:** rest.
+## Sat Sep 05 (SATURDAY) — 🎯 DUNK TEST (the boss)
 
-## Thu Sep 03 (THURSDAY) — Free Oly — CLEAN + JERK TEST (filmed)
-
-**The G2 test.** Full warm-up, work up in singles, film the top single of each. Revert to landmine/hang only if pain ≥3 returns — otherwise express it.
-
-1. Power Clean: **TEST full power clean (target 225 lb)** — filmed top single *(G2 test)*
-2. Jerk: **TEST jerk (target 225 lb)** — filmed top single *(G2 test)*
-3. Speed Squat (primer): 2×2 @ 60% (220 lb)
-4. Jump Squat (primer): 2×3 @ 25% (90 lb)
-
-**Evening:** free — recover for Fri/Sat.
-
-## Fri Sep 04 (FRIDAY) — Upper — PULL-UP TEST
-
-*(Test-week exception: Fri normally rests, but the pull-up max gets its own day here for spacing. Upper-body only — won't compromise Sat's dunk.)*
-
-1. Weighted Pull-Up: **TEST max reps @ +55–60 lb (target 5 clean)** *(G5 test)*
-2. Weighted Dips: 2×5 @ +25
-3. Strict Press (landmine): 2×8 @ Light
-
-**Evening:** BJJ REST — full freshness for the dunk test tomorrow.
-
-## Sat Sep 05 (SATURDAY) — JUMP DAY — THE DUNK TEST (filmed)
-
-**The boss. NO depth jumps — approach jumps only, then attempt at full freshness.**
-
-1. Sprints: 2×20yd @ crisp primer
-2. Approach Jumps: 3×1 @ max intent (NO depth jumps)
-3. **DUNK A WOMEN'S BASKETBALL on regulation 10' rim — filmed** *(G1 test — the boss)*
-4. DUNK ATTEMPTS: 10+ max-intent attempts, film all
-
-## Daily Flexibility (15-20 min post-training)
-
-1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. Wed = side-split measurement day (test) + very light hold (no barbell).
-3. **Never load splits before Sat jump day** — Wed → Sat is 3 days, safe.
+1. Sprints / approach primer (light)
+2. **DUNK ATTEMPTS — a women's basketball on a 10' rim, filmed.** *(G1 — the arc's boss goal.)*
+3. Celebrate the arc. 🏀
 
 ## Logging Checklist
 
-1. All working sets logged with load, reps, RPE, and notes.
-2. **Test results logged:** bench 1RM (Mon), clean + jerk top singles with video (Thu), pull-up max reps @ load (Fri), side split cm (Wed), dunk made? + best jump height (Sat).
-3. Sat jump day: log sprint times, best jump height, dunk attempt count + makes, **dunk YES/NO**.
-4. Daily bodyweight (held 184–186) + final side-split measurement.
-5. Shoulder + wrist pain rating (1-10) after Mon, Thu (clean/jerk test), and Fri sessions.
+Log every test: bench 1RM, clean single, jerk single, pull-up load × reps, dunk make (Y/N) + film. Final bodyweight + side-split measurement for the arc retrospective.
 
-## End-of-Week Review (filled Sun — ARC RETROSPECTIVE)
+## End-of-Arc Review
 
-1. Wins: <which of the 5 goals hit — dunk, clean/jerk 225, side split −8cm, bench 260, pull-up +55–60×5>
-2. Misses: <which goals fell short and by how much>
-3. Metric Changes: <final actuals vs baselines for all 5 goals>
-4. Next Arc: <what the W18 results imply for the next training arc>
+Run the `progress-review` skill (arc scope) after Sat: KPIs vs targets, what the new split delivered, decisions for the next arc.

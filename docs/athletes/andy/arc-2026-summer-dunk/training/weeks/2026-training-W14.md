@@ -1,4 +1,4 @@
-# Week 2026-training-W14
+# Week 2026-training-W14  *(new split — v9)*
 
 ## Week Header
 
@@ -7,108 +7,105 @@
 - Arc Week: 14 of 18
 - Block Week: 2 of 6
 - Date Range: Sun Aug 02 – Sat Aug 08, 2026
-- Week Type: realize
-- Primary Focus: Realize continues. Loads creep, volume stays stripped. Jerk load ramping toward test. Dunk attempts every Sat. BJJ 1–2 LIGHT nights. Flex 1×/wk maintenance (Wed).
+- Week Type: **New Oly-forward split** (v9) — coach DNT wk12 re-homed
+- Primary Focus: Week 2 on the new split. Coach DNT wk12 Oly lifts (snatch, snatch pull, snatch DL, rack push press, jerk dip, power C&J) re-home onto Tue/Thu/Fri/Sat. Squat + upper waves continue. Wed BJJ recovery. Fri + Sat optional.
 
 ## Source / Sync
 
-- **Peak/test block — your own lifts are the priority.** G2 clean+jerk peak (Thu) + G5 bench+pull-up peak (Mon) build toward the W18 tests.
-- **Coach DNT Oly (if still dropping):** re-homes by pattern but yields to your test peaks. ≤6/session.
+- **Coach program:** `2andy program11--12.pdf` → using **DNT Week 12**. Re-homed by pattern.
+- **Loads:** back/front squat converted; snatch / clean / jerk stay **%** pending 1RMs.
+- **Sync rule:** DNT wk12 = arc W14. Next drop = wk13–14 → W15–W16.
+
+## The Split (v9)
+
+Same as W13 — Sun/Mon own strength anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only. Coach Oly first (~2/day by pattern), coach accessories → Thu/Fri, 6-cap.
 
 ## 7-Day Overview
 
-1. Sun Aug 02 (SUNDAY): **Active Recovery + Light Posterior** + Light Side-Split Maintenance
-2. Mon Aug 03 (MONDAY): **Upper — Bench Peak (3×3@205) + Pull-Up (4×3@+50)** | 🥋 BJJ light
-3. Tue Aug 04 (TUESDAY): **Lower/Speed — Snatch + Sprint PRs** | optional 🥋 BJJ light
-4. Wed Aug 05 (WEDNESDAY): **Side-Split Maintenance (no barbell)** | optional 🥋 BJJ light
-5. Thu Aug 06 (THURSDAY): **Free Oly — Power Clean + Jerk peak + Speed Work** | evening free
-6. Fri Aug 07 (FRIDAY): 🛌 REST (pre-jump)
-7. Sat Aug 08 (SATURDAY): JUMP DAY (TEST DAY) — Max Jump + Dunk Attempts — Depth Jumps (mid box)
+1. Sun Aug 02 (SUNDAY): **Heavy Lower** — back-squat wave (3×5)
+2. Mon Aug 03 (MONDAY): **Heavy Upper** — bench + pull-up (3×5) | 🥋 BJJ
+3. Tue Aug 04 (TUESDAY): **Oly Lift + Mobility Legs** — Snatch + Snatch HP (coach) | 🥋 BJJ
+4. Wed Aug 05 (WEDNESDAY): **BJJ only** *(rest)* | 🥋 BJJ
+5. Thu Aug 06 (THURSDAY): **Oly Lift + Lower** — Power C&J + Snatch DL (coach) + front-squat wave (3×5) | 🥋 BJJ
+6. Fri Aug 07 (FRIDAY): **Oly Lift + Upper** — Rack Push Press + Jerk Dip (coach) *(optional)*
+7. Sat Aug 08 (SATURDAY): **Oly Lift + Jump/Dunk** *(optional)*
 
-## Sun Aug 02 (SUNDAY) — Active Recovery + Light Posterior + Light Side-Split Maintenance
+## Sun Aug 02 (SUNDAY) — Heavy Lower
 
-1. Stiff-Legged Deadlift (light): 3×5 @ 225 lb
-2. Hand-Supported Bulgarian SS: 2×8/leg @ 40 lb
-3. Glute-Ham Raise: 2×8 @ BW
-4. Pigeon Stretch: 3×60s/side
-5. Cossack Squat: 3×8/side @ BW
+| # | Lift | Scheme | Superset |
+|---|------|--------|----------|
+| 1 | Back Squat *(wk: 3×5)* | 3×5 @ 300 | straight |
+| 2a | Deadlift *(month's variation)* | 3×5, RPE 7–8 | ⟷ 2b |
+| 2b | Horse Stance | 3×10 | ⟷ 2a |
+| 3a | Nordic | 3×8–10 | ⟷ giant set |
+| 3b | Copenhagen | 3×8–10/side | ⟷ |
+| 3c | Hip-Thrust | 3×8–10 | ⟷ |
+| 3d | Tailor Pose | 3×30–45s | ⟷ |
+| 4 | Full Side Split Stretch | 3×60–90s | closer + G3 measure |
 
-**Note:** Sunday is active recovery in B3. Light side-split maintenance only; the loaded flex session is Wed.
+## Mon Aug 03 (MONDAY) — Heavy Upper | BJJ
 
-## Mon Aug 03 (MONDAY) — Upper — Bench Peak + Pull-Up | BJJ light
+| # | Lift | Scheme |
+|---|------|--------|
+| 1a | Bench Press | 3×5 @ 215 ⟷ 1b |
+| 1b | Weighted Pull-Up | 3×5 @ +45 ⟷ 1a |
+| 2a | Push accessory | 3×8–10 ⟷ 2b |
+| 2b | Pull accessory | 3×8–10 |
+| 3a | Handstand | 3×30–45s ⟷ 3b |
+| 3b | Shoulder health | 3×12–15 |
 
-1. Bench Press: 3×3 @ 205 *(G5 driver)*
-2. Weighted Pull-Up: 4×3 @ +50 *(G5 driver — target +55–60×5)*
-3. Barbell Row: 4×5 @ 210
-4. DB Incline Bench (neutral): 3×5 @ 75
-5. Chest-Supported Row: 3×6 @ Heavy
-6. *(trim to cap — rotate: Weighted Dips +40, DB Lateral Raise @25)*
+Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
-**Evening:** 🥋 BJJ light — technique/drilling only, no hard rolling.
+## Tue Aug 04 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
 
-## Tue Aug 04 (TUESDAY) — Lower/Speed — Snatch + Sprint PRs | optional BJJ light
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Snatch | 80–90% ≈ 95 lb, 5×(2-1) | coach |
+| 2 | Snatch High Pull | 90% ≈ 115 lb, 4×2 | coach |
+| 3 | Zercher Side Squat | 3×6–8/side | own |
 
-1. Hang Power Snatch: 4×2 @ 68% (130)
-2. DB Push Press (neutral): 4×3 @ 60
-3. Continuous Broad Jumps: 3×3 @ Max dist
-4. Sprints (PR chase): 3×20yd, 1×40yd @ 100% PR
-5. Copenhagen Lift: 3×20s/side @ BW
+**Evening:** 🥋 BJJ.
 
-**Evening:** optional 🥋 BJJ light (technique only).
+## Wed Aug 05 (WEDNESDAY) — BJJ only *(rest)* | BJJ
 
-## Wed Aug 05 (WEDNESDAY) — Side-Split Maintenance (no barbell) | optional BJJ light
+No lifting. **Evening:** 🥋 BJJ.
 
-**Taper to maintenance (Matt Smith §9):** hold the gain. No barbell. Wed is the only loaded flex day in B3.
+## Thu Aug 06 (THURSDAY) — Oly Lift + Lower *(Front Squat)* | BJJ
 
-1. **[FLEX-B1]** Weighted Side Split Hold: 3×60s @ 30 lb
-2. **[FLEX-B2]** PNF Contract-Relax Splits: 3 rounds @ 10s on/30s relax
-3. **[FLEX-B3]** Pancake Good Morning: 3×8 @ Light
-4. **[FLEX-B4]** Cossack Squat (loaded): 3×6/side @ +15 lb
-5. **[FLEX-B5]** Pigeon Stretch: 2×60s/side
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Power Clean & Jerk | 85–90% ≈ 150 lb, 5×(2-1) | coach |
+| 2 | Snatch Deadlift | 90% ≈ 210 lb, 4×2 | coach |
+| 3 | Front Squat *(wave)* | 3×5 @ 260 | own |
+| 4 | Good Morning | 5×8 | coach acc |
 
-**Evening:** optional 🥋 BJJ light (technique only).
+**Evening:** 🥋 BJJ.
 
-## Thu Aug 06 (THURSDAY) — Free Oly — Power Clean + Jerk peak + Speed Work | evening free
+## Fri Aug 07 (FRIDAY) — Oly Lift + Upper *(optional)*
 
-**Free-Oly day, peaking G2.** Jerk load ramping (2nd week back) — keep crisp, revert to landmine/hang if pain ≥3 returns.
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Rack Push Press | 85–90% ≈ 130 lb, 5×(2-1) | coach |
+| 2 | Jerk Dip | ≈ 185 lb, 5×3 | coach |
+| 3 | Reverse Plank | 4×40s | coach acc |
+| 4 | Abdominal | 4×15 | coach acc |
 
-1. Power Clean: 4×2 @ 165 lb *(G2 driver)*
-2. Jerk (hang/rack): 4×2 @ 195 lb *(G2 driver)*
-3. Speed Squat: 4×2 @ 72% (265 lb)
-4. Jump Squat: 3×3 @ 30% (110 lb)
-5. RDL (light): 3×5 @ 255 lb
+## Sat Aug 08 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
 
-**Evening:** free (the only recovery valve — watch the load).
+| # | Lift | Scheme |
+|---|------|--------|
+| 1 | Sprints / Approach / Depth Jumps | per jump block |
+| 2 | Dunk Attempts | max intent, filmed |
+| 3 | *(opt)* Power Clean & Jerk overflow | 85–90% 5×(2-1) |
 
-## Fri Aug 07 (FRIDAY) — 🛌 REST
+## Coach accessories (reference menu)
 
-Full rest into jump day. No lift, no BJJ.
-
-## Sat Aug 08 (SATURDAY) — JUMP DAY (TEST DAY) — Max Jump + Dunk Attempts — Depth Jumps
-
-1. Sprints: 3×20yd @ 100% PR
-2. Approach Jumps: 5×2 @ max intent
-3. Depth Jump (mid box): 3×3 @ 24 in
-4. DUNK ATTEMPTS: 10+ attempts @ MAX intent, film all
-5. Hang Power Clean (finisher): 3×2 @ 150 lb
-
-## Daily Flexibility (15-20 min post-training)
-
-1. After each session: pigeon stretch 60s/side, frog 60s, couch stretch 60s/side, 90-90 switches.
-2. Wed = the single loaded side-split maintenance session (no barbell).
-3. **Never load splits before Sat jump day.** Wed → Sat is 3 days, safe.
+Good morning 5×8 · pull-up 5×10 · reverse plank 4×40s · abdominal 4×15. **Dropped from fixed slots:** coach back squat (covered by your Sun/Thu squat waves).
 
 ## Logging Checklist
 
-1. All working sets logged with load, reps, RPE, and notes.
-2. Top set logged for primary lifts (bench, pull-up, power clean, jerk).
-3. Sat jump day: log sprint times, best jump height, dunk attempt count + makes.
-4. Daily bodyweight + Wed side-split measurement (cm hip-to-floor).
-5. Shoulder + wrist pain rating (1-10) after Mon, Thu (jerk) sessions.
+Same as W13 — wave top sets + coach Oly + bw + side-split + BJJ + pain ratings.
 
 ## End-of-Week Review (filled Sun)
 
-1. Wins: <what progressed>
-2. Misses: <what was not completed or not clean>
-3. Metric Changes: <actual vs target>
-4. Adjustment For Next Week: <load/volume/recovery changes>
+1. Wins / 2. Misses / 3. Coach vs own / 4. Adjustment: W15 = next DNT drop (wk13–14), peak intensity.

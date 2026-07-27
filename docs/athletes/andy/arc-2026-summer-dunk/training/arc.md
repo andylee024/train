@@ -3,7 +3,7 @@
 **Start:** 2026-05-03 (Sunday)
 **End:** 2026-09-05 (Saturday)
 **Duration:** 18 weeks (3 blocks × 6 weeks)
-**Plan version:** v8 — DNT-driven Oly structure from W08 onward (2026-06-21); v7 re-entry redesign 2026-06-16 (see "Redesign note")
+**Plan version:** v9 — Oly-forward split from W13 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
 
 ---
 
@@ -49,54 +49,58 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 
 ---
 
-## Weekly Structure (4 lifting days + jump + 2-a-days)
+## Weekly Structure (v9 — Oly-forward split, from W13)
 
-The week is a CNS jigsaw built around **Saturday = jump day**. The athlete's split is fixed (Lower / Upper / Lower-Speed / free); BJJ + flexibility are the second sessions. The coach's DNT Olympic lifts re-home onto the matching day by movement pattern (~2/day); **Thu is a free Oly day** that absorbs overflow.
+> **v9 reprogram (2026-07-26):** the athlete pivoted the arc toward an **Olympic-lifting / strength identity**. Two own-programmed strength anchors (Sun heavy lower, Mon heavy upper) frame four coach-DNT Oly days (Tue/Thu/Fri/Sat). Wed is a BJJ-only recovery day. The Sat jump/dunk is now **optional** (the dunk becomes opportunistic, not a fixed weekly appointment). This supersedes the earlier jump-day-boss structure — see below.
 
-| Day | Daytime | Evening | Serves | Coach Oly lands here |
+| Day | Session | Priority | Evening | Coach Oly / notes |
 |---|---|---|---|---|
-| **Sun** | **Lower** (own block) + re-homed coach Oly + **Side-Split Session A** | rest | G2, G3, G1 | squats / clean pulls |
-| **Mon** | **Upper** (own block) + re-homed coach Oly | **BJJ No-Gi** (roll) | G2, G5, G4 | jerk / push press / overhead |
-| **Tue** | **Lower/Speed** (own block) + re-homed coach Oly | **BJJ Gi** (roll) | G2, G1, G4 | snatch / explosive pulls |
-| **Wed** | **Side-Split Session B** (loaded/resisted, no barbell) | **BJJ No-Gi** (roll) | G3, G4 | — |
-| **Thu** | **Free Oly** (athlete's choice + coach overflow) | **BJJ Gi** (roll) | G2, G1, G4 | overflow valve |
-| **Fri** | 🛌 **REST** (pre-jump) | — | recovery | — |
-| **Sat** | **JUMP DAY** — sprints + approach + depth jumps + dunk attempts (W9+) | — | **G1**, G2 | — |
+| **Sun** | **Heavy Lower** — back-squat wave + deadlift wave + posterior/adductor accessories + full side-split | **Core** | rest | own only (no coach) |
+| **Mon** | **Heavy Upper** — bench wave + weighted-pull-up wave + shoulder health + passive leg stretches | **Core** | **BJJ** | own only (no coach) |
+| **Tue** | **Oly Lift + mobility legs** (loaded lateral: Zercher side squat, Cossack, horse stance) | **Core** | **BJJ** | snatch / explosive |
+| **Wed** | **BJJ only** (rest from lifting) | Rest | **BJJ** | — |
+| **Thu** | **Oly Lift + lower** — front-squat wave + coach clean/jerk + pulls | **Core** | **BJJ** | clean & jerk / snatch pull |
+| **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories | *Optional* | — | jerk / push press |
+| **Sat** | **Oly Lift + jump/dunk** — sprints + depth jumps + dunk attempts | *Optional* | — | power overflow |
+
+**The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave** (2–4 sets, volume medium→high→medium), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**. Same for the Mon upper primaries (bench variation + weighted pull-up).
 
 **Hard schedule rules:**
-- **BJJ runs Mon/Tue/Wed/Thu — all roll-OK** (all 48h+ from Saturday). No BJJ Fri or Sat (protects the jump). No more drill-only compromise.
-- **Friday is a full rest day** into jump day.
-- **Deep/loaded split work = Wed (Session B) + Sun (Session A)** only; both ≥48h from jump (adductor force).
-- **No heavy lower in the 48h *before* jump day** (VJ §13) — the lift days all sit Sun/Mon/Tue, well clear of Saturday.
-- Each lift day = the athlete's own block + the coach's **re-homed Olympic lifts (fixed, ~2/day)**; coach accessories are a reference menu. **6 exercises/session cap.**
+- **Coach Oly lifts go in first** on each Oly day (~2/day, re-homed by pattern — see DNT model). Then the athlete's own wave/mobility work fills to the **6-exercise cap**.
+- **BJJ runs Mon–Thu** (all roll-OK, 48h+ from an optional Sat). No BJJ Fri/Sat.
+- **Two heavy squat exposures/week** (Sun back + Thu front). Watch cumulative leg fatigue — the daily bodyweight log + Sat jump quality (when run) are the canaries.
+- **Loaded lateral/split work = Tue + Sun**; Tue→Sat is 96h, so even if Sat is run for jumps, adductor force has recovered.
+- **Fri + Sat are optional** — on a heavy week drop to the 4 core days (Sun/Mon/Tue/Thu) + Wed BJJ; skipping them is *by design, not a fall-off*. If Fri is skipped, slide its coach jerk to Sat.
 
-**Quality distribution (VJ §2.1):** Strength-Speed / Max Strength — coach Oly days (Sun/Mon/Tue) + free Oly (Thu). Speed-Strength / Reactive — Sat (sprints, approach, depth jumps). The jump stays the highest-quality target; coach loads are HIGH but never scheduled <48h before Saturday.
+**Note on the pivot:** this is an intentional turn away from the arc's original dunk-boss / reactivity-first design (see The Diagnosis §). Max-strength squat volume is now higher than the reactivity-deficit diagnosis would prescribe. The athlete owns this trade; the B3 tests (bench, clean/jerk, dunk) still stand in W18.
 
 ---
 
-## DNT Integration Model (coach plans every 2 weeks)
+## DNT Integration Model (v9 — coach Oly onto the fixed Oly days)
 
-The coach issues a new program ~every 2 weeks (always 3 days). It is the **engine of the lifting week**. **The athlete's split stays fixed; the coach's Olympic lifts re-home onto the matching day by movement pattern — never copy DNT's day structure, never add DNT days on top.** (Bolting a full external program *on top* is what caused the Block 1 fall-off; see review.)
+The coach issues a new program ~every 2 weeks (always 3 days). Its Olympic lifts are the **engine of the four Oly days**. **The athlete's split stays fixed; the coach's Olympic lifts re-home onto the matching Oly day by movement pattern — never copy DNT's day structure, never add DNT days on top.** (Bolting a full external program *on top* caused the Block 1 fall-off.)
 
 **The rule (how to process each drop):**
 
-1. **The split is fixed:** Sun **Lower** · Mon **Upper** · Tue **Lower/Speed** · Thu **free Oly**.
-2. **Every coach Olympic lift gets done that week** — non-negotiable. Each one re-homes onto the day whose pattern matches:
+1. **The Oly days are fixed:** Tue (snatch/explosive) · Thu (clean/jerk + front squat) · Fri (jerk/press) · Sat (power overflow + jump).
+2. **Coach Oly lifts come first — ~2 per Oly day**, re-homed by pattern:
 
    | Coach lift pattern | Re-homes to |
    |---|---|
-   | Squat | **Lower** (Sun) |
-   | Snatch / explosive pull / speed | **Lower/Speed** (Tue) |
-   | Clean / clean pull | **Lower** (Sun) or **Lower/Speed** (Tue) |
-   | Jerk / push press / overhead | **Upper** (Mon) |
-   | *(no matching day)* | closest day (default), else drop to the reference menu |
+   | Snatch / snatch pull / high pull | **Tue** |
+   | Clean & jerk / power clean | **Thu** (or Sat overflow) |
+   | Clean/snatch pull for Thu | **Thu** |
+   | Jerk / push press / overhead | **Fri** |
+   | *(power overflow)* | **Sat** |
 
-3. **Target ~2 Oly lifts per lift day.** If pattern-matching would push a day past 2, use a lift's *secondary* pattern (clean & jerk → Upper via the jerk) or spill the extra onto the **free Thu**, which exists to absorb overflow + the athlete's own choice.
-4. **The athlete's own full workout is the spine of each day.** The coach's **accessories are a reference menu** — sub in for own work if preferred.
-5. **6 exercises/session cap.** Coach Oly lifts come first, then fill from own workout and/or coach accessories.
-6. **Sync: the DNT program runs 2 weeks behind the arc** (e.g. DNT wk6 = arc wk8). On each new drop, reprocess into the then-current weeks.
+3. **Coach's back squat + clean/snatch deadlift are DROPPED** from the fixed slots — the athlete's own Sun back-squat wave + Thu front-squat wave already cover squatting/pulling. They live in the reference menu only.
+4. **Coach accessories fold into Thu (lower) + Fri (upper)** — a reference menu the athlete can sub for own accessory work.
+5. **6 exercises/session cap.** Coach Oly first, then own wave/mobility/accessory work.
+6. **Sync: DNT runs 2 weeks behind the arc as a numbering offset** (DNT wk N = arc W(N+2), *same calendar week* — not a time lag). On each new drop, reprocess into the then-current weeks. Current: DNT wk11–12 = arc W13–W14.
 
-Workflow: drop the new `DNT-wk-N.pdf`, process it (re-home the Oly lifts, list the accessories), update the current week files. Full methodology: `styles/dnt-integration-methodology.md`.
+Workflow: drop the new `*program*.pdf`, run `.claude/skills/integrate-dnt-workout/` (re-home the Oly lifts onto Tue/Thu/Fri/Sat, fold accessories into Thu/Fri), update the current week files. Full methodology: `styles/dnt-integration-methodology.md`.
+
+> **Note:** the `integrate-dnt-workout` skill still documents the *old* split's re-home table (Sun Lower / Mon Upper / Tue Lower-Speed / Thu Free). Update the skill to this v9 mapping on the next edit pass.
 
 ---
 
