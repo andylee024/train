@@ -22,11 +22,11 @@ Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly (TBD) · Wed BJJ-only.
 
 ## 7-Day Overview
 
-1. Sun Aug 09: **Heavy Lower** — back-squat wave (4×4, peak)
+1. Sun Aug 09: **Heavy Lower** — back-squat wave (4×6, high vol — 6-wk cycle wk3)
 2. Mon Aug 10: **Heavy Upper** — bench + pull-up (4×4) | 🥋 BJJ
 3. Tue Aug 11: **Oly Lift + Mobility Legs** — coach TBD | 🥋 BJJ
 4. Wed Aug 12: **BJJ only** *(rest)* | 🥋 BJJ
-5. Thu Aug 13: **Oly Lift + Lower** — coach TBD + front-squat wave (4×4) | 🥋 BJJ
+5. Thu Aug 13: **Oly Lift + Lower** — coach TBD + front-squat wave (4×6) | 🥋 BJJ
 6. Fri Aug 14: **Oly Lift + Upper** — coach TBD *(optional)*
 7. Sat Aug 15: **Oly Lift + Jump/Dunk** — high-box depth jumps *(optional)*
 
@@ -34,8 +34,8 @@ Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly (TBD) · Wed BJJ-only.
 
 | # | Lift | Scheme |
 |---|------|--------|
-| 1 | Back Squat *(wk: 4×4, peak)* | 4×4 @ 320 |
-| 2a | Deadlift *(month's variation)* | 4×4, RPE 8 ⟷ 2b Horse Stance 3×10 |
+| 1 | Back Squat *(wk: 4×6, high vol)* | 4×6 @ 295 |
+| 2a | Deadlift *(month's variation)* | 4×6, RPE 7 ⟷ 2b Horse Stance 3×10 |
 | 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Tailor Pose | 3×8–10 |
 | 4 | Full Side Split Stretch | 3×60–90s |
 
@@ -69,7 +69,7 @@ No lifting. **Evening:** 🥋 BJJ.
 |---|------|--------|--------|
 | 1 | 🏋️ Coach Oly — clean/jerk | TBD (next drop) | coach |
 | 2 | 🏋️ Coach Oly — snatch/clean pull | TBD (next drop) | coach |
-| 3 | Front Squat *(wave)* | 4×4 @ 275 | own |
+| 3 | Front Squat *(wave)* | 4×6 @ 255 | own |
 | 4 | Coach accessory | TBD | coach acc |
 
 **Evening:** 🥋 BJJ.

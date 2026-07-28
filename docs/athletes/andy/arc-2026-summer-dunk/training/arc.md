@@ -63,7 +63,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 | **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories | *Optional* | — | jerk / push press |
 | **Sat** | **Oly Lift + jump/dunk** — sprints + depth jumps + dunk attempts | *Optional* | — | power overflow |
 
-**The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave** (2–4 sets, volume medium→high→medium), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**. Same for the Mon upper primaries (bench variation + weighted pull-up).
+**The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave on a 6-week cycle** (2–4 sets, volume builds then tapers: 3×6 → 3×8 → 4×6 → 4×4 → taper → deload), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**, resetting every 6 weeks. The **Sun deadlift** follows the same 6-week wave (RPE-driven). The **Mon upper primaries** (bench variation + weighted pull-up) run their own independent wave. W13–W18 = one full 6-week lower cycle.
 
 **Hard schedule rules:**
 - **Coach Oly lifts go in first** on each Oly day (~2/day, re-homed by pattern — see DNT model). Then the athlete's own wave/mobility work fills to the **6-exercise cap**.

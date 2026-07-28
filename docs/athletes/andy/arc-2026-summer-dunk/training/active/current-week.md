@@ -4,6 +4,7 @@
 
 - Block: training/blocks/2026-07-block-03-peak-realize-test.md
 - Block Display: PEAK + REALIZE + TEST
+- **DNT (coach) Week: 11** — this week's Oly lifts = coach's wk11 program. (DNT wk11 = arc W13, same calendar week.)
 - Arc Week: 13 of 18
 - Block Week: 1 of 6
 - Date Range: Sun Jul 26 – Sat Aug 01, 2026
@@ -78,6 +79,8 @@ Passive leg stretches during rests (~8–12 min: wall middle-split, pancake, fro
 | 1 | Hang Power Snatch | 85–90% ≈ 95 lb, 5×(2-1) | coach |
 | 2 | Zercher Side Squat | 3×6–8/side | own |
 | 3 | Cossack Squat | 3×6–8/side | own |
+| 4 | Hip Abductor | 3×12–15 | own |
+| 5 | Curtsy Lunge | 3×8–10/side | own |
 
 **Evening:** 🥋 BJJ — roll OK.
 

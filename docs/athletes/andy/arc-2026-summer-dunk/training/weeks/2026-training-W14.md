@@ -22,11 +22,11 @@ Same as W13 — Sun/Mon own strength anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ
 
 ## 7-Day Overview
 
-1. Sun Aug 02 (SUNDAY): **Heavy Lower** — back-squat wave (3×5)
+1. Sun Aug 02 (SUNDAY): **Heavy Lower** — back-squat wave (3×8, high vol — 6-wk cycle wk2)
 2. Mon Aug 03 (MONDAY): **Heavy Upper** — bench + pull-up (3×5) | 🥋 BJJ
 3. Tue Aug 04 (TUESDAY): **Oly Lift + Mobility Legs** — Snatch + Snatch HP (coach) | 🥋 BJJ
 4. Wed Aug 05 (WEDNESDAY): **BJJ only** *(rest)* | 🥋 BJJ
-5. Thu Aug 06 (THURSDAY): **Oly Lift + Lower** — Power C&J + Snatch DL (coach) + front-squat wave (3×5) | 🥋 BJJ
+5. Thu Aug 06 (THURSDAY): **Oly Lift + Lower** — Power C&J + Snatch DL (coach) + front-squat wave (3×8) | 🥋 BJJ
 6. Fri Aug 07 (FRIDAY): **Oly Lift + Upper** — Rack Push Press + Jerk Dip (coach) *(optional)*
 7. Sat Aug 08 (SATURDAY): **Oly Lift + Jump/Dunk** *(optional)*
 
@@ -34,8 +34,8 @@ Same as W13 — Sun/Mon own strength anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ
 
 | # | Lift | Scheme | Superset |
 |---|------|--------|----------|
-| 1 | Back Squat *(wk: 3×5)* | 3×5 @ 300 | straight |
-| 2a | Deadlift *(month's variation)* | 3×5, RPE 7–8 | ⟷ 2b |
+| 1 | Back Squat *(wk: 3×8)* | 3×8 @ 280 | straight |
+| 2a | Deadlift *(month's variation)* | 3×8, RPE 7 | ⟷ 2b |
 | 2b | Horse Stance | 3×10 | ⟷ 2a |
 | 3a | Nordic | 3×8–10 | ⟷ giant set |
 | 3b | Copenhagen | 3×8–10/side | ⟷ |
@@ -76,7 +76,7 @@ No lifting. **Evening:** 🥋 BJJ.
 |---|------|--------|--------|
 | 1 | Power Clean & Jerk | 85–90% ≈ 150 lb, 5×(2-1) | coach |
 | 2 | Snatch Deadlift | 90% ≈ 210 lb, 4×2 | coach |
-| 3 | Front Squat *(wave)* | 3×5 @ 260 | own |
+| 3 | Front Squat *(wave)* | 3×8 @ 240 | own |
 | 4 | Good Morning | 5×8 | coach acc |
 
 **Evening:** 🥋 BJJ.

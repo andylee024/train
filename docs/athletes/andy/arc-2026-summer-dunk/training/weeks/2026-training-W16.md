@@ -8,7 +8,7 @@
 - Block Week: 4 of 6
 - Date Range: Sun Aug 16 – Sat Aug 22, 2026
 - Week Type: **New Oly-forward split** (v9) — peak crest
-- Primary Focus: Peak crest on the new split. Squat/upper waves at their high-volume bracket (last hard push before taper). Coach DNT wk13–14 re-homed (once dropped). Last high-box depth jumps Sat. Wed BJJ recovery. Fri + Sat optional.
+- Primary Focus: Peak crest on the new split. Squat wave hits its heavy-crest bracket (4×4 @320 — 6-wk cycle wk4), last hard intensity push before taper. Coach DNT wk13–14 re-homed (once dropped). Last high-box depth jumps Sat. Wed BJJ recovery. Fri + Sat optional.
 
 ## Source / Sync
 
@@ -21,11 +21,11 @@ Same as W15 — Sun/Mon own anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only.
 
 ## 7-Day Overview
 
-1. Sun Aug 16: **Heavy Lower** — back-squat wave (4×8, high volume)
+1. Sun Aug 16: **Heavy Lower** — back-squat wave (4×4, heavy crest — 6-wk cycle wk4)
 2. Mon Aug 17: **Heavy Upper** — bench + pull-up (4×8) | 🥋 BJJ
 3. Tue Aug 18: **Oly Lift + Mobility Legs** — coach TBD | 🥋 BJJ
 4. Wed Aug 19: **BJJ only** *(rest)* | 🥋 BJJ
-5. Thu Aug 20: **Oly Lift + Lower** — coach TBD + front-squat wave (4×8) | 🥋 BJJ
+5. Thu Aug 20: **Oly Lift + Lower** — coach TBD + front-squat wave (4×4) | 🥋 BJJ
 6. Fri Aug 21: **Oly Lift + Upper** — coach TBD *(optional)*
 7. Sat Aug 22: **Oly Lift + Jump/Dunk** — last high-box depth jumps *(optional)*
 
@@ -33,8 +33,8 @@ Same as W15 — Sun/Mon own anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only.
 
 | # | Lift | Scheme |
 |---|------|--------|
-| 1 | Back Squat *(wk: 4×8, high vol)* | 4×8 @ 275 |
-| 2a | Deadlift *(month's variation)* | 4×8 ⟷ 2b Horse Stance 3×10 |
+| 1 | Back Squat *(wk: 4×4, crest)* | 4×4 @ 320 |
+| 2a | Deadlift *(month's variation)* | 4×4, RPE 8 ⟷ 2b Horse Stance 3×10 |
 | 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Tailor Pose | 3×8–10 |
 | 4 | Full Side Split Stretch | 3×60–90s |
 
@@ -68,7 +68,7 @@ No lifting. **Evening:** 🥋 BJJ.
 |---|------|--------|--------|
 | 1 | 🏋️ Coach Oly — clean/jerk | TBD | coach |
 | 2 | 🏋️ Coach Oly — snatch/clean pull | TBD | coach |
-| 3 | Front Squat *(wave)* | 4×8 @ 235 | own |
+| 3 | Front Squat *(wave)* | 4×4 @ 275 | own |
 | 4 | Coach accessory | TBD | coach acc |
 
 **Evening:** 🥋 BJJ.
