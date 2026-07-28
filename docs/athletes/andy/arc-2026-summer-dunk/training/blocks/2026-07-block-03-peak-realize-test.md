@@ -33,7 +33,24 @@ Peak + realize + test. Volume strips out so accumulated fatigue dissipates and t
 
 ## Split (5 lift days + Sat jump, Wed flex)
 
-Block 3 inherits the **fixed split** the arc switched to from W08 (Lower · Upper · Lower-Speed · Free-Oly), with peak adjustments: Sunday's Lower drops to active recovery, and **both G5 drivers (bench + pull-up) live on Mon** now that Friday is a rest day. The clean+jerk peak is the athlete's own Free-Oly choice on Thu (driving the G2 test).
+> ⚠️ **SUPERSEDED from W11 by the v9 Oly-forward split** (locked 2026-07-26). The block prose below — and Programming Strategy items 1, 2, 3, 4 — describe the pre-v9 model. The live split is:
+>
+> | Day | v9 (live) | This block's prose (superseded) |
+> |---|---|---|
+> | Sun | **Heavy Lower** — back-squat wave | Active Recovery, no heavy squat |
+> | Mon | **Heavy Upper** — bench + pull-up waves | Upper — bench + pull-up ✓ *(agrees)* |
+> | Tue | **Oly (snatch) + mobility legs** | Lower/Speed — snatch + sprints *(≈ agrees)* |
+> | Wed | **BJJ only**, no lifting | Side-Split Maintenance |
+> | Thu | **Oly (C&J) + front-squat wave** | Free Oly — C&J + speed squat *(≈ agrees)* |
+> | Fri | **Oly + upper** *(optional)* | Full rest, no BJJ |
+> | Sat | **Oly + jump/dunk** *(optional)* | JUMP DAY — dunk attempts ✓ *(agrees)* |
+>
+> **Unresolved conflicts** — these are programming decisions, not doc drift, and need an explicit call:
+> 1. **Squat.** Item 4 says "no straight heavy squats anywhere — they'd compromise Sat." v9 runs a heavy back-squat wave Sun *and* a front-squat wave Thu (W11 Sun executed at 3×6 @ 295). Either the peak logic or the squat waves has to give.
+> 2. **BJJ.** Item 2 tapers to 1–2 light technique nights. v9 W11 runs BJJ Mon/Tue/Wed/Thu, all roll-OK.
+> 3. **Fri/Sat.** Item 1 makes Sat the untouchable test day fed by a Fri rest. v9 marks both Fri and Sat *optional*.
+>
+> The **week files (`weeks/2026-training-W11…W16.md`) are authoritative** for day-by-day work. The per-week tables below are retained for their canonical load progressions (bench, pull-up, clean/jerk, depth-jump waves), which the strategy items above still govern.
 
 1. Sun: **Lower → Active Recovery** + Light Posterior + Light Side-Split Maintenance (very light)
 2. Mon: **Upper — Bench Peak + Weighted Pull-Up** (both G5 drivers; pull-up folded in from the retired Fri vertical day) | BJJ light (technique)
