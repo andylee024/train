@@ -116,7 +116,7 @@ Read `profile.md` for the full version. Key facts to remember:
 - **Injuries healed 2026-06-14** — overhead/jerk/front-rack/full cleans now allowed (ramp window). No longer on hang-only / no-OHP.
 - He responds well to **PR tracking** — "you beat last week's load by X" drives engagement.
 - **Complexity is his #1 failure mode** (Block 1 fell off this way — a full external program got bolted *on top* of the week). Max 6 exercises/session, hard-capped. The DNT coach program is integrated by *re-homing its Olympic lifts onto the existing split by pattern* (~2/day), NOT added as extra days. Keep the cap; don't let coach lifts + accessories + own work stack past 6.
-- **Week shape (v9 split, from W13 — 2026-07-26):** Oly-forward. **Sun Heavy Lower** (back-squat wave) · **Mon Heavy Upper** (bench + pull-up waves) · **Tue Oly Lift + mobility legs** · **Wed BJJ only** (rest) · **Thu Oly Lift + lower** (front-squat wave) · **Fri Oly Lift + upper** *(optional)* · **Sat Oly Lift + jump/dunk** *(optional)*. Coach DNT Oly lifts go in FIRST on Tue/Thu/Fri/Sat (~2/day by pattern: snatch→Tue, clean/jerk→Thu, jerk→Fri, power→Sat); coach accessories fold into Thu/Fri; coach back squat + deadlift are DROPPED (own squat waves cover it). Sun back-squat + Thu front-squat each run a weekly undulating wave (2–4 sets), variation rotating monthly. BJJ Mon–Thu. **Two heavy squat days (Sun/Thu) — daily bw log + Sat jump quality are the canaries.** Fri/Sat optional = drop to 4 core days on a heavy week, by design not a fall-off.
+- **Week shape (v9 split, from W11 — reprogrammed 2026-07-26; arc weeks renumbered to DNT weeks 2026-07-28):** Oly-forward. **Sun Heavy Lower** (back-squat wave) · **Mon Heavy Upper** (bench + pull-up waves) · **Tue Oly Lift + mobility legs** · **Wed BJJ only** (rest) · **Thu Oly Lift + lower** (front-squat wave) · **Fri Oly Lift + upper** *(optional)* · **Sat Oly Lift + jump/dunk** *(optional)*. Coach DNT Oly lifts go in FIRST on Tue/Thu/Fri/Sat (~2/day by pattern: snatch→Tue, clean/jerk→Thu, jerk→Fri, power→Sat); coach accessories fold into Thu/Fri; coach back squat + deadlift are DROPPED (own squat waves cover it). Sun back-squat + Thu front-squat each run a weekly undulating wave (2–4 sets), variation rotating monthly. BJJ Mon–Thu. **Two heavy squat days (Sun/Thu) — daily bw log + Sat jump quality are the canaries.** Fri/Sat optional = drop to 4 core days on a heavy week, by design not a fall-off.
 
 ---
 
@@ -161,7 +161,7 @@ The **supply IS the system.** Be silent on nutrition during the week. Two touch 
 - `docs/athletes/andy/nutrition.md` (cross-arc, parent dir) — menu, Costco standing list, prep template, fallbacks
 - Supabase `daily_metrics.bodyweight_lb` — bw history
 
-**Block 3 = no cut.** When Wk 13 starts, switch the per-arc nutrition phase from −300 to maintenance. The constraint is already in the Hard Constraints section above; the per-arc `nutrition.md` is the source of truth for the phase value.
+**Block 3 = no cut.** Block 3 (now W11+, DNT-aligned) is underway — the per-arc nutrition phase should already be at maintenance (was −300 in B1–B2). The constraint is already in the Hard Constraints section above; the per-arc `nutrition.md` is the source of truth for the phase value.
 
 ---
 

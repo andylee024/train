@@ -1,9 +1,9 @@
-# Arc — Hybrid Athletic Arc (18 Weeks) — Summer 2026 Dunk
+# Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
 
 **Start:** 2026-05-03 (Sunday)
 **End:** 2026-09-05 (Saturday)
-**Duration:** 18 weeks (3 blocks × 6 weeks)
-**Plan version:** v9 — Oly-forward split from W13 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
+**Duration:** 16 weeks remaining-view (renumbered 2026-07-28 to align arc weeks with DNT coach weeks; originally 18 wks from May 3). Arc week now = DNT week.
+**Plan version:** v9 — Oly-forward split from W11 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
 
 ---
 
@@ -19,11 +19,11 @@ Priority order = triage order. When recovery runs short in a week, the lowest-pr
 
 | # | Goal | Test | Deadline |
 |---|---|---|---|
-| **G1** 🏀 | Dunk a women's basketball on a regulation 10' rim *(the boss)* | Filmed clean dunk | Wk 18 |
-| **G2** 🏋️ | Power clean 225 lb AND jerk 225 lb | Filmed clean lifts | Wk 18 |
-| **G3** 🤸 | Side split distance reduced ≥ 8 cm from baseline | Tape, weekly (Matt Smith milestones) | Wk 18 |
+| **G1** 🏀 | Dunk a women's basketball on a regulation 10' rim *(the boss)* | Filmed clean dunk | Wk 16 |
+| **G2** 🏋️ | Power clean 225 lb AND jerk 225 lb | Filmed clean lifts | Wk 16 |
+| **G3** 🤸 | Side split distance reduced ≥ 8 cm from baseline | Tape, weekly (Matt Smith milestones) | Wk 16 |
 | **G4** 🥋 | BJJ — light technique 3–4×/week, level up | Attendance + belt/skill progression | ongoing |
-| **G5** 💪 | Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean | 1RM bench + max-reps pull-up | Wk 18 |
+| **G5** 💪 | Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean | 1RM bench + max-reps pull-up | Wk 16 |
 
 *Pull-up target reset from the original +80×8 (unrealistic from the +25×5 baseline) to +55–60×5.*
 
@@ -42,14 +42,14 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 | Block | Weeks | Name | Purpose | Serves |
 |---|---|---|---|---|
 | **1** | 1–6 | Power Conversion + Upper Build | *(complete — see `reviews/blocks/block-1-review.md`)* | — |
-| **2** | 7–12 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
-| **3** | 13–18 | Peak + Realize + Test | Volume strips out; the jump realizes. Dunk every Sat. BJJ + flex taper. Test dunk, clean/jerk 225, bench 260, pull-up. | all |
+| **2** | 7–10 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
+| **3** | 11–16 | Peak + Realize + Test | Volume strips out; the jump realizes. Dunk every Sat. BJJ + flex taper. Test dunk, clean/jerk 225, bench 260, pull-up. | all |
 
 **Block 1 ended in a fall-off** (W4–6 collapse, see review). Block 2 therefore opens as a **re-entry**, not a continuation — see Redesign note.
 
 ---
 
-## Weekly Structure (v9 — Oly-forward split, from W13)
+## Weekly Structure (v9 — Oly-forward split, from W11)
 
 > **v9 reprogram (2026-07-26):** the athlete pivoted the arc toward an **Olympic-lifting / strength identity**. Two own-programmed strength anchors (Sun heavy lower, Mon heavy upper) frame four coach-DNT Oly days (Tue/Thu/Fri/Sat). Wed is a BJJ-only recovery day. The Sat jump/dunk is now **optional** (the dunk becomes opportunistic, not a fixed weekly appointment). This supersedes the earlier jump-day-boss structure — see below.
 
@@ -63,7 +63,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 | **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories | *Optional* | — | jerk / push press |
 | **Sat** | **Oly Lift + jump/dunk** — sprints + depth jumps + dunk attempts | *Optional* | — | power overflow |
 
-**The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave on a 6-week cycle** (2–4 sets, volume builds then tapers: 3×6 → 3×8 → 4×6 → 4×4 → taper → deload), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**, resetting every 6 weeks. The **Sun deadlift** follows the same 6-week wave (RPE-driven). The **Mon upper primaries** (bench variation + weighted pull-up) run their own independent wave. W13–W18 = one full 6-week lower cycle.
+**The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave on a 6-week cycle** (2–4 sets, volume builds then tapers: 3×6 → 3×8 → 4×6 → 4×4 → taper → deload), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**, resetting every 6 weeks. The **Sun deadlift** follows the same 6-week wave (RPE-driven). The **Mon upper primaries** (bench variation + weighted pull-up) run their own independent wave. W11–W16 = one full 6-week lower cycle (arc weeks now = DNT weeks).
 
 **Hard schedule rules:**
 - **Coach Oly lifts go in first** on each Oly day (~2/day, re-homed by pattern — see DNT model). Then the athlete's own wave/mobility work fills to the **6-exercise cap**.
@@ -72,7 +72,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 - **Loaded lateral/split work = Tue + Sun**; Tue→Sat is 96h, so even if Sat is run for jumps, adductor force has recovered.
 - **Fri + Sat are optional** — on a heavy week drop to the 4 core days (Sun/Mon/Tue/Thu) + Wed BJJ; skipping them is *by design, not a fall-off*. If Fri is skipped, slide its coach jerk to Sat.
 
-**Note on the pivot:** this is an intentional turn away from the arc's original dunk-boss / reactivity-first design (see The Diagnosis §). Max-strength squat volume is now higher than the reactivity-deficit diagnosis would prescribe. The athlete owns this trade; the B3 tests (bench, clean/jerk, dunk) still stand in W18.
+**Note on the pivot:** this is an intentional turn away from the arc's original dunk-boss / reactivity-first design (see The Diagnosis §). Max-strength squat volume is now higher than the reactivity-deficit diagnosis would prescribe. The athlete owns this trade; the B3 tests (bench, clean/jerk, dunk) still stand in W16.
 
 ---
 
@@ -96,7 +96,7 @@ The coach issues a new program ~every 2 weeks (always 3 days). Its Olympic lifts
 3. **Coach's back squat + clean/snatch deadlift are DROPPED** from the fixed slots — the athlete's own Sun back-squat wave + Thu front-squat wave already cover squatting/pulling. They live in the reference menu only.
 4. **Coach accessories fold into Thu (lower) + Fri (upper)** — a reference menu the athlete can sub for own accessory work.
 5. **6 exercises/session cap.** Coach Oly first, then own wave/mobility/accessory work.
-6. **Sync: DNT runs 2 weeks behind the arc as a numbering offset** (DNT wk N = arc W(N+2), *same calendar week* — not a time lag). On each new drop, reprocess into the then-current weeks. Current: DNT wk11–12 = arc W13–W14.
+6. **Sync: arc weeks are now aligned to DNT weeks** (renumbered 2026-07-28 — arc week = DNT week, offset removed). On each new drop, reprocess into the then-current weeks. Current: DNT wk11–12 = arc W11–W12.
 
 Workflow: drop the new `*program*.pdf`, run `.claude/skills/integrate-dnt-workout/` (re-home the Oly lifts onto Tue/Thu/Fri/Sat, fold accessories into Thu/Fri), update the current week files. Full methodology: `styles/dnt-integration-methodology.md`.
 
@@ -106,7 +106,7 @@ Workflow: drop the new `*program*.pdf`, run `.claude/skills/integrate-dnt-workou
 
 ## Testing Schedule
 
-| Metric | Baseline | Wk 12 | Wk 18 | Method | Serves |
+| Metric | Baseline | Wk 10 | Wk 16 | Method | Serves |
 |---|---|---|---|---|---|
 | Dunk attempt | grab rim | +3 in above rim | **DUNK** | Film | G1 |
 | Standing CMJ | **re-baseline W07** | +2.5 in | +4 in | Best of 3 | G1 |

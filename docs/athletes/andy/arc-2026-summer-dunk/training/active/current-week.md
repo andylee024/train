@@ -1,11 +1,11 @@
-# Week 2026-training-W13  *(active snapshot — new split v9)*
+# Week 2026-training-W11  *(active snapshot — new split v9, DNT-aligned)*
 
 ## Week Header
 
 - Block: training/blocks/2026-07-block-03-peak-realize-test.md
 - Block Display: PEAK + REALIZE + TEST
-- **DNT (coach) Week: 11** — this week's Oly lifts = coach's wk11 program. (DNT wk11 = arc W13, same calendar week.)
-- Arc Week: 13 of 18
+- **DNT (coach) Week: 11** — this week's Oly lifts = coach's wk11 program. (now aligned: DNT wk11 = arc W11.)
+- Arc Week: 11 of 16
 - Block Week: 1 of 6
 - Date Range: Sun Jul 26 – Sat Aug 01, 2026
 - Week Type: **New Oly-forward split** (v9) — own strength anchors (Sun/Mon) + coach DNT Oly days (Tue/Thu/Fri/Sat)
@@ -15,7 +15,7 @@
 
 - **Coach program:** `2andy program11--12.pdf` → using **DNT Week 11**. Re-homed onto the fixed Oly days by pattern.
 - **Loads:** converted off logged maxes (BS e1RM 380, FS 326, bench 267). Coach Oly loads anchored to recent working tops (Rack Jerk ~145, HPS ~95, Snatch HP ~115) — pure Oly lifts are logged submaximal, so confirm true maxes if higher.
-- **Sync rule:** DNT runs 2 weeks behind the arc (numbering offset — DNT wk11 = arc W13, same calendar week). Next drop = wk13–14 → W15–W16.
+- **Sync rule:** DNT week now = arc week (aligned 2026-07-28). Next drop = wk13–14 → W13–W14.
 
 ## The Split (v9 — locked 2026-07-26)
 
@@ -135,4 +135,4 @@ Split squat 4×8 · flyes 4×10 · sot press 4×8 · overhead squat 40kg 4×3 ·
 1. Wins: <what progressed — wave PRs, coach Oly loads>
 2. Misses: <what was not completed>
 3. Coach vs. own: <accessory routes, % → lb conversions still needed>
-4. Adjustment For Next Week: <W14 = coach wk12; snatch/clean/jerk maxes to convert %>
+4. Adjustment For Next Week: <W12 = coach wk12; snatch/clean/jerk maxes to convert %>
