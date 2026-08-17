@@ -12,8 +12,9 @@
 
 ## Source / Sync
 
-- **Coach program:** DNT **wk14** (process the wk13–14 drop into W13–W14). 🏋️ slots = **TBD** until it lands.
-- **Sync rule:** DNT week now = arc week (aligned 2026-07-28).
+- **Coach program:** `2andy program13-14.pdf` → **DNT wk14**, re-homed below. Snatch complex → Tue, both cleans → Thu, no dedicated jerk/press this week so Fri carries no coach Oly (own upper only).
+- **Loads:** coach Oly = **%** with lb estimates off recent tops — send true snatch/clean/jerk 1RMs to firm up.
+- **Sync rule:** DNT week now = arc week (aligned 2026-07-28). DNT wk14 = W14.
 
 ## The Split (v9)
 
@@ -23,10 +24,10 @@ Same as W15 — Sun/Mon own anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only.
 
 1. Sun Aug 16: **Heavy Lower** — back-squat wave (4×4, heavy crest — 6-wk cycle wk4)
 2. Mon Aug 17: **Heavy Upper** — bench + pull-up (4×8) | 🥋 BJJ
-3. Tue Aug 18: **Oly Lift + Mobility Legs** — coach TBD | 🥋 BJJ
+3. Tue Aug 18: **Oly Lift + Mobility Legs** — Hang Muscle Snatch+OHS + Snatch HP (coach) | 🥋 BJJ
 4. Wed Aug 19: **BJJ only** *(rest)* | 🥋 BJJ
-5. Thu Aug 20: **Oly Lift + Lower** — coach TBD + front-squat wave (4×4) | 🥋 BJJ
-6. Fri Aug 21: **Oly Lift + Upper** — coach TBD *(optional)*
+5. Thu Aug 20: **Oly Lift + Lower** — Hang Clean + Power C&J (coach) + front-squat wave (4×4) | 🥋 BJJ
+6. Fri Aug 21: **Oly Lift + Upper** — no coach jerk/press (own upper) *(optional)*
 7. Sat Aug 22: **Oly Lift + Jump/Dunk** — last high-box depth jumps *(optional)*
 
 ## Sun Aug 16 (SUNDAY) — Heavy Lower
@@ -52,9 +53,10 @@ Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
-| 1 | 🏋️ Coach Oly — snatch pattern | TBD | coach |
-| 2 | Zercher Side Squat | 3×6–8/side | own |
-| 3 | Cossack Squat | 3×6–8/side | own |
+| 1 | Hang Muscle Snatch + Overhead Squat | 80% 5×(2+1) (~85 lb) | coach |
+| 2 | Snatch High Pull | 85% 4×2 (~115 lb) | coach |
+| 3 | Zercher Side Squat | 3×6–8/side | own |
+| 4 | Cossack Squat | 3×6–8/side | own |
 
 **Evening:** 🥋 BJJ.
 
@@ -66,10 +68,10 @@ No lifting. **Evening:** 🥋 BJJ.
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
-| 1 | 🏋️ Coach Oly — clean/jerk | TBD | coach |
-| 2 | 🏋️ Coach Oly — snatch/clean pull | TBD | coach |
+| 1 | Hang Clean | 85–90% 5×(2-1) (~170 lb) | coach |
+| 2 | Power Clean & Jerk | 85–90% 5×(2-1) (~155 lb) | coach |
 | 3 | Front Squat *(wave)* | 4×4 @ 275 | own |
-| 4 | Coach accessory | TBD | coach acc |
+| 4 | Good Morning | 5×8 | coach acc |
 
 **Evening:** 🥋 BJJ.
 
@@ -77,8 +79,10 @@ No lifting. **Evening:** 🥋 BJJ.
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
-| 1 | 🏋️ Coach Oly — jerk/press | TBD | coach |
-| 2–3 | Coach accessories (upper) | TBD | coach acc |
+| 1 | *(no coach jerk/press in wk14 — both C&J re-homed to Thu)* | — | — |
+| 2 | Your own upper work / pull-up 5×10 | 3×8–10 | own / coach acc |
+
+**📋 Coach reference menu (wk14):** Pull-up 5×10 · Reverse Plank 4×40s · Abdominal 5×12. **Dropped from fixed slots:** Clean Deadlift 90% 5×2 + Back Squat 90% 3×2/80% 2×4 (your Sun/Thu squat waves cover these).
 
 ## Sat Aug 22 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
 

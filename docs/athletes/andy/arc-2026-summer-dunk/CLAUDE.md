@@ -45,6 +45,37 @@ The week file already has dated daily breakdowns ("Sun May 03 (SUNDAY) — Lower
 
 ---
 
+## "DNT overview" (on request)
+
+When the athlete asks for a **"DNT overview"** (or "the DNT lifts", "coach lifts today", "olympic overview"), they mean **the day's coach Olympic lifts only** — the lines sourced `coach` in that day's week-file table, NOT the own-work / mobility / accessories. Output them in exactly this format, one block per lift:
+
+```
+Exercise
+- set x rep
+- weight (kg/lbs)
+```
+
+Rules:
+- **Coach Oly lifts only** (source = `coach`). Skip own lifts, mobility, and coach accessories unless asked.
+- One block per lift, in the day's order.
+- Show **both kg and lbs** on the weight line (convert; 1 kg = 2.20462 lb). If the load is only a coach **%** with no converted number, show the % and the lb estimate, and note the max is pending.
+- If the day has no coach Oly (e.g. Sun/Mon, Wed, or a deload day with none), say so plainly.
+
+Example (W13 Thursday):
+```
+Hang Power Clean
+- 5 x 2
+- 68 kg / 150 lb (85%, est.)
+
+Power Clean & Jerk
+- 5 x 2
+- 68 kg / 150 lb (85%, est.)
+```
+
+The `/dnt-overview` skill produces this automatically for a given day.
+
+---
+
 ## When the athlete asks "why?"
 
 Answer from these sources, in order:
