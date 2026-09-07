@@ -7,68 +7,96 @@
 - Arc Week: 16 of 16
 - Block Week: 6 of 6
 - Date Range: Sun Aug 30 – Sat Sep 05, 2026
-- Week Type: **TEST WEEK** — the payoff
-- Primary Focus: Test the arc's KPIs on the new split's days. **Mon bench 1RM (260) · Thu clean 225 + jerk 225 filmed · Fri pull-up +55–60×5 · Sat DUNK filmed.** Full freshness; only primers between tests.
+- Week Type: **New Oly-forward split** (v9) — normal training (test week retired 2026-08-17; coach block continues)
+- Primary Focus: Coach DNT wk16 folded in — power clean + front-squat complex, hang muscle snatch complex, snatch high pull, power C&J. Own back-squat + upper waves continue. **No test week** (Sep 5 formal tests dropped — training continues; the goal lifts still get chased in-session). Wed BJJ recovery. Fri + Sat optional.
 
 ## Source / Sync
 
-- **Coach program:** yields entirely to the tests this week. No coach Oly volume — just the test lifts.
-- Everything else is a primer; nothing added that costs freshness.
+- **Coach program:** `2andy program115-16.pdf` → **DNT wk16**, re-homed below. Snatch complex → Tue, clean+front-squat complex → Thu, power C&J → Fri.
+- **Loads:** own squat/upper waves off maxes; coach Oly = **%** with lb estimates off recent tops.
+- **Sync rule:** DNT week = arc week (aligned). DNT wk16 = W16.
 
-## The Split (v9 — test week)
+## The Split (v9)
 
-The tests map onto the split's own days: Sun light, Mon = bench test, Thu = clean/jerk test, Fri = pull-up test, Sat = dunk test.
+Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly · Wed BJJ-only. Coach Oly first (~2/day by pattern), accessories → Thu/Fri, 6-cap. The coach clean+front-squat complex on Thu covers front-squat work this week.
 
 ## 7-Day Overview
 
-1. Sun Aug 30: **Light primer** — movement + side-split maintenance
-2. Mon Aug 31: 🎯 **BENCH 1RM TEST (260)** | rest
-3. Tue Sep 01: **Light Oly primer** — snatch singles @ 70%
-4. Wed Sep 02: 🛌 **REST**
-5. Thu Sep 03: 🎯 **CLEAN 225 + JERK 225 TEST** (filmed)
-6. Fri Sep 04: 🎯 **PULL-UP TEST (+55–60 × 5)**
-7. Sat Sep 05: 🎯 **DUNK a women's basketball — filmed** (the boss)
+1. Sun Aug 30: **Heavy Lower** — back-squat wave (3×8)
+2. Mon Aug 31: **Heavy Upper** — bench + pull-up (3×5) | 🥋 BJJ
+3. Tue Sep 01: **Oly Lift + Mobility Legs** — Hang Muscle Snatch+OHS + Snatch HP (coach) | 🥋 BJJ
+4. Wed Sep 02: **BJJ only** *(rest)* | 🥋 BJJ
+5. Thu Sep 03: **Oly Lift + Lower** — Power Clean+Front Squat (coach) | 🥋 BJJ
+6. Fri Sep 04: **Oly Lift + Upper** — Power Clean & Jerk (coach) *(optional)*
+7. Sat Sep 05: **Oly Lift + Jump/Dunk** *(optional)*
 
-## Sun Aug 30 (SUNDAY) — Light primer
+## Sun Aug 30 (SUNDAY) — Heavy Lower
 
-1. Back Squat: 3×2 @ 75% (crisp, no fatigue)
-2. Full Side Split Stretch: 2×60s (maintenance)
-3. Easy mobility, then rest.
+| # | Lift | Scheme |
+|---|------|--------|
+| 1 | Back Squat *(wk: 3×8)* | 3×8 @ 285 |
+| 2a | Deadlift *(month's variation)* | 3×8, RPE 7 ⟷ 2b Horse Stance 3×10 |
+| 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Tailor Pose | 3×8–10 |
+| 4 | Full Side Split Stretch | 3×60–90s |
 
-## Mon Aug 31 (MONDAY) — 🎯 BENCH 1RM TEST
+## Mon Aug 31 (MONDAY) — Heavy Upper | BJJ
 
-1. Warm-up ramp → **Bench Press: work to 1RM (target 260)** *(G5)*
-2. Optional back-off 1×3 @ 85%.
-Nothing else — protect Thu/Fri/Sat tests.
+| # | Lift | Scheme |
+|---|------|--------|
+| 1a | Bench Press | 3×5 @ 220 ⟷ 1b Weighted Pull-Up 3×5 @ +50 |
+| 2a | Weighted Dips ⟷ 2b Single-Arm Row | 3×8–10 |
+| 3a | Handstand ⟷ 3b Shoulder health | 3×30–45s / 3×12–15 |
 
-## Tue Sep 01 (TUESDAY) — Light Oly primer
+Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
-1. Snatch: singles @ 70%, crisp (nervous-system primer, not a workout)
-2. Easy mobility legs.
+## Tue Sep 01 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
 
-## Wed Sep 02 (WEDNESDAY) — 🛌 REST
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Hang Muscle Snatch + Overhead Squat | 80% 5×(2+1) (~85 lb) | coach |
+| 2 | Snatch High Pull | 85% 4×2 (~115 lb) | coach |
+| 3 | Zercher Side Squat | 3×6–8/side | own |
+| 4 | Cossack Squat | 3×6–8/side | own |
 
-Full rest before the clean+jerk test.
+**Evening:** 🥋 BJJ.
 
-## Thu Sep 03 (THURSDAY) — 🎯 CLEAN + JERK TEST
+## Wed Sep 02 (WEDNESDAY) — BJJ only *(rest)* | BJJ
 
-1. Warm-up ramp → **Power/Full Clean: work to top single (target 225)** *(G2, filmed)*
-2. **Jerk: work to top single (target 225)** *(G2, filmed)*
+No lifting. **Evening:** 🥋 BJJ.
 
-## Fri Sep 04 (FRIDAY) — 🎯 PULL-UP TEST
+## Thu Sep 03 (THURSDAY) — Oly Lift + Lower *(coach front-squat complex)* | BJJ
 
-1. **Weighted Pull-Up: +55–60 lb × max reps (target 5 clean)** *(G5, filmed)*
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Power Clean + Front Squat | 85–90% 5×(1+1) (~180 lb) | coach |
+| 2 | Good Morning | 5×8 | coach acc |
+| 3 | *(opt)* your own front-squat top single | work to a daily top | own |
 
-## Sat Sep 05 (SATURDAY) — 🎯 DUNK TEST (the boss)
+*(Front squat covered by the coach complex — chase a heavy clean+FS. Coach clean deadlift 90% + back squat 90% dropped: your Sun back-squat wave covers squatting.)*
 
-1. Sprints / approach primer (light)
-2. **DUNK ATTEMPTS — a women's basketball on a 10' rim, filmed.** *(G1 — the arc's boss goal.)*
-3. Celebrate the arc. 🏀
+**Evening:** 🥋 BJJ.
+
+## Fri Sep 04 (FRIDAY) — Oly Lift + Upper *(optional)*
+
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Power Clean & Jerk | 85–90% 5×(2-1) (~155 lb) | coach |
+| 2 | Reverse Plank | 4×40s | coach acc |
+| 3 | Abdominal | 5×12 | coach acc |
+
+**📋 Coach reference menu (wk16):** Pull-up 5×10 · Good Morning 5×8. **Dropped from fixed slots:** Clean Deadlift 90% 5×2 + Back Squat 90% (your Sun back-squat wave covers these).
+
+## Sat Sep 05 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
+
+| # | Lift | Scheme |
+|---|------|--------|
+| 1 | Sprints / Approach / Depth Jumps | per jump block |
+| 2 | Dunk Attempts | max intent, filmed |
 
 ## Logging Checklist
 
-Log every test: bench 1RM, clean single, jerk single, pull-up load × reps, dunk make (Y/N) + film. Final bodyweight + side-split measurement for the arc retrospective.
+Wave top sets + coach Oly + bw + side-split + BJJ + pain ratings.
 
-## End-of-Arc Review
+## End-of-Arc note
 
-Run the `progress-review` skill (arc scope) after Sat: KPIs vs targets, what the new split delivered, decisions for the next arc.
+The formal Sep 5 test week was retired 2026-08-17 (chose to run the coach block through). The arc goals — clean/jerk 225, bench 260, dunk — carry into the next arc; chase them in-session and run `progress-review` (arc scope) when you're ready to close this arc and plan the next.

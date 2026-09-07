@@ -4,7 +4,7 @@
 
 ## Purpose
 
-The final block, run on the **v9 Oly-forward split**. The arc has pivoted to an **Olympic-lifting / strength identity**: the athlete's own strength waves anchor Sun (heavy lower) + Mon (heavy upper), and the coach's DNT Oly work drives Tue/Thu/Fri/Sat. The **6-week lower wave** (back squat / front squat / deadlift) builds volume to a heavy crest (W13–W14), then tapers (W15) so the **W16 tests land fresh**. The Saturday jump/dunk is **optional** — opportunistic, not the weekly boss — but the dunk is still **tested** at W16 alongside bench, clean/jerk, and pull-up.
+The final block, run on the **v9 Oly-forward split**. The arc has pivoted to an **Olympic-lifting / strength identity**: the athlete's own strength waves anchor Sun (heavy lower) + Mon (heavy upper), and the coach's DNT Oly work drives Tue/Thu/Fri/Sat. The **6-week lower wave** (back squat / front squat / deadlift) builds volume to a heavy crest (W13–W14), then runs straight through W16. **The taper/test week was retired 2026-08-17** — chose to keep running the coach block rather than peak for a Sep 5 test day. The Saturday jump/dunk is **optional** — opportunistic, not the weekly boss.
 
 ## Goals (tests land W16 = Sep 5)
 
@@ -25,7 +25,7 @@ The final block, run on the **v9 Oly-forward split**. The arc has pivoted to an 
 7. **Fri + Sat are optional.** On a heavy week drop to the 4 core days (Sun/Mon/Tue/Thu) + Wed BJJ — skipping them is by design, not a fall-off. If Fri is skipped, slide its coach jerk to Sat.
 8. **Side-split / mobility:** Sunday closes with the full side-split stretch (+ weekly G3 tape measure); Tue carries the loaded lateral / side-glute work (Zercher side squat, Cossack, hip abductor, curtsy lunge). Tapers to maintenance in W15–W16.
 9. **Nutrition → maintenance** (no cut during peak, VJ §9).
-10. **Intensity curve:** W11–12 RPE 7–8 (realize) · W13–14 RPE 8–9 (peak crest) · **W15 TAPER** (~50% volume, 90% intensity) · **W16 TEST WEEK** (full freshness, primers only between tests).
+10. **Intensity curve:** W11–12 RPE 7–8 (realize) · W13–14 RPE 8–9 (peak crest) · **W15–W16** run the coach wk15–16 block at normal training load (taper/test retired 2026-08-17 — training runs to the end).
 
 ## Load Progressions (v9 — from the week files)
 
@@ -59,9 +59,10 @@ Sun **deadlift** follows the same rep schemes, RPE 7–8 (variation rotates mont
 |--------|-----|--------------|-------------------------|------------------|
 | W11 | wk11 | Hang Power Snatch ~95 | Power C&J ~150 · Snatch HP ~110 | Rack Jerk ~145 |
 | W12 | wk12 | Snatch ~95 · Snatch HP ~115 | Power C&J ~150 · Snatch DL ~210 | Rack Push Press ~130 · Jerk Dip ~185 |
-| W13–14 | wk13–14 | TBD (next drop) | TBD | TBD |
-| W15 | — | light / yields | light primer | light |
-| W16 | — | snatch single primer | **CLEAN + JERK TEST (225/225)** | yields to tests |
+| W13 | wk13 (deload) | — (no snatch) | Hang Power Clean · Power C&J | Rack Push Press · Rack Jerk |
+| W14 | wk14 | Hang Muscle Snatch+OHS · Snatch HP | Hang Clean · Power C&J | — (own upper) |
+| W15 | wk15 | Block Panda Pull | Block Power Clean+FS · Block Power Clean | Rack Jerk |
+| W16 | wk16 | Hang Muscle Snatch+OHS · Snatch HP | Power Clean+FS | Power C&J |
 
 ## Block map (arc W11–W16 = block weeks 1–6)
 
@@ -71,15 +72,11 @@ Sun **deadlift** follows the same rep schemes, RPE 7–8 (variation rotates mont
 | **W12** | 2 | Aug 02–08 | High volume · coach DNT wk12 |
 | **W13** | 3 | Aug 09–15 | Peak volume · coach TBD |
 | **W14** | 4 | Aug 16–22 | Heavy crest · coach TBD |
-| **W15** | 5 | Aug 23–29 | **TAPER** |
-| **W16** | 6 | Aug 30–Sep 05 | **TEST WEEK** |
+| **W15** | 5 | Aug 23–29 | Coach wk15 (block clean+FS complexes) |
+| **W16** | 6 | Aug 30–Sep 05 | Coach wk16 — **final week of the arc** |
 
-## Test week (W16)
+## End of arc (W16 = final week)
 
-- **Mon** — Bench 1RM (target 260), work up in singles, filmed *(G5)*
-- **Thu** — Clean 225 + Jerk 225, filmed top singles *(G2)*
-- **Fri** — Weighted pull-up +55–60 × max reps (target 5 clean) *(G5)*
-- **Sat** — DUNK a women's basketball on a 10' rim, filmed *(G1 — the boss goal)*
-- Full freshness; only light primers between tests. Then run the `progress-review` skill (arc scope).
+The formal Sep 5 **test week was retired 2026-08-17** — chose to run the coach wk15–16 block straight through instead of tapering to a test day. **W16 (Aug 30–Sep 05) is the last week of the arc.** The arc goals — clean/jerk 225, bench 260, dunk — carry into the next arc; chase them in-session, then run the `progress-review` skill (arc scope) to close this arc and plan the next.
 
 > Day-by-day loads are authoritative in `weeks/2026-training-W11…W16.md`. This doc governs the block-level "why" and the load progressions above.

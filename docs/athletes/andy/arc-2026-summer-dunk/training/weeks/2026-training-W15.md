@@ -7,79 +7,96 @@
 - Arc Week: 15 of 16
 - Block Week: 5 of 6
 - Date Range: Sun Aug 23 – Sat Aug 29, 2026
-- Week Type: **TAPER** (new split, ~50% volume / 90% intensity)
-- Primary Focus: Dissipate fatigue so the W16 tests land fresh. Same split shape, volume cut ~half — squat/upper waves drop to 2 light sets, coach Oly runs light or yields. BJJ 1 light night max. Fri + Sat optional (keep short).
+- Week Type: **New Oly-forward split** (v9) — normal training (taper/test dropped 2026-08-17; running the coach block through)
+- Primary Focus: Coach DNT wk15 folded in — block power clean + front-squat complexes, block panda pull, rack jerk. Own back-squat + upper waves continue. **No taper this week** (test week retired; training continues). Wed BJJ recovery. Fri + Sat optional.
 
 ## Source / Sync
 
-- **Coach program:** run coach Oly lifts (if present) at **reduced volume**, or skip in favor of test freshness. 🏋️ slots = **TBD / light**.
-- **Taper rule:** cut sets ~50%, keep load ~90%, no grinders.
+- **Coach program:** `2andy program115-16.pdf` → **DNT wk15**, re-homed below. Snatch absent this week; clean+front-squat complexes → Thu, clean pull → Tue, jerk → Fri.
+- **Loads:** own squat/upper waves off maxes; coach Oly = **%** with lb estimates off recent tops.
+- **Sync rule:** DNT week = arc week (aligned). DNT wk15 = W15.
 
-## The Split (v9 — tapered)
+## The Split (v9)
 
-Same skeleton, everything at half volume. **Priority = arriving fresh for W16 tests**, not adding work.
+Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly · Wed BJJ-only. Coach Oly first (~2/day by pattern), accessories → Thu/Fri, 6-cap. **Note:** the coach's clean+front-squat complexes on Thu cover the front-squat work this week, so no separate own front-squat wave.
 
 ## 7-Day Overview
 
-1. Sun Aug 23: **Heavy Lower (light)** — back squat 2×3 @ 85%
-2. Mon Aug 24: **Heavy Upper (light)** — bench + pull-up 2×3 | 🥋 BJJ light (opt)
-3. Tue Aug 25: **Oly Lift (light) + mobility** — coach light
-4. Wed Aug 26: **BJJ only** *(light / rest)*
-5. Thu Aug 27: **Oly Lift (light) + front squat 2×3** — coach light
-6. Fri Aug 28: 🛌 **REST / primer only** *(optional)*
-7. Sat Aug 29: **Jump/Dunk (low box)** *(optional, sharpen)*
+1. Sun Aug 23: **Heavy Lower** — back-squat wave (3×6)
+2. Mon Aug 24: **Heavy Upper** — bench + pull-up (3×6) | 🥋 BJJ
+3. Tue Aug 25: **Oly Lift + Mobility Legs** — Block Panda Pull (coach) | 🥋 BJJ
+4. Wed Aug 26: **BJJ only** *(rest)* | 🥋 BJJ
+5. Thu Aug 27: **Oly Lift + Lower** — Block Power Clean+Front Squat + Block Power Clean (coach) | 🥋 BJJ
+6. Fri Aug 28: **Oly Lift + Upper** — Rack Jerk (coach) *(optional)*
+7. Sat Aug 29: **Oly Lift + Jump/Dunk** *(optional)*
 
-## Sun Aug 23 (SUNDAY) — Heavy Lower (light)
-
-| # | Lift | Scheme |
-|---|------|--------|
-| 1 | Back Squat | 2×3 @ 85% (~315), crisp |
-| 2 | Deadlift (light) | 2×3, RPE 7 |
-| 3 | Nordic · Copenhagen (2 only) | 2×8 |
-| 4 | Full Side Split Stretch | 2×60s (maintenance) |
-
-## Mon Aug 24 (MONDAY) — Heavy Upper (light) | BJJ light
+## Sun Aug 23 (SUNDAY) — Heavy Lower
 
 | # | Lift | Scheme |
 |---|------|--------|
-| 1a | Bench Press | 2×3 @ 90% ⟷ 1b Weighted Pull-Up 2×3 |
-| 2 | 1 push + 1 pull accessory (light) | 2×8 |
+| 1 | Back Squat *(wk: 3×6)* | 3×6 @ 300 |
+| 2a | Deadlift *(month's variation)* | 3×6, RPE 7 ⟷ 2b Horse Stance 3×10 |
+| 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Tailor Pose | 3×8–10 |
+| 4 | Full Side Split Stretch | 3×60–90s |
 
-**Evening:** optional 🥋 BJJ light (technique only).
+## Mon Aug 24 (MONDAY) — Heavy Upper | BJJ
 
-## Tue Aug 25 (TUESDAY) — Oly Lift (light) + Mobility Legs
+| # | Lift | Scheme |
+|---|------|--------|
+| 1a | Bench Press | 3×6 @ 215 ⟷ 1b Weighted Pull-Up 3×6 @ +45 |
+| 2a | Weighted Dips ⟷ 2b Single-Arm Row | 3×8–10 |
+| 3a | Handstand ⟷ 3b Shoulder health | 3×30–45s / 3×12–15 |
+
+Passive leg stretches during rests. **Evening:** 🥋 BJJ.
+
+## Tue Aug 25 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
-| 1 | 🏋️ Coach Oly — snatch (light) | TBD / light | coach |
-| 2 | Cossack Squat (light) | 2×6/side | own |
+| 1 | Block Panda Pull (clean grip) | 85% 5×3 (~155 lb) | coach |
+| 2 | Zercher Side Squat | 3×6–8/side | own |
+| 3 | Cossack Squat | 3×6–8/side | own |
 
-## Wed Aug 26 (WEDNESDAY) — BJJ only *(light / rest)*
+**Evening:** 🥋 BJJ.
 
-Optional light BJJ or full rest.
+## Wed Aug 26 (WEDNESDAY) — BJJ only *(rest)* | BJJ
 
-## Thu Aug 27 (THURSDAY) — Oly Lift (light) + Front Squat
+No lifting. **Evening:** 🥋 BJJ.
+
+## Thu Aug 27 (THURSDAY) — Oly Lift + Lower *(coach front-squat complex)* | BJJ
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
-| 1 | 🏋️ Coach Oly — clean/jerk (light primer) | TBD / light | coach |
-| 2 | Front Squat | 2×3 @ 85%, crisp | own |
+| 1 | Block Power Clean + Front Squat | 80% 5×(2+1) (~165 lb) | coach |
+| 2 | Block Power Clean | 85% 5×2 (~175 lb) | coach |
+| 3 | Good Morning | 4×8 | coach acc |
 
-## Fri Aug 28 (FRIDAY) — REST / primer *(optional)*
+*(Front squat covered by the coach complex this week — no separate own front-squat wave.)*
 
-Full rest, or a light movement primer. Protect W16 freshness.
+**Evening:** 🥋 BJJ.
 
-## Sat Aug 29 (SATURDAY) — Jump/Dunk (sharpen) *(optional)*
+## Fri Aug 28 (FRIDAY) — Oly Lift + Upper *(optional)*
+
+| # | Lift | Scheme | Source |
+|---|------|--------|--------|
+| 1 | Rack Jerk | 80% 5×2 (~130 lb) | coach |
+| 2 | Flyes | 4×10 | coach acc |
+| 3 | Single-Arm Pull | 4×10 | coach acc |
+| 4 | Bar Dip | 4×10 | coach acc |
+
+**📋 Coach reference menu (wk15):** Overhead Squat 40kg 4×3 · Wrist 4×10 · Pull-up 4×10. **Dropped from fixed slots:** Back Squat 85% 5×3 (your Sun back-squat wave covers it).
+
+## Sat Aug 29 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
 
 | # | Lift | Scheme |
 |---|------|--------|
-| 1 | Sprints / Approach / **Low-box Depth Jumps** | 2×3 @ 18 in |
-| 2 | Dunk Attempts | short, sharp, filmed |
+| 1 | Sprints / Approach / Depth Jumps | per jump block |
+| 2 | Dunk Attempts | max intent, filmed |
 
 ## Logging Checklist
 
-Keep it light — top sets only, bw, note freshness/soreness heading into test week.
+Wave top sets + coach Oly + bw + side-split + BJJ + pain ratings.
 
 ## End-of-Week Review (filled Sun)
 
-Adjustment: W16 = TEST WEEK — bench (Mon), clean+jerk (Thu), pull-up (Fri), DUNK (Sat).
+1. Wins / 2. Misses / 3. Coach vs own / 4. Adjustment: W16 = coach wk16 (heavier clean+FS + snatch + C&J).
