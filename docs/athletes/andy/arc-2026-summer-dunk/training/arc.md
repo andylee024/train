@@ -1,7 +1,7 @@
 # Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
 
 **Start:** 2026-05-03 (Sunday)
-**End:** 2026-09-05 (Saturday)
+**End:** 2026-09-12 (Saturday) — recalibrated 2026-09-06: shifted the active block +7 days so arc week = coach DNT week (this week = W16).
 **Duration:** 16 weeks remaining-view (renumbered 2026-07-28 to align arc weeks with DNT coach weeks; originally 18 wks from May 3). Arc week now = DNT week.
 **Plan version:** v9 — Oly-forward split from W11 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
 

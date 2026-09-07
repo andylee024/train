@@ -6,7 +6,7 @@
 - Block Display: PEAK + REALIZE + TEST
 - Arc Week: 14 of 16
 - Block Week: 4 of 6
-- Date Range: Sun Aug 16 – Sat Aug 22, 2026
+- Date Range: Sun Aug 23 – Sat Aug 29, 2026
 - Week Type: **New Oly-forward split** (v9) — peak crest
 - Primary Focus: Peak crest on the new split. Squat wave hits its heavy-crest bracket (4×4 @320 — 6-wk cycle wk4), last hard intensity push before taper. Coach DNT wk13–14 re-homed (once dropped). Last high-box depth jumps Sat. Wed BJJ recovery. Fri + Sat optional.
 
@@ -22,15 +22,15 @@ Same as W15 — Sun/Mon own anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only.
 
 ## 7-Day Overview
 
-1. Sun Aug 16: **Heavy Lower** — back-squat wave (4×4, heavy crest — 6-wk cycle wk4)
-2. Mon Aug 17: **Heavy Upper** — bench + pull-up (4×8) | 🥋 BJJ
-3. Tue Aug 18: **Oly Lift + Mobility Legs** — Hang Muscle Snatch+OHS + Snatch HP (coach) | 🥋 BJJ
-4. Wed Aug 19: **BJJ only** *(rest)* | 🥋 BJJ
-5. Thu Aug 20: **Oly Lift + Lower** — Hang Clean + Power C&J (coach) + front-squat wave (4×4) | 🥋 BJJ
-6. Fri Aug 21: **Oly Lift + Upper** — no coach jerk/press (own upper) *(optional)*
-7. Sat Aug 22: **Oly Lift + Jump/Dunk** — last high-box depth jumps *(optional)*
+1. Sun Aug 23: **Heavy Lower** — back-squat wave (4×4, heavy crest — 6-wk cycle wk4)
+2. Mon Aug 24: **Heavy Upper** — bench + pull-up (4×8) | 🥋 BJJ
+3. Tue Aug 25: **Oly Lift + Mobility Legs** — Hang Muscle Snatch+OHS + Snatch HP (coach) | 🥋 BJJ
+4. Wed Aug 26: **BJJ only** *(rest)* | 🥋 BJJ
+5. Thu Aug 27: **Oly Lift + Lower** — Hang Clean + Power C&J (coach) + front-squat wave (4×4) | 🥋 BJJ
+6. Fri Aug 28: **Oly Lift + Upper** — no coach jerk/press (own upper) *(optional)*
+7. Sat Aug 29: **Oly Lift + Jump/Dunk** — last high-box depth jumps *(optional)*
 
-## Sun Aug 16 (SUNDAY) — Heavy Lower
+## Sun Aug 23 (SUNDAY) — Heavy Lower
 
 | # | Lift | Scheme |
 |---|------|--------|
@@ -39,7 +39,7 @@ Same as W15 — Sun/Mon own anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only.
 | 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Tailor Pose | 3×8–10 |
 | 4 | Full Side Split Stretch | 3×60–90s |
 
-## Mon Aug 17 (MONDAY) — Heavy Upper | BJJ
+## Mon Aug 24 (MONDAY) — Heavy Upper | BJJ
 
 | # | Lift | Scheme |
 |---|------|--------|
@@ -49,7 +49,7 @@ Same as W15 — Sun/Mon own anchors, Tue/Thu/Fri/Sat coach Oly, Wed BJJ-only.
 
 Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
-## Tue Aug 18 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
+## Tue Aug 25 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
@@ -60,11 +60,11 @@ Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
 **Evening:** 🥋 BJJ.
 
-## Wed Aug 19 (WEDNESDAY) — BJJ only *(rest)* | BJJ
+## Wed Aug 26 (WEDNESDAY) — BJJ only *(rest)* | BJJ
 
 No lifting. **Evening:** 🥋 BJJ.
 
-## Thu Aug 20 (THURSDAY) — Oly Lift + Lower *(Front Squat)* | BJJ
+## Thu Aug 27 (THURSDAY) — Oly Lift + Lower *(Front Squat)* | BJJ
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
@@ -75,7 +75,7 @@ No lifting. **Evening:** 🥋 BJJ.
 
 **Evening:** 🥋 BJJ.
 
-## Fri Aug 21 (FRIDAY) — Oly Lift + Upper *(optional)*
+## Fri Aug 28 (FRIDAY) — Oly Lift + Upper *(optional)*
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
@@ -84,7 +84,7 @@ No lifting. **Evening:** 🥋 BJJ.
 
 **📋 Coach reference menu (wk14):** Pull-up 5×10 · Reverse Plank 4×40s · Abdominal 5×12. **Dropped from fixed slots:** Clean Deadlift 90% 5×2 + Back Squat 90% 3×2/80% 2×4 (your Sun/Thu squat waves cover these).
 
-## Sat Aug 22 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
+## Sat Aug 29 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
 
 | # | Lift | Scheme |
 |---|------|--------|

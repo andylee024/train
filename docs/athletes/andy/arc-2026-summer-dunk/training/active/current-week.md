@@ -6,7 +6,7 @@
 - Block Display: PEAK + REALIZE + TEST
 - Arc Week: 16 of 16
 - Block Week: 6 of 6
-- Date Range: Sun Aug 30 – Sat Sep 05, 2026
+- Date Range: Sun Sep 06 – Sat Sep 12, 2026
 - Week Type: **New Oly-forward split** (v9) — normal training (test week retired 2026-08-17; coach block continues)
 - Primary Focus: Coach DNT wk16 folded in — power clean + front-squat complex, hang muscle snatch complex, snatch high pull, power C&J. Own back-squat + upper waves continue. **No test week** (Sep 5 formal tests dropped — training continues; the goal lifts still get chased in-session). Wed BJJ recovery. Fri + Sat optional.
 
@@ -22,15 +22,15 @@ Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly · Wed BJJ-only. Coach
 
 ## 7-Day Overview
 
-1. Sun Aug 30: **Heavy Lower** — back-squat wave (3×8)
-2. Mon Aug 31: **Heavy Upper** — bench + pull-up (3×5) | 🥋 BJJ
-3. Tue Sep 01: **Oly Lift + Mobility Legs** — Hang Muscle Snatch+OHS + Snatch HP (coach) | 🥋 BJJ
-4. Wed Sep 02: **BJJ only** *(rest)* | 🥋 BJJ
-5. Thu Sep 03: **Oly Lift + Lower** — Power Clean+Front Squat (coach) | 🥋 BJJ
-6. Fri Sep 04: **Oly Lift + Upper** — Power Clean & Jerk (coach) *(optional)*
-7. Sat Sep 05: **Oly Lift + Jump/Dunk** *(optional)*
+1. Sun Sep 06: **Heavy Lower** — back-squat wave (3×8)
+2. Mon Sep 07: **Heavy Upper** — bench + pull-up (3×5) | 🥋 BJJ
+3. Tue Sep 08: **Oly Lift + Mobility Legs** — Hang Muscle Snatch+OHS + Snatch HP (coach) | 🥋 BJJ
+4. Wed Sep 09: **BJJ only** *(rest)* | 🥋 BJJ
+5. Thu Sep 10: **Oly Lift + Lower** — Power Clean+Front Squat (coach) | 🥋 BJJ
+6. Fri Sep 11: **Oly Lift + Upper** — Power Clean & Jerk (coach) *(optional)*
+7. Sat Sep 12: **Oly Lift + Jump/Dunk** *(optional)*
 
-## Sun Aug 30 (SUNDAY) — Heavy Lower
+## Sun Sep 06 (SUNDAY) — Heavy Lower
 
 | # | Lift | Scheme |
 |---|------|--------|
@@ -39,7 +39,7 @@ Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly · Wed BJJ-only. Coach
 | 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Tailor Pose | 3×8–10 |
 | 4 | Full Side Split Stretch | 3×60–90s |
 
-## Mon Aug 31 (MONDAY) — Heavy Upper | BJJ
+## Mon Sep 07 (MONDAY) — Heavy Upper | BJJ
 
 | # | Lift | Scheme |
 |---|------|--------|
@@ -49,7 +49,7 @@ Sun/Mon own strength anchors · Tue/Thu/Fri/Sat coach Oly · Wed BJJ-only. Coach
 
 Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
-## Tue Sep 01 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
+## Tue Sep 08 (TUESDAY) — Oly Lift + Mobility Legs | BJJ
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
@@ -60,11 +60,11 @@ Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 
 **Evening:** 🥋 BJJ.
 
-## Wed Sep 02 (WEDNESDAY) — BJJ only *(rest)* | BJJ
+## Wed Sep 09 (WEDNESDAY) — BJJ only *(rest)* | BJJ
 
 No lifting. **Evening:** 🥋 BJJ.
 
-## Thu Sep 03 (THURSDAY) — Oly Lift + Lower *(coach front-squat complex)* | BJJ
+## Thu Sep 10 (THURSDAY) — Oly Lift + Lower *(coach front-squat complex)* | BJJ
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
@@ -76,7 +76,7 @@ No lifting. **Evening:** 🥋 BJJ.
 
 **Evening:** 🥋 BJJ.
 
-## Fri Sep 04 (FRIDAY) — Oly Lift + Upper *(optional)*
+## Fri Sep 11 (FRIDAY) — Oly Lift + Upper *(optional)*
 
 | # | Lift | Scheme | Source |
 |---|------|--------|--------|
@@ -86,7 +86,7 @@ No lifting. **Evening:** 🥋 BJJ.
 
 **📋 Coach reference menu (wk16):** Pull-up 5×10 · Good Morning 5×8. **Dropped from fixed slots:** Clean Deadlift 90% 5×2 + Back Squat 90% (your Sun back-squat wave covers these).
 
-## Sat Sep 05 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
+## Sat Sep 12 (SATURDAY) — Oly Lift + Jump/Dunk *(optional)*
 
 | # | Lift | Scheme |
 |---|------|--------|

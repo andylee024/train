@@ -68,12 +68,12 @@ Sun **deadlift** follows the same rep schemes, RPE 7–8 (variation rotates mont
 
 | Arc wk | Block wk | Dates | Focus |
 |--------|----------|-------|-------|
-| **W11** | 1 | Jul 26–Aug 01 | Realize entry · coach DNT wk11 |
-| **W12** | 2 | Aug 02–08 | High volume · coach DNT wk12 |
-| **W13** | 3 | Aug 09–15 | Peak volume · coach TBD |
-| **W14** | 4 | Aug 16–22 | Heavy crest · coach TBD |
-| **W15** | 5 | Aug 23–29 | Coach wk15 (block clean+FS complexes) |
-| **W16** | 6 | Aug 30–Sep 05 | Coach wk16 — **final week of the arc** |
+| **W11** | 1 | Aug 02–08 | Realize entry · coach DNT wk11 |
+| **W12** | 2 | Aug 09–15 | High volume · coach DNT wk12 |
+| **W13** | 3 | Aug 16–22 | Peak volume · coach TBD |
+| **W14** | 4 | Aug 23–29 | Heavy crest · coach TBD |
+| **W15** | 5 | Aug 30–Sep 05 | Coach wk15 (block clean+FS complexes) |
+| **W16** | 6 | Sep 06–12 | Coach wk16 — **final week of the arc** |
 
 ## End of arc (W16 = final week)
 
