@@ -57,7 +57,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 |---|---|---|---|---|
 | **Sun** | **Heavy Lower** — back-squat wave + deadlift wave + posterior/adductor accessories + full side-split | **Core** | rest | own only (no coach) |
 | **Mon** | **Heavy Upper** — bench wave + weighted-pull-up wave + shoulder health + **reactive finisher (2 plyos + sprints)** + passive leg stretches | **Core** | **BJJ** | own only (no coach) |
-| **Tue** | **Oly Lift + mobility legs** (loaded lateral: Zercher side squat, Cossack, horse stance) | **Core** | **BJJ** | snatch / explosive |
+| **Tue** | **Oly Lift + mobility legs** (fixed single-leg/lateral set: Zercher side squat, Cossack, Hip Airplanes, Copenhagen) | **Core** | **BJJ** | snatch / explosive |
 | **Wed** | **BJJ only** (rest from lifting) | Rest | **BJJ** | — |
 | **Thu** | **Oly Lift + lower** — front-squat wave + coach clean/jerk + pulls | **Core** | **BJJ** | clean & jerk / snatch pull |
 | **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories + **reactive finisher (2 plyos + sprints)** | *Optional* | — | jerk / push press |

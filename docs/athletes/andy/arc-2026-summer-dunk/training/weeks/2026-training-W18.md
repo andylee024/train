@@ -60,6 +60,9 @@ Passive leg stretches during rests. **Evening:** 🥋 BJJ.
 | 1 | Hang Power Snatch + Overhead Squat | 80–90% 5×(2+1) (~100 lb) | coach |
 | 2 | Snatch High Pull | 90% 4×2 (~120 lb) | coach |
 | 3 | Zercher Side Squat | 3×6–8/side | own |
+| 4 | Cossack Squat | 3×6–8/side | own |
+| 5 | Hip Airplanes | 3×8/side | own |
+| 6 | Copenhagen | 3×8–10/side | own |
 
 **Evening:** 🥋 BJJ.
 

@@ -61,6 +61,8 @@ Passive leg stretches during lifting rests. **Evening:** 🥋 BJJ.
 | 1 | Snatch Deadlift | 90% 5×2 (~210 lb) | coach |
 | 2 | Zercher Side Squat | 3×6–8/side | own |
 | 3 | Cossack Squat | 3×6–8/side | own |
+| 4 | Hip Airplanes | 3×8/side | own |
+| 5 | Copenhagen | 3×8–10/side | own |
 
 **Evening:** 🥋 BJJ.
 
