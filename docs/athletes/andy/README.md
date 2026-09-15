@@ -7,7 +7,6 @@ Andy Lee's athlete directory. Contents are scoped per-arc: each arc gets its own
 ```
 andy/
 ├── README.md                       ← this file
-├── nutrition.md                    ← cross-arc nutrition operating system
 ├── arc-2026-summer-dunk/           ← ACTIVE arc bundle (start README.md inside)
 └── logs/                           ← historical exercise CSVs (cross-arc)
 ```
@@ -22,9 +21,7 @@ The bundle is **self-contained**. Open the bundle's [`README.md`](arc-2026-summe
 
 - **Planned work:** markdown inside the active arc bundle.
 - **Executed work:** Supabase (`workouts`, `workout_exercises`, `exercise_sets`).
-- **Athlete-facing spreadsheet:** generated artifact at `arc-2026-summer-dunk/outputs/`.
-
-See [`docs/product/database-schema.md`](../../product/database-schema.md) and [`docs/product/live-renderer.md`](../../product/live-renderer.md) for the full data architecture.
+- **Progress view:** `web/dashboard` reads Supabase and renders it.
 
 ## When the active arc ends
 
@@ -35,4 +32,4 @@ When the 2026 summer dunk arc completes (Sep 5, 2026):
 3. The new bundle gets its own profile snapshot, arc.md, blocks, weeks, vendored styles
 4. The agent's pull target switches to the new bundle
 
-Athlete-level data that persists across arcs (logs, nutrition, identity) stays at this level.
+Athlete-level data that persists across arcs (logs, identity) stays at this level.

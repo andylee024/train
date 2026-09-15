@@ -1,27 +1,16 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { Pencil, Check, RotateCcw, X as XIcon } from "lucide-react";
-import type {
-  LiftChange,
-  KeyLiftCard,
-  TabHeadlines,
-  ExerciseSummary,
-} from "@/lib/queries";
-import { DashboardRenderer } from "@/components/widgets/dashboard-renderer";
-import { EditModeProvider } from "@/components/widgets/edit-context";
-import { useDashboardConfig } from "@/lib/widgets/use-dashboard-config";
-import { buildUpperConfig } from "@/app/strength/dashboards/upper";
-import { buildLowerConfig } from "@/app/strength/dashboards/lower";
-import { buildPowerConfig } from "@/app/strength/dashboards/power";
-import { viewFor, VIEWS, type View } from "@/lib/view";
+import { useState } from "react";
+import type { LiftChange, KeyLiftCard, TabHeadlines, ExerciseSummary } from "@/lib/queries";
+import { Panel } from "@/components/panel";
+import { LiftCard } from "@/components/lift-card";
+import { AllLifts } from "@/components/all-lifts";
+import { PRLog, prEventsFromSummaries } from "@/components/pr-log";
+import { BigNumber } from "@/components/viz/big-number";
+import { viewFor, VIEWS, KEY_LIFTS, type View } from "@/lib/view";
 import { cn } from "@/lib/cn";
 
-/**
- * Performance Views — switches between Upper / Lower / Power / Flexibility
- * lenses on the dashboard. Each view is a fully-composable widget canvas;
- * users can edit the layout per-view and persist it to localStorage.
- */
+/** Upper / Lower / Power lenses on the same data. Layout is fixed; edit this file to change it. */
 export function PerformanceViews({
   lifts,
   keyLifts,
@@ -36,143 +25,78 @@ export function PerformanceViews({
   initialView?: View;
 }) {
   const [view, setView] = useState<View>(initialView);
+  const inView = (name: string) => viewFor(name) === view;
+  const viewLifts = lifts.filter((l) => inView(l.name));
+  const h = headlines[view] ?? { prs30d: 0, sessions30d: 0, tonnage7d_lb: 0, liftsUp: 0, liftsTotal: 0 };
+  const cards = KEY_LIFTS[view].map((name) => keyLifts.find((k) => k.name === name) ?? emptyCard(name));
+  const prEvents = prEventsFromSummaries(summaries, 90, inView);
 
   return (
     <div>
       <div className="flex items-baseline gap-6 mb-5 border-b border-[var(--line)]">
-        {VIEWS.map((v) => {
-          const isActive = v === view;
-          return (
-            <button
-              key={v}
-              onClick={() => setView(v)}
-              className={cn(
-                "pb-2 -mb-px text-[11px] font-mono uppercase tracking-wider transition-colors",
-                isActive
-                  ? "text-[var(--accent)] border-b border-[var(--accent)]"
-                  : "text-[var(--ink-muted)] hover:text-[var(--ink-dim)]"
-              )}
-            >
-              {v}
-            </button>
-          );
-        })}
-      </div>
-
-      {view === "Flexibility" ? (
-        <FlexibilityPlaceholder />
-      ) : (
-        <ViewContent
-          view={view}
-          lifts={lifts}
-          keyLifts={keyLifts}
-          summaries={summaries}
-          headlines={headlines[view]}
-        />
-      )}
-    </div>
-  );
-}
-
-function ViewContent({
-  view,
-  lifts,
-  keyLifts,
-  summaries,
-  headlines,
-}: {
-  view: Exclude<View, "Flexibility">;
-  lifts: LiftChange[];
-  keyLifts: KeyLiftCard[];
-  summaries: ExerciseSummary[];
-  headlines: TabHeadlines | undefined;
-}) {
-  const inView = (name: string) => viewFor(name) === view;
-  const viewLifts = lifts.filter((l) => inView(l.name));
-
-  // Build the default config from props; editor wraps with localStorage state
-  const defaultConfig = useMemo(() => {
-    if (view === "Upper") return buildUpperConfig(headlines);
-    if (view === "Lower") return buildLowerConfig(headlines);
-    return buildPowerConfig(headlines);
-  }, [view, headlines]);
-
-  const editor = useDashboardConfig(defaultConfig);
-
-  const ctx = {
-    tabLifts: viewLifts,
-    keyLifts,
-    summaries,
-    headlines,
-    inTab: inView,
-  };
-
-  return (
-    <div>
-      <div className="flex items-center justify-end gap-2 mb-3">
-        {editor.editing ? (
-          <>
-            {editor.dirty && (
-              <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--accent)]">
-                unsaved
-              </span>
-            )}
-            <button
-              onClick={editor.resetToDefault}
-              className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--bad)] flex items-center gap-1 px-2 py-1 rounded-sm border border-[var(--line)] hover:border-[var(--bad)]"
-              title="Reset to default view"
-            >
-              <RotateCcw size={11} /> Reset
-            </button>
-            <button
-              onClick={editor.cancel}
-              className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--ink)] flex items-center gap-1 px-2 py-1 rounded-sm border border-[var(--line)]"
-            >
-              <XIcon size={11} /> Cancel
-            </button>
-            <button
-              onClick={editor.save}
-              className="text-[10px] font-mono uppercase tracking-wider text-[var(--accent-ink)] bg-[var(--accent)] hover:opacity-90 flex items-center gap-1 px-2 py-1 rounded-sm"
-            >
-              <Check size={11} /> Save
-            </button>
-          </>
-        ) : (
+        {VIEWS.map((v) => (
           <button
-            onClick={editor.toggleEdit}
-            className="text-[10px] font-mono uppercase tracking-wider text-[var(--ink-muted)] hover:text-[var(--accent)] flex items-center gap-1 px-2 py-1 rounded-sm border border-[var(--line)] hover:border-[var(--accent-line)]"
-            title="Edit view"
+            key={v}
+            onClick={() => setView(v)}
+            className={cn(
+              "pb-2 -mb-px text-[11px] font-mono uppercase tracking-wider transition-colors",
+              v === view
+                ? "text-[var(--accent)] border-b border-[var(--accent)]"
+                : "text-[var(--ink-muted)] hover:text-[var(--ink-dim)]",
+            )}
           >
-            <Pencil size={11} /> Edit View
+            {v}
           </button>
-        )}
+        ))}
       </div>
 
-      <EditModeProvider
-        value={{
-          editing: editor.editing,
-          onRemove: editor.removeWidget,
-          onReorder: editor.reorderWidget,
-        }}
-      >
-        <DashboardRenderer
-          config={editor.config}
-          ctx={ctx}
-          onAdd={editor.addWidget}
-        />
-      </EditModeProvider>
+      <div className="space-y-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <Panel><BigNumber caption="PRs last 30 d" value={h.prs30d} trend={h.prs30d > 0 ? "up" : null} /></Panel>
+          <Panel><BigNumber caption="Sessions 30 d" value={h.sessions30d} /></Panel>
+          <Panel><BigNumber caption="Tonnage 7 d" unit="lb" value={h.tonnage7d_lb > 0 ? h.tonnage7d_lb.toLocaleString() : "—"} /></Panel>
+          <Panel><BigNumber caption="Lifts moving ↗" value={h.liftsTotal > 0 ? `${h.liftsUp}/${h.liftsTotal}` : "—"} /></Panel>
+        </div>
+
+        <section>
+          <SectionRule label="Core Lifts" meta="e1RM trajectory · last 6 months" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {cards.map((c) => <LiftCard key={c.name} card={c} />)}
+          </div>
+        </section>
+
+        <Panel title="All Lifts">
+          <AllLifts lifts={viewLifts} keyNames={KEY_LIFTS[view]} />
+        </Panel>
+
+        <Panel title="Recent PRs" meta="last 90 days" empty={prEvents.length === 0} emptyMessage="no PRs in window">
+          <PRLog events={prEvents} limit={10} />
+        </Panel>
+      </div>
     </div>
   );
 }
 
-function FlexibilityPlaceholder() {
+function SectionRule({ label, meta }: { label: string; meta?: string }) {
   return (
-    <div className="py-6 text-[12px] text-[var(--ink-muted)]">
-      <div className="mb-2">ROM tests not yet wired.</div>
-      <div className="text-[11px]">
-        Once side-split tape and hip-IR ROM start logging, this view will adopt
-        the same widget engine (big numbers, core lifts, all lifts).
-      </div>
+    <div className="hairline pt-2 pb-2 mb-3 flex items-baseline justify-between">
+      <span className="section-label">{label}</span>
+      {meta && <span className="text-[10px] font-mono text-[var(--ink-muted)] tabular">{meta}</span>}
     </div>
   );
+}
+
+function emptyCard(name: string): KeyLiftCard {
+  return {
+    name,
+    slug: name.toLowerCase().replace(/\s+/g, "-"),
+    lastTouched: null,
+    sessionCount: 0,
+    tonnage_kg: 0,
+    e1rmDelta_kg: null,
+    currentE1rm_kg: null,
+    pr: null,
+    sparkline: [],
+    status: "—",
+  };
 }

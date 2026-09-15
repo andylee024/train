@@ -1,7 +1,7 @@
 # Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
 
 **Start:** 2026-05-03 (Sunday)
-**End:** 2026-09-12 (Saturday) — recalibrated 2026-09-06: shifted the active block +7 days so arc week = coach DNT week (this week = W16).
+**End:** 2026-09-26 (Saturday) — extended +2 wks 2026-09-15 to run coach wk17–18 (peak). Prior: recalibrated 2026-09-06 (+7 days so arc week = coach DNT week).
 **Duration:** 16 weeks remaining-view (renumbered 2026-07-28 to align arc weeks with DNT coach weeks; originally 18 wks from May 3). Arc week now = DNT week.
 **Plan version:** v9 — Oly-forward split from W11 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
 
@@ -43,7 +43,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 |---|---|---|---|---|
 | **1** | 1–6 | Power Conversion + Upper Build | *(complete — see `reviews/blocks/block-1-review.md`)* | — |
 | **2** | 7–10 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
-| **3** | 11–16 | Peak + Realize + Test | Volume strips out; the jump realizes. Dunk every Sat. BJJ + flex taper. Test dunk, clean/jerk 225, bench 260, pull-up. | all |
+| **3** | 11–18 | Peak + Realize + Test | Oly-forward strength block (v9). Squat/front-squat/deadlift PRs + coach DNT Oly. Coach peaks to max singles W17–18. Reactive finisher (plyos + sprints) added to upper days from W17. | all |
 
 **Block 1 ended in a fall-off** (W4–6 collapse, see review). Block 2 therefore opens as a **re-entry**, not a continuation — see Redesign note.
 
@@ -56,11 +56,11 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 | Day | Session | Priority | Evening | Coach Oly / notes |
 |---|---|---|---|---|
 | **Sun** | **Heavy Lower** — back-squat wave + deadlift wave + posterior/adductor accessories + full side-split | **Core** | rest | own only (no coach) |
-| **Mon** | **Heavy Upper** — bench wave + weighted-pull-up wave + shoulder health + passive leg stretches | **Core** | **BJJ** | own only (no coach) |
+| **Mon** | **Heavy Upper** — bench wave + weighted-pull-up wave + shoulder health + **reactive finisher (2 plyos + sprints)** + passive leg stretches | **Core** | **BJJ** | own only (no coach) |
 | **Tue** | **Oly Lift + mobility legs** (loaded lateral: Zercher side squat, Cossack, horse stance) | **Core** | **BJJ** | snatch / explosive |
 | **Wed** | **BJJ only** (rest from lifting) | Rest | **BJJ** | — |
 | **Thu** | **Oly Lift + lower** — front-squat wave + coach clean/jerk + pulls | **Core** | **BJJ** | clean & jerk / snatch pull |
-| **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories | *Optional* | — | jerk / push press |
+| **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories + **reactive finisher (2 plyos + sprints)** | *Optional* | — | jerk / push press |
 | **Sat** | **Oly Lift + jump/dunk** — sprints + depth jumps + dunk attempts | *Optional* | — | power overflow |
 
 **The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave on a 6-week cycle** (2–4 sets, volume builds then tapers: 3×6 → 3×8 → 4×6 → 4×4 → taper → deload), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**, resetting every 6 weeks. The **Sun deadlift** follows the same 6-week wave (RPE-driven). The **Mon upper primaries** (bench variation + weighted pull-up) run their own independent wave. W11–W16 = one full 6-week lower cycle (arc weeks now = DNT weeks).
@@ -71,6 +71,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 - **Two heavy squat exposures/week** (Sun back + Thu front). Watch cumulative leg fatigue — the daily bodyweight log + Sat jump quality (when run) are the canaries.
 - **Loaded lateral/split work = Tue + Sun**; Tue→Sat is 96h, so even if Sat is run for jumps, adductor force has recovered.
 - **Fri + Sat are optional** — on a heavy week drop to the 4 core days (Sun/Mon/Tue/Thu) + Wed BJJ; skipping them is *by design, not a fall-off*. If Fri is skipped, slide its coach jerk to Sat.
+- **Reactive finisher on upper days (from W17):** the upper sessions (Mon, Fri) close with **2 jumping plyometrics + sprints** (approach/box/depth jumps + 20yd sprints). This is the athlete's dedicated reactive/dunk stimulus — it directly serves the reactivity deficit (VJ §3) that the pure-strength block otherwise neglects. Keep it high-quality/low-volume, done *after* the lifting; cut it if legs are flat (Fri sits ~24h from Thu cleans).
 
 **Note on the pivot:** this is an intentional turn away from the arc's original dunk-boss / reactivity-first design (see The Diagnosis §). Max-strength squat volume is now higher than the reactivity-deficit diagnosis would prescribe. The athlete owns this trade; the B3 tests (bench, clean/jerk, dunk) still stand in W16.
 

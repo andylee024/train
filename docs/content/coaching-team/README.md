@@ -24,7 +24,7 @@ team/
                              #   ordering, appointments, calendar coordination.
 ```
 
-User-invocable Claude Code skills (e.g., `/training-plan`, `/create-training-style`) live at the repo root under `.claude/skills/`, not here. This folder is for the *role definitions* the agents embody when they run.
+User-invocable Claude Code skills live at the repo root under `.claude/skills/`, not here. This folder is for the *role definitions* the agents embody when they run.
 
 ## How team relates to training-styles
 

@@ -1,7 +1,7 @@
 {
   "name": "train",
   "version": "0.1.0",
-  "description": "Chat-first workout tracker CLI",
+  "description": "Workout tracker: markdown plans, Supabase logs, progress dashboard",
   "type": "module",
   "bin": {
     "train": "./app/cli/cli.ts"

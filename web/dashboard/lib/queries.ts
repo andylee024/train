@@ -1,4 +1,4 @@
-/** Supabase queries — server-side reads of training/nutrition data.
+/** Supabase queries — server-side reads of logged training data.
  *
  * All queries fetch via the foreign-table embed shape
  * `workout_exercise:workout_exercises ( workout:workouts (...), exercise:... )`.
@@ -7,7 +7,21 @@
  */
 
 import { supabase } from "./supabase";
-import type { SetRow, DailyMetric, ExercisePR } from "./types";
+
+export type SetRow = {
+  id: string;
+  workout_id: string;
+  exercise_id: string;
+  exercise_name: string;
+  set_index: number;
+  reps: number | null;
+  weight_value: number | null;
+  weight_unit: "kg" | "lb" | "bw" | null;
+  weight_kg: number | null;
+  rpe: number | null;
+  performed_at: string;
+};
+
 
 // ----- Constants --------------------------------------------------------------
 
@@ -55,29 +69,6 @@ function flattenRow(row: any): SetRow | null {
   };
 }
 
-// ----- Existing queries (kept as-is for /today, /nutrition) ------------------
-
-export async function getSetsForDate(date?: Date): Promise<SetRow[]> {
-  const d = date ?? new Date();
-  const start = new Date(d);
-  start.setHours(0, 0, 0, 0);
-  const end = new Date(start);
-  end.setDate(end.getDate() + 1);
-
-  const { data, error } = await supabase()
-    .from("exercise_sets")
-    .select(SET_SELECT)
-    .gte("workout_exercise.workout.performed_at", start.toISOString())
-    .lt("workout_exercise.workout.performed_at", end.toISOString())
-    .order("set_index");
-
-  if (error) {
-    console.error("getSetsForDate error", error);
-    return [];
-  }
-  return (data ?? []).map(flattenRow).filter((r): r is SetRow => r !== null);
-}
-
 export async function getRecentSets(
   opts: { exerciseName?: string; sinceDays?: number; limit?: number } = {}
 ): Promise<SetRow[]> {
@@ -103,46 +94,7 @@ export async function getRecentSets(
   return rows.slice(0, opts.limit ?? 10000);
 }
 
-export async function getDailyMetrics(days = 90): Promise<DailyMetric[]> {
-  const since = new Date();
-  since.setDate(since.getDate() - days);
-  const { data, error } = await supabase()
-    .from("daily_metrics")
-    .select("date, bodyweight_lb, notes")
-    .gte("date", since.toISOString().slice(0, 10))
-    .order("date", { ascending: true });
-  if (error) {
-    console.error("getDailyMetrics error", error);
-    return [];
-  }
-  return (data ?? []) as DailyMetric[];
-}
-
-export async function getRecentPRs(exerciseNames: string[]): Promise<ExercisePR[]> {
-  const rows = await Promise.all(
-    exerciseNames.map(async (name): Promise<ExercisePR | null> => {
-      const sets = await getRecentSets({ exerciseName: name, sinceDays: 365 });
-      let best: ExercisePR | null = null;
-      for (const s of sets) {
-        const e = e1rm(s.weight_kg, s.reps);
-        if (e <= 0) continue;
-        if (!best || e > best.e1rm_kg) {
-          best = {
-            exercise: s.exercise_name,
-            weight_kg: s.weight_kg!,
-            reps: s.reps!,
-            date: s.performed_at,
-            e1rm_kg: e,
-          };
-        }
-      }
-      return best;
-    })
-  );
-  return rows.filter((r): r is ExercisePR => r !== null);
-}
-
-// ----- New Progress queries --------------------------------------------------
+// ----- Exercise summaries ----------------------------------------------------
 
 export type ExerciseSummary = {
   name: string;
@@ -302,60 +254,6 @@ export async function getKeyLiftCards(names: string[]): Promise<KeyLiftCard[]> {
     });
   }
   return cards;
-}
-
-// ----- Tonnage by week -------------------------------------------------------
-
-export type TonnageWeek = {
-  week: string;          // ISO date of week start (Sunday)
-  weekLabel: string;     // "W12" etc, counting back from now
-  kg: number;
-};
-
-/**
- * Aggregate tonnage by ISO week. `category` optionally filters by an exercise
- * name pattern (case-insensitive substring).
- */
-export async function getTonnageByWeek(
-  opts: { weeks?: number; category?: string } = {}
-): Promise<TonnageWeek[]> {
-  const weeks = opts.weeks ?? 12;
-  const sets = await getRecentSets({ sinceDays: weeks * 7 + 7, limit: 5000 });
-  const filtered = opts.category
-    ? sets.filter((s) =>
-        s.exercise_name.toLowerCase().includes(opts.category!.toLowerCase())
-      )
-    : sets;
-
-  const byWeek = new Map<string, number>();
-  for (const s of filtered) {
-    if (!s.weight_kg || !s.reps) continue;
-    const wkStart = weekStart(new Date(s.performed_at));
-    const k = wkStart.toISOString().slice(0, 10);
-    byWeek.set(k, (byWeek.get(k) ?? 0) + s.weight_kg * s.reps);
-  }
-
-  // Build a contiguous range from oldest week back `weeks` long
-  const now = weekStart(new Date());
-  const out: TonnageWeek[] = [];
-  for (let i = weeks - 1; i >= 0; i--) {
-    const d = new Date(now);
-    d.setDate(d.getDate() - i * 7);
-    const key = d.toISOString().slice(0, 10);
-    out.push({
-      week: key,
-      weekLabel: i === 0 ? "now" : `W-${i}`,
-      kg: Math.round(byWeek.get(key) ?? 0),
-    });
-  }
-  return out;
-}
-
-function weekStart(d: Date): Date {
-  const x = new Date(d);
-  x.setHours(0, 0, 0, 0);
-  x.setDate(x.getDate() - x.getDay()); // Sunday
-  return x;
 }
 
 // ----- Lift change for the Strength growth/decline view ----------------------
@@ -554,43 +452,6 @@ export async function getTabHeadlines(
     };
   }
   return result;
-}
-
-// ----- Workout cadence for the consistency heatmap ---------------------------
-
-export type DayCell = {
-  date: string;        // YYYY-MM-DD
-  sets: number;        // 0 if no workout
-  exercises: number;   // unique exercises that day
-};
-
-/** Per-day workout activity for the last `days` days. */
-export async function getDailyActivity(days = 112): Promise<DayCell[]> {
-  const sets = await getRecentSets({ sinceDays: days + 1, limit: 10000 });
-  const byDate = new Map<string, { sets: number; ex: Set<string> }>();
-  for (const s of sets) {
-    const d = s.performed_at.slice(0, 10);
-    if (!byDate.has(d)) byDate.set(d, { sets: 0, ex: new Set() });
-    const e = byDate.get(d)!;
-    e.sets++;
-    e.ex.add(s.exercise_name);
-  }
-  // Fill contiguous range from oldest → today
-  const out: DayCell[] = [];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  for (let i = days - 1; i >= 0; i--) {
-    const d = new Date(today);
-    d.setDate(d.getDate() - i);
-    const key = d.toISOString().slice(0, 10);
-    const hit = byDate.get(key);
-    out.push({
-      date: key,
-      sets: hit?.sets ?? 0,
-      exercises: hit?.ex.size ?? 0,
-    });
-  }
-  return out;
 }
 
 // ----- Exercise detail data --------------------------------------------------

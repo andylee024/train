@@ -1,4 +1,4 @@
-# Week 2026-training-W17  *(active snapshot — v9, DNT-aligned)*
+# Week 2026-training-W17  *(new split — v9)*
 
 ## Week Header
 

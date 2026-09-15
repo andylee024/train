@@ -8,7 +8,8 @@ The Olympic-lifting coach (DNT Weightlifting Club) issues a new 3-day program ro
 |------|-----------|-----------|-------|--------|
 | `dnt-wk11-12_arc-W11-W12.pdf` | wk11–12 | W11–W12 | Jul 26 – Aug 8 | ✅ integrated |
 | `dnt-wk13-14_arc-W13-W14.pdf` | wk13–14 *(wk13 = deload)* | W13–W14 | Aug 9 – Aug 22 | ✅ integrated |
-| `dnt-wk15-16_arc-W15-W16.pdf` | wk15–16 | W15–W16 | Aug 23 – Sep 5 | ✅ integrated (taper/test retired; coach block run through) |
+| `dnt-wk15-16_arc-W15-W16.pdf` | wk15–16 | W15–W16 | Aug 30 – Sep 12 | ✅ integrated (taper/test retired; coach block run through) |
+| `dnt-wk17-18_arc-W17-W18.pdf` | wk17–18 *(peak — max singles)* | W17–W18 | Sep 13 – Sep 26 | ✅ integrated (arc extended +2 wks) |
 
 Earlier program from arc start lives at `../styles/dnt-program-2026-05-17.pdf` (pre-v9).
 

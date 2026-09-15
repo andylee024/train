@@ -2,19 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Dumbbell,
-  Gauge,
-  Target,
-  Utensils,
-  Settings,
-} from "lucide-react";
+import { Dumbbell, Gauge } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 const NAV = [
-  { href: "/plan", label: "Plan", icon: Target, shortcut: "P" },
   { href: "/strength", label: "Performance", icon: Gauge, shortcut: "S" },
-  { href: "/nutrition", label: "Nutrition", icon: Utensils, shortcut: "N" },
 ];
 
 export function Sidebar() {
@@ -58,20 +50,6 @@ export function Sidebar() {
         })}
       </nav>
 
-      {/* Footer */}
-      <div className="px-3 pb-4 pt-2 border-t border-[var(--line)]">
-        <Link
-          href="/settings"
-          className="flex items-center gap-3 px-3 py-2 rounded-md text-sm text-[var(--ink-muted)] hover:text-[var(--ink)] hover:bg-[var(--bg-elev-2)] transition-colors"
-        >
-          <Settings size={16} strokeWidth={2} />
-          Settings
-        </Link>
-        <div className="px-3 mt-3 flex items-center gap-2 text-xs text-[var(--ink-muted)]">
-          <div className="w-1.5 h-1.5 rounded-full bg-[var(--good)] animate-pulse" />
-          Connected
-        </div>
-      </div>
     </aside>
   );
 }

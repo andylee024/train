@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Train · Athlete OS",
-  description: "Plan, orchestrate, and track Andy's training arc.",
+  title: "Train",
+  description: "Andy's workout progress.",
 };
 
 export default function RootLayout({

@@ -26,15 +26,12 @@ Programmed with **Vertical Jump Bible** (primary, jump), **Dylan Shannon** (uppe
 | `CLAUDE.md` | AI agent operating instructions. | Read on every session start. |
 | `arc.md` | Arc-level context: purpose, goals, block sequence, testing schedule, constraints. | When asked "what's the big goal?" or "how does this block fit in?" |
 | `profile.md` | Athlete profile snapshot taken at arc start: stats, injuries, preferences, history. | When making any programming or substitution decision. |
-| `nutrition.md` | Per-arc nutrition phase: kcal phase per block, bw curve, exception rules. Inherits cross-arc OS at `docs/athletes/andy/nutrition.md`. | When the athlete asks about cut/maintenance phase, bw target, or "is my squat drop a nutrition signal?" |
 | `active/current-week.md` | **HOT PATH** — currently-active week's daily prescriptions. | Every morning. The agent reads this to answer "what's today's workout?" |
 | `active/current-block.md` | Currently-active block's full programming + strategy. | When the athlete asks "why this rep scheme?" or "what's the focus this block?" |
 | `blocks/*.md` | All 3 blocks for this arc, full week-by-week programming. | When asked about future blocks or to compare. |
 | `training/weeks/2026-training-W{01..18}.md` | All 18 weeks pre-rendered. | When asked "what's coming up in 3 weeks?" or "what did I do last Saturday?" |
-| `nutrition/weeks/2026-nutrition-W{NN}.md` | Generated weekly by `plan-weekly-meals` skill (just-in-time, not pre-rendered). | Saturday surface — meal plan + grocery list for the upcoming week. |
 | `styles/vertical-jump-guide.md` | Vendored copy of the VJ training style guide. | When asked "why depth jumps now?" or "what's the conjugate sequence?" |
 | `styles/dylan-shannon-guide.md` | Vendored copy of the Dylan Shannon style guide. | When asked about upper body programming logic or 4-pillar framework. |
-| *(no spreadsheet)* | The `.xlsx` view is retired (2026-06-21). The markdown week files are the plan. | — |
 
 ---
 
@@ -104,8 +101,6 @@ The agent should pull at minimum once a week (Sunday) to pick up the new `curren
 |---|---|---|
 | Executed sets (logged workouts) | Supabase (`exercise_sets` table) | This bundle is plan-only. Execution data is queried at runtime, not vendored. |
 | Session logs / notes | Supabase (`workouts.notes`) | Same. |
-| Daily metrics (bodyweight, sleep, RPE) | Supabase (`daily_metrics`) | Time-series data; bundle is static. |
-| Live spreadsheet (prescribed + actual) | Generated artifact | See `docs/product/live-renderer.md` in the train repo. Not yet built; eventually output to this bundle's `outputs/`. |
 
 ---
 

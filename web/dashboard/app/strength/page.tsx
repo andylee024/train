@@ -5,21 +5,10 @@ import {
   getTabHeadlines,
 } from "@/lib/queries";
 import { PerformanceViews } from "@/components/performance-views";
-import { viewFor } from "@/lib/view";
+import { viewFor, ALL_KEY_LIFTS } from "@/lib/view";
 import { PageHeader } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
-
-// Every key lift across all views — fetched in one call.
-// Names match canonical Supabase entries post-2026-05-25 cleanup.
-const ALL_KEY_LIFTS = [
-  // Upper
-  "Bench Press", "Chin-up/Pull-up", "BB OHP", "Dips",
-  // Lower
-  "Back Squat", "Front Squat", "Deadlift", "Hip Thrust",
-  // Power
-  "Power Clean", "Seated Vertical Jumps", "Approach Jumps", "Broad Jump",
-];
 
 async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
   try {

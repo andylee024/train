@@ -1,152 +1,52 @@
 # CLAUDE.md
 
-Orientation for Claude working in this repo. Read [`README.md`](README.md) first for the project overview; this file adds operational context.
+Read [`README.md`](README.md) first. This file adds what an agent needs to operate here.
 
-## Canonical product docs
+## What this repo is
 
-- [`PRD.md`](PRD.md) — product vision, JTBD, scope, success criteria. Start here.
-- [`SPEC.md`](SPEC.md) — technical spec (architecture, surfaces, data layer, decisions).
-- [`AGENTS.md`](AGENTS.md) — agent entry point.
-- [`docs/software-factory-workflow.md`](docs/software-factory-workflow.md) — how features get built (Feature/Task model, 4 personas, status contracts).
-- [`docs/product/decisions.md`](docs/product/decisions.md) — append-only decisions log.
-- Linear `train` project — Features + Tasks as `TR-xxx` issues.
+A single-athlete workout tracker. Plan lives in markdown, executed work lives in Supabase, the dashboard visualizes progress. Nothing else. Keep it that way — no generators, no spreadsheets, no product-process scaffolding.
 
-## Repo layout (one-line each)
+## Storage boundary
 
-Top-level rule: **code at the root, markdown under `docs/`**. Inside `docs/`, three pillars — `product/` (engineering reference), `content/` (cross-athlete library), `athletes/` (practice).
-
-Code:
-- `app/` — Supabase migrations + TS CLI (`app/cli/`) + seed scripts
-- `web/dashboard/` — Next.js dashboard (`/plan`, `/strength`, `/nutrition`, plan-creation flow)
-- `prototypes/` — UI experiments
-
-Docs:
-- `docs/software-factory-workflow.md` — engineering workflow contract
-- `docs/product/` — technical references (schemas, formats, renderer, decisions)
-- `docs/content/training-styles/` — coach methodology library
-- `docs/content/nutrition-styles/` — nutrition methodology library
-- `docs/content/coaching-team/` — AI coaches *for the athlete* (roles + decision logic)
-- `docs/athletes/{name}/` — per-athlete data, organized by **arc bundle** (one bundle per arc, self-contained)
-
-Skills:
-- `.claude/skills/plan-training-arc/` — the training plan generator (Python)
-- `.claude/skills/spec-feature/`, `decompose-to-tasks/` — software factory entry points (see workflow doc)
-- `.claude/agents/` — factory personas (PM, tech-lead, coder, code-reviewer)
-
-## Storage boundary (memorize this)
-
-Per [`docs/product/database-schema.md`](docs/product/database-schema.md):
-
-| Layer | Source of truth | Format |
-|---|---|---|
-| **Planned work** | Markdown | Inside the active arc bundle |
-| **Executed work** | Supabase | `workouts`, `workout_exercises`, `exercise_sets` tables |
-| **Athlete-facing view** | `.xlsx` | Generated artifact at `{bundle}/outputs/*.xlsx` — never the source |
-| **Researched coach content** | Supabase | `coaches`, `documents` tables + `coach-content` Storage bucket (populated by `.claude/skills/deep-research-on-coach/`) |
-
-The `.xlsx` is always derivable from (plan source + Supabase). Regenerate, don't mutate. See [`docs/product/live-renderer.md`](docs/product/live-renderer.md) for the three-renderer pipeline.
-
-Researched coach content lives in Supabase (not in `docs/content/training-styles/<coach>/`, which is the *synthesized* style guide downstream consumer). The deep-research-on-coach skill writes raw discovered + extracted source material; a separate downstream consumer synthesizes the guide.
-
-## Arc bundle architecture
-
-An **arc bundle** is a self-contained directory with everything an athlete's text agent needs for one training arc. The cloud agent pulls only this directory (via sparse checkout, rsync, or eventually a separate repo).
-
-Layout:
-```
-docs/athletes/{name}/{arc-slug}/
-├── README.md         ← pull instructions for the cloud agent
-├── CLAUDE.md         ← bundle-scoped agent operating instructions
-├── arc.md            ← arc context (purpose, goals, blocks, tests)
-├── profile.md        ← athlete profile snapshot at arc start
-├── active/           ← current-block.md + current-week.md (hot path)
-├── blocks/           ← all blocks for this arc
-├── weeks/            ← all weeks pre-rendered
-├── styles/           ← VENDORED copies of style guides referenced
-└── outputs/          ← athlete-facing .xlsx
-```
-
-Athlete-level data that persists across arcs (logs, nutrition.md) stays at `docs/athletes/{name}/`, not inside any bundle.
-
-## Active athlete + active arc
-
-**Andy Lee** is the v0 athlete and the project builder.
-
-**Active arc:** [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
-
-For everything about the active arc — programming, profile, constraints, weekly structure, style guide references — read the bundle's [`README.md`](docs/athletes/andy/arc-2026-summer-dunk/README.md) and [`CLAUDE.md`](docs/athletes/andy/arc-2026-summer-dunk/CLAUDE.md).
-
-**Key facts** (in the bundle's profile.md, surfaced here for orientation):
-- Strength-dominant, reactivity-deficient (per VJ §3 dx). Many strength blocks already done.
-- Active injuries: right shoulder (no barbell OHP — landmine/DB neutral only), left wrist De Quervain's (no front rack — hang variants + hook grip).
-- 6 days/week training capacity, 60-75 min sessions, max 6 exercises per session.
-
-## Common operations
-
-### Edit the active arc plan
-The training plan is **hand-edited markdown** under `docs/athletes/andy/arc-2026-summer-dunk/training/` (`arc.md`, `blocks/`, `weeks/`, `active/`). **The markdown IS the source of truth.** Edit those files directly.
-
-> **No generator.** The old `build_training_arc.py` (a v6 `.xlsx` generator) was **removed 2026-06-21** — the athlete no longer wants spreadsheet artifacts. The plan is now markdown-only. If a generator pipeline is ever rebuilt, seed it from the current v7 markdown.
-
-### Run the CLI
-```bash
-npx tsx app/cli/cli.ts plan today
-npx tsx app/cli/cli.ts history --last 7d
-npx tsx app/cli/cli.ts query e1rm "Back Squat"
-```
-
-### Inspect a generated .xlsx
-```bash
-python3 -c "from openpyxl import load_workbook; wb=load_workbook('PATH'); [print(s) for s in wb.sheetnames]"
-```
-
-## Key constraints (program-design level for Andy)
-
-These come from VJ guide §13 and Andy's profile. Violating them breaks the program.
-
-- **Heavy squat must precede jump day by ≥48h** (VJ §13). In v6, Sat = jump day, so Sun stays LIGHT.
-- **Loaded side-split work saps adductor force 24-48h.** Deep split work happens Wed only.
-- **Block 3 = no cut.** Maintenance calories during peak (VJ §9).
-- **Olympic lifts use hang variants only** for Andy (wrist).
-- **Exercise names must match Supabase `exercises` table** for PR lookup to work.
-
-## What NOT to do
-
-- Edit the plan markdown (`arc-{slug}/blocks/`, `weeks/`, `active/`, `arc.md`) directly — it's the source of truth. There is no generator (the v6 `build_training_arc.py` was removed 2026-06-21).
-- No more `.xlsx` artifacts — the spreadsheet view is retired.
-- Don't reach across bundles. The active arc's bundle is self-contained.
-- Don't add a strength-emphasis block for Andy without re-checking the reactivity-deficit diagnosis.
-- Don't add overhead pressing (BB OHP, behind-neck, jerk) for Andy without confirming shoulder status.
-- Don't use markdown for executed sets. That goes in Supabase.
-
-## Build status (v6 architecture)
-
-### Training
-
-| Component | Status |
+| Layer | Source of truth |
 |---|---|
-| Plan renderer (xlsx + md, into bundle) | ✓ Built — `.claude/skills/plan-training-arc/build_training_arc.py` |
-| Bundle layout + pull instructions | ✓ Built — see bundle `README.md` |
-| Logger (Supabase `exercise_sets`) | Partial — schema exists, NanoClaw integration TBD |
-| Live renderer (`*-live.xlsx` with prescribed + actual) | ✗ TODO — see [`docs/product/live-renderer.md`](docs/product/live-renderer.md) |
-| Supabase seed (prescribed work into `weekly_schedule`) | ✗ TODO |
-| Webhook trigger (re-render after each logged workout) | ✗ TODO |
-| Bundle-as-its-own-repo extraction | ✗ TODO when productizing |
+| Planned work | Markdown under `docs/athletes/andy/<arc>/training/` |
+| Executed work | Supabase `workouts` / `workout_exercises` / `exercise_sets` (project `vtruwlvekfnmfgaundhp`) |
+| Progress view | `web/dashboard/` — derived from Supabase, never a source |
 
-### Nutrition (v0 in flight — see `~/.claude/plans/precious-beaming-cerf.md`)
+## Active athlete + arc
 
-| Component | Status |
-|---|---|
-| Per-arc nutrition plan (onboarding doc — strategy, targets, calibration rules) | ✓ Built — `arc-2026-summer-dunk/nutrition/arc.md` |
-| Cross-arc menu library (45 meals, macros, caps, Costco staples) | ✓ Built — `docs/athletes/andy/menu.md` |
-| Cross-arc OS doc (eating philosophy, prep, fallbacks, Recipe of the Week) | ✓ Built — `docs/athletes/andy/nutrition.md` |
-| Bundle reorg (training/ + nutrition/ split) | ✓ Built — bundle `CLAUDE.md` updated; README still references old layout |
-| `daily_metrics` table (bw + notes) | ✓ Built — live in Supabase (`vtruwlvekfnmfgaundhp`), verified 2026-05-08 |
-| Skill: `plan-weekly-groceries` (Saturday Costco order surface) | ✗ TODO — manual dry-run scheduled Sat 2026-05-09 before codifying |
-| Skill: `bw-log` (post-workout bw → `daily_metrics`) | ✗ TODO — manual chat-based logging until NanoClaw wired |
-| Skill: `arc-calibrate` (2-week test per arc.md §4.1a) | ✗ TODO — fires Wk 2 (≈ 2026-05-23) |
-| NanoClaw push mechanism | ✗ TODO — external integration |
+**Andy Lee.** Active arc: [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/) (May 3 → Sep 5, 2026). The bundle's `README.md` and `CLAUDE.md` carry the programming context, constraints, and week structure.
 
-## Linear
+Key facts (from the bundle `profile.md`):
+- Strength-dominant, reactivity-deficient. Don't default to strength-first blocks.
+- Injuries: right shoulder (no barbell OHP — landmine/DB neutral only), left wrist De Quervain's (no front rack — hang variants + hook grip).
+- Heavy squat must precede jump day by ≥48h.
 
-Implementation tracked in [Linear → train project](https://linear.app/a24-personal/project/train-5bf68de4e2d4).
+## Dashboard (`web/dashboard/`)
+
+Next.js 16 (read `web/dashboard/AGENTS.md` before touching it — the API differs from older Next). Two routes:
+- `/strength` — Upper / Lower / Power lenses. KPI row, key-lift e1RM cards, all-lifts change table, recent PRs.
+- `/progress/[slug]` and `/progress/[slug]/[date]` — per-lift history and one-session detail.
+
+Where things live:
+- `lib/queries.ts` — every Supabase read. Add new queries here.
+- `lib/view.ts` — the three views and their key-lift lists. Edit `KEY_LIFTS` to change which lifts get cards.
+- `lib/categorize.ts` — name → Strength/Power/Mobility and Upper/Lower rules.
+- `components/performance-views.tsx` — the `/strength` layout. Fixed layout, no widget config; edit the JSX.
+- `components/panel.tsx` — the one card primitive. `components/viz/` — chart primitives.
+
+## CLI (`app/cli/`)
+
+`cli.ts` (commander) → `train-api.ts` (Supabase REST via fetch). Loads repo-root `.env`. Commands: `log import`, `history`, `stats`, `query e1rm`, `query best-set`.
+
+## Skills
+
+- `dnt-overview` — print the day's coach Olympic lifts in the athlete's format.
+- `integrate-dnt-workout` — fold a new DNT coach PDF into the active weeks. Fires every ~2 weeks.
+
+## Don't
+
+- Don't write executed sets into markdown. Don't write plans into Supabase.
+- Don't add overhead barbell pressing or front-rack work for Andy without re-checking the injury notes.
+- Don't rebuild the coach marketplace, plan synthesis, nutrition tracking, widget engine, or xlsx export. They were removed on 2026-09-07 on purpose (see git history before that date if you need the code).

@@ -1,5 +1,3 @@
-import { INDEX_CONFIG } from "@/lib/index-config";
-
 export type ExerciseCategory = "Strength" | "Power" | "Mobility" | "Other";
 
 export const CATEGORY_ORDER: ExerciseCategory[] = [
@@ -9,8 +7,13 @@ export const CATEGORY_ORDER: ExerciseCategory[] = [
   "Other",
 ];
 
-const STRENGTH_NAMES = new Set(INDEX_CONFIG.strength.lifts.map((n) => n.toLowerCase()));
-const POWER_NAMES = new Set(INDEX_CONFIG.power.lifts.map((n) => n.toLowerCase()));
+// Exact-name overrides (lowercased) checked before the pattern lists.
+const STRENGTH_NAMES = new Set(
+  ["Back Squat", "Bench Press", "Front Squat", "Deadlift", "Pull-up +25", "Weighted Pull-up"].map((n) => n.toLowerCase()),
+);
+const POWER_NAMES = new Set(
+  ["Hang Snatch", "Power Clean", "Power Snatch", "Muscle Snatch", "Snatch DL", "Snatch Deadlift", "Clean Deadlift", "Overhead Squat"].map((n) => n.toLowerCase()),
+);
 
 // Pattern checked in order: power wins over strength when both match
 // (e.g. "Snatch Deadlift" → Power, not Strength)
