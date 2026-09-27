@@ -8,7 +8,7 @@
 - Block Week: 1 of 6
 - Date Range: Sun Sep 27 – Sat Oct 03, 2026
 - Week Type: **405 strength push** (Block 4 opens) — coach wk19 deload
-- Primary Focus: Open the 405 back-squat push (Sun 3×6 @305, groove on the coach's deload). Coach wk19 Oly (cleans, rack jerk) re-homed. **Reactive finisher re-entry** (box jump + sprints) on upper days. Reinstate daily bodyweight + a jump metric.
+- Primary Focus: Open the 405 back-squat push (Sun 3×6 @300, groove on the coach's deload). Coach wk19 Oly (cleans, rack jerk) re-homed. **Reactive finisher re-entry** (box jump + sprints) on upper days. Reinstate daily bodyweight + a jump metric.
 
 ## Source / Sync
 
@@ -22,7 +22,7 @@ Sun back squat is now the hero lift (405 progression). Mon/Fri upper days close 
 
 ## 7-Day Overview
 
-1. Sun Sep 27: **Heavy Lower** — Back Squat 3×6 @305 *(405 push wk1)*
+1. Sun Sep 27: **Heavy Lower** — Back Squat 3×6 @300 *(405 push wk1)*
 2. Mon Sep 28: **Heavy Upper** — bench + pull-up (maintain) + **reactive finisher** | 🥋 BJJ
 3. Tue Sep 29: **Oly Lift + Mobility Legs** — Hang Power Clean (coach) | 🥋 BJJ
 4. Wed Sep 30: **BJJ only** *(rest)* | 🥋 BJJ
@@ -34,7 +34,7 @@ Sun back squat is now the hero lift (405 progression). Mon/Fri upper days close 
 
 | # | Lift | Scheme |
 |---|------|--------|
-| 1 | **Back Squat** *(405 push wk1 — 6-rep bracket)* | **3×6 @ 305** (~RPE 7–8) |
+| 1 | **Back Squat** *(405 push wk1 — 6-rep bracket)* | **3×6 @ 300** (~RPE 7–8) |
 | 2a | Deadlift *(month's variation)* | 3×5, RPE 7 ⟷ 2b Horse Stance 3×10 |
 | 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Hip Abductor | 3×8–10 |
 | 4 | Full Side Split Stretch | 3×60–90s |
@@ -105,4 +105,4 @@ Squat top set (the hero lift) + coach Oly + reactive-finisher (jump/sprint) + **
 
 ## End-of-Week Review (filled Sun)
 
-1. Wins / 2. Misses / 3. Squat felt (RPE at 305) / 4. Adjustment: W20 = 4×4 @320 (wave); coach wk20 (snatch returns).
+1. Wins / 2. Misses / 3. Squat felt (RPE at 300) / 4. Adjustment: W20 = 4×8 @280 (high-vol wave); coach wk20 (snatch returns).

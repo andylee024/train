@@ -8,7 +8,7 @@
 - Block Week: 2 of 6
 - Date Range: Sun Oct 04 – Sat Oct 10, 2026
 - Week Type: **405 strength push** — coach wk20
-- Primary Focus: Back squat builds (Sun 4×4 @320). Coach wk20 Oly (power snatch, hang squat clean, power C&J) re-homed. Reactive finisher still re-entry volume. Keep logging bw + jump metric.
+- Primary Focus: Back squat high-volume week (Sun 4×8 @280). Coach wk20 Oly (power snatch, hang squat clean, power C&J) re-homed. Reactive finisher still re-entry volume. Keep logging bw + jump metric.
 
 ## Source / Sync
 
@@ -22,7 +22,7 @@ Same as W19. Sun back squat is the hero lift; Mon/Fri close with the reactive fi
 
 ## 7-Day Overview
 
-1. Sun Oct 04: **Heavy Lower** — Back Squat 4×4 @320 *(405 push wk2)*
+1. Sun Oct 04: **Heavy Lower** — Back Squat 4×8 @280 *(405 push wk2 — high vol)*
 2. Mon Oct 05: **Heavy Upper** — bench + pull-up + **reactive finisher** | 🥋 BJJ
 3. Tue Oct 06: **Oly Lift + Mobility Legs** — Power Snatch + Snatch DL (coach) | 🥋 BJJ
 4. Wed Oct 07: **BJJ only** *(rest)* | 🥋 BJJ
@@ -34,7 +34,7 @@ Same as W19. Sun back squat is the hero lift; Mon/Fri close with the reactive fi
 
 | # | Lift | Scheme |
 |---|------|--------|
-| 1 | **Back Squat** *(405 push wk2 — 4-rep bracket)* | **4×4 @ 320** (~RPE 8) |
+| 1 | **Back Squat** *(405 push wk2 — 8-rep bracket, high vol)* | **4×8 @ 280** (~RPE 8) |
 | 2a | Deadlift *(month's variation)* | 3×5, RPE 7–8 ⟷ 2b Horse Stance 3×10 |
 | 3 | Giant set: Nordic · Copenhagen · Hip-Thrust · Hip Abductor | 3×8–10 |
 | 4 | Full Side Split Stretch | 3×60–90s |
@@ -99,4 +99,4 @@ Squat top set + coach Oly + reactive-finisher + daily bw + jump metric + BJJ.
 
 ## End-of-Week Review (filled Sun)
 
-1. Wins / 2. Misses / 3. Squat felt (RPE at 330) / 4. Adjustment: W21 = 3×8 @285 (wave volume swing) + reactive volume ramps; process coach wk21–22.
+1. Wins / 2. Misses / 3. Squat felt (RPE at 280) / 4. Adjustment: W21 = 4×6 @300 (wave) + reactive volume ramps; process coach wk21–22.

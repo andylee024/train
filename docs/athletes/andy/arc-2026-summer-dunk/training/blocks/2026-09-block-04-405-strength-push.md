@@ -9,25 +9,25 @@ Drive the **back squat to 405** while progressively **re-introducing speed + ref
 ## The honest 405 math
 
 - Back-squat e1RM peaked **~366–380** in Block 3; true 1RM ≈ **~375–380**.
-- 405 is **+25–30 lb on a true 1RM** — a real stretch for 6 weeks (advanced lifters add 1RM slowly).
-- **Realistic outcome this block: ~390–400, with a genuine 405 attempt at W24.** If 405 doesn't go, we'll be one short block away. Framed that way so the number stays motivating, not a set-up for a miss.
+- 405 is **+25–30 lb on a true 1RM** — a 2–4 month project, not one block (advanced lifters add 1RM slowly).
+- **This block = the volume-accumulation base** (run on the volume-biased wave you always keep). It builds the strength; the **405 max attempt comes after, via a short 2-week peak** bolted on later (or timed with the THP handoff). No forced max single here.
 
-## The squat progression (Sunday back squat — the hero lift)
+## The squat progression (Sunday back squat)
 
-**Option B — pure undulating wave, straight through** (chosen 2026-09-27). Rep scheme rotates every week (your record-per-bracket engine), 2–4 sets, volume swings, top-end trending up. No formal taper — the **405 attempt lands on the W24 heavy-single week** as the top of the rotation.
+**Permanent undulating wave, volume-biased** (updated 2026-09-27). The wave is a **permanent fixture** — never replaced with linear/peak programming (see memory `squat-wave-permanent-volume-bias`). This block leans it toward **higher volume**: rep bracket rotates weekly (4/6/8/10), **sets 2–4**, records banked per bracket. So Block 4 is a **volume-accumulation phase of the 405 road** — it builds the base. The **405 max attempt is a later milestone** (a short dedicated peak after this block, or timed with the THP handoff), *not* forced into W24 — you can't express a true 1RM out of a pure volume block, and you'd rather keep the wave than run a peak.
 
-| Arc wk | Coach | Back Squat (Sun) — undulating wave | Bracket / record |
-|--------|-------|------------------------------------|------------------|
-| **W19** | wk19 *(deload)* | 3×6 @ 305 | 6-rep — accumulate (rides the coach deload) |
-| **W20** | wk20 | 4×4 @ 320 | 4-rep |
-| **W21** | wk21 | 3×8 @ 285 | 8-rep — the wave's **volume swing** |
-| **W22** | wk22 | 4×3 @ 335 | 3-rep |
-| **W23** | wk23 | 3×2 @ 350 | 2-rep |
-| **W24** | wk24 | **work to a max single — 405 attempt** (filmed) | 1-rep PR |
+| Arc wk | Coach | Back Squat (Sun) — volume-biased wave | Bracket · total reps |
+|--------|-------|---------------------------------------|----------------------|
+| **W19** | wk19 *(deload)* | 3×6 @ 300 | 6-rep · 18 (medium — rides the coach deload) |
+| **W20** | wk20 | 4×8 @ 280 | 8-rep · 32 (**HIGH volume**) |
+| **W21** | wk21 | 4×6 @ 300 | 6-rep · 24 |
+| **W22** | wk22 | 3×10 @ 265 | 10-rep · 30 (**HIGH**) |
+| **W23** | wk23 | 4×6 @ 305 | 6-rep · 24 (beat W21's 6-rep record) |
+| **W24** | wk24 | 4×4 @ 320 | 4-rep · 16 (heaviest — strength checkpoint) |
 
-Loads calibrated off a ~375–380 working max — **RPE-gated**: chase the *record for that week's rep bracket*, but if a week hits ≥RPE 9.5, bank the PR you got rather than forcing the prescribed number. Each week is a distinct bracket record to beat next cycle. The 8-rep volume swing (W21) is deliberate — it's the wave's variety and it drives the base; it doesn't blunt the max because W22–W24 climb straight back up.
+Loads off a ~375–380 working max — **RPE-gated**: chase each week's rep-bracket record; if a week hits ≥RPE 9.5, bank the PR you got. Volume stays high (75–85%); **no singles this block.** W24's 4×4 @320 is a strength *checkpoint*, not the 405 attempt.
 
-**Note (Option B trade):** no dedicated taper before the W24 single (W23 is heavy doubles). That's the pure-wave choice — slightly less peaked, so if 405 grinds/misses, a 1-week deload then a fresh re-attempt is the move (likely early Block 5).
+**On the 405 itself:** this volume base is step 1 of a 2–4 month road. When you're ready to test it, we bolt a **short 2-week peak** onto the front of a later block (or time it with the THP handoff) to express the max — the wave stays, the peak is a brief add-on, not a replacement.
 
 ## Speed + reflexive ramp (layered in — Mon/Fri finisher)
 
@@ -62,11 +62,11 @@ When the squat lands ~395–405 **and** the reflexive base is in (reactive finis
 
 | Arc wk | Dates | Coach | Squat (wave) | Reactive |
 |--------|-------|-------|-------|----------|
-| W19 | Sep 27–Oct 3 | wk19 deload | 3×6 @305 | re-entry |
-| W20 | Oct 4–10 | wk20 | 4×4 @320 | re-entry |
-| W21 | Oct 11–17 | wk21 | 3×8 @285 *(volume swing)* | build |
-| W22 | Oct 18–24 | wk22 | 4×3 @335 | build |
-| W23 | Oct 25–31 | wk23 | 3×2 @350 | sharpen |
-| W24 | Nov 1–7 | wk24 | **max single — 405 attempt** | sharpen |
+| W19 | Sep 27–Oct 3 | wk19 deload | 3×6 @300 | re-entry |
+| W20 | Oct 4–10 | wk20 | 4×8 @280 *(high vol)* | re-entry |
+| W21 | Oct 11–17 | wk21 | 4×6 @300 | build |
+| W22 | Oct 18–24 | wk22 | 3×10 @265 *(high vol)* | build |
+| W23 | Oct 25–31 | wk23 | 4×6 @305 | sharpen |
+| W24 | Nov 1–7 | wk24 | 4×4 @320 *(checkpoint)* | sharpen |
 
 > Day-by-day loads are authoritative in `weeks/2026-training-W19…W24.md`. W19–W20 are built; W21–W24 fill in as the coach drops land.
