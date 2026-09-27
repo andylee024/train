@@ -1,7 +1,7 @@
 # Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
 
 **Start:** 2026-05-03 (Sunday)
-**End:** 2026-09-26 (Saturday) — extended +2 wks 2026-09-15 to run coach wk17–18 (peak). Prior: recalibrated 2026-09-06 (+7 days so arc week = coach DNT week).
+**End:** 2026-11-07 (Saturday) — extended to W24 on 2026-09-27 for Block 4 (405 squat push). Prior: +2 wks 2026-09-15 (coach wk17–18 peak); recalibrated 2026-09-06 (+7 days, arc week = DNT week).
 **Duration:** 16 weeks remaining-view (renumbered 2026-07-28 to align arc weeks with DNT coach weeks; originally 18 wks from May 3). Arc week now = DNT week.
 **Plan version:** v9 — Oly-forward split from W11 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
 
@@ -44,6 +44,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 | **1** | 1–6 | Power Conversion + Upper Build | *(complete — see `reviews/blocks/block-1-review.md`)* | — |
 | **2** | 7–10 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
 | **3** | 11–18 | Peak + Realize + Test | Oly-forward strength block (v9). Squat/front-squat/deadlift PRs + coach DNT Oly. Coach peaks to max singles W17–18. Reactive finisher (plyos + sprints) added to upper days from W17. | all |
+| **4** | 19–24 | 405 Strength Push | Back squat → 405 (dedicated intensity ramp to a max attempt at W24). Speed/reflexive re-introduced & ramped. Coach DNT Oly continues. **Dunk parked** — handed to THP after this block. See `blocks/2026-09-block-04-405-strength-push.md`. | G-squat (405) |
 
 **Block 1 ended in a fall-off** (W4–6 collapse, see review). Block 2 therefore opens as a **re-entry**, not a continuation — see Redesign note.
 

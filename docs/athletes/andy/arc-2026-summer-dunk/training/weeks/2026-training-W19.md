@@ -1,4 +1,4 @@
-# Week 2026-training-W19  *(active snapshot · 405 push)*
+# Week 2026-training-W19  *(v9 split · 405 push)*
 
 ## Week Header
 
