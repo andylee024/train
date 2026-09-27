@@ -14,18 +14,20 @@ Drive the **back squat to 405** while progressively **re-introducing speed + ref
 
 ## The squat progression (Sunday back squat — the hero lift)
 
-Classic intensity ramp: volume drops as intensity climbs, peaking to singles.
+**Option B — pure undulating wave, straight through** (chosen 2026-09-27). Rep scheme rotates every week (your record-per-bracket engine), 2–4 sets, volume swings, top-end trending up. No formal taper — the **405 attempt lands on the W24 heavy-single week** as the top of the rotation.
 
-| Arc wk | Coach | Back Squat (Sun) | ~% of goal-ish | Intent |
-|--------|-------|------------------|-----|--------|
-| **W19** | wk19 *(deload)* | 4×4 @ 315 | ~83% | Reset + accumulate (coach is deloading — recover, groove) |
-| **W20** | wk20 | 5×3 @ 330 | ~87% | Build volume-intensity |
-| **W21** | wk21 | 4×3 @ 340 | ~90% | Heavy triples |
-| **W22** | wk22 | 3×2 @ 355 | ~94% | Heavy doubles |
-| **W23** | wk23 | work to top single **~385** + 2×3 @ 330 | ~PR | New-1RM test single |
-| **W24** | wk24 | **PEAK — attempt 405** (deload the rest) | max | The attempt (filmed) |
+| Arc wk | Coach | Back Squat (Sun) — undulating wave | Bracket / record |
+|--------|-------|------------------------------------|------------------|
+| **W19** | wk19 *(deload)* | 3×6 @ 305 | 6-rep — accumulate (rides the coach deload) |
+| **W20** | wk20 | 4×4 @ 320 | 4-rep |
+| **W21** | wk21 | 3×8 @ 285 | 8-rep — the wave's **volume swing** |
+| **W22** | wk22 | 4×3 @ 335 | 3-rep |
+| **W23** | wk23 | 3×2 @ 350 | 2-rep |
+| **W24** | wk24 | **work to a max single — 405 attempt** (filmed) | 1-rep PR |
 
-Loads calibrated off a ~375–380 working max; adjust week to week off how the top sets actually move (RPE-gated — if a week feels ≥RPE 9.5, hold load rather than force it). Log a **true top single** at W23 to recalibrate the W24 attempt.
+Loads calibrated off a ~375–380 working max — **RPE-gated**: chase the *record for that week's rep bracket*, but if a week hits ≥RPE 9.5, bank the PR you got rather than forcing the prescribed number. Each week is a distinct bracket record to beat next cycle. The 8-rep volume swing (W21) is deliberate — it's the wave's variety and it drives the base; it doesn't blunt the max because W22–W24 climb straight back up.
+
+**Note (Option B trade):** no dedicated taper before the W24 single (W23 is heavy doubles). That's the pure-wave choice — slightly less peaked, so if 405 grinds/misses, a 1-week deload then a fresh re-attempt is the move (likely early Block 5).
 
 ## Speed + reflexive ramp (layered in — Mon/Fri finisher)
 
@@ -58,13 +60,13 @@ When the squat lands ~395–405 **and** the reflexive base is in (reactive finis
 
 ## Block map
 
-| Arc wk | Dates | Coach | Squat | Reactive |
+| Arc wk | Dates | Coach | Squat (wave) | Reactive |
 |--------|-------|-------|-------|----------|
-| W19 | Sep 27–Oct 3 | wk19 deload | 4×4 @315 | re-entry |
-| W20 | Oct 4–10 | wk20 | 5×3 @330 | re-entry |
-| W21 | Oct 11–17 | wk21 | 4×3 @340 | build |
-| W22 | Oct 18–24 | wk22 | 3×2 @355 | build |
-| W23 | Oct 25–31 | wk23 | top single ~385 | sharpen |
-| W24 | Nov 1–7 | wk24 | **405 attempt** | sharpen |
+| W19 | Sep 27–Oct 3 | wk19 deload | 3×6 @305 | re-entry |
+| W20 | Oct 4–10 | wk20 | 4×4 @320 | re-entry |
+| W21 | Oct 11–17 | wk21 | 3×8 @285 *(volume swing)* | build |
+| W22 | Oct 18–24 | wk22 | 4×3 @335 | build |
+| W23 | Oct 25–31 | wk23 | 3×2 @350 | sharpen |
+| W24 | Nov 1–7 | wk24 | **max single — 405 attempt** | sharpen |
 
 > Day-by-day loads are authoritative in `weeks/2026-training-W19…W24.md`. W19–W20 are built; W21–W24 fill in as the coach drops land.
