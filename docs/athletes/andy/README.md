@@ -23,7 +23,7 @@ The bundle is **self-contained**. Open the bundle's [`README.md`](arc-2026-summe
 
 - **Planned work:** markdown inside the active arc bundle.
 - **Executed work:** Supabase (`workouts`, `workout_exercises`, `exercise_sets`).
-- **Logging / queries:** the `train` CLI (`app/cli/`) writes sets to Supabase and reads history and e1RM.
+- **Logging / queries:** the Supabase MCP connector writes sets and reads history and e1RM.
 
 ## When the active arc ends
 

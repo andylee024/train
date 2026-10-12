@@ -4,7 +4,7 @@ Read [`README.md`](README.md) first. This file adds what an agent needs to opera
 
 ## What this repo is
 
-A single-athlete workout tracker. Plan lives in markdown, executed work lives in Supabase, logged and queried with the CLI. Nothing else. Keep it that way — no generators, no spreadsheets, no product-process scaffolding.
+A single-athlete workout tracker. Plan lives in markdown; executed work lives in Supabase, logged and queried through the Supabase MCP connector. Nothing else. Keep it that way — no generators, no spreadsheets, no product-process scaffolding.
 
 ## Storage boundary
 
@@ -27,9 +27,12 @@ Key facts:
 - **No BJJ.** Shoulder + wrist are healed (monitor; landmine / hang variants if pain ≥3/10).
 - Heavy legs ≥48 h before a jump day (Tue, Sat). No heavy pulls the day before Saturday.
 
-## CLI (`app/cli/`)
+## Logging + queries (Supabase MCP)
 
-`cli.ts` (commander) → `train-api.ts` (Supabase REST via fetch). Loads repo-root `.env`. Commands: `log import`, `history`, `stats`, `query e1rm`, `query best-set`.
+No code in this repo. Use the Supabase MCP tools against project `vtruwlvekfnmfgaundhp`:
+- Tables: `workouts` → `workout_exercises` → `exercise_sets` (plus `exercises`, `daily_metrics` for bodyweight).
+- Weights are stored with a unit; normalize with `weight_kg` (× 2.20462 for lb). e1RM = Epley `load × (1 + reps/30)`.
+- Exercise names must match `exercises.name` or PR lookups miss.
 
 ## Skills (`.claude/skills/`)
 
@@ -45,4 +48,4 @@ Key facts:
 ## Don't
 
 - Don't write executed sets into markdown. Don't write plans into Supabase.
-- Don't rebuild the coach marketplace, plan synthesis, nutrition tracking, widget engine, or xlsx export (removed 2026-09-07), or the progress dashboard and Supabase migrations (removed 2026-10-12). Git history has the code if ever needed.
+- Don't rebuild the coach marketplace, plan synthesis, nutrition tracking, widget engine, or xlsx export (removed 2026-09-07), or the progress dashboard, Supabase migrations and the `train` CLI (removed 2026-10-12). Git history has the code if ever needed.

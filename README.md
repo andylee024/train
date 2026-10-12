@@ -1,40 +1,24 @@
 # Train
 
-Andy's workout tracker. Two parts, one loop:
+Andy's training plan + log. Two parts, one loop:
 
 | Part | Where | Source of truth for |
 |---|---|---|
-| **Plan** | `docs/athletes/andy/<arc>/training/` | What's prescribed — hand-edited markdown, one file per week |
-| **Log** | Supabase (`workouts`, `workout_exercises`, `exercise_sets`) | What was actually done |
-
-`app/cli/` is a thin CLI over the same Supabase tables (log a workout from JSON, query history and e1RM).
+| **Plan** | `docs/athletes/andy/<arc>/training/` | What's prescribed: hand-edited markdown, one file per week |
+| **Log** | Supabase (`workouts`, `workout_exercises`, `exercise_sets`, `daily_metrics`) | What was actually done. Read and written through the Supabase MCP connector |
 
 ## Repo layout
 
 ```
 train/
-├── app/
-│   └── cli/                   ← `train` CLI (cli.ts + train-api.ts)
 ├── docs/
 │   ├── athletes/andy/         ← arc bundles (plan markdown, profile, coach PDFs, reviews)
 │   └── content/               ← coach methodology library (style guides + source material)
 └── .claude/skills/            ← build-workout-plan, 4 principle-* skills, dnt-overview
 ```
 
-## Run
-
-```bash
-# cli (reads repo-root .env)
-npx tsx app/cli/cli.ts history --last 7d
-npx tsx app/cli/cli.ts query e1rm "Back Squat"
-npx tsx app/cli/cli.ts stats "Bench Press"
-echo '{...}' | npx tsx app/cli/cli.ts log import
-```
-
-Env (repo-root `.env`): `SUPABASE_URL`, `SUPABASE_KEY`, `TRAIN_USER_ID`. See `.env.example`.
-
 ## Rules
 
 - Plan markdown is the plan. Edit it directly. Never write executed sets into it.
-- Executed sets go to Supabase only. The CLI logs and reads from there.
+- Executed sets go to Supabase only.
 - Exercise names in the plan must match `exercises.name` in Supabase or PR lookups miss.
