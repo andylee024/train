@@ -16,7 +16,7 @@ Earlier program from arc start lives at `../styles/dnt-program-2026-05-17.pdf` (
 
 ## How these get used
 
-- **Integration:** `build-workout-plan` places each drop's Olympic lifts on the split, following `principle-dnt-olympic-lifts`: clean & jerk day → Sun, snatch day → Tue (after jumps), clean + pull day → Thu, jerk day → Fri. Her back squat is skipped.
+- **Integration:** `build-workout-plan` places each drop's Olympic lifts on the split, following `principle-dnt-olympic-lifts`: coach slots are Sun L1 1a · Mon U1 1a · Thu L2 1a/1b · Fri U2 1a (snatch days rotate into Sun or Thu). Her back squat is skipped.
 - **DNT overview:** the `dnt-overview` skill outputs a day's coach Oly lifts in the athlete's format.
 - The re-homed, day-by-day result is authoritative in `../training/weeks/2026-training-W<NN>.md`.
 

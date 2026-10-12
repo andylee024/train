@@ -2,7 +2,7 @@
 
 > **Read first (2026-10-11).** The daily agent now builds and explains workouts with the repo skills **`build-workout-plan`** and the four **`principle-*`** skills, plus `dnt-overview`. They override this file where they conflict.
 > - **No more BJJ.** Ignore the BJJ scheduling rules below.
-> - **Split:** Sun heavy legs · Mon heavy upper + fillers · Tue speed/reactive · Wed rest · Thu heavy Olympic lift + squat variation · Fri heavy upper + fillers · Sat dunk day.
+> - **Split:** Sun L1 Heavy Legs · Mon U1 Upper Strength + Speed · Tue S1 Speed & Reactive · Wed R Recovery · Thu L2 Olympic + Squat Variation · Fri U2 Upper Strength + Mobility · Sat J1 Jump & Dunk. The layouts are in the Claude Docs plan "Andy — Training Plan" and `training/blocks/2026-09-block-04-405-strength-push.md`.
 > - This arc ends at W24. The next arc starts at W1.
 
 

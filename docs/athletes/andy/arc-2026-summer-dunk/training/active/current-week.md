@@ -1,96 +1,97 @@
-# Week 2026-training-W21 *(Strength block · W1 of 4)*
+# Week 2026-training-W21 *(B1 Strength · week 1 · 8s)*
 
 ## Week Header
-- Block: training/blocks/2026-09-block-04-405-strength-push.md (rewritten 2026-10-11 as the Strength block)
+- Block: B1 · Strength (W21–W24) — `training/blocks/2026-09-block-04-405-strength-push.md`
 - Arc Week: 21 of 24 (= DNT wk21)
 - Date Range: Sun Oct 11 – Sat Oct 17, 2026
-- Week Type: Strength block, week 1 (8s)
-- Primary Focus: open the strength wave, bring jumps back on Tue/Sat, **baseline test Saturday**
-- Built with: `build-workout-plan` (principles: strength wave, trait blocks, DNT Olympic lifts, training rhythm)
-
-## Source / Sync
-- **Coach program:** DNT wk21. Her lifts go in the `coach` slots as written. If the wk21–22 PDF isn't in `coach-programs/` yet, add it and fill the slots.
-- Her back squat is skipped (the wave covers squatting). Her pulls may replace the hinge.
+- Built with: `build-workout-plan`. Source of truth for layout: the Claude Docs plan "Andy — Training Plan" (session structure).
+- Coach lifts: DNT wk21 — her lifts, sets and % as written in every **Coach** slot. Her back squat is skipped.
 
 ## 7-Day Overview
-1. Sun Oct 11: Heavy legs ✅ (done: hang cleans + **back squat 295 × 8 PR**)
-2. Mon Oct 12: Heavy upper + reactive fillers
-3. Tue Oct 13: Speed / reactive + single-leg mobility
-4. Wed Oct 14: Rest / optional yoga
-5. Thu Oct 15: Heavy Olympic lift + front squat
-6. Fri Oct 16: Heavy upper + mobility fillers + light stretch
-7. Sat Oct 17: Dunk day + **baseline test**
+1. Sun Oct 11: **L1 · Heavy Legs**
+2. Mon Oct 12: **U1 · Upper Strength + Speed**
+3. Tue Oct 13: **S1 · Speed & Reactive**
+4. Wed Oct 14: **R · Recovery**
+5. Thu Oct 15: **L2 · Olympic + Squat Variation**
+6. Fri Oct 16: **U2 · Upper Strength + Mobility**
+7. Sat Oct 17: **J1 · Jump & Dunk**
 
-## Sun Oct 11 — Heavy legs ✅
-```
-Warm-up: Daily 7 + pogos 2x10, box jump 3x2
-1a  Hang clean (coach) .............. done
-2a  Back squat (wave: 8s) ........... 3x8 @ 290 -> hit 295 x 8 (PR)
-3a  Deadlift / RDL .................. 3x5 @ ~275 (RPE 7)
-3b  Hip thrust + Nordic ............. 3x8 / 3x5
-3c  Calf raise ...................... 3x12
-```
+## Sun Oct 11 — L1 · Heavy Legs
 
-## Mon Oct 12 — Heavy upper + reactive fillers
-```
-Warm-up: Daily 7
-1a  Hang power clean (technique) .... 5x2 @ 135-145 ........ rest 2'
-2a  Bench (wave: 6s) ................ 3x6 @ 200 ............ rest 3'
-2b  Weighted pull-up (wave) ......... 3x5 @ +45 ............ rest 3'
-2c  Sprint 20 m @ 85% ............... x1 each round (in the rest)
-3a  Dips ............................ 3x8
-3b  Row ............................. 3x10
-3c  Pogos ........................... 2x10
-Log: bench top set + RPE, pull-up load
-```
+_Done Oct 11: heavy hang cleans + back squat 295 x 8 (PR)._
 
-## Tue Oct 13 — Speed / reactive + single-leg mobility
-```
-Warm-up: Daily 7 + leg swings, pogos
-1a  Hang power snatch (primer) ...... 4x2 @ ~95
-2a  Sprints ......................... 6x15 m ............... rest 2'
-2b  Depth jump 18" .................. 3x3 .................. rest 2'
-2c  Bounds .......................... 3x20 m
-3a  Coach snatch work (if her snatch day lands here)
-3b  Cossack + Copenhagen ............ 2x6/side + 2x20 s
-3c  Hip airplane .................... 2x5/side
-```
+_Warm-up: lower body (Cossack squats, 90/90 switches, duck walks) + Olympic (empty-bar overhead squat, front-rack stretch, hip CARs)_
 
-## Wed Oct 14 — Rest
-Optional yoga / deep split work.
+| Slot | Exercise | Sets × reps | Rest |
+|---|---|---|---|
+| 1a | Coach Olympic lift (heavy) | Per DNT | 2–3' |
+| 2a | Back squat | 3x8 @ 290 (wave: 8s) — DONE: 295 x 8 PR | 4–5' |
+| 3a | Clean deadlift | 3x6 | 2' |
+| 3b | Hip thrust | 3x8 | 90" |
+| 3c | Nordic curl | 3x5 | 90" |
+| 4a | Calf raise + Cossack squat | 3x12 · 2x6/side | — |
 
-## Thu Oct 15 — Heavy Olympic lift + front squat
-```
-Warm-up: Daily 7 + pogos 2x10
-1a  Coach lift (heavy, e.g. power clean) ... per DNT wk21
-1b  Coach pull (e.g. clean deadlift) ....... per DNT wk21
-2a  Front squat ......................... 3x5 @ ~235 (RPE 7-8) .... rest 3'
-2b  Dead bug / plank .................... 3x (in the rest)
-3a  Split squat ......................... 2x8/side
-3b  Tibialis raise ...................... 2x15
-3c  Calf raise .......................... 2x15
-```
+## Mon Oct 12 — U1 · Upper Strength + Speed
+_Warm-up: upper body (PVC pass-throughs, swimmers, twisters) + Olympic_
 
-## Fri Oct 16 — Heavy upper + mobility fillers
-```
-Warm-up: Daily 7
-1a  Coach jerk / press .............. per DNT wk21
-2a  Incline DB press ................ 3x8
-2b  Chin-up ......................... 3x8
-2c  Deep squat hold + reach ......... 3x45 s (in the rest)
-3a  Lateral raise ................... 3x12
-3b  Face pull ....................... 2x15
-3c  Shoulder pass-through ........... 2x10
-Light stretching only. No deep splits, no heavy pulls.
-```
+| Slot | Exercise | Sets × reps | Rest |
+|---|---|---|---|
+| 1a | Coach Olympic lift | Per DNT | 2–3' |
+| 2a | Bench press | 3x6 @ 200 | 3' |
+| 2b | Weighted pull-up | 3x5 @ +45 | 3' |
+| 2c | Sprint 20 m @ 85% | x1 each round | — |
+| 3a | Weighted dips | 3x8 | 90" |
+| 3b | Seated row | 3x10 | 90" |
 
-## Sat Oct 17 — Dunk day + BASELINE TEST
-```
-Warm-up: Daily 7 + leg swings, pogos
-1a  Power clean (primer) ............ 4x2 @ ~145
-2a  Sprints ......................... 4x10 m
-2b  BASELINE: standing reach (flat-footed), best of 5 standing jumps, best of 5 approach touches
-3a  3-step approach drills .......... x6
-3b  Dunk attempts ................... x6-8 (tennis ball -> softball)
-Log: standing reach, best touch, bodyweight
-```
+## Tue Oct 13 — S1 · Speed & Reactive
+_Warm-up: lower body + leg swings, pogo jumps 2x10_
+
+| Slot | Exercise | Sets × reps | Rest |
+|---|---|---|---|
+| 1a | Hang power snatch (primer) | 4x2 @ ~60% | 2' |
+| 2a | Sprints | 6 x 10–20 m | 2' |
+| 2b | Depth jump (18" box) | 3x3 | 2' |
+| 2c | Single-leg bounds | 3x20 m | 2' |
+| 3a | Drop jumps (stick the landing) | 3x3 | 90" |
+| 3b | Single-leg pogos | 2x10/leg | 90" |
+| 4a | Zercher side squat | 2x6/side | — |
+| 4b | Copenhagen lift | 2x20 s/side | — |
+| 4c | Hip airplane | 2x5/side | — |
+
+## Wed Oct 14 — R · Recovery
+Rest. Optional daily mobility: seated hamstring 60 s, butterfly 60 s, couch stretch 45 s, side split 45 s, front split 45 s, leg pulses x10–15.
+
+## Thu Oct 15 — L2 · Olympic + Squat Variation
+_Warm-up: lower body (Cossack squats, 90/90 switches, duck walks) + Olympic (empty-bar overhead squat, front-rack stretch, hip CARs)_
+
+| Slot | Exercise | Sets × reps | Rest |
+|---|---|---|---|
+| 1a | Coach Olympic lift (heavy) | Per DNT | 2–3' |
+| 1b | Coach pull (clean deadlift / pull) | Per DNT | 2–3' |
+| 2a | Front squat | 3x5 @ 235 (RPE 7–8) | 3' |
+| 2b | Back extension | 3x10 | — |
+
+## Fri Oct 16 — U2 · Upper Strength + Mobility
+_Warm-up: upper body (PVC pass-throughs, swimmers, twisters) + Olympic_
+
+| Slot | Exercise | Sets × reps | Rest |
+|---|---|---|---|
+| 1a | Coach jerk / push press | Per DNT | 2–3' |
+| 2a | DB shoulder press | 3x8 | 2' |
+| 2b | DB bent-over row | 3x10 | 2' |
+| 2c | Horse stance hold | 3x30 s | — |
+| 4a | Light sprints | 4x20 m @ 80% | walk back |
+| 4b | Light stretch (no deep splits) | 5 min | — |
+
+## Sat Oct 17 — J1 · Jump & Dunk
+_Warm-up: lower body + leg swings, pogo jumps 2x10_
+
+| Slot | Exercise | Sets × reps | Rest |
+|---|---|---|---|
+| 1a | Power clean (primer) | 4x2 @ ~65% | 2' |
+| 2a | Sprints 10 m | 4 reps | 2' |
+| 2b | 3-step approach drills | x6 | 1' |
+| 3a | Max approach jumps | 8–10 — BASELINE TEST: standing reach, best of 5 standing jumps, best of 5 approach touches | 2' |
+| 3b | Dunk attempts | 6–8 (tennis ball → softball) | 2' |
+
+Stop jumping when touch drops ~1". Basketball (if playing) after J1.

@@ -24,37 +24,64 @@ Warm-up   Daily 7 (+ pogos 2x10 and box jump 3x2 on leg days / leg swings + pogo
   - accessories: 60–90 s
 - **Running long:** cut block 3 or 4, never block 2.
 
-## 2. The weekly split
+## 2. The weekly split (named workouts)
 
-| Day | Session | Hard / easy |
+| Day | Workout | Hard / easy |
 | --- | --- | --- |
-| **Sun** | Heavy legs: coach Olympic lift + back squat wave + hinge | HARD (legs) |
-| **Mon** | Heavy upper + reactive/mobility supersets (light legs: Olympic technique 60–70%) | Easy on the legs |
-| **Tue** | Speed / reactive (sprints, depth jumps, bounds), then single-leg mobility (Cossack, Copenhagen, hip airplane) | HARD (reactive) |
-| **Wed** | Rest / optional yoga + deep split work | Recovery |
-| **Thu** | Heavy Olympic lift + squat variation (front / speed / pin, by block) | HARD (legs) |
-| **Fri** | Heavy upper + reactive/mobility supersets + light stretching | Easy on the legs |
-| **Sat** | Jumping / dunk day: approach jumps (touch logged), dunk attempts | HARD (jump), most important |
+| **Sun** | **L1 · Heavy Legs** | HARD (legs) |
+| **Mon** | **U1 · Upper Strength + Speed** | Easy on legs |
+| **Tue** | **S1 · Speed & Reactive** | HARD (fast) |
+| **Wed** | **R · Recovery** (rest / optional mobility) | Recovery |
+| **Thu** | **L2 · Olympic + Squat Variation** (short day) | HARD (legs) |
+| **Fri** | **U2 · Upper Strength + Mobility** | Easy on legs |
+| **Sat** | **J1 · Jump & Dunk** (most important) | HARD (jump) |
 
-- **48-hour rule:** heavy legs at least 48 h before any jump day.
-- **The day before Saturday:** no heavy pulls and no deep or loaded split stretching.
-- **Basketball:** Saturday after the dunk work; it counts as that day's jumps.
-- **Busy week:** drop Friday first, then shorten Tuesday. Keep Sun, Thu and Sat.
+- **48-hour rule:** heavy legs ≥ 48 h before S1 and J1. No heavy pulls or deep or loaded split stretching on Friday.
+- **Basketball:** Saturday, after J1. It counts as that day's jumps.
+- **Busy week:** drop U2 first, then shorten S1. Keep L1, L2 and J1.
 
-## 3. Upper-day supersets (Mon / Fri)
+## 3. Session layouts (B1 Strength; later blocks keep the slots and swap exercises for the block's trait)
 
-Heavy press and heavy pull, each paired with a short reactive or mobility drill done in the rest period. This trains his weak points without adding a day.
+- **L1:**
+  - 1a coach Olympic lift (heavy)
+  - 2a back squat (wave)
+  - 3a clean deadlift
+  - 3b hip thrust
+  - 3c Nordic curl
+  - 4a calf raise + Cossack
+- **U1:**
+  - 1a coach Olympic lift
+  - 2a bench (wave)
+  - 2b weighted pull-up (wave)
+  - 2c 20 m sprint @ 85% (filler)
+  - 3a weighted dips
+  - 3b seated row
+- **S1:**
+  - 1a hang power snatch primer
+  - 2a sprints
+  - 2b depth jumps
+  - 2c single-leg bounds
+  - 3a drop jumps
+  - 3b single-leg pogos
+  - 4a Zercher side squat
+  - 4b Copenhagen
+  - 4c hip airplane
+- **L2:** 1a coach lift · 1b coach pull · 2a squat variation (front / speed / pin by block) · 2b back extension. **Nothing more**: short day.
+- **U2:**
+  - 1a coach jerk / push press
+  - 2a DB shoulder press
+  - 2b DB bent-over row
+  - 2c mobility filler (horse stance)
+  - 4a light sprints
+  - 4b light stretch
+- **J1:**
+  - 1a power clean primer
+  - 2a sprints 10 m
+  - 2b approach drills
+  - 3a max approach jumps (touch logged)
+  - 3b dunk attempts
 
-```
-2a  Bench (wave)                     heavy
-2b  Weighted pull-up (wave)          heavy
-2c  Reactive OR mobility filler      during rest, low fatigue
-```
-
-- **Reactive fillers:** sprints 1×20 m @ 80–90%, pogos 2×10, box jump ×2, med-ball slam ×3, single-leg hops ×3/leg.
-- **Mobility fillers:** deep squat hold 45–60 s (+ overhead reach), Cossack ×5/side, 90/90 ×5/side, hip airplane ×3/side, shoulder pass-through ×10.
-- **Mixing:** alternate the two through the week, e.g. Mon = reactive fillers, Fri = mobility fillers. In a Reactive block, both days use reactive fillers.
-- **Effort:** fillers stay crisp and easy. Never do them to fatigue: the bench and pull-up come first.
+**Upper-day fillers (2c):** U1 uses a reactive filler (sprint, med-ball push, pogos, by block). U2 uses a mobility filler (horse stance, 90/90, Jefferson curl). Fillers stay crisp and never fatiguing.
 
 ## Anti-patterns
 - ❌ Heavy legs the day before a jump day.

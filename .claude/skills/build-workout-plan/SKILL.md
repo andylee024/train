@@ -29,6 +29,7 @@ When a principle changes a choice, say so in the output, e.g. "her snatch pulls 
 1. **Find what's current:**
    - which block and week it is (`principle-thp-trait-blocks`). Week numbers = DNT coach's weeks: W21–W24 in the summer arc, then W1 restarts in a new arc folder;
    - the coach's latest program (`docs/athletes/andy/<arc>/coach-programs/`);
+   - the plan doc "Andy — Training Plan" (Claude Docs) is the source of truth for workout names and session layouts;
    - recent logged sessions: Supabase project `vtruwlvekfnmfgaundhp`, tables `workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`. Weights may be stored in kg.
 2. **Place her Olympic lifts** on the split (`principle-dnt-olympic-lifts`).
 3. **Lay out each day** with the session structure and split (`principle-training-rhythm`).
@@ -45,15 +46,14 @@ When a principle changes a choice, say so in the output, e.g. "her snatch pulls 
 
 ## Output format
 ```
-MON Oct 12 - Heavy upper (Strength block - W21)
+MON Oct 12 - U1 · Upper Strength + Speed (B1 Strength - W21)
 Warm-up: Daily 7
-1a  Hang power clean (technique) .... 5x2 @ 135-145 ........ rest 2'
+1a  Coach Olympic lift ............. per DNT .............. rest 2-3'
 2a  Bench (wave: 6s) ................ 3x6 @ 200 ............ rest 3'
 2b  Weighted pull-up (wave) ......... 3x5 @ +45 ............ rest 3'
 2c  Sprint 20 m @ 85% ............... x1 each round (during rest)
 3a  Dips ............................ 3x8
 3b  Row ............................. 3x10
-3c  Deep squat hold + reach ......... 3x45s
 Log: bench top set + RPE, pull-up load
 ```
 

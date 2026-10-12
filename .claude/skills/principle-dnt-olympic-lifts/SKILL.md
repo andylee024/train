@@ -16,16 +16,19 @@ description: Andy's Olympic-lifting principle. His DNT coach (a woman) programs 
 5. **Her accessories** (good mornings, pull-ups, dips, wrist work, core, reverse plank) fill block 3 slots.
 6. **Never add her days on top of the week.** Her 3 days fold into his split. Bolting a program on top caused his Block 1 fall-off.
 
-## Where her days land
+## Where her lifts land
+
+Coach slots in the week: **L1 1a (Sun) · U1 1a (Mon) · L2 1a/1b (Thu) · U2 1a (Fri)**.
 
 | Her day type | Lands on | Why |
 | --- | --- | --- |
-| Clean & jerk / power clean (+ back squat) | **Sun** heavy legs | Heavy day; her squat is skipped |
-| Snatch (+ snatch deadlift / good morning) | **Tue**, after the jumps | Heavy pulls stay off Friday |
-| Clean + clean deadlift / pull | **Thu** heavy Olympic day | 48 h before Saturday |
-| Jerk / overhead squat / press | **Fri** heavy upper (or Mon) | Light on the legs |
+| Clean & jerk / power clean (+ back squat) | **Sun L1 1a** | Heavy day; her squat is skipped |
+| Clean + clean deadlift / pull | **Thu L2 1a/1b** | 48 h before Saturday |
+| Snatch (+ snatch deadlift) | **Sun or Thu 1a**, rotated in when her program has one | Keeps heavy pulls off Tue/Fri |
+| Jerk / push press / overhead | **Fri U2 1a** (or Mon U1 1a) | Light on the legs |
+| Any lighter Olympic lift | **Mon U1 1a** | Upper day, legs fresh for Tue |
 
-Jump-day primers (Tue snatch, Sat power clean) are light: about 4×2 at 60–70%.
+Jump-day primers (S1 hang power snatch, J1 power clean) are light: about 4×2 at 60–65%.
 
 ## On each new drop (~every 2 weeks)
 1. Read the program PDF and save it to the active arc's `coach-programs/` as `dnt-wk<NN-NN>_arc-W<NN>-W<NN>.pdf`. Arc week = DNT week; numbering restarts at W1 after W24.
