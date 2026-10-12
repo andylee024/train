@@ -4,7 +4,7 @@ Read [`README.md`](README.md) first. This file adds what an agent needs to opera
 
 ## What this repo is
 
-A single-athlete workout tracker. Plan lives in markdown, executed work lives in Supabase, the dashboard visualizes progress. Nothing else. Keep it that way — no generators, no spreadsheets, no product-process scaffolding.
+A single-athlete workout tracker. Plan lives in markdown, executed work lives in Supabase, logged and queried with the CLI. Nothing else. Keep it that way — no generators, no spreadsheets, no product-process scaffolding.
 
 ## Storage boundary
 
@@ -12,7 +12,6 @@ A single-athlete workout tracker. Plan lives in markdown, executed work lives in
 |---|---|
 | Planned work | Markdown under `docs/athletes/andy/<arc>/training/` |
 | Executed work | Supabase `workouts` / `workout_exercises` / `exercise_sets` (project `vtruwlvekfnmfgaundhp`) |
-| Progress view | `web/dashboard/` — derived from Supabase, never a source |
 
 ## Active athlete + arc
 
@@ -27,19 +26,6 @@ Key facts:
 - **Programming = the skills below.** Don't invent structure; build with `build-workout-plan`.
 - **No BJJ.** Shoulder + wrist are healed (monitor; landmine / hang variants if pain ≥3/10).
 - Heavy legs ≥48 h before a jump day (Tue, Sat). No heavy pulls the day before Saturday.
-
-## Dashboard (`web/dashboard/`)
-
-Next.js 16 (read `web/dashboard/AGENTS.md` before touching it — the API differs from older Next). Two routes:
-- `/strength` — Upper / Lower / Power lenses. KPI row, key-lift e1RM cards, all-lifts change table, recent PRs.
-- `/progress/[slug]` and `/progress/[slug]/[date]` — per-lift history and one-session detail.
-
-Where things live:
-- `lib/queries.ts` — every Supabase read. Add new queries here.
-- `lib/view.ts` — the three views and their key-lift lists. Edit `KEY_LIFTS` to change which lifts get cards.
-- `lib/categorize.ts` — name → Strength/Power/Mobility and Upper/Lower rules.
-- `components/performance-views.tsx` — the `/strength` layout. Fixed layout, no widget config; edit the JSX.
-- `components/panel.tsx` — the one card primitive. `components/viz/` — chart primitives.
 
 ## CLI (`app/cli/`)
 
@@ -59,4 +45,4 @@ Where things live:
 ## Don't
 
 - Don't write executed sets into markdown. Don't write plans into Supabase.
-- Don't rebuild the coach marketplace, plan synthesis, nutrition tracking, widget engine, or xlsx export. They were removed on 2026-09-07 on purpose (see git history before that date if you need the code).
+- Don't rebuild the coach marketplace, plan synthesis, nutrition tracking, widget engine, or xlsx export (removed 2026-09-07), or the progress dashboard and Supabase migrations (removed 2026-10-12). Git history has the code if ever needed.

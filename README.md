@@ -1,12 +1,11 @@
 # Train
 
-Andy's workout tracker. Three parts, one loop:
+Andy's workout tracker. Two parts, one loop:
 
 | Part | Where | Source of truth for |
 |---|---|---|
 | **Plan** | `docs/athletes/andy/<arc>/training/` | What's prescribed — hand-edited markdown, one file per week |
 | **Log** | Supabase (`workouts`, `workout_exercises`, `exercise_sets`) | What was actually done |
-| **Progress** | `web/dashboard/` | Visualizing the log — e1RM trends, PRs, per-lift history |
 
 `app/cli/` is a thin CLI over the same Supabase tables (log a workout from JSON, query history and e1RM).
 
@@ -15,10 +14,7 @@ Andy's workout tracker. Three parts, one loop:
 ```
 train/
 ├── app/
-│   ├── cli/                   ← `train` CLI (cli.ts + train-api.ts)
-│   ├── supabase/migrations/   ← schema
-│   └── scripts/               ← exercise library seed
-├── web/dashboard/             ← Next.js progress dashboard (/strength, /progress/[lift])
+│   └── cli/                   ← `train` CLI (cli.ts + train-api.ts)
 ├── docs/
 │   ├── athletes/andy/         ← arc bundles (plan markdown, profile, coach PDFs, reviews)
 │   └── content/               ← coach methodology library (style guides + source material)
@@ -28,9 +24,6 @@ train/
 ## Run
 
 ```bash
-# dashboard
-cd web/dashboard && npm install && npm run dev      # http://localhost:3000
-
 # cli (reads repo-root .env)
 npx tsx app/cli/cli.ts history --last 7d
 npx tsx app/cli/cli.ts query e1rm "Back Squat"
@@ -43,5 +36,5 @@ Env (repo-root `.env`): `SUPABASE_URL`, `SUPABASE_KEY`, `TRAIN_USER_ID`. See `.e
 ## Rules
 
 - Plan markdown is the plan. Edit it directly. Never write executed sets into it.
-- Executed sets go to Supabase only. The dashboard and CLI read from there.
+- Executed sets go to Supabase only. The CLI logs and reads from there.
 - Exercise names in the plan must match `exercises.name` in Supabase or PR lookups miss.

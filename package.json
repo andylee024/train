@@ -1,7 +1,7 @@
 {
   "name": "train",
   "version": "0.1.0",
-  "description": "Workout tracker: markdown plans, Supabase logs, progress dashboard",
+  "description": "Workout tracker: markdown plans, Supabase logs, train CLI",
   "type": "module",
   "bin": {
     "train": "./app/cli/cli.ts"
