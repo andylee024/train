@@ -22,7 +22,7 @@ train/
 ├── docs/
 │   ├── athletes/andy/         ← arc bundles (plan markdown, profile, coach PDFs, reviews)
 │   └── content/               ← coach methodology library (style guides + source material)
-└── .claude/skills/            ← dnt-overview, integrate-dnt-workout
+└── .claude/skills/            ← build-workout-plan, 4 principle-* skills, dnt-overview
 ```
 
 ## Run

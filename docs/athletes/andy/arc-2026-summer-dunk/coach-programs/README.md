@@ -16,7 +16,7 @@ Earlier program from arc start lives at `../styles/dnt-program-2026-05-17.pdf` (
 
 ## How these get used
 
-- **Integration:** the `integrate-dnt-workout` skill re-homes each drop's Olympic lifts onto the fixed v9 Oly days (Tue/Thu/Fri/Sat) by movement pattern (~2/day). See `../training/arc.md` "DNT Integration Model (v9)".
+- **Integration:** `build-workout-plan` places each drop's Olympic lifts on the split, following `principle-dnt-olympic-lifts`: clean & jerk day → Sun, snatch day → Tue (after jumps), clean + pull day → Thu, jerk day → Fri. Her back squat is skipped.
 - **DNT overview:** the `dnt-overview` skill outputs a day's coach Oly lifts in the athlete's format.
 - The re-homed, day-by-day result is authoritative in `../training/weeks/2026-training-W<NN>.md`.
 
@@ -25,4 +25,4 @@ Earlier program from arc start lives at `../styles/dnt-program-2026-05-17.pdf` (
 When a new `*program*.pdf` lands (in `~/Downloads` or `~/Desktop`):
 1. Copy it here as `dnt-wk<NN-NN>_arc-W<NN>-W<NN>.pdf`.
 2. Add a row to the table above.
-3. Run `integrate-dnt-workout` to fold it into the week files.
+3. Run `build-workout-plan` to fold it into the week files.

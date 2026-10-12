@@ -25,7 +25,7 @@ Exercise
 
 - **Both kg and lbs** on the weight line (1 kg = 2.20462 lb; round sensibly).
 - If the load is a coach **%** with only an lb estimate, show `% + est. lb/kg` and flag that the true max is pending.
-- If the day has **no coach Oly** (Sun/Mon own days, Wed BJJ-only, or a deload day with none), say so in one line.
+- If the day has **no coach Oly** (Mon = technique only, Wed = rest, Sat = light primer only, or a deload day with none), say so in one line.
 
 ## Procedure
 
@@ -33,7 +33,7 @@ Exercise
 2. **Read that day's section** from the week file. Find the day's table.
 3. **Filter to `coach` source rows** whose lift is an Olympic lift (snatch/clean/jerk/pull families) — not `coach acc` rows.
 4. **Format** each into the block above. Convert loads to kg + lbs. Preserve the `%` note when present.
-5. **Print** the blocks. If asked for the whole week, repeat per Oly day (Tue/Thu/Fri/Sat).
+5. **Print** the blocks. If asked for the whole week, repeat per coach day (Sun / Tue / Thu / Fri — see `principle-dnt-olympic-lifts` for where her days land).
 
 ## Example
 
@@ -49,9 +49,9 @@ Power Clean & Jerk
 - 68 kg / 150 lb (85%, est.)
 ```
 
-On a W13 Tuesday (deload, no snatch) → "No coach DNT Olympic lift today — it's a deload week with no snatch. Tuesday is mobility legs only."
+On a Wednesday → "No coach DNT Olympic lift today — Wednesday is rest."
 
 ## Notes
 
 - Loads for pure Oly lifts are often coach **%** anchored to recent training tops (the athlete trains them submaximally), so they're estimates — flag that and firm up when true 1RMs are provided.
-- This skill never edits the plan. To fold a new coach program in, use `integrate-dnt-workout`.
+- This skill never edits the plan. To fold a new coach program in, use `build-workout-plan` (it follows `principle-dnt-olympic-lifts`).

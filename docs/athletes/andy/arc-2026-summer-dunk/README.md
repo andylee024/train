@@ -106,6 +106,6 @@ The agent should pull at minimum once a week (Sunday) to pick up the new `curren
 
 ## Versioning
 
-Plan version: **v8** — DNT-driven Oly structure from W08 (2026-06-21). Hand-edited markdown; no generator.
+Plan version: **v10** (2026-10-11: W21–W24 Strength block built from the principle skills; arc closes at W24). Earlier: **v8** — DNT-driven Oly structure from W08 (2026-06-21). Hand-edited markdown; no generator.
 
 Active arc start: **2026-05-03** (Sunday). End: **2026-09-05** (Saturday).

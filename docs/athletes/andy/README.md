@@ -8,12 +8,14 @@ Andy Lee's athlete directory. Contents are scoped per-arc: each arc gets its own
 andy/
 ├── README.md                       ← this file
 ├── arc-2026-summer-dunk/           ← ACTIVE arc bundle (start README.md inside)
-└── logs/                           ← historical exercise CSVs (cross-arc)
+└── archive/                        ← superseded docs (old coach-integration notes, legacy CSVs)
 ```
 
 ## Active arc
 
-[`arc-2026-summer-dunk/`](arc-2026-summer-dunk/) — 18-week dunk + upper + side split arc, May 3 → Sep 5, 2026.
+[`arc-2026-summer-dunk/`](arc-2026-summer-dunk/): May 3 → Nov 7, 2026 (extended; arc week = DNT week). Currently in the **W21–W24 Strength block**. It closes at W24, and a new arc starts at **W1** on Nov 8 (Power → Reactive → Test blocks, dunk test Jan 30, 2027).
+
+Programming is built with the repo skills in `.claude/skills/`: `build-workout-plan` + four `principle-*` skills.
 
 The bundle is **self-contained**. Open the bundle's [`README.md`](arc-2026-summer-dunk/README.md) for pull instructions (how the cloud agent ingests the bundle) and contents map.
 
@@ -32,4 +34,4 @@ When the 2026 summer dunk arc completes (Sep 5, 2026):
 3. The new bundle gets its own profile snapshot, arc.md, blocks, weeks, vendored styles
 4. The agent's pull target switches to the new bundle
 
-Athlete-level data that persists across arcs (logs, identity) stays at this level.
+Athlete-level material that persists across arcs stays at this level.

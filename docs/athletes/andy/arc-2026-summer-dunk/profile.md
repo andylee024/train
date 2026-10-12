@@ -1,5 +1,23 @@
 # Athlete Profile — Andy Lee
 
+> **Update 2026-10-11, overrides the older sections below where they conflict.**
+> - **Goals (priority):**
+>   1. Dunk a volleyball on a 10' rim (+3–5" approach touch).
+>   2. Power clean 225 + power clean & jerk 225 with the DNT coach (she programs his Olympic lifts).
+>   3. Strength keeps climbing: 405 squat within 12 months.
+> - **No BJJ.** Side split is no longer a tracked goal; mobility lives in warm-ups and fillers. Plays pickup basketball occasionally (Saturday after dunk work).
+> - **Current numbers:**
+>   - back squat 295 × 8 (Oct 11, e1RM ~374)
+>   - 355 single (Sep 21)
+>   - front squat 265 × 4
+>   - power clean 215 single
+>   - power clean & jerk 205
+>   - bench 220 × 4
+>   - bodyweight last logged 189 (Jul 30)
+> - **What works for him:** encoded as the four principle skills in `.claude/skills/` (strength wave, THP trait blocks, DNT Olympic lifts, training rhythm). Use `build-workout-plan`.
+> - **Injuries:** shoulder + wrist healed (monitor; revert to landmine / hang variants if pain ≥3/10).
+
+
 **Snapshot at arc start: 2026-05-03**
 **Arc: Summer 2026 Dunk (18 weeks)**
 

@@ -319,7 +319,7 @@ Saturday  — Power Clean & Power Jerk 5×(1+3)  /  Snatch Pull 3×4  /  Back Sq
 
 ### Intermediate-and-above templates (not reproduced — see Catalyst pp. 806–951)
 
-For Level 2-5 programming, refer to the Catalyst sample programs directly in `sources/catalyst-athletics-olympic-weightlifting-2016.pdf`:
+For Level 2-5 programming, refer to the Catalyst sample programs directly in the book (PDF removed from the repo 2026-10-11 for size; use your own copy):
 - Beginner Template, Simple 3-Day Template (pp. ~870)
 - Masters Program (pp. ~885)
 - Bulgarian Program (pp. ~895)
@@ -593,7 +593,7 @@ Catalyst's *Universal Errors* chapter (pp. 491-531) is a masterclass — these a
 
 ## 14. Sources
 
-- **Everett, Greg. *Olympic Weightlifting: A Complete Guide for Athletes & Coaches* (2016 edition).** Catalyst Athletics. 1,267 pages. **Single source for this guide; informs all sections (§1–§13).** The definitive English-language Olympic weightlifting reference; covers technique, periodization, assessment, recovery, nutrition, competition prep, and the full exercise catalog. Cited extensively throughout. Available as PDF at `sources/catalyst-athletics-olympic-weightlifting-2016.pdf`.
+- **Everett, Greg. *Olympic Weightlifting: A Complete Guide for Athletes & Coaches* (2016 edition).** Catalyst Athletics. 1,267 pages. **Single source for this guide; informs all sections (§1–§13).** The definitive English-language Olympic weightlifting reference; covers technique, periodization, assessment, recovery, nutrition, competition prep, and the full exercise catalog. Cited extensively throughout. PDF not kept in the repo (removed 2026-10-11 for size).
 
 **Authorities referenced within Everett:**
 - Medvedyev, A. *A System of Multi-Year Training in Weightlifting* (1986/1989, USSR/translated). Soviet methodology foundation.
@@ -612,5 +612,5 @@ Catalyst's *Universal Errors* chapter (pp. 491-531) is a masterclass — these a
 |---|---|---|
 | `guide.md` | This file — the 15-section synthesis | Start here. Use as the operational reference for designing programs in this style. |
 | `exercise-selection.md` | Catalyst's exercise catalog filtered with style-specific annotations | When picking exercises for a session or block; cross-reference with the athlete's needs and the substitution map. |
-| `sources/catalyst-athletics-olympic-weightlifting-2016.pdf` | Greg Everett's complete 1,267-page text (single source) | When this guide is ambiguous, when needing detailed technique cues or error correction, when building Skill Level 2+ programs (sample programs at pp. 806+), or when needing the full exercise catalog (snatch exercises pp. 955, clean pp. 1021, jerk pp. 1077, general pp. 1107). Authoritative on all principles. |
+| *(PDF not in repo: your own copy)* | Greg Everett's complete 1,267-page text (single source) | When this guide is ambiguous, when needing detailed technique cues or error correction, when building Skill Level 2+ programs (sample programs at pp. 806+), or when needing the full exercise catalog (snatch exercises pp. 955, clean pp. 1021, jerk pp. 1077, general pp. 1107). Authoritative on all principles. |
 | `diagrams/` | Reserved for diagrams (force-velocity curve, lift phases, etc.) | Empty currently — populate as needed. |

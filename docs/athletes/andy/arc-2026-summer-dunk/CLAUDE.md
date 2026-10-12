@@ -1,5 +1,11 @@
 # CLAUDE.md — Arc Bundle Operating Instructions
 
+> **Read first (2026-10-11).** The daily agent now builds and explains workouts with the repo skills **`build-workout-plan`** and the four **`principle-*`** skills, plus `dnt-overview`. They override this file where they conflict.
+> - **No more BJJ.** Ignore the BJJ scheduling rules below.
+> - **Split:** Sun heavy legs · Mon heavy upper + fillers · Tue speed/reactive · Wed rest · Thu heavy Olympic lift + squat variation · Fri heavy upper + fillers · Sat dunk day.
+> - This arc ends at W24. The next arc starts at W1.
+
+
 This file orients an AI agent reading the arc bundle. Read this on every session start before answering athlete questions.
 
 ---
@@ -77,7 +83,7 @@ Answer from these sources, in order:
 3. **`styles/vertical-jump-guide.md`** — for any jump / power / reactive question
 4. **`styles/dylan-shannon-guide.md`** — for upper body / Olympic / 4-pillar questions
 5. **`docs/content/training-styles/matt-smith-flexibility/guide.md`** — for side-split / flexibility questions (skill-focused; Sun Session A + Wed Session B)
-6. **`styles/dnt-integration-methodology.md`** — for how the coach's DNT lifts fold into the split (re-home by movement pattern ~2/day, free Thu absorbs overflow; see arc.md "DNT Integration Model")
+6. **`principle-dnt-olympic-lifts`** (repo skill) — for how the coach's DNT lifts fold into the split
 
 Cite the section explicitly when you do (e.g., "Per VJ guide §3, you're strength-dominant, which means...").
 

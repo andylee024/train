@@ -1,5 +1,12 @@
 # Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
 
+> **Status 2026-10-11, read first.** This arc runs through **W24 (Nov 7, 2026)** and then closes. The next arc restarts at **W1** on Nov 8 (arc week = DNT week).
+> - **W21–W24 is the Strength block**, rewritten 2026-10-11: `training/blocks/2026-09-block-04-405-strength-push.md`.
+> - Programming now comes from the repo skills `build-workout-plan` + `principle-dylan-shannon-strength-wave`, `principle-thp-trait-blocks`, `principle-dnt-olympic-lifts`, `principle-training-rhythm`.
+> - **Changes from the sections below:** no more BJJ; the side split is no longer a tracked goal; goals are now (1) volleyball dunk, (2) power clean / clean & jerk 225 with the DNT coach, (3) strength keeps climbing (405 within 12 months).
+> - Wherever the older sections conflict with the skills, the skills win. The rest of this file is the arc's history.
+
+
 **Start:** 2026-05-03 (Sunday)
 **End:** 2026-11-07 (Saturday) — extended to W24 on 2026-09-27 for Block 4 (405 squat push). Prior: +2 wks 2026-09-15 (coach wk17–18 peak); recalibrated 2026-09-06 (+7 days, arc week = DNT week).
 **Duration:** 16 weeks remaining-view (renumbered 2026-07-28 to align arc weeks with DNT coach weeks; originally 18 wks from May 3). Arc week now = DNT week.
@@ -44,7 +51,7 @@ Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-d
 | **1** | 1–6 | Power Conversion + Upper Build | *(complete — see `reviews/blocks/block-1-review.md`)* | — |
 | **2** | 7–10 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
 | **3** | 11–18 | Peak + Realize + Test | Oly-forward strength block (v9). Squat/front-squat/deadlift PRs + coach DNT Oly. Coach peaks to max singles W17–18. Reactive finisher (plyos + sprints) added to upper days from W17. | all |
-| **4** | 19–24 | 405 Strength Push | Back squat → 405 (dedicated intensity ramp to a max attempt at W24). Speed/reflexive re-introduced & ramped. Coach DNT Oly continues. **Dunk parked** — handed to THP after this block. See `blocks/2026-09-block-04-405-strength-push.md`. | G-squat (405) |
+| **4** | 19–24 | Strength (W21–24) | W19–20 ran as "405 Strength Push". From W21: THP **Strength** trait block (squat wave 3 sets, jumps held: Tue reactive + Sat dunk day, Olympic lifts per DNT). W24 = light week + touch retest + true-max single. See `blocks/2026-09-block-04-405-strength-push.md`. | Dunk, Olympic, strength |
 
 **Block 1 ended in a fall-off** (W4–6 collapse, see review). Block 2 therefore opens as a **re-entry**, not a continuation — see Redesign note.
 
@@ -100,9 +107,9 @@ The coach issues a new program ~every 2 weeks (always 3 days). Its Olympic lifts
 5. **6 exercises/session cap.** Coach Oly first, then own wave/mobility/accessory work.
 6. **Sync: arc weeks are now aligned to DNT weeks** (renumbered 2026-07-28 — arc week = DNT week, offset removed). On each new drop, reprocess into the then-current weeks. Current: DNT wk11–12 = arc W11–W12.
 
-Workflow: drop the new `*program*.pdf`, run `.claude/skills/integrate-dnt-workout/` (re-home the Oly lifts onto Tue/Thu/Fri/Sat, fold accessories into Thu/Fri), update the current week files. Full methodology: `styles/dnt-integration-methodology.md`.
+Workflow: drop the new `*program*.pdf`, run `build-workout-plan` (follows `principle-dnt-olympic-lifts`), update the current week files.
 
-> **Note:** the `integrate-dnt-workout` skill still documents the *old* split's re-home table (Sun Lower / Mon Upper / Tue Lower-Speed / Thu Free). Update the skill to this v9 mapping on the next edit pass.
+> **Note (2026-10-11):** `integrate-dnt-workout` was retired. Placement rules now live in `principle-dnt-olympic-lifts`.
 
 ---
 
@@ -144,7 +151,7 @@ Three baselines are still **uncaptured 7 weeks in** (CMJ, depth jump, side split
 - **Primary (jump):** Vertical Jump Bible + THP — `styles/vertical-jump-guide.md`
 - **Upper / Olympic / 4-pillar lower:** Dylan Shannon (POWERJACKED) — `styles/dylan-shannon-guide.md`
 - **Flexibility (G3):** Matt Smith — `docs/content/training-styles/matt-smith-flexibility/guide.md` (skill-focused, isolation→compound, 2×/wk per skill, §13 scheduling)
-- **External coach:** DNT — integrate via `styles/dnt-integration-methodology.md`
+- **External coach:** DNT — integrate via the `principle-dnt-olympic-lifts` skill
 - **Daily warm-up:** "The Daily 7" — `styles/daily-warmup.md`
 
 ---
