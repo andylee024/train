@@ -15,7 +15,7 @@ Build the engine. Strength is the block's focus (full squat / bench / pull-up wa
 | Wed | **R · Recovery** | Rest / mobility |
 | Thu | **L2 · Olympic + Squat Variation** | Heavy Olympic lifts + front squat (short day) |
 | Fri | **U2 · Upper Strength + Mobility** | Strength + mobility fillers |
-| Sat | **J1 · Jump & Dunk** | Technique + baseline |
+| Sat | **J1 · Jump & Dunk** | Technique + touch tracking |
 
 Heavy legs ≥48 h before S1 and J1. Coach slots: Sun 1a, Mon 1a, Thu 1a/1b, Fri 1a. When her program has a snatch day, rotate it into Sun or Thu 1a.
 
@@ -40,7 +40,7 @@ Heavy legs ≥48 h before S1 and J1. Coach slots: Sun 1a, Mon 1a, Thu 1a/1b, Fri
 Wave rule: every rep at RPE ≤8.5 → +5 lb next time that rep range comes up.
 
 ## Tests
-- **Sat Oct 17 (W21):** baseline — standing reach, best of 5 standing jumps, best of 5 approach touches, bodyweight.
+- **Baseline (estimated, Oct 2026):** 6'0", standing reach ~8'0", tennis-ball dunk → max approach touch ~10'3" (~27" approach vertical). Volleyball dunk needs ~10'6" (+2–4").
 - **Sun Nov 1 (W24):** smooth single ~365–375 to set a true max.
 - **Sat Nov 7 (W24):** approach-touch retest.
 

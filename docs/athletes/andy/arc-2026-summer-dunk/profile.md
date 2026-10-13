@@ -6,6 +6,7 @@
 >   2. Power clean 225 + power clean & jerk 225 with the DNT coach (she programs his Olympic lifts).
 >   3. Strength keeps climbing: 405 squat within 12 months.
 > - **No BJJ.** Side split is no longer a tracked goal; mobility lives in warm-ups and fillers. Plays pickup basketball occasionally (Saturday after dunk work).
+> - **Jump baseline (est.):** 6'0", standing reach ~8'0", tennis-ball dunk on a 10' rim → max touch ~10'3" (~27" approach vertical). Volleyball dunk ≈ 10'6" touch (+2–4").
 > - **Current numbers:**
 >   - back squat 295 × 8 (Oct 11, e1RM ~374)
 >   - 355 single (Sep 21)

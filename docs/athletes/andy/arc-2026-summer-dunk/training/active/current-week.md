@@ -91,7 +91,7 @@ _Warm-up: lower body + leg swings, pogo jumps 2x10_
 | 1a | Power clean (primer) | 4x2 @ ~65% | 2' |
 | 2a | Sprints 10 m | 4 reps | 2' |
 | 2b | 3-step approach drills | x6 | 1' |
-| 3a | Max approach jumps | 8–10 — BASELINE TEST: standing reach, best of 5 standing jumps, best of 5 approach touches | 2' |
+| 3a | Max approach jumps | 8–10, log best touch (baseline est. ~10'3") | 2' |
 | 3b | Dunk attempts | 6–8 (tennis ball → softball) | 2' |
 
 Stop jumping when touch drops ~1". Basketball (if playing) after J1.
