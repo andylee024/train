@@ -5,7 +5,16 @@
 - Arc Week: 21 of 24 (= DNT wk21)
 - Date Range: Sun Oct 11 – Sat Oct 17, 2026
 - Built with: `build-workout-plan`. Source of truth for layout: the Claude Docs plan "Andy — Training Plan" (session structure).
-- Coach lifts: DNT wk21 — her lifts, sets and % as written in every **Coach** slot. Her back squat is skipped.
+- Coach lifts: DNT wk21 from `coach-programs/dnt-wk21-22_arc-W21-W22.pdf` (received Oct 10; integrated Oct 19, after the week). Her back squat is skipped.
+
+## Coach program (DNT wk21) — record
+Program arrived after the week was built, so this records her prescription and what was done.
+
+| Her day | Her lifts | Planned slot | Done |
+|---|---|---|---|
+| Day 1 · clean | Hang power clean + front squat 85% 5×(2+1) · clean deadlift 85% 5×3 · hang muscle clean 40 kg 4×4 · Sots press 4×8 | Sun L1 1a/1b | Sun Oct 11 (hang clean 175–185 ×2) |
+| Day 2 · jerk | Rack jerk 70% 6×3 · overhead squat 40 kg 4×3 · bar dip 4×10 · wrist 4×10 · split-jerk practice 20 kg 15 min | Fri U2 1a | Tue Oct 13 (rack jerk 155 ×3, OHS 115) |
+| Day 3 · power clean | Power clean 85% 5×2 · back squat 85–90% 6×3-2 *(skipped)* · good morning 4×8 · pull-up 4×10 | Thu L2 1a | Fri Oct 16 |
 
 ## 7-Day Overview
 1. Sun Oct 11: **L1 · Heavy Legs**
