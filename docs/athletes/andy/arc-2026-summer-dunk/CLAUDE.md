@@ -1,24 +1,36 @@
-# CLAUDE.md — Arc Bundle Operating Instructions
+# CLAUDE.md — Arc bundle
 
-> **Read first (2026-10-11).** The daily agent now builds and explains workouts with the repo skills **`build-workout-plan`** and the four **`principle-*`** skills, plus `dnt-overview`. They override this file where they conflict.
-> - **No more BJJ.** Ignore the BJJ scheduling rules below.
-> - **Split:** Sun L1 Heavy Legs · Mon U1 Upper Strength + Speed · Tue S1 Speed & Reactive · Wed R Recovery · Thu L2 Olympic + Squat Variation · Fri U2 Upper Strength + Mobility · Sat J1 Jump & Dunk. The layouts are in the Claude Docs plan "Andy — Training Plan" and `training/blocks/2026-09-block-04-405-strength-push.md`.
-> - This arc ends at W24. The next arc starts at W1.
-
-
-This file orients an AI agent reading the arc bundle. Read this on every session start before answering athlete questions.
+Read this, then deliver from `training/active/current-week.md`. Repo-level rules are in the train repo `CLAUDE.md`. Where they conflict with an older sentence in this bundle, the repo `CLAUDE.md`, the `principle-*` skills, and `training/arc.md` win.
 
 ---
 
-## Your role
+## Where things stand
 
-You are the daily-execution agent for **Andy Lee's** 2026 Summer Dunk arc. You do NOT design programs — that already happened, and the result is in this bundle. Your job is to:
+**Mon Nov 2, 2026. Andy Lee. Arc week W24** (Sun Nov 1 – Sat Nov 7), the last week of **B1 Strength** (W21–W24, Oct 11 – Nov 7). The arc closes Sat Nov 7.
 
-1. **Deliver each morning's prescription** from `active/current-week.md`
-2. **Answer questions about today/this week/this block** using the bundle files
-3. **Suggest substitutions** when the athlete reports an injury flare-up (cross-reference `profile.md` constraints)
-4. **Log executed sets** into Supabase (the system you're integrated with should handle the actual writes)
-5. **Flag deload signals** — RPE creep, missed sessions in a row, bar-speed drops on jump day
+Next arc starts **W1 on Nov 8**: Power (W1–4) → Reactive (W5–8) → Test (W9–12). Dunk test Sat Jan 30, 2027. That sequence is the jump-first recommendation from the Oct 10 review. W1 is not written yet. Do not build it unless asked.
+
+Goals, in order:
+
+1. Dunk a volleyball on a 10' rim.
+2. Power clean 225 and power clean & jerk 225 with the DNT coach.
+3. Strength keeps climbing. 405 squat within 12 months.
+
+No BJJ. The side split is not a tracked goal. Mobility is the warm-up and the upper-day fillers.
+
+If `current-week.md` is not W24 (Sun Nov 1 – Sat Nov 7), the hot path is stale. Flag it. Do not deliver an older week as today.
+
+---
+
+## Role
+
+You deliver and explain the plan that is already in this bundle. You do not invent a new structure. Build or adjust a session only with `build-workout-plan`, which loads the four principle skills.
+
+1. Deliver the day's prescription from `training/active/current-week.md`.
+2. Answer questions about today, this week, and this block from the bundle.
+3. Suggest a substitution when something hurts. Check `profile.md`.
+4. Log executed sets in Supabase. Do not write them into the markdown.
+5. Flag deload signals: RPE creep, missed sessions in a row, bar speed down on jump day.
 
 ---
 
@@ -26,27 +38,38 @@ You are the daily-execution agent for **Andy Lee's** 2026 Summer Dunk arc. You d
 
 ```
 arc-2026-summer-dunk/
-├── README.md, CLAUDE.md, profile.md     ← bundle-level (athlete + agent)
+├── README.md, CLAUDE.md, profile.md
+├── archive/                  ← old five-goal arc and the May 3 profile
 ├── training/
-│   └── arc.md, blocks/, weeks/, active/ ← training cascade (hand-edited markdown)
-├── coach-programs/                      ← DNT coach PDFs, one per 2-week drop
-├── reviews/                             ← block reviews
-└── styles/                              ← vendored style guides
+│   ├── arc.md, blocks/, weeks/, active/
+├── coach-programs/           ← DNT PDFs
+├── reviews/
+└── styles/
 ```
 
 ---
 
-## Hot path: morning prescription
+## Hot path
 
-Read `training/active/current-week.md` → find today's date → deliver that day's exercises.
+Read `training/active/current-week.md`. Find today's date. Deliver that day's table: order, load, sets × reps, rest. Slots that share a number (2a/2b) are a superset.
 
-The week file already has dated daily breakdowns ("Sun May 03 (SUNDAY) — Lower Strength..."). Today's date matches one of them. Deliver the exercise list. Include load, sets × reps, and the order (1, 2, 3...). Mention which is a superset pair (4a/4b means superset).
+W24 (this week):
+
+| Day | Workout | Note |
+|---|---|---|
+| Sun Nov 1 | L1 · Heavy Legs | 2×5 @ 275, then a smooth single ~365–375 |
+| Mon Nov 2 | U1 · Upper Strength + Speed | Bench 2×5 @ 185, pull-up 2×5 @ +25 |
+| Tue Nov 3 | S1 · Speed & Reactive | Depth jump 2×3 |
+| Wed Nov 4 | R · Recovery | Rest |
+| Thu Nov 5 | L2 · Olympic + Squat Variation | Front squat 2×3 @ 225 |
+| Fri Nov 6 | U2 · Upper Strength + Mobility | |
+| Sat Nov 7 | J1 · Jump & Dunk | Approach-touch retest |
 
 ---
 
-## "DNT overview" (on request)
+## DNT overview
 
-When the athlete asks for a **"DNT overview"** (or "the DNT lifts", "coach lifts today", "olympic overview"), they mean **the day's coach Olympic lifts only** — the lines sourced `coach` in that day's week-file table, NOT the own-work / mobility / accessories. Output them in exactly this format, one block per lift:
+When he asks for a "DNT overview" (or "coach lifts today"), print **only the coach Olympic lifts** for that day, in this shape:
 
 ```
 Exercise
@@ -54,117 +77,86 @@ Exercise
 - weight (kg/lbs)
 ```
 
-Rules:
-- **Coach Oly lifts only** (source = `coach`). Skip own lifts, mobility, and coach accessories unless asked.
-- One block per lift, in the day's order.
-- Show **both kg and lbs** on the weight line (convert; 1 kg = 2.20462 lb). If the load is only a coach **%** with no converted number, show the % and the lb estimate, and note the max is pending.
-- If the day has no coach Oly (e.g. Sun/Mon, Wed, or a deload day with none), say so plainly.
+One block per lift, in the day's order. Show kg and lb (1 kg = 2.20462 lb). If the load is only a coach percentage, show the percentage and say the max is pending. Skip his own lifts, mobility, and coach accessories unless he asks.
 
-Example (W13 Thursday):
-```
-Hang Power Clean
-- 5 x 2
-- 68 kg / 150 lb (85%, est.)
-
-Power Clean & Jerk
-- 5 x 2
-- 68 kg / 150 lb (85%, est.)
-```
-
-The `/dnt-overview` skill produces this automatically for a given day.
+Coach slots this block: Sun L1 1a, Mon U1 1a, Thu L2 1a/1b, Fri U2 1a. Wednesday is rest. Tuesday and Saturday open with a light primer (hang power snatch, power clean), not her drop. The `dnt-overview` skill does this.
 
 ---
 
-## When the athlete asks "why?"
+## When he asks why
 
-Answer from these sources, in order:
-1. **`training/active/current-block.md`** "Programming Strategy" section — the why behind THIS block's design
-2. **`training/arc.md`** — the why behind the whole arc (3-block sequence, goal cascade)
-3. **`styles/vertical-jump-guide.md`** — for any jump / power / reactive question
-4. **`styles/dylan-shannon-guide.md`** — for upper body / Olympic / 4-pillar questions
-5. **`docs/content/training-styles/matt-smith-flexibility/guide.md`** — for side-split / flexibility questions (skill-focused; Sun Session A + Wed Session B)
-6. **`principle-dnt-olympic-lifts`** (repo skill) — for how the coach's DNT lifts fold into the split
+1. `training/active/current-block.md` — this block.
+2. `training/arc.md` — the three goals, and the Nov 8 decision.
+3. `styles/vertical-jump-guide.md` — jump, power, reactive.
+4. `styles/dylan-shannon-guide.md` — strength wave, upper body.
+5. The `principle-*` skill that owns the question (strength wave, trait blocks, DNT lifts, training rhythm).
 
-Cite the section explicitly when you do (e.g., "Per VJ guide §3, you're strength-dominant, which means...").
+Cite the section. The side split is not a goal, so don't send him to the Matt Smith guide to progress one. That guide is historical context for the old G3. It is in `docs/content/training-styles/matt-smith-flexibility/guide.md`.
 
 ---
 
-## Hard constraints (DO NOT violate)
-
-These come from the v7 redesign (`training/arc.md`), `profile.md`, and the VJ/Dylan/Matt-Smith guides. Any prescription that violates these is wrong.
+## Hard constraints
 
 | Constraint | Why |
 |---|---|
-| **Dunk (G1) is the boss.** When recovery runs short, sacrifice the lowest-priority goal first: G5 bench/pull → G4 BJJ → G3 flex (cleans + dunk protected). | Goal triage order (arc.md). |
-| **BJJ Mon/Tue/Wed/Thu — all roll-OK; no BJJ Fri/Sat.** | All sessions 48h+ from Saturday jump. Friday = full rest. |
-| **Coach loads run as written — incl. heavy squat. No Sunday load cap.** | Dunk stays boss via *timing* (no heavy lower <48h before Sat), not a load cap. |
-| **Loaded/deep split work = Wed (Session B) + Sun (Session A) ONLY; never <48h before Sat jump.** | Loaded stretch saps adductor force 24–48h. |
-| **No heavy lower <48h before jump.** | VJ §13. Oly 1–3 sit Sun/Mon/Tue — all clear. |
-| **(v9) DNT Oly lifts go in first on the fixed Oly days (~2/day): snatch→Tue, clean/jerk→Thu, jerk/press→Fri, power→Sat; coach accessories fold into Thu/Fri; coach back squat + deadlift DROPPED (own Sun/Thu squat waves cover it); ≤6/session — never add DNT days on top.** | Bolting a full external program *on top* caused the Block-1 fall-off. See arc.md "DNT Integration Model (v9)." |
-| **Block 3 = no cut; secondaries taper.** | Maintenance during peak (VJ §9); BJJ → 1–2 light, flex → 1×/wk maintenance. |
-| **Patellar pain ≥ 3/10 → drop depth jumps.** | Tendinopathy prevention. |
-
-> **Injuries healed 2026-06-14** (R shoulder, L wrist). Overhead press, jerk, front-rack, and full Olympic catches are now PERMITTED — the old OHP/jerk/front-rack prohibitions no longer apply. Ramp these back over 2–3 weeks; revert to landmine/DB-neutral or hang variants only if pain ≥3 returns during re-introduction. See `profile.md` "Injury History."
+| Dunk is the boss. Strength volume yields first, then Olympic volume, if recovery is short. | Goal order in `training/arc.md`. |
+| No BJJ. | Dropped 2026-10-11. |
+| Side split is not tracked. No deep loaded stretching on Friday. | Mobility stays in the warm-up and U2. |
+| Heavy legs ≥48 h before Tue and Sat. No heavy pulls on Friday. | Jump days need fresh legs. |
+| Coach Olympic lifts run as written. Her back squat is skipped. | `principle-dnt-olympic-lifts`. |
+| About 6 exercises a session. | Complexity is how Block 1 fell off. |
+| Patellar pain ≥3/10 → no depth jumps that week. ≥5 → two weeks off plyos. | Tendon guard. |
+| Shoulder or wrist pain ≥3/10 → landmine press, or hang variants. | Both healed 2026-06-14; the guard stays. |
 
 ---
 
-## When the athlete reports a flare-up
+## When something hurts
 
-Both prior injuries (R shoulder, L wrist) are **healed as of 2026-06-14**, but they're in a re-introduction window. If shoulder pain returns during overhead/jerk work, or wrist pain during front-rack/full-clean work (≥3/10), revert that movement to its old substitute: landmine/DB-neutral press for the shoulder, HANG variants + hook grip/straps for the wrist (see `profile.md` "Injury History" ramp guards, and the §5 substitution maps in the Dylan/VJ guides).
+Shoulder and wrist are healed. If pain on that movement is ≥3/10, propose the swap (landmine or DB-neutral for the shoulder, hang variants and straps for the wrist). Don't dictate it.
 
-**Propose, don't dictate.** Format: "I'd suggest swapping X for Y because [reason]. Want me to apply that, or push through?"
-
----
-
-## Athlete profile cheat sheet
-
-Read `profile.md` for the full version. Key facts to remember:
-
-- **Goals (v7, priority order):** G1 🏀 dunk (boss) · G2 🏋️ power clean 225 + jerk 225 · G3 🤸 side split −8cm · G4 🥋 BJJ 3–4×/wk · G5 💪 bench 260 + pull-up +55–60×5.
-- **Strength-dominant, reactivity-deficient** (per VJ §3 dx). His bottleneck is RFD/SSC, not max force. Don't reflexively add squat volume.
-- **Injuries healed 2026-06-14** — overhead/jerk/front-rack/full cleans now allowed (ramp window). No longer on hang-only / no-OHP.
-- He responds well to **PR tracking** — "you beat last week's load by X" drives engagement.
-- **Complexity is his #1 failure mode** (Block 1 fell off this way — a full external program got bolted *on top* of the week). Max 6 exercises/session, hard-capped. The DNT coach program is integrated by *re-homing its Olympic lifts onto the existing split by pattern* (~2/day), NOT added as extra days. Keep the cap; don't let coach lifts + accessories + own work stack past 6.
-- **Week shape (v9 split, from W11 — reprogrammed 2026-07-26; arc weeks renumbered to DNT weeks 2026-07-28):** Oly-forward. **Sun Heavy Lower** (back-squat wave) · **Mon Heavy Upper** (bench + pull-up waves) · **Tue Oly Lift + mobility legs** · **Wed BJJ only** (rest) · **Thu Oly Lift + lower** (front-squat wave) · **Fri Oly Lift + upper** *(optional)* · **Sat Oly Lift + jump/dunk** *(optional)*. Coach DNT Oly lifts go in FIRST on Tue/Thu/Fri/Sat (~2/day by pattern: snatch→Tue, clean/jerk→Thu, jerk→Fri, power→Sat); coach accessories fold into Thu/Fri; coach back squat + deadlift are DROPPED (own squat waves cover it). Sun back-squat + Thu front-squat each run a weekly undulating wave (2–4 sets), variation rotating monthly. BJJ Mon–Thu. **Two heavy squat days (Sun/Thu) — daily bw log + Sat jump quality are the canaries.** Fri/Sat optional = drop to 4 core days on a heavy week, by design not a fall-off. **From W17: upper days (Mon/Fri) close with a reactive finisher — 2 jumping plyometrics + sprints (the reactive/dunk stimulus).** Arc extended to W18 (Sep 26) to run coach wk17–18 peak.
+"I'd swap X for Y because [reason]. Want me to apply that, or leave it?"
 
 ---
 
-## Logging behavior
+## Cheat sheet
 
-When the athlete reports a set, capture:
-- Exercise name (must match canonical name in your Supabase `exercises` table — if uncertain, use the prescription's exact wording from the week file)
-- Weight + unit
-- Reps
-- RPE (ask if not provided, especially for primary lifts)
-- Set order within the exercise
-
-Write to Supabase `exercise_sets`. Don't write executed sets into the markdown files — the bundle is the plan, Supabase is the log.
+- Full profile: `profile.md`. Numbers there are the Oct 11 update (squat 295×8, clean 215, clean & jerk 205, bench 220×4, front squat 265×4, bodyweight 189 on Jul 30). Don't invent newer ones.
+- Strength-dominant, reactivity-deficient. The next arc trains the jump. This week does not add squat volume past the planned single.
+- Week shape: Sun L1, Mon U1, Tue S1, Wed rest, Thu L2, Fri U2, Sat J1.
+- PR tracking matters. On a wave lift, show the last load for that rep range.
+- Two missed sessions in a row: flag it. The old pattern is a 2–3 week fall-off.
 
 ---
 
-## When to escalate / propose plan changes
+## Logging
 
-You're authorized to suggest small in-session swaps. You're NOT authorized to change the plan structurally. If you see:
+Capture exercise name (match `exercises.name`, or the week file's wording if you're unsure), weight and unit, reps, RPE when he gives it, set order.
 
-- Two missed sessions in a row → suggest a check-in call
-- Squat top set drops > 5% across 2 weeks → flag possible over-cut, suggest pausing deficit
-- Bar speed on speed squat drops noticeably → flag accumulating fatigue, suggest deload check
-- Athlete reports persistent pain (3+ for 5+ days) → escalate, recommend physio consult
-
-For these, write a `proposals` row in Supabase (when that table is built) with the suggestion. Don't apply changes silently.
+Write to Supabase `exercise_sets` on project `vtruwlvekfnmfgaundhp`. The plan stays in markdown. The log stays in Supabase.
 
 ---
 
-## What's NOT in this bundle (reach out if asked)
+## When to escalate
 
-- Executed workout history (it's in Supabase — query at runtime)
-- Other arcs (this bundle is one arc; if the athlete asks "what did I do last spring?" — that's a different bundle, archived)
+You can suggest an in-session swap. You cannot change the week structure on your own.
+
+- Two missed sessions in a row → flag a check-in.
+- Squat top set down more than 5% across 2 weeks → flag it.
+- Jump bar speed or touch clearly down → flag fatigue. W24 is already the light week.
+- Pain at 3/10 or more for several days → say so, and suggest a physio if it holds.
+
+Say it in the reply. Don't edit the plan silently, and don't invent a proposals table.
 
 ---
 
-## Refresh signals
+## Not in this bundle
 
-The bundle gets regenerated when the plan changes. After any pull:
-- Check `README.md` versioning section for plan version
-- Check `active/current-week.md` "Date Range" header to confirm you're delivering the right week
-- If `current-week.md` doesn't match today's calendar week, something is wrong — flag it
+Executed history is in Supabase. Other arcs are not in this folder. The next arc's W1 does not exist yet.
+
+---
+
+## History
+
+Until 2026-10-11 this file's rules were the v7/v9 arc: five goals, BJJ on Mon–Thu, side-split sessions on Sun and Wed, and the Olympic-forward week (Wed = BJJ, Fri and Sat optional). Those rules are retired. The old arc text is in `archive/arc-through-2026-10-10.md`. The May 3 profile is in `archive/profile-snapshot-2026-05-03.md`.
+
+Also retired, and not to be rebuilt: the progress dashboard, the `train` CLI, spreadsheet export, and any generator. Git history has them if a question is about the old repo.

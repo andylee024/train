@@ -36,7 +36,7 @@ Warm-up   Daily 7 (+ pogos 2x10 and box jump 3x2 on leg days / leg swings + pogo
 | **Fri** | **U2 · Upper Strength + Mobility** | Easy on legs |
 | **Sat** | **J1 · Jump & Dunk** (most important) | HARD (jump) |
 
-- **48-hour rule:** heavy legs ≥ 48 h before S1 and J1. No heavy pulls or deep or loaded split stretching on Friday.
+- **48-hour rule:** heavy legs ≥ 48 h before S1 and J1. No heavy pulls on Friday, and no deep loaded stretching that day. Mobility stays in the warm-up and the U2 filler. The side split is not a tracked goal.
 - **Basketball:** Saturday, after J1. It counts as that day's jumps.
 - **Busy week:** drop U2 first, then shorten S1. Keep L1, L2 and J1.
 

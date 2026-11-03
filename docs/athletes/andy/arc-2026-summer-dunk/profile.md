@@ -1,25 +1,8 @@
 # Athlete Profile — Andy Lee
 
-> **Update 2026-10-11, overrides the older sections below where they conflict.**
-> - **Goals (priority):**
->   1. Dunk a volleyball on a 10' rim (+3–5" approach touch).
->   2. Power clean 225 + power clean & jerk 225 with the DNT coach (she programs his Olympic lifts).
->   3. Strength keeps climbing: 405 squat within 12 months.
-> - **No BJJ.** Side split is no longer a tracked goal; mobility lives in warm-ups and fillers. Plays pickup basketball occasionally (Saturday after dunk work).
-> - **Current numbers:**
->   - back squat 295 × 8 (Oct 11, e1RM ~374)
->   - 355 single (Sep 21)
->   - front squat 265 × 4
->   - power clean 215 single
->   - power clean & jerk 205
->   - bench 220 × 4
->   - bodyweight last logged 189 (Jul 30)
-> - **What works for him:** encoded as the four principle skills in `.claude/skills/` (strength wave, THP trait blocks, DNT Olympic lifts, training rhythm). Use `build-workout-plan`.
-> - **Injuries:** shoulder + wrist healed (monitor; revert to landmine / hang variants if pain ≥3/10).
-
-
-**Snapshot at arc start: 2026-05-03**
-**Arc: Summer 2026 Dunk (18 weeks)**
+**As of Mon Nov 2, 2026.** Arc week W24 (Sun Nov 1 – Sat Nov 7), last week of B1 Strength. Arc closes Nov 7. Next arc starts W1 on Nov 8.
+**Numbers below are the 2026-10-11 update.** Nothing newer has been written into this file.
+**Arc start snapshot (2026-05-03):** [`archive/profile-snapshot-2026-05-03.md`](archive/profile-snapshot-2026-05-03.md).
 
 ---
 
@@ -29,151 +12,138 @@ I want to be athletic and durable for a long, long time. I invest in nutrition, 
 
 ---
 
-## Goals (This Arc Only — see arc.md for cascade)
+## Goals
 
-In priority order (v7, updated 2026-06-16):
+In priority order. When recovery runs short, the lowest yields first.
 
-1. **Dunk a women's basketball** on a regulation 10' rim *(the boss)*
-2. **Power clean 225 lb AND jerk 225 lb** (filmed top singles)
-3. **Side split distance reduced ≥ 8 cm from baseline**
-4. **BJJ — light technique 3–4×/week**, level up
-5. **Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean**
+1. **Dunk a volleyball** on a 10' rim (+3–5" approach touch). Dunk test is the next arc, W12 Sat, Jan 30, 2027.
+2. **Power clean 225 and power clean & jerk 225** with the DNT coach. She programs the Olympic lifts.
+3. **Strength keeps climbing.** 405 squat within 12 months.
 
-Priority order = triage order: when recovery runs short, the lowest-priority goal yields first. Olympic lifting (clean + jerk) and BJJ were promoted into this arc after the shoulder/wrist healed (2026-06-14); back squat 405 and dedicated basketball-skills sessions remain deferred to future arcs.
+No BJJ. The side split is not a tracked goal. Mobility lives in the warm-ups and the fillers. Pickup basketball sometimes, Saturday after the dunk work.
 
 ---
 
-## Athletic Diagnosis (Programming-Critical)
+## Current numbers (2026-10-11)
 
-**Strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-deficit test).
+- Back squat 295 × 8 (Oct 11, e1RM ~374)
+- 355 single (Sep 21)
+- Front squat 265 × 4
+- Power clean 215 single
+- Power clean & jerk 205
+- Bench 220 × 4
+- Bodyweight last logged 189 (Jul 30)
 
-- Squat 1.93× BW (370 lb at 192 lb)
-- Many strength blocks already completed — saturated on strength gains for jumping
-- Bottleneck: rate of force development + SSC reactivity, NOT max force
-- This is why the v6 arc emphasizes **power/reactive from Block 1** with strength on maintenance, instead of the textbook "strength block first" sequence
-
-**Implication for the agent:** Don't reflexively recommend more squat volume. The conjugate dial is set to power/reactive emphasis for the duration of this arc.
-
----
-
-## Current State (April 2026, baselining for arc start)
-
-### Body
-- Weight: ~192 lb (87 kg), 7-day average
-- Body fat: estimated ~15-16% (target: 11%)
-- Height: TBD
-
-### Key Lifts (most recent known)
-- Back Squat: ~370 lb (1RM)
-- Bench Press: 230 lb (1RM)
-- Power Clean: ~195 lb estimated (1RM)
-- Hang Power Snatch: ~140 lb estimated (1RM)
-- Weighted Pull-Up: +25 lb × 5 reps clean
-
-### Jump Metrics
-- Approach touch: can grab rim
-- Standing CMJ: TBD baseline (measure Wk 1)
-- Bounce depth jump (18 in): TBD baseline (measure Wk 1)
-- Dunk status: not yet — close
-
-### Flexibility
-- Side split: ~140 degrees, hip-to-floor distance TBD baseline (measure Wk 1)
+Jump status on file is the Oct 10 review: a tennis ball on the 10' rim, reported, not a logged reach test. W24's Saturday is the approach-touch retest. Do not invent a touch height.
 
 ---
 
-## Injury History (cleared 2026-06-14)
+## Athletic diagnosis
 
-Both prior active injuries are **healed as of 2026-06-14** — overhead pressing, jerks, and front-rack/full Olympic catches are now permitted. Re-introduce load progressively (see ramp guard) rather than testing maxes cold.
+**Strength-dominant, reactivity-deficient** (VJ guide §3).
 
-### Right Shoulder — HEALED (monitor)
-- Status: cleared 2026-06-14 (previously: active, no overhead/jerk)
-- Now permitted: barbell OHP, push press/jerk catches, full-ROM bench
-- **Ramp guard:** rebuild overhead + jerk volume over ~2–3 weeks before max efforts. Log shoulder pain (1–10) after press/jerk sessions during re-introduction; if pain ≥3 returns, revert to landmine/DB-neutral subs.
+The limiter for the dunk is rate of force development, reactive work, and approach practice. The Oct 10 review found the vertical flat because jumping had not been trained, and because leg strength had mostly returned to where it was in the winter. He is around the squat-to-bodyweight range where more max squat stops helping the jump.
 
-### Left Wrist (De Quervain's) — HEALED (monitor)
-- Status: cleared 2026-06-14 (previously: active, no front rack)
-- Now permitted: front rack catches, full power/squat cleans, grip-intensive pulling
-- **Ramp guard:** reintroduce front-rack/full-clean catches over ~2–3 weeks before heavy loads (e.g., the power clean 225 goal). Log wrist pain after front-rack work during re-introduction; if pain ≥3 returns, revert to HANG variants + hook grip/straps.
+**What that means now:** W21–W24 is the strength block already in progress, and W24 is the light test week. The next arc (Nov 8) is jump-first: Power, then Reactive, then Test. The squat wave stays, at maintenance volume, during those blocks. 405 is the 12-month strength goal, not the next block's focus. Don't add squat volume in order to chase the dunk.
 
 ---
 
-## Schedule + Constraints
+## Injury history (cleared 2026-06-14)
 
-- **Training days:** 6 lifting days + 2-a-days (BJJ evenings Mon/Tue/Wed/Fri; flex Sun + Wed). Wed is now a flex (Session B) + BJJ day, not a rest day. Thursday evening is the only true recovery valve.
-- **Session length:** 60-75 min weekday, 45 min Saturday
-- **Max exercises per session:** 6 (hard cap to prevent complexity creep)
-- **Equipment:** Full commercial gym + sprint surface
-- **Cooking:** Doesn't cook routinely; prefers natural over processed. Sunday batch-prep is the proven path when done.
-- **Nutrition:** ~300 cal deficit Blocks 1-2; maintenance Block 3 (peak)
-- **Location:** LA
+Both prior injuries are healed. Overhead pressing, jerks, and front-rack catches are allowed. If pain comes back at 3/10 or more, revert that movement.
 
----
+### Right shoulder — healed, monitor
 
-## Preferences (Programming-Relevant)
+- Cleared 2026-06-14. Barbell overhead press, push press, jerk, and full-ROM bench are permitted.
+- If shoulder pain returns at ≥3/10, revert to landmine or DB-neutral press.
 
-### Training style
-- **Fixed exercise menu per block** — progress through load, not variation. Reduces cognitive load.
-- **1 focus per session** (not upper + lower same day)
-- **RPE-based intensity** — RPE 6-8 most work, no grinders except test weeks
-- **Daily flex protocol** embedded post-session, not a separate day
+### Left wrist (De Quervain's) — healed, monitor
 
-### Communication
-- **Push via text** (morning daily prescription)
-- **Pull via webapp** (Sunday weekly ritual + on-demand context)
-- **Propose changes, don't auto-apply** — especially for injuries
+- Cleared 2026-06-14. Front rack, full cleans, and grip-heavy pulling are permitted.
+- If wrist pain returns at ≥3/10, revert to hang variants, hook grip, or straps.
 
-### Motivation hooks
-- **PR tracking** is the lever — show "you beat last week's load by X" and engagement spikes
-- **Numbers to chase** are non-negotiable
-- Visible progress in the spreadsheet matters
+The June re-introduction window (2–3 weeks of ramp) is over. The rule that remains is the pain guard above.
 
 ---
 
-## History & Patterns
+## Schedule
 
-### What's worked
-- **Train Heroic:** Seeing last PRs and trying to beat them drove stronger gains
-- **Simple programs with 1 focus per day:** When complexity dropped, consistency went up
-- **Tracking metrics + intentional workouts:** Progress comes from tracking + pushing for adaptation, not "gut feel"
+Six training days. Wednesday is recovery. About 6 exercises a session.
 
-### What hasn't worked
-- **Complex/long programs:** Initial coach program (upper + lower same day, high volume, new exercises) caused failure
-- **No tracking tool:** Without easy tracking → guessing at the gym → unproductive sessions
-- **Scattered tools:** Separate apps for workout logging, nutrition, plan management. Losing history when tools break (Nanobot going down)
-- **Going by "gut feel":** Doesn't produce adaptation
-- **Neglecting nutrition:** Good training without nutrition = incomplete results
+| Day | Workout |
+|---|---|
+| Sun | L1 · Heavy Legs |
+| Mon | U1 · Upper Strength + Speed |
+| Tue | S1 · Speed & Reactive |
+| Wed | R · Recovery |
+| Thu | L2 · Olympic + Squat Variation (short day) |
+| Fri | U2 · Upper Strength + Mobility |
+| Sat | J1 · Jump & Dunk |
 
-### Known pitfalls (self-identified)
-- Trying to "fit in" goals that aren't main-path (e.g., MMA, basketball skills as dedicated sessions)
-- Not tracking metrics, going on "gut feel"
-- Not maintaining nutrition habits
-- Being afraid to challenge a coach's plan or going too light
-- **Falling off for 2-3 weeks when things get complicated or tools break** — this is the single biggest risk
+- Heavy legs at least 48 hours before Tue and Sat.
+- No heavy pulls on Friday. No deep loaded stretching on Friday.
+- Coach Olympic lifts in the 1a slots (Sun, Mon, Thu, Fri). Her back squat is skipped.
+- Equipment: full commercial gym and a sprint surface. Location: LA.
+- Busy week: drop U2 first, then shorten S1. Keep L1, L2, and J1.
 
-### What success requires (self-identified)
-- Consistently dedicate time to the gym
-- Consistently prioritize daily mobility/flexibility
-- Track metrics + intentional workouts that push for adaptation
-- Recovery on-point (nutrition + sleep)
-- Adapt workouts/habits when things change
+---
+
+## Preferences
+
+- Fixed exercise menu for a block. Progress the load, not the exercise list.
+- One focus per session.
+- RPE 6–8 on most work. No grinders except test weeks. Wave rule: every rep at RPE ≤8.5 means +5 lb the next time that rep range comes up.
+- Propose a change. Don't apply it silently. Especially for pain.
+- PR tracking is the motivation lever. Show the last load on that rep range.
+- Logging is Supabase (`workouts`, `workout_exercises`, `exercise_sets`, `daily_metrics`), through the Supabase MCP connector. Exercise names have to match `exercises.name`.
+- Morning prescription comes from `training/active/current-week.md`.
+
+---
+
+## History and patterns
+
+### What has worked
+
+- **Train Heroic:** seeing the last PR and trying to beat it.
+- **Simple programs, one focus a day.** Consistency went up when complexity went down.
+- **Tracking.** Progress comes from a logged target, not gut feel.
+
+### What has not worked
+
+- Complex, long programs. The early coach plan (upper and lower in the same day, high volume, new exercises) fell off.
+- No tracking tool, or tools that die and take the history with them.
+- Neglecting nutrition.
+- Fitting in goals that are off the main path, as dedicated sessions.
+- Going too light, or never questioning a plan.
+- **Falling off for 2–3 weeks when things get complicated.** That is the biggest risk.
+
+### What he says success takes
+
+- Time at the gym, consistently.
+- Daily mobility, consistently. (That is the warm-up, not a separate split goal.)
+- Metrics and workouts that push adaptation.
+- Nutrition and sleep.
+- Changing the workout when the situation changes.
 
 ---
 
 ## Training history
 
-- ~1.5+ years training toward the dunk goal
-- Worked with coach James (program was too complex initially, simplified to good effect)
-- Used Train Heroic (PR tracking was motivating, but lost access)
-- Used Nanobot for Q&A (valuable, but went down — lost history)
-- Prior arcs: LA Winter (Dec-Mar Olympic + basketball), LA Summer + Fall (Jul-Nov Olympic + strength)
-- Recent: fell off plan for ~3 weeks (April 2026), reset block created 2026-04-19, then v6 arc began 2026-05-03
+- About 1.5+ years toward the dunk, as of arc start.
+- Coach James: first program was too complex, then simplified.
+- Train Heroic for PR tracking (access later lost).
+- Nanobot for Q&A (went down; history lost).
+- Prior arcs: LA Winter (Dec–Mar, Olympic + basketball), LA Summer + Fall (Jul–Nov, Olympic + strength).
+- Fell off for about 3 weeks in April 2026. This arc started 2026-05-03.
+- 2026-10-11: goals cut to the three above. BJJ stopped. Side split no longer tracked. W21–W24 Strength block written.
+- 2026-11-02: in W24, the last week of that block.
 
 ---
 
-## What the agent should do with this profile
+## What the agent does with this profile
 
-1. **Read it on every session start** — adjust prescriptions for injuries before delivering
-2. **Reference it when proposing substitutions** — pull from injury "Substitution rules" sections
-3. **Watch for fall-off signals** — 2 missed sessions in a row → flag, the historic pattern is 2-3 weeks gone
-4. **Use PR tracking as a motivation lever** — every primary lift session, show last week's load to beat
-5. **Don't add complexity** — if the athlete asks for more exercises, push back. Complexity creep is the documented failure mode.
+1. Read it before changing a prescription. Check the pain guard before overhead or front-rack work.
+2. Watch for the fall-off pattern. Two missed sessions in a row gets flagged.
+3. On a primary lift, show the last load for that rep range.
+4. Don't add exercises to get under a feeling of "more work." Six is the cap. Complexity is the documented failure mode.
+5. Don't put BJJ or a side-split session back on the week. Those are in the archive, not the plan.

@@ -5,6 +5,8 @@
 **Prior review:** none for this block (first review under v9). Chains up to the arc retrospective when the arc closes.
 **Data:** Supabase `exercise_sets` (23 logged sessions) + `daily_metrics` (bodyweight — 1 entry only). Loads are actuals off the log.
 
+> **Historical.** The keep/change list below (v9 split, side-split measurements, bench 260 as its own goal, a `plan-arc` skill) was the menu at the end of this block. It is not the current plan. As of 2026-11-02: three goals, no BJJ, side split not tracked, live week **W24**, next arc jump-first on Nov 8. See `training/arc.md`. `plan-arc` is not a current skill.
+
 ---
 
 ## 1. Session adherence
@@ -74,7 +76,7 @@ Coach Oly is being executed but stays well below the **G2 clean/jerk 225** targe
 1. **Name the identity explicitly.** This block became a strength/Olympic-development phase (squat + front squat + deadlift PRs), not a dunk peak. The next arc should either commit to that (drop dunk/jump from the goal list) or rebuild a jump day back in.
 2. **Reinstate the canaries** — daily bw + weekly side-split measure — or stop listing G3 as a tracked goal.
 3. **If clean/jerk 225 is real,** it needs its own heavy progression, not just the coach's technique-% work.
-4. Feed this review into the next `plan-arc` as the pre-arc problem statement.
+4. Feed this review into the next `plan-arc` as the pre-arc problem statement. (`plan-arc` is not a current skill. The Nov 8 decision is in `training/arc.md`.)
 
 ## 8. Source of truth
 
