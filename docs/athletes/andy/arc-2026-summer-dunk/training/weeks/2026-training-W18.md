@@ -8,7 +8,7 @@
 - Block Week: 8 of 8 *(final week; arc extended +2 wks to run coach wk17–18)*
 - Date Range: Sun Sep 20 – Sat Sep 26, 2026
 - Week Type: **New Oly-forward split** (v9) — coach wk18 (max singles — natural peak/test)
-- Primary Focus: Coach DNT wk18 folded in — power clean worked to a **100% single**, power C&J 90%, hang snatch complex, snatch HP. Coach is maxing, so this week doubles as an informal peak/test via the coach's own singles. Reactive finisher continues on upper days. **Final week of the arc.**
+- Primary Focus: Coach DNT wk18 folded in — power clean worked to a **100% single**, power C&J 90%, hang snatch complex, snatch HP. Coach is maxing, so this week doubles as an informal peak/test via the coach's own singles. Reactive finisher continues on upper days. **Written as the final week of the arc. The arc was later extended through W24 (Nov 7, 2026).**
 
 ## Source / Sync
 
@@ -105,4 +105,6 @@ No lifting. **Evening:** 🥋 BJJ.
 
 ## End-of-Arc note
 
-Final week. Coach wk18 max singles (power clean to 100%, Sunday back-squat peak) serve as an informal end-of-arc strength check. When done, run `progress-review` (arc scope) to close the arc and plan the next. Next coach drop (wk19–20) → next arc, W19+.
+> **Superseded.** This week was written as the close. The arc continued: coach wk19–20 became W19–W20, and the arc now ends at **W24 (Nov 7, 2026)**. Do not close it from this file. `progress-review` is not a current skill. Live week: [`../active/current-week.md`](../active/current-week.md).
+
+Coach wk18 max singles (power clean to 100%, Sunday back-squat peak) were the informal check planned at the time.

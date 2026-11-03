@@ -5,6 +5,8 @@
 **Data source:** Supabase `exercise_sets`, `daily_metrics` (source of truth) + bundle plan files
 **Bottom line:** The program works when run. Strength moved up on every lift that got trained. The block was lost to a **~2.5-week fall-off (W4–W6) that began right after the most complex week (W3 DNT)** — the exact pattern `profile.md` names as the #1 risk.
 
+> **Historical.** Written 2026-06-14, for the Block 2 re-entry. The goals it names (side split, five-goal arc) and the instruction to point `current-week.md` at W07 are not the current plan. Live week is **W24**: `training/active/current-week.md`. Current goals: `training/arc.md`.
+
 ---
 
 ## 1. Block context
@@ -75,7 +77,7 @@
 2. **Fix the data pipeline before the program.** The fall-off was invisible in real time because logging stopped. Bodyweight (`daily_metrics`) and jump KPIs need a frictionless capture path or the next fall-off is also silent.
 3. **Re-baseline G1 + G3 this week** (CMJ, approach touch, side-split cm). Without these, B2's "approach touch +3 in" target can't be evaluated either.
 4. **Sanity-check the two stretch goals** flagged in the plan review: pull-up +80×8 (likely reset to +50–60×5–6) and bench 260.
-5. **Advance `active/current-week.md` to W07 / Block 02** — it's still pointing at W03, so the daily prescription is stale.
+5. **Advance `active/current-week.md` to W07 / Block 02** — at review time it was still pointing at W03. (That advance happened. As of 2026-11-02 the file is W24.)
 
 ## 8. Hard signals to surface
 

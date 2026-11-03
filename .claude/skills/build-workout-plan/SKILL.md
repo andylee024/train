@@ -27,7 +27,7 @@ When a principle changes a choice, say so in the output, e.g. "her snatch pulls 
 
 ## Procedure
 1. **Find what's current:**
-   - which block and week it is (`principle-thp-trait-blocks`). Week numbers = DNT coach's weeks: W21–W24 in the summer arc, then W1 restarts in a new arc folder;
+   - which block and week it is (`principle-thp-trait-blocks`, and `training/active/current-week.md`). Week numbers = DNT coach's weeks. As of 2026-11-02 the live week is **W24** (light + test, Nov 1–7). W1 of the next arc (Nov 8: Power → Reactive → Test) is not written until a session asks for that plan;
    - the coach's latest program (`docs/athletes/andy/<arc>/coach-programs/`);
    - the plan doc "Andy — Training Plan" (Claude Docs) is the source of truth for workout names and session layouts;
    - recent logged sessions: Supabase project `vtruwlvekfnmfgaundhp`, tables `workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`. Weights may be stored in kg.

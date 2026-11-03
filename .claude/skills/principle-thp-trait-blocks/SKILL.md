@@ -26,7 +26,7 @@ description: Andy's block principle, from THP. Training qualities are three trai
 
 ## The current cycle
 
-Week numbers follow the DNT coach's weeks: **arc week = DNT week**. The summer arc ends at **W24**, and numbering then restarts at **W1** in a new arc folder.
+Week numbers follow the DNT coach's weeks: **arc week = DNT week**. The summer arc ends at **W24** (Nov 7, 2026). As of Nov 2, 2026 the live week is W24 (light + test). Numbering restarts at **W1** on Nov 8 in a new arc folder. That Power → Reactive → Test run is the jump-first block from the Oct 10 dunk/vertical review. W1 is not written until a session asks for it.
 
 | Block | Weeks | Dates | Trait up | How the week changes |
 | --- | --- | --- | --- | --- |

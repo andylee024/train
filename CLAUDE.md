@@ -15,7 +15,7 @@ A single-athlete workout tracker. Plan lives in markdown; executed work lives in
 
 ## Active athlete + arc
 
-**Andy Lee.** Active arc: [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/), currently in the **W21–W24 Strength block** (Oct 11 → Nov 7, 2026). Arc week = DNT coach week. The arc closes at W24, and a **new arc starts at W1** on Nov 8: Power (W1–4) → Reactive (W5–8) → Test (W9–12, dunk test Jan 30, 2027).
+**Andy Lee.** Active arc: [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/). **Active week: W24** (Sun Nov 1 – Sat Nov 7, 2026), the last week of the **W21–W24 Strength block** (Oct 11 → Nov 7). Light + test: Sun Nov 1 smooth squat single ~365–375, Sat Nov 7 approach-touch retest. Arc week = DNT coach week. The arc closes at W24, and a **new arc starts at W1** on Nov 8: Power (W1–4) → Reactive (W5–8) → Test (W9–12, dunk test Jan 30, 2027). That next arc is the jump-first block from the Oct 10 dunk/vertical review. W1 is not written yet.
 
 Goals (priority order):
 1. Dunk a volleyball on a 10' rim.

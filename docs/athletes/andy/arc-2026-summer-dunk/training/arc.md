@@ -1,175 +1,132 @@
-# Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
+# Arc — Summer 2026 Dunk
 
-> **Status 2026-10-11, read first.** This arc runs through **W24 (Nov 7, 2026)** and then closes. The next arc restarts at **W1** on Nov 8 (arc week = DNT week).
-> - **W21–W24 is the Strength block**, rewritten 2026-10-11: `training/blocks/2026-09-block-04-405-strength-push.md`.
-> - Programming now comes from the repo skills `build-workout-plan` + `principle-dylan-shannon-strength-wave`, `principle-thp-trait-blocks`, `principle-dnt-olympic-lifts`, `principle-training-rhythm`.
-> - **Changes from the sections below:** no more BJJ; the side split is no longer a tracked goal; goals are now (1) volleyball dunk, (2) power clean / clean & jerk 225 with the DNT coach, (3) strength keeps climbing (405 within 12 months).
-> - Wherever the older sections conflict with the skills, the skills win. The rest of this file is the arc's history.
-
-
+**Athlete:** Andy Lee
 **Start:** 2026-05-03 (Sunday)
-**End:** 2026-11-07 (Saturday) — extended to W24 on 2026-09-27 for Block 4 (405 squat push). Prior: +2 wks 2026-09-15 (coach wk17–18 peak); recalibrated 2026-09-06 (+7 days, arc week = DNT week).
-**Duration:** 16 weeks remaining-view (renumbered 2026-07-28 to align arc weeks with DNT coach weeks; originally 18 wks from May 3). Arc week now = DNT week.
-**Plan version:** v9 — Oly-forward split from W11 onward (2026-07-26); v8 DNT-driven structure 2026-06-21; v7 re-entry redesign 2026-06-16 (see "Redesign note")
+**End:** 2026-11-07 (Saturday) — W24, then this arc closes
+**As of:** Mon Nov 2, 2026 — arc week **W24** (Sun Nov 1 – Sat Nov 7), the last week of **B1 Strength**
+**Arc week = DNT coach week.** Numbering restarts at **W1** on Nov 8 in the next arc.
+**Plan version:** v10 (2026-10-11). Programming comes from `build-workout-plan` and the four `principle-*` skills.
+
+Live week: [`active/current-week.md`](active/current-week.md) (same sessions as [`weeks/2026-training-W24.md`](weeks/2026-training-W24.md)).
+Live block: [`active/current-block.md`](active/current-block.md).
 
 ---
 
 ## Purpose
 
-Close the explosive strength deficit so a strength-dominant athlete can finally express his force as a dunk. The dunk is the boss; everything else integrates in service of it. Around it: drive a power clean toward 225, run the side split as a skill (Matt Smith methodology), train BJJ as a near-daily skill, and hold upper-body strength. The coach's DNT Olympic work is the engine of the lifting week: its lifts re-home onto the athlete's fixed split by movement pattern (~2/day), with a free Oly day (Thu) for overflow — never by bolting on extra days.
+Dunk a volleyball on a 10' rim. The jump is the boss. The Olympic lifts run with the DNT coach, and strength keeps climbing underneath them.
 
 ---
 
-## Goals (Priority Order)
+## Goals (priority order)
 
-Priority order = triage order. When recovery runs short in a week, the lowest-priority goal yields first.
+Priority order is triage order. When recovery runs short, strength volume gives way before the Olympic lifts, and both give way before the dunk.
 
-| # | Goal | Test | Deadline |
+| # | Goal | Test | When |
 |---|---|---|---|
-| **G1** 🏀 | Dunk a women's basketball on a regulation 10' rim *(the boss)* | Filmed clean dunk | Wk 16 |
-| **G2** 🏋️ | Power clean 225 lb AND jerk 225 lb | Filmed clean lifts | Wk 16 |
-| **G3** 🤸 | Side split distance reduced ≥ 8 cm from baseline | Tape, weekly (Matt Smith milestones) | Wk 16 |
-| **G4** 🥋 | BJJ — light technique 3–4×/week, level up | Attendance + belt/skill progression | ongoing |
-| **G5** 💪 | Bench 1RM 260 lb AND weighted pull-up +55–60 lb × 5 clean | 1RM bench + max-reps pull-up | Wk 16 |
+| **1** | Dunk a volleyball on a 10' rim *(+3–5" approach touch)* | Filmed dunk, approach touch logged | Next arc, W12 Sat — **Jan 30, 2027** |
+| **2** | Power clean 225 and power clean & jerk 225, with the DNT coach | Filmed top singles | With her program; she peaks Olympic lifts on the test block (W10 Thu, Jan 14, 2027) |
+| **3** | Strength keeps climbing. 405 squat within 12 months | Squat wave records, per rep range | Ongoing. Not the focus of the next arc |
 
-*Pull-up target reset from the original +80×8 (unrealistic from the +25×5 baseline) to +55–60×5.*
+No BJJ. The side split is not a tracked goal. Mobility lives in the warm-ups and the upper-day fillers.
 
 ---
 
-## The Diagnosis (Why This Plan Looks the Way It Does)
+## Where this week is
 
-Andy is **strength-dominant, reactivity-deficient** (per VJ guide §3 reactive-deficit test). He has 1.93× BW squat (370 lb at 192 lb) and many strength blocks behind him. His bottleneck for jumping is **rate of force development and reactive ability (SSC)**, not max force.
+**W24 is a light week plus two tests.** Loads are the W24 column in `active/current-block.md`.
 
-**Implication:** the textbook "strength block → power block → peak" does NOT apply. More max squat widens the explosive deficit. The dial stays on power/reactive with strength sub-maximal — even now that secondaries (cleans, BJJ, flexibility) are added, none of them is allowed to convert this back into a strength-emphasis program.
+| Day | What |
+|---|---|
+| Sun Nov 1 | L1. Back squat 2×5 @ 275, then a smooth single ~365–375 (stop at RPE 9) |
+| Mon Nov 2 | U1. Bench 2×5 @ 185, weighted pull-up 2×5 @ +25 |
+| Tue Nov 3 | S1. Depth jump 2×3, volume down |
+| Wed Nov 4 | Recovery |
+| Thu Nov 5 | L2. Front squat 2×3 @ 225 |
+| Fri Nov 6 | U2 |
+| Sat Nov 7 | J1. Approach-touch retest (best of 5) and volleyball dunk tries |
 
----
-
-## Block Sequence
-
-| Block | Weeks | Name | Purpose | Serves |
-|---|---|---|---|---|
-| **1** | 1–6 | Power Conversion + Upper Build | *(complete — see `reviews/blocks/block-1-review.md`)* | — |
-| **2** | 7–10 | Reactive + Dunk Window | Depth jumps + dunk attempts (Wk 9). Cleans build toward 225. Side-split Phase 0→1. BJJ + secondaries ramp in. | G1, G2, G3, G4, G5 |
-| **3** | 11–18 | Peak + Realize + Test | Oly-forward strength block (v9). Squat/front-squat/deadlift PRs + coach DNT Oly. Coach peaks to max singles W17–18. Reactive finisher (plyos + sprints) added to upper days from W17. | all |
-| **4** | 19–24 | Strength (W21–24) | W19–20 ran as "405 Strength Push". From W21: THP **Strength** trait block (squat wave 3 sets, jumps held: Tue reactive + Sat dunk day, Olympic lifts per DNT). W24 = light week + touch retest + true-max single. See `blocks/2026-09-block-04-405-strength-push.md`. | Dunk, Olympic, strength |
-
-**Block 1 ended in a fall-off** (W4–6 collapse, see review). Block 2 therefore opens as a **re-entry**, not a continuation — see Redesign note.
+W23 (Oct 25–31, 4s) and W24 match that load table: squat 3×4 @ 330 then the light single, bench 3×8 @ 190 then 2×5 @ 185, pull-up 3×8 @ +25 then 2×5 @ +25, front squat 3×4 @ 250 then 2×3 @ 225, depth jump 4×3 then 2×3. Week files: `weeks/2026-training-W23.md`, `weeks/2026-training-W24.md`.
 
 ---
 
-## Weekly Structure (v9 — Oly-forward split, from W11)
+## This block
 
-> **v9 reprogram (2026-07-26):** the athlete pivoted the arc toward an **Olympic-lifting / strength identity**. Two own-programmed strength anchors (Sun heavy lower, Mon heavy upper) frame four coach-DNT Oly days (Tue/Thu/Fri/Sat). Wed is a BJJ-only recovery day. The Sat jump/dunk is now **optional** (the dunk becomes opportunistic, not a fixed weekly appointment). This supersedes the earlier jump-day-boss structure — see below.
+**B1 · Strength, W21–W24 (Oct 11 – Nov 7).** Squat, bench, and pull-up waves are the focus. Power and reactive work are held at about half volume (Tue S1, Sat J1, sprint fillers on upper days). The coach's Olympic lifts run as written in the 1a slots. Her back squat is skipped.
 
-| Day | Session | Priority | Evening | Coach Oly / notes |
-|---|---|---|---|---|
-| **Sun** | **Heavy Lower** — back-squat wave + deadlift wave + posterior/adductor accessories + full side-split | **Core** | rest | own only (no coach) |
-| **Mon** | **Heavy Upper** — bench wave + weighted-pull-up wave + shoulder health + **reactive finisher (2 plyos + sprints)** + passive leg stretches | **Core** | **BJJ** | own only (no coach) |
-| **Tue** | **Oly Lift + mobility legs** (fixed single-leg/lateral set: Zercher side squat, Cossack, Hip Airplanes, Copenhagen) | **Core** | **BJJ** | snatch / explosive |
-| **Wed** | **BJJ only** (rest from lifting) | Rest | **BJJ** | — |
-| **Thu** | **Oly Lift + lower** — front-squat wave + coach clean/jerk + pulls | **Core** | **BJJ** | clean & jerk / snatch pull |
-| **Fri** | **Oly Lift + upper** — coach jerk/press + coach upper accessories + **reactive finisher (2 plyos + sprints)** | *Optional* | — | jerk / push press |
-| **Sat** | **Oly Lift + jump/dunk** — sprints + depth jumps + dunk attempts | *Optional* | — | power overflow |
+| Day | Workout |
+|---|---|
+| Sun | L1 · Heavy Legs |
+| Mon | U1 · Upper Strength + Speed |
+| Tue | S1 · Speed & Reactive |
+| Wed | R · Recovery |
+| Thu | L2 · Olympic + Squat Variation |
+| Fri | U2 · Upper Strength + Mobility |
+| Sat | J1 · Jump & Dunk |
 
-**The two squat days mirror each other:** Sun = **back-squat** wave, Thu = **front-squat** wave. Each runs a **weekly undulating wave on a 6-week cycle** (2–4 sets, volume builds then tapers: 3×6 → 3×8 → 4×6 → 4×4 → taper → deload), the **variation rotates monthly** (back: full/pause/pin/half · front: full/pause/tempo), and records bank **per variation × rep-scheme**, resetting every 6 weeks. The **Sun deadlift** follows the same 6-week wave (RPE-driven). The **Mon upper primaries** (bench variation + weighted pull-up) run their own independent wave. W11–W16 = one full 6-week lower cycle (arc weeks now = DNT weeks).
-
-**Hard schedule rules:**
-- **Coach Oly lifts go in first** on each Oly day (~2/day, re-homed by pattern — see DNT model). Then the athlete's own wave/mobility work fills to the **6-exercise cap**.
-- **BJJ runs Mon–Thu** (all roll-OK, 48h+ from an optional Sat). No BJJ Fri/Sat.
-- **Two heavy squat exposures/week** (Sun back + Thu front). Watch cumulative leg fatigue — the daily bodyweight log + Sat jump quality (when run) are the canaries.
-- **Loaded lateral/split work = Tue + Sun**; Tue→Sat is 96h, so even if Sat is run for jumps, adductor force has recovered.
-- **Fri + Sat are optional** — on a heavy week drop to the 4 core days (Sun/Mon/Tue/Thu) + Wed BJJ; skipping them is *by design, not a fall-off*. If Fri is skipped, slide its coach jerk to Sat.
-- **Reactive finisher on upper days (from W17):** the upper sessions (Mon, Fri) close with **2 jumping plyometrics + sprints** (approach/box/depth jumps + 20yd sprints). This is the athlete's dedicated reactive/dunk stimulus — it directly serves the reactivity deficit (VJ §3) that the pure-strength block otherwise neglects. Keep it high-quality/low-volume, done *after* the lifting; cut it if legs are flat (Fri sits ~24h from Thu cleans).
-
-**Note on the pivot:** this is an intentional turn away from the arc's original dunk-boss / reactivity-first design (see The Diagnosis §). Max-strength squat volume is now higher than the reactivity-deficit diagnosis would prescribe. The athlete owns this trade; the B3 tests (bench, clean/jerk, dunk) still stand in W16.
+Heavy legs sit at least 48 hours before Tue and Sat. No heavy pulls on Friday.
 
 ---
 
-## DNT Integration Model (v9 — coach Oly onto the fixed Oly days)
+## Next arc — decision (2026-11-02)
 
-The coach issues a new program ~every 2 weeks (always 3 days). Its Olympic lifts are the **engine of the four Oly days**. **The athlete's split stays fixed; the coach's Olympic lifts re-home onto the matching Oly day by movement pattern — never copy DNT's day structure, never add DNT days on top.** (Bolting a full external program *on top* caused the Block 1 fall-off.)
+The [Oct 10 dunk/vertical review](../reviews/dunk-vertical-review-2026-10-10.md) said to switch to a jump-first block and park the 405, because the vertical had not moved and more squat was the wrong lever.
 
-**The rule (how to process each drop):**
+**That recommendation is the next arc. It starts W1 on Nov 8.** W21–W24 was already the strength block in progress; it finishes this week as written, including the Nov 1 single and the Nov 7 touch retest. The 405 stays goal 3 (within 12 months). In the next arc the squat wave continues at maintenance volume.
 
-1. **The Oly days are fixed:** Tue (snatch/explosive) · Thu (clean/jerk + front squat) · Fri (jerk/press) · Sat (power overflow + jump).
-2. **Coach Oly lifts come first — ~2 per Oly day**, re-homed by pattern:
+| Block | Weeks | Dates | Trait |
+|---|---|---|---|
+| B2 Power | W1–W4 | Nov 8 – Dec 5, 2026 | Power |
+| B3 Reactive | W5–W8 | Dec 6 – Jan 2, 2027 | Reactive |
+| B4 Test | W9–W12 | Jan 3 – Jan 30, 2027 | Test. Dunk test **Sat Jan 30** |
 
-   | Coach lift pattern | Re-homes to |
-   |---|---|
-   | Snatch / snatch pull / high pull | **Tue** |
-   | Clean & jerk / power clean | **Thu** (or Sat overflow) |
-   | Clean/snatch pull for Thu | **Thu** |
-   | Jerk / push press / overhead | **Fri** |
-   | *(power overflow)* | **Sat** |
+Dates and the weekly changes for each trait are in `principle-thp-trait-blocks`. **W1 is not written yet.** Build it with `build-workout-plan` when that plan is asked for.
 
-3. **Coach's back squat + clean/snatch deadlift are DROPPED** from the fixed slots — the athlete's own Sun back-squat wave + Thu front-squat wave already cover squatting/pulling. They live in the reference menu only.
-4. **Coach accessories fold into Thu (lower) + Fri (upper)** — a reference menu the athlete can sub for own accessory work.
-5. **6 exercises/session cap.** Coach Oly first, then own wave/mobility/accessory work.
-6. **Sync: arc weeks are now aligned to DNT weeks** (renumbered 2026-07-28 — arc week = DNT week, offset removed). On each new drop, reprocess into the then-current weeks. Current: DNT wk11–12 = arc W11–W12.
-
-Workflow: drop the new `*program*.pdf`, run `build-workout-plan` (follows `principle-dnt-olympic-lifts`), update the current week files.
-
-> **Note (2026-10-11):** `integrate-dnt-workout` was retired. Placement rules now live in `principle-dnt-olympic-lifts`.
+The review's sample week (section 5) still assumed BJJ and a different split. It is a sketch from Oct 10, not this plan. No BJJ. The side split is not tracked.
 
 ---
 
-## Testing Schedule
+## Constraints
 
-| Metric | Baseline | Wk 10 | Wk 16 | Method | Serves |
-|---|---|---|---|---|---|
-| Dunk attempt | grab rim | +3 in above rim | **DUNK** | Film | G1 |
-| Standing CMJ | **re-baseline W07** | +2.5 in | +4 in | Best of 3 | G1 |
-| Depth jump (reactive) | re-baseline W07 | > standing | deficit closed | Best of 3 | G1 |
-| Power Clean | ~195 (full) | 210 | **225** | Filmed top single | G2 |
-| Jerk | reintroduce (shoulder healed) | 205 | **225** | Filmed top single | G2 |
-| Side split (hip-to-floor) | **re-baseline W07** | −6 cm / Taylor's ≤10cm | **−8 cm** | Tape, weekly | G3 |
-| BJJ | start | 3–4×/wk held | level up | Attendance | G4 |
-| Bench Press | 230 | 255 (1RM) | 260 (1RM) | 1RM | G5 |
-| Wtd Pull-Up | +25×5 | +50×5 | **+55–60×5** | Max reps @ target | G5 |
-| Bodyweight | ~192 | ~185 | 184–186 (held) | 7-day avg | G1 multiplier |
-
-Three baselines are still **uncaptured 7 weeks in** (CMJ, depth jump, side split) — re-baseline in W07 or the goals can't be scored.
+- No BJJ.
+- Side split is not a goal. Mobility is the Daily 7 and the U2 filler. No deep loaded stretching on Friday.
+- Shoulder and left wrist healed 2026-06-14. If either hurts at 3/10 or more, use landmine press or hang variants.
+- Heavy legs at least 48 hours before a jump day (Tue, Sat). No heavy pulls the day before Saturday.
+- Coach Olympic lifts, sets, and percentages run as written. Her back squat is skipped.
+- About 6 exercises a session.
+- Patellar pain at 3/10: no depth jumps that week. At 5/10: two weeks off plyos.
+- Stop a jump session when touch drops about an inch, or after two flat jumps.
 
 ---
 
-## Constraints (Non-Negotiable)
+## Current numbers (2026-10-11)
 
-- **Injuries healed 2026-06-14** (R shoulder, L wrist). Overhead/jerk/front-rack/full cleans now permitted — **ramp load over 2–3 weeks** before maxes; revert to landmine/hang variants if pain ≥3 returns. (See `profile.md`.)
-- **BJJ Mon/Tue/Wed/Thu, all roll-OK; no BJJ Fri/Sat.** All sessions sit 48h+ from the Saturday jump.
-- **Friday = full rest day** into jump day.
-- **Deep/loaded split work = Wed + Sun only**; never within 48h before Saturday jump.
-- **No heavy lower in the 48h before jump** (VJ §13). Oly 1–3 sit Sun/Mon/Tue — all clear. *(The old "Sunday moderate-heavy / never max" cap is removed — coach loads, incl. heavy squat, run as written.)*
-- **Cut ~300 cal/day B1–B2; maintenance B3** (peak — VJ §9).
-- **DNT Olympic lifts re-home onto the split by movement pattern (~2/day, fixed); free Thu absorbs overflow; coach accessories optional; capped at 6/session** (see model above).
-- **Patellar pain ≥3/10** → drop depth jumps that week; ≥5 → 2-wk plyo deload.
-- **If jump quality drops** → pull the optional/lowest-priority load first (BJJ nights, then a flex session, then the optional accessory work), per goal triage order.
+From the profile update. Not new tests.
+
+- Back squat 295 × 8 (Oct 11, e1RM ~374); 355 single (Sep 21)
+- Front squat 265 × 4
+- Power clean 215 single; power clean & jerk 205
+- Bench 220 × 4
+- Bodyweight last logged 189 (Jul 30)
 
 ---
 
-## Style Guides Driving This Arc
+## What to read
 
-- **Primary (jump):** Vertical Jump Bible + THP — `styles/vertical-jump-guide.md`
-- **Upper / Olympic / 4-pillar lower:** Dylan Shannon (POWERJACKED) — `styles/dylan-shannon-guide.md`
-- **Flexibility (G3):** Matt Smith — `docs/content/training-styles/matt-smith-flexibility/guide.md` (skill-focused, isolation→compound, 2×/wk per skill, §13 scheduling)
-- **External coach:** DNT — integrate via the `principle-dnt-olympic-lifts` skill
-- **Daily warm-up:** "The Daily 7" — `styles/daily-warmup.md`
-
----
-
-## Redesign note (v7, 2026-06-16)
-
-Block 2 was redesigned mid-flight after a Block-1 fall-off. **W07–W08 = re-entry ramp** — don't stack all 11–12 weekly sessions at once:
-- **W07:** lifting only + restart the daily bodyweight log. Keep ≤6/session. (Re-baseline CMJ/split here.)
-- **W08:** layer in the 2 flex sessions (Sun A + Wed B).
-- **W09–10:** layer in BJJ — 2 nights → then 3–4.
-- Cleans ramp toward full/heavier across these weeks (healed-wrist re-introduction).
-- **B3:** BJJ → 1–2 light nights, flex → 1×/wk maintenance — everything bows to the peak.
+- Jump and reactive questions: `styles/vertical-jump-guide.md`, `principle-thp-trait-blocks`
+- Strength waves: `styles/dylan-shannon-guide.md`, `principle-dylan-shannon-strength-wave`
+- Coach Olympic lifts: `principle-dnt-olympic-lifts`, `coach-programs/`
+- Session shape: `principle-training-rhythm`
+- Warm-up: `styles/daily-warmup.md`
 
 ---
 
-## Failure Mode Guardrails
+## History
 
-- **"I fell off for a week":** resume at current week, RPE 6 comeback session, then prescribed loads. Missing a week costs 1 week.
-- **"Too complex / over-subscribed":** the documented #1 risk, and this is a high-volume week. Max 6 exercises/session is hard-capped. If a day runs long, cut the lowest-priority piece (Fri BJJ → flex → BJJ night). Protect the canaries: **Saturday jump quality + daily bodyweight log.**
-- **"Cut stalling":** if 7-day BW avg flat 2 weeks, +100 cal deficit OR +1 conditioning. Never crash diet.
-- **"Flexibility not progressing":** re-assess the ladder (Matt Smith §3) — new lowest rung likely appeared. Technique-check before adding load.
+This arc opened May 3, 2026 as an 18-week plan through Sep 5, with five goals: a women's basketball dunk, power clean and jerk 225, a side split (−8 cm), BJJ 3–4×/week, and bench 260 plus a weighted pull-up. Block 1 fell off. Block 2 was a re-entry. From W11 (2026-07-26, plan v9) the week was Olympic-forward, with BJJ on Mon–Thu and Saturday jumping optional. The close slid to W18 (Sep 26), then to W24 (Nov 7) for the strength block.
+
+On 2026-10-11 the goals became the three above. BJJ stopped. The side split stopped being tracked. W21–W24 was rewritten as the B1 Strength block (plan v10).
+
+Closed block files, for that period only: `blocks/2026-05-block-01-power-conversion.md`, `blocks/2026-06-block-02-reactive-dunk-window.md`, `blocks/2026-07-block-03-peak-realize-test.md`. Week files W01–W20 still describe the goals and the arc length believed when they were written. They are not the current plan.
+
+The pre-cleanup text of this file (override banner stacked on the old five-goal arc) is in [`../archive/arc-through-2026-10-10.md`](../archive/arc-through-2026-10-10.md). The May 3 profile snapshot is in [`../archive/profile-snapshot-2026-05-03.md`](../archive/profile-snapshot-2026-05-03.md).

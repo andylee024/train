@@ -1,10 +1,12 @@
 # Block 03 — PEAK + REALIZE + TEST  *(v9 Oly-forward · W11–W16 · DNT-aligned)*
 
-> **Rewritten 2026-07-28 to v9.** This doc now speaks the v9 Oly-forward split throughout — the pre-v9 peak logic (Sunday active-recovery, no-heavy-squat, jump-day-boss, Friday-rest) has been removed, not just flagged. Day-by-day work is authoritative in `weeks/2026-training-W11…W16.md`; this doc is the "why" + the block-level shape and load progressions.
+> **Closed.** Written as the final block of an arc that was supposed to end in September 2026. The arc was extended through **W24 (Nov 7, 2026)**. The five goals, BJJ, and side split below are what Block 3 was programmed for. They are not current. Live plan: [`../arc.md`](../arc.md) and [`../active/current-week.md`](../active/current-week.md). `progress-review` is not a current skill.
+>
+> **Rewritten 2026-07-28 to v9.** This doc speaks the v9 Oly-forward split throughout — the pre-v9 peak logic (Sunday active-recovery, no-heavy-squat, jump-day-boss, Friday-rest) was removed, not just flagged. Day-by-day work for those weeks is in `../weeks/2026-training-W11.md` … `W16.md`. This doc is the "why" for that block.
 
 ## Purpose
 
-The final block, run on the **v9 Oly-forward split**. The arc has pivoted to an **Olympic-lifting / strength identity**: the athlete's own strength waves anchor Sun (heavy lower) + Mon (heavy upper), and the coach's DNT Oly work drives Tue/Thu/Fri/Sat. The **6-week lower wave** (back squat / front squat / deadlift) builds volume to a heavy crest (W13–W14), then runs straight through W16. **The taper/test week was retired 2026-08-17** — chose to keep running the coach block rather than peak for a Sep 5 test day. The Saturday jump/dunk is **optional** — opportunistic, not the weekly boss.
+Block 3, run on the **v9 Oly-forward split**. At the time it was written, it was the final block. The arc has pivoted to an **Olympic-lifting / strength identity**: the athlete's own strength waves anchor Sun (heavy lower) + Mon (heavy upper), and the coach's DNT Oly work drives Tue/Thu/Fri/Sat. The **6-week lower wave** (back squat / front squat / deadlift) builds volume to a heavy crest (W13–W14), then runs straight through W16. **The taper/test week was retired 2026-08-17** — chose to keep running the coach block rather than peak for a Sep 5 test day. The Saturday jump/dunk is **optional** — opportunistic, not the weekly boss.
 
 ## Goals (tests land W16 = Sep 5)
 
@@ -73,10 +75,10 @@ Sun **deadlift** follows the same rep schemes, RPE 7–8 (variation rotates mont
 | **W13** | 3 | Aug 16–22 | Peak volume · coach TBD |
 | **W14** | 4 | Aug 23–29 | Heavy crest · coach TBD |
 | **W15** | 5 | Aug 30–Sep 05 | Coach wk15 (block clean+FS complexes) |
-| **W16** | 6 | Sep 06–12 | Coach wk16 — **final week of the arc** |
+| **W16** | 6 | Sep 06–12 | Coach wk16 — called the final week at the time; the arc later ran through W24 |
 
-## End of arc (W16 = final week)
+## End of block (what this file said at the time)
 
-The formal Sep 5 **test week was retired 2026-08-17** — chose to run the coach wk15–16 block straight through instead of tapering to a test day. **W16 (Aug 30–Sep 05) is the last week of the arc.** The arc goals — clean/jerk 225, bench 260, dunk — carry into the next arc; chase them in-session, then run the `progress-review` skill (arc scope) to close this arc and plan the next.
+The formal Sep 5 test week was retired 2026-08-17 — chose to run the coach wk15–16 block straight through instead of tapering to a test day. This file then called W16 the last week of the arc. That close did not happen. The arc runs through W24 (Nov 7, 2026). Do not close it from here.
 
 > Day-by-day loads are authoritative in `weeks/2026-training-W11…W16.md`. This doc governs the block-level "why" and the load progressions above.

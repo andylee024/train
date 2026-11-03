@@ -4,6 +4,17 @@
 **Question:** I've trained consistently on a good split and got stronger, but my vertical is about the same. I can put a tennis ball on a 10' rim. The goal is to dunk a volleyball (I can palm one). Should I go back to THP-style training?
 **Data:** Supabase `exercise_sets` / `workouts` / `daily_metrics` (Jan to Oct 2026), the arc plan files, the existing Block 1 and Block 3 reviews and the 3-month analysis. Research covered the THP ebook in `docs/content/training-styles/vertical-jump/sources/`, THP's own site and podcast, and the published research (sources at the bottom).
 
+> **Decision (2026-11-02). The jump-first recommendation is the next arc.**
+>
+> The verdict below stands: park the 405 as the near-term project, and train the jump fresh. It is implemented as the **next arc**, not by rewriting the strength block already in progress.
+>
+> - **This week is W24** (Sun Nov 1 – Sat Nov 7, 2026), the last week of B1 Strength. Sun Nov 1 is a smooth squat single ~365–375. Sat Nov 7 is the approach-touch retest. The arc closes Nov 7. Prescription: `training/active/current-week.md`.
+> - **W1 starts Nov 8, 2026.** B2 Power (W1–4, Nov 8 – Dec 5) → B3 Reactive (W5–8, Dec 6 – Jan 2, 2027) → B4 Test (W9–12, Jan 3 – Jan 30). Dunk test Sat Jan 30, 2027. Trait volumes are in `principle-thp-trait-blocks`. The W1 plan is not written yet.
+> - The 405 stays a 12-month strength goal. Squat work in that next arc stays on the wave at maintenance volume.
+> - No BJJ. The side split is not tracked. Both were dropped 2026-10-11. Section 5's sample week still has BJJ, a side-split Sunday, and a different split. That sketch is not the plan.
+>
+> Current goals and the decision in plan form: `training/arc.md`.
+
 ---
 
 ## 1. Verdict
@@ -147,7 +158,7 @@ Block 4 says to hand the dunk to THP once the squat reaches 395–405. By the bl
 
 ## 5. Proposed Block 5: THP-style dunk block (~10 weeks)
 
-The following is a proposal. Nothing has been changed in the plan files.
+This was a proposal on Oct 10. The decision at the top adopts the jump-first intent, on the next arc's Power → Reactive → Test sequence, starting Nov 8. The week below was not copied into the plan. It still assumes BJJ and a side-split day, which are not current. Read it as the sketch that led to the decision, not as W1.
 
 ### Principles
 
@@ -210,9 +221,9 @@ If you'd rather keep the full DNT program, it has to come out of somewhere. It c
 | **Max approach touch** | Chalked or wet fingertips on the backboard or net, or a tape-measure strip; best of 5 | Every Saturday |
 | **Standing CMJ** | MyJump-type app or wall reach; best of 3 | Weeks 0 / 4 / 8 |
 | **Bodyweight** | Morning scale | ≥3× a week |
-| **Dunk ladder** | Tennis ball → softball → volleyball → women's basketball | Log whichever you complete |
+| **Dunk ladder** | Tennis ball → softball → volleyball (the current goal). A women's basketball is past that goal. | Log whichever you complete |
 
-Log jumps in Supabase with the touch height in the set notes, or add a jump table, so the dashboard can show **max touch over time** next to squat e1RM. That pair is the explosive-strength-deficit tracker the VJ guide asks for.
+Log jumps in Supabase with the touch height in the set notes, next to squat e1RM. That pair is the explosive-strength-deficit tracker the VJ guide asks for. The progress dashboard was removed (2026-10-12); Supabase is the log.
 
 ---
 
@@ -220,11 +231,11 @@ Log jumps in Supabase with the touch height in the set notes, or add a jump tabl
 
 - You did the hard part: 13+ weeks of consistency, plus real gains in bench and power clean.
 - The vertical stayed flat for a simple reason: **it wasn't trained, and leg strength only returned to its winter level.**
-- **Do this:**
-  - Run a jump-first THP block now, with the squat at maintenance.
+- **Do this** (decision 2026-11-02: the jump-first block is the next arc, starting Nov 8, after W24 finishes):
+  - Run Power → Reactive → Test, with the squat at maintenance.
   - Get approach coaching, either from THP or by filming yourself.
-  - Run a light cut.
-  - Measure max touch every Saturday.
+  - The light cut in section 5 was part of the sketch. It is not a logged decision.
+  - Measure max touch on jump day. W24 Saturday is the retest.
 - **Expect:** if technique, freshness and weight come together, a volleyball dunk is a realistic 10–14 week target.
 
 ---
