@@ -74,8 +74,8 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 - **Injury rules:** right hip — box above the pinch, no deep Cossacks / loaded 90/90 back-leg, ≥ 3/10 → out for the week. Left shoulder — no barbell overhead above 3/10, landmine / DB neutral. Knee ≥ 3/10 → no depth jumps. Propose swaps, don't dictate.
 - **Flex skills:** hip IR (Mon, 20') · overhead (Fri, 20'). Nothing deep within 48 h of Tue/Sat.
 - **Logging:** sets → Supabase `exercise_sets`; bodyweight → `daily_metrics` (Sun); ladder / hand depth / flexibility tests → `measurements`. Never executed sets in markdown.
-- **Athlete facts:** `../profile.md` (living). Warm-ups are the first line of each session table in the block file. This file is the strategy; the block files are the prescription; the skills are the rules.
+- **Athlete facts:** `../../profile.md` (living). Warm-ups are the first line of each session table in the block file. This file is the strategy; the block files are the prescription; the skills are the rules.
 - **Escalate:** two core sessions missed in a row · ladder flat 3 weeks · squat top set −5% two weeks · pain ≥ 3/10 for 5+ days.
 
 ## History
-Previous arc: `../arc-2026-summer-dunk/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc is summarised in §Assessment above; the Claude Doc that held v1–v2 of this plan was retired on Nov 9, 2026 in favour of this file.
+Previous arc: `../2026-05-summer-dunk/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc is summarised in §Assessment above; the Claude Doc that held v1–v2 of this plan was retired on Nov 9, 2026 in favour of this file.

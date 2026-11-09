@@ -27,7 +27,7 @@ The builder. It holds no training rules itself: it loads Andy's principles and a
 When a principle changes a choice, say so in the output, e.g. "her snatch moved to Tue 4a: dnt-olympic-lifts".
 
 ## Procedure
-1. **Find what's current:** week = `(today − Nov 8) ÷ 7 + 1` (= DNT week) → block file in `arc-2026-winter-jump/training/blocks/` (§1 day table, §2 week row) · the coach's latest PDF in `arc-2026-winter-jump/coach-programs/` · `profile.md` at the root · recent logged sessions in Supabase `vtruwlvekfnmfgaundhp` (`workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`; weights in kg).
+1. **Find what's current:** week = `(today − Nov 8) ÷ 7 + 1` (= DNT week) → block file in `arcs/2026-11-winter-jump/training/blocks/` (§1 day table, §2 week row) · the coach's latest PDF in `arcs/2026-11-winter-jump/coach-programs/` · `profile.md` at the root · recent logged sessions in Supabase `vtruwlvekfnmfgaundhp` (`workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`; weights in kg).
 2. **Place her Olympic lifts** (`principle-dnt-olympic-lifts`).
 3. **Lay out each day** (`principle-training-rhythm`): coach's lift first as written → jumps + sprints → loaded work → accessories.
 4. **Fill** the squat wave and upper records (`strength-wave`), jumps/plyos/contrast by the block's trait (`thp-trait-blocks`), flex skills Mon (hip IR) and Fri (overhead).
