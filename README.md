@@ -11,12 +11,12 @@ train/
 ├── CLAUDE.md · README.md · HANDOFF.md
 ├── profile.md
 ├── arcs/
-│   ├── 2026-05-summer-dunk/     closed
-│   └── 2026-11-winter-jump/     active — training/{arc.md,blocks/} · coach-programs/ · reviews/
+│   ├── 2026-may-nov/     closed
+│   └── 2026-nov-2027-jan/     active — training/{arc.md,blocks/} · coach-programs/ · reviews/
 ├── archive/
 ├── library/
 ├── dashboard/
 └── .claude/skills/
 ```
 
-Arc folders: `YYYY-MM-<slug>` (start month + goal). Week = `(today − arc start) ÷ 7 + 1` = DNT week.
+Arc folders: `YYYY-mon-mon` — year, start month, end month (year repeated if it changes). Week = `(today − arc start) ÷ 7 + 1` = DNT week.

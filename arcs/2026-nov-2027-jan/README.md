@@ -1,4 +1,4 @@
-# 2026-11-winter-jump · Nov 8, 2026 – Jan 30, 2027
+# 2026-nov-2027-jan · Nov 8, 2026 – Jan 30, 2027
 
 ```
 training/arc.md          goals · assessment · approach · blocks · split · measurement · rules · agent rules
