@@ -1,3 +1,5 @@
+> **CLOSED (W1–W24, May 3 – Nov 7, 2026).** Active arc: `../arc-2026-winter-jump/`. This bundle's `CLAUDE.md` and `profile.md` moved to `../archive/`; the vendored style guides were duplicates of `docs/library/training-styles/` and were removed. `styles/daily-warmup.md` is now `../daily-warmup.md`.
+
 # Arc Bundle — Andy / Summer 2026 / Dunk + Upper + Side Split
 
 Self-contained 18-week training arc package. **This is what the text agent reads to deliver daily prescriptions.** Everything the agent needs is inside this directory tree — no need to navigate to the parent train repo.

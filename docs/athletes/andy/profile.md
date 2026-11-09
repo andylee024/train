@@ -1,6 +1,8 @@
-# Athlete Profile — Andy Lee (snapshot 2026-11-09, Winter Jump arc)
+# Athlete Profile — Andy Lee
 
-Athlete-level facts that persist; the plan is in `training/`. History: `../arc-2026-summer-dunk/profile.md`.
+_Living document, athlete-level. Updated 2026-11-09. Arc-specific goals live in each arc's `training/arc.md`._
+
+Athlete-level facts that persist; the plan is in `training/`. History: `archive/profile-2026-05-snapshot.md` (arc-start snapshot, May 2026).
 
 - **6'0", ~189 lb** (last logged Jul 30; weigh every Sunday). Standing reach ~8'0" (est.) · approach touch ~10'3" (est., tennis-ball dunk) — **baseline W1**.
 - **Goals (priority):** (1) volleyball dunk Jan 30 · (2) power clean 240 / power C&J 235 / power snatch 135 with the DNT coach · (3) flexibility as a skill: right-hip IR, overhead position · (4) strength held: squat 375–385 Jan 17, bench 275, pull-up +115; **405 in 2027**.

@@ -27,16 +27,16 @@ Warm-up   10' — the day's targeted mobility (hip / ankle on leg + jump days, o
 |---|---|---|---|
 | **Sun** | **L1 · Olympic + Strength** | Core | coach heavy clean day · squat wave 2 sets to box · hip thrust / Nordic · +30' upper finish |
 | **Mon** | **U1 · Upper + Hip skill** | Core | bench + pull-up record attempts · pogos filler · flex skill 1 (hip IR, 20') |
-| **Tue** | **J1 · Max Jump + Reactive** | **Core — the priority** | coach light lift (primer) · approach drills · max approach jumps, touch logged · sprints 4×10–30 m · depth jumps · hops |
+| **Tue** | **J1 · Max Jump + Reactive** | **Core — the priority** | coach light lift (primer) · ball ladder (rim day) · approach drills · max approach jumps, hand depth noted · sprints 4×10–30 m · depth jumps · hops |
 | **Wed** | **R · Rest** | — | 8-min hip routine |
 | **Thu** | **P1 · Power + Approach** | Core | coach clean + pull · sprints 6×20 m (R: + flying 10s) · jump squat / speed squat + box-jump contrast · technique approach jumps |
 | **Fri** | **U2 · Overhead + Shoulder skill** | Bonus | flex skill 2 (overhead, 20') · coach jerk / overhead day · light upper, no legs |
-| **Sat** | **J2 · Dunk** | Bonus | 3 short sprints · approach jumps, touch logged · dunk attempts · basketball after |
+| **Sat** | **J2 · Dunk** | Bonus | 3 short sprints · approach jumps · ladder test if Tue had no rim · dunk attempts · basketball after |
 
 - **48-hour rule:** heavy legs (Sun) ≥48 h before the max-jump day (Tue). Thu is light on the legs so Sat stays fresh. No heavy pulls or deep/loaded stretching on Fri.
 - **Priority when the week shrinks:** Tue → Sun → Mon → Thu. Skipping Fri/Sat is by design, not a fall-off.
 - **Basketball:** Saturday after J2, kept short. It counts toward the week's contacts.
-- **Measurement is part of the rhythm:** touch every Tue, bodyweight every Sun.
+- **Measurement is part of the rhythm:** ball ladder once a week at a rim (Tue, else Sat — then Sat isn't optional), bodyweight every Sun; both to Supabase (`measurements`, `daily_metrics`).
 
 ## 3. Fillers
 - U1: pogos ×10 between heavy rounds (reactive, never fatiguing).

@@ -38,4 +38,5 @@ Power: Tue ~50 · Thu ~35 · Sat ~20. Reactive: Tue 75–90 · Thu ~40 · Sat ~2
 ## Safety
 - Knee ≥ 3/10 → no depth jumps that week; ≥ 5/10 → two weeks off plyos.
 - Right hip ≥ 3/10 in a position → that position out for the week.
-- Touch flat 3 weeks → Sunday squat to 1 set, +4 approach jumps Thu.
+- Ladder flat 3 weeks → Sunday squat to 1 set, +4 approach jumps Thu.
+- Measurement: ball ladder (rung · clean-of-6 · hand depth) once a week at a rim → Supabase `measurements`.

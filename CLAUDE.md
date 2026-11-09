@@ -12,6 +12,9 @@ A single-athlete workout tracker. Plan lives in markdown; executed work lives in
 |---|---|
 | Planned work | Markdown under `docs/athletes/andy/<arc>/training/` |
 | Executed work | Supabase `workouts` / `workout_exercises` / `exercise_sets` (project `vtruwlvekfnmfgaundhp`) |
+| Measurements (ladder, hand depth, flexibility tests, touch) | Supabase `measurements` (`date, metric, value, value_text, unit, side, notes`) |
+| Athlete facts | `docs/athletes/andy/profile.md` (living) · warm-up menu `daily-warmup.md` |
+| Reference guides | `docs/library/training-styles/` — cited by the skills, never prescriptive on their own |
 
 ## Active athlete + arc
 
@@ -32,7 +35,8 @@ Key facts:
 ## Logging + queries (Supabase MCP)
 
 No code in this repo. Use the Supabase MCP tools against project `vtruwlvekfnmfgaundhp`:
-- Tables: `workouts` → `workout_exercises` → `exercise_sets` (plus `exercises`, `daily_metrics` for bodyweight).
+- Tables: `workouts` → `workout_exercises` → `exercise_sets` (plus `exercises`, `daily_metrics` for bodyweight, `measurements` for everything that isn't a set).
+- Ladder metrics: `ladder_rung` (value 0–6, value_text = ball), `ladder_clean_of_6`, `hand_depth` (value_text fingertips/palm/wrist/forearm), `touch_in`, `standing_vert_in`, `depth_jump_in`, `seated_hip_ir_deg` (side L/R), `taylors_pose_cm`, `ohs_kg`, `standing_reach_in`.
 - Weights are stored with a unit; normalize with `weight_kg` (× 2.20462 for lb). e1RM = Epley `load × (1 + reps/30)`.
 - Exercise names must match `exercises.name` or PR lookups miss.
 
@@ -50,4 +54,6 @@ No code in this repo. Use the Supabase MCP tools against project `vtruwlvekfnmfg
 ## Don't
 
 - Don't write executed sets into markdown. Don't write plans into Supabase.
+- Don't change the plan in one place: skills + week files + the Claude Docs plan ("Andy — Training Plan", https://claude.ai/artifact/8dNC9HKvxa3n7YCNQTQpoC) move together in one commit.
+- Don't put measurements in set notes; use `measurements`.
 - Don't rebuild the coach marketplace, plan synthesis, nutrition tracking, widget engine, or xlsx export (removed 2026-09-07), or the progress dashboard, Supabase migrations and the `train` CLI (removed 2026-10-12). Git history has the code if ever needed.

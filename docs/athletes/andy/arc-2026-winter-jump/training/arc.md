@@ -5,7 +5,7 @@
 ## Goals (priority = triage order)
 | # | Goal | Target | Test |
 |---|---|---|---|
-| G1 | **Dunk a volleyball** | plan aims at +6" touch (~10'3" → ~10'9") so +4" lands with margin; filmed dunk | Jan 30 · touch logged every Tue |
+| G1 | **Dunk a volleyball** | ladder rung 4 clean (≈10'6"); plan aims at rung 5–6 so rung 4 lands with margin; filmed dunk | Jan 30 · ball ladder weekly |
 | G2 | **Olympic lifts** with the DNT coach | power clean 240 · power C&J 235 · power snatch 135 | Jan 14 |
 | G3 | **Flexibility as a skill** | right-hip IR = left, pain-free · 40 kg OHS clean → 60 kg | W4 / W8 / W12 |
 | G4 | **Strength held** | squat 375–385 single Jan 17 · bench 275 · pull-up +115 · **405 → 2027** | Jan 17 |
@@ -24,7 +24,7 @@ Sun L1 Olympic + Strength (core) · Mon U1 Upper + Hip skill (core) · **Tue J1 
 Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.60 < 0.75), position-limited (right-hip impingement pattern; overhead position, OHS 115 vs clean 225). Plyo training age: beginner → 40–60 contacts/session to start.
 
 ## Measurement (the arc lives or dies here)
-W1 baseline: standing reach · standing vertical (best of 3) · approach touch (best of 5, filmed) · seated hip IR both sides (degrees) · Taylor's pose hip-to-floor cm · supine overhead test · heel-elevated squat test · 40 kg OHS. Every Tue: best touch in the set note. Every Sun: bodyweight. W4, W8, W12: full retest. Dashboard reads `touch 10'4"` from set notes.
+**Ball ladder**, once a week at a rim, fresh, before the session: 0 rim grab · 1 tennis ball (≈10'2") · 2 softball (10'3") · 3 mini basketball (10'5") · **4 volleyball (10'6")** · 5 women's ball (10'7") · 6 men's ball (10'8"). Six attempts at the current rung, 2' rest; score clean / touched / missed, how many of six, hand depth on the best jump (fingertips / palm / wrist / forearm); two clean of six → next rung. Logged to Supabase `measurements` (`ladder_rung`, `ladder_clean_of_6`, `hand_depth`). W1 baseline: climb from tennis ball until failure · standing reach once · seated hip IR L/R (deg) · Taylor's pose (cm) · supine overhead · heel-elevated squat · 40 kg OHS · optional standing vertical + 18" depth jump. Every Sun: bodyweight → `daily_metrics`. W4, W8, W12: full retest. Reviews: `reviews/W04-review.md`, `W08-review.md`.
 
 ## Constraints
 - Session order: coach's Olympic lift first, as written → jumps and sprints (Tue 4×10–30 m, Thu 6×20 m, Sat 3×10 m) → loaded work → accessories.

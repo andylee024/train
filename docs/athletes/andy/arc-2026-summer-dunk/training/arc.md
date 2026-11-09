@@ -150,11 +150,11 @@ Three baselines are still **uncaptured 7 weeks in** (CMJ, depth jump, side split
 
 ## Style Guides Driving This Arc
 
-- **Primary (jump):** Vertical Jump Bible + THP — `styles/vertical-jump-guide.md`
-- **Upper / Olympic / 4-pillar lower:** Dylan Shannon (POWERJACKED) — `styles/dylan-shannon-guide.md`
-- **Flexibility (G3):** Matt Smith — `docs/content/training-styles/matt-smith-flexibility/guide.md` (skill-focused, isolation→compound, 2×/wk per skill, §13 scheduling)
+- **Primary (jump):** Vertical Jump Bible + THP — `docs/library/training-styles/vertical-jump/guide.md`
+- **Upper / Olympic / 4-pillar lower:** Dylan Shannon (POWERJACKED) — `docs/library/training-styles/dylan-shannon/guide.md`
+- **Flexibility (G3):** Matt Smith — `docs/library/training-styles/matt-smith-flexibility/guide.md` (skill-focused, isolation→compound, 2×/wk per skill, §13 scheduling)
 - **External coach:** DNT — integrate via the `principle-dnt-olympic-lifts` skill
-- **Daily warm-up:** "The Daily 7" — `styles/daily-warmup.md`
+- **Daily warm-up:** "The Daily 7" — `../daily-warmup.md`
 
 ---
 

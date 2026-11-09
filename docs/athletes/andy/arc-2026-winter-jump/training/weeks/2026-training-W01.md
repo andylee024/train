@@ -40,7 +40,7 @@ _Warm-up: lower body + Olympic · knee-to-wall ankle rocks 2x10 · band hip dist
 | 3b | **Coach:** single-leg deadlift 3x8 (her D2) · **3c** side bends 5x10 | | 90" |
 | 4a | *(+30 min)* Weighted pull-up 3x5 · 4b weighted dips 3x8 | | 90" |
 
-Log: squat top set + RPE + box height · hip 0–10 · **bodyweight**.
+Log: squat top set + RPE + box height · hip 0–10 · **bodyweight → `daily_metrics`**.
 
 ## Mon Nov 9 — U1 · Upper + Hip skill
 _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
@@ -54,7 +54,7 @@ _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
 | 3b | Seated row | 3x10 | 90" |
 | 4 | **Flex skill 1 — Hip IR (20')**: 90/90 hip lift 2x5 breaths · band posterior glide 15 rock-backs · reverse clamshell 2x15 · 90-sit IR PAIL/RAIL 3 rounds/side (10 s push / 10 s pull) · 90/90 IR lift-offs 3x5 (3–5 s holds). Stay short of the pinch. | | |
 
-Record rule: +10 lb when the last attempt was RPE ≤ 8, +5 at RPE 8.5–9, repeat on a miss. Log top set + RPE. **W1 baseline:** seated hip IR degrees (both sides, phone protractor) and Taylor's pose hip-to-floor cm before the flex block.
+Record rule: +10 lb when the last attempt was RPE ≤ 8, +5 at RPE 8.5–9, repeat on a miss. Log top set + RPE. **W1 baseline → `measurements`:** `seated_hip_ir_deg` L and R (phone protractor) and `taylors_pose_cm` before the flex block.
 
 ## Tue Nov 10 — J1 · Max Jump + Reactive
 _Warm-up (10'): jog 3', leg swings, hip routine (band glide, reverse clams), pogos 2x10. **No static stretching.**_
@@ -63,15 +63,15 @@ _Warm-up (10'): jog 3', leg swings, hip routine (band glide, reverse clams), pog
 |---|---|---|---|
 | 1a | — (no coach light day in wk1; start at 2a) — the primer, as she writes it | per DNT | 2' |
 | 2a | 3-step approach drills, filmed from the side | x6 | 1' |
-| 2b | **Max approach jumps — best touch logged every rep** | 10 (W1: BASELINE first — see below) | 2' |
+| 2b | **Max approach jumps** — hand depth on the best rep (fingertips / palm / wrist / forearm) | 10 (W1: BASELINE first — see below) | 2' |
 | 2c | Sprints, full effort | 4 x 10–20 m | walk back + 2' |
 | 3a | Depth jump 18" | 3x3 | 2' |
 | 3b | Hurdle / line hops | 2x5 | 90" |
 | 3c | Single-leg pogos | 2x8/leg | 90" |
 
-≈ ~55 contacts + sprints. Olympic lift first when she has one that day; if she programs something heavy here, jumps go first. Stop when touch drops ~1" or after two flat jumps. Log the best touch in the set note, e.g. `touch 10'4"`.
+≈ ~55 contacts + sprints. Olympic lift first when she has one that day; if she programs something heavy here, jumps go first. Stop when jumps go flat (two in a row below your best hand depth). **Ladder test first if this is the week's rim day** — see Measurement below.
 
-**BASELINE (first, fresh, before 2a):** standing reach (flat-footed, arm up, mark the wall) · standing vertical best of 3 · approach touch best of 5, filmed against the rim. Set note: `reach 96" | SVJ 121" | touch 10'3"`. Everything in this arc is scored against these numbers.
+**BASELINE (first, fresh, before 2a, at a rim):** climb the ladder from tennis ball — 6 attempts per rung, 2' rest, move up after 2 clean — until you fail; note hand depth on the best jump. Then standing reach once (flat-footed, mark the wall). Optional: standing vertical best of 3 and an 18" depth jump (My Jump Lab) for the reactive test. Everything in this arc is scored against these rows in `measurements`.
 
 ## Wed Nov 11 — R · Rest
 8-minute hip routine: 90/90 hip lift · band posterior glide · reverse clamshell · bridge holds · dead bugs. Nothing deep, nothing loaded.
@@ -110,10 +110,19 @@ _Bonus session. Warm-up: leg swings, pogos 2x10, hip routine, 4 sub-max approach
 |---|---|---|---|
 | 1a | Sprints 10 m | x3 | 2' |
 | 1b | 3-step approach drills | x4 | 1' |
-| 2a | Max approach jumps — touch logged | x8 | 2' |
-| 2b | Dunk attempts | x6, softball | 2' |
+| 2a | Max approach jumps — hand depth noted | x8 | 2' |
+| 2b | **Ladder test** (if Tue had no rim) then dunk attempts | x6, softball | 2' |
 
 ≈ 16–20 contacts. Basketball only after this, kept short — it counts toward the week's jumps. Weigh in.
+
+## Measurement this week
+**Ball ladder** — once a week at a rim, fresh, after the warm-up, before the rest of the session (Tue if the gym has a rim, else Sat). 6 attempts at your current rung, 2' rest. Score: clean / touched / missed · how many of 6 · hand depth on the best jump. Two clean of six → next session try the next rung.
+
+| Rung | Ball | ≈ touch |
+|---|---|---|
+| 0 rim grab · 1 tennis ball · 2 softball · 3 mini basketball · **4 volleyball** · 5 women's ball · 6 men's ball | 2.7" → 9.5" | 10'0" → 10'8" (volleyball ≈ 10'6") |
+
+Log to Supabase `measurements`: `ladder_rung` (value = rung, value_text = ball), `ladder_clean_of_6`, `hand_depth` (value_text), plus `touch_in` if measured. Bodyweight → `daily_metrics` on Sunday.
 
 ## Rules this week
 - **Right hip:** squat to a box above the pinch; no deep Cossacks or loaded 90/90 back-leg work; pain ≥ 3/10 → that movement out for the week.

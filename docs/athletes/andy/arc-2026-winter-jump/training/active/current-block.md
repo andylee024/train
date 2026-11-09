@@ -4,8 +4,8 @@
 Learn the approach and make the strength fast. Jumping is the main lift; the Olympic lifts run as power work with the coach; the squat is held at two sets to a box; flexibility starts as a skill (hip IR, overhead).
 
 ## Goals (binary, scored W4)
-1. **Baseline captured W1** (standing reach, standing vertical, approach touch best of 5, seated hip IR both sides, Taylor's pose cm, supine overhead test, heel-elevated squat test, 40 kg OHS) and **touch logged every Tuesday**.
-2. **Approach touch +1½–2" over baseline at the W4 retest.**
+1. **Baseline captured W1** (ball-ladder rung + hand depth, standing reach, seated hip IR both sides, Taylor's pose cm, supine overhead test, heel-elevated squat test, 40 kg OHS) and **the ladder logged every week** to `measurements`.
+2. **One rung or one hand-depth step above baseline at the W4 retest.**
 3. **Four core sessions a week in every week** (Sun L1 · Mon U1 · Tue J1 · Thu P1).
 
 ## The week (4 core + 2 bonus) — `principle-training-rhythm`
@@ -40,4 +40,4 @@ Heavy clean day → Sun 1a · clean + pull → Thu 1a/1b · snatch / light → T
 - W3 holds Thanksgiving (Thu Nov 26): if Thu is lost, run P1 Fri and skip U2.
 
 ## Measurement
-Tue: best touch in the set note (`touch 10'4"`). Sun: bodyweight (189 → 187 by W4). W1 + W4: full test battery above.
+Ball ladder once a week at a rim (Tue if it has one, else Sat — then Sat isn't optional) → `measurements`. Sun: bodyweight → `daily_metrics` (189 → 187 by W4). W1 + W4: full test battery above.

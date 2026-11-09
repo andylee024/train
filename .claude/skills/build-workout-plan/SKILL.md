@@ -38,7 +38,7 @@ When a principle changes a choice, say so in the output, e.g. "her snatch moved 
    - [ ] her lifts unchanged and first, back squat skipped; sprints on Tue and Thu
    - [ ] jumps + sprints inside the block's budget
    - [ ] hip and shoulder rules applied; nothing deep within 48 h of Tue/Sat
-   - [ ] measurement lines present (touch Tue, bodyweight Sun, retests W4/W8)
+   - [ ] measurement lines present (ball ladder on the rim day → `measurements`, bodyweight Sun → `daily_metrics`, retests W4/W8)
 6. **Deliver** in the format below. If writing into the plan, update `training/weeks/` and `training/active/`. Never write executed sets into markdown.
 
 ## Output format
@@ -47,17 +47,17 @@ TUE Nov 10 - J1 · Max Jump + Reactive (P · Power - W1)
 Warm-up: leg swings, hip routine, pogos 2x10 (no static stretching)
 1a  Coach muscle snatch (as written) ....... 80% 6x2 ................ rest 2'
 2a  3-step approach drills, filmed ........ x6 .................... rest 1'
-2b  Max approach jumps, touch logged ....... 10 ..................... rest 2'
+2b  Max approach jumps, hand depth noted .... 10 ..................... rest 2'
 2c  Sprints 10-20 m ........................ x4 ..................... walk back
 3a  Depth jump 18" ......................... 3x3 .................... rest 2'
 3b  Hurdle hops ............................ 2x5 .................... rest 90"
 3c  Single-leg pogos ....................... 2x8/leg
-Log: best touch (`touch 10'4"`), contacts, knee/hip 0-10
+Log: ladder rung / clean-of-6 / hand depth -> measurements; contacts; knee/hip 0-10
 ```
 
 ## Adjusting
 - **Missed day:** resume at the current week; don't double up. Lost Sunday → run L1 Mon, push J1 to Wed (keep 48 h).
-- **Touch flat 3 weeks:** Sunday squat to 1 set, +4 approach jumps Thu.
+- **Ladder flat 3 weeks:** Sunday squat to 1 set, +4 approach jumps Thu.
 - **Squat top set −5% two weeks:** with touch rising → add a set; with touch flat → halve Tuesday for a week, check sleep and food.
 - **Pain:** knee ≥3/10 no depth jumps; hip / shoulder rules above. Propose swaps, don't dictate.
 - **Busy week:** keep Tue, Sun, Mon, Thu in that order.
