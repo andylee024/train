@@ -7,17 +7,16 @@ Andy Lee's athlete directory. Contents are scoped per-arc: each arc gets its own
 ```
 andy/
 ├── README.md                       ← this file
-├── arc-2026-summer-dunk/           ← ACTIVE arc bundle (start README.md inside)
+├── arc-2026-winter-jump/           ← ACTIVE arc bundle (Nov 8, 2026 – Jan 30, 2027)
+├── arc-2026-summer-dunk/           ← closed arc (May 3 – Nov 7, 2026), kept as history
 └── archive/                        ← superseded docs (old coach-integration notes, legacy CSVs)
 ```
 
 ## Active arc
 
-[`arc-2026-summer-dunk/`](arc-2026-summer-dunk/): May 3 → Nov 7, 2026 (extended; arc week = DNT week). Currently in the **W21–W24 Strength block**. It closes at W24, and a new arc starts at **W1** on Nov 8 (Power → Reactive → Test blocks, dunk test Jan 30, 2027).
+[`arc-2026-winter-jump/`](arc-2026-winter-jump/): Nov 8, 2026 → Jan 30, 2027, arc week = DNT week. Jump-first: P · Power + Approach (W1–4) → R · Reactive (W5–8) → T · Test (W9–12, dunk test Jan 30). Start with its `training/arc.md`.
 
-Programming is built with the repo skills in `.claude/skills/`: `build-workout-plan` + four `principle-*` skills.
-
-The bundle is **self-contained**. Open the bundle's [`README.md`](arc-2026-summer-dunk/README.md) for pull instructions (how the cloud agent ingests the bundle) and contents map.
+Closed: [`arc-2026-summer-dunk/`](arc-2026-summer-dunk/) (W1–W24; reviews in `reviews/`). Programming is built with the repo skills in `.claude/skills/`: `build-workout-plan` + four `principle-*` skills.
 
 ## Source of truth (storage boundary)
 

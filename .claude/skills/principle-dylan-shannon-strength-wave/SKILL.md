@@ -1,33 +1,33 @@
 ---
 name: principle-dylan-shannon-strength-wave
-description: Andy's strength principle, from Dylan Shannon. Every strength lift progresses on a rotating rep-range wave with records kept per range. Load whenever programming or adjusting his squat, bench, pull-up or other strength work.
+description: Andy's strength principle, from Dylan Shannon. Strength lifts progress on a rotating rep-range wave (8s → 6s → 4s → light) with a record per range. In the Winter Jump arc the squat runs the wave at two sets to a box (hold ~375), and bench / pull-ups make a record attempt every session with +10/+5 jumps. Load whenever programming squat, bench, pull-up or other strength work.
 ---
 
 # Principle: Dylan Shannon Strength Wave
 
-**What Andy has learned:** wave progression is how he gains strength. Waves have produced every strength PR he's logged, most recently 295 × 8 on the back squat (2026-10-11).
+**What Andy has learned:** wave progression is how he gains strength (every logged strength PR, incl. 295×8 and 215×6). Upper body is still beginner-fast, so it progresses in bigger jumps than +5. In a jump-first arc the squat is held, not chased: one exposure a week, two sets, is enough (Catalyst maintenance range 5–15 reps/week at 80–90%).
 
 ## The rules
-
-1. **Rep ranges rotate week to week:** 8s → 6s → 4s → light week, then repeat. Sets run 2–4 depending on the block (see `principle-thp-trait-blocks`).
-2. **Keep a record for every rep range.** Each time a range comes back, the goal is to beat last time's weight on it.
-3. **Add 5 lb** to a range when every rep came in at RPE 8.5 or under last time. At RPE 9.5 or higher, keep the PR and don't add weight.
-4. **The wave is permanent.** Never replace it with a linear or peaking program. Before a max test, a short 1–2 week peak may be bolted on, then the wave resumes.
-5. **Rest:** 3–5 min on heavy sets. Start the next set when ready, not on the timer.
+1. **Rep ranges rotate weekly:** 8s → 6s → 4s → light, then repeat. Each range keeps its own record.
+2. **Squat (Sun):** 2 sets, **to a box at pain-free depth**, RPE ≤ 8. Beat the range record only when the hip is quiet. Her heavy front squat, when programmed, is that week's squat.
+3. **Upper (Mon, bench + weighted pull-up): record attempt every session.** Target = best ever in that range plus: **+10 lb** if the last attempt was RPE ≤ 8 · **+5** at RPE 8.5–9 · same weight, +1 rep on a miss. Then 2 back-off sets at −5–10%. Pull-up strength is scored on total load (BW + added).
+4. **The wave is permanent.** A 1–2-week peak may be bolted on before a test (W9–W12), then the wave resumes.
+5. **Rest:** 3–5' heavy sets; start when ready.
 
 ## Where waves run
 
 | Lift | Day | Notes |
-| --- | --- | --- |
-| Back squat | Sun | The main wave. The coach's back squats are skipped in its favor (`principle-dnt-olympic-lifts`). |
-| Bench + weighted pull-up | Mon / Fri heavy upper | One wave each, run as a pair. |
-| Thu squat variation | Thu | Front / speed / pin squat, chosen by the block's trait. Moderate, never grinding (it sits 48 h before Saturday jumps). |
+|---|---|---|
+| Back squat | Sun | 2 sets, box. Coach's back squat skipped. |
+| Bench + weighted pull-up | Mon | Record attempts + back-offs; pogos as filler. Fri U2 is volume/health, not records. |
+| Jump squat / speed squat | Thu | Power work, not a wave: 20–25% jump squat (P block), 6×2 @ 60–65% speed squat to box (R block). |
 
-## Starting loads (Oct 2026, update from the log)
-- **Back squat:** working max ~375. 8s @ 295, 6s @ 310, 4s @ 330, light 2×5 @ 275.
-- **Bench:** e1RM ~253. Weighted pull-up: +45 to +55 for 5s.
+## Current numbers (Nov 2026)
+- **Squat wave:** 8s 295 → 300 · 6s 310 → 315 · 4s 325 → 330 · light 2×5 @ 275. Hold 375–385 for the Jan 17 single; 405 is a 2027 goal.
+- **Bench records:** 8s 195 · 6s 215 · 4s 220. Next: 205×8 · 225×6 · 230×4.
+- **Pull-up records:** 8s +45 (×10) · 6s +55 · 4s +70. Next: +55×8 · +65×6 · +75×4.
 
 ## Anti-patterns
-- ❌ Chasing a 1RM inside the wave.
-- ❌ Changing exercises mid-block (change load, not lifts).
-- ❌ Running the coach's squat percentages *and* the wave on the same day.
+- ❌ Chasing a squat 1RM inside a jump block. Grinding reps (RPE 9+) on Sunday — they blunt the jump.
+- ❌ Changing exercises mid-block. Running her squat percentages and the wave on the same day.
+- ❌ Scoring pull-ups on added weight alone.

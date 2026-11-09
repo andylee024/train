@@ -29,7 +29,7 @@ Exercise
 
 ## Procedure
 
-1. **Resolve day + week.** Default to **today** (`date "+%A"` + `date "+%Y-%m-%d"`). Map today's date to the arc week file. The active week is `docs/athletes/<athlete>/<arc>/training/active/current-week.md`; the full set is in `training/weeks/2026-training-W<NN>.md`. Athlete/arc default: `andy` / `arc-2026-summer-dunk` (confirm from repo `CLAUDE.md`).
+1. **Resolve day + week.** Default to **today** (`date "+%A"` + `date "+%Y-%m-%d"`). Map today's date to the arc week file. The active week is `docs/athletes/<athlete>/<arc>/training/active/current-week.md`; the full set is in `training/weeks/2026-training-W<NN>.md`. Athlete/arc default: `andy` / `arc-2026-winter-jump` (confirm from repo `CLAUDE.md`).
 2. **Read that day's section** from the week file. Find the day's table.
 3. **Filter to `coach` source rows** whose lift is an Olympic lift (snatch/clean/jerk/pull families) — not `coach acc` rows.
 4. **Format** each into the block above. Convert loads to kg + lbs. Preserve the `%` note when present.

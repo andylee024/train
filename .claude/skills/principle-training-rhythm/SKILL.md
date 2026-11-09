@@ -1,90 +1,50 @@
 ---
 name: principle-training-rhythm
-description: Andy's structure principle. Every session uses numbered 1a/2a/3a blocks (about 6 exercises), the week follows a fixed hard/easy split with the 48-hour rule, and upper days superset heavy press and pull with reactive or mobility work. Load whenever laying out a session or a week.
+description: Andy's structure principle. Four core days he reliably trains (Sun/Mon/Tue/Thu) carry everything that must happen, with the max-jump session on Tuesday; Fri/Sat are bonuses allowed to fail. Sessions are 1a/2a/3a blocks (~6 exercises) with a 60-min core and an optional 30-min block 4. Load whenever laying out a session or a week.
 ---
 
 # Principle: Training Rhythm
 
-**What Andy has learned:** he trains best with a fixed structure he can see. Sessions are numbered blocks, the week follows the same split, and hard days alternate with easier ones. Mobility and reactive ability are his weak points, so they get worked into the heavy upper days.
+**What Andy has learned:** he completes 3.6–3.9 sessions a week no matter how many are planned (every block, May–Nov 2026), and the last day on the list is the one that goes — Saturday's jump day was the first casualty in all four blocks. So the plan is built for the week he actually keeps: four core days carry the goal, and the priority session sits on the most reliable day. Complexity spikes precede fall-offs; sessions stay ~6 exercises in numbered blocks.
 
-## 1. Session structure (about 6 working exercises)
+## 1. Session structure (60-min core + optional 30)
 
 ```
-Warm-up   Daily 7 (+ pogos 2x10 and box jump 3x2 on leg days / leg swings + pogos on jump days)
-1a        Olympic lift: coach's lift, or a light primer on jump days
-2a 2b 2c  Main block: strength pair, or jumps + sprints on jump days
-3a 3b 3c  Accessories / mobility
-4         Finisher (optional)
+Warm-up   10' — the day's targeted mobility (hip / ankle on leg + jump days, overhead / thoracic on upper days); dynamic only before jumps
+1a (1b)   Coach Olympic lift(s) — or the approach jumps on jump days
+2a 2b 2c  Main block: squat wave / record attempts / reactive block / power contrast
+3a 3b 3c  Accessories, coach accessories, flex skill
+4         Optional (+30'): upper finish, extra technique jumps, second half of a flex skill
 ```
 
-- **Rest:**
-  - heavy strength: 3–5 min
-  - Olympic lifts: 2–3 min
-  - jumps / sprints: ~2 min
-  - accessories: 60–90 s
-- **Running long:** cut block 3 or 4, never block 2.
+- **Rest:** heavy strength 3–5' · Olympic lifts 2–3' · jumps / sprints 2' · plyo accessories 90" · accessories 60–90".
+- **Running short:** block 4 goes, then block 3. Never block 2.
+- **Jumps first** in any session that has them. Fastest work first.
 
-## 2. The weekly split (named workouts)
+## 2. The weekly split (4 core + 2 bonus)
 
-| Day | Workout | Hard / easy |
-| --- | --- | --- |
-| **Sun** | **L1 · Heavy Legs** | HARD (legs) |
-| **Mon** | **U1 · Upper Strength + Speed** | Easy on legs |
-| **Tue** | **S1 · Speed & Reactive** | HARD (fast) |
-| **Wed** | **R · Recovery** (rest / optional mobility) | Recovery |
-| **Thu** | **L2 · Olympic + Squat Variation** (short day) | HARD (legs) |
-| **Fri** | **U2 · Upper Strength + Mobility** | Easy on legs |
-| **Sat** | **J1 · Jump & Dunk** (most important) | HARD (jump) |
+| Day | Workout | Status | Role |
+|---|---|---|---|
+| **Sun** | **L1 · Olympic + Strength** | Core | coach heavy clean day · squat wave 2 sets to box · hip thrust / Nordic · +30' upper finish |
+| **Mon** | **U1 · Upper + Hip skill** | Core | bench + pull-up record attempts · pogos filler · flex skill 1 (hip IR, 20') |
+| **Tue** | **J1 · Max Jump + Reactive** | **Core — the priority** | approach drills · max approach jumps, touch logged · depth jumps or sprints · hops · coach light lift after |
+| **Wed** | **R · Rest** | — | 8-min hip routine |
+| **Thu** | **P1 · Power + Approach** | Core | coach clean + pull · jump squat / speed squat + box-jump contrast · technique approach jumps |
+| **Fri** | **U2 · Overhead + Shoulder skill** | Bonus | flex skill 2 (overhead, 20') · coach jerk / overhead day · light upper, no legs |
+| **Sat** | **J2 · Dunk** | Bonus | approach jumps, touch logged · dunk attempts · basketball after |
 
-- **48-hour rule:** heavy legs ≥ 48 h before S1 and J1. No heavy pulls or deep or loaded split stretching on Friday.
-- **Basketball:** Saturday, after J1. It counts as that day's jumps.
-- **Busy week:** drop U2 first, then shorten S1. Keep L1, L2 and J1.
+- **48-hour rule:** heavy legs (Sun) ≥48 h before the max-jump day (Tue). Thu is light on the legs so Sat stays fresh. No heavy pulls or deep/loaded stretching on Fri.
+- **Priority when the week shrinks:** Tue → Sun → Mon → Thu. Skipping Fri/Sat is by design, not a fall-off.
+- **Basketball:** Saturday after J2, kept short. It counts toward the week's contacts.
+- **Measurement is part of the rhythm:** touch every Tue, bodyweight every Sun.
 
-## 3. Session layouts (B1 Strength; later blocks keep the slots and swap exercises for the block's trait)
-
-- **L1:**
-  - 1a coach Olympic lift (heavy)
-  - 2a back squat (wave)
-  - 3a clean deadlift
-  - 3b hip thrust
-  - 3c Nordic curl
-  - 4a calf raise + Cossack
-- **U1:**
-  - 1a coach Olympic lift
-  - 2a bench (wave)
-  - 2b weighted pull-up (wave)
-  - 2c 20 m sprint @ 85% (filler)
-  - 3a weighted dips
-  - 3b seated row
-- **S1:**
-  - 1a hang power snatch primer
-  - 2a sprints
-  - 2b depth jumps
-  - 2c single-leg bounds
-  - 3a drop jumps
-  - 3b single-leg pogos
-  - 4a Zercher side squat
-  - 4b Copenhagen
-  - 4c hip airplane
-- **L2:** 1a coach lift · 1b coach pull · 2a squat variation (front / speed / pin by block) · 2b back extension. **Nothing more**: short day.
-- **U2:**
-  - 1a coach jerk / push press
-  - 2a DB shoulder press
-  - 2b DB bent-over row
-  - 2c mobility filler (horse stance)
-  - 4a light sprints
-  - 4b light stretch
-- **J1:**
-  - 1a power clean primer
-  - 2a sprints 10 m
-  - 2b approach drills
-  - 3a max approach jumps (touch logged)
-  - 3b dunk attempts
-
-**Upper-day fillers (2c):** U1 uses a reactive filler (sprint, med-ball push, pogos, by block). U2 uses a mobility filler (horse stance, 90/90, Jefferson curl). Fillers stay crisp and never fatiguing.
+## 3. Fillers
+- U1: pogos ×10 between heavy rounds (reactive, never fatiguing).
+- U2: the overhead flex skill opens the session; block 3 holds its end-range holds.
+- Flex skills never go deep within 48 h of Tue/Sat and never the day after heavy work.
 
 ## Anti-patterns
+- ❌ The #1 priority on an optional or weekend day.
 - ❌ Heavy legs the day before a jump day.
-- ❌ More than about 6 working exercises.
-- ❌ Jumps or sprints after a heavy leg session on Tue or Sat (they lead those days).
-- ❌ Fillers that turn into conditioning.
+- ❌ More than ~6 working exercises; a second external program bolted on top.
+- ❌ Jumps after lifting on Tue/Sat. Static stretching before jumping.

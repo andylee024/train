@@ -12,6 +12,7 @@ The Olympic-lifting coach (DNT Weightlifting Club) issues a new 3-day program ro
 | `dnt-wk17-18_arc-W17-W18.pdf` | wk17–18 *(peak — max singles)* | W17–W18 | Sep 13 – Sep 26 | ✅ integrated (arc extended +2 wks) |
 | `dnt-wk19-20_arc-W19-W20.pdf` | wk19–20 *(wk19 deload)* | W19–W20 | Sep 27 – Oct 10 | ✅ integrated (Block 4 — 405 push) |
 | `dnt-wk21-22_arc-W21-W22.pdf` | wk21–22 | W21–W22 | Oct 11 – Oct 24 | ✅ integrated (B1 Strength; W21 recorded after the fact) |
+| `dnt-wk23-24_arc-W23-W24.pdf` | wk23–24 | W23–W24 | Oct 25 – Nov 7 | ✅ received Oct 24; run from the chat (dip power clean, block cleans). Arc closed at W24. |
 
 Earlier program from arc start lives at `../styles/dnt-program-2026-05-17.pdf` (pre-v9).
 

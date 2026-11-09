@@ -1,64 +1,61 @@
 ---
 name: build-workout-plan
-description: Build or adjust Andy's training (a session, a week, or a 4-week block) for his dunk, Olympic lifting and strength goals. It loads his four principle skills and applies them. Use for "build my week", "what's today's workout", "plan the next block", or when a new DNT program arrives.
+description: Build or adjust Andy's training (a session, a week, or a block) for his volleyball-dunk, Olympic-lifting, flexibility and held-strength goals. Loads his principle skills and applies them. Use for "build my week", "what's today's workout", "plan the next block", or when a new DNT program arrives.
 ---
 
 # Build Workout Plan
 
-The builder. It doesn't hold training rules itself: it loads Andy's four principles and applies them.
+The builder. It holds no training rules itself: it loads Andy's principles and applies them.
 
-## Goals (priority order: what gives way first when recovery runs short)
-1. **Dunk a volleyball** on a 10' rim: +3–5" approach touch. Dunk test W12 Sat, Jan 30, 2027.
-2. **Olympic lifts** with his DNT coach: power clean 225, power clean & jerk 225.
-3. **Strength keeps climbing:** squat, bench and pull-up steadily up; 405 squat within 12 months.
+## Goals (priority order = what gives way first)
+1. **Dunk a volleyball** on a 10' rim, Jan 30, 2027. Plan aims at +6" approach touch (~10'3" → ~10'9") so +4" lands with margin.
+2. **Olympic lifts** with the DNT coach: power clean 240 · power C&J 235 · power snatch 135 (her max day Jan 14).
+3. **Flexibility as a skill:** right-hip IR = left, pain-free · 40 kg OHS clean → 60 kg.
+4. **Strength held:** squat 375–385 single Jan 17 · bench 275 · pull-up +115. 405 is a 2027 goal.
 
-**Athlete:** ~190 lb. No BJJ. Plays pickup basketball sometimes. Shoulder and wrist healed: if either hurts at 3/10 or more, swap in landmine press or hang variants.
+**Athlete:** 6'0", ~189 lb → 184. No BJJ; pickup basketball Sat after jumps. Right hip impingement pattern (box depth, no deep Cossack / loaded 90/90 back-leg, ≥3/10 → out). Left shoulder flares (no barbell overhead above 3/10 → landmine / DB neutral). Wrist and right shoulder healed, monitor. Plyo training age: beginner.
 
 ## The principles (load each before building)
 
 | Principle | Decides |
-| --- | --- |
-| `principle-dylan-shannon-strength-wave` | Strength lifts, rep ranges, loads, records |
-| `principle-thp-trait-blocks` | The block's trait, exercise choice, jump volume, test weeks |
+|---|---|
+| `principle-training-rhythm` | 4 core + 2 bonus split, Tue = max jump, 60-min core + 30, 48-hour rule, fillers |
+| `principle-thp-trait-blocks` | The block's trait, exercise choice, contact budgets, the current cycle |
 | `principle-dnt-olympic-lifts` | Coach's lifts: what runs, where it lands, what's skipped |
-| `principle-training-rhythm` | Session blocks (1a–3c), the weekly split, 48-hour rule, upper-day supersets |
+| `principle-dylan-shannon-strength-wave` | Squat wave (2 sets, box), upper record attempts, current records |
 
-When a principle changes a choice, say so in the output, e.g. "her snatch pulls moved to Tue: training-rhythm, 48-hour rule".
+When a principle changes a choice, say so in the output, e.g. "her snatch moved to Tue 4a: dnt-olympic-lifts".
 
 ## Procedure
-1. **Find what's current:**
-   - which block and week it is (`principle-thp-trait-blocks`). Week numbers = DNT coach's weeks: W21–W24 in the summer arc, then W1 restarts in a new arc folder;
-   - the coach's latest program (`docs/athletes/andy/<arc>/coach-programs/`);
-   - the plan doc "Andy — Training Plan" (Claude Docs) is the source of truth for workout names and session layouts;
-   - recent logged sessions: Supabase project `vtruwlvekfnmfgaundhp`, tables `workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`. Weights may be stored in kg.
-2. **Place her Olympic lifts** on the split (`principle-dnt-olympic-lifts`).
-3. **Lay out each day** with the session structure and split (`principle-training-rhythm`).
-4. **Fill** strength with the wave (`principle-dylan-shannon-strength-wave`), and jumps, sprints and exercise choice with the block's trait (`principle-thp-trait-blocks`).
+1. **Find what's current:** block and week (arc week = DNT week; Winter Jump arc W1 = Nov 8, 2026) · the coach's latest PDF in `docs/athletes/andy/arc-2026-winter-jump/coach-programs/` · the plan doc "Andy — Training Plan (Nov 2026 – Jan 2027)" (Claude Docs) · recent logged sessions in Supabase `vtruwlvekfnmfgaundhp` (`workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`; weights in kg).
+2. **Place her Olympic lifts** (`principle-dnt-olympic-lifts`).
+3. **Lay out each day** (`principle-training-rhythm`), jumps first on Tue/Sat.
+4. **Fill** the squat wave and upper records (`strength-wave`), jumps/plyos/contrast by the block's trait (`thp-trait-blocks`), flex skills Mon (hip IR) and Fri (overhead).
 5. **Check before delivering:**
-   - [ ] about 6 working exercises a day
-   - [ ] heavy legs at least 48 h before Tue and Sat
-   - [ ] no heavy pulls on Friday
-   - [ ] her lifts unchanged (squat skipped)
-   - [ ] jumps lead on jump days
-   - [ ] fillers on upper days
-   - [ ] the block's trait is clearly the focus
-6. **Deliver** in the format below. If writing into the plan, update `docs/athletes/andy/<arc>/training/weeks/` and `active/current-week.md`. Never write executed sets into markdown; logs go to Supabase.
+   - [ ] Tue opens with approach drills + max approach jumps, touch logged
+   - [ ] heavy legs ≥48 h before Tue; Thu light on the legs; no heavy pulls Fri
+   - [ ] ≤6 working exercises; 60-min core + optional block 4
+   - [ ] her lifts unchanged, back squat skipped; jumps first
+   - [ ] contacts inside the block's budget; one of depth jumps / sprints per day
+   - [ ] hip and shoulder rules applied; nothing deep within 48 h of Tue/Sat
+   - [ ] measurement lines present (touch Tue, bodyweight Sun, retests W4/W8)
+6. **Deliver** in the format below. If writing into the plan, update `training/weeks/` and `training/active/`. Never write executed sets into markdown.
 
 ## Output format
 ```
-MON Oct 12 - U1 · Upper Strength + Speed (B1 Strength - W21)
-Warm-up: Daily 7
-1a  Coach Olympic lift ............. per DNT .............. rest 2-3'
-2a  Bench (wave: 6s) ................ 3x6 @ 200 ............ rest 3'
-2b  Weighted pull-up (wave) ......... 3x5 @ +45 ............ rest 3'
-2c  Sprint 20 m @ 85% ............... x1 each round (during rest)
-3a  Dips ............................ 3x8
-3b  Row ............................. 3x10
-Log: bench top set + RPE, pull-up load
+TUE Nov 10 - J1 · Max Jump + Reactive (P · Power - W1)
+Warm-up: leg swings, hip routine, pogos 2x10 (no static stretching)
+1a  3-step approach drills, filmed ........ x6 .................... rest 1'
+2a  Max approach jumps, touch logged ....... 10 ..................... rest 2'
+2b  Depth jump 18" ......................... 3x3 .................... rest 2'
+3a  Hurdle hops ............................ 3x5 .................... rest 90"
+3b  Single-leg pogos ....................... 2x8/leg
+Log: best touch (`touch 10'4"`), contacts, knee/hip 0-10
 ```
 
 ## Adjusting
-- **Missed day:** resume at the current week; don't double up.
-- **Touch flat 3–4 weeks while the squat climbs:** shift volume toward reactive work early.
-- **Same loads feel heavier 2 weeks running:** halve Tuesday's volume for a week and check sleep and food.
-- **Pain:** follow the knee rules in `principle-thp-trait-blocks`, and the shoulder/wrist swaps above.
+- **Missed day:** resume at the current week; don't double up. Lost Sunday → run L1 Mon, push J1 to Wed (keep 48 h).
+- **Touch flat 3 weeks:** Sunday squat to 1 set, +4 approach jumps Thu.
+- **Squat top set −5% two weeks:** with touch rising → add a set; with touch flat → halve Tuesday for a week, check sleep and food.
+- **Pain:** knee ≥3/10 no depth jumps; hip / shoulder rules above. Propose swaps, don't dictate.
+- **Busy week:** keep Tue, Sun, Mon, Thu in that order.

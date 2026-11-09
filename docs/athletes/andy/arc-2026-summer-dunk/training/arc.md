@@ -1,6 +1,8 @@
 # Arc — Hybrid Athletic Arc (Summer 2026 Dunk) — DNT-aligned week numbering
 
-> **Status 2026-10-11, read first.** This arc runs through **W24 (Nov 7, 2026)** and then closes. The next arc restarts at **W1** on Nov 8 (arc week = DNT week).
+> **CLOSED 2026-11-07.** This arc ran W1–W24. The active arc is `../../arc-2026-winter-jump/` (W1 = Nov 8, 2026). Everything below is history.
+
+> **Status 2026-10-11.** This arc runs through **W24 (Nov 7, 2026)** and then closes. The next arc restarts at **W1** on Nov 8 (arc week = DNT week).
 > - **W21–W24 is the Strength block**, rewritten 2026-10-11: `training/blocks/2026-09-block-04-405-strength-push.md`.
 > - Programming now comes from the repo skills `build-workout-plan` + `principle-dylan-shannon-strength-wave`, `principle-thp-trait-blocks`, `principle-dnt-olympic-lifts`, `principle-training-rhythm`.
 > - **Changes from the sections below:** no more BJJ; the side split is no longer a tracked goal; goals are now (1) volleyball dunk, (2) power clean / clean & jerk 225 with the DNT coach, (3) strength keeps climbing (405 within 12 months).

@@ -1,46 +1,41 @@
 ---
 name: principle-thp-trait-blocks
-description: Andy's block principle, from THP. Training qualities are three traits (strength, power, reactive), each 4-week block focuses on one, and exercises are chosen to train it. Load when planning a block or choosing exercises and volumes for a week.
+description: Andy's block principle, from THP. Training qualities are three traits (strength, power, reactive); each 4-week block turns one up and holds the others; exercises and jump volume are chosen for the block's trait. Includes the current cycle (Winter Jump arc, W1–W12) and contact budgets. Load when planning a block or choosing exercises and volumes for a week.
 ---
 
 # Principle: THP Trait Blocks
 
-**What Andy has learned:** focusing a block on one trait, with exercises chosen to train that trait, works better than training everything equally. Jump height comes from all three traits, so none is ever dropped. They take turns being the focus.
+**What Andy has learned:** focusing a block on one trait works better than training everything equally; jump height needs all three so none is dropped. Strength is already enough (2× BW squat) and expressed slowly (power clean ÷ squat 0.60 < 0.75): the deficit is explosive and reactive, so the blocks run **Power → Reactive → Test** with strength held — not strength first.
 
 ## The three traits
 
-| Trait | What it is | Exercises that train it |
-| --- | --- | --- |
-| **Strength** | How much force you can make | Back / front / pin squat, deadlift, heavy pulls, bench, weighted pull-up |
-| **Power** | How fast you make force | Olympic lifts (fast), jump squats (~20–25% of squat max), speed squats 6×2 @ 60–65%, trap-bar jumps, med-ball throws, box jumps |
-| **Reactive** | Springiness: fast ground contact, elastic rebound | Depth / bounce jumps, bounds, single-leg hops, pogos, sprints 10–30 m, approach jumps, dunk attempts |
+| Trait | What it is | Exercises |
+|---|---|---|
+| **Strength** | How much force | Back / front squat (box), hip thrust, Nordic, bench, weighted pull-up |
+| **Power** | How fast | Olympic lifts (fast), jump squats 20–25% of squat max, speed squats 6×2 @ 60–65%, box jumps, contrast sets |
+| **Reactive** | Springiness | Depth jumps, hurdle hops, pogos, bounds, sprints 10–30 m, **approach jumps** (count as plyos) |
 
 ## The rules
+1. **One trait up per 4-week block**, ~70% of the hard work. The others held at ~half volume.
+2. **Plyo training age is beginner** even though strength is advanced: start at 40–60 contacts/session, 80–120/week, medium intensity; up to ~90/session and ~150/week in the Reactive block.
+3. **One variable at a time:** volume → box height → run-in speed. Depth jumps live in 2–3-week windows.
+4. **Depth jumps and sprints share a CNS budget:** one per day.
+5. **Every jump at max intent.** Stop a session when touch drops ~1" or after two flat jumps.
+6. **Week 4 of each block is light and ends with a retest.** Gains show after the volume drops.
+7. **Approach technique every jump day** (3-step drills, filmed) — worth 4–6" on its own.
 
-1. **Each 4-week block turns one trait up.** Roughly 70–80% of the block's hard work serves that trait.
-2. **The other two are held, never dropped.** Hold at about half volume: the squat wave at 2 sets, RPE 8 or under; jumps at Saturday dunk day plus a short Tuesday.
-3. **Week 4 is lighter and ends with a test:** best approach touch, plus top sets or singles.
-4. **Order:** Strength → Power → Reactive → Test. Gains from hard training show up after the volume drops, so the test block comes last.
-5. **Plyos progress one variable at a time:** volume, then box height, then approach speed.
-6. **Stop on decline:** a jump session ends when touch drops about 1" or after two flat jumps.
-
-## The current cycle
-
-Week numbers follow the DNT coach's weeks: **arc week = DNT week**. The summer arc ends at **W24**, and numbering then restarts at **W1** in a new arc folder.
+## The current cycle (Winter Jump arc; arc week = DNT week, W1 = Nov 8, 2026)
 
 | Block | Weeks | Dates | Trait up | How the week changes |
-| --- | --- | --- | --- | --- |
-| Strength | **W21–W24** (summer arc) | Oct 11 – Nov 7, 2026 | **Strength** | Squat wave 3–4 sets; Thu front squat 3×5; Tue depth 18" 3×3 + sprints; Sat 8–10 approach jumps; W24 light + touch retest |
-| Power | **W1–W4** (new arc) | Nov 8 – Dec 5 | **Power** | Squat wave 2 sets; Thu speed squats + box jumps; Tue jump squats + sprints; Olympic lifts crisp; Sat approach jumps + contrast sets |
-| Reactive | **W5–W8** | Dec 6 – Jan 2, 2027 | **Reactive** | Squat wave 2 sets; Thu pin squat (moderate); Tue depth 4×3 at best box, bounds, hops, sprints to 30 m; Sat 12–15 approach jumps + volleyball attempts (W8 holiday = light) |
-| Test | **W9–W12** | Jan 3 – Jan 30 | **Test** | Olympic max singles W10 (Jan 14), squat PR W11 Sun (Jan 17), low volume, **dunk test W12 Sat (Jan 30)** |
+|---|---|---|---|---|
+| **P · Power + Approach** | W1–W4 | Nov 8 – Dec 5 | Power + approach skill | Tue 10–12 max approach jumps + depth 18" 3×3 / sprints alternating; Thu jump squat 4×3 @ 75→95 + box jumps + 6 technique jumps; W1 baseline; **W4 light + retest** |
+| **R · Reactive** | W5–W8 | Dec 6 – Jan 2 | Reactive | Tue 12–15 approach jumps + depth from best box 4×3 + bounds + 30 m sprints; Thu speed squat 6×2 + box jumps + 8 technique jumps; Sat volleyball attempts; **W8 light + retest** (holidays) |
+| **T · Test** | W9–W12 | Jan 3 – Jan 30 | Test | Taper 40–50% volume, max intent; Oly max Jan 14, squat single Jan 17, **dunk test Jan 30** |
 
-## Contact budget (jumps per session)
-- Strength block: ~40.
-- Power block: ~50–60.
-- Reactive block: 60–100.
-- Test block: ~30, max intent.
-- Basketball counts toward the budget.
+## Contact budget (per session)
+Power: Tue ~50 · Thu ~35 · Sat ~20. Reactive: Tue 75–90 · Thu ~40 · Sat ~20. Light weeks: half. Basketball counts.
 
 ## Safety
-- **Patellar pain:** 3/10 means no depth jumps that week; 5/10 means two weeks off plyos.
+- Knee ≥ 3/10 → no depth jumps that week; ≥ 5/10 → two weeks off plyos.
+- Right hip ≥ 3/10 in a position → that position out for the week.
+- Touch flat 3 weeks → Sunday squat to 1 set, +4 approach jumps Thu.

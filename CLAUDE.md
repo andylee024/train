@@ -15,17 +15,19 @@ A single-athlete workout tracker. Plan lives in markdown; executed work lives in
 
 ## Active athlete + arc
 
-**Andy Lee.** Active arc: [`docs/athletes/andy/arc-2026-summer-dunk/`](docs/athletes/andy/arc-2026-summer-dunk/), currently in the **W21–W24 Strength block** (Oct 11 → Nov 7, 2026). Arc week = DNT coach week. The arc closes at W24, and a **new arc starts at W1** on Nov 8: Power (W1–4) → Reactive (W5–8) → Test (W9–12, dunk test Jan 30, 2027).
+**Andy Lee.** Active arc: [`docs/athletes/andy/arc-2026-winter-jump/`](docs/athletes/andy/arc-2026-winter-jump/) — **Winter Jump**, W1 = Nov 8, 2026 (arc week = DNT coach week). Blocks: P · Power + Approach (W1–4) → R · Reactive (W5–8) → T · Test (W9–12: Oly max Jan 14, squat single Jan 17, **dunk test Jan 30, 2027**). Previous arc (`arc-2026-summer-dunk/`, W1–W24) is closed and kept as history.
 
 Goals (priority order):
-1. Dunk a volleyball on a 10' rim.
-2. Power clean 225 + power clean & jerk 225 with the DNT coach.
-3. Strength keeps climbing (405 squat within 12 months).
+1. Dunk a volleyball on a 10' rim (plan aims at +6" touch so +4" lands with margin).
+2. Olympic lifts with the DNT coach: power clean 240 · power C&J 235 · power snatch 135.
+3. Flexibility as a skill: right-hip IR, overhead position.
+4. Strength held: squat 375–385 single in Jan, bench 275, pull-up +115. 405 → 2027.
 
 Key facts:
 - **Programming = the skills below.** Don't invent structure; build with `build-workout-plan`.
-- **No BJJ.** Shoulder + wrist are healed (monitor; landmine / hang variants if pain ≥3/10).
-- Heavy legs ≥48 h before a jump day (Tue, Sat). No heavy pulls the day before Saturday.
+- **Week = 4 core days (Sun L1 · Mon U1 · Tue J1 max jump · Thu P1) + 2 bonus (Fri U2 · Sat J2).** Tuesday is the priority session; heavy legs ≥48 h before it.
+- **No BJJ.** Right hip: impingement pattern — box depth, ≥3/10 → movement out. Left shoulder: no barbell overhead above 3/10. Knee ≥3/10 → no depth jumps.
+- Measurement is part of the plan: best touch every Tue (`touch 10'4"` in the set note), bodyweight every Sun, retests W4 / W8.
 
 ## Logging + queries (Supabase MCP)
 
