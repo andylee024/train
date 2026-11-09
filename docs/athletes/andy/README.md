@@ -14,7 +14,7 @@ andy/
 
 ## Active arc
 
-[`arc-2026-winter-jump/`](arc-2026-winter-jump/): Nov 8, 2026 → Jan 30, 2027, arc week = DNT week. Jump-first: P · Power + Approach (W1–4) → R · Reactive (W5–8) → T · Test (W9–12, dunk test Jan 30). Start with its `training/arc.md`.
+[`arc-2026-winter-jump/`](arc-2026-winter-jump/): Nov 8, 2026 → Jan 30, 2027, arc week = DNT week. Jump-first: P · Power + Approach (W1–4) → R · Reactive (W5–8) → T · Test (W9–12, dunk test Jan 30). Start with its `training/arc.md`; today's session is in the block file (§1 day table + §2 week row).
 
 Closed: [`arc-2026-summer-dunk/`](arc-2026-summer-dunk/) (W1–W24; reviews in `reviews/`). Programming is built with the repo skills in `.claude/skills/`: `build-workout-plan` + four `principle-*` skills.
 

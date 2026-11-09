@@ -10,7 +10,7 @@ A single-athlete workout tracker. Plan lives in markdown; executed work lives in
 
 | Layer | Source of truth |
 |---|---|
-| Planned work | Markdown under `docs/athletes/andy/<arc>/training/` |
+| Planned work | Markdown under `docs/athletes/andy/<arc>/training/blocks/` — one file per block: §1 the fixed week, §2 a per-week deltas table. Week = `(today − arc start) ÷ 7 + 1`. |
 | Executed work | Supabase `workouts` / `workout_exercises` / `exercise_sets` (project `vtruwlvekfnmfgaundhp`) |
 | Measurements (ladder, hand depth, flexibility tests, touch) | Supabase `measurements` (`date, metric, value, value_text, unit, side, notes`) |
 | Athlete facts | `docs/athletes/andy/profile.md` (living) · warm-up menu `daily-warmup.md` |
@@ -29,6 +29,7 @@ Goals (priority order):
 Key facts:
 - **Programming = the skills below.** Don't invent structure; build with `build-workout-plan`.
 - **Week = 4 core days (Sun L1 · Mon U1 · Tue J1 max jump · Thu P1) + 2 bonus (Fri U2 · Sat J2).** Tuesday is the priority session; heavy legs ≥48 h before it.
+- **Today's workout:** week number → the block file → §1 day table + §2 week row. Agent rules for the arc are in its `training/arc.md`.
 - **No BJJ.** Right hip: impingement pattern — box depth, ≥3/10 → movement out. Left shoulder: no barbell overhead above 3/10. Knee ≥3/10 → no depth jumps.
 - Measurement is part of the plan: best touch every Tue (`touch 10'4"` in the set note), bodyweight every Sun, retests W4 / W8.
 

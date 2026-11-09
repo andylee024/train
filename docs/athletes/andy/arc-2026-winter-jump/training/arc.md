@@ -17,6 +17,8 @@
 | R · Reactive | W5–W8 | Dec 6 – Jan 2 | `blocks/2026-12-block-R-reactive.md` |
 | T · Test | W9–W12 | Jan 3 – Jan 30 | to be written at W8 (taper → Jan 14 Oly max · Jan 17 squat single · Jan 30 dunk test) |
 
+Each block file = §1 the fixed week (seven session tables) + §2 a per-week deltas table (rep range, loads, jump counts, coach lifts, notes). No separate week files.
+
 ## The week (4 core + 2 bonus)
 Sun L1 Olympic + Strength (core) · Mon U1 Upper + Hip skill (core) · **Tue J1 Max Jump + Reactive (core, the priority)** · Wed rest + hip routine · Thu P1 Power + Approach (core) · Fri U2 Overhead + Shoulder skill (bonus) · Sat J2 Dunk (bonus). Priority if the week shrinks: Tue → Sun → Mon → Thu. Details: `principle-training-rhythm`.
 
@@ -33,6 +35,17 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 - Coach's lifts as written; placement per `principle-dnt-olympic-lifts`; her back squat skipped; never stacked on top of the week.
 - Bodyweight 189 → 184 by W8, slow; no aggressive deficit while jumping.
 - ≤ 6 working exercises a session; 60-min core + optional 30-min block 4.
+
+
+## Agent rules (read on every session start)
+- **Hot path:** week = `(today − Nov 8) ÷ 7 + 1`; open the block file for that week (`blocks/`), read §1 for the day's table and §2 for the week's row. Core days Sun/Mon/Tue/Thu; Fri/Sat are bonuses. Missed day → resume at the current week; never double up.
+- **Tuesday is the priority session.** Coach's light lift first (if any), ball ladder on the rim day, approach drills, max approach jumps, sprints, depth jumps.
+- **Coach lifts** (`coach-programs/`): heavy clean day → Sun 1a · clean + pull → Thu 1a/1b · snatch / light → Tue 1a · jerk / overhead → Fri 1a · back squat skipped · heavy front squat = that week's squat, to a box. New PDF → copy here, add a README row, fill the §2 coach rows.
+- **Injury rules:** right hip — box above the pinch, no deep Cossacks / loaded 90/90 back-leg, ≥ 3/10 → out for the week. Left shoulder — no barbell overhead above 3/10, landmine / DB neutral. Knee ≥ 3/10 → no depth jumps. Propose swaps, don't dictate.
+- **Flex skills:** hip IR (Mon, 20') · overhead (Fri, 20'). Nothing deep within 48 h of Tue/Sat.
+- **Logging:** sets → Supabase `exercise_sets`; bodyweight → `daily_metrics` (Sun); ladder / hand depth / flexibility tests → `measurements`. Never executed sets in markdown.
+- **Athlete facts:** `../../profile.md` (living). Warm-up menu: `../../daily-warmup.md`. Readable plan: the Claude Doc "Andy — Training Plan (Nov 2026 – Jan 2027)" — strategy there, prescription here; goals and principles move together.
+- **Escalate:** two core sessions missed in a row · ladder flat 3 weeks · squat top set −5% two weeks · pain ≥ 3/10 for 5+ days.
 
 ## History
 Previous arc: `../arc-2026-summer-dunk/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc was delivered in chat on Nov 8, 2026.

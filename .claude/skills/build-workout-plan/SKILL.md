@@ -27,7 +27,7 @@ The builder. It holds no training rules itself: it loads Andy's principles and a
 When a principle changes a choice, say so in the output, e.g. "her snatch moved to Tue 4a: dnt-olympic-lifts".
 
 ## Procedure
-1. **Find what's current:** block and week (arc week = DNT week; Winter Jump arc W1 = Nov 8, 2026) · the coach's latest PDF in `docs/athletes/andy/arc-2026-winter-jump/coach-programs/` · the plan doc "Andy — Training Plan (Nov 2026 – Jan 2027)" (Claude Docs) · recent logged sessions in Supabase `vtruwlvekfnmfgaundhp` (`workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`; weights in kg).
+1. **Find what's current:** week = `(today − Nov 8) ÷ 7 + 1` (= DNT week) → block file in `docs/athletes/andy/arc-2026-winter-jump/training/blocks/` (§1 day table, §2 week row) · the coach's latest PDF in `docs/athletes/andy/arc-2026-winter-jump/coach-programs/` · the plan doc "Andy — Training Plan (Nov 2026 – Jan 2027)" (Claude Docs) · recent logged sessions in Supabase `vtruwlvekfnmfgaundhp` (`workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`; weights in kg).
 2. **Place her Olympic lifts** (`principle-dnt-olympic-lifts`).
 3. **Lay out each day** (`principle-training-rhythm`): coach's lift first as written → jumps + sprints → loaded work → accessories.
 4. **Fill** the squat wave and upper records (`strength-wave`), jumps/plyos/contrast by the block's trait (`thp-trait-blocks`), flex skills Mon (hip IR) and Fri (overhead).
@@ -39,7 +39,7 @@ When a principle changes a choice, say so in the output, e.g. "her snatch moved 
    - [ ] jumps + sprints inside the block's budget
    - [ ] hip and shoulder rules applied; nothing deep within 48 h of Tue/Sat
    - [ ] measurement lines present (ball ladder on the rim day → `measurements`, bodyweight Sun → `daily_metrics`, retests W4/W8)
-6. **Deliver** in the format below. If writing into the plan, update `training/weeks/` and `training/active/`. Never write executed sets into markdown.
+6. **Deliver** in the format below. If writing into the plan, edit the block file: §1 for structure, §2 for the week's row. No week files, no `active/`. Never write executed sets into markdown.
 
 ## Output format
 ```
