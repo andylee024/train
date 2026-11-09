@@ -10,6 +10,36 @@
 | G3 | **Flexibility as a skill** | right-hip IR = left, pain-free · 40 kg OHS clean → 60 kg | W4 / W8 / W12 |
 | G4 | **Strength held** | squat 375–385 single Jan 17 · bench 275 · pull-up +115 · **405 → 2027** | Jan 17 |
 
+## Assessment (what 24 weeks showed, May 24 – Nov 7, 2026)
+
+| Area | Status | Evidence |
+|---|---|---|
+| Strength | ✅ Strong, held | Squat e1RM 312 → 374 (295×8; back to Feb's 380) · front squat 321 · bench 227 → 258 (215×6, all-time high) |
+| Olympic lifts | ✅ Improving | Power clean 192 → **225** single (Nov 4) · power C&J 205 · muscle snatch 123 · power snatch 104 |
+| Consistency | ✅ Reliable, fixed-size | 3.6–3.9 sessions/week in every block, whatever was planned; Sun/Mon/Tue/Thu are the days that happen |
+| Jump training | ❌ Untrained | 15 jump/sprint entries in 24 weeks; none Jul 6 – Sep 13; approach jumps and dunk attempts: 0 |
+| Jump measurement | ❌ None | Touch never measured; ~10'3" is an estimate from a tennis-ball dunk |
+| Right hip | ⚠️ Impingement pattern | Pinch in deep flexion + IR since late Oct; capped the 4s squat week (275×4 vs 330 planned) |
+| Left shoulder / overhead | ⚠️ Limiting | OHS 115 vs clean 225; shoulder flares; location not yet pinned down |
+| Body composition | ⚠️ Unknown | 189 lb last logged Jul 30 |
+
+**Where you need to go (Jan 30):** ball ladder rung 1 (tennis ball, ≈10'2") → **rung 4 volleyball clean (≈10'6")**, plan aims at rung 5–6 · hand depth fingertips/palm → wrist · power clean 225 → 240 · power C&J 205 → 235 · power snatch 104 → 135 · right-hip seated IR = left, pain-free · OHS 40 kg clean → 60 kg · squat held 375–385 · bench 258 → 275 · weighted pull-up +55×6 → +115 · bodyweight 189 → 184.
+
+## The approach (why the plan looks like this)
+- **Strength isn't the limiter.** 2× BW squat and a 225 clean at 189 lb is enough force for 10'6". Power clean ÷ squat = 0.60 (< 0.75): force is made slowly. The missing pieces — approach technique (worth 4–6" per THP), reactive stiffness, fresh max-intent jumping, a few pounds — were never trained.
+- **A 4-day core you actually keep.** You average 3.6–3.9 sessions/week regardless of plan and the Saturday jump day was the first casualty every block. So the max-jump session is **Tuesday**, 48 h after Sunday legs; Sun/Mon/Tue/Thu carry everything that must happen; Fri/Sat are bonuses allowed to fail.
+- **Olympic lifts stay, as power work, and open every session** as the coach writes them: heavy clean day Sun, clean + pull Thu, snatch/light Tue, overhead Fri. Her back squat is skipped; the squat wave runs once a week, two sets to a box.
+- **Flexibility is a skill, not recovery.** Two targets (hip IR Mon, overhead Fri), two 20-minute sessions a week, six-plus weeks to see it, re-tested W4/W8. Nothing deep within 48 h of a jump day.
+- **The jump is measured like a lift** — ball ladder weekly, into `measurements`. Everything unmeasured in the last arc died within three weeks.
+
+## Principles (the rules live in `.claude/skills/`)
+1. **Strength runs on waves** (`principle-dylan-shannon-strength-wave`): 8s → 6s → 4s → light, a record per range; squat at 2 sets to a box this arc; bench/pull-ups make a record attempt every session (+10 at RPE ≤ 8, +5 at 8.5–9).
+2. **One trait per block** (`principle-thp-trait-blocks`): Power + Approach → Reactive → Test; beginner plyo volume, one variable at a time; sprints on Tue and Thu inside the budget.
+3. **The coach owns the Olympic lifts** (`principle-dnt-olympic-lifts`): her lifts as written, her days placed by type, never stacked on top of the week.
+4. **Training rhythm** (`principle-training-rhythm`): 4 core + 2 bonus; Olympic lift → jumps and sprints → loaded work → accessories; 60-min core + optional 30.
+5. **Flexibility as a skill** (Matt Smith): max two skills, 1–2 sessions each, loaded and isometric, never into the pinch.
+6. **Measure the goal:** ladder weekly, bodyweight Sunday, tests W1/W4/W8 — all in Supabase. If the number isn't in the log, the session didn't count.
+
 ## Blocks
 | Block | Weeks | Dates | File |
 |---|---|---|---|
@@ -44,8 +74,8 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 - **Injury rules:** right hip — box above the pinch, no deep Cossacks / loaded 90/90 back-leg, ≥ 3/10 → out for the week. Left shoulder — no barbell overhead above 3/10, landmine / DB neutral. Knee ≥ 3/10 → no depth jumps. Propose swaps, don't dictate.
 - **Flex skills:** hip IR (Mon, 20') · overhead (Fri, 20'). Nothing deep within 48 h of Tue/Sat.
 - **Logging:** sets → Supabase `exercise_sets`; bodyweight → `daily_metrics` (Sun); ladder / hand depth / flexibility tests → `measurements`. Never executed sets in markdown.
-- **Athlete facts:** `../../profile.md` (living). Warm-up menu: `../../daily-warmup.md`. Readable plan: the Claude Doc "Andy — Training Plan (Nov 2026 – Jan 2027)" — strategy there, prescription here; goals and principles move together.
+- **Athlete facts:** `../profile.md` (living). Warm-ups are the first line of each session table in the block file. This file is the strategy; the block files are the prescription; the skills are the rules.
 - **Escalate:** two core sessions missed in a row · ladder flat 3 weeks · squat top set −5% two weeks · pain ≥ 3/10 for 5+ days.
 
 ## History
-Previous arc: `../arc-2026-summer-dunk/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc was delivered in chat on Nov 8, 2026.
+Previous arc: `../arc-2026-summer-dunk/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc is summarised in §Assessment above; the Claude Doc that held v1–v2 of this plan was retired on Nov 9, 2026 in favour of this file.

@@ -4,7 +4,7 @@ Jump-first arc for Andy Lee. Start with `training/arc.md`; today's session = the
 
 ```
 arc-2026-winter-jump/
-├── README.md                       (profile is athlete-level: ../profile.md)
+├── README.md                       (athlete profile: ../profile.md at the repo root)
 ├── training/
 │   ├── arc.md                      ← goals, blocks, split, measurement, constraints, agent rules
 │   └── blocks/                     ← P (W1–4), R (W5–8); T written at W8. Each = §1 fixed week + §2 per-week deltas
@@ -12,4 +12,4 @@ arc-2026-winter-jump/
 └── reviews/                        ← REVIEW-TEMPLATE.md · W04-review.md · W08-review.md
 ```
 
-Programming rules live in `.claude/skills/` (`build-workout-plan` + the principle skills). The Claude Docs plan **"Andy — Training Plan (Nov 2026 – Jan 2027)"** (https://claude.ai/artifact/8dNC9HKvxa3n7YCNQTQpoC) is the readable mirror of this plan; any plan change updates skills, week files and the doc in the same commit. Executed work is in Supabase (project `vtruwlvekfnmfgaundhp`).
+Programming rules live in `.claude/skills/` (`build-workout-plan` + the principle skills). `training/arc.md` is the strategy (goals, assessment, approach, principles, measurement); the block files are the prescription; the skills are the rules. The Claude Doc that held v1–v2 is retired. Executed work is in Supabase (project `vtruwlvekfnmfgaundhp`).
