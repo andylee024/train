@@ -20,7 +20,7 @@ A single-athlete workout tracker. Plan lives in markdown; executed work lives in
 
 ## Active athlete + arc
 
-**Andy Lee.** Active arc: [`arcs/2026-nov-2027-jan/`](arcs/2026-nov-2027-jan/) — **Winter Jump**, W1 = Nov 8, 2026 (arc week = DNT coach week). Blocks: P · Power + Approach (W1–4) → R · Reactive (W5–8) → T · Test (W9–12: Oly max Jan 14, squat single Jan 17, **dunk test Jan 30, 2027**). Previous arc (`arcs/2026-may-nov/`, W1–W24) is closed and kept as history.
+**Andy Lee.** Active arc: [`arcs/2026-arc-2-11-to-01/`](arcs/2026-arc-2-11-to-01/) — **Winter Jump**, W1 = Nov 8, 2026 (arc week = DNT coach week). Blocks: P · Power + Approach (W1–4) → R · Reactive (W5–8) → T · Test (W9–12: Oly max Jan 14, squat single Jan 17, **dunk test Jan 30, 2027**). Previous arc (`arcs/2026-arc-1-05-to-11/`, W1–W24) is closed and kept as history.
 
 Goals (priority order):
 1. Dunk a volleyball on a 10' rim (plan aims at +6" touch so +4" lands with margin).
@@ -31,7 +31,7 @@ Goals (priority order):
 Key facts:
 - **Programming = the skills below.** Don't invent structure; build with `build-workout-plan`.
 - **Week = 4 core days (Sun L1 · Mon U1 · Tue J1 max jump · Thu P1) + 2 bonus (Fri U2 · Sat J2).** Tuesday is the priority session; heavy legs ≥48 h before it.
-- **Today's workout:** week number → `arcs/2026-nov-2027-jan/training/blocks/` → §1 day table + §2 week row. Agent rules for the arc are in its `training/arc.md`.
+- **Today's workout:** week number → `arcs/2026-arc-2-11-to-01/training/blocks/` → §1 day table + §2 week row. Agent rules for the arc are in its `training/arc.md`.
 - **No BJJ.** Right hip: impingement pattern — box depth, ≥3/10 → movement out. Left shoulder: no barbell overhead above 3/10. Knee ≥3/10 → no depth jumps.
 - Measurement is part of the plan: best touch every Tue (`touch 10'4"` in the set note), bodyweight every Sun, retests W4 / W8.
 

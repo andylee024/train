@@ -4,7 +4,7 @@ What the phone-side agent needs to serve today's workout and record what Andy di
 
 ## 1. Reading the plan
 
-1. **Active arc:** `CLAUDE.md` names it (now `arcs/2026-nov-2027-jan/`, start **2026-11-08**).
+1. **Active arc:** `CLAUDE.md` names it (now `arcs/2026-arc-2-11-to-01/`, start **2026-11-08**).
 2. **Week number:** `W = floor((today − arc_start) / 7) + 1` in America/Los_Angeles. W1–W4 → `training/blocks/2026-11-block-P-power-approach.md`, W5–W8 → `2026-12-block-R-reactive.md`, W9–W12 → the Test block file (written at W8).
 3. **Today's session:** block file **§1** has one table per day (Sun L1 · Mon U1 · Tue J1 · Wed rest · Thu P1 · Fri U2 · Sat J2) with the warm-up line, slots 1a…4, sets × reps, rest. **§2** is a table with one column per week; replace "see §2" cells with that column (rep range, squat load, record targets, jump counts, coach lifts, notes). Block R §1 lists only the swaps vs Block P.
 4. **Coach lifts:** the "Coach — Sun/Tue/Thu/Fri" rows in §2. The raw PDFs are in `coach-programs/`. If a row says "per DNT wkN" the drop hasn't landed; show the placeholder and say so.

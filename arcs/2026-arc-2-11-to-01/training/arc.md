@@ -78,4 +78,4 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 - **Escalate:** two core sessions missed in a row · ladder flat 3 weeks · squat top set −5% two weeks · pain ≥ 3/10 for 5+ days.
 
 ## History
-Previous arc: `../2026-may-nov/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc is summarised in §Assessment above; the Claude Doc that held v1–v2 of this plan was retired on Nov 9, 2026 in favour of this file.
+Previous arc: `../2026-arc-1-05-to-11/` (W1–W24, reviews in `reviews/`). The W1–W24 review that produced this arc is summarised in §Assessment above; the Claude Doc that held v1–v2 of this plan was retired on Nov 9, 2026 in favour of this file.
