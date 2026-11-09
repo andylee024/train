@@ -1,6 +1,10 @@
 # B1 · STRENGTH *(W21–W24 · Oct 11 – Nov 7, 2026 · DNT-aligned)*
 
 > Rewritten 2026-10-12 to match the Claude Docs plan "Andy — Training Plan" (the source of truth for layout). W19–W20 ran as the original "405 Strength Push" (see git history). The arc ends at **W24**; numbering restarts at **W1** on Nov 8 (B2 Power → B3 Reactive → B4 Test, dunk test Jan 30, 2027).
+>
+> **Active week (Mon Nov 2, 2026): W24**, Sun Nov 1 – Sat Nov 7. Light + test. Sun Nov 1: smooth squat single ~365–375. Sat Nov 7: approach-touch retest. Same sessions in [`../active/current-week.md`](../active/current-week.md) and [`../weeks/2026-training-W24.md`](../weeks/2026-training-W24.md).
+>
+> **Decision (2026-11-02).** The Oct 10 dunk/vertical review's jump-first recommendation is the next arc, starting Nov 8. This strength block finishes as written. 405 stays a 12-month goal. See [`../arc.md`](../arc.md) and the decision note on [`../../reviews/dunk-vertical-review-2026-10-10.md`](../../reviews/dunk-vertical-review-2026-10-10.md). W1 is not written yet.
 
 ## Focus
 Build the engine. Strength is the block's focus (full squat / bench / pull-up waves). Power and reactive work are held at about half volume: S1 and J1 jump days, plus sprint fillers on upper days. The coach's Olympic lifts run as written in the 1a slots.

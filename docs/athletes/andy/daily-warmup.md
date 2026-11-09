@@ -16,8 +16,8 @@ Consistent pre-session mobility routine. Same 7 movements, same order, every tra
 | 1 | **Cat-Cow** | 2 × 8 each direction | Spine prep, opens shoulders + hips |
 | 2 | **World's Greatest Stretch** | 2 × 3 / side | Hip flexor + T-spine + hamstring in one |
 | 3 | **Hip CARs** (quadruped) | 2 × 5 each direction / leg | Hip joint capsule — your weak link |
-| 4 | **90/90 + Forward Reach** | 2 × 5 transitions / side | Hip IR/ER + load front hip — also serves Goal G3 |
-| 5 | **Cossack Squat** | 2 × 5 / side | Adductor opening + side-split work (Goal G3) |
+| 4 | **90/90 + Forward Reach** | 2 × 5 transitions / side | Hip IR/ER + load the front hip |
+| 5 | **Cossack Squat** | 2 × 5 / side | Adductor opening |
 | 6 | **Deep Squat Hold + Overhead Reach** | 2 × (60s hold + 5 reaches / side) | Bottom hip + T-spine + shoulder combined |
 | 7 | **Shoulder Pass-Through** (wooden stick/dowel, wide grip) | 2 × 10 reps | Full shoulder flex→ext ROM + pec/lat opening + T-spine; replaces lying CARs + wall slides |
 
@@ -45,15 +45,14 @@ Consistent pre-session mobility routine. Same 7 movements, same order, every tra
 
 - **Hip mobility** (your primary weakness): Hip CARs (joint capsule), 90/90 (rotational), Cossack (adductor), Deep Squat (end-range) — 4 dedicated slots
 - **Shoulder mobility** (secondary): Deep Squat overhead reach + Shoulder Pass-Through — 2 dedicated slots (consolidated from 3; pass-through covers full flex→ext ROM + pec/lat opening in one movement)
-- **T-spine bonus**: World's Greatest, Deep Squat reach, Pass-Through — supports both bench (G2) and overhead positions
-- **Side split (Goal G3)**: 90/90 and Cossack directly serve this — you get arc credit toward G3 as a warm-up byproduct
+- **T-spine bonus**: World's Greatest, Deep Squat reach, Pass-Through — supports the bench and overhead positions
+- **Hips:** 90/90 and Cossack are mobility, done in this warm-up. The side split is not a tracked goal.
 
 ---
 
 ## Constraint compatibility
 
-- **L wrist (De Quervain's)**: only Cat-Cow loads the hand, and at neutral wrist position. No front rack, no weight-bearing reach.
-- **R shoulder**: no barbell, no heavy press, no aggressive end-range loading. Pass-Through is unloaded (stick only); grip width self-regulates pain — go wider if anything pinches.
+Shoulder and wrist healed 2026-06-14. This warm-up is unloaded. If either hurts at 3/10 or more, keep the wrist neutral on Cat-Cow, widen the pass-through grip, and skip the end range that hurts. Front rack and overhead lifting are allowed in the training sessions; the pain guard for those is in `profile.md`.
 
 ---
 
@@ -70,9 +69,9 @@ This primes the nervous system for max-intent jumping. Sun–Fri the Daily 7 sta
 
 ## What this routine deliberately excludes
 
-- **Static stretching > 30s** before lifting — saps power. Save deep static for post-session or Wed deep day.
+- **Static stretching > 30s** before lifting — saps power. Save deep static for after the session, or for optional mobility on the Wednesday rest day.
 - **Foam rolling as ritual** — fine as a tool for an angry spot, but not part of the habit. Habit is the 7 movements, nothing else.
-- **PNF / loaded stretches** — Wed deep flex day covers that. Don't double-load the adductors before a jump or squat day.
+- **PNF / loaded stretches** — not part of this warm-up. Don't load the adductors before a squat or jump day.
 
 ---
 

@@ -3,6 +3,8 @@
 **Scope:** ~13 weeks spanning the tail of the old split (late Block 2) + the full v9 Oly-forward block (W11–W17).
 **Data:** Supabase `exercise_sets` (source of truth). e1RM = Epley (`load × (1 + reps/30)`), computed from best working set in the window. Compares window **start → peak**.
 
+> **Historical, through Sep 20, 2026.** The jump finding here is what the Oct 10 review and the Nov 8 arc act on. This file is not the current plan. Live week is W24: `training/active/current-week.md`.
+
 ---
 
 ## 1. Verdict up front

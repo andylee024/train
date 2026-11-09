@@ -99,4 +99,6 @@ Wave top sets + coach Oly + bw + side-split + BJJ + pain ratings.
 
 ## End-of-Arc note
 
-The formal Sep 5 test week was retired 2026-08-17 (chose to run the coach block through). The arc goals — clean/jerk 225, bench 260, dunk — carry into the next arc; chase them in-session and run `progress-review` (arc scope) when you're ready to close this arc and plan the next.
+> **Superseded.** This note was written when a September close was still the plan. The arc runs through **W24 (Nov 7, 2026)**. Do not close it from this file. `progress-review` is not a current skill. Live week: [`../active/current-week.md`](../active/current-week.md).
+
+The formal Sep 5 test week was retired 2026-08-17 (chose to run the coach block through). The goals named then — clean/jerk 225, bench 260, a dunk — were expected to carry forward.

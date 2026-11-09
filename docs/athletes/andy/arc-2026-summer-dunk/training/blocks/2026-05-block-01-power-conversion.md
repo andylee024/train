@@ -1,5 +1,7 @@
 # Block 01 — POWER CONVERSION + UPPER BUILD
 
+> **Closed (May–Jun 2026).** The goals and split below are what this block was programmed for. They are not the current goals or the current week. Live plan: [`../arc.md`](../arc.md) and [`../active/current-week.md`](../active/current-week.md) (W24, Nov 1–7, 2026).
+
 ## Purpose
 
 Close the explosive strength deficit. Convert existing strength into expressed power. Squat moves to maintenance (1×/wk Sun); jump squats / Olympic lifts / sprints get the volume. Build real upper body base for bench + pull-up. Establish the daily flex protocol.
