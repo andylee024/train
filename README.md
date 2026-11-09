@@ -8,15 +8,15 @@
 
 ```
 train/
-├── CLAUDE.md · README.md · HANDOFF.md
+├── CLAUDE.md · README.md · AGENT.md
 ├── profile.md
 ├── arcs/
-│   ├── 2026-arc-1-may-to-nov/     closed
-│   └── 2026-arc-2-nov-to-jan/     active — training/{arc.md,blocks/} · coach-programs/ · reviews/
+│   ├── arc1-2026/     closed
+│   └── arc2-2026/     active — training/{arc.md,blocks/} · coach-programs/ · reviews/
 ├── archive/
 ├── library/
 ├── dashboard/
 └── .claude/skills/
 ```
 
-Arc folders: `YYYY-arc-N-mon-to-mon` — start year, arc number, start month, end month. Week = `(today − arc start) ÷ 7 + 1` = DNT week.
+Arc folders: `arcN-YYYY` — arc number, start year. Dates live in the arc's `training/arc.md`. Week = `(today − arc start) ÷ 7 + 1` = DNT week.

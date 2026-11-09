@@ -2,7 +2,7 @@
 
 _Living document, athlete-level. Updated 2026-11-09. Arc-specific goals live in each arc's `training/arc.md`._
 
-Athlete-level facts that persist; the plan is in `training/`. History: `archive/profile-2026-summer-arc-final.md` (the summer arc's profile as of Nov 2, 2026) and `arcs/2026-arc-1-may-to-nov/archive/profile-snapshot-2026-05-03.md` (May 2026 baseline).
+Athlete-level facts that persist; the plan is in `training/`. History: `archive/profile-2026-summer-arc-final.md` (the summer arc's profile as of Nov 2, 2026) and `arcs/arc1-2026/archive/profile-snapshot-2026-05-03.md` (May 2026 baseline).
 
 - **6'0", ~189 lb** (last logged Jul 30; weigh every Sunday). Standing reach ~8'0" (est.) · approach touch ~10'3" (est., tennis-ball dunk) — **baseline W1**.
 - **Goals (priority):** (1) volleyball dunk Jan 30 · (2) power clean 240 / power C&J 235 / power snatch 135 with the DNT coach · (3) flexibility as a skill: right-hip IR, overhead position · (4) strength held: squat 375–385 Jan 17, bench 275, pull-up +115; **405 in 2027**.

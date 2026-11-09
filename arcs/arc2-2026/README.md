@@ -1,4 +1,4 @@
-# 2026-arc-2-nov-to-jan · Nov 8, 2026 – Jan 30, 2027
+# arc2-2026 · Nov 8, 2026 – Jan 30, 2027
 
 ```
 training/arc.md          goals · assessment · approach · blocks · split · measurement · rules · agent rules
