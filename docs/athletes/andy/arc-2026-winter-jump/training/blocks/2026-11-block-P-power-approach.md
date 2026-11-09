@@ -119,8 +119,8 @@ Basketball only after this, kept short. Weigh in if you missed Sunday.
 | **Coach — Tue 1a** | — (no light day in wk1) | muscle snatch 80% 6×2 (~95–100) | per DNT wk3 | per DNT wk4 or skip |
 | **Coach — Thu 1a/1b** | dip power clean 80% 6×3 (~180) · deficit clean DL 80% 5×4 (~245) · back ext → 3b | power clean 85% 6×2 (~190) · clean DL 85% 5×4 (~270) · back ext → 3b | per DNT wk3 | per DNT wk4, one lift |
 | **Coach — Fri 1a** | jerk practice 40 kg 15' · strict press 4×6 (if shoulder < 3/10) · seal row 5×8 | rack push press 80% 5×2 (~130) · jerk dip 4×3 · hanging leg raise 4×12 · bar dip 5×10 | per DNT wk3 | per DNT wk4, light |
-| **Dropped** | her back squat | — | her back squat | her back squat |
-| **Notes** | **Sunday missed → Mon = L1, Tue = U1, Wed = J1 (baseline), Thu = P1, Fri = U2, Sat = J2.** | standard | **Thanksgiving Thu Nov 26:** if Thu is lost, run P1 Fri, skip U2 | half volume everywhere; full retest |
+| **Dropped** | her back squat · her D3 (Sunday missed) | — | her back squat | her back squat |
+| **Notes** | **Sunday missed; week runs as standard from Mon.** No L1 this week — squat wave resumes Sun Nov 15. Her D3 (PC + FS complex, panda pull) is dropped this week; Tue J1 = baseline day. | standard | **Thanksgiving Thu Nov 26:** if Thu is lost, run P1 Fri, skip U2 | half volume everywhere; full retest |
 
 Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8). Fill W3–W4 when her next PDF lands (~Nov 21).
 
