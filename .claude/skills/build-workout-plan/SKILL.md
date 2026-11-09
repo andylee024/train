@@ -29,14 +29,14 @@ When a principle changes a choice, say so in the output, e.g. "her snatch moved 
 ## Procedure
 1. **Find what's current:** block and week (arc week = DNT week; Winter Jump arc W1 = Nov 8, 2026) · the coach's latest PDF in `docs/athletes/andy/arc-2026-winter-jump/coach-programs/` · the plan doc "Andy — Training Plan (Nov 2026 – Jan 2027)" (Claude Docs) · recent logged sessions in Supabase `vtruwlvekfnmfgaundhp` (`workouts` / `workout_exercises` / `exercise_sets` / `daily_metrics`; weights in kg).
 2. **Place her Olympic lifts** (`principle-dnt-olympic-lifts`).
-3. **Lay out each day** (`principle-training-rhythm`), jumps first on Tue/Sat.
+3. **Lay out each day** (`principle-training-rhythm`): coach's lift first as written → jumps + sprints → loaded work → accessories.
 4. **Fill** the squat wave and upper records (`strength-wave`), jumps/plyos/contrast by the block's trait (`thp-trait-blocks`), flex skills Mon (hip IR) and Fri (overhead).
 5. **Check before delivering:**
-   - [ ] Tue opens with approach drills + max approach jumps, touch logged
+   - [ ] Tue: coach's light lift (if any) → approach drills → max approach jumps, touch logged → sprints → depth jumps
    - [ ] heavy legs ≥48 h before Tue; Thu light on the legs; no heavy pulls Fri
    - [ ] ≤6 working exercises; 60-min core + optional block 4
-   - [ ] her lifts unchanged, back squat skipped; jumps first
-   - [ ] contacts inside the block's budget; one of depth jumps / sprints per day
+   - [ ] her lifts unchanged and first, back squat skipped; sprints on Tue and Thu
+   - [ ] jumps + sprints inside the block's budget
    - [ ] hip and shoulder rules applied; nothing deep within 48 h of Tue/Sat
    - [ ] measurement lines present (touch Tue, bodyweight Sun, retests W4/W8)
 6. **Deliver** in the format below. If writing into the plan, update `training/weeks/` and `training/active/`. Never write executed sets into markdown.
@@ -45,11 +45,13 @@ When a principle changes a choice, say so in the output, e.g. "her snatch moved 
 ```
 TUE Nov 10 - J1 · Max Jump + Reactive (P · Power - W1)
 Warm-up: leg swings, hip routine, pogos 2x10 (no static stretching)
-1a  3-step approach drills, filmed ........ x6 .................... rest 1'
-2a  Max approach jumps, touch logged ....... 10 ..................... rest 2'
-2b  Depth jump 18" ......................... 3x3 .................... rest 2'
-3a  Hurdle hops ............................ 3x5 .................... rest 90"
-3b  Single-leg pogos ....................... 2x8/leg
+1a  Coach muscle snatch (as written) ....... 80% 6x2 ................ rest 2'
+2a  3-step approach drills, filmed ........ x6 .................... rest 1'
+2b  Max approach jumps, touch logged ....... 10 ..................... rest 2'
+2c  Sprints 10-20 m ........................ x4 ..................... walk back
+3a  Depth jump 18" ......................... 3x3 .................... rest 2'
+3b  Hurdle hops ............................ 2x5 .................... rest 90"
+3c  Single-leg pogos ....................... 2x8/leg
 Log: best touch (`touch 10'4"`), contacts, knee/hip 0-10
 ```
 

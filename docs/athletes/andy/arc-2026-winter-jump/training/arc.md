@@ -27,6 +27,7 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 W1 baseline: standing reach · standing vertical (best of 3) · approach touch (best of 5, filmed) · seated hip IR both sides (degrees) · Taylor's pose hip-to-floor cm · supine overhead test · heel-elevated squat test · 40 kg OHS. Every Tue: best touch in the set note. Every Sun: bodyweight. W4, W8, W12: full retest. Dashboard reads `touch 10'4"` from set notes.
 
 ## Constraints
+- Session order: coach's Olympic lift first, as written → jumps and sprints (Tue 4×10–30 m, Thu 6×20 m, Sat 3×10 m) → loaded work → accessories.
 - Heavy legs ≥48 h before Tue. Thu light on the legs. Nothing deep or loaded for flexibility within 48 h of Tue/Sat, never the day after heavy work.
 - Right hip: squat to a box above the pinch; pain ≥ 3/10 → movement out. Left shoulder: no barbell overhead above 3/10. Knee ≥ 3/10 → no depth jumps.
 - Coach's lifts as written; placement per `principle-dnt-olympic-lifts`; her back squat skipped; never stacked on top of the week.

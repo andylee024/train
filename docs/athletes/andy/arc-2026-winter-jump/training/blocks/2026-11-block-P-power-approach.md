@@ -13,13 +13,13 @@ Learn the approach and make the strength fast. Jumping is the main lift; the Oly
 |---|---|---|---|
 | Sun | L1 · Olympic + Strength | core | coach heavy clean day · squat wave 2 sets to box (8s 295 · 6s 310 · 4s 325 · light 275) · hip thrust / Nordic · +30' pull-ups + dips |
 | Mon | U1 · Upper + Hip skill | core | bench + pull-up record attempts · pogos filler · dips / row · flex 1: hip IR 20' |
-| Tue | **J1 · Max Jump + Reactive** | **core — priority** | approach drills · 10–12 max approach jumps, touch logged · depth 18" (odd wks) / sprints (even wks) · hops · SL pogos · coach light lift after |
+| Tue | **J1 · Max Jump + Reactive** | **core — priority** | coach light lift (primer) · approach drills · 10–12 max approach jumps, touch logged · sprints 4×10–20 m · depth 18" 3×3 · hops · SL pogos |
 | Wed | R | — | 8-min hip routine |
-| Thu | P1 · Power + Approach | core | coach clean + pull · jump squat 4x3 @ 75→95 + box jump contrast · sprints 10 m x4 · 6 technique approach jumps · her accessory |
+| Thu | P1 · Power + Approach | core | coach clean + pull · sprints 6×20 m · jump squat 4x3 @ 75→95 + box jump contrast · 6 technique approach jumps · her accessory |
 | Fri | U2 · Overhead + Shoulder skill | bonus | flex 2: overhead 20' · coach jerk / overhead day (pain-free) · landmine press · row · scap |
 | Sat | J2 · Dunk | bonus | 8 approach jumps, touch logged · 6–8 dunk attempts (softball → mini ball) · basketball after |
 
-Contacts: ~50 Tue · ~35 Thu · ~20 Sat (80–120/week, beginner plyo tier). Heavy legs ≥48 h before Tue. Jumps first in any session that has them.
+Contacts: ~55 Tue · ~40 Thu · ~20 Sat plus sprints (80–120/week, beginner plyo tier). Heavy legs ≥48 h before Tue. Order: coach's lift → jumps + sprints → loaded work.
 
 ## Progression
 - Plyos: one variable at a time — volume W1–3 (depth 3x3 → 3x4), box height and run-in wait for Block R.

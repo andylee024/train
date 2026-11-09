@@ -12,7 +12,7 @@ Always 3 days/week, 2–3 lifts + 2 accessories per day, 5–6 sets of 1–3 on 
 
 ## The rules
 1. **Her lifts, sets and percentages run as written.** We only decide the day.
-2. **Olympic lifts open lifting sessions (1a)**; on jump days they come **after** the jumps (4a) and are light.
+2. **Her Olympic lift opens every session that has one (1a), as written.** On Tue her light lift (≤ 80%) is the primer and the jumps follow immediately; only if she programs a heavy lift on that slot do the jumps go first.
 3. **Skip her back squat.** The wave covers squatting. Her **heavy front squat** becomes that week's squat (Sun, to a box).
 4. **Her pulls may replace his hinge** that week; her accessories fill block-3 slots.
 5. **Never add her days on top of the week.**
@@ -24,7 +24,7 @@ Always 3 days/week, 2–3 lifts + 2 accessories per day, 5–6 sets of 1–3 on 
 |---|---|---|
 | Heavy clean day (clean / complex + back squat) | **Sun L1 1a** (squat skipped) | Heavy day, 48 h before Tue |
 | Clean + pull (dip / block / power clean + clean DL / panda pull) | **Thu P1 1a/1b** | Power day |
-| Snatch / muscle snatch / light day | **Tue J1 4a**, after the jumps | Light; legs stay fresh |
+| Snatch / muscle snatch / light day | **Tue J1 1a** (primer, then jumps) | Light; legs stay fresh |
 | Jerk / push press / overhead / jerk practice | **Fri U2 1a** (pain-free range) | Overhead day |
 | Her upper accessories (press, seal row, dips) | Fri U2 / Mon U1 block 3 | Upper days |
 | Her core / back extension / SLDL | Sun 3b–3c or Thu 3b | Block 3 |
@@ -33,7 +33,7 @@ Always 3 days/week, 2–3 lifts + 2 accessories per day, 5–6 sets of 1–3 on 
 1. Save the PDF to the arc's `coach-programs/` as `dnt-wk<NN-NN>_arc-W<NN>-W<NN>.pdf`; add a row to its README.
 2. Sort each day by type; place with the table above. Remove her back squat. Note anything dropped.
 3. Convert % from known maxes: power clean 225 · clean DL 321 · front squat 321 · muscle snatch 123 · power snatch 104 · jerk ~171 e1RM. Leave the % when the max is unknown.
-4. Check: ≤6 exercises/day · no heavy pulls Fri · jumps first on Tue/Sat · heavy legs ≥48 h before Tue.
+4. Check: ≤6 exercises/day · no heavy pulls Fri · her lift first, then jumps + sprints, then loaded work · heavy legs ≥48 h before Tue.
 5. Ask her to keep the heaviest day on Sunday and to peak for **Jan 14**.
 
 ## Current numbers (Nov 2026)

@@ -13,8 +13,8 @@ Get springy. Most jumping of the year: depth jumps from the best box height, bou
 |---|---|
 | Sun L1 | coach heavy clean day · squat wave 2 sets to box (8s 300 · 6s 315 · 4s 330 · light 275), RPE ≤ 8 · hip thrust / Nordic · +30' upper |
 | Mon U1 | record attempts continue · flex 1: hip IR |
-| **Tue J1** | approach drills · **12 → 15 max approach jumps** · depth jump from best box 4x3 (W5 box test 18→24") · SL bounds 3x20 m · hurdle hops · SL pogos · coach light lift |
-| Thu P1 | coach clean + pull · **speed squat to box 6x2 @ 225 → 245** + box jump · sprints to 30 m incl. flying 10s · 8 technique approach jumps |
+| **Tue J1** | coach light lift (primer) · approach drills · **12 → 15 max approach jumps** · sprints 4×20–30 m · depth jump from best box 4x3 (W5 box test 18→24") · SL bounds 3x20 m · hurdle hops · SL pogos |
+| Thu P1 | coach clean + pull · sprints 6×20 m + flying 10s · **speed squat to box 6x2 @ 225 → 245** + box jump · 8 technique approach jumps |
 | Fri U2 | flex 2: overhead · coach overhead day · light upper |
 | Sat J2 | 8 approach jumps · **6–8 volleyball attempts** · basketball after |
 

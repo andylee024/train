@@ -27,7 +27,7 @@ Source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8). Loads est
 | D1 · dip clean + pull | Dip power clean 80% 6x3 · deficit clean DL 80% 5x4 · strict press 4x6 · seal row 5x8 | **Thu P1** 1a/1b; press + seal row → **Fri U2** | Clean-type lift on power day; upper pieces to the upper day |
 | D2 · squat day | Back squat 90% 3x2 + 80% 3x5 *(skipped — the wave covers squatting)* · SL deadlift 3x8 · back extension 5x10 · jerk practice 40 kg | SLDL → Sun 3b · back ext → Thu 3b · jerk practice → **Fri U2** 1a | Rule 3; her accessories fill block 3 |
 
-Dropped: her back squat. No snatch day this week, so Tue carries no Olympic lift.
+Dropped: her back squat. No snatch day this week, so Tue starts at the approach drills.
 
 ## Sun Nov 8 — L1 · Olympic + Strength
 _Warm-up: lower body + Olympic · knee-to-wall ankle rocks 2x10 · band hip distraction 1' · reverse clamshell 2x15_
@@ -61,16 +61,17 @@ _Warm-up (10'): jog 3', leg swings, hip routine (band glide, reverse clams), pog
 
 | Slot | Exercise | Sets × reps | Rest |
 |---|---|---|---|
-| 1a | 3-step approach drills, filmed from the side | x6 | 1' |
-| 2a | **Max approach jumps — best touch logged every rep** | 10 (W1: BASELINE first — see below) | 2' |
-| 2b | Depth jump 18" | 3x3 | 2' |
-| 3a | Hurdle / line hops | 3x5 | 90" |
-| 3b | Single-leg pogos | 2x8/leg | 90" |
-| 4a | — (no coach light day in wk1; keep the session to jumps) | | 2' |
+| 1a | — (no coach light day in wk1; start at 2a) — the primer, as she writes it | per DNT | 2' |
+| 2a | 3-step approach drills, filmed from the side | x6 | 1' |
+| 2b | **Max approach jumps — best touch logged every rep** | 10 (W1: BASELINE first — see below) | 2' |
+| 2c | Sprints, full effort | 4 x 10–20 m | walk back + 2' |
+| 3a | Depth jump 18" | 3x3 | 2' |
+| 3b | Hurdle / line hops | 2x5 | 90" |
+| 3c | Single-leg pogos | 2x8/leg | 90" |
 
-≈ ~50 contacts. Stop when touch drops ~1" or after two flat jumps. Log the best touch in the set note, e.g. `touch 10'4"`.
+≈ ~55 contacts + sprints. Olympic lift first when she has one that day; if she programs something heavy here, jumps go first. Stop when touch drops ~1" or after two flat jumps. Log the best touch in the set note, e.g. `touch 10'4"`.
 
-**BASELINE (first, fresh, before 1a):** standing reach (flat-footed, arm up, mark the wall) · standing vertical best of 3 · approach touch best of 5, filmed against the rim. Set note: `reach 96" | SVJ 121" | touch 10'3"`. Everything in this arc is scored against these numbers.
+**BASELINE (first, fresh, before 2a):** standing reach (flat-footed, arm up, mark the wall) · standing vertical best of 3 · approach touch best of 5, filmed against the rim. Set note: `reach 96" | SVJ 121" | touch 10'3"`. Everything in this arc is scored against these numbers.
 
 ## Wed Nov 11 — R · Rest
 8-minute hip routine: 90/90 hip lift · band posterior glide · reverse clamshell · bridge holds · dead bugs. Nothing deep, nothing loaded.
@@ -80,14 +81,14 @@ _Warm-up: lower body + Olympic, band hip distraction 1', reverse clamshell 2x15.
 
 | Slot | Exercise | Sets × reps | Rest |
 |---|---|---|---|
-| 1a | **Coach:** dip power clean (from the hip) 80% 6x3 (~180) · **1b** deficit clean deadlift 80% 5x4 (~245) | per DNT | 2–3' |
-| 2a | Jump squat | 4x3 @ 75 lb (20%) | 2' |
-| 2b | Box jump, right after each 2a set | x3 | — |
-| 2c | Sprints 10 m | x4 | 2' |
+| 1a | **Coach:** dip power clean (from the hip) 80% 6x3 (~180) · **1b** deficit clean deadlift 80% 5x4 (~245) — as written | per DNT | 2–3' |
+| 2a | Sprints, full acceleration | 6 x 20 m | walk back + 2' |
+| 2b | Jump squat | 4x3 @ 75 lb (20%) | 2' |
+| 2c | Box jump, right after each 2b set | x3 | — |
 | 3a | Technique approach jumps @ ~85%, long-low penultimate, filmed | x6 | 90" |
 | 3b | **Coach:** back extension 5x10 | | 90" |
 
-≈ 35–40 contacts. 
+≈ 35–40 contacts + sprints. Olympic lift first, sprints while fresh, then the loaded work. 
 
 ## Fri Nov 13 — U2 · Overhead + Shoulder skill *(bonus)*
 _Opener (10'): **Flex skill 2 — Overhead**: pec band isolation 3x8 (3 s holds) · subscap/teres ER band 3x8 · lat isolation, low back rounded, 3x8 · wall slide 2x8 · thoracic extension over roller 2x8. Bonus day: first to drop in a busy week. Upper only — no heavy pulls, nothing deep for the legs._
@@ -107,7 +108,8 @@ _Bonus session. Warm-up: leg swings, pogos 2x10, hip routine, 4 sub-max approach
 
 | Slot | Exercise | Sets × reps | Rest |
 |---|---|---|---|
-| 1a | 3-step approach drills | x4 | 1' |
+| 1a | Sprints 10 m | x3 | 2' |
+| 1b | 3-step approach drills | x4 | 1' |
 | 2a | Max approach jumps — touch logged | x8 | 2' |
 | 2b | Dunk attempts | x6, softball | 2' |
 
@@ -118,4 +120,5 @@ _Bonus session. Warm-up: leg swings, pogos 2x10, hip routine, 4 sub-max approach
 - **Left shoulder:** no barbell overhead above 3/10; landmine / DB neutral instead. Coach's jerk work stays only while it's quiet.
 - **Knee ≥ 3/10:** no depth jumps this week.
 - **Touch flat 3 weeks:** Sunday squat → 1 set, +4 approach jumps Thursday. **Squat top set down > 5 % two weeks** with touch rising → add a set Sunday; with touch flat → halve Tuesday for a week.
+- **Order:** coach's Olympic lift opens the session as written → jumps and sprints while fresh → loaded work → accessories.
 - **Busy week:** keep Tue, Sun, Mon, Thu in that order. Skipping Fri/Sat is by design, not a fall-off.

@@ -11,15 +11,15 @@ description: Andy's structure principle. Four core days he reliably trains (Sun/
 
 ```
 Warm-up   10' — the day's targeted mobility (hip / ankle on leg + jump days, overhead / thoracic on upper days); dynamic only before jumps
-1a (1b)   Coach Olympic lift(s) — or the approach jumps on jump days
-2a 2b 2c  Main block: squat wave / record attempts / reactive block / power contrast
+1a (1b)   Coach Olympic lift(s), as she writes them — opens every session that has one (on Tue, her light lift is the primer)
+2a 2b 2c  Main block: on Tue/Thu/Sat, jumps + sprints first (fresh), then loaded work; elsewhere squat wave / record attempts
 3a 3b 3c  Accessories, coach accessories, flex skill
 4         Optional (+30'): upper finish, extra technique jumps, second half of a flex skill
 ```
 
 - **Rest:** heavy strength 3–5' · Olympic lifts 2–3' · jumps / sprints 2' · plyo accessories 90" · accessories 60–90".
 - **Running short:** block 4 goes, then block 3. Never block 2.
-- **Jumps first** in any session that has them. Fastest work first.
+- **Order: Olympic lift → jumps and sprints → loaded work → accessories.** If the coach programs a heavy lift on a Tuesday slot, the jumps go first that day.
 
 ## 2. The weekly split (4 core + 2 bonus)
 
@@ -27,11 +27,11 @@ Warm-up   10' — the day's targeted mobility (hip / ankle on leg + jump days, o
 |---|---|---|---|
 | **Sun** | **L1 · Olympic + Strength** | Core | coach heavy clean day · squat wave 2 sets to box · hip thrust / Nordic · +30' upper finish |
 | **Mon** | **U1 · Upper + Hip skill** | Core | bench + pull-up record attempts · pogos filler · flex skill 1 (hip IR, 20') |
-| **Tue** | **J1 · Max Jump + Reactive** | **Core — the priority** | approach drills · max approach jumps, touch logged · depth jumps or sprints · hops · coach light lift after |
+| **Tue** | **J1 · Max Jump + Reactive** | **Core — the priority** | coach light lift (primer) · approach drills · max approach jumps, touch logged · sprints 4×10–30 m · depth jumps · hops |
 | **Wed** | **R · Rest** | — | 8-min hip routine |
-| **Thu** | **P1 · Power + Approach** | Core | coach clean + pull · jump squat / speed squat + box-jump contrast · technique approach jumps |
+| **Thu** | **P1 · Power + Approach** | Core | coach clean + pull · sprints 6×20 m (R: + flying 10s) · jump squat / speed squat + box-jump contrast · technique approach jumps |
 | **Fri** | **U2 · Overhead + Shoulder skill** | Bonus | flex skill 2 (overhead, 20') · coach jerk / overhead day · light upper, no legs |
-| **Sat** | **J2 · Dunk** | Bonus | approach jumps, touch logged · dunk attempts · basketball after |
+| **Sat** | **J2 · Dunk** | Bonus | 3 short sprints · approach jumps, touch logged · dunk attempts · basketball after |
 
 - **48-hour rule:** heavy legs (Sun) ≥48 h before the max-jump day (Tue). Thu is light on the legs so Sat stays fresh. No heavy pulls or deep/loaded stretching on Fri.
 - **Priority when the week shrinks:** Tue → Sun → Mon → Thu. Skipping Fri/Sat is by design, not a fall-off.
@@ -47,4 +47,4 @@ Warm-up   10' — the day's targeted mobility (hip / ankle on leg + jump days, o
 - ❌ The #1 priority on an optional or weekend day.
 - ❌ Heavy legs the day before a jump day.
 - ❌ More than ~6 working exercises; a second external program bolted on top.
-- ❌ Jumps after lifting on Tue/Sat. Static stretching before jumping.
+- ❌ Loaded work before the jumps and sprints on Tue/Thu/Sat. Static stretching before jumping.
