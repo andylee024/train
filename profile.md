@@ -1,13 +1,68 @@
-# Athlete Profile — Andy Lee
+# Andy Lee — athlete profile
 
-_Living document, athlete-level. Updated 2026-11-09. Arc-specific goals live in each arc's `training/arc.md`._
+_Living document. Updated 2026-11-11. The current arc's targets live in `arcs/<arc>/training/arc.md`; this file is what outlives arcs._
 
-Athlete-level facts that persist; the plan is in `training/`. History: `archive/profile-2026-summer-arc-final.md` (the summer arc's profile as of Nov 2, 2026) and `arcs/arc1-2026/archive/profile-snapshot-2026-05-03.md` (May 2026 baseline).
+## Who
+- **33, 6'0", ~189 lb.** Right-handed; **plants off the right leg** to jump.
+- **10 years of lifting, 2 years chasing the dunk.** Strength base is advanced (2× BW squat); jump training age is beginner — jumping has rarely been trained on purpose, and never measured before Nov 2026.
+- Plays pickup basketball on Saturdays. Wants to be athletic and durable for a long time; trains with structure and chases numbers.
 
-- **6'0", ~189 lb** (last logged Jul 30; weigh every Sunday). Standing reach ~8'0" (est.) · approach touch ~10'3" (est., tennis-ball dunk) — **baseline W1**.
-- **Goals (priority):** (1) volleyball dunk Jan 30 · (2) power clean 240 / power C&J 235 / power snatch 135 with the DNT coach · (3) flexibility as a skill: right-hip IR, overhead position · (4) strength held: squat 375–385 Jan 17, bench 275, pull-up +115; **405 in 2027**.
-- **Numbers (Nov 2026):** back squat 295×8 / 310×6 (e1RM ~374) · front squat 321 e1RM · bench 215×6 (258) · weighted pull-up +55×6 · power clean **225** single · power C&J 205 · muscle snatch 115×2 · power snatch 104 · OHS 115.
-- **Diagnosis:** strength-dominant, explosive- and reactive-deficient (PC ÷ squat 0.60), position-limited. Plyo beginner.
-- **Injuries:** right hip — impingement pattern (pinch in deep flexion + IR, since late Oct), physio to confirm · left shoulder — flares, location TBD (overhead / front rack / bench) · wrist (De Quervain's) and right shoulder healed Jun 2026, monitor.
-- **How he trains (evidence):** 3.6–3.9 sessions/week in every block regardless of plan; Sun/Mon/Tue/Thu are the days that happen; Saturday and optional days drop first; complexity spikes precede fall-offs; PR tracking drives engagement; unmeasured goals die within 3 weeks.
-- **Preferences:** fixed split, ~6 exercises, 1a/2a/3a blocks, RPE-based, 60–90 min, propose changes before applying, no BJJ, pickup basketball Saturdays after jumps.
+## Long-term (by end of 2027)
+- **Clean & jerk 245.** Power clean 240 / C&J 235 are the Jan 2027 step.
+- **Bodyweight 185**, held.
+- **Dunk a volleyball (Jan 30, 2027), then a basketball.**
+- **Back squat 405.** Parked while the jump is the priority; 375–385 held through Jan.
+
+## Numbers (best ever · current · date)
+
+| Lift | Best | Current | Date |
+|---|---|---|---|
+| Back squat | e1RM 380 (Feb 2026) · 355 single (Sep 21) | 295×8 · 310×6 (e1RM ~374) | Oct 2026 |
+| Front squat | e1RM 326 (Jan) · 285×3 | 245×5 (hip-limited) | Oct 2026 |
+| Bench | 215×6 (e1RM 258) · 220×4 | same | Oct 2026 |
+| Weighted pull-up | +70×4 | +55×6 · +45×10 | Oct 2026 |
+| Deadlift (clean / conv.) | 295×3 (e1RM 325) | — | Aug 2026 |
+| Power clean | **225** single | 225 | Nov 4, 2026 |
+| Power clean & jerk | 205 | 205 | Sep 2026 |
+| Muscle snatch / power snatch | 115×2 / 104 | same | Oct 2026 |
+| Overhead squat | 115 | 115 | Sep 2026 |
+| Jump | tennis-ball dunk (≈ 10'2–10'3" touch, est.) | **ladder baseline W1, Nov 2026** | — |
+| Bodyweight | 192 (May) → 189 (Jul 30) | weigh every Sunday | — |
+
+Records per rep range (8s / 6s / 4s): bench 195 / 215 / 220 · pull-up +45 / +55 / +70 · squat 295 / 310 / 325. Source of truth for all of this is Supabase; this table is a snapshot.
+
+## Diagnosis
+Strength-dominant, explosive- and reactive-deficient: power clean ÷ squat = 0.60 (threshold 0.75). Force is made slowly; springiness untrained. Position-limited on the right side (below). The lever for the jump is technique, reactive work and freshness — not more strength.
+
+## Injuries and limits → what changes
+
+| Area | Status | What it stops | Substitution / rule |
+|---|---|---|---|
+| **Right hip** | Impingement pattern since late Oct 2026: pinch in deep flexion + internal rotation; seated IR sensitive. Physio to confirm. | Deep squat depth, catching full cleans, loaded 90/90 back-leg, deep Cossacks | Squat to a box above the pinch · no stretching into the pinch · daily band glide + glute work · Monday hip-IR skill · pain ≥ 3/10 → that position out for the week |
+| **Right groin / adductors** | Limited mobility | Wide stances, deep lateral work | Pain-free range only; Copenhagen and adductor holds stay short of the pull; treat with the hip as one right-side problem |
+| **Left knee** | Sharp pain rising from a *cold* deep squat; fine once warm (Nov 2026) | Cold deep squats | Never squat deep cold: 10 box squats + Spanish-squat holds before the first loaded rep. Knee ≥ 3/10 *during* a session → no depth jumps that week |
+| Left foot turns out in squats | Compensation for the right hip / ankle | — | Lifting shoes; knee tracks over 2nd toe; depth only where the pelvis stays level |
+| Shoulders | Not a current issue (per Andy, Nov 2026). Right shoulder and left wrist (De Quervain's) healed Jun 2026 | — | Landmine / hang variants only if something returns at ≥ 3/10 |
+
+## Coach
+**Coach Zhou, DNT Weightlifting Club** — programs the Olympic lifts in 2-week PDFs ("andy program<N>–<N+1>.pdf") via the WhatsApp group "DNT + Andy 24 weeks", Chinese/English. Three days a week with a fixed shape: a heavy clean day, a clean + pull day, a jerk/overhead day, one snatch session per two weeks; 5–6 sets of 1–3 at 80–90%, deload every third week, max tests in a peak block. Her lifts run as written and land Sun / Thu / Tue / Fri; her back squat is skipped (the wave covers it). Her week number = arc week. Standing asks: heaviest day on Sunday, Tuesday light, peak toward the arc's test date.
+
+## Logistics
+- **Gym:** Bay Club El Segundo — full equipment, boxes, bands, rim. Own lifting shoes.
+- **Sessions:** 60 min core, 90 when possible. 4 core days (Sun/Mon/Tue/Thu) + 2 bonus (Fri/Sat). Basketball after Saturday's jumps.
+- **Measurement:** ball ladder at a rim weekly (no Vertec); bodyweight Sunday; flexibility tests at block ends.
+- **Travel:** gym access while travelling; rim access not guaranteed — the ladder moves to whichever day has a rim.
+- **Logging:** Telegram bot → Supabase (see `AGENT.md`); Claude for plan changes.
+
+## How he trains (evidence, May–Nov 2026)
+- **3.6–3.9 sessions a week in every block, whatever was planned.** Sun/Mon/Tue/Thu happen; Saturday and "optional" days drop first. Plan for four.
+- **Complexity spikes precede fall-offs** (Block 1, May 2026: a second program stacked on top → 2.5 weeks lost). Keep ~6 exercises, one structure, loads change not lifts.
+- **Unmeasured goals die within three weeks.** Side split, jumps and bodyweight all went unlogged and stopped.
+- **What works:** seeing the record to beat (Train Heroic era); a fixed split; waves (every strength PR); the coach's program when it's folded in, not added.
+- **Recovery:** ~7 h sleep. Doesn't cook; Sunday batch-prep is the pattern that has worked. Bodyweight target 185, slow.
+
+## How to work with him
+- **Propose before changing.** Especially around injuries.
+- Show the number to beat; it's the motivation lever.
+- Changes to rules go in `.claude/skills/` + the arc's `arc.md`; changes to prescription go in the block file. Never both plans and sets in one place.
+- If a week shrinks: Tue → Sun → Mon → Thu. Don't apologise for Fri/Sat.

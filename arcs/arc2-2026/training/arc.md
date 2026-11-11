@@ -61,7 +61,7 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 ## Constraints
 - Session order: coach's Olympic lift first, as written → jumps and sprints (Tue 4×10–30 m, Thu 6×20 m, Sat 3×10 m) → loaded work → accessories.
 - Heavy legs ≥48 h before Tue. Thu light on the legs. Nothing deep or loaded for flexibility within 48 h of Tue/Sat, never the day after heavy work.
-- Right hip: squat to a box above the pinch; pain ≥ 3/10 → movement out. Left shoulder: no barbell overhead above 3/10. Knee ≥ 3/10 → no depth jumps.
+- Right hip + groin: squat to a box above the pinch, adductor work pain-free only; pain ≥ 3/10 → movement out. Left knee: no deep squats cold; ≥ 3/10 during a session → no depth jumps. Shoulders: not a current issue.
 - Coach's lifts as written; placement per `principle-dnt-olympic-lifts`; her back squat skipped; never stacked on top of the week.
 - Bodyweight 189 → 184 by W8, slow; no aggressive deficit while jumping.
 - ≤ 6 working exercises a session; 60-min core + optional 30-min block 4.
@@ -71,7 +71,7 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 - **Hot path:** week = `(today − Nov 8) ÷ 7 + 1`; open the block file for that week (`blocks/`), read §1 for the day's table and §2 for the week's row. Core days Sun/Mon/Tue/Thu; Fri/Sat are bonuses. Missed day → resume at the current week; never double up.
 - **Tuesday is the priority session.** Coach's light lift first (if any), ball ladder on the rim day, approach drills, max approach jumps, sprints, depth jumps.
 - **Coach lifts** (`coach-programs/`): heavy clean day → Sun 1a · clean + pull → Thu 1a/1b · snatch / light → Tue 1a · jerk / overhead → Fri 1a · back squat skipped · heavy front squat = that week's squat, to a box. New PDF → copy here, add a README row, fill the §2 coach rows.
-- **Injury rules:** right hip — box above the pinch, no deep Cossacks / loaded 90/90 back-leg, ≥ 3/10 → out for the week. Left shoulder — no barbell overhead above 3/10, landmine / DB neutral. Knee ≥ 3/10 → no depth jumps. Propose swaps, don't dictate.
+- **Injury rules:** right hip + groin — box above the pinch, no deep Cossacks / loaded 90/90 back-leg, adductor work pain-free only, ≥ 3/10 → out for the week. Left knee — never deep cold (box squats + Spanish-squat holds first); ≥ 3/10 during a session → no depth jumps. Shoulders — not current; landmine / hang variants if anything returns ≥ 3/10. Propose swaps, don't dictate.
 - **Flex skills:** hip IR (Mon, 20') · overhead (Fri, 20'). Nothing deep within 48 h of Tue/Sat.
 - **Logging:** sets → Supabase `exercise_sets`; bodyweight → `daily_metrics` (Sun); ladder / hand depth / flexibility tests → `measurements`. Never executed sets in markdown.
 - **Athlete facts:** `../../profile.md` (living). Warm-ups are the first line of each session table in the block file. This file is the strategy; the block files are the prescription; the skills are the rules.

@@ -120,7 +120,7 @@ Basketball only after this, kept short. Weigh in if you missed Sunday.
 | **Coach — Thu 1a/1b** | dip power clean 80% 6×3 (~180) · deficit clean DL 80% 5×4 (~245) · back ext → 3b | power clean 85% 6×2 (~190) · clean DL 85% 5×4 (~270) · back ext → 3b | per DNT wk3 | per DNT wk4, one lift |
 | **Coach — Fri 1a** | jerk practice 40 kg 15' · strict press 4×6 (if shoulder < 3/10) · seal row 5×8 | rack push press 80% 5×2 (~130) · jerk dip 4×3 · hanging leg raise 4×12 · bar dip 5×10 | per DNT wk3 | per DNT wk4, light |
 | **Dropped** | her back squat · her D3 (Sunday missed) | — | her back squat | her back squat |
-| **Notes** | **Sunday missed; week runs as standard from Mon.** No L1 this week — squat wave resumes Sun Nov 15. Her D3 (PC + FS complex, panda pull) is dropped this week; Tue J1 = baseline day. | standard | **Thanksgiving Thu Nov 26:** if Thu is lost, run P1 Fri, skip U2 | half volume everywhere; full retest |
+| **Notes** | **Sunday missed; week runs as standard from Mon.** No L1 this week — squat wave resumes Sun Nov 15. Her D3 (PC + FS complex, panda pull) is dropped this week; Tue J1 = baseline day. | **Travel Nov 14–29 (London/Vienna), gym access yes, rim not guaranteed:** run the four core days; ladder on whichever day has a rim, or skip and note it; depth jumps only on a proper floor | **Travel continues; Thanksgiving Thu Nov 26:** if Thu is lost, run P1 Fri, skip U2 | back home; half volume everywhere; full retest |
 
 Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8). Fill W3–W4 when her next PDF lands (~Nov 21).
 
@@ -134,8 +134,9 @@ Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8). Fil
 **Ball ladder**, once a week at a rim, fresh, before the session (Tue if it has a rim, else Sat — then Sat isn't optional). Rungs: 0 rim grab · 1 tennis ball (≈10'2") · 2 softball (10'3") · 3 mini basketball (10'5") · **4 volleyball (10'6")** · 5 women's ball (10'7") · 6 men's ball (10'8"). Six attempts at the current rung, 2' rest; score clean / touched / missed, how many of six, hand depth on the best jump (fingertips / palm / wrist / forearm); two clean of six → next rung next session. → `measurements`: `ladder_rung` (value = rung, value_text = ball), `ladder_clean_of_6`, `hand_depth`. Bodyweight Sun → `daily_metrics` (189 → 187 by W4).
 
 ## Rules
-- **Right hip:** squat to a box above the pinch; no deep Cossacks / loaded 90/90 back-leg; pain ≥ 3/10 → that movement out for the week; physio booked.
-- **Left shoulder:** no barbell overhead above 3/10 → landmine / DB neutral. Coach's jerk work only while quiet.
+- **Right hip + groin:** squat to a box above the pinch; no deep Cossacks / loaded 90/90 back-leg; adductor work in the pain-free range only; pain ≥ 3/10 → that movement out for the week; physio booked.
+- **Left knee (free leg):** never squat deep cold — 10 box squats + Spanish-squat holds 2×30 s before the first loaded rep on leg and jump days. Pain during a session ≥ 3/10 → no depth jumps that week.
+- **Shoulders:** not a current issue; landmine / hang variants only if something returns at ≥ 3/10.
 - **Knee ≥ 3/10:** no depth jumps that week.
 - **Ladder flat 3 weeks:** Sunday squat → 1 set, +4 approach jumps Thu. **Squat top set −5% two weeks** with the ladder rising → add a set; with the ladder flat → halve Tuesday for a week.
 - **Missed day:** resume at the current week; never double up. Lost Sunday → L1 Mon, J1 Wed.
