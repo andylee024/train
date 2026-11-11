@@ -20,7 +20,8 @@
 | Jump training | ❌ Untrained | 15 jump/sprint entries in 24 weeks; none Jul 6 – Sep 13; approach jumps and dunk attempts: 0 |
 | Jump measurement | ❌ None | Touch never measured; ~10'3" is an estimate from a tennis-ball dunk |
 | Right hip | ⚠️ Impingement pattern | Pinch in deep flexion + IR since late Oct; capped the 4s squat week (275×4 vs 330 planned) |
-| Left shoulder / overhead | ⚠️ Limiting | OHS 115 vs clean 225; shoulder flares; location not yet pinned down |
+| Overhead position | ⚠️ Limiting | OHS 115 vs clean 225; position, not pain (shoulders are not a current issue) |
+| Right groin / adductors | ⚠️ Limited | Treated with the hip as one right-side problem; pain-free range only |
 | Body composition | ⚠️ Unknown | 189 lb last logged Jul 30 |
 
 **Where you need to go (Jan 30):** ball ladder rung 1 (tennis ball, ≈10'2") → **rung 4 volleyball clean (≈10'6")**, plan aims at rung 5–6 · hand depth fingertips/palm → wrist · power clean 225 → 240 · power C&J 205 → 235 · power snatch 104 → 135 · right-hip seated IR = left, pain-free · OHS 40 kg clean → 60 kg · squat held 375–385 · bench 258 → 275 · weighted pull-up +55×6 → +115 · bodyweight 189 → 184.
