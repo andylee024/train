@@ -45,6 +45,17 @@ For any agent that serves Andy's training: the Telegram bot on his phone, Claude
 
 Free-text shortcuts the phone agent should accept: `bench 205x8 @8` · `pull-ups +55 x 8,7,6` · `ladder softball 4/6 palm` · `bw 188.4`.
 
+## Linear (weekly view)
+
+Linear is the calendar for the plan, not a second log. Team **Train**, project **arc2-2026 · Winter Jump** (P-TR-16). Everything in it is generated from the block file; the block file stays the source.
+
+- **One issue per planned session.** Title `W02 · Tue 11/17 · J1 Max Jump + Reactive`. Labels `Workout` + `core` or `bonus`; Tue = High priority; due date = the session date. Description = one context line, the warm-up line, a table with columns **Slot · Exercise · Sets × reps · e1RM · % · Working**, the day's rules, the `Log:` line. e1RM is Epley from Supabase (`load × (1 + reps/30)`), the all-time best for that exercise name; `—` if there is none. No guesses, no "record to beat".
+- **Working weight = % × e1RM**, rounded to the plate (5 lb / 2.5 kg). Coach rows use her percentages of her stated max.
+- **Close-out.** When a session is in Supabase, one comment on its issue: `workouts.id`, what was done against what was planned (top set, reps, RPE, jump count / ladder rung), anything on the Log line that's missing, then state → **Done**. Skipped → **Canceled** with one word why. Never Done without a `workouts` row.
+- **Regenerate, don't edit.** When §2 changes (coach drop, rule change) the week's issues are rewritten from the block file. Hand edits in Linear don't flow back.
+- **Dated one-offs** live in the same project: coach drops, retests + reviews, physio, coach max day, squat single, dunk test.
+- Claude creates and regenerates issues; the phone agent reads them, posts close-out comments and moves state.
+
 ## Rules of the system
 
 - Plan lives in markdown; executed work lives in Supabase. Never write sets into markdown; never write a plan into Supabase; never put measurements in set notes.
