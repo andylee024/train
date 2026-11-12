@@ -54,6 +54,7 @@ Linear is the calendar for the plan, not a second log. Team **Train**, project *
 - **Close-out.** When a session is in Supabase, one comment on its issue: `workouts.id`, what was done against what was planned (top set, reps, RPE, jump count / ladder rung), anything on the Log line that's missing, then state → **Done**. Skipped → **Canceled** with one word why. Never Done without a `workouts` row.
 - **Regenerate, don't edit.** When §2 changes (coach drop, rule change) the week's issues are rewritten from the block file. Hand edits in Linear don't flow back.
 - **Milestones = blocks** (Block P · R · T); every issue sits on its block's milestone. **Cycles = weeks** (1-week, Sunday start).
+- **Two saved views** on the project: **This week** (list, current cycle, by due date) and **Block P** (board, milestone = Block P, a column per cycle). At each block change (W5, W9) add the next block's board the same way. Cycles are named `W02`…`W12` to match the arc week; W01 predates the cycles and shows as "No cycle".
 - **The project page is the training plan** (goals, approach, assessment, blocks, the week, loads, measurement, principles). It mirrors `arcs/<arc>/training/arc.md`: when `arc.md` changes, Claude updates the page in the same change.
 - **Dated one-offs** live in the same project: coach drops, retests + reviews, physio, coach max day, squat single, dunk test.
 - Claude creates and regenerates issues; the phone agent reads them, posts close-out comments and moves state.
