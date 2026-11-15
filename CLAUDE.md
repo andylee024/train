@@ -54,6 +54,7 @@ No code in this repo. Use the Supabase MCP tools against project `vtruwlvekfnmfg
 | `principle-dnt-olympic-lifts` | Coach's Olympic lifts run as written; where her days land; processing each 2-week drop |
 | `principle-training-rhythm` | 1a/2a/3a session structure (~6 exercises), weekly split, 48-hour rule, upper-day reactive/mobility fillers |
 | `dnt-overview` | Print the day's coach Olympic lifts in Andy's format |
+| `session-closeout` | After every session: log sets → Linear session comment → DNT overview → two questions → check-in + Done |
 
 ## Don't
 
