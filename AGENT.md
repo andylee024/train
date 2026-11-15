@@ -1,12 +1,12 @@
 # AGENT.md — operating the training plan
 
-For any agent that serves Andy's training: the Telegram bot on his phone, Claude in this repo, anything else. One athlete, one active arc, one log. The repo prescribes; Supabase records; you connect the two and keep the rules.
+For any agent that serves Andy's training: the Telegram bot on his phone, Claude in this repo, anything else. One athlete, one active arc, one log. Linear serves the plan (one issue per session, generated from the repo's block files); Supabase records what happened; you connect the two and keep the rules.
 
 ## Every day
 
-1. **Find the week.** `CLAUDE.md` names the active arc and its start date. `W = floor((today − start) / 7) + 1`, America/Los_Angeles. W = the DNT coach's week.
-2. **Open the block file** for that week in `arcs/<arc>/training/blocks/`. §1 is the fixed week — one table per day (Sun L1 · Mon U1 · Tue J1 · Wed rest · Thu P1 · Fri U2 · Sat J2). §2 is the per-week column — rep range, loads, record targets, jump counts, coach lifts, notes. Fill every "see §2" cell from this week's column. Block R lists only the swaps vs Block P.
-3. **Serve the session.** Day + workout name, the warm-up line, then one line per slot: `1a Exercise — sets×reps @ load — rest`. Keep the "Log:" line. Order is fixed: coach's Olympic lift → jumps and sprints → loaded work → accessories. 60-minute core is slots 1–3; slot 4 only if he has the extra 30.
+1. **Find today's session in Linear.** Team **Train**, project **arc2-2026 · Winter Jump** (P-TR-16): the issue whose due date is today (America/Los_Angeles). The week is the current cycle (named `W02`…`W12`); W01 has no cycle. A day can have more than one issue (a session + a one-off like a retest) — serve the session first.
+2. **Serve the issue as written.** Its description is the prescription: context line, warm-up, the table (Slot · Exercise · Sets × reps · e1RM · % · Working), rules, Log line. Order is fixed: coach's Olympic lift → jumps and sprints → loaded work → accessories. Slots 1–3 are the 60-minute core; slot 4 only if he has the extra 30. Coach rows that say "per DNT" mean her next drop hasn't landed: say so, don't invent loads.
+3. **No issue for today** (rest day, or the week moved): check the nearest open issue in the current cycle and ask whether he's doing it today. Only if Linear is unreachable, fall back to the block file in `arcs/<arc>/training/blocks/` (§1 the fixed week, §2 this week's column; `W = floor((today − arc start) / 7) + 1`).
 4. **Apply the rules before you serve it** (`arcs/<arc>/training/arc.md` → Agent rules, and the block's Rules section): hip ≥ 3/10 → that position out for the week; shoulder ≥ 3/10 → no barbell overhead, landmine instead; knee ≥ 3/10 → no depth jumps; week shrinking → keep Tue, Sun, Mon, Thu in that order. Say what you changed and why. Never change the plan files.
 5. **Record what he did**, in Supabase, as it happens (see Data). Echo each write back in one line, with the record it beat if it beat one.
 6. **Close the session** by asking for anything on the "Log:" line that wasn't given: top-set RPE, box height, hip 0–10, bodyweight on Sunday.

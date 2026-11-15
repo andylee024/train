@@ -11,6 +11,7 @@ A single-athlete workout tracker. Plan lives in markdown; executed work lives in
 | Layer | Source of truth |
 |---|---|
 | Planned work | `<arc>/training/arc.md` (strategy) + `<arc>/training/blocks/` — one file per block: §1 the fixed week, §2 a per-week deltas table. Week = `(today − arc start) ÷ 7 + 1`. |
+| Served plan (what an agent reads each day) | Linear, team Train, project `arc2-2026 · Winter Jump` — one issue per session, regenerated from the block files. Agents read Linear; Claude edits the block file, then the issues. |
 | Executed work | Supabase `workouts` / `workout_exercises` / `exercise_sets` (project `vtruwlvekfnmfgaundhp`) |
 | Measurements (ladder, hand depth, flexibility tests, touch) | Supabase `measurements` (`date, metric, value, value_text, unit, side, notes`) |
 | Athlete facts | `profile.md` at the repo root (living) |
