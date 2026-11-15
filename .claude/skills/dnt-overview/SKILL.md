@@ -29,7 +29,7 @@ Exercise
 
 ## Procedure
 
-1. **Resolve day + week.** Default to **today** (`date "+%A"` + `date "+%Y-%m-%d"`). Map today's date to the arc week file. The week's coach lifts are in the block file's §2 deltas table (`<arc>/training/blocks/`), rows "Coach — Sun/Tue/Thu/Fri". Athlete/arc default: `arcs/arc2-2026` at the repo root (confirm from `CLAUDE.md`).
+1. **Resolve day + source.** Default to **today** (America/Los_Angeles). **Before a session:** the coach rows (`**Coach:**`) of today's Linear issue (team Train, project `arc2-2026 · Winter Jump`, due date = today). **After a session** (step 3 of the close-out loop in `AGENT.md`): the coach lifts as logged in Supabase today — actual sets × reps and weights, not the plan. Fallback if Linear is unreachable: the block file's §2 rows "Coach — Sun/Tue/Thu/Fri" (`arcs/arc2-2026/training/blocks/`).
 2. **Read that day's section** from the week file. Find the day's table.
 3. **Filter to `coach` source rows** whose lift is an Olympic lift (snatch/clean/jerk/pull families) — not `coach acc` rows.
 4. **Format** each into the block above. Convert loads to kg + lbs. Preserve the `%` note when present.

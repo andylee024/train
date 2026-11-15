@@ -8,8 +8,22 @@ For any agent that serves Andy's training: the Telegram bot on his phone, Claude
 2. **Serve the issue as written.** Its description is the prescription: context line, warm-up, the table (Slot · Exercise · Sets × reps · e1RM · % · Working), rules, Log line. Order is fixed: coach's Olympic lift → jumps and sprints → loaded work → accessories. Slots 1–3 are the 60-minute core; slot 4 only if he has the extra 30. Coach rows that say "per DNT" mean her next drop hasn't landed: say so, don't invent loads.
 3. **No issue for today** (rest day, or the week moved): check the nearest open issue in the current cycle and ask whether he's doing it today. Only if Linear is unreachable, fall back to the block file in `arcs/<arc>/training/blocks/` (§1 the fixed week, §2 this week's column; `W = floor((today − arc start) / 7) + 1`).
 4. **Apply the rules before you serve it** (`arcs/<arc>/training/arc.md` → Agent rules, and the block's Rules section): hip ≥ 3/10 → that position out for the week; shoulder ≥ 3/10 → no barbell overhead, landmine instead; knee ≥ 3/10 → no depth jumps; week shrinking → keep Tue, Sun, Mon, Thu in that order. Say what you changed and why. Never change the plan files.
-5. **Record what he did**, in Supabase, as it happens (see Data). Echo each write back in one line, with the record it beat if it beat one.
-6. **Close the session** by asking for anything on the "Log:" line that wasn't given: top-set RPE, box height, hip 0–10, bodyweight on Sunday.
+5. **When he finishes, run the close-out loop below** — every session, in that order.
+
+## After the workout: close-out loop
+
+When Andy says he's done (or sends what he did), work through these five steps in order. Don't skip ahead; each step uses the one before it.
+
+1. **Log the sets** to Supabase (see Data): one `workouts` row (`notes` starts with the Linear issue id, e.g. `TR-381 · W02 J1`), then `workout_exercises` and `exercise_sets` — weight with its unit, reps, RPE where given. Exercise names must match `exercises.name`. If anything is ambiguous (a weight without a unit, sets he didn't mention), ask before writing. Echo back one line per exercise, and the record it beat if it beat one. Measurements (ladder rung, hand depth, tests) → `measurements`; Sunday bodyweight → `daily_metrics`.
+2. **Post the session update** as a comment on today's Linear issue: the `workouts.id`, then a table **Slot · Exercise · Planned · Done**, and one line for anything dropped, added or moved.
+3. **Prepare the DNT overview** with the `dnt-overview` skill, from the coach lifts he actually did (logged weights, kg and lb), ready for him to paste to Coach Zhou. Send it to him as its own message. No coach lift today → say so in one line.
+4. **Ask two questions and for notes**, in one message:
+   - *How did it go, 1–10, and what was the RPE of your hardest set?*
+   - *Any pain? Hip, knee or groin, 0–10.*
+   - *Anything else for the notes?*
+5. **Record and close.** Post his answers as a second comment on the issue (`Check-in: 7/10 · hardest set RPE 8.5 · hip 2 · knee 0 · groin 0 — <notes>`), add the same line to the `workouts.notes`, then move the issue to **Done**. Any pain ≥ 3 → apply the rule for the rest of the week (hip → that position out; knee → no depth jumps) and say so.
+
+Skipped session → no loop: comment one word why and move the issue to **Canceled**. Never Done without a `workouts` row.
 
 ## Every week
 
@@ -51,7 +65,7 @@ Linear is the calendar for the plan, not a second log. Team **Train**, project *
 
 - **One issue per planned session.** Title `W02 · Tue 11/17 · J1 Max Jump + Reactive`. Labels `Workout` + `core` or `bonus`; Tue = High priority; due date = the session date. Description = one context line, the warm-up line, a table with columns **Slot · Exercise · Sets × reps · e1RM · % · Working**, the day's rules, the `Log:` line. e1RM is Epley from Supabase (`load × (1 + reps/30)`), the all-time best for that exercise name; `—` if there is none. No guesses, no "record to beat".
 - **Working weight = % × e1RM**, rounded to the plate (5 lb / 2.5 kg). Coach rows use her percentages of her stated max.
-- **Close-out.** When a session is in Supabase, one comment on its issue: `workouts.id`, what was done against what was planned (top set, reps, RPE, jump count / ladder rung), anything on the Log line that's missing, then state → **Done**. Skipped → **Canceled** with one word why. Never Done without a `workouts` row.
+- **Close-out:** the five-step loop in *After the workout* (log → session comment → DNT overview → two questions + notes → check-in comment + Done).
 - **Regenerate, don't edit.** When §2 changes (coach drop, rule change) the week's issues are rewritten from the block file. Hand edits in Linear don't flow back.
 - **Milestones = blocks** (Block P · R · T); every issue sits on its block's milestone. **Cycles = weeks** (1-week, Sunday start).
 - **Two saved views** on the project: **This week** (list, current cycle, by due date) and **Block P** (board, milestone = Block P, a column per cycle). At each block change (W5, W9) add the next block's board the same way. Cycles are named `W02`…`W12` to match the arc week; W01 predates the cycles and shows as "No cycle".
