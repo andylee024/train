@@ -38,8 +38,8 @@ Strength-dominant, explosive- and reactive-deficient: power clean ÷ squat = 0.6
 
 | Area | Status | What it stops | Substitution / rule |
 |---|---|---|---|
-| **Right hip** | Impingement pattern since late Oct 2026: pinch in deep flexion + internal rotation; seated IR sensitive. Physio to confirm. | Deep squat depth, catching full cleans, loaded 90/90 back-leg, deep Cossacks | Squat to a box above the pinch · no stretching into the pinch · daily band glide + glute work · Monday hip-IR skill · pain ≥ 3/10 → that position out for the week |
-| **Right groin / adductors** | Limited mobility | Wide stances, deep lateral work | Pain-free range only; Copenhagen and adductor holds stay short of the pull; treat with the hip as one right-side problem |
+| **Right hip** | Pinch in deep flexion + internal rotation since late Oct 2026. **Physio (Nov 17, 2026): fine to train; keep building strength and end range.** | Deep squat depth, full-clean catch | Deep-squat skill 2×/week (Mon, Fri) · depth pain-guided (≤ 3/10) · lower the box as range comes · pain ≥ 3/10 → that position out for the week |
+| **Right groin / adductors** | Limited mobility; cleared with the hip | Wide stances, deep lateral work | End-range strength: loaded tailor's pose, horse stance squats, Copenhagen · pain-guided |
 | **Left knee** | Sharp pain rising from a *cold* deep squat; fine once warm (Nov 2026) | Cold deep squats | Never squat deep cold: 10 box squats + Spanish-squat holds before the first loaded rep. Knee ≥ 3/10 *during* a session → no depth jumps that week |
 | Left foot turns out in squats | Compensation for the right hip / ankle | — | Lifting shoes; knee tracks over 2nd toe; depth only where the pelvis stays level |
 | Shoulders | Not a current issue (per Andy, Nov 2026). Right shoulder and left wrist (De Quervain's) healed Jun 2026 | — | Landmine / hang variants only if something returns at ≥ 3/10 |

@@ -30,7 +30,7 @@ _Warm-up: lower body + Olympic · knee-to-wall ankle rocks 2×10 · band hip dis
 
 Log: squat top set + RPE + box height · hip 0–10 · **bodyweight → `daily_metrics`**.
 
-### Mon · U1 Upper + Hip skill
+### Mon · U1 Upper + Deep-squat skill
 _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
 
 | Slot | Exercise | Sets × reps | Rest |
@@ -41,7 +41,7 @@ _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
 | 2c | Pogos (filler) | ×10 between rounds | — |
 | 3a | Weighted dips or her dips | 3×8 | 90" |
 | 3b | Seated row or her seal row | 3×10 | 90" |
-| 4 | **Flex skill 1 — Hip IR (20')**: 90/90 hip lift 2×5 breaths · band posterior glide 15 rock-backs · reverse clamshell 2×15 · 90-sit IR PAIL/RAIL 3 rounds/side (10 s push / 10 s pull) · 90/90 IR lift-offs 3×5 (3–5 s holds). Short of the pinch. | | |
+| 4 | **Deep-squat skill (20')**, Matt Smith stack in order: tailor's pose, loaded 5–10 kg/side @ 2310 · horse stance squats @ 2310, wider before heavier · 90/90 IR lift-offs, 3 s holds · goblet squat to a box, knees out, 3 s holds for reps, box lower when easy. **2 sets each through W4** (ramp-in, then W4 light); **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
 
 Record rule: +10 lb when the last attempt was RPE ≤ 8 · +5 at 8.5–9 · repeat on a miss. Log top set + RPE.
 
@@ -77,8 +77,8 @@ _Warm-up: lower body + Olympic, band hip distraction 1', reverse clamshell 2×15
 
 ≈ 40 contacts + sprints.
 
-### Fri · U2 Overhead + Shoulder skill *(bonus — first to drop)*
-_Opener (10'): **Flex skill 2 — Overhead**: pec band isolation 3×8 (3 s holds) · subscap/teres ER band 3×8 · lat isolation, low back rounded, 3×8 · wall slide 2×8 · thoracic extension over roller 2×8. Upper only: no heavy pulls, nothing deep for the legs._
+### Fri · U2 Overhead + Deep-squat skill *(bonus; if you keep only one thing, keep the deep-squat block)*
+_Opener (5'): **overhead**: pec band 1×8 (3 s holds) · lat isolation, low back rounded, 1×8 · chest-to-wall handstand 2×20 s. Upper only: no heavy pulls._
 
 | Slot | Exercise | Sets × reps | Rest |
 |---|---|---|---|
@@ -86,7 +86,7 @@ _Opener (10'): **Flex skill 2 — Overhead**: pec band isolation 3×8 (3 s holds
 | 2a | Landmine press (DB press if the shoulder is quiet; her strict press only if < 3/10) | 3×8 | 90" |
 | 2b | Single-arm row / her pull | 3×10 | 90" |
 | 2c | Rear-delt / scap work (band Y-T-W) | 2×15 | — |
-| 3 | Overhead flex, second half (10'): end-range holds in the pain-free range | | |
+| 3 | **Deep-squat skill (20')**, Matt Smith stack in order: tailor's pose, loaded 5–10 kg/side @ 2310 · horse stance squats @ 2310, wider before heavier · 90/90 IR lift-offs, 3 s holds · goblet squat to a box, knees out, 3 s holds for reps, box lower when easy. **2 sets each through W4** (ramp-in, then W4 light); **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
 
 ### Sat · J2 Dunk *(bonus)*
 _Warm-up: leg swings, pogos 2×10, hip routine, 4 sub-max approach jumps._
@@ -134,7 +134,7 @@ Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8). Fil
 **Ball ladder**, once a week at a rim, fresh, before the session (Tue if it has a rim, else Sat — then Sat isn't optional). Rungs: 0 rim grab · 1 tennis ball (≈10'2") · 2 softball (10'3") · 3 mini basketball (10'5") · **4 volleyball (10'6")** · 5 women's ball (10'7") · 6 men's ball (10'8"). Six attempts at the current rung, 2' rest; score clean / touched / missed, how many of six, hand depth on the best jump (fingertips / palm / wrist / forearm); two clean of six → next rung next session. → `measurements`: `ladder_rung` (value = rung, value_text = ball), `ladder_clean_of_6`, `hand_depth`. Bodyweight Sun → `daily_metrics` (189 → 187 by W4).
 
 ## Rules
-- **Right hip + groin:** squat to a box above the pinch; no deep Cossacks / loaded 90/90 back-leg; adductor work in the pain-free range only; pain ≥ 3/10 → that movement out for the week; physio booked.
+- **Right hip + groin:** physio cleared it (Nov 17): train strength and end range. Depth is pain-guided (≤ 3/10 during, settled by next morning); lower the squat box when the last one is easy. Pain ≥ 3/10 → that movement out for the week. Deep-squat sessions Mon + Fri even before jump days (Andy's call); check: two Tuesdays with lower best hand depth, or groin soreness on a jump day → move Monday's session to Sunday after the squat.
 - **Left knee (free leg):** never squat deep cold — 10 box squats + Spanish-squat holds 2×30 s before the first loaded rep on leg and jump days. Pain during a session ≥ 3/10 → no depth jumps that week.
 - **Shoulders:** not a current issue; landmine / hang variants only if something returns at ≥ 3/10.
 - **Knee ≥ 3/10:** no depth jumps that week.
