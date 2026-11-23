@@ -52,7 +52,7 @@ Free-text shortcuts the phone agent should accept: `bench 205x8 @8` · `pull-ups
 
 Linear is the calendar for the plan, not a second log. Team **Train**, project **arc2-2026 · Winter Jump** (P-TR-16). Everything in it is generated from the block file; the block file stays the source.
 
-- **One issue per planned session.** Title `W02 · Tue 11/17 · J1 Max Jump + Reactive`. Labels `Workout` + `core` or `bonus`; Tue = High priority; due date = the session date. Description = one context line, the warm-up line, a table with columns **Slot · Exercise · Sets × reps · e1RM · % · Working**, the day's rules, the `Log:` line. e1RM is Epley from Supabase (`load × (1 + reps/30)`), the all-time best for that exercise name; `—` if there is none. No guesses, no "record to beat".
+- **One issue per planned session.** Title is just week + session code: `W03-J1` (codes: L1, U1, J1, P1, U2, J2, Rest). The date lives in the due date, everything else in the description. Labels `Workout` + `core` or `bonus`; Tue = High priority; due date = the session date. Description = one context line, the warm-up line, a table with columns **Slot · Exercise · Sets × reps · e1RM · % · Working**, the day's rules, the `Log:` line. e1RM is Epley from Supabase (`load × (1 + reps/30)`), the all-time best for that exercise name; `—` if there is none. No guesses, no "record to beat".
 - **Working weight = % × e1RM**, rounded to the plate (5 lb / 2.5 kg). Coach rows use her percentages of her stated max.
 - **Close-out:** the `session-closeout` skill.
 - **Regenerate, don't edit.** When §2 changes (coach drop, rule change) the week's issues are rewritten from the block file. Hand edits in Linear don't flow back.
