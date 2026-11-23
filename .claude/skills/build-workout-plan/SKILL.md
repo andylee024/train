@@ -56,7 +56,7 @@ Log: ladder rung / clean-of-6 / hand depth -> measurements; contacts; knee/hip 0
 ```
 
 ## Adjusting
-- **Missed day:** resume at the current week; don't double up. Lost Sunday → run L1 Mon, push J1 to Wed (keep 48 h).
+- **Missed day:** if we miss, we miss: skip it and run the current week as written. No make-ups, no repeating last week's loads or volumes, don't double up. Only exception: lost Sunday → run L1 Mon, push J1 to Wed (keep 48 h).
 - **Ladder flat 3 weeks:** Sunday squat to 1 set, +4 approach jumps Thu.
 - **Squat top set −5% two weeks:** with touch rising → add a set; with touch flat → halve Tuesday for a week, check sleep and food.
 - **Pain:** knee ≥3/10 no depth jumps; hip / shoulder rules above. Propose swaps, don't dictate.

@@ -69,7 +69,7 @@ Strength-dominant, explosive- and reactive-deficient (power clean ÷ squat = 0.6
 
 
 ## Agent rules (read on every session start)
-- **Hot path:** week = `(today − Nov 8) ÷ 7 + 1`; open the block file for that week (`blocks/`), read §1 for the day's table and §2 for the week's row. Core days Sun/Mon/Tue/Thu; Fri/Sat are bonuses. Missed day → resume at the current week; never double up.
+- **Hot path:** week = `(today − Nov 8) ÷ 7 + 1`; open the block file for that week (`blocks/`), read §1 for the day's table and §2 for the week's row. Core days Sun/Mon/Tue/Thu; Fri/Sat are bonuses. Missed day → skip it and run the current week as written (no make-ups, no repeated loads); never double up.
 - **Tuesday is the priority session.** Coach's light lift first (if any), ball ladder on the rim day, approach drills, max approach jumps, sprints, depth jumps.
 - **Coach lifts** (`coach-programs/`): heavy clean day → Sun 1a · clean + pull → Thu 1a/1b · snatch / light → Tue 1a · jerk / overhead → Fri 1a · back squat skipped · heavy front squat = that week's squat, to a box. New PDF → copy here, add a README row, fill the §2 coach rows.
 - **Injury rules:** right hip + groin — physio-cleared; depth pain-guided (≤ 3/10), ≥ 3/10 → out for the week. Left knee — never deep cold (box squats + Spanish-squat holds first); ≥ 3/10 during a session → no depth jumps. Shoulders — not current; landmine / hang variants if anything returns ≥ 3/10. Propose swaps, don't dictate.

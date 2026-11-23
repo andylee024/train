@@ -43,7 +43,7 @@ _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
 | 3b | Seated row or her seal row | 3×10 | 90" |
 | 4 | **Deep-squat ladder (20')**: hip CARs 2/side, then slots A → D at your current level (see *Deep-squat ladder* below). **2 sets each through W4**; **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
 
-Record rule: +10 lb when the last attempt was RPE ≤ 8 · +5 at 8.5–9 · repeat on a miss. Log top set + RPE.
+Record rule: +10 lb when the last attempt was RPE ≤ 8 · +5 at 8.5–9 · repeat the load after a failed attempt. A missed session doesn't count as a miss: the next week runs its own load. Log top set + RPE.
 
 ### Tue · J1 Max Jump + Reactive — the priority
 _Warm-up (10'): jog 3', leg swings, hip routine, pogos 2×10. **No static stretching.**_
@@ -152,5 +152,5 @@ Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8) · `
 - **Shoulders:** not a current issue; landmine / hang variants only if something returns at ≥ 3/10.
 - **Knee ≥ 3/10:** no depth jumps that week.
 - **Ladder flat 3 weeks:** Sunday squat → 1 set, +4 approach jumps Thu. **Squat top set −5% two weeks** with the ladder rising → add a set; with the ladder flat → halve Tuesday for a week.
-- **Missed day:** resume at the current week; never double up. Lost Sunday → L1 Mon, J1 Wed.
+- **Missed day:** if we miss, we miss: skip it and run the current week as written. No make-ups, no repeating last week's loads, never double up. Only exception: lost Sunday → L1 Mon, J1 Wed (keeps the squat wave and the 48 h).
 - **Busy week:** keep Tue, Sun, Mon, Thu in that order. Fri/Sat skipped is by design.
