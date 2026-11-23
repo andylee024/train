@@ -26,6 +26,7 @@ Get springy. Most jumping of the year: depth jumps from the best box height, bou
 | Sat 2b dunk ball | softball → mini ball | **volleyball** |
 | Contacts | ~55 Tue · ~40 Thu · ~20 Sat | **~80–90 Tue · ~40 Thu · ~20 Sat** (up to ~150/week). Depth jumps live in a 3-week window (W5–W7); W8 low box. |
 | Basketball | after Sat, kept short | **≤ 30 min, or skip** — it eats the contact budget |
+| Mon + Fri deep-squat ladder | 2 sets each, levels set at the W4 retest | **3–4 sets each**; move slots up per the Block P ladder rules (one slot at a time, test met) |
 
 ---
 
@@ -44,7 +45,7 @@ Get springy. Most jumping of the year: depth jumps from the best box height, bou
 | **Coach** | per DNT wk5–6 (fill when the PDF lands ~Dec 5): heavy clean → Sun 1a · clean + pull → Thu 1a/1b · snatch/light → Tue 1a · overhead → Fri 1a · back squat skipped | | per DNT wk7–8 (~Dec 19) | light |
 | **Notes** | if the W4 ladder retest was flat, open with **1** squat set | standard | **Christmas Fri Dec 25:** U2 off | holiday week, already light; keep Tue + Sat jumps wherever there's a rim, drop the rest without guilt |
 
-**W8 retest:** ladder + hand depth · seated hip IR L/R · Taylor's pose · supine overhead · heel-elevated squat · 40 kg OHS · standing vertical if you have the app.
+**W8 retest:** ladder + hand depth · seated hip IR L/R · Taylor's pose · 90/90 right-knee lift + hip CAR notes · supine overhead · heel-elevated squat · 40 kg OHS · standing vertical if you have the app.
 
 ## Measurement and Rules
 As Block P. **Into the Test block (W9–W12):** taper to 40–50% volume, intensity sharp; coach's max day Jan 14 · squat single Jan 17 (375–385) · **dunk test Jan 30**. Block T file to be written at W8.

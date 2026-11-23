@@ -30,7 +30,7 @@ _Warm-up: lower body + Olympic · knee-to-wall ankle rocks 2×10 · band hip dis
 
 Log: squat top set + RPE + box height · hip 0–10 · **bodyweight → `daily_metrics`**.
 
-### Mon · U1 Upper + Deep-squat skill
+### Mon · U1 Upper + Deep-squat ladder
 _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
 
 | Slot | Exercise | Sets × reps | Rest |
@@ -41,7 +41,7 @@ _Warm-up: upper body (PVC pass-throughs, swimmers, twisters), band pull-aparts_
 | 2c | Pogos (filler) | ×10 between rounds | — |
 | 3a | Weighted dips or her dips | 3×8 | 90" |
 | 3b | Seated row or her seal row | 3×10 | 90" |
-| 4 | **Deep-squat skill (20')**, Matt Smith stack in order: tailor's pose, loaded 5–10 kg/side @ 2310 · horse stance squats @ 2310, wider before heavier · 90/90 IR lift-offs, 3 s holds · goblet squat to a box, knees out, 3 s holds for reps, box lower when easy. **2 sets each through W4** (ramp-in, then W4 light); **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
+| 4 | **Deep-squat ladder (20')**: hip CARs 2/side, then slots A → D at your current level (see *Deep-squat ladder* below). **2 sets each through W4**; **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
 
 Record rule: +10 lb when the last attempt was RPE ≤ 8 · +5 at 8.5–9 · repeat on a miss. Log top set + RPE.
 
@@ -77,7 +77,7 @@ _Warm-up: lower body + Olympic, band hip distraction 1', reverse clamshell 2×15
 
 ≈ 40 contacts + sprints.
 
-### Fri · U2 Overhead + Deep-squat skill *(bonus; if you keep only one thing, keep the deep-squat block)*
+### Fri · U2 Overhead + Deep-squat ladder *(bonus; if you keep only one thing, keep the ladder)*
 _Opener (5'): **overhead**: pec band 1×8 (3 s holds) · lat isolation, low back rounded, 1×8 · chest-to-wall handstand 2×20 s. Upper only: no heavy pulls._
 
 | Slot | Exercise | Sets × reps | Rest |
@@ -86,7 +86,7 @@ _Opener (5'): **overhead**: pec band 1×8 (3 s holds) · lat isolation, low back
 | 2a | Landmine press (DB press if the shoulder is quiet; her strict press only if < 3/10) | 3×8 | 90" |
 | 2b | Single-arm row / her pull | 3×10 | 90" |
 | 2c | Rear-delt / scap work (band Y-T-W) | 2×15 | — |
-| 3 | **Deep-squat skill (20')**, Matt Smith stack in order: tailor's pose, loaded 5–10 kg/side @ 2310 · horse stance squats @ 2310, wider before heavier · 90/90 IR lift-offs, 3 s holds · goblet squat to a box, knees out, 3 s holds for reps, box lower when easy. **2 sets each through W4** (ramp-in, then W4 light); **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
+| 3 | **Deep-squat ladder (20')**: hip CARs 2/side, then slots A → D at your current level (see *Deep-squat ladder* below). **2 sets each through W4**; **3–4 from Block R**. Depth pain-guided (≤ 3/10). | | |
 
 ### Sat · J2 Dunk *(bonus)*
 _Warm-up: leg swings, pogos 2×10, hip routine, 4 sub-max approach jumps._
@@ -100,6 +100,18 @@ _Warm-up: leg swings, pogos 2×10, hip routine, 4 sub-max approach jumps._
 
 Basketball only after this, kept short. Weigh in if you missed Sunday.
 
+### Deep-squat ladder (Mon + Fri, 20')
+One drill per slot, at your current level. Open with **hip CARs**, 2 slow circles per side, and note where the circle gets small or jerky. Move a slot up one level only when its test is met, one slot at a time. Right side gets one extra set in slot A. Everything starts at L1; L0 only if the right knee can't lift at all in 90/90.
+
+| Slot | L0 | L1 (start) | L2 | L3 | Move up when |
+|---|---|---|---|---|---|
+| **A · Hip IR** | Banded IR contract-relax, or a hand pushing just past range | 90/90 IR lift-offs, 3 s holds, 2×5/side | Side-lying IR lifts with an ankle weight, over a block | Kneeling-on-box IR: push into the box 5 s, then lift away 5 s | 2×8 clean per side, 3 s holds, pain ≤ 3 |
+| **B · Tailor's pose / outer hip** | — | Tailor's pose, 5–10 kg/side @ 2310 | Active butterfly: DBs on the knees, press down and lift | Bench pigeon pulses holding a DB, bench lowered over time | 10 smooth reps → add load or lower the bench |
+| **C · Horse stance → side split** | Wall horse stance holds 3×30 s | Horse stance squats @ 2310, wider before heavier | Horse-stance good mornings, 5 s holds | Sliding side split, slow lowering | 3×5 at your widest stance, thighs parallel, no pinch |
+| **D · Squat depth** | — | Goblet squat to a box, knees out, 3 s holds | Lower box | Lower box | Last set easy |
+
+*2310 = 2 s down, 3 s pause, 1 s up.* **Swap rule:** a drill that hurts ≥ 3/10 or stalls for 3 weeks → swap in the nearest drill for the same slot from *Andy's Flexibility & Mobility Guide* (Google Doc). Nothing else gets added. Note the level per slot in the session close-out. Sources: Matt Smith (stack), Tom @tomfyshpt (CARs, A2–A3), @elastaboy (A), @strongandmobile + Agnes @move_withagnes (B3), @flexibility.maestro (C0, C2), @rangeofstrength (C3).
+
 ---
 
 ## §2 Week deltas
@@ -107,7 +119,7 @@ Basketball only after this, kept short. Weigh in if you missed Sunday.
 | | W1 · Nov 8–14 | W2 · Nov 15–21 | W3 · Nov 22–28 | W4 · Nov 29 – Dec 5 |
 |---|---|---|---|---|
 | **Rep range** | 8s | 6s | 4s | light + **RETEST** |
-| **Sun 2a squat** | 2×8 @ 295 | **her front squat** 90% 3×2 (~290) + 80% 3×5 (~255), box; 2×5 back-offs if the hip talks | 2×4 @ 325 | 2×5 @ 275 |
+| **Sun 2a squat** | 2×8 @ 295 | **her front squat** 90% 3×2 (~290) + 80% 3×5 (~255), box; 2×5 back-offs if the hip talks | 2×4 @ 325 | **her front squat** 80% 5×4 (~255), box |
 | **Mon bench** | 205×8 (rec 195) → 2×8 @ 185 | 225×6 (rec 215) → 2×6 @ 205 | 230×4 (rec 220) → 2×4 @ 210 | 2×5 @ 185 |
 | **Mon pull-up** | +55×8 (rec +45) → 2×8 @ +45 | +65×6 (rec +55) → 2×6 @ +55 | +75×4 (rec +70) → 2×4 @ +60 | 2×5 @ +30 |
 | **Tue 2b approach jumps** | 10 — **baseline first** (see below) | 10 | 12 | 6 + ladder retest |
@@ -115,18 +127,19 @@ Basketball only after this, kept short. Weigh in if you missed Sunday.
 | **Thu 2b jump squat** | 4×3 @ 75 | 4×3 @ 85 | 4×3 @ 95 | 2×3 @ 75 |
 | **Thu 3a / Sat 2a jumps** | ×6 / ×8 | ×6 / ×8 | ×6 / ×8 | ×4 / ×6 |
 | **Sat 2b dunk ball** | softball | softball | softball → mini ball | mini ball |
-| **Coach — Sun 1a** | PC + FS 80% 6×(2+1) (~180) · panda pull 85% 5×3 (~190) · side bends → 3c; single-arm pull → Fri | *(her D2 = front squat day, see 2a)* jerk dip → Fri · plank → 3c | per DNT wk3 | per DNT wk4, moderate |
-| **Coach — Tue 1a** | — (no light day in wk1) | muscle snatch 80% 6×2 (~95–100) | per DNT wk3 | per DNT wk4 or skip |
-| **Coach — Thu 1a/1b** | dip power clean 80% 6×3 (~180) · deficit clean DL 80% 5×4 (~245) · back ext → 3b | power clean 85% 6×2 (~190) · clean DL 85% 5×4 (~270) · back ext → 3b | per DNT wk3 | per DNT wk4, one lift |
-| **Coach — Fri 1a** | jerk practice 40 kg 15' · strict press 4×6 (if shoulder < 3/10) · seal row 5×8 | rack push press 80% 5×2 (~130) · jerk dip 4×3 · hanging leg raise 4×12 · bar dip 5×10 | per DNT wk3 | per DNT wk4, light |
-| **Dropped** | her back squat · her D3 (Sunday missed) | — | her back squat | her back squat |
+| **Coach — Sun 1a** | PC + FS 80% 6×(2+1) (~180) · panda pull 85% 5×3 (~190) · side bends → 3c; single-arm pull → Fri | *(her D2 = front squat day, see 2a)* jerk dip → Fri · plank → 3c | **power clean 85% 6×2** (~200–205; muscle-clean warm-up) · **panda pull, clean grip, 85% 5×3** (~205) · single-leg DL 3×8 → 3b · side bends 5×10 → 3c | *(her D2 = front squat day, see 2a)* plank 4×30 s → 3c · back extension 5×10 → 3b |
+| **Coach — Mon 1a** | — | — | **strict press 4×6** (if shoulder < 3/10) · **seal row 5×8** → 3b | bar dip 5×10 → 3a |
+| **Coach — Tue 1a** | — (no light day in wk1) | muscle snatch 80% 6×2 (~95–100) | — (no light lift in wk3) | muscle snatch 80% 6×2 (~95–100); jumps first if it feels heavy |
+| **Coach — Thu 1a/1b** | dip power clean 80% 6×3 (~180) · deficit clean DL 80% 5×4 (~245) · back ext → 3b | power clean 85% 6×2 (~190) · clean DL 85% 5×4 (~270) · back ext → 3b | **block power clean 85% 6×2** (~200–205) · **deficit clean DL 85% 5×3** (~260) · back ext 5×10 → 3b | power clean 85% 6×2 (~200–205) · **clean DL 105 kg 4×5** (231) · back ext 5×10 → 3b |
+| **Coach — Fri 1a** | jerk practice 40 kg 15' · strict press 4×6 (if shoulder < 3/10) · seal row 5×8 | rack push press 80% 5×2 (~130) · jerk dip 4×3 · hanging leg raise 4×12 · bar dip 5×10 | jerk practice 40 kg 15' · single-arm pull 5×10 → 2b | rack push press 80% 5×2 (~130) · jerk dip 4×3 · hanging leg raise 4×12 |
+| **Dropped** | her back squat · her D3 (Sunday missed) | — | her back squat 80% 5×4 | — |
 | **Notes** | **Sunday missed; week runs as standard from Mon.** No L1 this week — squat wave resumes Sun Nov 15. Her D3 (PC + FS complex, panda pull) is dropped this week; Tue J1 = baseline day. | **Travel Nov 14–29 (London/Vienna), gym access yes, rim not guaranteed:** run the four core days; ladder on whichever day has a rim, or skip and note it; depth jumps only on a proper floor | **Travel continues; Thanksgiving Thu Nov 26:** if Thu is lost, run P1 Fri, skip U2 | back home; half volume everywhere; full retest |
 
-Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8). Fill W3–W4 when her next PDF lands (~Nov 21).
+Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8) · `coach-programs/dnt-wk03-04_arc-W03-W04.pdf` (received Nov 22). Power-clean loads use the Nov 16 triple (100 kg × 3 → e1RM ~242): 85% ≈ 200–205, start at 200 and go by bar speed. Next drop (wk5–6) ~Dec 5.
 
 **W1 baseline (fresh, before 2a, at a rim):** climb the ladder from tennis ball — 6 attempts per rung, 2' rest, move up after 2 clean — until you fail; hand depth on the best jump; standing reach once. Mon: seated hip IR L/R (deg, phone protractor) · Taylor's pose (cm). Fri: supine overhead test · heel-elevated squat test · 40 kg OHS. Optional: standing vertical best of 3 + 18" depth jump (My Jump Lab). All → `measurements`.
 
-**W4 retest:** same battery.
+**W4 retest:** same battery, plus **90/90 right-knee lift** (yes/no, and how high) and hip CAR notes L/R. These set the ladder levels for Block R.
 
 ---
 

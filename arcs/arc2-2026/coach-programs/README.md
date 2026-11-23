@@ -5,6 +5,7 @@ Raw PDFs as received. Filename: `dnt-wk<NN-NN>_arc-W<NN>-W<NN>.pdf`. Arc week = 
 | File | DNT weeks | Arc weeks | Dates | Status |
 |---|---|---|---|---|
 | `dnt-wk01-02_arc-W01-W02.pdf` | wk1–2 | W1–W2 | Nov 8 – Nov 21 | ✅ placed in W01/W02 week files |
+| `dnt-wk03-04_arc-W03-W04.pdf` | wk3–4 | W3–W4 | Nov 22 – Dec 5 | ✅ placed in Block P §2 + Linear W03/W04 (received Nov 22, "3andy program3--4.pdf") |
 
 Previous arc's PDFs (wk11–24): `../../arc1-2026/coach-programs/`.
 
