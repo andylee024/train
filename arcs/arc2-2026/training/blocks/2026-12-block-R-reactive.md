@@ -45,7 +45,7 @@ Get springy. Most jumping of the year: depth jumps from the best box height, bou
 | **Coach** | per DNT wk5–6 (fill when the PDF lands ~Dec 5): heavy clean → Sun 1a · clean + pull → Thu 1a/1b · snatch/light → Tue 1a · overhead → Fri 1a · back squat skipped | | per DNT wk7–8 (~Dec 19) | light |
 | **Notes** | if the W4 ladder retest was flat, open with **1** squat set | standard | **Christmas Fri Dec 25:** U2 off | holiday week, already light; keep Tue + Sat jumps wherever there's a rim, drop the rest without guilt |
 
-**W8 retest:** ladder + hand depth · seated hip IR L/R · Taylor's pose · 90/90 right-knee lift + hip CAR notes · supine overhead · heel-elevated squat · 40 kg OHS · standing vertical if you have the app.
+**W8 retest:** ladder + hand depth · seated hip IR L/R · Taylor's pose · 90/90 right-knee lift + hip CAR notes · supine overhead · heel-elevated squat · 40 kg OHS · **wall test** for the Jump Drivers dashboard: standing touch, depth-jump touch off 18", approach touch, best of 3 each → `standing_touch_in`, `dj_touch_in`, `approach_touch_in`. (The dashboard's ~55 contacts line is the Block P dose; in Block R ~80–90 on Tue is the plan.)
 
 ## Measurement and Rules
 As Block P. **Into the Test block (W9–W12):** taper to 40–50% volume, intensity sharp; coach's max day Jan 14 · squat single Jan 17 (375–385) · **dunk test Jan 30**. Block T file to be written at W8.
