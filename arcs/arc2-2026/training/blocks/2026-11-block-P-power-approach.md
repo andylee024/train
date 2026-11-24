@@ -147,7 +147,7 @@ Coach source: `coach-programs/dnt-wk01-02_arc-W01-W02.pdf` (received Nov 8) · `
 **Ball ladder**, once a week at a rim, fresh, before the session (Tue if it has a rim, else Sat — then Sat isn't optional). Rungs: 0 rim grab · 1 tennis ball (≈10'2") · 2 softball (10'3") · 3 mini basketball (10'5") · **4 volleyball (10'6")** · 5 women's ball (10'7") · 6 men's ball (10'8"). Six attempts at the current rung, 2' rest; score clean / touched / missed, how many of six, hand depth on the best jump (fingertips / palm / wrist / forearm); two clean of six → next rung next session. → `measurements`: `ladder_rung` (value = rung, value_text = ball), `ladder_clean_of_6`, `hand_depth`. Bodyweight Sun → `daily_metrics` (189 → 187 by W4).
 
 ## Jump drivers (the weekly check)
-The Jump Drivers dashboard (claude.ai artifact, reads Supabase live) scores five drivers 0–100 and combines them into one composite (weighted geometric mean): **Reactive** (RSI, 18" depth jump; 1.0 → 2.2; 25%) · **Explosive** (power clean ÷ back squat; 0.55 → 0.75; 25%) · **Approach skill** (approach touch − standing touch; 3" → 9"; 20%) · **Relative strength** (squat e1RM ÷ BW; 1.5 → 2.0; 15%) · **Bodyweight** (195 → 184 lb; 15%). Touch, ladder rung and jump sessions are the check, not part of the score.
+The Jump Drivers dashboard (claude.ai artifact, reads Supabase live) scores five drivers 0–100 and combines them into one composite (weighted geometric mean): **Reactive** (RSI, 18" depth jump; 1.0 → 2.2; 25%) · **Explosive** (power clean ÷ back squat; 0.55 → 0.75; 25%) · **Approach skill** (approach touch − standing touch; 3" → 9"; 20%) · **Strength** (squat e1RM ÷ BW; 1.5 → 2.0; 15%) · **Bodyweight** (195 → 184 lb; 15%). Touch, ladder rung and jump sessions are the check, not part of the score. **Goals for Jan 30 = each driver's 100 line:** RSI 2.2 · clean ÷ squat 0.75 · approach gap 9" · squat 2.0× BW · 184 lb. Each card shows a straight pace line from the first reading since Nov 8 to that goal: on pace, behind (with the weekly change needed), or goal hit.
 
 Log every J1: `approach_touch_in`, `standing_touch_in`, `rsi_18in` (and `standing_reach_in` once) → `measurements`. Weigh in Sundays.
 
@@ -156,7 +156,7 @@ Each Sunday, per driver (status = score now vs 3 weeks ago; ±3 = improving / sl
 - **Reactive** flat → same box, 3×3 at full intent, 2' rest, add pogos/hurdle hops · slipping → cut contacts by a third, no depth jumps after heavy legs; two weeks down → light week.
 - **Explosive** flat → speed, not load: jump squats 20–25% (P) / speed squats 60–65% (R) · slipping → check the clean, not the ratio; end clean sets when the bar slows.
 - **Approach skill** flat → 6 filmed 3-step drills before max jumps (long, low penultimate) · slipping → full rests, stop when touch drops twice.
-- **Relative strength** flat → hold; only under 1.85× add a third Sunday squat set · slipping → add a set back for two weeks.
+- **Strength** flat → hold; only under 1.85× add a third Sunday squat set · slipping → add a set back for two weeks.
 - **Bodyweight** flat or rising two weeks → trim intake on rest days.
 - **Composite up, touch flat 3 weeks** → the drivers or weights are wrong: recalibrate.
 
