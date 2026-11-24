@@ -1,6 +1,7 @@
 import "server-only";
 
 import { formatLaDate } from "./dates";
+import { jumpDrivers } from "./drivers";
 import { fixtureLog } from "./fixture";
 import { normalizeLog } from "./normalize";
 import { fetchLog } from "./supabase";
@@ -10,11 +11,14 @@ import type { DashboardData, DataSource } from "./types";
 export async function loadDashboard(): Promise<DashboardData> {
   const source = resolveSource();
   const raw = source === "fixture" ? fixtureLog() : await fetchLog();
+  const today = formatLaDate(new Date());
+  const log = normalizeLog(raw);
   return {
     source,
-    today: formatLaDate(new Date()),
+    today,
     generatedAt: new Date().toISOString(),
-    ...normalizeLog(raw),
+    ...log,
+    drivers: jumpDrivers({ ...log, today }),
   };
 }
 

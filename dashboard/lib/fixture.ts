@@ -121,5 +121,11 @@ export function fixtureLog(): RawLog {
       { date: "2026-07-30", bodyweight_lb: 189 },
       { date: "2026-10-11", bodyweight_lb: 190.4 },
     ],
+    measurements: [
+      { id: "fixture-m-1", date: "2026-11-02", metric: "standing_touch_in", value: 112 },
+      { id: "fixture-m-2", date: "2026-11-02", metric: "dj_touch_in", value: "114.5" },
+      { id: "fixture-m-3", date: "2026-11-02", metric: "approach_touch_in", value: 118 },
+      { id: "fixture-m-4", date: "2026-11-02", metric: "ladder_rung", value: 1 },
+    ],
   };
 }

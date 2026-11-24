@@ -247,3 +247,46 @@ footer {
   .chart { height: 230px; }
   .jump-work li { display: grid; }
 }
+
+/* Jump Drivers */
+.jd-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px; align-items: end; padding-bottom: 14px; }
+.jd-limiter { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.jd-limiter b { color: var(--amber); font-weight: 560; }
+.jd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; margin-bottom: 16px; }
+.jd-grid .card { margin: 0; }
+.jd-card { display: flex; flex-direction: column; gap: 6px; padding-bottom: 14px; }
+.jd-card.is-limiter { border-color: rgba(255, 176, 32, 0.55); }
+.jd-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.jd-card h3 { margin: 0; font-size: 16px; font-weight: 560; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }
+.jd-oneliner { margin: 0; color: var(--muted); font-size: 13px; }
+.jd-big { margin: 6px 0 0; font-family: var(--mono); font-size: 44px; line-height: 1; letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }
+.jd-big span { margin-left: 8px; font-size: 13px; letter-spacing: 0; color: var(--muted); font-family: var(--sans); }
+.jd-raw, .jd-goal { margin: 0; font-size: 13px; color: var(--muted); }
+.jd-goal b { color: var(--text); font-weight: 560; }
+.jd-pace { color: var(--faint); }
+.jd-pill { border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; font-family: var(--mono); font-size: 11px; white-space: nowrap; color: var(--muted); }
+.jd-pill.good { color: var(--up); border-color: rgba(182, 245, 194, 0.4); }
+.jd-pill.mid { color: var(--amber); border-color: rgba(255, 176, 32, 0.4); }
+.jd-pill.bad { color: var(--down); border-color: rgba(255, 155, 140, 0.45); }
+.jd-todo { margin-top: 6px; padding-top: 10px; border-top: 1px solid var(--line); }
+.jd-todo h4 { margin: 0 0 4px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); font-weight: 560; }
+.jd-todo p { margin: 0; font-size: 13px; line-height: 1.45; }
+.jd-none { margin: 8px 0; color: var(--faint); font-size: 13px; }
+.jd-info { position: relative; display: inline-block; }
+.jd-info summary { list-style: none; cursor: pointer; width: 18px; height: 18px; border: 1px solid var(--line); border-radius: 50%; display: inline-grid; place-items: center; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.jd-info summary::-webkit-details-marker { display: none; }
+.jd-info[open] summary { color: var(--ink); background: var(--lime); border-color: transparent; }
+.jd-info-body { position: absolute; z-index: 5; top: 26px; left: -8px; width: min(320px, 80vw); padding: 12px; background: #0c0e11; border: 1px solid var(--line); border-radius: 12px; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 1.45; color: var(--text); }
+.jd-info-body p { margin: 0 0 8px; }
+.jd-info-body p:last-child { margin: 0; }
+.jd-info-body span { color: var(--faint); font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-right: 4px; }
+.jd-check { gap: 28px; margin: 8px 0 12px; }
+.jd-check div { min-width: 160px; }
+.jd-small { font-family: var(--sans) !important; font-size: 12px !important; color: var(--faint); }
+.jd-more { margin: 0 0 12px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+.jd-more summary { cursor: pointer; color: var(--text); padding: 6px 0; }
+.jd-more ol { margin: 6px 0 0; padding-left: 18px; }
+@media (max-width: 800px) {
+  .jd-hero { grid-template-columns: minmax(0, 1fr); }
+  .jd-big { font-size: 38px; }
+}

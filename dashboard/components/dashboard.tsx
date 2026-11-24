@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 
 import { BodyweightChart, E1rmChart, TonnageChart, TouchChart } from "@/components/charts";
+import { JumpDrivers } from "@/components/drivers";
 import { formatDate, formatInches, formatLb, formatPct, formatSignedLb, formatStamp } from "@/lib/format";
 import { liftView, weeklyTonnage } from "@/lib/series";
 import type { DashboardData, PeriodKind } from "@/lib/types";
@@ -59,6 +60,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
       ) : (
         <p className="banner quiet">Read from Supabase. The page rechecks about every five minutes.</p>
       )}
+
+      <JumpDrivers view={data.drivers} />
 
       <section className="card lift-card">
         <div className="lift-row">

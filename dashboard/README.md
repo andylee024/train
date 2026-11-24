@@ -51,6 +51,14 @@ Reads are GET requests to PostgREST (`/rest/v1/...`). Pages are 1000 rows, order
 - 2 weeks and 4 weeks are windows ending today. Month is the calendar month. Block is a 4-week block from arc week 1 (Sunday, May 24, 2026). The next arc's weeks restart November 8, 2026. Training days are America/Los_Angeles.
 - Approach touch is a height in the set note (`10'2"`, `122 in`). An `18" box` note is a box, not a touch. With no height, the panel says **Not logged yet**.
 
+## Jump Drivers
+
+The top of the page is Jump Drivers (`lib/drivers.ts`, `components/drivers.tsx`), the same scoring as the Jump Drivers artifact: five drivers scored 0–100 from a floor to the Jan 30 goal, a weighted geometric-mean composite, status, goal pace, and what to do next week.
+
+- Explosive (power clean ÷ back squat) and Strength (squat ÷ bodyweight) use the best e1RM in the last 6 weeks, else the last 12. Bodyweight is the latest weigh-in.
+- Reactive shows weekly contacts: logged reps of Depth Jump, Low Box Depth Jump, Pogo Jumps (ankle hops), Single-Leg Pogos, Reactive Hurdle Jumps, Single-Leg Bounds, against ~55.
+- Reactive and Approach scores come from the W4/W8 wall tests in `measurements` (`standing_touch_in`, `dj_touch_in`, `approach_touch_in`) and carry forward until the next retest. Ladder rung is `ladder_rung`.
+
 ## Fixture
 
 `lib/fixture.ts` is a synthetic log used only when the Supabase variables are missing (outside production) or when `DASHBOARD_DATA_SOURCE=fixture`. It is not the training log. The live path is `lib/supabase.ts`.

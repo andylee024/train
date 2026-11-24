@@ -1,7 +1,15 @@
 import "server-only";
 
 import { readAllPages } from "./pages";
-import type { RawExercise, RawLog, RawMetric, RawSet, RawWorkout, RawWorkoutExercise } from "./types";
+import type {
+  RawExercise,
+  RawLog,
+  RawMeasurement,
+  RawMetric,
+  RawSet,
+  RawWorkout,
+  RawWorkoutExercise,
+} from "./types";
 
 const PAGE_SIZE = 1000;
 const REVALIDATE_SECONDS = 300;
@@ -17,7 +25,7 @@ export async function fetchLog(): Promise<RawLog> {
   const read = <T,>(path: string) =>
     readAllPages((offset, limit) => getPage<T>(base, supabaseKey, path, offset, limit), PAGE_SIZE);
 
-  const [exercises, workouts, workoutExercises, sets, metrics] = await Promise.all([
+  const [exercises, workouts, workoutExercises, sets, metrics, measurements] = await Promise.all([
     read<RawExercise>("exercises?select=id,name&order=id.asc"),
     read<RawWorkout>("workouts?select=id,performed_at&order=id.asc"),
     read<RawWorkoutExercise>("workout_exercises?select=id,workout_id,exercise_id&order=id.asc"),
@@ -25,9 +33,11 @@ export async function fetchLog(): Promise<RawLog> {
       "exercise_sets?select=id,workout_exercise_id,set_index,reps,weight_value,weight_unit,weight_kg,notes&order=id.asc",
     ),
     read<RawMetric>("daily_metrics?select=date,bodyweight_lb&order=date.asc"),
+    // Wall tests and ladder rung for Jump Drivers. A failed read leaves those drivers unmeasured.
+    read<RawMeasurement>("measurements?select=id,date,metric,value&order=id.asc").catch(() => []),
   ]);
 
-  return { exercises, workouts, workoutExercises, sets, metrics };
+  return { exercises, workouts, workoutExercises, sets, metrics, measurements };
 }
 
 function restBase(url: string): string {

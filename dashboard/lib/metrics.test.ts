@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { DRIVERS, jumpDrivers, scoreFor } from "./drivers";
 import { fixtureLog } from "./fixture";
 import { isJumpWork, parseTouchInches } from "./jumps";
 import { canonicalLift, epleyLb, LB_PER_KG, weightToLb } from "./lifts";
@@ -135,5 +136,42 @@ describe("pagination", () => {
     assert.equal(rows.length, 2500);
     assert.equal(rows[0], 0);
     assert.equal(rows[2499], 2499);
+  });
+});
+
+describe("jump drivers", () => {
+  const log = normalizeLog(fixtureLog());
+  const view = jumpDrivers({ ...log, today: TODAY });
+
+  it("scores one Sunday week per row from July 5 to this week", () => {
+    assert.equal(view.weeks[0].weekStart, "2026-07-05");
+    assert.equal(view.weeks[view.weeks.length - 1].weekStart, "2026-11-01");
+    assert.ok(view.now);
+  });
+
+  it("reads the retest gaps and carries them forward", () => {
+    const week = view.weeks[view.weeks.length - 1];
+    assert.equal(week.values.reactive, 2.5);
+    assert.equal(week.values.approach, 6);
+    assert.equal(week.reactiveTestDate, "2026-11-02");
+    assert.equal(week.approachTouchIn, 118);
+    assert.equal(view.now?.drivers.find((d) => d.key === "approach")?.status, "new");
+  });
+
+  it("counts reactive contacts from logged reps and labels the dose", () => {
+    const week = view.weeks[view.weeks.length - 1];
+    assert.ok(week.reactiveContacts > 0);
+    assert.equal(view.now?.drivers.find((d) => d.key === "reactive")?.status, "dose-light");
+  });
+
+  it("scales scores between floor and target, clamped", () => {
+    const strength = DRIVERS.find((d) => d.key === "strength");
+    assert.ok(strength);
+    assert.equal(scoreFor(strength, 1.75), 50);
+    assert.equal(scoreFor(strength, 2.4), 100);
+    assert.equal(scoreFor(strength, 1.2), 0);
+    const bodyweight = DRIVERS.find((d) => d.key === "bodyweight");
+    assert.ok(bodyweight);
+    assert.equal(scoreFor(bodyweight, 184), 100);
   });
 });

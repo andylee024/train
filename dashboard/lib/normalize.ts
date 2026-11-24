@@ -9,11 +9,15 @@ import type {
   JumpWork,
   LiftMeta,
   LoadedSet,
+  Measurement,
   RawLog,
+  RepsLogged,
 } from "./types";
 
 /** Turn PostgREST rows into loaded sets, bodyweight, and jump reads. */
-export function normalizeLog(raw: RawLog): Omit<DashboardData, "source" | "today" | "generatedAt"> {
+export function normalizeLog(
+  raw: RawLog,
+): Omit<DashboardData, "source" | "today" | "generatedAt" | "drivers"> {
   const exerciseName = new Map<string, string>();
   for (const exercise of raw.exercises) {
     const id = str(exercise.id);
@@ -38,6 +42,7 @@ export function normalizeLog(raw: RawLog): Omit<DashboardData, "source" | "today
 
   const sets: LoadedSet[] = [];
   const jumps: JumpAttempt[] = [];
+  const reps: RepsLogged[] = [];
   const jumpSessions = new Map<string, { sessions: Set<string>; lastDate: string }>();
   const labelByKey = new Map(PINNED_LIFTS.map((lift) => [lift.key, lift.label]));
 
@@ -61,10 +66,13 @@ export function normalizeLog(raw: RawLog): Omit<DashboardData, "source" | "today
       jumpSessions.set(exercise, bucket);
     }
 
-    const reps = num(row.reps);
+    const repCount = num(row.reps);
+    if (repCount != null && repCount > 0) {
+      reps.push({ date, workoutId: joined.workoutId, exercise, reps: Math.round(repCount) });
+    }
     const weightLb = weightToLb(row.weight_unit, row.weight_value, row.weight_kg);
-    if (reps == null || reps <= 0 || weightLb == null) continue;
-    const wholeReps = Math.round(reps);
+    if (repCount == null || repCount <= 0 || weightLb == null) continue;
+    const wholeReps = Math.round(repCount);
     const canon = canonicalLift(exercise);
     if (!labelByKey.has(canon.key)) labelByKey.set(canon.key, canon.label);
     sets.push({
@@ -107,5 +115,17 @@ export function normalizeLog(raw: RawLog): Omit<DashboardData, "source" | "today
   jumps.sort((a, b) => a.date.localeCompare(b.date) || b.inches - a.inches);
   sets.sort((a, b) => a.date.localeCompare(b.date) || a.liftKey.localeCompare(b.liftKey));
 
-  return { lifts, sets, bodyweight, jumps, jumpWork };
+  const measurements: Measurement[] = (raw.measurements ?? [])
+    .flatMap((row) => {
+      const date = performedDate(row.date);
+      const metric = str(row.metric);
+      const value = num(row.value);
+      if (!date || !metric || value == null) return [];
+      return [{ date, metric, value }];
+    })
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  reps.sort((a, b) => a.date.localeCompare(b.date));
+
+  return { lifts, sets, bodyweight, jumps, jumpWork, reps, measurements };
 }
