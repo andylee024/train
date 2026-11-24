@@ -290,3 +290,19 @@ footer {
   .jd-hero { grid-template-columns: minmax(0, 1fr); }
   .jd-big { font-size: 38px; }
 }
+
+/* View tabs */
+.tabs { display: flex; gap: 4px; margin: 0 0 16px; border-bottom: 1px solid var(--line); }
+.tabs button {
+  border: 0;
+  background: none;
+  padding: 10px 14px;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 15px;
+}
+.tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--lime); }
+.tabs button:hover { color: var(--text); }
+.tabs button:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; border-radius: 6px; }
